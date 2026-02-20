@@ -1,11 +1,37 @@
 name: Daily AI Post
+
 on:
   schedule:
     - cron: "10 6 * * *"
   workflow_dispatch:
+
+permissions:
+  contents: write
+
 jobs:
-  noop:
+  generate-and-commit:
     runs-on: ubuntu-latest
     steps:
-      - name: placeholder
-        run: echo "Add OpenAI generator here"
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install deps
+        run: npm install --no-fund --ignore-scripts --no-package-lock
+
+      - name: Generate daily post
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: npm run generate-daily
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add content/posts keyword-queue.json keyword-used.json || true
+          git commit -m "Daily AI post" || echo "Nothing to commit"
+          git push
