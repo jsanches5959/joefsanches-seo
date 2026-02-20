@@ -11,34 +11,26 @@ permissions:
 jobs:
   generate-and-commit:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-
       - name: Install deps
         run: npm install --no-fund --ignore-scripts --no-package-lock
-
       - name: Generate daily post
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: npm run generate-daily
-
       - name: Commit and push
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-
-          git add -A
+          git add content/posts keyword-queue.json keyword-used.json || true
           git commit -m "Daily AI post" || echo "Nothing to commit"
-
           git pull origin main --rebase
-
           git push origin HEAD:main
