@@ -30,7 +30,7 @@ export async function getStaticProps({ params }) {
     props: {
       slug: params.slug,
       title: data.title || params.slug,
-      date: data.date || null,
+     date: data.date ? new Date(data.date).toISOString() : null
       contentHtml,
     },
   };
