@@ -4,7 +4,6 @@ export default function Home() {
   return (
     <main style={{ fontFamily: 'Arial, sans-serif' }}>
       
-      {/* HERO SECTION */}
       <section style={{
         textAlign: 'center',
         padding: '80px 20px',
@@ -13,33 +12,39 @@ export default function Home() {
         <h1 style={{ fontSize: '40px', marginBottom: '20px' }}>
           Joe Sanches Realtor – Leander, Texas
         </h1>
+
         <p style={{ fontSize: '18px', marginBottom: '30px' }}>
           Helping Leander homeowners buy and sell with confidence.
         </p>
 
-        <a href="tel:5126638867" style={{
-          padding: '15px 25px',
-          background: '#000',
-          color: '#fff',
-          textDecoration: 'none',
-          marginRight: '10px',
-          borderRadius: '6px'
-        }}>
+        <a
+          href="tel:5126638867"
+          style={{
+            padding: '15px 25px',
+            background: '#000',
+            color: '#fff',
+            textDecoration: 'none',
+            marginRight: '10px',
+            borderRadius: '6px'
+          }}
+        >
           Call / Text 512-663-8867
         </a>
 
-        <a href="mailto:hello@joefsanches.com" style={{
-          padding: '15px 25px',
-          background: '#1e90ff',
-          color: '#fff',
-          textDecoration: 'none',
-          borderRadius: '6px'
-        }}>
+        <a
+          href="mailto:hello@joefsanches.com"
+          style={{
+            padding: '15px 25px',
+            background: '#1e90ff',
+            color: '#fff',
+            textDecoration: 'none',
+            borderRadius: '6px'
+          }}
+        >
           Email Me
         </a>
       </section>
 
-      {/* WHY ME */}
       <section style={{ padding: '60px 20px', maxWidth: 900, margin: '0 auto' }}>
         <h2>Why Work With Joe?</h2>
         <ul>
@@ -50,18 +55,6 @@ export default function Home() {
         </ul>
       </section>
 
-      {/* BLOG PREVIEW */}
-      <section style={{ padding: '60px 20px', maxWidth: 900, margin: '0 auto' }}>
-        <h2>Leander Real Estate Updates</h2>
-        <p>
-          Read local housing insights and market updates below.
-        </p>
-        <Link href="/posts">
-          View All Articles
-        </Link>
-      </section>
-
-      {/* FOOTER */}
       <footer style={{
         textAlign: 'center',
         padding: '40px 20px',
