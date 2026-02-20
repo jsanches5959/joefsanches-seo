@@ -2,7 +2,7 @@ name: Daily AI Post
 
 on:
   schedule:
-    - cron: "10 6 * * *"
+    - cron: "10 6 * * *" # Runs at 06:10
   workflow_dispatch:
 
 permissions:
@@ -11,9 +11,12 @@ permissions:
 jobs:
   generate-and-commit:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -32,6 +35,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add content/posts keyword-queue.json keyword-used.json || true
+          git pull origin main --rebase
+          git add -A
           git commit -m "Daily AI post" || echo "Nothing to commit"
-          git push
+          git push origin HEAD:main
