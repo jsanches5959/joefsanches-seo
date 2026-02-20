@@ -1,0 +1,11 @@
+name: Daily AI Post
+on:
+  schedule:
+    - cron: "10 6 * * *"
+  workflow_dispatch:
+jobs:
+  noop:
+    runs-on: ubuntu-latest
+    steps:
+      - name: placeholder
+        run: echo "Add OpenAI generator here"
