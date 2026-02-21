@@ -1,72 +1,100 @@
 import Link from 'next/link';
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
 
-export default function Home() {
+export async function getStaticProps() {
+  const postsDirectory = path.join(process.cwd(), 'content/posts');
+  let posts = [];
+  
+  if (fs.existsSync(postsDirectory)) {
+    const filenames = fs.readdirSync(postsDirectory);
+    posts = filenames
+      .filter((file) => file.endsWith('.md'))
+      .map((filename) => {
+        const filePath = path.join(postsDirectory, filename);
+        const fileContents = fs.readFileSync(filePath, 'utf8');
+        const { data } = matter(fileContents);
+        return {
+          slug: filename.replace(/\.md$/, ''),
+          title: data.title || filename.replace(/\.md$/, ''),
+          date: data.date ? new Date(data.date).toISOString() : null,
+        };
+      })
+      .sort((a, b) => (a.date < b.date ? 1 : -1));
+  }
+
+  return {
+    props: {
+      posts,
+    },
+  };
+}
+
+export default function Home({ posts }) {
   return (
-    <main style={{ fontFamily: 'Arial, sans-serif' }}>
-      
-      <section style={{
-        textAlign: 'center',
-        padding: '80px 20px',
-        background: '#f5f5f5'
-      }}>
-        <h1 style={{ fontSize: '40px', marginBottom: '20px' }}>
-          Joe Sanches Realtor – Leander, Texas
-        </h1>
+    <div className="container">
+      <header className="topbar">
+        <div className="brand">
+          <h1>Joe Sanches</h1>
+          <p className="sub">Real Estate Expert • Leander, TX</p>
+        </div>
+        <div className="actions">
+          <a href="tel:5126638867" className="btn">Call / Text</a>
+          <a href="mailto:hello@joefsanches.com" className="btn accent">Email Me</a>
+        </div>
+      </header>
 
-        <p style={{ fontSize: '18px', marginBottom: '30px' }}>
-          Helping Leander homeowners buy and sell with confidence.
+      <section className="hero">
+        <h2 className="heroTitle">Helping Leander homeowners buy and sell with confidence.</h2>
+        <p className="heroLead">
+          Strategic pricing, military discipline, and modern marketing to get you the best results in the Austin market.
         </p>
-
-        <a
-          href="tel:5126638867"
-          style={{
-            padding: '15px 25px',
-            background: '#000',
-            color: '#fff',
-            textDecoration: 'none',
-            marginRight: '10px',
-            borderRadius: '6px'
-          }}
-        >
-          Call / Text 512-663-8867
-        </a>
-
-        <a
-          href="mailto:hello@joefsanches.com"
-          style={{
-            padding: '15px 25px',
-            background: '#1e90ff',
-            color: '#fff',
-            textDecoration: 'none',
-            borderRadius: '6px'
-          }}
-        >
-          Email Me
-        </a>
+        <div className="heroMeta">
+          <span className="pill">Local Expert</span>
+          <span className="pill">Military Veteran</span>
+          <span className="pill">Top Negotiator</span>
+        </div>
       </section>
 
-      <section style={{ padding: '60px 20px', maxWidth: 900, margin: '0 auto' }}>
-        <h2>Why Work With Joe?</h2>
-        <ul>
-          <li>Local Leander market expert</li>
-          <li>Strategic pricing & negotiation</li>
-          <li>Clear communication and fast response</li>
-          <li>Military discipline + modern marketing</li>
-        </ul>
-      </section>
+      <div className="grid">
+        <main className="main">
+          <h3 style={{ marginBottom: '16px', fontSize: '18px' }}>Latest Insights</h3>
+          <div className="list">
+            {posts.length > 0 ? (
+              posts.map((post) => (
+                <div key={post.slug} className="card">
+                  <h4 className="cardTitle">
+                    <Link href={`/posts/${post.slug}`}>{post.title}</Link>
+                  </h4>
+                  <p className="cardMeta">
+                    {post.date ? new Date(post.date).toLocaleDateString() : 'Recent Post'}
+                  </p>
+                </div>
+              ))
+            ) : (
+              <p style={{ color: 'var(--muted)' }}>New insights coming soon...</p>
+            )}
+          </div>
+        </main>
 
-      <footer style={{
-        textAlign: 'center',
-        padding: '40px 20px',
-        background: '#000',
-        color: '#fff'
-      }}>
-        <p>Joe Sanches Realtor</p>
-        <p>Leander, Texas</p>
-        <p>Phone: 512-663-8867</p>
-        <p>Email: hello@joefsanches.com</p>
+        <aside className="side">
+          <div className="card" style={{ background: 'rgba(124,58,237,0.05)', borderColor: 'rgba(124,58,237,0.2)' }}>
+            <h3 className="cardTitle">Why Work With Joe?</h3>
+            <ul style={{ paddingLeft: '18px', marginTop: '12px', fontSize: '14px', color: 'var(--muted)', lineHeight: '1.6' }}>
+              <li>Local Leander market expert</li>
+              <li>Strategic pricing & negotiation</li>
+              <li>Clear communication and fast response</li>
+              <li>Military discipline + modern marketing</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+      <footer className="footer">
+        <p>© {new Date().getFullYear()} Joe Sanches Realtor • Leander, Texas</p>
+        <p style={{ marginTop: '4px' }}>Phone: 512-663-8867 • Email: hello@joefsanches.com</p>
       </footer>
-
-    </main>
+    </div>
   );
 }
