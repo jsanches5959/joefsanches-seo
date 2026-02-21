@@ -101,16 +101,6 @@ export default function Home({ posts }) {
 
         <aside className="side">
           <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center' }}>
-            <img 
-              src="/joe.png" 
-              alt="Joe Sanches" 
-              style={{ 
-                borderRadius: '12px', 
-                width: '100%', 
-                marginBottom: '16px',
-                border: '2px solid rgba(107,120,84,0.3)'
-              }} 
-            />
             <h3 className="cardTitle" style={{ color: 'var(--accent-light)' }}>Why Work With Joe?</h3>
             <ul style={{ paddingLeft: '18px', marginTop: '16px', fontSize: '14px', color: 'var(--muted)', lineHeight: '1.8', textAlign: 'left' }}>
               <li>Local Leander market expert</li>
