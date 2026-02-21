@@ -26,11 +26,20 @@ export async function getStaticProps({ params }) {
   const processedContent = await remark().use(html).process(content);
   const contentHtml = processedContent.toString();
 
+  // Ensure date is JSON-serializable and safe
+  let date = null;
+  if (data.date) {
+    const d = new Date(data.date);
+    if (!isNaN(d.getTime())) {
+      date = d.toISOString();
+    }
+  }
+
   return {
     props: {
       slug: params.slug,
       title: data.title || params.slug,
-     date: data.date ? new Date(data.date).toISOString() : null
+      date,
       contentHtml,
     },
   };
