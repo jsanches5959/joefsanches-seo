@@ -49,14 +49,31 @@ export default function Home({ posts }) {
       </header>
 
       <section className="hero">
-        <h2 className="heroTitle">Helping Leander homeowners buy and sell with confidence.</h2>
-        <p className="heroLead">
-          Strategic pricing, military discipline, and modern marketing to get you the best results in the Austin market.
-        </p>
-        <div className="heroMeta">
-          <span className="pill">Local Expert</span>
-          <span className="pill">Military Veteran</span>
-          <span className="pill">Top Negotiator</span>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', alignItems: 'center' }}>
+          <div>
+            <h2 className="heroTitle">Helping Leander homeowners buy and sell with confidence.</h2>
+            <p className="heroLead">
+              Strategic pricing, military discipline, and modern marketing to get you the best results in the Austin market.
+            </p>
+            <div className="heroMeta">
+              <span className="pill">Local Expert</span>
+              <span className="pill">Military Veteran</span>
+              <span className="pill">Top Negotiator</span>
+            </div>
+          </div>
+          <div style={{ textAlign: 'center' }}>
+            <img 
+              src="/joe.png" 
+              alt="Joe Sanches" 
+              style={{ 
+                borderRadius: '16px', 
+                width: '100%', 
+                maxWidth: '320px', 
+                boxShadow: '0 20px 40px rgba(107,120,84,0.2)',
+                border: '2px solid rgba(107,120,84,0.3)'
+              }} 
+            />
+          </div>
         </div>
       </section>
 
@@ -83,9 +100,19 @@ export default function Home({ posts }) {
         </main>
 
         <aside className="side">
-          <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)' }}>
+          <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center' }}>
+            <img 
+              src="/joe.png" 
+              alt="Joe Sanches" 
+              style={{ 
+                borderRadius: '12px', 
+                width: '100%', 
+                marginBottom: '16px',
+                border: '2px solid rgba(107,120,84,0.3)'
+              }} 
+            />
             <h3 className="cardTitle" style={{ color: 'var(--accent-light)' }}>Why Work With Joe?</h3>
-            <ul style={{ paddingLeft: '18px', marginTop: '16px', fontSize: '14px', color: 'var(--muted)', lineHeight: '1.8' }}>
+            <ul style={{ paddingLeft: '18px', marginTop: '16px', fontSize: '14px', color: 'var(--muted)', lineHeight: '1.8', textAlign: 'left' }}>
               <li>Local Leander market expert</li>
               <li>Strategic pricing & negotiation</li>
               <li>Clear communication and fast response</li>
@@ -99,6 +126,14 @@ export default function Home({ posts }) {
         <p>© {new Date().getFullYear()} Joe Sanches Realtor • Leander, Texas</p>
         <p style={{ marginTop: '8px' }}>Phone: 512-663-8867 • Email: hello@joefsanches.com</p>
       </footer>
+
+      <style jsx>{`
+        @media (max-width: 860px) {
+          .hero > div {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }
