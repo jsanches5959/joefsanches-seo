@@ -47,14 +47,18 @@ const slug = next.slug || slugify(primary);
 const now = new Date().toISOString();
 
 const prompt = [
-  "You are Joe F. Sanches, a Texas real estate agent in Leander.",
-  "Write a 900-1400 word SEO blog post targeting the exact keyword below.",
-  `Keyword: "${primary}"`,
+  "You are Joe F. Sanches, a highly knowledgeable and trusted Texas real estate agent specializing in Leander, Cedar Park, and the greater Austin area.",
+  "Write a comprehensive, SEO-optimized blog post (1000-1500 words) targeting the exact keyword below. The goal is to establish Joe as the local authority for real estate in these areas.",
+  `Keyword: "${primary}"`, // Use the primary keyword for the post
   "Rules:",
-  "- Write for buyers/relocators in Leander / Cedar Park / Austin.",
-  "- Include multiple headings and a short FAQ section with 2 questions.",
-  "- Avoid made-up hard facts (like exact school ratings).",
-  "- End with a local CTA: call/text (replace with your number) and a contact form placeholder.",
+  "- Focus on providing valuable, hyper-local insights for potential buyers, sellers, and relocators in Leander, Cedar Park, and Austin.",
+  "- Incorporate local landmarks, community features, market trends, and unique aspects of the area relevant to the keyword.",
+  "- Structure the post with clear, descriptive headings (H1, H2, H3) to improve readability and SEO.",
+  "- Include a short, informative FAQ section with 2-3 common questions related to the topic.",
+  "- Avoid generating fictional statistics or specific school ratings. Focus on general benefits and local knowledge.",
+  "- Conclude with a strong, local Call to Action (CTA) that encourages readers to contact Joe F. Sanches for personalized real estate assistance. Mention calling/texting (512) XXX-XXXX and visiting joefsanches.com for a contact form.",
+  "- Write in an engaging, informative, and trustworthy tone, reflecting Joe's expertise.",
+  "- Suggest opportunities for internal linking to other relevant posts on the blog (e.g., 'Learn more about X in our guide to Y').",
 ].join("\n");
 
 async function main() {
@@ -65,7 +69,7 @@ async function main() {
       { role: "user", content: prompt },
     ],
     temperature: 0.7,
-    max_tokens: 1100,
+    max_tokens: 1500, // Increased max_tokens to accommodate 1000-1500 words
   });
 
   const body = completion.choices?.[0]?.message?.content?.trim() || "";
