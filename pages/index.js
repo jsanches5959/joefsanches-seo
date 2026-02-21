@@ -36,8 +36,11 @@ export default function Home({ posts }) {
     <div className="container">
       <header className="topbar">
         <div className="brand">
-          <h1>Joe Sanches</h1>
-          <p className="sub">Real Estate Expert • Leander, TX</p>
+          <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+          <div>
+            <h1>Joe Sanches</h1>
+            <p className="sub">Real Estate Expert • Leander, TX</p>
+          </div>
         </div>
         <div className="actions">
           <a href="tel:5126638867" className="btn">Call / Text</a>
@@ -59,7 +62,7 @@ export default function Home({ posts }) {
 
       <div className="grid">
         <main className="main">
-          <h3 style={{ marginBottom: '16px', fontSize: '18px' }}>Latest Insights</h3>
+          <h3 style={{ marginBottom: '20px', fontSize: '18px', color: 'white' }}>Latest Insights</h3>
           <div className="list">
             {posts.length > 0 ? (
               posts.map((post) => (
@@ -68,6 +71,7 @@ export default function Home({ posts }) {
                     <Link href={`/posts/${post.slug}`}>{post.title}</Link>
                   </h4>
                   <p className="cardMeta">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
                     {post.date ? new Date(post.date).toLocaleDateString() : 'Recent Post'}
                   </p>
                 </div>
@@ -79,9 +83,9 @@ export default function Home({ posts }) {
         </main>
 
         <aside className="side">
-          <div className="card" style={{ background: 'rgba(124,58,237,0.05)', borderColor: 'rgba(124,58,237,0.2)' }}>
-            <h3 className="cardTitle">Why Work With Joe?</h3>
-            <ul style={{ paddingLeft: '18px', marginTop: '12px', fontSize: '14px', color: 'var(--muted)', lineHeight: '1.6' }}>
+          <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)' }}>
+            <h3 className="cardTitle" style={{ color: 'var(--accent-light)' }}>Why Work With Joe?</h3>
+            <ul style={{ paddingLeft: '18px', marginTop: '16px', fontSize: '14px', color: 'var(--muted)', lineHeight: '1.8' }}>
               <li>Local Leander market expert</li>
               <li>Strategic pricing & negotiation</li>
               <li>Clear communication and fast response</li>
@@ -93,7 +97,7 @@ export default function Home({ posts }) {
 
       <footer className="footer">
         <p>© {new Date().getFullYear()} Joe Sanches Realtor • Leander, Texas</p>
-        <p style={{ marginTop: '4px' }}>Phone: 512-663-8867 • Email: hello@joefsanches.com</p>
+        <p style={{ marginTop: '8px' }}>Phone: 512-663-8867 • Email: hello@joefsanches.com</p>
       </footer>
     </div>
   );

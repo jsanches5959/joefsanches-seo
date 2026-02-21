@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import OpenAI from "openai";
+import { execSync } from "child_process"; // Import execSync to run the Reddit script
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
@@ -26,42 +27,52 @@ function slugify(str) {
     .replace(/(^-|-$)/g, "");
 }
 
-const queue = safeReadJSON(queuePath, []);
-const used = safeReadJSON(usedPath, []);
-
-if (!process.env.OPENAI_API_KEY) {
-  console.error("OPENAI_API_KEY is not set");
-  process.exit(1);
-}
-
-if (queue.length === 0) {
-  console.log("No keywords left in keyword-queue.json");
-  process.exit(0);
-}
-
-const next = queue.shift();
-fs.mkdirSync(postsDir, { recursive: true });
-
-const primary = next.primary || next.keyword || "";
-const slug = next.slug || slugify(primary);
-const now = new Date().toISOString();
-
-const prompt = [
-  "You are Joe F. Sanches, a highly knowledgeable and trusted Texas real estate agent specializing in Leander, Cedar Park, and the greater Austin area.",
-  "Write a comprehensive, SEO-optimized blog post (1000-1500 words) targeting the exact keyword below. The goal is to establish Joe as the local authority for real estate in these areas.",
-  `Keyword: "${primary}"`, // Use the primary keyword for the post
-  "Rules:",
-  "- Focus on providing valuable, hyper-local insights for potential buyers, sellers, and relocators in Leander, Cedar Park, and Austin.",
-  "- Incorporate local landmarks, community features, market trends, and unique aspects of the area relevant to the keyword.",
-  "- Structure the post with clear, descriptive headings (H1, H2, H3) to improve readability and SEO.",
-  "- Include a short, informative FAQ section with 2-3 common questions related to the topic.",
-  "- Avoid generating fictional statistics or specific school ratings. Focus on general benefits and local knowledge.",
-  "- Conclude with a strong, local Call to Action (CTA) that encourages readers to contact Joe F. Sanches for personalized real estate assistance. Mention calling/texting (512) XXX-XXXX and visiting joefsanches.com for a contact form.",
-  "- Write in an engaging, informative, and trustworthy tone, reflecting Joe's expertise.",
-  "- Suggest opportunities for internal linking to other relevant posts on the blog (e.g., 'Learn more about X in our guide to Y').",
-].join("\n");
-
 async function main() {
+  // First, run the Reddit Intelligence script to update the keyword queue
+  console.log("Running Reddit Intelligence to update keyword queue...");
+  try {
+    execSync(`node ${path.join(root, "scripts", "reddit-intelligence.mjs")}`, { stdio: "inherit" });
+    console.log("Reddit Intelligence complete.");
+  } catch (error) {
+    console.error("Error running Reddit Intelligence script:", error.message);
+    // Continue with existing queue if Reddit script fails
+  }
+
+  const queue = safeReadJSON(queuePath, []);
+  const used = safeReadJSON(usedPath, []);
+
+  if (!process.env.OPENAI_API_KEY) {
+    console.error("OPENAI_API_KEY is not set");
+    process.exit(1);
+  }
+
+  if (queue.length === 0) {
+    console.log("No keywords left in keyword-queue.json");
+    process.exit(0);
+  }
+
+  const next = queue.shift();
+  fs.mkdirSync(postsDir, { recursive: true });
+
+  const primary = next.primary || next.keyword || "";
+  const slug = next.slug || slugify(primary);
+  const now = new Date().toISOString();
+
+  const prompt = [
+    "You are Joe F. Sanches, a highly knowledgeable and trusted Texas real estate agent specializing in Leander, Cedar Park, and the greater Austin area.",
+    "Write a comprehensive, SEO-optimized blog post (1000-1500 words) targeting the exact keyword below. The goal is to establish Joe as the local authority for real estate in these areas.",
+    `Keyword: "${primary}"`, // Use the primary keyword for the post
+    "Rules:",
+    "- Focus on providing valuable, hyper-local insights for potential buyers, sellers, and relocators in Leander, Cedar Park, and Austin.",
+    "- Incorporate local landmarks, community features, market trends, and unique aspects of the area relevant to the keyword.",
+    "- Structure the post with clear, descriptive headings (H1, H2, H3) to improve readability and SEO.",
+    "- Include a short, informative FAQ section with 2-3 common questions related to the topic.",
+    "- Avoid generating fictional statistics or specific school ratings. Focus on general benefits and local knowledge.",
+    "- Conclude with a strong, local Call to Action (CTA) that encourages readers to contact Joe F. Sanches for personalized real estate assistance. Mention calling/texting (512) XXX-XXXX and visiting joefsanches.com for a contact form.",
+    "- Write in an engaging, informative, and trustworthy tone, reflecting Joe's expertise.",
+    "- Suggest opportunities for internal linking to other relevant posts on the blog (e.g., 'Learn more about X in our guide to Y').",
+  ].join("\n");
+
   const completion = await openai.chat.completions.create({
     model: "gpt-4o-mini",
     messages: [
