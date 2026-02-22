@@ -5,11 +5,14 @@ import { get_reddit_posts } from "/opt/.manus/.sandbox-runtime/data_api"; // Ass
 const root = process.cwd();
 const queuePath = path.join(root, "keyword-queue.json");
 
-const subredditsToMonitor = ["Leander", "Austin", "CedarPark", "RealEstate"];
+const subredditsToMonitor = ["Leander", "Austin", "CedarPark", "RealEstate", "austinjobs", "TeslaLounge"];
 const keywordsToMonitor = [
+  "quick move-in", "relocating to austin", "tesla jobs", "selling fast",
   "moving to leander", "best realtor in austin", "property taxes",
   "real estate agent", "buying home", "selling home", "new construction",
-  "neighborhoods", "schools", "mortgage", "first time home buyer"
+  "neighborhoods", "schools", "mortgage", "first time home buyer",
+  "quick sale", "cash buyer", "sell my house", "investment property",
+  "relocating for work"
 ];
 
 function safeReadJSON(filePath, fallback) {
