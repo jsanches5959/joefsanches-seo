@@ -3,7 +3,6 @@ import Head from 'next/head';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { useState } from 'react';
 
 export async function getStaticProps() {
   const postsDirectory = path.join(process.cwd(), 'content/posts');
@@ -34,45 +33,6 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
-  const [email, setEmail] = useState('');
-  const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState('');
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError('');
-    
-    if (!email) {
-      setError('Please enter a valid email');
-      return;
-    }
-
-    try {
-      const response = await fetch('https://formspree.io/f/xyzpqwer', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email: email,
-          message: `Lead signup for Secret List - Email: ${email}`,
-          _subject: 'New Lead: Secret List Signup'
-        }),
-      });
-
-      if (response.ok) {
-        console.log('Lead captured:', email);
-        setSubmitted(true);
-        setEmail('');
-        setTimeout(() => setSubmitted(false), 5000);
-      } else {
-        setError('Failed to capture lead. Please try again.');
-      }
-    } catch (err) {
-      console.error('Error submitting form:', err);
-      setError('Network error. Please try again.');
-    }
-  };
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
@@ -199,42 +159,18 @@ export default function Home({ posts }) {
           </main>
 
           <aside className="side">
-            <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center', marginBottom: '20px' }}>
-              <h3 className="cardTitle" style={{ color: 'var(--accent-light)', marginBottom: '12px' }}>Get the 2026 Secret List</h3>
-              <p style={{ fontSize: '14px', color: 'var(--muted)', marginBottom: '16px', lineHeight: '1.6' }}>
-                Leander Homes Under $450k (Updated Daily)
-              </p>
-            {submitted ? (
-              <div style={{ padding: '12px', background: 'rgba(107,120,84,0.2)', borderRadius: '8px', color: 'var(--accent-light)', fontSize: '14px' }}>
-                ✓ Check your email for the list!
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  style={{
-                    padding: '10px 12px',
-                    borderRadius: '8px',
-                    border: '1px solid rgba(107,120,84,0.3)',
-                    background: 'rgba(255,255,255,0.05)',
-                    color: 'white',
-                    fontSize: '14px',
-                  }}
-                />
-                {error && <div style={{ color: '#ff6b6b', fontSize: '12px' }}>{error}</div>}
-                <button
-                  type="submit"
-                  className="btn accent"
-                  style={{ justifyContent: 'center', fontSize: '14px' }}
-                >
-                  Get the List
-                </button>
-              </form>
-            )}
+          <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center', marginBottom: '20px' }}>
+            <h3 className="cardTitle" style={{ color: 'var(--accent-light)', marginBottom: '12px' }}>Get the 2026 Secret List</h3>
+            <p style={{ fontSize: '14px', color: 'var(--muted)', marginBottom: '16px', lineHeight: '1.6' }}>
+              Leander Homes Under $450k (Updated Daily)
+            </p>
+            <a
+              href="mailto:hello@joefsanches.com?subject=I%20want%20the%202026%20Secret%20List%20of%20Leander%20Homes%20Under%20%24450k&body=Hi%20Joe%2C%0A%0AI%27m%20interested%20in%20the%20Secret%20List%20of%20Leander%20homes%20under%20%24450k.%20Please%20send%20it%20to%20me.%0A%0AThank%20you!"
+              className="btn accent"
+              style={{ justifyContent: 'center', fontSize: '14px', display: 'block', textAlign: 'center', padding: '12px 20px' }}
+            >
+              Get the List
+            </a>
             </div>
             <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center' }}>
               <h3 className="cardTitle" style={{ color: 'var(--accent-light)' }}>Why Work With Joe?</h3>
