@@ -36,15 +36,41 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (email) {
-      // In production, send to backend/email service
-      console.log('Lead captured:', email);
-      setSubmitted(true);
-      setEmail('');
-      setTimeout(() => setSubmitted(false), 3000);
+    setError('');
+    
+    if (!email) {
+      setError('Please enter a valid email');
+      return;
+    }
+
+    try {
+      const response = await fetch('https://formspree.io/f/xyzpqwer', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: email,
+          message: `Lead signup for Secret List - Email: ${email}`,
+          _subject: 'New Lead: Secret List Signup'
+        }),
+      });
+
+      if (response.ok) {
+        console.log('Lead captured:', email);
+        setSubmitted(true);
+        setEmail('');
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        setError('Failed to capture lead. Please try again.');
+      }
+    } catch (err) {
+      console.error('Error submitting form:', err);
+      setError('Network error. Please try again.');
     }
   };
 
@@ -178,36 +204,37 @@ export default function Home({ posts }) {
               <p style={{ fontSize: '14px', color: 'var(--muted)', marginBottom: '16px', lineHeight: '1.6' }}>
                 Leander Homes Under $450k (Updated Daily)
               </p>
-              {submitted ? (
-                <div style={{ padding: '12px', background: 'rgba(107,120,84,0.2)', borderRadius: '8px', color: 'var(--accent-light)', fontSize: '14px' }}>
-                  ✓ Check your email for the list!
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                  <input
-                    type="email"
-                    placeholder="Your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                    style={{
-                      padding: '10px 12px',
-                      borderRadius: '8px',
-                      border: '1px solid rgba(107,120,84,0.3)',
-                      background: 'rgba(255,255,255,0.05)',
-                      color: 'white',
-                      fontSize: '14px',
-                    }}
-                  />
-                  <button
-                    type="submit"
-                    className="btn accent"
-                    style={{ justifyContent: 'center', fontSize: '14px' }}
-                  >
-                    Get the List
-                  </button>
-                </form>
-              )}
+            {submitted ? (
+              <div style={{ padding: '12px', background: 'rgba(107,120,84,0.2)', borderRadius: '8px', color: 'var(--accent-light)', fontSize: '14px' }}>
+                ✓ Check your email for the list!
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <input
+                  type="email"
+                  placeholder="Your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  style={{
+                    padding: '10px 12px',
+                    borderRadius: '8px',
+                    border: '1px solid rgba(107,120,84,0.3)',
+                    background: 'rgba(255,255,255,0.05)',
+                    color: 'white',
+                    fontSize: '14px',
+                  }}
+                />
+                {error && <div style={{ color: '#ff6b6b', fontSize: '12px' }}>{error}</div>}
+                <button
+                  type="submit"
+                  className="btn accent"
+                  style={{ justifyContent: 'center', fontSize: '14px' }}
+                >
+                  Get the List
+                </button>
+              </form>
+            )}
             </div>
             <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center' }}>
               <h3 className="cardTitle" style={{ color: 'var(--accent-light)' }}>Why Work With Joe?</h3>

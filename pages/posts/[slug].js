@@ -50,14 +50,41 @@ export async function getStaticProps({ params }) {
 export default function Post({ title, date, contentHtml }) {
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (email) {
-      console.log('Lead captured:', email);
-      setSubmitted(true);
-      setEmail('');
-      setTimeout(() => setSubmitted(false), 3000);
+    setError('');
+    
+    if (!email) {
+      setError('Please enter a valid email');
+      return;
+    }
+
+    try {
+      const response = await fetch('https://formspree.io/f/xyzpqwer', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          email: email,
+          message: `Lead signup for Secret List - Email: ${email}`,
+          _subject: 'New Lead: Secret List Signup'
+        }),
+      });
+
+      if (response.ok) {
+        console.log('Lead captured:', email);
+        setSubmitted(true);
+        setEmail('');
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        setError('Failed to capture lead. Please try again.');
+      }
+    } catch (err) {
+      console.error('Error submitting form:', err);
+      setError('Network error. Please try again.');
     }
   };
 
@@ -145,6 +172,7 @@ export default function Post({ title, date, contentHtml }) {
                     fontSize: '14px',
                   }}
                 />
+                {error && <div style={{ color: '#ff6b6b', fontSize: '12px' }}>{error}</div>}
                 <button
                   type="submit"
                   className="btn accent"
