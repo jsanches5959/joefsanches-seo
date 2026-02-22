@@ -197,6 +197,11 @@ export default function Home({ posts }) {
         <footer className="footer">
           <p>© {new Date().getFullYear()} Joe Sanches Realtor • Leander, Texas</p>
           <p style={{ marginTop: '8px' }}>Phone: 512-663-8867 • Email: hello@joefsanches.com</p>
+          <div style={{ marginTop: '16px' }}>
+            <a href="https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID_HERE" target="_blank" rel="noopener noreferrer" className="btn" style={{ fontSize: '12px', opacity: 0.8 }}>
+              ⭐ Review Joe on Google
+            </a>
+          </div>
         </footer>
 
         <style jsx>{`
