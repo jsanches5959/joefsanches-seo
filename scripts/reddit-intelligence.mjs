@@ -1,18 +1,31 @@
 import fs from "fs";
 import path from "path";
-import { get_reddit_posts } from "/opt/.manus/.sandbox-runtime/data_api"; // Assuming this path for the Reddit API
+import { get_reddit_posts } from "/opt/.manus/.sandbox-runtime/data_api";
 
 const root = process.cwd();
 const queuePath = path.join(root, "keyword-queue.json");
+const alertsPath = path.join(root, "reddit-alerts.json");
 
-const subredditsToMonitor = ["Leander", "Austin", "CedarPark", "RealEstate", "austinjobs", "TeslaLounge"];
+// COMBAT MODE: Aggressive subreddit monitoring for immediate leads
+const subredditsToMonitor = [
+  "Leander", "Austin", "CedarPark", "RealEstate", 
+  "austinjobs", "TeslaLounge", "MovingToAustin", 
+  "FirstTimeHomeBuyer", "PersonalFinance", "Austin_Housing"
+];
+
+// HIGH-INTENT KEYWORDS: Focus on people who are READY to buy/sell NOW
 const keywordsToMonitor = [
+  // URGENT SIGNALS
   "quick move-in", "relocating to austin", "tesla jobs", "selling fast",
-  "moving to leander", "best realtor in austin", "property taxes",
-  "real estate agent", "buying home", "selling home", "new construction",
-  "neighborhoods", "schools", "mortgage", "first time home buyer",
-  "quick sale", "cash buyer", "sell my house", "investment property",
-  "relocating for work"
+  "need house", "urgent", "asap", "this week", "this month",
+  // MONEY SIGNALS
+  "budget", "under 450k", "affordable", "price drop", "negotiation",
+  "cash buyer", "quick sale", "sell my house", "investment property",
+  // RELOCATION SIGNALS
+  "relocating for work", "moving to leander", "new job austin",
+  "giga texas", "spacex", "oracle", "apple", "google",
+  // DESPERATION SIGNALS (These are your GOLD leads)
+  "help", "advice", "first time", "lost", "confused", "overwhelmed"
 ];
 
 function safeReadJSON(filePath, fallback) {
@@ -32,16 +45,34 @@ function slugify(str) {
     .replace(/(^-|-$)/g, "");
 }
 
+// COMBAT MODE: Score leads by urgency
+function scoreLeadUrgency(title, content) {
+  let score = 0;
+  const lowerContent = content.toLowerCase();
+  
+  // URGENT signals = highest priority
+  if (lowerContent.includes("asap") || lowerContent.includes("urgent") || lowerContent.includes("this week")) score += 100;
+  if (lowerContent.includes("help") || lowerContent.includes("advice")) score += 50;
+  if (lowerContent.includes("tesla") || lowerContent.includes("giga")) score += 75;
+  if (lowerContent.includes("under 450k") || lowerContent.includes("budget")) score += 60;
+  if (lowerContent.includes("selling") || lowerContent.includes("buy")) score += 40;
+  
+  return score;
+}
+
 async function main() {
   let keywordQueue = safeReadJSON(queuePath, []);
+  let alerts = safeReadJSON(alertsPath, []);
   const existingKeywords = new Set(keywordQueue.map(item => item.primary.toLowerCase()));
+  
+  console.log("🚨 COMBAT MODE ACTIVATED: Hunting for high-intent leads...");
 
   for (const subreddit of subredditsToMonitor) {
-    console.log(`Monitoring r/${subreddit}...`);
+    console.log(`🔍 Scanning r/${subreddit}...`);
     try {
       const result = await get_reddit_posts({
         subreddit: subreddit,
-        limit: 50 // Fetch a reasonable number of recent posts
+        limit: 100 // COMBAT MODE: Scan more posts
       });
 
       if (result && result.posts) {
@@ -50,31 +81,55 @@ async function main() {
           const title = post.title || "";
           const selftext = post.selftext || "";
           const content = `${title} ${selftext}`.toLowerCase();
+          const author = post.author || "unknown";
 
-          // Check if post contains any of the keywords and is a question
-          const isQuestion = title.includes("?") || selftext.includes("?") ||
-                             title.includes("how to") || selftext.includes("how to") ||
-                             title.includes("what is") || selftext.includes("what is");
+          // COMBAT MODE: Look for ANY question + ANY money/relocation signal
+          const isQuestion = title.includes("?") || 
+                             content.includes("how") || 
+                             content.includes("help") ||
+                             content.includes("advice") ||
+                             content.includes("need");
 
           const hasKeyword = keywordsToMonitor.some(keyword => content.includes(keyword));
+          const urgencyScore = scoreLeadUrgency(title, content);
 
-          if (isQuestion && hasKeyword) {
+          if (isQuestion && hasKeyword && urgencyScore > 30) {
+            // HIGH-PRIORITY ALERT
+            const alert = {
+              timestamp: new Date().toISOString(),
+              subreddit: subreddit,
+              author: author,
+              title: title,
+              urgencyScore: urgencyScore,
+              url: `https://reddit.com/r/${subreddit}/comments/${post.id}`,
+              preview: content.substring(0, 150)
+            };
+            
+            alerts.push(alert);
+            console.log(`🎯 ALERT! Urgency ${urgencyScore}: "${title}" from r/${subreddit}`);
+            
+            // Also add to keyword queue for content generation
             const questionAsKeyword = title.trim();
             if (questionAsKeyword && !existingKeywords.has(questionAsKeyword.toLowerCase())) {
               keywordQueue.push({ primary: questionAsKeyword });
               existingKeywords.add(questionAsKeyword.toLowerCase());
-              console.log(`Added new question from r/${subreddit}: "${questionAsKeyword}"`);
             }
           }
         }
       }
     } catch (error) {
-      console.error(`Error monitoring r/${subreddit}:`, error);
+      console.error(`❌ Error monitoring r/${subreddit}:`, error);
     }
   }
 
+  // Keep only the 50 most recent alerts
+  alerts = alerts.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp)).slice(0, 50);
+
   fs.writeFileSync(queuePath, JSON.stringify(keywordQueue, null, 2), "utf8");
-  console.log("Reddit monitoring complete. Keyword queue updated.");
+  fs.writeFileSync(alertsPath, JSON.stringify(alerts, null, 2), "utf8");
+  
+  console.log(`✅ COMBAT MODE COMPLETE: Found ${alerts.length} high-intent leads!`);
+  console.log(`📧 Check reddit-alerts.json for immediate outreach opportunities.`);
 }
 
 main().catch((err) => {

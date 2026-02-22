@@ -170,16 +170,16 @@ export default function Home({ posts }) {
 
           <aside className="side">
           <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center', marginBottom: '20px' }}>
-            <h3 className="cardTitle" style={{ color: 'var(--accent-light)', marginBottom: '12px' }}>Get the 2026 Secret List</h3>
+            <h3 className="cardTitle" style={{ color: 'var(--accent-light)', marginBottom: '12px' }}>STOP OVERPAYING</h3>
             <p style={{ fontSize: '14px', color: 'var(--muted)', marginBottom: '16px', lineHeight: '1.6' }}>
-              Leander Homes Under $450k (Updated Daily)
+              5 Leander Homes with Price Drops This Week + My Negotiator's Playbook
             </p>
             <a
-              href="mailto:hello@joefsanches.com?subject=I%20want%20the%202026%20Secret%20List%20of%20Leander%20Homes%20Under%20%24450k&body=Hi%20Joe%2C%0A%0AI%27m%20interested%20in%20the%20Secret%20List%20of%20Leander%20homes%20under%20%24450k.%20Please%20send%20it%20to%20me.%0A%0AThank%20you!"
+              href="mailto:hello@joefsanches.com?subject=URGENT%3A%20Send%20me%20the%205%20Price%20Drops%20%2B%20Negotiator%27s%20Playbook&body=Hi%20Joe%2C%0A%0AI%27m%20ready%20to%20stop%20overpaying.%20Send%20me%20the%205%20homes%20with%20price%20drops%20this%20week%20and%20your%20negotiator%27s%20playbook.%0A%0AThank%20you!"
               className="btn accent"
               style={{ justifyContent: 'center', fontSize: '14px', display: 'block', textAlign: 'center', padding: '12px 20px' }}
             >
-              Get the List
+              Get the Deal
             </a>
             </div>
             <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center' }}>
