@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
@@ -36,19 +37,78 @@ export async function getStaticProps({ params }) {
     }
   }
 
+  // Extract first 160 characters for meta description
+  const plainText = content.replace(/[#*`]/g, '').substring(0, 160);
+  const description = data.description || plainText || 'Read this article by Joe Sanches, Real Estate Expert in Leander, TX';
+
   return {
     props: {
       slug: params.slug,
       title: data.title || params.slug,
       date,
       contentHtml,
+      description,
     },
   };
 }
 
-export default function Post({ title, date, contentHtml }) {
+export default function Post({ slug, title, date, contentHtml, description }) {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joefsanches.com';
+  const postUrl = `${baseUrl}/posts/${slug}`;
+  const publishedDate = date ? new Date(date).toISOString() : new Date().toISOString();
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: title,
+    description: description,
+    image: `${baseUrl}/logo.png`,
+    datePublished: publishedDate,
+    dateModified: publishedDate,
+    author: {
+      '@type': 'Person',
+      name: 'Joe Sanches',
+      url: baseUrl,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Joe Sanches Realtor',
+      logo: {
+        '@type': 'ImageObject',
+        url: `${baseUrl}/logo.png`,
+      },
+    },
+  };
 
   return (
+    <>
+      <Head>
+        <title>{title} | Joe Sanches Realtor - Leander, TX</title>
+        <meta name="description" content={description} />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href={postUrl} />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={postUrl} />
+        <meta property="og:image" content={`${baseUrl}/logo.png`} />
+        <meta property="og:site_name" content="Joe Sanches Realtor" />
+        
+        {/* Twitter Card Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={`${baseUrl}/logo.png`} />
+        
+        {/* Article Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+      </Head>
+      <div>
     <div className="container">
       <div className="floating-contact-bar">
         <a href="tel:5126638867" className="call-btn">
@@ -178,5 +238,6 @@ export default function Post({ title, date, contentHtml }) {
         }
       `}</style>
     </div>
+    </>
   );
 }

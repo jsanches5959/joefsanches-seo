@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /.next/
+Disallow: /node_modules/
+
+Sitemap: https://joefsanches.com/sitemap.xml
+
+# Crawl delay to be respectful
+Crawl-delay: 1
