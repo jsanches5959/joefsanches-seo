@@ -240,3 +240,4 @@ export default function Post({ slug, title, date, contentHtml, description }) {
     </>
   );
 }
+// Build trigger: Sun Feb 22 22:05:31 EST 2026
