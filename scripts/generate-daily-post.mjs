@@ -28,15 +28,7 @@ function slugify(str) {
 }
 
 async function main() {
-  // First, run the Reddit Intelligence script to update the keyword queue
-  console.log("Running Reddit Intelligence to update keyword queue...");
-  try {
-    execSync(`node ${path.join(root, "scripts", "reddit-intelligence.mjs")}`, { stdio: "inherit" });
-    console.log("Reddit Intelligence complete.");
-  } catch (error) {
-    console.error("Error running Reddit Intelligence script:", error.message);
-    // Continue with existing queue if Reddit script fails
-  }
+  // Reddit intelligence skipped to avoid module errors
 
   const queue = safeReadJSON(queuePath, []);
   const used = safeReadJSON(usedPath, []);
@@ -74,7 +66,7 @@ async function main() {
   ].join("\n");
 
   const completion = await openai.chat.completions.create({
-    model: "gpt-4o-mini",
+    model: "gpt-4.1-mini",
     messages: [
       { role: "system", content: "You write SEO real estate blog posts." },
       { role: "user", content: prompt },
