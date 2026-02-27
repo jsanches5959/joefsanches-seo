@@ -36,17 +36,19 @@ async function generatePost(keywordData, queue, used) {
 
   const prompt = [
     "You are Joe F. Sanches, a highly knowledgeable and trusted Texas real estate agent specializing in Leander, Cedar Park, and the greater Austin area.",
-    "Write a comprehensive, SEO-optimized blog post (1000-1500 words) targeting the exact keyword below. The goal is to establish Joe as the local authority for real estate in these areas.",
+    "Your task is to write a comprehensive, high-quality, and SEO-optimized blog post (minimum 1200 words, ideally 1500+) targeting the exact keyword below. The primary goal is to establish Joe as the undeniable local authority for real estate in these areas, driving organic traffic and generating leads.",
     `Keyword: "${primary}"`,
-    "Rules:",
-    "- Focus on providing valuable, hyper-local insights for potential buyers, sellers, and relocators in Leander, Cedar Park, and Austin.",
-    "- Incorporate local landmarks, community features, market trends, and unique aspects of the area relevant to the keyword.",
-    "- Structure the post with clear, descriptive headings (H1, H2, H3) to improve readability and SEO.",
-    "- Include a short, informative FAQ section with 2-3 common questions related to the topic.",
-    "- Avoid generating fictional statistics or specific school ratings. Focus on general benefits and local knowledge.",
-    "- Conclude with a strong, local Call to Action (CTA) that encourages readers to contact Joe F. Sanches for personalized real estate assistance. Mention calling/texting (512) XXX-XXXX and visiting joefsanches.com for a contact form.",
-    "- Write in an engaging, informative, and trustworthy tone, reflecting Joe's expertise.",
-    "- Suggest opportunities for internal linking to other relevant posts on the blog (e.g., 'Learn more about X in our guide to Y').",
+    "Rules for High-Quality SEO Content:",
+    "- **Keyword Integration:** Naturally weave the primary keyword and relevant long-tail variations throughout the article, especially in headings and the first paragraph. Maintain a natural keyword density without stuffing.",
+    "- **Hyper-Local Focus:** Provide deep, valuable, and hyper-local insights for potential buyers, sellers, and relocators in Leander, Cedar Park, and Austin. Mention specific neighborhoods, schools (without ratings), local businesses, and community events where relevant.",
+    "- **Unique Perspective:** Offer fresh, unique angles and actionable advice that goes beyond generic real estate information. Think about what only a local expert like Joe would know.",
+    "- **Structure and Readability:** Use clear, descriptive headings (H1 for title, H2s for main sections, H3s for sub-sections) to improve readability and SEO. Use bullet points or numbered lists for easy digestion of information.",
+    "- **FAQ Section:** Include a concise, informative FAQ section with 3-5 common questions related to the topic, providing direct and helpful answers.",
+    "- **Avoid Fictional Data:** DO NOT generate fictional statistics, specific school ratings, or market predictions. Focus on general benefits, current market trends, and local knowledge.",
+    "- **Strong Call to Action (CTA):** Conclude with a compelling, local Call to Action that encourages readers to contact Joe F. Sanches for personalized real estate assistance. Explicitly mention calling/texting (512) XXX-XXXX and visiting joefsanches.com for a contact form.",
+    "- **Tone:** Write in an engaging, informative, trustworthy, and authoritative tone, reflecting Joe's expertise and approachability.",
+    "- **Internal Linking:** Suggest at least 2-3 opportunities for internal linking to other relevant posts on the blog. Provide specific anchor text and placeholder URLs (e.g., 'Learn more about [Topic] in our guide to [Related Post Title]').",
+    "- **Meta Description Suggestion:** Provide a concise (150-160 characters) meta description at the end of the post, optimized for the primary keyword and encouraging clicks.",
   ].join("\n");
 
   const completion = await openai.chat.completions.create({
@@ -56,7 +58,7 @@ async function generatePost(keywordData, queue, used) {
       { role: "user", content: prompt },
     ],
     temperature: 0.7,
-    max_tokens: 1500,
+    max_tokens: 2000,
   });
 
   const body = completion.choices?.[0]?.message?.content?.trim() || "";
