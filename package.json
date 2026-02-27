@@ -9,11 +9,11 @@
     "generate-daily": "node scripts/generate-daily-post.mjs"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "next": "14.0.0",
+    "openai": "^4.104.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "openai": "^4.0.0",
-    "gray-matter": "^4.0.3",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1"
   }
