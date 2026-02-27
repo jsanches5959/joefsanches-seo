@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import OpenAI from "openai";
-import { execSync } from "child_process"; // Import execSync to run the Reddit script
+import { execSync } from "child_process";
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
@@ -27,33 +27,17 @@ function slugify(str) {
     .replace(/(^-|-$)/g, "");
 }
 
-async function main() {
-  // Reddit intelligence skipped to avoid module errors
-
-  const queue = safeReadJSON(queuePath, []);
-  const used = safeReadJSON(usedPath, []);
-
-  if (!process.env.OPENAI_API_KEY) {
-    console.error("OPENAI_API_KEY is not set");
-    process.exit(1);
-  }
-
-  if (queue.length === 0) {
-    console.log("No keywords left in keyword-queue.json");
-    process.exit(0);
-  }
-
-  const next = queue.shift();
-  fs.mkdirSync(postsDir, { recursive: true });
-
-  const primary = next.primary || next.keyword || "";
-  const slug = next.slug || slugify(primary);
+async function generatePost(keywordData, queue, used) {
+  const primary = keywordData.primary || keywordData.keyword || "";
+  const slug = keywordData.slug || slugify(primary);
   const now = new Date().toISOString();
+
+  console.log(`Generating post for: ${primary}...`);
 
   const prompt = [
     "You are Joe F. Sanches, a highly knowledgeable and trusted Texas real estate agent specializing in Leander, Cedar Park, and the greater Austin area.",
     "Write a comprehensive, SEO-optimized blog post (1000-1500 words) targeting the exact keyword below. The goal is to establish Joe as the local authority for real estate in these areas.",
-    `Keyword: "${primary}"`, // Use the primary keyword for the post
+    `Keyword: "${primary}"`,
     "Rules:",
     "- Focus on providing valuable, hyper-local insights for potential buyers, sellers, and relocators in Leander, Cedar Park, and Austin.",
     "- Incorporate local landmarks, community features, market trends, and unique aspects of the area relevant to the keyword.",
@@ -72,20 +56,48 @@ async function main() {
       { role: "user", content: prompt },
     ],
     temperature: 0.7,
-    max_tokens: 1500, // Increased max_tokens to accommodate 1000-1500 words
+    max_tokens: 1500,
   });
 
   const body = completion.choices?.[0]?.message?.content?.trim() || "";
-
   const frontmatter = `---\ntitle: ${primary}\nslug: ${slug}\ndate: ${now}\n---\n\n`;
 
   fs.writeFileSync(path.join(postsDir, `${slug}.md`), frontmatter + body, "utf8");
-  fs.writeFileSync(queuePath, JSON.stringify(queue, null, 2), "utf8");
+  
+  used.push({ ...keywordData, slug, generated_at: now });
+  return true;
+}
 
-  used.push({ ...next, slug, generated_at: now });
+async function main() {
+  const count = parseInt(process.argv[2]) || 1;
+  console.log(`Requested to generate ${count} post(s).`);
+
+  if (!process.env.OPENAI_API_KEY) {
+    console.error("OPENAI_API_KEY is not set");
+    process.exit(1);
+  }
+
+  let queue = safeReadJSON(queuePath, []);
+  let used = safeReadJSON(usedPath, []);
+
+  if (queue.length === 0) {
+    console.log("No keywords left in keyword-queue.json");
+    process.exit(0);
+  }
+
+  fs.mkdirSync(postsDir, { recursive: true });
+
+  const actualCount = Math.min(count, queue.length);
+  for (let i = 0; i < actualCount; i++) {
+    const next = queue.shift();
+    await generatePost(next, queue, used);
+    console.log(`Successfully generated (${i + 1}/${actualCount})`);
+  }
+
+  fs.writeFileSync(queuePath, JSON.stringify(queue, null, 2), "utf8");
   fs.writeFileSync(usedPath, JSON.stringify(used, null, 2), "utf8");
 
-  console.log(`Generated post content/posts/${slug}.md`);
+  console.log("Batch generation complete.");
 }
 
 main().catch((err) => {
