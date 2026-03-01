@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.joefsanches.com"
+        }
+      ],
+      "destination": "https://joefsanches.com/:path*",
+      "permanent": true
+    }
+  ]
+}

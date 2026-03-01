@@ -13,6 +13,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://joefsanches.com";
 function generateSitemap() {
   const staticPages = [
     { url: "/", lastmod: new Date().toISOString().split("T")[0], priority: "1.0" },
+    { url: "/homes-for-sale-in-leander-tx", lastmod: new Date().toISOString().split("T")[0], priority: "0.9" },
   ];
 
   // Read all blog posts

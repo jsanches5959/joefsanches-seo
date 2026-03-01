@@ -84,9 +84,15 @@ export default function Home({ posts }) {
     "license": "Licensed Real Estate Agent - State of Texas"
   };
 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joefsanches.com';
+
   return (
     <>
       <Head>
+        <title>Joe Sanches | Leander & Austin TX Realtor | Homes for Sale</title>
+        <meta name="description" content="Joe Sanches is a top-rated Realtor in Leander, Cedar Park, and Austin, TX. Specializing in first-time buyers, new construction, and strategic home sales in Liberty Hill and Central Texas." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="canonical" href={baseUrl} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
