@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import Head from 'next/head';
 import fs from 'fs';
@@ -36,10 +37,10 @@ export default function Home({ posts }) {
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "RealEstateAgent",
     "@id": "https://joefsanches.com",
-    "name": "Joe Sanches - Real Estate Agent",
-    "description": "Licensed Real Estate Agent in Leander, TX specializing in buying and selling homes with strategic pricing and modern marketing.",
+    "name": "Joe Sanches - Leander & Austin TX Realtor",
+    "description": "Joe Sanches is a licensed Real Estate Agent in Leander, TX, specializing in residential property sales, first-time home buyers, and new construction in the greater Austin area.",
     "url": "https://joefsanches.com",
     "telephone": "+1-512-663-8867",
     "email": "hello@joefsanches.com",
@@ -65,10 +66,67 @@ export default function Home({ posts }) {
         "@type": "City",
         "name": "Cedar Park",
         "addressRegion": "TX"
+      },
+      {
+        "@type": "City",
+        "name": "Liberty Hill",
+        "addressRegion": "TX"
+      },
+      {
+        "@type": "City",
+        "name": "Round Rock",
+        "addressRegion": "TX"
+      },
+      {
+        "@type": "City",
+        "name": "Georgetown",
+        "addressRegion": "TX"
+      },
+      {
+        "@type": "City",
+        "name": "Pflugerville",
+        "addressRegion": "TX"
+      },
+      {
+        "@type": "City",
+        "name": "Hutto",
+        "addressRegion": "TX"
+      },
+      {
+        "@type": "City",
+        "name": "Lakeway",
+        "addressRegion": "TX"
+      },
+      {
+        "@type": "City",
+        "name": "Bee Cave",
+        "addressRegion": "TX"
+      },
+      {
+        "@type": "City",
+        "name": "Spicewood",
+        "addressRegion": "TX"
+      },
+      {
+        "@type": "City",
+        "name": "Lago Vista",
+        "addressRegion": "TX"
+      },
+      {
+        "@type": "City",
+        "name": "Jonestown",
+        "addressRegion": "TX"
       }
     ],
     "priceRange": "$300000-$1000000",
     "image": "https://joefsanches.com/joe.png",
+    "hasMap": "https://www.google.com/maps/place/Joe+Sanches+Realtor/@30.573489,-97.864239,15z/data=!4m6!3m5!1s0x8644d214a1f2e1b1:0x5e0f7c2a1b1e1a1!8m2!3d30.573489!4d-97.864239!16s%2Fg%2F11b6_2142f?hl=en&entry=ttu",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "30.573489",
+      "longitude": "-97.864239"
+    },
+    "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 08:00-20:00",
     "sameAs": [
       "https://www.facebook.com/joefsanches",
       "https://www.linkedin.com/in/joefsanches"
