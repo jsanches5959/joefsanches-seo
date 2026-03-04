@@ -1,5 +1,5 @@
 ---
-title: "Living in Austin & Leander: Families, Wealthy Hangouts, and Areas to Avoid (2026 Guide)"
+title: ""Living in Austin & Leander: Families, Wealthy Hangouts, and Areas to Avoid (2026 Guide)""
 slug: austin-leander-living-guide-families-wealthy-areas-to-avoid
 date: 2026-03-01T20:00:00Z
 description: "Get the real scoop on living in Austin and Leander in 2026. We answer where families live, where the wealthy hang out, and which areas you should avoid."

@@ -1,5 +1,5 @@
 ---
-title: "Leander Independent School District: A Comprehensive Review of its 47 Schools"
+title: ""Leander Independent School District: A Comprehensive Review of its 47 Schools""
 slug: leander-isd-schools-review-2026
 date: 2026-02-28T15:48:40Z
 ---
