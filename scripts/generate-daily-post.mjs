@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import Anthropic from "@anthropic-ai/sdk";
+import OpenAI from "openai";
 
 const root = process.cwd();
 const queuePath = path.join(root, "keyword-queue.json");
@@ -25,9 +25,9 @@ function slugify(str) {
 }
 
 async function generateContent(keyword) {
-  const client = new Anthropic();
-  const message = await client.messages.create({
-    model: "claude-haiku-4-5-20251001",
+  const client = new OpenAI();
+  const response = await client.chat.completions.create({
+    model: "gpt-4o-mini",
     max_tokens: 2048,
     messages: [
       {
@@ -48,7 +48,7 @@ Requirements:
       }
     ]
   });
-  return message.content[0].text;
+  return response.choices[0].message.content;
 }
 
 async function main() {
