@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: "20"
       - name: Install deps
-        run: npm install --no-fund --ignore-scripts --no-package-lock
+        run: pnpm install
       - name: Generate daily post
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
