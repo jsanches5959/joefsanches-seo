@@ -1,9 +1,9 @@
 import fs from "fs";
 import path from "path";
-import OpenAI from "openai";
+import Anthropic from "@anthropic-ai/sdk";
 import { execSync } from "child_process";
 
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 const root = process.cwd();
 const queuePath = path.join(root, "keyword-queue.json");
@@ -51,21 +51,19 @@ async function generatePost(keywordData, queue, used) {
     "- **Meta Description Suggestion:** Provide a concise (150-160 characters) meta description at the end of the post, optimized for the primary keyword and encouraging clicks.",
   ].join("\n");
 
-  const completion = await openai.chat.completions.create({
-    model: "gpt-4.1-mini",
+  const message = await anthropic.messages.create({
+    model: "claude-sonnet-4-6",
+    max_tokens: 4096,
     messages: [
-      { role: "system", content: "You write SEO real estate blog posts." },
       { role: "user", content: prompt },
     ],
-    temperature: 0.7,
-    max_tokens: 2000,
   });
 
-  const body = completion.choices?.[0]?.message?.content?.trim() || "";
+  const body = message.content?.[0]?.text?.trim() || "";
   const frontmatter = `---\ntitle: ${primary}\nslug: ${slug}\ndate: ${now}\n---\n\n`;
 
   fs.writeFileSync(path.join(postsDir, `${slug}.md`), frontmatter + body, "utf8");
-  
+
   used.push({ ...keywordData, slug, generated_at: now });
   return true;
 }
@@ -74,8 +72,8 @@ async function main() {
   const count = parseInt(process.argv[2]) || 1;
   console.log(`Requested to generate ${count} post(s).`);
 
-  if (!process.env.OPENAI_API_KEY) {
-    console.error("OPENAI_API_KEY is not set");
+  if (!process.env.ANTHROPIC_API_KEY) {
+    console.error("ANTHROPIC_API_KEY is not set");
     process.exit(1);
   }
 
