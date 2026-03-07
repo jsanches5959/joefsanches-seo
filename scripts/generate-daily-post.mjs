@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import Anthropic from "@anthropic-ai/sdk";
 
 const root = process.cwd();
 const queuePath = path.join(root, "keyword-queue.json");
@@ -23,7 +24,34 @@ function slugify(str) {
     .replace(/(^-|-$)/g, "");
 }
 
-function main() {
+async function generateContent(keyword) {
+  const client = new Anthropic();
+  const message = await client.messages.create({
+    model: "claude-haiku-4-5-20251001",
+    max_tokens: 2048,
+    messages: [
+      {
+        role: "user",
+        content: `Write a detailed SEO blog post for a Leander TX real estate website. The keyword/topic is: "${keyword}"
+
+Joe Sanches is a licensed Realtor based in Leander, TX. Military veteran. Phone: 512-663-8867. Email: hello@joefsanches.com.
+
+Requirements:
+- Write in markdown format (no frontmatter)
+- Start with a compelling H1 that includes the keyword
+- 600-900 words
+- Include practical, specific local info about Leander/Cedar Park/Austin TX area
+- Use H2 subheadings to break up sections
+- End with a CTA to contact Joe (phone + email)
+- No fluff, no filler — direct and useful
+- Do not wrap in code blocks`
+      }
+    ]
+  });
+  return message.content[0].text;
+}
+
+async function main() {
   const count = parseInt(process.argv[2]) || 1;
 
   let queue = safeReadJSON(queuePath, []);
@@ -37,7 +65,6 @@ function main() {
   fs.mkdirSync(postsDir, { recursive: true });
 
   const actualCount = Math.min(count, queue.length);
-  const pending = [];
 
   for (let i = 0; i < actualCount; i++) {
     const keywordData = queue.shift();
@@ -46,23 +73,20 @@ function main() {
     const now = new Date().toISOString();
     const filePath = path.join(postsDir, `${slug}.md`);
 
-    const frontmatter = `---\ntitle: "${primary}"\nslug: ${slug}\ndate: ${now}\n---\n\n<!-- CONTENT NEEDED -->\n`;
+    console.log(`Generating post for: "${primary}"...`);
+    const content = await generateContent(primary);
+
+    const frontmatter = `---\ntitle: "${primary}"\nslug: ${slug}\ndate: ${now}\n---\n\n${content}\n`;
     fs.writeFileSync(filePath, frontmatter, "utf8");
 
     used.push({ ...keywordData, slug, generated_at: now });
-    pending.push({ primary, slug, filePath });
+    console.log(`Created: ${filePath}`);
   }
 
-  fs.writeFileSync(queuePath, JSON.stringify(queue, null, 2), "utf8");
-  fs.writeFileSync(usedPath, JSON.stringify(used, null, 2), "utf8");
+  fs.writeFileSync(queuePath, JSON.stringify(queue, null, 2));
+  fs.writeFileSync(usedPath, JSON.stringify(used, null, 2));
 
-  console.log(`\nCreated ${actualCount} post skeleton(s). Ask Claude Code to write the content:\n`);
-  for (const { primary, filePath } of pending) {
-    console.log(`  Keyword: "${primary}"`);
-    console.log(`  File:    ${filePath}`);
-    console.log(`  Ask me:  "Write the SEO blog post for: ${primary}"`);
-    console.log();
-  }
+  console.log(`\nDone. Created ${actualCount} post(s).`);
 }
 
 main();
