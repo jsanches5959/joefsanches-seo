@@ -14,6 +14,7 @@ function generateSitemap() {
   const staticPages = [
     { url: "/", lastmod: new Date().toISOString().split("T")[0], priority: "1.0" },
     { url: "/homes-for-sale-in-leander-tx", lastmod: new Date().toISOString().split("T")[0], priority: "0.9" },
+    { url: "/property-tax-leander-tx", lastmod: new Date().toISOString().split("T")[0], priority: "0.95" },
   ];
 
   // Read all blog posts
