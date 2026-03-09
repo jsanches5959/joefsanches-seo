@@ -210,6 +210,90 @@ export default function Home({ posts }) {
           </div>
         </section>
 
+        {/* Hub Pages Navigation */}
+        <section style={{ marginTop: '48px', marginBottom: '48px' }}>
+          <h2 style={{ fontSize: '20px', fontWeight: 700, color: 'white', marginBottom: '6px' }}>Leander TX Real Estate Guides</h2>
+          <p style={{ color: 'var(--muted)', fontSize: '14px', marginBottom: '24px' }}>Everything you need to buy, sell, or move to Leander TX.</p>
+
+          {/* Buyer & Seller Hubs */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '12px', marginBottom: '32px' }}>
+            {[
+              { href: '/buy-home-leander-tx', label: 'Buy a Home', desc: 'Process, costs & neighborhoods' },
+              { href: '/sell-my-house-leander-tx', label: 'Sell My House', desc: 'Pricing, timing & Joe\'s process' },
+              { href: '/whats-my-home-worth', label: "What's My Home Worth?", desc: 'Free CMA — no obligation' },
+              { href: '/leander-home-buyer-guide', label: 'Buyer\'s Guide', desc: 'Complete 2026 relocation guide' },
+              { href: '/moving-to-leander-tx', label: 'Moving to Leander', desc: 'Neighborhoods, schools & commute' },
+              { href: '/leander-real-estate-market-2026', label: 'Market Report 2026', desc: 'Prices, trends & forecast' },
+            ].map(({ href, label, desc }) => (
+              <Link key={href} href={href} style={{ textDecoration: 'none' }}>
+                <div style={{
+                  background: 'rgba(107,120,84,.06)', border: '1px solid rgba(107,120,84,.2)',
+                  borderRadius: '10px', padding: '16px', cursor: 'pointer',
+                  transition: 'border-color .2s'
+                }}>
+                  <div style={{ color: 'var(--accent-light)', fontWeight: 600, fontSize: '14px', marginBottom: '4px' }}>{label}</div>
+                  <div style={{ color: 'var(--muted)', fontSize: '13px' }}>{desc}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* New Construction */}
+          <h3 style={{ fontSize: '16px', fontWeight: 600, color: 'white', marginBottom: '12px' }}>New Construction</h3>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '12px', marginBottom: '32px' }}>
+            {[
+              { href: '/new-construction-leander-tx', label: 'New Construction Hub', desc: 'All builders & communities' },
+              { href: '/new-construction-crystal-falls', label: 'Crystal Falls', desc: 'Lennar · $340K–$520K' },
+              { href: '/new-construction-bryson', label: 'Bryson', desc: 'KB Home · $320K–$450K' },
+              { href: '/new-construction-northline', label: 'Northline', desc: 'Taylor Morrison · $380K–$560K' },
+              { href: '/new-construction-larkspur', label: 'Larkspur', desc: 'David Weekley · $420K–$580K' },
+              { href: '/new-construction-deerbrooke', label: 'Deerbrooke', desc: 'Meritage · $340K–$480K' },
+              { href: '/new-construction-travisso', label: 'Travisso', desc: 'Toll Bros · $500K–$850K' },
+              { href: '/lennar-homes-leander-tx', label: 'Lennar Homes', desc: 'Crystal Falls & more' },
+              { href: '/kb-home-leander-tx', label: 'KB Home', desc: 'Built-to-order at Bryson' },
+              { href: '/taylor-morrison-leander-tx', label: 'Taylor Morrison', desc: 'Northline & Larkspur' },
+              { href: '/david-weekley-leander-cedar-park', label: 'David Weekley', desc: 'Award-winning builder' },
+              { href: '/meritage-homes-leander-tx', label: 'Meritage Homes', desc: '#1 energy-efficient builder' },
+            ].map(({ href, label, desc }) => (
+              <Link key={href} href={href} style={{ textDecoration: 'none' }}>
+                <div style={{
+                  background: 'rgba(107,120,84,.06)', border: '1px solid rgba(107,120,84,.2)',
+                  borderRadius: '10px', padding: '16px', cursor: 'pointer'
+                }}>
+                  <div style={{ color: 'var(--accent-light)', fontWeight: 600, fontSize: '14px', marginBottom: '4px' }}>{label}</div>
+                  <div style={{ color: 'var(--muted)', fontSize: '13px' }}>{desc}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Neighborhoods & Schools */}
+          <h3 style={{ fontSize: '16px', fontWeight: 600, color: 'white', marginBottom: '12px' }}>Neighborhoods & Schools</h3>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '12px' }}>
+            {[
+              { href: '/leander-neighborhoods', label: 'Neighborhoods Guide', desc: 'Every community compared' },
+              { href: '/leander-isd-schools', label: 'Leander ISD Schools', desc: 'Ratings, zones & campuses' },
+              { href: '/property-tax-leander-tx', label: 'Property Tax Guide', desc: 'Every MUD district & rate' },
+              { href: '/neighborhoods/crystal-falls', label: 'Crystal Falls', desc: '$420K median · LISD' },
+              { href: '/neighborhoods/bryson', label: 'Bryson', desc: '$385K median · resort pool' },
+              { href: '/neighborhoods/travisso', label: 'Travisso', desc: '$620K median · Hill Country' },
+              { href: '/neighborhoods/northline', label: 'Northline', desc: '$455K median · walkable' },
+              { href: '/neighborhoods/santa-rita-ranch', label: 'Santa Rita Ranch', desc: 'Liberty Hill · $340K+' },
+              { href: '/neighborhoods/wolf-ranch', label: 'Wolf Ranch', desc: 'Georgetown · $380K+' },
+            ].map(({ href, label, desc }) => (
+              <Link key={href} href={href} style={{ textDecoration: 'none' }}>
+                <div style={{
+                  background: 'rgba(107,120,84,.06)', border: '1px solid rgba(107,120,84,.2)',
+                  borderRadius: '10px', padding: '16px', cursor: 'pointer'
+                }}>
+                  <div style={{ color: 'var(--accent-light)', fontWeight: 600, fontSize: '14px', marginBottom: '4px' }}>{label}</div>
+                  <div style={{ color: 'var(--muted)', fontSize: '13px' }}>{desc}</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         <div className="grid">
           <main className="main">
             <h3 style={{ marginBottom: '20px', fontSize: '18px', color: 'white' }}>Latest Insights</h3>
