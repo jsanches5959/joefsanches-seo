@@ -247,7 +247,7 @@ export default function NorthlinePage({ communityData, liveHomes }) {
                 {[
                   ['Walkable Village Design', 'Northline is planned around a commercial village core — groceries, restaurants, coffee shops, and services are walkable from most homesites. No car needed for daily errands.'],
                   ['MetroRail Station Access', 'The Leander MetroRail station is minutes away, providing a congestion-free commute option toward the Domain, UT, and downtown Austin.'],
-                  ['Tech Corridor Location', 'Apple's 3M campus on 620, the Domain, and north Austin's tech cluster are all 18–25 minutes away — making Northline a top pick for tech workers.'],
+                  ['Tech Corridor Location', "Apple's 3M campus on 620, the Domain, and north Austin's tech cluster are all 18–25 minutes away — making Northline a top pick for tech workers."],
                   ['Taylor Morrison Quality', "Taylor Morrison is consistently rated one of the top national builders for customer satisfaction. The Invitation to Dream buying process provides more personalization than most production builders."],
                   ['Parks and Trails', 'Northline integrates parks, pocket greens, and a connected trail system throughout the community. Multiple dog parks and playgrounds are planned.'],
                   ['LISD Schools', 'Northline feeds Leander ISD — one of the top-rated school districts in Texas by academic performance and facilities.'],

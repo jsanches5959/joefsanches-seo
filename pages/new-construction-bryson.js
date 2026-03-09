@@ -249,7 +249,7 @@ export default function BrysonPage({ communityData, liveHomes }) {
                   ['Resort Amenity Center', 'The Bryson amenity center features a resort-style pool, splash pad, covered pavilion, playgrounds, and sports courts — all HOA-covered.'],
                   ['ENERGY STAR Certified', 'Every KB Home at Bryson is ENERGY STAR certified. Lower utility bills and a more comfortable home year-round, especially in Texas summers.'],
                   ['Trail & Green Belt Network', 'Over 4 miles of hike-and-bike trails connect the community. Many lots back to green belts for added privacy.'],
-                  ['183A Commute', 'Bryson's north Leander location gives quick access to the 183A Toll, keeping the Domain under 25 minutes and downtown Austin under 40 minutes.'],
+                  ['183A Commute', "Bryson's north Leander location gives quick access to the 183A Toll, keeping the Domain under 25 minutes and downtown Austin under 40 minutes."],
                 ].map(([title, desc]) => (
                   <div key={title} className="card" style={{ background: 'rgba(107,120,84,.05)', borderColor: 'rgba(107,120,84,.2)' }}>
                     <h3 style={{ color: 'var(--accent-light)', margin: '0 0 8px', fontSize: '15px' }}>{title}</h3>

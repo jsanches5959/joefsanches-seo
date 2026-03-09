@@ -360,7 +360,7 @@ export default function NeighborhoodPage({ neighborhood }) {
             </Section>
 
             {/* Commute */}
-            <Section id="commute" title="Commute Times from {name}".replace('{name}', name)}>
+            <Section id="commute" title={`Commute Times from ${name}`}>
               <div className="card">
                 <QuickFactRow label="To Downtown Austin" value={commuteAustin} />
                 <QuickFactRow label="To the Domain / Apple Campus" value={commuteDomain} />
@@ -372,7 +372,7 @@ export default function NeighborhoodPage({ neighborhood }) {
             </Section>
 
             {/* Property Tax */}
-            <Section id="taxes" title="Property Tax in {name}".replace('{name}', name)}>
+            <Section id="taxes" title={`Property Tax in ${name}`}>
               <div className="card">
                 <QuickFactRow label="Combined Tax Rate (est. 2026)" value={taxRate} />
                 <QuickFactRow label="MUD District" value={mudDistrict ? 'Yes — included in rate above' : 'No — this rate reflects no MUD overhead'} />
@@ -424,7 +424,7 @@ export default function NeighborhoodPage({ neighborhood }) {
                 <a href="tel:5126638867" className="btn accent" style={{ display: 'block', textAlign: 'center', padding: '12px', justifyContent: 'center' }}>
                   Call 512-663-8867
                 </a>
-                <a href="mailto:hello@joefsanches.com?subject=Inquiry about {name}".replace('{name}', name)} className="btn" style={{ display: 'block', textAlign: 'center', padding: '12px', marginTop: '8px', justifyContent: 'center' }}>
+                <a href={`mailto:hello@joefsanches.com?subject=Inquiry about ${name}`} className="btn" style={{ display: 'block', textAlign: 'center', padding: '12px', marginTop: '8px', justifyContent: 'center' }}>
                   Email Joe
                 </a>
               </div>
