@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import OpenAI from "openai";
+import Anthropic from "@anthropic-ai/sdk";
 
 const root = process.cwd();
 const queuePath = path.join(root, "keyword-queue.json");
@@ -25,15 +25,12 @@ function slugify(str) {
 }
 
 async function generateContent(keyword) {
-  const client = new OpenAI();
-  const response = await client.chat.completions.create({
-    model: "gpt-4.1-mini",
+  const client = new Anthropic();
+  const response = await client.messages.create({
+    model: "claude-opus-4-8",
     max_tokens: 2048,
+    system: "You are an expert SEO content strategist and real estate writer specializing in the Leander, Texas market. Your goal is to create high-quality, authoritative, and helpful content that ranks well on Google and provides genuine value to potential homebuyers and sellers.",
     messages: [
-      {
-        role: "system",
-        content: "You are an expert SEO content strategist and real estate writer specializing in the Leander, Texas market. Your goal is to create high-quality, authoritative, and helpful content that ranks well on Google and provides genuine value to potential homebuyers and sellers."
-      },
       {
         role: "user",
         content: `Write a comprehensive, high-quality SEO blog post for Joe Sanches, a licensed Realtor and military veteran based in Leander, TX.
@@ -67,7 +64,7 @@ DO NOT use generic filler text. DO NOT wrap the response in code blocks.`
       }
     ]
   });
-  return response.choices[0].message.content;
+  return response.content[0].text;
 }
 
 async function main() {
