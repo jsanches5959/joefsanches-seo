@@ -37,14 +37,22 @@ export async function getStaticProps({ params }) {
     }
   }
 
-  // Extract first 160 characters for meta description
-  const plainText = content.replace(/[#*`]/g, '').substring(0, 160);
-  const description = data.description || plainText || 'Read this article by Joe Sanches, Real Estate Expert in Leander, TX';
+  // Extract H1 from content for a proper page title
+  const h1Match = content.match(/^#\s+(.+)$/m);
+  const h1Title = h1Match ? h1Match[1].trim() : null;
+  const title = h1Title || data.title || params.slug;
+
+  // Extract first real paragraph (skip headings) for meta description
+  const firstParagraph = content
+    .split('\n')
+    .map(l => l.trim())
+    .find(l => l.length > 60 && !l.startsWith('#') && !l.startsWith('-') && !l.startsWith('*') && !l.startsWith('!'));
+  const description = data.description || (firstParagraph ? firstParagraph.substring(0, 160) : null) || 'Read this article by Joe Sanches, Real Estate Expert in Leander, TX';
 
   return {
     props: {
       slug: params.slug,
-      title: data.title || params.slug,
+      title,
       date,
       contentHtml,
       description,
