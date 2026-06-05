@@ -1,5 +1,6 @@
 ---
-title: sell my house fast leander
+title: "Sell My House Fast in Leander TX: What Actually Works in 2026"
+description: "Need to sell your house fast in Leander TX? Here's how to price, prep, and market your home for a quick sale in the current market — from a local agent who knows Leander."
 slug: sell-my-house-fast-leander
 date: 2026-02-27T20:26:48.166Z
 ---
@@ -110,7 +111,7 @@ Costs include agent commissions, closing fees, potential repairs, and staging ex
 
 If you’re ready to sell your home quickly and for top dollar in Leander, Cedar Park, or the greater Austin area, I’m here to help. With my deep local knowledge and proven strategies, we’ll get your home sold fast while minimizing stress.
 
-Call or text me at **(512) XXX-XXXX** for a free consultation, or visit [joefsanches.com](https://joefsanches.com) to fill out a contact form. Let’s make your next move a successful one!
+Call or text me at **512-663-8867** for a free consultation, or visit [joefsanches.com](https://joefsanches.com) to fill out a contact form. Let’s make your next move a successful one!
 
 ---
 

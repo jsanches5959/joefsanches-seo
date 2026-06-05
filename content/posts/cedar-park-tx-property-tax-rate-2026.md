@@ -124,7 +124,7 @@ Understanding property taxes before you buy can save you hundreds of dollars per
 
 If you're weighing Cedar Park against Leander, Austin, or other nearby areas, I'm happy to run a full side-by-side comparison including taxes, schools, and commute for any addresses you're considering.
 
-**Call or text: (512) 522-8457**
+**Call or text: 512-663-8867**
 **Online: [joefsanches.com](https://joefsanches.com)**
 
 ---
