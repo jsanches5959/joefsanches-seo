@@ -115,6 +115,16 @@ The strong demand means that being prepared with an experienced agent and a clea
 
 ---
 
+## Browse Live New Construction Inventory
+
+**Want to see what's actually available right now?**
+
+[Search New Construction Homes in Leander →](https://a.nhb.app/u/joe)
+
+Live listings across every community and builder — Lennar, KB Home, Meritage, Taylor Morrison, and more. When you click, I'm notified and can answer questions about anything that catches your eye.
+
+---
+
 ## Ready to Find Your New Construction Home in Leander TX 2026?
 
 If you’re serious about buying a new home in Leander next year, let’s connect. I’m Joe Sanches — a dedicated Realtor, military veteran, and local expert committed to helping you navigate this exciting market with confidence.

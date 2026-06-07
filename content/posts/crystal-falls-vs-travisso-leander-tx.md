@@ -104,6 +104,14 @@ I'm Joe Sanches, a licensed Realtor working exclusively in Leander and Cedar Par
 
 ---
 
+**Want to see what's currently available in Crystal Falls or Travisso?**
+
+[Browse New Construction Homes in Both Communities →](https://a.nhb.app/u/joe)
+
+Live inventory, current pricing, and available lots — I'm notified when you search and can give you a real-world comparison of specific homes in each community.
+
+---
+
 ## Related Reading
 
 - [Pros and Cons of Living in Crystal Falls Leander TX](/posts/pros-and-cons-of-living-in-crystal-falls-leander)

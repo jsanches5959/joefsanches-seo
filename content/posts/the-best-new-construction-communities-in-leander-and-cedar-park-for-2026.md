@@ -131,6 +131,14 @@ Choosing the best new construction community in Leander or Cedar Park for 2026 m
 
 ---
 
+**See which communities have homes available right now:**
+
+[Browse Live New Construction Inventory →](https://a.nhb.app/u/joe)
+
+Updated daily. Search by community, price range, and move-in date — and I'm notified when you search so I can follow up with anything that fits your criteria.
+
+---
+
 ## Related Reading
 
 - [New Construction in Leander TX 2026: Builders & Prices](/posts/new-construction-in-leander-tx)

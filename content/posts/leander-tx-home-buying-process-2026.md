@@ -132,6 +132,16 @@ New construction adds 4–7 months for a build, or 30–60 days for a spec home.
 
 ---
 
+## Browse Available Homes Right Now
+
+Whether you're buying new construction or resale, here's live inventory across Leander and Cedar Park:
+
+[Search Available Homes in Leander →](https://a.nhb.app/u/joe)
+
+New construction homes from $320K to $850K — all communities, all builders, updated daily. I'm notified when you search so I can follow up with context on anything you find.
+
+---
+
 ## Questions? Let's Talk.
 
 I'm Joe Sanches — a licensed Realtor and military veteran working exclusively in Leander, Cedar Park, and the greater Austin area. If you're ready to start the process or just want to understand what your budget buys right now, call me.

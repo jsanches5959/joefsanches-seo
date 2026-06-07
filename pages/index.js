@@ -240,7 +240,7 @@ export default function Home({ posts }) {
 
           {/* New Construction */}
           <h3 style={{ fontSize: '16px', fontWeight: 600, color: 'white', marginBottom: '12px' }}>New Construction</h3>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '12px', marginBottom: '32px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '12px', marginBottom: '16px' }}>
             {[
               { href: '/new-construction-leander-tx', label: 'New Construction Hub', desc: 'All builders & communities' },
               { href: '/new-construction-crystal-falls', label: 'Crystal Falls', desc: 'Lennar · $340K–$520K' },
@@ -265,6 +265,28 @@ export default function Home({ posts }) {
                 </div>
               </Link>
             ))}
+          </div>
+          <div style={{
+            background: 'rgba(107,120,84,0.08)', border: '1px solid rgba(107,120,84,0.3)',
+            borderRadius: '12px', padding: '20px 24px', marginBottom: '32px',
+            display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px'
+          }}>
+            <div>
+              <div style={{ color: 'white', fontWeight: 600, fontSize: '15px', marginBottom: '4px' }}>Browse All New Homes in Leander & Cedar Park</div>
+              <div style={{ color: 'var(--muted)', fontSize: '13px' }}>Live inventory updated daily — search by price, community, and move-in date</div>
+            </div>
+            <a
+              href="https://a.nhb.app/u/joe"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-block', background: 'var(--accent)', color: 'white',
+                padding: '10px 20px', borderRadius: '8px', fontWeight: 600,
+                fontSize: '14px', textDecoration: 'none', whiteSpace: 'nowrap'
+              }}
+            >
+              Search New Homes →
+            </a>
           </div>
 
           {/* Neighborhoods & Schools */}

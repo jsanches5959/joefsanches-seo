@@ -156,6 +156,12 @@ Choosing the **best neighborhoods in Leander TX for families 2026** requires loc
 
 Contact me, Joe F. Sanches, for personalized assistance tailored to your family’s unique needs. Call or text me anytime at 512-663-8867 or visit [joefsanches.com](http://joefsanches.com) to fill out a contact form. Let’s find the neighborhood where your family will thrive!
 
+**See what's available in these neighborhoods right now:**
+
+[Browse New Construction Homes in Leander →](https://a.nhb.app/u/joe)
+
+Live inventory across Crystal Falls, Bryson, Northline, Travisso, and every other community — I'll help you narrow it down to the neighborhoods that fit your kids' school zone and your budget.
+
 ---
 
 ## Related Reading

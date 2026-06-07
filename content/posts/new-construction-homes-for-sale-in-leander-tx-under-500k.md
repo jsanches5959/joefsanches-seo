@@ -147,6 +147,14 @@ As a trusted agent deeply rooted in the Leander, Cedar Park, and Austin communit
 
 ---
 
+**Browse what's actually available right now:**
+
+[Search New Construction Homes Under $500K in Leander →](https://a.nhb.app/u/joe)
+
+Live listings across every community — Lennar, KB Home, Meritage, DR Horton, and more. Filter by price, move-in date, and neighborhood.
+
+---
+
 ## Related Reading
 
 - [VA Loan Homes in Leander TX: A Veteran's Complete Guide](/posts/va-loan-homes-leander-tx)

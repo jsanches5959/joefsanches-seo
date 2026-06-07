@@ -131,6 +131,12 @@ Call or text me today at 512-663-8867 to schedule your personalized consultation
 - Discover how to **Finance Your Texas Home** with tips in Understanding Home Loans in Austin  
 - Get expert advice on the **Home Buying Process** in Your Step-by-Step Guide to Buying a Home in Cedar Park
 
+**Ready to start searching?**
+
+[Browse Available Homes in Leander →](https://a.nhb.app/u/joe)
+
+New construction from $320K, resale, and everything in between — I'll help you match what you find to the right first-time buyer program for your situation.
+
 ---
 
 ## Related Reading

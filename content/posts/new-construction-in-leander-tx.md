@@ -81,4 +81,29 @@ When it comes to financing new construction, buyers typically have several optio
 
 ### 2. Are there any additional costs associated with buying new construction?
 
-Yes, buying new construction may come with additional costs such as closing costs, upgrades, and landscaping. Be sure to factor these into your budget. Discussing potential costs with your builder can help you understand what
+Yes, buying new construction may come with additional costs such as closing costs, upgrades, and landscaping. Be sure to factor these into your budget. Discussing potential costs with your builder can help you understand what to expect.
+
+---
+
+## Browse Live New Construction Listings
+
+**Want to see what's available right now?**
+
+[Search New Construction Homes in Leander →](https://a.nhb.app/u/joe)
+
+Live inventory across every community — Lennar, KB Home, Meritage, Taylor Morrison, David Weekley, and more. Homes from $320K to $850K, updated daily.
+
+---
+
+**Questions? Let's talk.**
+
+I'm Joe Sanches — a licensed Realtor and military veteran working in Leander and Cedar Park. I'll help you negotiate builder incentives, compare communities, and get the most out of your purchase.
+
+**Call or text:** 512-663-8867  
+**Email:** hello@joefsanches.com  
+
+## Related Reading
+
+- [New Construction Homes for Sale in Leander TX Under $500K](/posts/new-construction-homes-for-sale-in-leander-tx-under-500k)
+- [Builder Incentives in Leander TX: What's Actually Available in 2026](/posts/builder-incentives-leander-tx-june-2026)
+- [The Best New Construction Communities in Leander and Cedar Park for 2026](/posts/the-best-new-construction-communities-in-leander-and-cedar-park-for-2026)
