@@ -1,5 +1,6 @@
 ---
-title: top rated schools in leander isd neighborhoods
+title: "Top-Rated Schools in Leander ISD: Best Neighborhoods by Campus Zone in 2026"
+description: "Which Leander ISD schools are rated highest and which neighborhoods feed them? A real estate agent's guide to buying in the right school zone in Leander, TX."
 slug: top-rated-schools-in-leander-isd-neighborhoods
 date: 2026-02-27T21:31:56.394Z
 ---

@@ -1,5 +1,6 @@
 ---
-title: leander tx real estate market trends 2026
+title: "Leander TX Real Estate Market Trends 2026: Prices, Inventory & What's Coming"
+description: "What's actually happening in Leander's real estate market in 2026 — median prices, days on market, inventory levels, and what buyers and sellers should expect."
 slug: leander-tx-real-estate-market-trends-2026
 date: 2026-02-28T14:09:52.734Z
 ---

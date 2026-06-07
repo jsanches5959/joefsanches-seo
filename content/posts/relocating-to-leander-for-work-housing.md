@@ -1,5 +1,6 @@
 ---
-title: relocating to leander for work housing
+title: "Relocating to Leander TX for Work: Housing Guide for Job Movers in 2026"
+description: "Moving to Leander TX for a job? Here's where to live based on where you work — commute maps, neighborhood comparisons, and what your budget actually buys in 2026."
 slug: relocating-to-leander-for-work-housing
 date: 2026-02-27T20:52:29.298Z
 ---

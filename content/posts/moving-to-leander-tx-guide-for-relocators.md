@@ -1,5 +1,6 @@
 ---
-title: moving to leander tx guide for relocators
+title: "Moving to Leander TX: A Relocator's Honest Guide to Neighborhoods & Housing"
+description: "Everything out-of-state relocators need to know before moving to Leander, TX — neighborhoods, property taxes, commutes, MUD districts, and what to watch out for."
 slug: moving-to-leander-tx-guide-for-relocators
 date: 2026-02-27T21:32:56.767Z
 ---

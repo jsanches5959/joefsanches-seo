@@ -1,5 +1,6 @@
 ---
-title: investment properties leander texas
+title: "Investment Properties in Leander Texas: What the Numbers Look Like in 2026"
+description: "Is Leander a good market for real estate investors in 2026? Honest cap rates, rental demand, and which neighborhoods make sense for buy-and-hold or fix-and-flip."
 slug: investment-properties-leander-texas
 date: 2026-02-27T20:52:51.750Z
 ---

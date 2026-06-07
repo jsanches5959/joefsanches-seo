@@ -1,5 +1,6 @@
 ---
-title: homes under 450k leander tx
+title: "Homes Under $450K in Leander TX: Best Value Neighborhoods for 2026 Buyers"
+description: "Where to find the best homes under $450K in Leander, TX in 2026. Summerlyn, Block House Creek, Palmera Ridge, and more — with real price ranges from a local Realtor."
 slug: homes-under-450k-leander-tx
 date: 2026-02-26T14:04:49.614Z
 ---

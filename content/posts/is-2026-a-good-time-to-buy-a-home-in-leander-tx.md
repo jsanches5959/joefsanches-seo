@@ -1,5 +1,6 @@
 ---
-title: is 2026 a good time to buy a home in leander tx
+title: "Is 2026 a Good Time to Buy a Home in Leander TX? A Local Agent's Honest Answer"
+description: "A straight answer from a Leander Realtor: inventory is up, sellers are negotiating, and prices are stable. Here's what the 2026 market means for buyers right now."
 slug: is-2026-a-good-time-to-buy-a-home-in-leander-tx
 date: 2026-03-01T12:15:23.027Z
 ---
