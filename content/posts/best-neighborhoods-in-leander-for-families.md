@@ -76,7 +76,7 @@ Leander offers a variety of neighborhoods that cater specifically to families, e
 
 If you're looking to relocate to one of the best neighborhoods in Leander for families, I’m here to help! As a local real estate expert, I can provide you with the latest listings, insights, and guidance to make your move as seamless as possible. 
 
-Feel free to call or text me at [Your Number] for personalized assistance or fill out the contact form below, and let’s find your family’s dream home in Leander!
+Feel free to call or text me at 512-663-8867 for personalized assistance or fill out the contact form below, and let’s find your family’s dream home in Leander!
 
 ### FAQ
 
