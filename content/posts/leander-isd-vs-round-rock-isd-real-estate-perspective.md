@@ -122,7 +122,7 @@ Whether you're leaning Leander ISD, Round Rock ISD, or still on the fence, I can
 
 This is exactly the kind of local knowledge that makes the difference between a good home purchase and a great one.
 
-**Call or text me directly: (512) 522-8457**
+**Call or text me directly: 512-663-8867**
 **Or fill out the contact form at [joefsanches.com](https://joefsanches.com)**
 
 I work personally with every client — no handoffs, no call centers. Just straight answers from someone who lives and works in this market every day.
@@ -132,5 +132,3 @@ I work personally with every client — no handoffs, no call centers. Just strai
 *Want to go deeper? Check out my guide to [the best neighborhoods in Leander for families](/posts/best-neighborhoods-in-leander-tx-for-families-2026) and my breakdown of [what $500k buys you in Cedar Park vs. Leander](/posts/what-500k-buys-you-in-cedar-park-vs-leander-2026).*
 
 ---
-
-**Meta description:** Leander ISD vs Round Rock ISD — a real estate agent's honest comparison. Learn which district fits your family, budget, and home search in the greater Austin area.

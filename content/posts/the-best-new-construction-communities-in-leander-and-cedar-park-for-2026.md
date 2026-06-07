@@ -127,18 +127,12 @@ A: Yes, many offer parks, trails, and proximity to schools, making them excellen
 
 Choosing the best new construction community in Leander or Cedar Park for 2026 means balancing lifestyle, budget, and future growth. Whether you crave hill country luxury, family-friendly parks, or easy Austin commutes, these communities deliver. For tailored guidance on finding your dream home or selling your current property, reach out to me, Joe F. Sanches—your trusted local real estate expert.
 
-**Call or text me today at (512) XXX-XXXX** to discuss your goals, ask questions, or schedule a private tour of new construction homes. You can also visit [joefsanches.com](https://joefsanches.com) to fill out a contact form and get started.
+**Call or text me today at 512-663-8867** to discuss your goals, ask questions, or schedule a private tour of new construction homes. You can also visit [joefsanches.com](https://joefsanches.com) to fill out a contact form and get started.
 
 ---
 
-### Suggested Internal Links for Further Reading
+## Related Reading
 
-- Learn more about the **Leander Real Estate Market Trends** in our guide to [Leander’s Growing Housing Market](https://joefsanches.com/leander-housing-market)  
-- Discover family-friendly amenities in Cedar Park with our post on [Top Parks and Recreation in Cedar Park](https://joefsanches.com/cedar-park-parks)  
-- Planning a move? Check out [How to Navigate New Construction Home Buying](https://joefsanches.com/new-construction-home-buying-guide) for expert tips
-
----
-
-### Meta Description
-
-Discover the best new construction communities in Leander and Cedar Park for 2026. Expert insights, top neighborhoods, and local tips from trusted agent Joe F. Sanches.
+- [New Construction in Leander TX 2026: Builders & Prices](/posts/new-construction-in-leander-tx)
+- [VA Loan Homes in Leander TX: A Veteran's Complete Guide](/posts/va-loan-homes-leander-tx)
+- [Homes for Sale in Leander TX Under $500K: 2026 Guide](/posts/homes-for-sale-leander-tx-under-500k-2026)

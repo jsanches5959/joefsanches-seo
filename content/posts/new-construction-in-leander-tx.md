@@ -1,5 +1,6 @@
 ---
-title: new construction in leander tx
+title: "New Construction in Leander TX 2026: Active Communities, Builders & Prices"
+description: "The complete guide to new construction homes in Leander, TX for 2026 — which builders are active, what communities are open, and how to navigate builder incentives."
 slug: new-construction-in-leander-tx
 date: 2026-02-20T07:10:51.196Z
 ---

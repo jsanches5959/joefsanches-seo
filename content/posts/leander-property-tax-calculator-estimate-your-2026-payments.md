@@ -135,17 +135,12 @@ Estimating your 2026 property tax payments with a **Leander Property Tax Calcula
 
 ### Ready to get a personalized estimate or discuss your real estate goals?
 
-Call or text me at **(512) XXX-XXXX** or visit [joefsanches.com](http://joefsanches.com) to fill out a contact form. Let’s work together to find your perfect home and ensure you understand every financial detail before making a decision.
+Call or text me at **512-663-8867** or visit [joefsanches.com](http://joefsanches.com) to fill out a contact form. Let’s work together to find your perfect home and ensure you understand every financial detail before making a decision.
 
 ---
 
-## Internal Linking Opportunities
+## Related Reading
 
-- Learn more about preparing your budget for a new home purchase in Leander in our guide to [“How to Budget for Buying a Home in Leander”](#).
-- Discover the latest market trends affecting property taxes in Cedar Park by reading [“Cedar Park Real Estate Market Insights 2026”](#).
-- Understand how school districts impact property values in the Austin area with our article [“Navigating School Districts and Home Values in Austin”](#).
-
----
-
-**Meta Description:**  
-Estimate your 2026 Leander property tax payments accurately with our comprehensive Leander Property Tax Calculator guide. Expert tips for buyers & sellers in Leander, Cedar Park & Austin.
+- [Leander vs Cedar Park Property Taxes 2026: Real Numbers](/posts/leander-vs-cedar-park-property-taxes)
+- [Homestead Exemption in Leander TX: How to Lower Your Tax Bill](/posts/homestead-exemption-leander-tx-2026)
+- [How MUD Taxes Affect Your Leander Property Tax Bill](/posts/how-mud-taxes-affect-your-total-leander-property-tax-bill)

@@ -37,22 +37,21 @@ export async function getStaticProps({ params }) {
     }
   }
 
-  // Extract H1 from content for a proper page title
+  // Extract H1 from content for page title
   const h1Match = content.match(/^#\s+(.+)$/m);
   const h1Title = h1Match ? h1Match[1].trim() : null;
-  const title = h1Title || data.title || params.slug;
 
-  // Extract first real paragraph (skip headings) for meta description
+  // Find first real paragraph (skip headings, bullets, images, empty lines)
   const firstParagraph = content
     .split('\n')
     .map(l => l.trim())
-    .find(l => l.length > 60 && !l.startsWith('#') && !l.startsWith('-') && !l.startsWith('*') && !l.startsWith('!'));
-  const description = data.description || (firstParagraph ? firstParagraph.substring(0, 160) : null) || 'Read this article by Joe Sanches, Real Estate Expert in Leander, TX';
+    .find(l => l.length > 60 && !l.startsWith('#') && !l.startsWith('-') && !l.startsWith('*') && !l.startsWith('!') && !l.startsWith('|') && !l.startsWith('>'));
+  const description = data.description || (firstParagraph ? firstParagraph.replace(/\*\*/g, '').substring(0, 160) : null) || 'Joe Sanches is a licensed Realtor and military veteran serving buyers and sellers in Leander, Cedar Park, and greater Austin.';
 
   return {
     props: {
       slug: params.slug,
-      title,
+      title: data.title || h1Title || params.slug,
       date,
       contentHtml,
       description,

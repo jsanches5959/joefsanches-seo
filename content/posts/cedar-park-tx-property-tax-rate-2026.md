@@ -124,7 +124,7 @@ Understanding property taxes before you buy can save you hundreds of dollars per
 
 If you're weighing Cedar Park against Leander, Austin, or other nearby areas, I'm happy to run a full side-by-side comparison including taxes, schools, and commute for any addresses you're considering.
 
-**Call or text: (512) 522-8457**
+**Call or text: 512-663-8867**
 **Online: [joefsanches.com](https://joefsanches.com)**
 
 ---
@@ -132,5 +132,3 @@ If you're weighing Cedar Park against Leander, Austin, or other nearby areas, I'
 *Also helpful: [Leander vs Cedar Park Property Taxes](/posts/leander-vs-cedar-park-property-taxes) and [How MUD Taxes Affect Your Total Leander Property Tax Bill](/posts/how-mud-taxes-affect-your-total-leander-property-tax-bill)*
 
 ---
-
-**Meta description:** What is the Cedar Park TX property tax rate in 2026? Get the average rate, breakdown by taxing entity, real dollar estimates, and homestead exemption tips from a local agent.

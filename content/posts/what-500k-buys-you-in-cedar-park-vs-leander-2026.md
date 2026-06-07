@@ -152,7 +152,7 @@ Knowing the market is half the battle. The other half is having an agent who kno
 
 Whether you're drawn to Cedar Park's established charm or Leander's newer, larger homes, I'm here to help you make the most of your $500k budget.
 
-Call or text me at **(512) XXX-XXXX** or visit [joefsanches.com](https://joefsanches.com) to connect directly. Let's find the right home for your budget and your life.
+Call or text me at **512-663-8867** or visit [joefsanches.com](https://joefsanches.com) to connect directly. Let's find the right home for your budget and your life.
 
 ---
 
@@ -160,4 +160,10 @@ Call or text me at **(512) XXX-XXXX** or visit [joefsanches.com](https://joefsan
 
 ---
 
-**Meta Description:** Wondering what $500k buys in Cedar Park vs. Leander in 2026? Local expert Joe F. Sanches breaks down square footage, neighborhoods, new construction, and value — side by side.
+---
+
+## Related Reading
+
+- [Leander vs Cedar Park Property Taxes 2026: Real Numbers](/posts/leander-vs-cedar-park-property-taxes)
+- [Best Neighborhoods in Leander TX for Families 2026](/posts/best-neighborhoods-in-leander-tx-for-families-2026)
+- [VA Loan Homes in Leander TX: A Veteran's Complete Guide](/posts/va-loan-homes-leander-tx)
