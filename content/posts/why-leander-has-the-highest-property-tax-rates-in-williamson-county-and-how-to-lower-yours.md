@@ -119,7 +119,7 @@ Absolutely. Leander offers great amenities, quality schools, and access to Austi
 
 Understanding **why Leander has the highest property tax rates in Williamson County** is the first step toward making smart homeownership decisions. As your local real estate expert, I’m here to guide you through buying, selling, and managing property taxes in Leander, Cedar Park, and the greater Austin area.
 
-If you want personalized advice on how to lower your property taxes or find the perfect home that fits your budget and lifestyle, don’t hesitate to reach out. Call or text me at (512) XXX-XXXX or visit [joefsanches.com](http://joefsanches.com) to fill out the contact form. Let’s make your Texas real estate goals a reality!
+If you want personalized advice on how to lower your property taxes or find the perfect home that fits your budget and lifestyle, don’t hesitate to reach out. Call or text me at 512-663-8867 or visit [joefsanches.com](http://joefsanches.com) to fill out the contact form. Let’s make your Texas real estate goals a reality!
 
 ---
 

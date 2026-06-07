@@ -159,7 +159,7 @@ Navigating property taxes in Williamson County can be complex, especially in fas
 
 Don’t let an inflated property tax assessment drain your finances. If you’re a homeowner in Leander, Cedar Park, or Austin facing a high 2026 property tax appraisal, I’m here to help you protest effectively and confidently.
 
-**Call or text me at (512) XXX-XXXX today**, or visit [joefsanches.com](https://joefsanches.com) to fill out the contact form. Let’s work together to ensure your property taxes are fair and accurate—because every dollar counts in your Texas home.
+**Call or text me at 512-663-8867 today**, or visit [joefsanches.com](https://joefsanches.com) to fill out the contact form. Let’s work together to ensure your property taxes are fair and accurate—because every dollar counts in your Texas home.
 
 ---
 

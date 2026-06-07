@@ -107,7 +107,7 @@ Yes, the district continuously plans for growth by building new campuses in expa
 
 Understanding **why Leander ISD is closing schools** is essential for anyone looking to buy or sell in Leander, Cedar Park, or the greater Austin area. These shifts reflect a dynamic community adapting to growth and change—offering opportunities for families to access modern facilities and vibrant neighborhoods.
 
-If you want personalized guidance navigating the local real estate market amid these changes, I’m here to help. Call or text me at (512) XXX-XXXX or visit [joefsanches.com](https://joefsanches.com) to fill out a contact form. Let’s find your perfect home or prepare your property to sell with confidence.
+If you want personalized guidance navigating the local real estate market amid these changes, I’m here to help. Call or text me at 512-663-8867 or visit [joefsanches.com](https://joefsanches.com) to fill out a contact form. Let’s find your perfect home or prepare your property to sell with confidence.
 
 ---
 

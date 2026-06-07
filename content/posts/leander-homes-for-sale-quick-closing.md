@@ -117,7 +117,7 @@ Yes, with coordinated timing and a knowledgeable agent, you can align your sale 
 
 Whether you're buying or selling in Leander, Cedar Park, or the greater Austin area, having an experienced local agent by your side makes all the difference. I’m Joe F. Sanches, and I’m committed to making your real estate journey fast, smooth, and successful.
 
-Call or text me today at (512) XXX-XXXX to discuss your needs or visit [joefsanches.com](http://joefsanches.com) to fill out the contact form. Let’s get you into your new home or sold quickly with confidence.
+Call or text me today at 512-663-8867 to discuss your needs or visit [joefsanches.com](http://joefsanches.com) to fill out the contact form. Let’s get you into your new home or sold quickly with confidence.
 
 ---
 

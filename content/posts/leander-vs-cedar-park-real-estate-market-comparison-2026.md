@@ -139,7 +139,7 @@ If you want personalized insights tailored to your unique needs in the Leander v
 ---
 
 ### Ready to explore homes or sell your property in Leander, Cedar Park, or Austin?  
-Call or text me today at (512) XXX-XXXX or visit [joefsanches.com](https://joefsanches.com) to fill out the contact form and get started!
+Call or text me today at 512-663-8867 or visit [joefsanches.com](https://joefsanches.com) to fill out the contact form and get started!
 
 ---
 

@@ -142,7 +142,7 @@ Finding **new construction homes for sale in Leander TX under 500k** doesn’t h
 
 As a trusted agent deeply rooted in the Leander, Cedar Park, and Austin communities, I’m here to guide you every step of the way—from choosing the perfect neighborhood to negotiating your contract.
 
-**Ready to start your home search or have questions about new construction? Call or text me today at (512) XXX-XXXX, or visit [joefsanches.com](http://joefsanches.com) to fill out the contact form. Let’s make your dream home in Leander a reality!**
+**Ready to start your home search or have questions about new construction? Call or text me today at 512-663-8867, or visit [joefsanches.com](http://joefsanches.com) to fill out the contact form. Let’s make your dream home in Leander a reality!**
 
 ---
 

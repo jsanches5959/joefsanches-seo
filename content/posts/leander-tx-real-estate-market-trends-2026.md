@@ -119,7 +119,7 @@ These improvements will not only enhance daily living but also positively influe
 
 Navigating the **Leander TX real estate market trends 2026** requires local expertise, up-to-date market knowledge, and a personalized approach. Whether you’re buying your first home, selling for top dollar, or relocating to this vibrant part of Texas, I’m here to guide you every step of the way.
 
-Call or text me at (512) XXX-XXXX or visit [joefsanches.com](https://joefsanches.com) to fill out the contact form and get started with a trusted local partner who knows Leander, Cedar Park, and Austin like no one else.
+Call or text me at 512-663-8867 or visit [joefsanches.com](https://joefsanches.com) to fill out the contact form and get started with a trusted local partner who knows Leander, Cedar Park, and Austin like no one else.
 
 ---
 

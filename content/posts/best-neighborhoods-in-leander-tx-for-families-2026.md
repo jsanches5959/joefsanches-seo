@@ -153,7 +153,7 @@ Leander features parks, trails, libraries, community pools, and family-friendly 
 
 Choosing the **best neighborhoods in Leander TX for families 2026** requires local expertise and a deep understanding of what makes a community truly feel like home. Whether you’re relocating from Cedar Park, Austin, or beyond, I’m here to guide you every step of the way.
 
-Contact me, Joe F. Sanches, for personalized assistance tailored to your family’s unique needs. Call or text me anytime at (512) XXX-XXXX or visit [joefsanches.com](http://joefsanches.com) to fill out a contact form. Let’s find the neighborhood where your family will thrive!
+Contact me, Joe F. Sanches, for personalized assistance tailored to your family’s unique needs. Call or text me anytime at 512-663-8867 or visit [joefsanches.com](http://joefsanches.com) to fill out a contact form. Let’s find the neighborhood where your family will thrive!
 
 ---
 

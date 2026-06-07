@@ -141,7 +141,7 @@ Leander is served mainly by the Leander Independent School District, which inclu
 
 ## Ready to Make Leander TX Your New Home?
 
-Moving to Leander TX is an exciting journey, and having a local expert by your side can make all the difference. If you want personalized guidance tailored to your needs—whether buying, selling, or just exploring your options—don’t hesitate to contact me, Joe F. Sanches. Call or text me at (512) XXX-XXXX or visit [joefsanches.com](https://joefsanches.com) to fill out a contact form. Together, we’ll make your relocation a seamless and successful experience.
+Moving to Leander TX is an exciting journey, and having a local expert by your side can make all the difference. If you want personalized guidance tailored to your needs—whether buying, selling, or just exploring your options—don’t hesitate to contact me, Joe F. Sanches. Call or text me at 512-663-8867 or visit [joefsanches.com](https://joefsanches.com) to fill out a contact form. Together, we’ll make your relocation a seamless and successful experience.
 
 ---
 

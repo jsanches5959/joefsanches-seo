@@ -136,7 +136,7 @@ Property taxes are a significant ongoing cost — and getting them right before 
 
 Whether you're comparing Leander to Cedar Park, Georgetown, or Round Rock, I can help you see the full picture — price, taxes, schools, commute — so you make a decision you're confident in.
 
-**Call or text: (512) 522-8457**
+**Call or text: 512-663-8867**
 **Contact form: [joefsanches.com](https://joefsanches.com)**
 
 ---

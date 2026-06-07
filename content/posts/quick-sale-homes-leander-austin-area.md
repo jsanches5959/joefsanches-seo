@@ -117,7 +117,7 @@ A: Absolutely. Many relocating buyers successfully close on homes quickly by wor
 
 Whether you’re buying or selling a quick sale home in Leander, Cedar Park, or the greater Austin area, local expertise is key to success. I’m Joe F. Sanches, your trusted Texas real estate agent, here to guide you every step of the way with personalized advice tailored to this unique market.
 
-Don’t wait to seize the opportunity — call or text me at (512) XXX-XXXX today, or visit [joefsanches.com](https://joefsanches.com) to fill out the contact form. Let’s work together to make your quick home sale or purchase smooth, efficient, and rewarding.
+Don’t wait to seize the opportunity — call or text me at 512-663-8867 today, or visit [joefsanches.com](https://joefsanches.com) to fill out the contact form. Let’s work together to make your quick home sale or purchase smooth, efficient, and rewarding.
 
 ---
 

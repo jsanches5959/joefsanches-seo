@@ -129,7 +129,7 @@ If you’re open to areas adjacent to Leander ISD but still want highly rated sc
 
 If you’re looking to buy or sell a home in Leander ISD neighborhoods with access to the best schools, I’m here to help. With years of experience in Leander, Cedar Park, and the greater Austin area, I understand the nuances that make each neighborhood unique.
 
-**Call or text me at (512) XXX-XXXX**, or visit [joefsanches.com](http://joefsanches.com) to fill out the contact form. Let’s work together to find a home that fits your family’s needs and places you in one of the most sought-after school communities in Texas.
+**Call or text me at 512-663-8867**, or visit [joefsanches.com](http://joefsanches.com) to fill out the contact form. Let’s work together to find a home that fits your family’s needs and places you in one of the most sought-after school communities in Texas.
 
 ---
 

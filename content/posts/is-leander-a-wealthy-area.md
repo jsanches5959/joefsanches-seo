@@ -141,7 +141,7 @@ If you’re considering buying or selling in Leander, Cedar Park, or anywhere in
 
 Contact me, Joe F. Sanches, your trusted local expert, for personalized guidance. Whether you want to tour Crystal Falls, Teravista, or uncover hidden gems in Leander, I have the insider knowledge to help you succeed.
 
-Call or text me today at (512) XXX-XXXX or visit [joefsanches.com](http://joefsanches.com) to fill out a contact form and get started.
+Call or text me today at 512-663-8867 or visit [joefsanches.com](http://joefsanches.com) to fill out a contact form and get started.
 
 ---
 

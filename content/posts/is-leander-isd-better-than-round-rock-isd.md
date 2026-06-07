@@ -113,7 +113,7 @@ As a trusted local agent serving Leander, Cedar Park, and the greater Austin are
 
 ## Ready to Find Your Perfect Home in Leander, Cedar Park, or Round Rock?
 
-Let me help you find the right neighborhood and school district fit for your family. Call or text me at **(512) XXX-XXXX** to start your personalized home search today. You can also visit **[joefsanches.com](https://joefsanches.com)** to fill out a quick contact form and get expert advice tailored to your needs.
+Let me help you find the right neighborhood and school district fit for your family. Call or text me at **512-663-8867** to start your personalized home search today. You can also visit **[joefsanches.com](https://joefsanches.com)** to fill out a quick contact form and get expert advice tailored to your needs.
 
 ---
 

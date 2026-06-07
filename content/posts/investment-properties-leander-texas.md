@@ -143,7 +143,7 @@ Rental yields vary by property type and location. Focus on properties with solid
 
 ## Ready to Invest in Leander, Texas? Let’s Talk!
 
-If you’re serious about finding the best **investment properties in Leander Texas**, don’t navigate this competitive market alone. Call or text me, Joe F. Sanches, at (512) XXX-XXXX for a personalized consultation. You can also visit [joefsanches.com](http://joefsanches.com) to fill out a contact form and get started today. Together, we’ll build your real estate portfolio with confidence and local expertise.
+If you’re serious about finding the best **investment properties in Leander Texas**, don’t navigate this competitive market alone. Call or text me, Joe F. Sanches, at 512-663-8867 for a personalized consultation. You can also visit [joefsanches.com](http://joefsanches.com) to fill out a contact form and get started today. Together, we’ll build your real estate portfolio with confidence and local expertise.
 
 ---
 

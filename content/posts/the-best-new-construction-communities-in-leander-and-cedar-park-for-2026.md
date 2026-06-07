@@ -127,7 +127,7 @@ A: Yes, many offer parks, trails, and proximity to schools, making them excellen
 
 Choosing the best new construction community in Leander or Cedar Park for 2026 means balancing lifestyle, budget, and future growth. Whether you crave hill country luxury, family-friendly parks, or easy Austin commutes, these communities deliver. For tailored guidance on finding your dream home or selling your current property, reach out to me, Joe F. Sanches—your trusted local real estate expert.
 
-**Call or text me today at (512) XXX-XXXX** to discuss your goals, ask questions, or schedule a private tour of new construction homes. You can also visit [joefsanches.com](https://joefsanches.com) to fill out a contact form and get started.
+**Call or text me today at 512-663-8867** to discuss your goals, ask questions, or schedule a private tour of new construction homes. You can also visit [joefsanches.com](https://joefsanches.com) to fill out a contact form and get started.
 
 ---
 

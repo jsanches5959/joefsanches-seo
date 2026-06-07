@@ -79,7 +79,7 @@ Local expertise is crucial. Understanding neighborhood nuances, buyer preference
 
 Selling your home fast in Leander, Cedar Park, or the greater Austin area requires a knowledgeable partner who knows the local market inside and out. As Joe F. Sanches, I bring years of experience, a deep understanding of our community, and a commitment to helping you achieve your real estate goals — quickly and smoothly.
 
-If you’re thinking about selling or want a personalized market analysis, don’t hesitate to reach out. Call or text me at (512) XXX-XXXX, or visit [joefsanches.com](https://joefsanches.com) to fill out a contact form. Let’s get your home sold fast in Leander, Texas!
+If you’re thinking about selling or want a personalized market analysis, don’t hesitate to reach out. Call or text me at 512-663-8867, or visit [joefsanches.com](https://joefsanches.com) to fill out a contact form. Let’s get your home sold fast in Leander, Texas!
 
 ---
 

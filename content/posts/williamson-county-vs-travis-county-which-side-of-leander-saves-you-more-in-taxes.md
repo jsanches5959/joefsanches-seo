@@ -122,7 +122,7 @@ Deciding between Williamson County and Travis County in Leander is about more th
 
 ## Ready to Make Your Move in Leander?
 
-If you’re wondering **Williamson County vs. Travis County: Which Side of Leander Saves You More in Taxes?**, let’s connect! I’m Joe F. Sanches, your trusted local real estate agent, and I specialize in Leander, Cedar Park, and Austin markets. Call or text me today at (512) XXX-XXXX or visit [joefsanches.com](https://joefsanches.com) to fill out the contact form and get personalized advice tailored to your unique needs.
+If you’re wondering **Williamson County vs. Travis County: Which Side of Leander Saves You More in Taxes?**, let’s connect! I’m Joe F. Sanches, your trusted local real estate agent, and I specialize in Leander, Cedar Park, and Austin markets. Call or text me today at 512-663-8867 or visit [joefsanches.com](https://joefsanches.com) to fill out the contact form and get personalized advice tailored to your unique needs.
 
 ---
 

@@ -120,7 +120,7 @@ As a trusted local expert, I can help you navigate these nuances and find the pe
 
 ## Ready to Explore Homes in Crystal Falls Leander?
 
-If you’re serious about buying or selling in Crystal Falls or anywhere in Leander, Cedar Park, or Austin, I’m here to help. Contact me, Joe F. Sanches, for personalized advice tailored to your unique needs. Call or text me anytime at (512) XXX-XXXX, or visit [joefsanches.com](https://joefsanches.com) to fill out a contact form. Let’s make your Texas real estate dreams a reality!
+If you’re serious about buying or selling in Crystal Falls or anywhere in Leander, Cedar Park, or Austin, I’m here to help. Contact me, Joe F. Sanches, for personalized advice tailored to your unique needs. Call or text me anytime at 512-663-8867, or visit [joefsanches.com](https://joefsanches.com) to fill out a contact form. Let’s make your Texas real estate dreams a reality!
 
 ---
 

@@ -129,7 +129,7 @@ Selling a home in a shifting market requires a sharp understanding of local tren
 
 As a trusted local expert serving Leander, Cedar Park, and the greater Austin area, I’m here to help you navigate these challenges with confidence. Whether you’re in a quiet street near **Rancho Sienna** or close to the bustling shops at **Lakeline Mall**, I provide personalized strategies tailored to your unique situation.
 
-**Ready to sell your Leander home quickly and for top dollar? Call or text me, Joe F. Sanches, at (512) XXX-XXXX or visit [joefsanches.com](https://joefsanches.com) to schedule a consultation and get started today!**
+**Ready to sell your Leander home quickly and for top dollar? Call or text me, Joe F. Sanches, at 512-663-8867 or visit [joefsanches.com](https://joefsanches.com) to schedule a consultation and get started today!**
 
 ---
 

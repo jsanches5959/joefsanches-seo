@@ -86,7 +86,7 @@ Some builders may allow for minor customization or upgrades, but this varies by 
 
 If you’re ready to explore quick move-in homes in Leander, TX, I’m here to help! With my expertise in the local market and commitment to client satisfaction, I can help you find the perfect home that suits your needs and lifestyle. Don’t hesitate to reach out to me, Joe F. Sanches, for personalized assistance.
 
-Call or text me at (512) XXX-XXXX, or visit [joefsanches.com](http://joefsanches.com) for more information and to fill out a contact form. Let’s make your dream of homeownership a reality in Leander, TX! 
+Call or text me at 512-663-8867, or visit [joefsanches.com](http://joefsanches.com) for more information and to fill out a contact form. Let’s make your dream of homeownership a reality in Leander, TX! 
 
 ---
 

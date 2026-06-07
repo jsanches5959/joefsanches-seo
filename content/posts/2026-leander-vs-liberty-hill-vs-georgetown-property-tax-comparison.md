@@ -127,7 +127,7 @@ A5: Generally, Liberty Hill has slightly lower property tax rates, but individua
 
 Choosing between Leander, Liberty Hill, and Georgetown for your next home is about more than just property tax rates—it’s about lifestyle, community, and long-term value. As your trusted local real estate agent, I’m here to help you navigate these complexities with confidence.
 
-Ready to explore homes where your investment makes sense for 2026 and beyond? Call or text me, Joe F. Sanches, at (512) XXX-XXXX or visit [joefsanches.com](http://joefsanches.com) to schedule a personalized consultation. Let’s find your perfect home in Central Texas today!
+Ready to explore homes where your investment makes sense for 2026 and beyond? Call or text me, Joe F. Sanches, at 512-663-8867 or visit [joefsanches.com](http://joefsanches.com) to schedule a personalized consultation. Let’s find your perfect home in Central Texas today!
 
 ---
 

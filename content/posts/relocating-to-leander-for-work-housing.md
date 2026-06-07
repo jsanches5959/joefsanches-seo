@@ -132,7 +132,7 @@ Yes, there are several active builders offering new construction homes with mode
 
 Relocating to Leander for work housing is a fantastic opportunity to enjoy a vibrant community with easy access to Austin’s job market. Whether you’re buying your first home, upgrading, or searching for a rental, I’m here to help you every step of the way.
 
-Contact me, Joe F. Sanches, your trusted local real estate expert, at (512) XXX-XXXX for personalized guidance. You can also visit [joefsanches.com](http://joefsanches.com) to fill out a contact form and start your home search today.
+Contact me, Joe F. Sanches, your trusted local real estate expert, at 512-663-8867 for personalized guidance. You can also visit [joefsanches.com](http://joefsanches.com) to fill out a contact form and start your home search today.
 
 ---
 

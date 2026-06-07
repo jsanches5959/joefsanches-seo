@@ -140,7 +140,7 @@ Amenities often include private clubhouses, swimming pools, golf courses, walkin
 
 If you’re ready to explore the **best luxury neighborhoods in Leander Texas**, I’m here to guide you every step of the way. With deep local knowledge of Leander, Cedar Park, and the greater Austin area, I can help you find a home that perfectly matches your lifestyle and investment goals.
 
-Don’t hesitate to reach out today—call or text me at (512) XXX-XXXX or visit [joefsanches.com](https://joefsanches.com) to fill out the contact form for personalized assistance. Whether buying or selling, let’s make your luxury real estate dreams a reality.
+Don’t hesitate to reach out today—call or text me at 512-663-8867 or visit [joefsanches.com](https://joefsanches.com) to fill out the contact form for personalized assistance. Whether buying or selling, let’s make your luxury real estate dreams a reality.
 
 ---
 

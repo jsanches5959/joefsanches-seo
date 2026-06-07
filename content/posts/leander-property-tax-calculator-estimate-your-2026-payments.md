@@ -135,7 +135,7 @@ Estimating your 2026 property tax payments with a **Leander Property Tax Calcula
 
 ### Ready to get a personalized estimate or discuss your real estate goals?
 
-Call or text me at **(512) XXX-XXXX** or visit [joefsanches.com](http://joefsanches.com) to fill out a contact form. Let’s work together to find your perfect home and ensure you understand every financial detail before making a decision.
+Call or text me at **512-663-8867** or visit [joefsanches.com](http://joefsanches.com) to fill out a contact form. Let’s work together to find your perfect home and ensure you understand every financial detail before making a decision.
 
 ---
 

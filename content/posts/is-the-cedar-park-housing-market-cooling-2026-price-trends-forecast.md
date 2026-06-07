@@ -129,7 +129,7 @@ Pricing competitively, staging your home well, and highlighting local community 
 
 If you’re wondering, **“Is the Cedar Park housing market cooling?”**, the answer is nuanced: the market is stabilizing after years of rapid growth, offering more opportunities for both buyers and sellers. As a local expert deeply familiar with Leander, Cedar Park, and greater Austin, I’m here to help you make informed decisions that align with your goals.
 
-Ready to explore your options or get a personalized market analysis? Don’t hesitate to call or text me at **(512) XXX-XXXX**. You can also visit [joefsanches.com](http://joefsanches.com) to fill out a contact form and start your journey with a trusted Texas real estate partner.
+Ready to explore your options or get a personalized market analysis? Don’t hesitate to call or text me at **512-663-8867**. You can also visit [joefsanches.com](http://joefsanches.com) to fill out a contact form and start your journey with a trusted Texas real estate partner.
 
 ---
 

@@ -132,7 +132,7 @@ Whether you’re eyeing a new home in Crystal Falls, considering a move to Cedar
 
 ### Ready to Take the Next Step?
 
-If you’re ready to explore Leander real estate with confidence, contact me today! Call or text (512) XXX-XXXX, or visit [joefsanches.com](https://joefsanches.com) to use our convenient contact form. Let’s work together to find the perfect home that fits your lifestyle and budget — factoring in all the important details like property taxes.
+If you’re ready to explore Leander real estate with confidence, contact me today! Call or text 512-663-8867, or visit [joefsanches.com](https://joefsanches.com) to use our convenient contact form. Let’s work together to find the perfect home that fits your lifestyle and budget — factoring in all the important details like property taxes.
 
 ---
 

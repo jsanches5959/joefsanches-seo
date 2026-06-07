@@ -152,7 +152,7 @@ Knowing the market is half the battle. The other half is having an agent who kno
 
 Whether you're drawn to Cedar Park's established charm or Leander's newer, larger homes, I'm here to help you make the most of your $500k budget.
 
-Call or text me at **(512) XXX-XXXX** or visit [joefsanches.com](https://joefsanches.com) to connect directly. Let's find the right home for your budget and your life.
+Call or text me at **512-663-8867** or visit [joefsanches.com](https://joefsanches.com) to connect directly. Let's find the right home for your budget and your life.
 
 ---
 

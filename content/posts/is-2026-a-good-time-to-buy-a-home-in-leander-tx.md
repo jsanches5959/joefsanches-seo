@@ -112,7 +112,7 @@ If you’re wondering, *“Is 2026 a good time to buy a home in Leander TX?”* 
 
 As a local expert who lives and works in the Leander, Cedar Park, and Austin areas, I’m dedicated to helping you make the best decision for your future. Whether you’re relocating, upsizing, or buying your first home, I’m here to guide you every step of the way.
 
-**Ready to take the next step?** Call or text me, Joe F. Sanches, at (512) XXX-XXXX or visit [joefsanches.com](https://joefsanches.com) to fill out a quick contact form. Let’s make your Leander homeownership dreams a reality in 2026!
+**Ready to take the next step?** Call or text me, Joe F. Sanches, at 512-663-8867 or visit [joefsanches.com](https://joefsanches.com) to fill out a quick contact form. Let’s make your Leander homeownership dreams a reality in 2026!
 
 ---
 

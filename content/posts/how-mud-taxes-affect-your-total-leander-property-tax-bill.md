@@ -126,7 +126,7 @@ Review the latest tax statement or ask your realtor. The tax office website also
 
 Navigating the complexities of property taxes, especially **how MUD taxes affect your total Leander property tax bill**, can feel overwhelming. But with local expertise and personalized guidance, you can confidently choose the right home and neighborhood that fits your budget and lifestyle.
 
-If you’re buying or selling in Leander, Cedar Park, or the greater Austin area, let me, Joe F. Sanches, be your trusted real estate partner. Call or text me today at (512) XXX-XXXX or visit [joefsanches.com](https://joefsanches.com) to fill out a contact form. Together, we’ll ensure you fully understand all aspects of your property investment, including MUD taxes, so there are no surprises.
+If you’re buying or selling in Leander, Cedar Park, or the greater Austin area, let me, Joe F. Sanches, be your trusted real estate partner. Call or text me today at 512-663-8867 or visit [joefsanches.com](https://joefsanches.com) to fill out a contact form. Together, we’ll ensure you fully understand all aspects of your property investment, including MUD taxes, so there are no surprises.
 
 ---
 

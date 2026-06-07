@@ -152,7 +152,7 @@ In a city like Leander where property tax rates are among the highest in William
 
 If you're buying or selling a home in Leander or Cedar Park and want guidance from a local expert who knows the tax landscape, I'm here to help.
 
-**Call or text Joe F. Sanches at (512) XXX-XXXX** or visit [joefsanches.com](https://joefsanches.com) to get started.
+**Call or text Joe F. Sanches at 512-663-8867** or visit [joefsanches.com](https://joefsanches.com) to get started.
 
 ---
 

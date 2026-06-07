@@ -113,7 +113,7 @@ Property taxes vary by neighborhood and home value, but both areas are within th
 
 Choosing between **Cedar Park vs. Leander** ultimately depends on your lifestyle preferences, commute tolerance, and housing needs. As a local expert passionate about these communities, I’m here to guide you through the process with insider knowledge on neighborhoods, market trends, and community highlights.
 
-If you’re ready to explore homes or have questions about buying or selling in Cedar Park, Leander, or Austin, don’t hesitate to reach out. Call or text me, Joe F. Sanches, at (512) XXX-XXXX or visit [joefsanches.com](https://joefsanches.com) to fill out a contact form. Let’s make 2026 the year you find your dream home in the Austin area!
+If you’re ready to explore homes or have questions about buying or selling in Cedar Park, Leander, or Austin, don’t hesitate to reach out. Call or text me, Joe F. Sanches, at 512-663-8867 or visit [joefsanches.com](https://joefsanches.com) to fill out a contact form. Let’s make 2026 the year you find your dream home in the Austin area!
 
 ---
 

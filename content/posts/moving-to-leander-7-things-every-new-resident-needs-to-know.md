@@ -122,7 +122,7 @@ Leander’s property tax rates are competitive within the Austin metro area, but
 
 Moving to Leander? 7 things every new resident needs to know, and now you have a trusted guide to help you through every step of your journey. Whether you’re buying a home, selling your current property, or just exploring your options, I’m here to make your experience seamless and rewarding.
 
-Call or text me at (512) XXX-XXXX for personalized advice tailored to your needs. Visit [joefsanches.com](https://joefsanches.com) to fill out a contact form and schedule your consultation today. Let’s find your perfect home in Leander, Cedar Park, or anywhere in the Austin area!
+Call or text me at 512-663-8867 for personalized advice tailored to your needs. Visit [joefsanches.com](https://joefsanches.com) to fill out a contact form and schedule your consultation today. Let’s find your perfect home in Leander, Cedar Park, or anywhere in the Austin area!
 
 ---
 

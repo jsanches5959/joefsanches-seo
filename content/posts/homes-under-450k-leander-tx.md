@@ -98,7 +98,7 @@ Both have pros and cons. Resale homes may offer established landscaping and matu
 
 Navigating the Leander housing market doesn’t have to be overwhelming. Whether you’re a first-time buyer, relocating from Austin or beyond, or looking to upgrade within the area, I’m here to provide expert guidance every step of the way.
 
-Contact me, Joe F. Sanches, your trusted Texas real estate agent specializing in Leander, Cedar Park, and the greater Austin area. Call or text me today at (512) XXX-XXXX, or visit [joefsanches.com](http://joefsanches.com) to fill out a contact form and start your personalized home search.
+Contact me, Joe F. Sanches, your trusted Texas real estate agent specializing in Leander, Cedar Park, and the greater Austin area. Call or text me today at 512-663-8867, or visit [joefsanches.com](http://joefsanches.com) to fill out a contact form and start your personalized home search.
 
 ---
 

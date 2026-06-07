@@ -134,7 +134,7 @@ If you live in Leander’s Crystal Falls, Cedar Park’s Lakeline Ranch, or anyw
 
 ### Ready to Take the Next Step?
 
-For trusted, expert assistance with your WCAD protest or any real estate needs in Leander, Cedar Park, or Austin, call or text me, **Joe F. Sanches, at (512) XXX-XXXX**. You can also visit [joefsanches.com](http://joefsanches.com) to fill out a contact form and schedule a free consultation. Let’s ensure your home’s value is accurately represented!
+For trusted, expert assistance with your WCAD protest or any real estate needs in Leander, Cedar Park, or Austin, call or text me, **Joe F. Sanches, at 512-663-8867**. You can also visit [joefsanches.com](http://joefsanches.com) to fill out a contact form and schedule a free consultation. Let’s ensure your home’s value is accurately represented!
 
 ---
 

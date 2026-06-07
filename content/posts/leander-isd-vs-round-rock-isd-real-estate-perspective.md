@@ -122,7 +122,7 @@ Whether you're leaning Leander ISD, Round Rock ISD, or still on the fence, I can
 
 This is exactly the kind of local knowledge that makes the difference between a good home purchase and a great one.
 
-**Call or text me directly: (512) 522-8457**
+**Call or text me directly: 512-663-8867**
 **Or fill out the contact form at [joefsanches.com](https://joefsanches.com)**
 
 I work personally with every client — no handoffs, no call centers. Just straight answers from someone who lives and works in this market every day.

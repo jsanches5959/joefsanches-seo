@@ -93,7 +93,7 @@ Navigating the property tax landscape in Leander and Cedar Park is crucial for a
 
 If you have further questions or need personalized assistance navigating property taxes and real estate in Leander, Cedar Park, or the greater Austin area, don't hesitate to reach out to me, Joe F. Sanches. With my expertise and local knowledge, I can help you find the perfect home while ensuring you understand all financial aspects, including property taxes.
 
-Call or text me at (512) XXX-XXXX or visit [joefsanches.com](http://joefsanches.com) to fill out my contact form. Let’s make your dream home a reality! 
+Call or text me at 512-663-8867 or visit [joefsanches.com](http://joefsanches.com) to fill out my contact form. Let’s make your dream home a reality! 
 
 ### Explore More Local Insights
 

@@ -120,7 +120,7 @@ Some programs allow assistance to cover closing costs, but it depends on the spe
 
 Navigating first time home buyer programs Leander Texas can be complex — but with the right local expert in your corner, it doesn’t have to be. Whether you’re looking at the latest listings in **Sierra Vista Ranch** or exploring options in Cedar Park’s friendly neighborhoods, I’m here to help you every step of the way.
 
-Call or text me today at (512) XXX-XXXX to schedule your personalized consultation. Visit [joefsanches.com](https://joefsanches.com) to fill out the contact form and start your journey toward homeownership in Leander and beyond.
+Call or text me today at 512-663-8867 to schedule your personalized consultation. Visit [joefsanches.com](https://joefsanches.com) to fill out the contact form and start your journey toward homeownership in Leander and beyond.
 
 ---
 
