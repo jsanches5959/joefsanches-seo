@@ -88,6 +88,14 @@ If you're a veteran planning to buy in Leander in 2026:
 3. Get pre-approved with a lender who knows both VA and VLB programs — not all lenders originate VLB loans
 4. Work with a buyer's agent who understands how VA offers are structured, how VA appraisals work in Leander's builder market, and how to negotiate with sellers who have outdated VA loan concerns
 
+## Browse Homes in Leander Right Now
+
+[Search Available Homes in Leander →](https://a.nhb.app/u/joe)
+
+New construction and resale across every community — all accepting VA loans. I'm notified when you search and can walk you through VA vs. VLB for any specific home you find.
+
+---
+
 ## Work With a Veteran
 
 I'm Joe Sanches — a licensed Realtor and military veteran. I've used VA loan programs personally and work regularly with veteran buyers in Leander and Cedar Park. I understand both VA and VLB programs, know which Leander builders have the best incentive packages for veteran buyers, and know how to position a VA offer competitively against conventional offers.

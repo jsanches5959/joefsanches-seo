@@ -83,6 +83,14 @@ If your income qualifies (typically under $120K–$130K in the Austin area), sta
 - Block House Creek — older homes, larger lots, under $450K
 - Crystal Falls — 2010–2020 builds tend to appraise cleanly
 
+## Browse Available Homes in Leander Right Now
+
+[Search VA-Eligible Homes in Leander →](https://a.nhb.app/u/joe)
+
+New construction and resale inventory across every community — all accepting VA loans. I'm notified when you search and can give you a straight read on what's worth looking at.
+
+---
+
 ## What to Do First
 
 1. **Get a VA Certificate of Eligibility (COE)** — You can pull it yourself at va.gov or I can help you request it

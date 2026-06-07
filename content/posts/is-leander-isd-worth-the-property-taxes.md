@@ -119,6 +119,14 @@ If you want to run the actual numbers for a specific home you're considering —
 
 ---
 
+**See what homes in LISD zones are available right now:**
+
+[Browse Homes in Leander ISD →](https://a.nhb.app/u/joe)
+
+New construction and resale across every LISD campus zone — I can show you which addresses get you the schools you want at the tax rate you can work with.
+
+---
+
 ## Related Reading
 
 - [Leander vs Cedar Park Property Taxes 2026: Which City Costs You More?](/posts/leander-vs-cedar-park-property-taxes)

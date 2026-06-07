@@ -66,6 +66,14 @@ Builder sales agents are employed by the builder. Their job is to get you to sig
 
 As a Leander-area Realtor and military veteran, I've helped buyers navigate these exact conversations. I know which builders have more flexibility than they advertise, and which incentive packages are genuinely strong vs. which ones look good on paper but don't hold up to scrutiny.
 
+## Browse What's Available Right Now
+
+[Search New Construction Homes in Leander →](https://a.nhb.app/u/joe)
+
+Live listings across every community — with current prices and available incentives. I'm notified when you search and can walk you through which incentive packages are worth taking.
+
+---
+
 ## Ready to Explore New Construction in Leander?
 
 The inventory is there. The incentives are real. The question is whether you're working with someone who can help you get the most out of them.
