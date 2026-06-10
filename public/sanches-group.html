@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanches Group | Plumbing, Electrical, Construction, Real Estate & Government Contracting | Austin, TX</title>
+  <meta name="description" content="Sanches Group delivers licensed plumbing, electrical, construction, real estate buyer/seller representation, leasing support, and government contracting in Austin and Leander, TX." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green: #6b7854;
+      --green-light: #8a9e6a;
+      --green-dark: #4a5538;
+      --cream: #f5f4f0;
+      --text: #1a1a1a;
+      --muted: #666;
+      --border: rgba(107,120,84,0.2);
+      --card-bg: rgba(107,120,84,0.05);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0e0f0b;
+      color: #e8e6df;
+      line-height: 1.6;
+    }
+
+    a { color: #8a9e6a; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 40px;
+      border-bottom: 1px solid rgba(107,120,84,0.25);
+      background: #0e0f0b;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav img { height: 40px; }
+    nav .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      font-size: 14px;
+    }
+    nav .nav-links a { color: #c8c4b8; }
+    nav .nav-links a:hover { color: #8a9e6a; text-decoration: none; }
+    nav .cta-btn {
+      background: #6b7854;
+      color: white !important;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    nav .cta-btn:hover { background: #8a9e6a; text-decoration: none; }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 80px 40px 72px;
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 60px;
+      align-items: center;
+    }
+    .hero-text h1 {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.2;
+      color: white;
+      margin-bottom: 16px;
+    }
+    .hero-text h1 span { color: #8a9e6a; }
+    .hero-text p {
+      font-size: 17px;
+      color: #b0ae a8;
+      color: #a8a49c;
+      max-width: 560px;
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-primary {
+      background: #6b7854;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 15px;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: #8a9e6a; text-decoration: none; }
+    .btn-secondary {
+      border: 1px solid rgba(107,120,84,0.5);
+      color: #8a9e6a;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 15px;
+      display: inline-block;
+    }
+    .btn-secondary:hover { background: rgba(107,120,84,0.1); text-decoration: none; }
+
+    .hero-photo {
+      position: relative;
+    }
+    .hero-photo img {
+      width: 100%;
+      border-radius: 16px;
+      object-fit: cover;
+      aspect-ratio: 3/4;
+      border: 2px solid rgba(107,120,84,0.3);
+    }
+    .hero-badge {
+      position: absolute;
+      bottom: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #0e0f0b;
+      border: 1px solid rgba(107,120,84,0.4);
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-size: 13px;
+      color: #8a9e6a;
+      font-weight: 600;
+      white-space: nowrap;
+      text-align: center;
+    }
+
+    /* ── SECTION WRAPPER ── */
+    .section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 72px 40px;
+    }
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #8a9e6a;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-size: 30px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: 16px;
+      color: #a8a49c;
+      max-width: 640px;
+      line-height: 1.7;
+      margin-bottom: 44px;
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid rgba(107,120,84,0.2);
+    }
+
+    /* ── SERVICES GRID ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .service-card {
+      background: rgba(107,120,84,0.06);
+      border: 1px solid rgba(107,120,84,0.2);
+      border-radius: 14px;
+      padding: 28px 24px;
+    }
+    .service-icon {
+      font-size: 28px;
+      margin-bottom: 14px;
+    }
+    .service-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 8px;
+    }
+    .service-card p {
+      font-size: 14px;
+      color: #a8a49c;
+      line-height: 1.65;
+    }
+    .service-tag {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #6b7854;
+      border: 1px solid rgba(107,120,84,0.3);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    /* ── PM CALLOUT ── */
+    .pm-callout {
+      background: rgba(107,120,84,0.08);
+      border: 1px solid rgba(107,120,84,0.3);
+      border-radius: 16px;
+      padding: 36px 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .pm-callout h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 12px;
+    }
+    .pm-callout p {
+      font-size: 15px;
+      color: #a8a49c;
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    .pm-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .pm-list li {
+      font-size: 14px;
+      color: #c8c4b8;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.5;
+    }
+    .pm-list li::before {
+      content: '✓';
+      color: #8a9e6a;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ── RE SECTION ── */
+    .re-block {
+      background: rgba(107,120,84,0.06);
+      border: 1px solid rgba(107,120,84,0.2);
+      border-radius: 16px;
+      padding: 36px 40px;
+    }
+    .re-block h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 12px;
+    }
+    .re-block p {
+      font-size: 15px;
+      color: #a8a49c;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      max-width: 700px;
+    }
+    .re-services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .re-tag {
+      background: rgba(107,120,84,0.12);
+      border: 1px solid rgba(107,120,84,0.3);
+      color: #8a9e6a;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+
+    /* ── AREAS ── */
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+    .area-chip {
+      background: rgba(107,120,84,0.06);
+      border: 1px solid rgba(107,120,84,0.2);
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 14px;
+      color: #c8c4b8;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* ── CONTACT ── */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+    .contact-info h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 10px;
+    }
+    .contact-info p {
+      font-size: 15px;
+      color: #a8a49c;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+    .contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .contact-list li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 15px;
+      color: #c8c4b8;
+    }
+    .contact-list .icon {
+      width: 36px;
+      height: 36px;
+      background: rgba(107,120,84,0.12);
+      border: 1px solid rgba(107,120,84,0.25);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .contact-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .contact-cta-card {
+      background: rgba(107,120,84,0.08);
+      border: 1px solid rgba(107,120,84,0.25);
+      border-radius: 12px;
+      padding: 22px 24px;
+    }
+    .contact-cta-card h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 6px;
+    }
+    .contact-cta-card p {
+      font-size: 13px;
+      color: #a8a49c;
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+    .contact-cta-card a.cta {
+      display: inline-block;
+      background: #6b7854;
+      color: white;
+      padding: 9px 20px;
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .contact-cta-card a.cta:hover { background: #8a9e6a; text-decoration: none; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid rgba(107,120,84,0.2);
+      padding: 28px 40px;
+      text-align: center;
+      font-size: 13px;
+      color: #666;
+    }
+    footer a { color: #8a9e6a; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 860px) {
+      nav { padding: 14px 20px; }
+      nav .nav-links { display: none; }
+      .hero { grid-template-columns: 1fr; padding: 48px 20px 40px; gap: 40px; }
+      .hero-text h1 { font-size: 30px; }
+      .hero-photo { max-width: 280px; margin: 0 auto; }
+      .section { padding: 48px 20px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .pm-callout { grid-template-columns: 1fr; padding: 24px 20px; }
+      .re-block { padding: 24px 20px; }
+      .areas-grid { grid-template-columns: repeat(2, 1fr); }
+      .contact-grid { grid-template-columns: 1fr; }
+      footer { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <img src="/logo.png" alt="Sanches Group" />
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#property-management">For PM Companies</a></li>
+      <li><a href="#real-estate">Real Estate</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://joefsanches.com" class="cta-btn">Realtor Site</a></li>
+    </ul>
+    <a href="tel:5126638867" class="cta-btn" style="display:none;" id="mobile-cta">512-663-8867</a>
+  </nav>
+  <script>
+    if (window.innerWidth <= 860) document.getElementById('mobile-cta').style.display = 'inline-block';
+  </script>
+
+  <!-- HERO -->
+  <section style="border-bottom: 1px solid rgba(107,120,84,0.2);">
+    <div class="hero">
+      <div class="hero-text">
+        <p class="section-label">Leander &amp; Greater Austin, TX</p>
+        <h1>One team. Every<br/><span>property need.</span></h1>
+        <p>Sanches Group brings licensed tradespeople, real estate expertise, leasing support, and government contracting under one roof — so every job gets done without the runaround.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary">Get in Touch</a>
+          <a href="#services" class="btn-secondary">What We Do</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="/joe.png" alt="Joe Sanches — Sanches Group" />
+        <div class="hero-badge">Joe Sanches · Licensed Realtor &amp; Veteran</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" style="border-bottom: 1px solid rgba(107,120,84,0.2);">
+    <div class="section">
+      <p class="section-label">What We Do</p>
+      <h2 class="section-title">Full-service from day one</h2>
+      <p class="section-sub">Whether you need a leaky pipe fixed, a property leased, a buyer represented, or a government contract fulfilled — we have the license and the people to handle it.</p>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">🔧</div>
+          <h3>Plumbing</h3>
+          <p>Licensed plumbing repairs, installations, and maintenance for residential and commercial properties across the Austin metro.</p>
+          <span class="service-tag">Licensed</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">⚡</div>
+          <h3>Electrical</h3>
+          <p>Panel upgrades, outlet installs, rewiring, and code-compliant electrical work for single-family homes, multifamily units, and commercial spaces.</p>
+          <span class="service-tag">Licensed</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <h3>Construction &amp; Renovation</h3>
+          <p>General contracting for remodels, build-outs, unit turns, and new construction. We handle the coordination so your project finishes on time.</p>
+          <span class="service-tag">General Contractor</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏠</div>
+          <h3>Real Estate — Buy &amp; Sell</h3>
+          <p>Licensed buyer and seller representation in Leander, Cedar Park, and the greater Austin area. Separate from property management — we represent the individual buying or selling a home.</p>
+          <span class="service-tag">Licensed Realtor</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">📋</div>
+          <h3>Leasing Support</h3>
+          <p>Tenant placement, leasing coordination, and property readiness services for landlords and property management companies who need a reliable local partner.</p>
+          <span class="service-tag">Leasing</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🏛️</div>
+          <h3>Government Contracting</h3>
+          <p>Registered contractor for government and municipal work. Maintenance, renovations, and trades services for federal, state, and local contracts in Central Texas.</p>
+          <span class="service-tag">Gov. Contractor</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PM PARTNER SECTION -->
+  <section id="property-management" style="border-bottom: 1px solid rgba(107,120,84,0.2);">
+    <div class="section">
+      <p class="section-label">Property Management Partners</p>
+      <h2 class="section-title">We work with you, not around you</h2>
+      <p class="section-sub">Sanches Group is a service and trades partner for property management companies — not a competitor. We don't manage properties, and we don't solicit your owners or tenants.</p>
+
+      <div class="pm-callout">
+        <div>
+          <h3>What we do for PM companies</h3>
+          <p>You keep the management relationship. We handle the work orders — licensed, fast, and accountable. When a unit needs a plumber at 7am or a remodel between tenants, you call us.</p>
+          <p>No upselling your clients. No poaching. Just reliable trades work that makes your operation run smoother.</p>
+          <a href="#contact" class="btn-primary" style="margin-top: 8px;">Discuss a Partnership</a>
+        </div>
+        <div>
+          <p style="font-size: 14px; color: #8a9e6a; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 14px;">What PM partners get</p>
+          <ul class="pm-list">
+            <li>Licensed plumbing, electrical, and general contracting — one vendor, all trades</li>
+            <li>Fast turnaround on unit turns and vacancy prep</li>
+            <li>Clear invoicing — no surprises, no markups you didn't approve</li>
+            <li>Leasing support for hard-to-fill units</li>
+            <li>A local team that shows up and communicates</li>
+            <li>Referral arrangement available for leasing and property-ready services</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REAL ESTATE SECTION -->
+  <section id="real-estate" style="border-bottom: 1px solid rgba(107,120,84,0.2);">
+    <div class="section">
+      <p class="section-label">Real Estate Services</p>
+      <h2 class="section-title">Buying or selling in Austin? Let's talk.</h2>
+      <p class="section-sub">Joe Sanches is a licensed Realtor and military veteran representing buyers and sellers in Leander, Cedar Park, and the greater Austin area. If you're looking for an agent who knows this market, this is it.</p>
+
+      <div class="re-block">
+        <h3>Buyer &amp; Seller Representation</h3>
+        <p>Whether you're buying your first home, upgrading, relocating to Austin, or ready to sell — Joe handles the transaction with the same discipline he brought to military service. Straight talk, fast responses, and a deep knowledge of every neighborhood, builder, and school zone in Leander and Cedar Park.</p>
+        <p><strong style="color: #c8c4b8;">This is separate from property management.</strong> Joe represents individuals in purchase and sale transactions — he is not in the business of competing with companies that manage portfolios.</p>
+        <div class="re-services">
+          <span class="re-tag">First-Time Buyers</span>
+          <span class="re-tag">VA Loans</span>
+          <span class="re-tag">New Construction</span>
+          <span class="re-tag">Resale</span>
+          <span class="re-tag">Seller Representation</span>
+          <span class="re-tag">Military Relocation</span>
+          <span class="re-tag">Investment Property Purchase</span>
+        </div>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="https://joefsanches.com" class="btn-primary" target="_blank" rel="noopener">Visit Realtor Site</a>
+          <a href="https://a.nhb.app/u/joe" class="btn-secondary" target="_blank" rel="noopener">Browse New Construction →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREAS -->
+  <section style="border-bottom: 1px solid rgba(107,120,84,0.2);">
+    <div class="section">
+      <p class="section-label">Where We Work</p>
+      <h2 class="section-title">Central Texas &amp; Greater Austin</h2>
+      <p class="section-sub">Trades, leasing, and real estate services across the Austin metro — with deep roots in Leander and Williamson County.</p>
+      <div class="areas-grid">
+        <div class="area-chip">Leander</div>
+        <div class="area-chip">Cedar Park</div>
+        <div class="area-chip">Austin</div>
+        <div class="area-chip">Round Rock</div>
+        <div class="area-chip">Georgetown</div>
+        <div class="area-chip">Pflugerville</div>
+        <div class="area-chip">Liberty Hill</div>
+        <div class="area-chip">Hutto</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section">
+      <p class="section-label">Contact</p>
+      <h2 class="section-title">Let's work together</h2>
+      <p class="section-sub">Whether you need a trade service, a leasing partner, an agent to buy or sell, or want to discuss a government contract — reach out directly.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Joe Sanches</h3>
+          <p>Founder, Sanches Group · Licensed Realtor · Military Veteran · Central Texas</p>
+          <ul class="contact-list">
+            <li>
+              <span class="icon">📞</span>
+              <span><a href="tel:5126638867">512-663-8867</a><br/><small style="color:#666;">Call or text anytime</small></span>
+            </li>
+            <li>
+              <span class="icon">✉️</span>
+              <span><a href="mailto:hello@joefsanches.com">hello@joefsanches.com</a></span>
+            </li>
+            <li>
+              <span class="icon">🌐</span>
+              <span><a href="https://joefsanches.com">joefsanches.com</a> — Realtor site</span>
+            </li>
+            <li>
+              <span class="icon">📍</span>
+              <span>Based in Leander, TX — serving the greater Austin metro</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-cards">
+          <div class="contact-cta-card">
+            <h4>Property Management Companies</h4>
+            <p>Looking for a reliable trades and leasing partner? Let's talk about how we can support your operation.</p>
+            <a href="mailto:hello@joefsanches.com?subject=PM%20Partnership%20Inquiry&body=Hi%20Joe%2C%0A%0AI%20manage%20properties%20in%20the%20Austin%20area%20and%20would%20like%20to%20discuss%20a%20potential%20trades%2Fleasing%20partnership.%0A%0A" class="cta">Reach Out →</a>
+          </div>
+          <div class="contact-cta-card">
+            <h4>Buying or Selling a Home</h4>
+            <p>Looking for an agent in Leander, Cedar Park, or Austin? Let's talk about your timeline and what the market looks like right now.</p>
+            <a href="https://joefsanches.com" class="cta" target="_blank" rel="noopener">Go to Realtor Site →</a>
+          </div>
+          <div class="contact-cta-card">
+            <h4>Trades &amp; Construction</h4>
+            <p>Need plumbing, electrical, or general contracting in Central Texas?</p>
+            <a href="tel:5126638867" class="cta">Call 512-663-8867 →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="yr"></span> Sanches Group · Leander, Texas · <a href="tel:5126638867">512-663-8867</a> · <a href="mailto:hello@joefsanches.com">hello@joefsanches.com</a></p>
+    <p style="margin-top: 6px; font-size: 12px; color: #444;">Real estate services provided by Joe Sanches, Licensed Realtor. Real estate activity is buyer/seller representation only and is independent of property management operations.</p>
+    <p style="margin-top: 10px;"><a href="https://joefsanches.com">joefsanches.com</a></p>
+  </footer>
+
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
