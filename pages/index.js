@@ -169,10 +169,11 @@ export default function Home({ posts }) {
         </div>
         <header className="topbar">
           <div className="brand">
-            <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+            <img src="/logo.png" alt="Sanches Group" className="logo" />
             <div>
               <h1>Joe Sanches</h1>
-              <p className="sub">Real Estate Expert • Leander, TX</p>
+              <p className="sub">Licensed Realtor · Leander, TX</p>
+              <a href="/sanches-group" className="brand-group-link">Sanches Group ↗</a>
             </div>
           </div>
           <div className="actions">
