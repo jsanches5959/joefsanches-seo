@@ -386,7 +386,7 @@ export default function Home() {
           </a>
           <ul className="nav-links">
             <li><a href="#services">Services</a></li>
-            <li><a href="#government">Gov</a></li>
+            <li><a href="/government">Gov Contracting</a></li>
             <li><a href="#multifamily">Multi-Family</a></li>
             <li><a href="#real-estate">Real Estate</a></li>
             <li><a href="#about">About</a></li>
@@ -522,8 +522,11 @@ export default function Home() {
             </div>
           </div>
           <div className="cap-bar">
-            <p><strong style={{ color: 'var(--white)' }}>Contracting Officers &amp; Procurement Teams —</strong> Request a capability statement, past performance summary, or teaming discussion directly.</p>
-            <a href="mailto:hello@joefsanches.com?subject=Capability%20Statement%20Request%20%E2%80%94%20Sanches%20Group&body=Agency%2FOrganization%3A%0ANAICS%20Code(s)%3A%0AContract%20type%3A%0A" className="btn-gold">Request Capability Statement</a>
+            <p><strong style={{ color: 'var(--white)' }}>Contracting Officers &amp; Procurement Teams —</strong> Full certifications, NAICS codes, scope of work, and direct contact on our government contracting page.</p>
+            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+              <a href="/government" className="btn-gold">Government Contracting Page →</a>
+              <a href="mailto:hello@joefsanches.com?subject=Capability%20Statement%20Request%20%E2%80%94%20Sanches%20Group&body=Agency%2FOrganization%3A%0ANAICS%20Code(s)%3A%0AContract%20type%3A%0A" className="btn-outline">Request Capability Statement</a>
+            </div>
           </div>
         </div>
       </section>
