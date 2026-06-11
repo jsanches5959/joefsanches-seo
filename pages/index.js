@@ -410,6 +410,10 @@ export default function Home() {
           </div>
           <div className="hero-specs">
             <div className="spec">
+              <span className="spec-val">TX HUB</span>
+              <span className="spec-label">State Certified</span>
+            </div>
+            <div className="spec">
               <span className="spec-val">VOSB</span>
               <span className="spec-label">Veteran-Owned</span>
             </div>
@@ -464,6 +468,13 @@ export default function Home() {
           <div className="gov-grid">
             <div className="gov-box">
               <h4>Certifications &amp; Registrations</h4>
+              <div className="cert-row">
+                <span className="cert-ico">⭐</span>
+                <div>
+                  <div className="cert-name">Texas HUB — Certified</div>
+                  <div className="cert-sub">Historically Underutilized Business — certified by the Texas Comptroller of Public Accounts. Effective 6/9/2026 · Valid through 6/9/2030. B2G VID: 21829543.</div>
+                </div>
+              </div>
               <div className="cert-row">
                 <span className="cert-ico">🎖️</span>
                 <div>
@@ -702,7 +713,7 @@ export default function Home() {
         <img src="/logo.png" alt="Sanches Group" />
         <p>© {new Date().getFullYear()} Sanches Group · Leander, Texas</p>
         <p>512-663-8867 · <a href="mailto:hello@joefsanches.com">hello@joefsanches.com</a></p>
-        <p style={{ marginTop:'6px' }}>Veteran-Owned · Licensed &amp; Insured · SAM.gov · VOSB</p>
+        <p style={{ marginTop:'6px' }}>Veteran-Owned · Licensed &amp; Insured · SAM.gov · VOSB · Texas HUB Certified</p>
         <img
           src="https://comptroller.texas.gov/purchasing/images/vethub-certified-logo-2025.svg"
           alt="Texas Veteran-Owned Business Certified"
