@@ -1,391 +1,703 @@
-
-import Link from 'next/link';
 import Head from 'next/head';
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
 
-export async function getStaticProps() {
-  const postsDirectory = path.join(process.cwd(), 'content/posts');
-  let posts = [];
-  
-  if (fs.existsSync(postsDirectory)) {
-    const filenames = fs.readdirSync(postsDirectory);
-    posts = filenames
-      .filter((file) => file.endsWith('.md'))
-      .map((filename) => {
-        const filePath = path.join(postsDirectory, filename);
-        const fileContents = fs.readFileSync(filePath, 'utf8');
-        const { data } = matter(fileContents);
-        return {
-          slug: filename.replace(/\.md$/, ''),
-          title: data.title || filename.replace(/\.md$/, ''),
-          date: data.date ? new Date(data.date).toISOString() : null,
-        };
-      })
-      .sort((a, b) => (a.date < b.date ? 1 : -1));
+const css = `
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --black:  #080808;
+    --card:   #0f110d;
+    --olive:  #6b7854;
+    --olive2: #8a9a6b;
+    --gold:   #c8a84b;
+    --gold2:  #e4c76b;
+    --gp:     rgba(200,168,75,0.1);
+    --gb:     rgba(200,168,75,0.28);
+    --ob:     rgba(107,120,84,0.2);
+    --white:  #ffffff;
+    --text:   #d4d8cc;
+    --muted:  #7a8070;
+    --div:    rgba(255,255,255,0.06);
   }
 
-  return {
-    props: {
-      posts,
-    },
-  };
-}
+  html { scroll-behavior: smooth; }
 
-export default function Home({ posts }) {
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+    background: var(--black);
+    color: var(--text);
+    line-height: 1.65;
+  }
 
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    "@id": "https://joefsanches.com",
-    "name": "Joe Sanches - Leander & Austin TX Realtor",
-    "description": "Joe Sanches is a licensed Real Estate Agent in Leander, TX, specializing in residential property sales, first-time home buyers, and new construction in the greater Austin area.",
-    "url": "https://joefsanches.com",
-    "telephone": "+1-512-663-8867",
-    "email": "hello@joefsanches.com",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Leander",
-      "addressRegion": "TX",
-      "postalCode": "78641",
-      "addressCountry": "US"
-    },
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Leander",
-        "addressRegion": "TX"
-      },
-      {
-        "@type": "City",
-        "name": "Austin",
-        "addressRegion": "TX"
-      },
-      {
-        "@type": "City",
-        "name": "Cedar Park",
-        "addressRegion": "TX"
-      },
-      {
-        "@type": "City",
-        "name": "Liberty Hill",
-        "addressRegion": "TX"
-      },
-      {
-        "@type": "City",
-        "name": "Round Rock",
-        "addressRegion": "TX"
-      },
-      {
-        "@type": "City",
-        "name": "Georgetown",
-        "addressRegion": "TX"
-      },
-      {
-        "@type": "City",
-        "name": "Pflugerville",
-        "addressRegion": "TX"
-      },
-      {
-        "@type": "City",
-        "name": "Hutto",
-        "addressRegion": "TX"
-      },
-      {
-        "@type": "City",
-        "name": "Lakeway",
-        "addressRegion": "TX"
-      },
-      {
-        "@type": "City",
-        "name": "Bee Cave",
-        "addressRegion": "TX"
-      },
-      {
-        "@type": "City",
-        "name": "Spicewood",
-        "addressRegion": "TX"
-      },
-      {
-        "@type": "City",
-        "name": "Lago Vista",
-        "addressRegion": "TX"
-      },
-      {
-        "@type": "City",
-        "name": "Jonestown",
-        "addressRegion": "TX"
-      }
-    ],
-    "priceRange": "$300000-$1000000",
-    "image": "https://joefsanches.com/joe.png",
-    "hasMap": "https://www.google.com/maps/place/Joe+Sanches+Realtor/@30.573489,-97.864239,15z/data=!4m6!3m5!1s0x8644d214a1f2e1b1:0x5e0f7c2a1b1e1a1!8m2!3d30.573489!4d-97.864239!16s%2Fg%2F11b6_2142f?hl=en&entry=ttu",
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": "30.573489",
-      "longitude": "-97.864239"
-    },
-    "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 08:00-20:00",
-    "sameAs": [
-      "https://www.facebook.com/joefsanches",
-      "https://www.linkedin.com/in/joefsanches"
-    ],
-    "knowsAbout": [
-      "Real Estate",
-      "Home Buying",
-      "Home Selling",
-      "Property Valuation",
-      "Market Analysis"
-    ],
-    "jobTitle": "Real Estate Agent",
-    "license": "Licensed Real Estate Agent - State of Texas"
-  };
+  a { color: var(--gold); text-decoration: none; }
+  a:hover { color: var(--gold2); }
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joefsanches.com';
+  .w { max-width: 1160px; margin: 0 auto; padding: 0 40px; }
 
+  /* ── NAV ── */
+  .nav {
+    position: sticky; top: 0; z-index: 200;
+    background: rgba(8,8,8,0.97);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--gb);
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 40px; max-width: 1160px; margin: 0 auto;
+  }
+  .nav-logo img {
+    height: 40px;
+    filter: drop-shadow(0 0 8px rgba(107,120,84,0.5));
+  }
+  .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
+  .nav-links a { font-size: 13px; font-weight: 500; color: var(--muted); letter-spacing: 0.3px; text-transform: uppercase; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-call {
+    background: var(--gold); color: var(--black) !important;
+    padding: 9px 20px; border-radius: 4px;
+    font-weight: 900; font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase;
+  }
+  .nav-call:hover { background: var(--gold2) !important; }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--black);
+    border-bottom: 1px solid var(--gb);
+    padding: 100px 40px 88px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(600px 400px at 50% 100%, rgba(107,120,84,0.06) 0%, transparent 70%),
+      radial-gradient(800px 300px at 50% -10%, rgba(200,168,75,0.04) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-inner { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; }
+
+  .hero-logo {
+    width: 180px; height: 180px;
+    object-fit: contain;
+    margin: 0 auto 32px;
+    display: block;
+    filter: drop-shadow(0 0 40px rgba(107,120,84,0.55)) drop-shadow(0 0 80px rgba(107,120,84,0.2));
+  }
+
+  .hero-eyebrow {
+    font-size: 11px; font-weight: 800; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--gold);
+    margin-bottom: 18px; display: block;
+  }
+
+  .hero h1 {
+    font-size: 72px; font-weight: 900; color: var(--white);
+    letter-spacing: -2px; line-height: 1; margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .hero-tagline {
+    font-size: 18px; color: var(--muted); letter-spacing: 3px;
+    text-transform: uppercase; font-weight: 500;
+    margin-bottom: 44px; display: block;
+  }
+  .hero-tagline span { color: var(--gold); }
+
+  .hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 60px; }
+
+  .btn-gold {
+    background: var(--gold); color: var(--black);
+    padding: 15px 32px; border-radius: 4px;
+    font-weight: 900; font-size: 14px;
+    letter-spacing: 1px; text-transform: uppercase;
+    display: inline-block;
+  }
+  .btn-gold:hover { background: var(--gold2); color: var(--black); }
+
+  .btn-outline {
+    border: 1px solid var(--gb); color: var(--gold);
+    padding: 15px 32px; border-radius: 4px;
+    font-weight: 700; font-size: 14px;
+    letter-spacing: 1px; text-transform: uppercase;
+    display: inline-block;
+  }
+  .btn-outline:hover { background: var(--gp); }
+
+  .hero-specs {
+    display: inline-flex; border: 1px solid var(--gb); border-radius: 4px; overflow: hidden;
+  }
+  .spec {
+    padding: 16px 28px; border-right: 1px solid var(--gb);
+    text-align: center;
+  }
+  .spec:last-child { border-right: none; }
+  .spec-val { font-size: 13px; font-weight: 900; color: var(--gold); display: block; letter-spacing: 1px; text-transform: uppercase; line-height: 1; }
+  .spec-label { font-size: 10px; color: var(--muted); margin-top: 5px; display: block; letter-spacing: 1px; text-transform: uppercase; }
+
+  /* ── DIVIDER ── */
+  .divider {
+    display: flex; align-items: center; gap: 20px;
+    padding: 40px 0; opacity: 0.3;
+  }
+  .divider::before, .divider::after {
+    content: ''; flex: 1; height: 1px; background: var(--gold);
+  }
+  .divider-diamond {
+    width: 12px; height: 12px;
+    background: var(--gold);
+    transform: rotate(45deg);
+    flex-shrink: 0;
+  }
+
+  /* ── SECTION ── */
+  .sec { padding: 88px 0; border-bottom: 1px solid var(--div); }
+  .sec.dark { background: #050504; }
+
+  .sec-eyebrow {
+    font-size: 10px; font-weight: 900; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 12px;
+  }
+  .sec-title {
+    font-size: 40px; font-weight: 900; color: var(--white);
+    letter-spacing: -1px; margin-bottom: 16px; line-height: 1.1;
+    text-transform: uppercase;
+  }
+  .sec-lead {
+    font-size: 17px; color: var(--muted); max-width: 640px;
+    line-height: 1.75; margin-bottom: 52px;
+  }
+
+  /* ── LANES ── */
+  .lanes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+  .lane {
+    background: var(--card); border: 1px solid var(--div);
+    padding: 32px 28px;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .lane:hover { border-color: var(--ob); background: #141810; }
+  .lane-num {
+    font-size: 10px; font-weight: 900; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 16px;
+    display: block; opacity: 0.6;
+  }
+  .lane h3 { font-size: 18px; font-weight: 800; color: var(--white); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .lane p { font-size: 14px; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
+  .lane-tag {
+    font-size: 10px; font-weight: 900; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--olive2);
+    border: 1px solid var(--ob); padding: 4px 10px; border-radius: 2px;
+    display: inline-block;
+  }
+
+  /* ── GOV ── */
+  .gov-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-bottom: 2px; }
+  .gov-box {
+    background: var(--card); border: 1px solid var(--gb);
+    padding: 32px 30px;
+  }
+  .gov-box h4 {
+    font-size: 10px; font-weight: 900; letter-spacing: 2.5px;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 20px;
+  }
+  .cert-row {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 14px 0; border-bottom: 1px solid var(--div);
+  }
+  .cert-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .cert-ico { font-size: 20px; flex-shrink: 0; }
+  .cert-name { font-size: 14px; font-weight: 700; color: var(--white); }
+  .cert-sub { font-size: 12px; color: var(--muted); margin-top: 3px; line-height: 1.5; }
+  .naics-row {
+    display: flex; gap: 14px; align-items: flex-start;
+    padding: 10px 0; border-bottom: 1px solid var(--div);
+  }
+  .naics-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .naics-code { color: var(--gold); font-weight: 900; font-size: 12px; letter-spacing: 0.5px; flex-shrink: 0; padding-top: 2px; }
+  .naics-name { font-size: 13px; color: var(--text); line-height: 1.4; }
+  .cap-bar {
+    background: var(--gp); border: 1px solid var(--gb);
+    padding: 24px 32px;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 16px;
+  }
+  .cap-bar p { font-size: 15px; color: var(--text); max-width: 680px; line-height: 1.6; }
+
+  /* ── MULTI-FAMILY ── */
+  .mf-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+  .mf-box {
+    background: var(--card); border: 1px solid var(--div);
+    padding: 32px 28px;
+  }
+  .mf-box h3 { font-size: 16px; font-weight: 900; color: var(--white); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px; }
+  .mf-box p { font-size: 14px; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
+  .check { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+  .check li {
+    font-size: 14px; color: var(--text);
+    display: flex; align-items: flex-start; gap: 10px; line-height: 1.5;
+  }
+  .check li::before { content: '—'; color: var(--gold); font-weight: 900; flex-shrink: 0; }
+  .promise {
+    background: #0a0c09; border: 1px solid var(--gb);
+    padding: 28px 32px; grid-column: 1 / -1;
+    margin-top: 2px;
+  }
+  .promise h3 { font-size: 12px; font-weight: 900; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+  .promise p { font-size: 14px; color: var(--muted); line-height: 1.75; }
+
+  /* ── RE ── */
+  .re-box {
+    background: var(--card); border: 1px solid var(--div);
+    padding: 44px 48px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
+  }
+  .re-box h3 { font-size: 22px; font-weight: 900; color: var(--white); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .re-box p { font-size: 15px; color: var(--muted); line-height: 1.75; margin-bottom: 16px; }
+  .re-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+  .re-tag {
+    background: rgba(107,120,84,0.1); border: 1px solid var(--ob);
+    color: var(--olive2); font-size: 11px; font-weight: 700;
+    padding: 5px 12px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .re-note {
+    border-left: 3px solid var(--gold);
+    padding: 16px 20px;
+    background: var(--gp);
+    font-size: 13px; color: var(--muted); line-height: 1.7;
+  }
+
+  /* ── ABOUT ── */
+  .about-grid { display: grid; grid-template-columns: 300px 1fr; gap: 64px; align-items: start; }
+  .about-img {
+    width: 100%; border-radius: 0;
+    border: 1px solid var(--gb);
+    filter: grayscale(20%);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+  }
+  .about h2 { font-size: 36px; font-weight: 900; color: var(--white); text-transform: uppercase; letter-spacing: -0.5px; margin-bottom: 4px; }
+  .about-role { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; display: block; }
+  .about-bio { font-size: 16px; color: var(--muted); line-height: 1.8; margin-bottom: 14px; }
+  .creds { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 28px; }
+  .cred {
+    border: 1px solid var(--ob); color: var(--olive2);
+    font-size: 11px; font-weight: 700; padding: 6px 14px; border-radius: 2px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+
+  /* ── AREAS ── */
+  .areas { display: flex; flex-wrap: wrap; gap: 2px; }
+  .area {
+    background: var(--card); border: 1px solid var(--div);
+    color: var(--muted); font-size: 13px; font-weight: 700;
+    padding: 12px 20px; text-transform: uppercase; letter-spacing: 1px;
+  }
+
+  /* ── CONTACT ── */
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+  .contact-main {
+    background: var(--card); border: 1px solid var(--div);
+    padding: 40px 36px;
+  }
+  .contact-main h3 { font-size: 24px; font-weight: 900; color: var(--white); text-transform: uppercase; letter-spacing: -0.5px; margin-bottom: 8px; }
+  .contact-main > p { font-size: 14px; color: var(--muted); margin-bottom: 28px; }
+  .c-items { display: flex; flex-direction: column; gap: 18px; }
+  .c-item { display: flex; align-items: flex-start; gap: 16px; }
+  .c-icon {
+    width: 40px; height: 40px; flex-shrink: 0;
+    border: 1px solid var(--gb); border-radius: 2px;
+    display: flex; align-items: center; justify-content: center; font-size: 16px;
+    background: var(--gp);
+  }
+  .c-label { font-size: 10px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 3px; display: block; }
+  .c-val { font-size: 15px; color: var(--text); }
+  .c-val a { color: var(--white); font-weight: 700; }
+
+  .inq-cards { display: flex; flex-direction: column; gap: 2px; }
+  .inq {
+    background: var(--card); border: 1px solid var(--div);
+    padding: 24px 28px; flex: 1;
+  }
+  .inq:first-child { border-color: var(--gb); }
+  .inq h4 { font-size: 13px; font-weight: 900; color: var(--white); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+  .inq p { font-size: 13px; color: var(--muted); margin-bottom: 16px; line-height: 1.5; }
+  .inq-btn {
+    display: inline-block; background: var(--gold); color: var(--black);
+    padding: 9px 20px; border-radius: 2px; font-size: 12px; font-weight: 900;
+    letter-spacing: 1px; text-transform: uppercase;
+  }
+  .inq-btn:hover { background: var(--gold2); }
+  .inq-ghost {
+    display: inline-block; border: 1px solid var(--gb); color: var(--gold);
+    padding: 9px 20px; border-radius: 2px; font-size: 12px; font-weight: 700;
+    letter-spacing: 1px; text-transform: uppercase;
+  }
+  .inq-ghost:hover { background: var(--gp); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #030303; border-top: 1px solid var(--gb);
+    padding: 40px; text-align: center;
+  }
+  footer img {
+    height: 52px; margin: 0 auto 16px; display: block;
+    filter: drop-shadow(0 0 12px rgba(107,120,84,0.4));
+  }
+  footer p { font-size: 13px; color: var(--muted); line-height: 1.7; }
+  footer .disc { font-size: 11px; color: #2a3020; margin-top: 12px; line-height: 1.6; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 940px) {
+    .nav-links { display: none; }
+    .hero { padding: 60px 20px 56px; }
+    .hero h1 { font-size: 44px; }
+    .hero-logo { width: 130px; height: 130px; }
+    .hero-specs { flex-wrap: wrap; }
+    .w { padding: 0 20px; }
+    .sec { padding: 56px 0; }
+    .lanes { grid-template-columns: 1fr; gap: 2px; }
+    .gov-grid { grid-template-columns: 1fr; }
+    .mf-grid { grid-template-columns: 1fr; }
+    .promise { grid-column: auto; }
+    .re-box { grid-template-columns: 1fr; padding: 28px 24px; }
+    .about-grid { grid-template-columns: 1fr; }
+    .about-img { max-width: 240px; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .areas { gap: 2px; }
+    footer { padding: 28px 20px; }
+  }
+`;
+
+export default function Home() {
   return (
     <>
       <Head>
-        <title>Joe Sanches | Leander & Austin TX Realtor | Homes for Sale</title>
-        <meta name="description" content="Joe Sanches is a top-rated Realtor in Leander, Cedar Park, and Austin, TX. Specializing in first-time buyers, new construction, and strategic home sales in Liberty Hill and Central Texas." />
+        <title>Sanches Group | Licensed Maintenance, Construction &amp; Government Contracting | Austin, TX</title>
+        <meta name="description" content="Sanches Group — veteran-owned maintenance, construction, and government contracting company. Licensed plumbing, electrical, GC, multi-family, and real estate in Central Texas." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href={baseUrl} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-        />
+        <link rel="canonical" href="https://joefsanches.com" />
+        <style dangerouslySetInnerHTML={{ __html: css }} />
       </Head>
-      <div className="container">
-        <div className="floating-contact-bar">
-          <a href="tel:5126638867" className="call-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-            Call Joe
+
+      {/* NAV */}
+      <nav className="nav">
+        <div className="nav-inner">
+          <a className="nav-logo" href="#top">
+            <img src="/logo.png" alt="Sanches Group" />
           </a>
-          <a href="sms:5126638867" className="text-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-            Text Joe
-          </a>
+          <ul className="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#government">Gov</a></li>
+            <li><a href="#multifamily">Multi-Family</a></li>
+            <li><a href="#real-estate">Real Estate</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="tel:5126638867" className="nav-call">512-663-8867</a></li>
+          </ul>
         </div>
-        <header className="topbar">
-          <div className="brand">
-            <img src="/logo.png" alt="Sanches Group" className="logo" />
-            <div>
-              <h1>Joe Sanches</h1>
-              <p className="sub">Licensed Realtor · Leander, TX</p>
-              <a href="/sanches-group" className="brand-group-link">Sanches Group ↗</a>
+      </nav>
+
+      {/* HERO */}
+      <section className="hero" id="top">
+        <div className="hero-inner">
+          <img src="/logo.png" alt="Sanches Group" className="hero-logo" />
+          <span className="hero-eyebrow">Leander, Texas · Est. by a U.S. Veteran</span>
+          <h1>Sanches Group</h1>
+          <span className="hero-tagline">
+            <span>Build It.</span> &nbsp;·&nbsp; <span>Power It.</span> &nbsp;·&nbsp; <span>Deliver It.</span>
+          </span>
+          <div className="hero-ctas">
+            <a href="#government" className="btn-gold">Government Contracting</a>
+            <a href="#contact" className="btn-outline">Request a Quote</a>
+          </div>
+          <div className="hero-specs">
+            <div className="spec">
+              <span className="spec-val">VOSB</span>
+              <span className="spec-label">Veteran-Owned</span>
+            </div>
+            <div className="spec">
+              <span className="spec-val">SAM.gov</span>
+              <span className="spec-label">Registered</span>
+            </div>
+            <div className="spec">
+              <span className="spec-val">Licensed</span>
+              <span className="spec-label">Plumbing · Elec · GC</span>
+            </div>
+            <div className="spec">
+              <span className="spec-val">Insured</span>
+              <span className="spec-label">Full Commercial</span>
             </div>
           </div>
-          <div className="actions">
-            <a href="tel:5126638867" className="btn">Call / Text</a>
-            <a href="mailto:hello@joefsanches.com" className="btn accent">Email Me</a>
-          </div>
-        </header>
+        </div>
+      </section>
 
-        <section className="hero">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', alignItems: 'center' }}>
-            <div>
-              <h2 className="heroTitle">Helping Leander homeowners buy and sell with confidence.</h2>
-              <p className="heroLead">
-                Strategic pricing, military discipline, and modern marketing to get you the best results in the Austin market.
-              </p>
-              <div className="heroMeta">
-                <span className="pill">Local Expert</span>
-                <span className="pill">Military Veteran</span>
-                <span className="pill">Top Negotiator</span>
+      {/* SERVICES */}
+      <section className="sec" id="services">
+        <div className="w">
+          <p className="sec-eyebrow">Divisions</p>
+          <h2 className="sec-title">Six capabilities.<br/>One standard.</h2>
+          <p className="sec-lead">From a burst pipe at 6am to a federal facilities contract — Sanches Group has the licenses, the team, and the accountability to handle it.</p>
+          <div className="lanes">
+            {[
+              { n:'01', title:'Plumbing', body:'Licensed plumbing for residential, commercial, and government properties — repairs, installations, water heaters, re-pipes, and unit-turn work.', tag:'Licensed · TX' },
+              { n:'02', title:'Electrical', body:'Code-compliant electrical work — panel upgrades, rewiring, EV charger prep, and commercial service for multi-family and government facilities.', tag:'Licensed · TX' },
+              { n:'03', title:'Construction', body:'General contracting for remodels, commercial build-outs, unit turns, and new construction. We manage the schedule, the subs, and the quality.', tag:'General Contractor' },
+              { n:'04', title:'Government', body:'Federal, state, and municipal maintenance and construction contracts. SAM.gov registered, VOSB-certified, active across all primary NAICS codes.', tag:'SAM.gov · VOSB' },
+              { n:'05', title:'Multi-Family', body:'Ongoing maintenance contracts, unit turns, and capital improvement projects for apartment complexes, HOAs, and commercial property owners.', tag:'Commercial' },
+              { n:'06', title:'Real Estate', body:'Licensed Realtor division representing individual buyers and sellers in Leander, Cedar Park, and Austin. Structurally separate from contracting operations.', tag:'TREC Licensed' },
+            ].map(({ n, title, body, tag }) => (
+              <div key={n} className="lane">
+                <span className="lane-num">{n}</span>
+                <h3>{title}</h3>
+                <p>{body}</p>
+                <span className="lane-tag">{tag}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* GOVERNMENT */}
+      <section className="sec dark" id="government">
+        <div className="w">
+          <p className="sec-eyebrow">Government Contracting</p>
+          <h2 className="sec-title">Ready to bid.<br/>Ready to perform.</h2>
+          <p className="sec-lead">Verified veteran-owned status. Active SAM.gov registration. Licensed and insured in Texas. We pursue federal, state, and municipal contracts for maintenance, construction, and trades work across Central Texas.</p>
+          <div className="gov-grid">
+            <div className="gov-box">
+              <h4>Certifications &amp; Registrations</h4>
+              <div className="cert-row">
+                <span className="cert-ico">🎖️</span>
+                <div>
+                  <div className="cert-name">VOSB — Veteran-Owned Small Business</div>
+                  <div className="cert-sub">Verified through the U.S. Department of Veterans Affairs. Eligible for set-aside contracts.</div>
+                </div>
+              </div>
+              <div className="cert-row">
+                <span className="cert-ico">🏛️</span>
+                <div>
+                  <div className="cert-name">SAM.gov — Active Registration</div>
+                  <div className="cert-sub">System for Award Management — active federal contractor registration eligible to receive contract awards.</div>
+                </div>
+              </div>
+              <div className="cert-row">
+                <span className="cert-ico">🪪</span>
+                <div>
+                  <div className="cert-name">Texas-Licensed Trades &amp; GC</div>
+                  <div className="cert-sub">Licensed plumbing, electrical, and general contracting with full commercial general liability and workers&apos; comp.</div>
+                </div>
+              </div>
+              <div className="cert-row">
+                <span className="cert-ico">🇺🇸</span>
+                <div>
+                  <div className="cert-name">Veteran Founder</div>
+                  <div className="cert-sub">100% veteran-owned and operated. Joe Sanches served in the U.S. military before founding this company.</div>
+                </div>
               </div>
             </div>
-            <div style={{ textAlign: 'center' }}>
-              <img 
-                src="/joe.png" 
-                alt="Joe Sanches" 
-                style={{ 
-                  borderRadius: '16px', 
-                  width: '100%', 
-                  maxWidth: '320px', 
-                  boxShadow: '0 20px 40px rgba(107,120,84,0.2)',
-                  border: '2px solid rgba(107,120,84,0.3)'
-                }} 
-              />
+            <div className="gov-box">
+              <h4>Primary NAICS Codes</h4>
+              <div className="naics-row"><span className="naics-code">238110</span><span className="naics-name">Plumbing, Heating &amp; Air-Conditioning Contractors</span></div>
+              <div className="naics-row"><span className="naics-code">238210</span><span className="naics-name">Electrical Contractors &amp; Other Wiring Installation</span></div>
+              <div className="naics-row"><span className="naics-code">236220</span><span className="naics-name">Commercial &amp; Institutional Building Construction</span></div>
+              <div className="naics-row"><span className="naics-code">236118</span><span className="naics-name">Residential Remodelers</span></div>
+              <div className="naics-row"><span className="naics-code">561720</span><span className="naics-name">Janitorial Services &amp; Facilities Maintenance</span></div>
+              <div className="naics-row"><span className="naics-code">238990</span><span className="naics-name">All Other Specialty Trade Contractors</span></div>
             </div>
           </div>
-        </section>
-
-        {/* Hub Pages Navigation */}
-        <section style={{ marginTop: '48px', marginBottom: '48px' }}>
-          <h2 style={{ fontSize: '20px', fontWeight: 700, color: 'white', marginBottom: '6px' }}>Leander TX Real Estate Guides</h2>
-          <p style={{ color: 'var(--muted)', fontSize: '14px', marginBottom: '24px' }}>Everything you need to buy, sell, or move to Leander TX.</p>
-
-          {/* Buyer & Seller Hubs */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '12px', marginBottom: '32px' }}>
-            {[
-              { href: '/buy-home-leander-tx', label: 'Buy a Home', desc: 'Process, costs & neighborhoods' },
-              { href: '/sell-my-house-leander-tx', label: 'Sell My House', desc: 'Pricing, timing & Joe\'s process' },
-              { href: '/whats-my-home-worth', label: "What's My Home Worth?", desc: 'Free CMA — no obligation' },
-              { href: '/leander-home-buyer-guide', label: 'Buyer\'s Guide', desc: 'Complete 2026 relocation guide' },
-              { href: '/moving-to-leander-tx', label: 'Moving to Leander', desc: 'Neighborhoods, schools & commute' },
-              { href: '/leander-real-estate-market-2026', label: 'Market Report 2026', desc: 'Prices, trends & forecast' },
-            ].map(({ href, label, desc }) => (
-              <Link key={href} href={href} style={{ textDecoration: 'none' }}>
-                <div style={{
-                  background: 'rgba(107,120,84,.06)', border: '1px solid rgba(107,120,84,.2)',
-                  borderRadius: '10px', padding: '16px', cursor: 'pointer',
-                  transition: 'border-color .2s'
-                }}>
-                  <div style={{ color: 'var(--accent-light)', fontWeight: 600, fontSize: '14px', marginBottom: '4px' }}>{label}</div>
-                  <div style={{ color: 'var(--muted)', fontSize: '13px' }}>{desc}</div>
-                </div>
-              </Link>
-            ))}
+          <div className="cap-bar">
+            <p><strong style={{ color: 'var(--white)' }}>Contracting Officers &amp; Procurement Teams —</strong> Request a capability statement, past performance summary, or teaming discussion directly.</p>
+            <a href="mailto:hello@joefsanches.com?subject=Capability%20Statement%20Request%20%E2%80%94%20Sanches%20Group&body=Agency%2FOrganization%3A%0ANAICS%20Code(s)%3A%0AContract%20type%3A%0A" className="btn-gold">Request Capability Statement</a>
           </div>
+        </div>
+      </section>
 
-          {/* New Construction */}
-          <h3 style={{ fontSize: '16px', fontWeight: 600, color: 'white', marginBottom: '12px' }}>New Construction</h3>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '12px', marginBottom: '16px' }}>
-            {[
-              { href: '/new-construction-leander-tx', label: 'New Construction Hub', desc: 'All builders & communities' },
-              { href: '/new-construction-crystal-falls', label: 'Crystal Falls', desc: 'Lennar · $340K–$520K' },
-              { href: '/new-construction-bryson', label: 'Bryson', desc: 'KB Home · $320K–$450K' },
-              { href: '/new-construction-northline', label: 'Northline', desc: 'Taylor Morrison · $380K–$560K' },
-              { href: '/new-construction-larkspur', label: 'Larkspur', desc: 'David Weekley · $420K–$580K' },
-              { href: '/new-construction-deerbrooke', label: 'Deerbrooke', desc: 'Meritage · $340K–$480K' },
-              { href: '/new-construction-travisso', label: 'Travisso', desc: 'Toll Bros · $500K–$850K' },
-              { href: '/lennar-homes-leander-tx', label: 'Lennar Homes', desc: 'Crystal Falls & more' },
-              { href: '/kb-home-leander-tx', label: 'KB Home', desc: 'Built-to-order at Bryson' },
-              { href: '/taylor-morrison-leander-tx', label: 'Taylor Morrison', desc: 'Northline & Larkspur' },
-              { href: '/david-weekley-leander-cedar-park', label: 'David Weekley', desc: 'Award-winning builder' },
-              { href: '/meritage-homes-leander-tx', label: 'Meritage Homes', desc: '#1 energy-efficient builder' },
-            ].map(({ href, label, desc }) => (
-              <Link key={href} href={href} style={{ textDecoration: 'none' }}>
-                <div style={{
-                  background: 'rgba(107,120,84,.06)', border: '1px solid rgba(107,120,84,.2)',
-                  borderRadius: '10px', padding: '16px', cursor: 'pointer'
-                }}>
-                  <div style={{ color: 'var(--accent-light)', fontWeight: 600, fontSize: '14px', marginBottom: '4px' }}>{label}</div>
-                  <div style={{ color: 'var(--muted)', fontSize: '13px' }}>{desc}</div>
-                </div>
-              </Link>
-            ))}
-          </div>
-          <div style={{
-            background: 'rgba(107,120,84,0.08)', border: '1px solid rgba(107,120,84,0.3)',
-            borderRadius: '12px', padding: '20px 24px', marginBottom: '32px',
-            display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px'
-          }}>
-            <div>
-              <div style={{ color: 'white', fontWeight: 600, fontSize: '15px', marginBottom: '4px' }}>Browse All New Homes in Leander & Cedar Park</div>
-              <div style={{ color: 'var(--muted)', fontSize: '13px' }}>Live inventory updated daily — search by price, community, and move-in date</div>
-            </div>
-            <a
-              href="https://a.nhb.app/u/joe"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-block', background: 'var(--accent)', color: 'white',
-                padding: '10px 20px', borderRadius: '8px', fontWeight: 600,
-                fontSize: '14px', textDecoration: 'none', whiteSpace: 'nowrap'
-              }}
-            >
-              Search New Homes →
-            </a>
-          </div>
-
-          {/* Neighborhoods & Schools */}
-          <h3 style={{ fontSize: '16px', fontWeight: 600, color: 'white', marginBottom: '12px' }}>Neighborhoods & Schools</h3>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '12px' }}>
-            {[
-              { href: '/leander-neighborhoods', label: 'Neighborhoods Guide', desc: 'Every community compared' },
-              { href: '/leander-isd-schools', label: 'Leander ISD Schools', desc: 'Ratings, zones & campuses' },
-              { href: '/property-tax-leander-tx', label: 'Property Tax Guide', desc: 'Every MUD district & rate' },
-              { href: '/neighborhoods/crystal-falls', label: 'Crystal Falls', desc: '$420K median · LISD' },
-              { href: '/neighborhoods/bryson', label: 'Bryson', desc: '$385K median · resort pool' },
-              { href: '/neighborhoods/travisso', label: 'Travisso', desc: '$620K median · Hill Country' },
-              { href: '/neighborhoods/northline', label: 'Northline', desc: '$455K median · walkable' },
-              { href: '/neighborhoods/santa-rita-ranch', label: 'Santa Rita Ranch', desc: 'Liberty Hill · $340K+' },
-              { href: '/neighborhoods/wolf-ranch', label: 'Wolf Ranch', desc: 'Georgetown · $380K+' },
-            ].map(({ href, label, desc }) => (
-              <Link key={href} href={href} style={{ textDecoration: 'none' }}>
-                <div style={{
-                  background: 'rgba(107,120,84,.06)', border: '1px solid rgba(107,120,84,.2)',
-                  borderRadius: '10px', padding: '16px', cursor: 'pointer'
-                }}>
-                  <div style={{ color: 'var(--accent-light)', fontWeight: 600, fontSize: '14px', marginBottom: '4px' }}>{label}</div>
-                  <div style={{ color: 'var(--muted)', fontSize: '13px' }}>{desc}</div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        <div className="grid">
-          <main className="main">
-            <h3 style={{ marginBottom: '20px', fontSize: '18px', color: 'white' }}>Latest Insights</h3>
-            <div className="list">
-              {posts.length > 0 ? (
-                posts.map((post) => (
-                  <div key={post.slug} className="card">
-                    <h4 className="cardTitle">
-                      <Link href={`/posts/${post.slug}`}>{post.title}</Link>
-                    </h4>
-                    <p className="cardMeta">
-                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                      {post.date ? new Date(post.date).toLocaleDateString() : 'Recent Post'}
-                    </p>
-                  </div>
-                ))
-              ) : (
-                <p style={{ color: 'var(--muted)' }}>New insights coming soon...</p>
-              )}
-            </div>
-          </main>
-
-          <aside className="side">
-          <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center', marginBottom: '20px' }}>
-            <h3 className="cardTitle" style={{ color: 'var(--accent-light)', marginBottom: '12px' }}>STOP OVERPAYING</h3>
-            <p style={{ fontSize: '14px', color: 'var(--muted)', marginBottom: '16px', lineHeight: '1.6' }}>
-              5 Leander Homes with Price Drops This Week + My Negotiator's Playbook
-            </p>
-            <a
-              href="mailto:hello@joefsanches.com?subject=URGENT%3A%20Send%20me%20the%205%20Price%20Drops%20%2B%20Negotiator%27s%20Playbook&body=Hi%20Joe%2C%0A%0AI%27m%20ready%20to%20stop%20overpaying.%20Send%20me%20the%205%20homes%20with%20price%20drops%20this%20week%20and%20your%20negotiator%27s%20playbook.%0A%0AThank%20you!"
-              className="btn accent"
-              style={{ justifyContent: 'center', fontSize: '14px', display: 'block', textAlign: 'center', padding: '12px 20px' }}
-            >
-              Get the Deal
-            </a>
-            </div>
-            <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center' }}>
-              <h3 className="cardTitle" style={{ color: 'var(--accent-light)' }}>Why Work With Joe?</h3>
-              <ul style={{ paddingLeft: '18px', marginTop: '16px', fontSize: '14px', color: 'var(--muted)', lineHeight: '1.8', textAlign: 'left' }}>
-                <li>Local Leander market expert</li>
-                <li>Strategic pricing & negotiation</li>
-                <li>Clear communication and fast response</li>
-                <li>Military discipline + modern marketing</li>
+      {/* MULTI-FAMILY */}
+      <section className="sec" id="multifamily">
+        <div className="w">
+          <p className="sec-eyebrow">Multi-Family &amp; Commercial</p>
+          <h2 className="sec-title">Your vendor.<br/>Not your competition.</h2>
+          <p className="sec-lead">Sanches Group works as an outside trades contractor for property management companies, apartment complexes, and commercial owners. We do the work. You keep the relationship.</p>
+          <div className="mf-grid">
+            <div className="mf-box">
+              <h3>For Property Managers</h3>
+              <p>One call covers all your trades. Fast turnaround, clear invoicing, and we never talk to your owners about anything outside the scope of work.</p>
+              <ul className="check">
+                <li>Licensed plumbing, electrical, and GC</li>
+                <li>Fast unit-turn between tenants</li>
+                <li>Preventive maintenance programs</li>
+                <li>Emergency response — nights &amp; weekends</li>
+                <li>Itemized invoicing, no surprises</li>
+                <li>Fully insured — we carry the liability</li>
               </ul>
             </div>
-          </aside>
-        </div>
-
-        <footer className="footer">
-          <p>© {new Date().getFullYear()} Joe Sanches Realtor • Leander, Texas</p>
-          <p style={{ marginTop: '8px' }}>Phone: 512-663-8867 • Email: hello@joefsanches.com</p>
-          <div style={{ marginTop: '16px' }}>
-            <a href="https://g.page/r/CS5gIVIj8I-AEBE/review" target="_blank" rel="noopener noreferrer" className="btn" style={{ fontSize: '12px', opacity: 0.8 }}>
-              ⭐ Review Joe on Google
-            </a>
+            <div className="mf-box">
+              <h3>For Property Owners</h3>
+              <p>Ongoing maintenance contracts for 5-unit to 100+ unit portfolios. One point of contact for every trade.</p>
+              <ul className="check">
+                <li>Capital improvement and renovation</li>
+                <li>Common area maintenance</li>
+                <li>Roof, HVAC, plumbing, electrical coordination</li>
+                <li>Scope-of-work and project documentation</li>
+                <li>Competitive contract pricing</li>
+                <li>Central Texas — all major markets</li>
+              </ul>
+            </div>
+            <div className="promise">
+              <h3>On record</h3>
+              <p>Sanches Group has a real estate division. It handles individual buyer and seller transactions only. We do not solicit your property owners, pursue management contracts, or compete with your business in any form. You bring us in to do the work — that&apos;s the whole relationship.</p>
+            </div>
           </div>
-        </footer>
+        </div>
+      </section>
 
-        <style jsx>{`
-          @media (max-width: 860px) {
-            .hero > div {
-              grid-template-columns: 1fr !important;
-            }
-          }
-          .container {
-            padding-bottom: 100px;
-          }
-        `}</style>
-      </div>
+      {/* REAL ESTATE */}
+      <section className="sec dark" id="real-estate">
+        <div className="w">
+          <p className="sec-eyebrow">Real Estate Division</p>
+          <h2 className="sec-title">Buying or selling<br/>in Austin?</h2>
+          <p className="sec-lead">Joe Sanches is a licensed Realtor (TREC) representing individual buyers and sellers in Leander, Cedar Park, and the greater Austin area. Separate from everything else on this page.</p>
+          <div className="re-box">
+            <div>
+              <h3>Buyer &amp; Seller Rep</h3>
+              <p>Every neighborhood, every builder, every school zone in Leander and Cedar Park. VA loan expertise. New construction navigation. The same military discipline applied to your transaction.</p>
+              <p>If you&apos;re buying or selling a home in Austin — this is the call.</p>
+              <div className="re-tags">
+                <span className="re-tag">First-Time Buyers</span>
+                <span className="re-tag">VA Loans</span>
+                <span className="re-tag">New Construction</span>
+                <span className="re-tag">Resale</span>
+                <span className="re-tag">Seller Rep</span>
+                <span className="re-tag">Military Relocation</span>
+              </div>
+              <div style={{ display:'flex', gap:'12px', flexWrap:'wrap' }}>
+                <a href="/realtor" className="btn-gold">Realtor Site →</a>
+                <a href="https://a.nhb.app/u/joe" className="btn-outline" target="_blank" rel="noopener noreferrer">Browse New Construction</a>
+              </div>
+            </div>
+            <div>
+              <div className="re-note">
+                <strong style={{ color:'var(--white)', display:'block', marginBottom:'8px' }}>Note for property managers &amp; contractors</strong>
+                The real estate division handles individual purchase and sale transactions only. It does not engage with rental portfolios, management operations, or commercial acquisition on behalf of third parties. Structurally separated within Sanches Group.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT */}
+      <section className="sec" id="about">
+        <div className="w">
+          <div className="about-grid">
+            <div>
+              <img src="/joe.png" alt="Joe Sanches — Founder, Sanches Group" className="about-img" />
+            </div>
+            <div className="about">
+              <p className="sec-eyebrow">Founder</p>
+              <h2>Joe Sanches</h2>
+              <span className="about-role">Founder &amp; Principal · Sanches Group · Licensed Realtor (TREC) · U.S. Veteran</span>
+              <p className="about-bio">Joe Sanches built Sanches Group on the same standards he carried in uniform: show up, do the work, stand behind it. Based in Leander, Texas, he has spent years assembling the licenses, the team, and the operational experience to handle maintenance, construction, and contracting work that other companies can&apos;t do under one roof.</p>
+              <p className="about-bio">He works every contract personally. When you deal with Sanches Group, you deal with Joe.</p>
+              <div className="creds">
+                <span className="cred">U.S. Military Veteran</span>
+                <span className="cred">VOSB Certified</span>
+                <span className="cred">SAM.gov Registered</span>
+                <span className="cred">TREC Licensed</span>
+                <span className="cred">Licensed Trades · TX</span>
+                <span className="cred">General Contractor</span>
+                <span className="cred">Fully Insured</span>
+              </div>
+              <div style={{ display:'flex', gap:'12px', flexWrap:'wrap' }}>
+                <a href="tel:5126638867" className="btn-gold">Call 512-663-8867</a>
+                <a href="mailto:hello@joefsanches.com" className="btn-outline">hello@joefsanches.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AREAS */}
+      <section className="sec dark">
+        <div className="w">
+          <p className="sec-eyebrow">Service Area</p>
+          <h2 className="sec-title">Central Texas.</h2>
+          <p className="sec-lead">Maintenance, construction, government contracting, and real estate across the Austin metro. Primary base: Leander and Williamson County.</p>
+          <div className="areas">
+            {['Leander','Cedar Park','Austin','Round Rock','Georgetown','Pflugerville','Liberty Hill','Hutto','Kyle','Buda'].map(a => (
+              <span key={a} className="area">{a}</span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section className="sec" id="contact">
+        <div className="w">
+          <p className="sec-eyebrow">Contact</p>
+          <h2 className="sec-title">Talk to Joe.</h2>
+          <p className="sec-lead">Government contract, maintenance agreement, construction project, or buying a home — reach Joe directly. No answering service. No runaround.</p>
+          <div className="contact-grid">
+            <div className="contact-main">
+              <h3>Joe Sanches</h3>
+              <p>Founder, Sanches Group · Leander, Texas</p>
+              <div className="c-items">
+                <div className="c-item">
+                  <span className="c-icon">📞</span>
+                  <div>
+                    <span className="c-label">Phone / Text</span>
+                    <div className="c-val"><a href="tel:5126638867">512-663-8867</a></div>
+                  </div>
+                </div>
+                <div className="c-item">
+                  <span className="c-icon">✉️</span>
+                  <div>
+                    <span className="c-label">Email</span>
+                    <div className="c-val"><a href="mailto:hello@joefsanches.com">hello@joefsanches.com</a></div>
+                  </div>
+                </div>
+                <div className="c-item">
+                  <span className="c-icon">🌐</span>
+                  <div>
+                    <span className="c-label">Real Estate</span>
+                    <div className="c-val"><a href="/realtor">joefsanches.com/realtor</a></div>
+                  </div>
+                </div>
+                <div className="c-item">
+                  <span className="c-icon">📍</span>
+                  <div>
+                    <span className="c-label">Location</span>
+                    <div className="c-val">Leander, TX</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="inq-cards">
+              <div className="inq">
+                <h4>Government &amp; Municipal</h4>
+                <p>Solicitations, capability statements, teaming, or procurement inquiries.</p>
+                <a href="mailto:hello@joefsanches.com?subject=Government%20Contracting%20%E2%80%94%20Sanches%20Group&body=Agency%2FOrganization%3A%0AContract%20type%3A%0AScope%3A%0A" className="inq-btn">Send Inquiry →</a>
+              </div>
+              <div className="inq">
+                <h4>Multi-Family &amp; Maintenance</h4>
+                <p>Maintenance contracts, unit turns, capital improvements, vendor partnerships.</p>
+                <a href="mailto:hello@joefsanches.com?subject=Maintenance%20Partnership%20%E2%80%94%20Sanches%20Group&body=Property%20type%3A%0AUnit%20count%3A%0ANeeds%3A%0A" className="inq-btn">Discuss a Contract →</a>
+              </div>
+              <div className="inq">
+                <h4>Residential &amp; Real Estate</h4>
+                <p>Plumbing, electrical, renovation, or buying/selling a home in Austin.</p>
+                <a href="tel:5126638867" className="inq-ghost">Call 512-663-8867 →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer>
+        <img src="/logo.png" alt="Sanches Group" />
+        <p>© {new Date().getFullYear()} Sanches Group · Leander, Texas</p>
+        <p>512-663-8867 · <a href="mailto:hello@joefsanches.com">hello@joefsanches.com</a></p>
+        <p style={{ marginTop:'6px' }}>Veteran-Owned · Licensed &amp; Insured · SAM.gov · VOSB</p>
+        <p className="disc">Real estate services by Joe Sanches, Licensed Realtor (TREC). Real estate activity is individual buyer/seller representation only, structurally separate from Sanches Group maintenance and contracting operations.</p>
+      </footer>
     </>
   );
 }
