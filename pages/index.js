@@ -492,6 +492,13 @@ export default function Home() {
                   <div className="cert-sub">100% veteran-owned and operated. Joe Sanches served in the U.S. military before founding this company.</div>
                 </div>
               </div>
+              <div className="cert-row" style={{ paddingTop: '20px', borderTop: '1px solid var(--div)' }}>
+                <img
+                  src="https://comptroller.texas.gov/purchasing/images/vethub-certified-logo-2025.svg"
+                  alt="Texas Veteran-Owned Business Certified"
+                  style={{ height: '60px', width: 'auto', display: 'block' }}
+                />
+              </div>
             </div>
             <div className="gov-box">
               <h4>Primary NAICS Codes</h4>
@@ -696,6 +703,11 @@ export default function Home() {
         <p>© {new Date().getFullYear()} Sanches Group · Leander, Texas</p>
         <p>512-663-8867 · <a href="mailto:hello@joefsanches.com">hello@joefsanches.com</a></p>
         <p style={{ marginTop:'6px' }}>Veteran-Owned · Licensed &amp; Insured · SAM.gov · VOSB</p>
+        <img
+          src="https://comptroller.texas.gov/purchasing/images/vethub-certified-logo-2025.svg"
+          alt="Texas Veteran-Owned Business Certified"
+          style={{ height: '52px', width: 'auto', margin: '12px auto 0', display: 'block', opacity: 0.85 }}
+        />
         <p className="disc">Real estate services by Joe Sanches, Licensed Realtor (TREC). Real estate activity is individual buyer/seller representation only, structurally separate from Sanches Group maintenance and contracting operations.</p>
       </footer>
     </>
