@@ -16,6 +16,8 @@ function generateSitemap() {
   // Hub pages — highest priority
   const hubPages = [
     { url: "/", priority: "1.0" },
+    { url: "/government", priority: "0.95" },
+    { url: "/realtor", priority: "0.9" },
     { url: "/homes-for-sale-in-leander-tx", priority: "0.9" },
     { url: "/property-tax-leander-tx", priority: "0.95" },
     { url: "/new-construction-leander-tx", priority: "0.95" },
