@@ -223,7 +223,7 @@ export default function Government() {
     <>
       <Head>
         <title>Government Contracting | Sanches Group | Texas HUB · VOSB · SAM.gov</title>
-        <meta name="description" content="Sanches Group is a Texas HUB-certified, VOSB-certified, SAM.gov-registered contractor for federal, state, and municipal contracts. Licensed trades and general contracting in Central Texas." />
+        <meta name="description" content="Sanches Group is a Texas HUB-certified (VetHUB), SDVOSB-verified, SAM.gov-registered service-disabled veteran-owned contractor. Licensed trades, janitorial, and facilities services for government and institutional clients in Central Texas." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://joefsanches.com/government" />
         <style dangerouslySetInnerHTML={{ __html: css }} />
@@ -251,13 +251,14 @@ export default function Government() {
         <div className="hero-inner">
           <span className="hero-eyebrow">Government Contracting</span>
           <h1>Certified.<br/>Registered.<br/>Ready to Perform.</h1>
-          <p>Sanches Group is a Texas HUB-certified, VOSB-verified, SAM.gov-registered contractor pursuing federal, state, and municipal contracts for maintenance, construction, and licensed trades work across Central Texas.</p>
+          <p>Sanches Group is a Texas HUB-certified, SDVOSB-verified, SAM.gov-registered contractor pursuing federal, state, and municipal contracts for maintenance, construction, licensed trades, and facilities services across Central Texas. Service-disabled veteran-owned and operated.</p>
           <div className="hero-badges">
-            <span className="badge">Texas HUB Certified</span>
-            <span className="badge">VOSB — VA Verified</span>
+            <span className="badge">Texas HUB · VetHUB Certified</span>
+            <span className="badge">SDVOSB — Service-Disabled Veteran</span>
             <span className="badge">SAM.gov Active</span>
             <span className="badge">Licensed Plumbing · Electrical · GC</span>
             <span className="badge">Full Commercial Insurance</span>
+            <span className="badge">Spot Purchases · Janitorial · Trades</span>
           </div>
           <div className="hero-ctas">
             <a href="mailto:hello@joefsanches.com?subject=Capability%20Statement%20Request%20%E2%80%94%20Sanches%20Group&body=Agency%2FOrganization%3A%0ANAICS%20Code(s)%3A%0AContract%20type%3A%0A" className="btn-gold">Request Capability Statement</a>
@@ -277,8 +278,8 @@ export default function Government() {
           </div>
           <div className="cert-chip">
             <div>
-              <span className="cert-chip-label">VOSB</span>
-              <span className="cert-chip-sub">VA-Verified Veteran-Owned</span>
+              <span className="cert-chip-label">SDVOSB</span>
+              <span className="cert-chip-sub">Service-Disabled Veteran-Owned</span>
             </div>
           </div>
           <div className="cert-chip">
@@ -339,8 +340,8 @@ export default function Government() {
               <div className="cred-item">
                 <span className="cred-ico">🎖️</span>
                 <div>
-                  <div className="cred-name">VOSB — Veteran-Owned Small Business</div>
-                  <div className="cred-detail">Verified through the U.S. Department of Veterans Affairs. Eligible for VA set-aside contracts and federal VOSB preference programs.</div>
+                  <div className="cred-name">SDVOSB — Service-Disabled Veteran-Owned Small Business</div>
+                  <div className="cred-detail">Verified through the U.S. Department of Veterans Affairs. Eligible for VA SDVOSB set-aside contracts and federal service-disabled veteran preference programs — highest federal small business preference tier.</div>
                 </div>
               </div>
               <div className="cred-item">
@@ -353,8 +354,8 @@ export default function Government() {
               <div className="cred-item">
                 <span className="cred-ico">🇺🇸</span>
                 <div>
-                  <div className="cred-name">Veteran-Owned &amp; Operated</div>
-                  <div className="cred-detail">Joe Sanches, founder and principal, is a U.S. military veteran. 100% veteran-owned — not just named, actually run.</div>
+                  <div className="cred-name">Service-Disabled Veteran — Owned &amp; Operated</div>
+                  <div className="cred-detail">Joe Sanches, founder and principal, is a U.S. service-disabled veteran. 100% service-disabled veteran-owned and operated — not just named, actually run by the veteran.</div>
                 </div>
               </div>
             </div>
@@ -365,10 +366,10 @@ export default function Government() {
       {/* NAICS */}
       <section className="sec dark" id="naics">
         <div className="w">
-          <span className="sec-label">NAICS Codes</span>
-          <h2 className="sec-title">Six primary codes.</h2>
-          <p className="sec-lead">Sanches Group holds active registrations across six NAICS codes covering all major trades, construction, and facilities work.</p>
-          <div style={{ background: 'var(--card)', border: '1px solid var(--div)', padding: '0 32px' }}>
+          <span className="sec-label">NAICS Codes (Federal)</span>
+          <h2 className="sec-title">Federal commodity codes.</h2>
+          <p className="sec-lead">Sanches Group holds active federal registrations across six NAICS codes covering all major trades, construction, and facilities work.</p>
+          <div style={{ background: 'var(--card)', border: '1px solid var(--div)', padding: '0 32px', marginBottom: '48px' }}>
             <table className="naics-table">
               <tbody>
                 <tr>
@@ -398,6 +399,56 @@ export default function Government() {
               </tbody>
             </table>
           </div>
+
+          <span className="sec-label" style={{ marginTop: '0' }}>NIGP Codes (State of Texas / CMBL)</span>
+          <h2 className="sec-title" style={{ marginBottom: '14px' }}>Texas state commodity codes.</h2>
+          <p className="sec-lead">NIGP codes registered on the Texas Comptroller's CMBL (Centralized Master Bidders List) — the state procurement system used by all Texas agencies.</p>
+          <div style={{ background: 'var(--card)', border: '1px solid var(--div)', padding: '0 32px' }}>
+            <table className="naics-table">
+              <tbody>
+                <tr>
+                  <td className="naics-code">91000</td>
+                  <td className="naics-name">Building Maintenance, Installation and Repair Services <span className="naics-tag">Active</span></td>
+                </tr>
+                <tr>
+                  <td className="naics-code">91082</td>
+                  <td className="naics-name">Wiring and Other Electrical Maintenance and Repair <span className="naics-tag">Active</span></td>
+                </tr>
+                <tr>
+                  <td className="naics-code">91141</td>
+                  <td className="naics-name">C.I.P., Landscaping <span className="naics-tag">Active</span></td>
+                </tr>
+                <tr>
+                  <td className="naics-code">91450</td>
+                  <td className="naics-name">HVAC (Heating, Ventilating, and Air Conditioning) <span className="naics-tag">Active</span></td>
+                </tr>
+                <tr>
+                  <td className="naics-code">98852</td>
+                  <td className="naics-name">General Grounds Maintenance (Not Tree Trimming) <span className="naics-tag">Active</span></td>
+                </tr>
+                <tr>
+                  <td className="naics-code">910-39</td>
+                  <td className="naics-name">Janitorial / Custodial Services</td>
+                </tr>
+                <tr>
+                  <td className="naics-code">968-94</td>
+                  <td className="naics-name">Pressure Washing Services</td>
+                </tr>
+                <tr>
+                  <td className="naics-code">910-54</td>
+                  <td className="naics-name">Painting and Wall Covering</td>
+                </tr>
+                <tr>
+                  <td className="naics-code">910-25</td>
+                  <td className="naics-name">Flooring Maintenance and Repair</td>
+                </tr>
+                <tr>
+                  <td className="naics-code">910-81</td>
+                  <td className="naics-name">Window Washing Services</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
 
@@ -406,15 +457,33 @@ export default function Government() {
         <div className="w">
           <span className="sec-label">Scope of Work</span>
           <h2 className="sec-title">What we deliver.</h2>
-          <p className="sec-lead">Sanches Group handles the full scope of trades and construction work for government and institutional clients — from single-unit repairs to multi-site maintenance contracts.</p>
-          <div className="scope-grid">
+          <p className="sec-lead">Sanches Group handles both licensed trades and non-licensed facilities services for government and institutional clients — from emergency repairs and spot purchases under $25K to multi-site maintenance contracts.</p>
+          <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '12px', opacity: '0.8' }}>Licensed Trade Services</p>
+          <div className="scope-grid" style={{ marginBottom: '2px' }}>
             {[
               { n:'01', title:'Plumbing', body:'Licensed plumbing for government facilities, military housing, municipal buildings, and institutional properties. Repairs, installations, water heaters, re-pipes, and emergency response.' },
               { n:'02', title:'Electrical', body:'Code-compliant electrical work for government and commercial facilities — panel upgrades, rewiring, lighting, EV charger infrastructure, and commercial service installations.' },
-              { n:'03', title:'General Construction', body:'General contracting for government build-outs, office remodels, institutional renovations, and new construction. Full project management, subcontractor coordination, and quality control.' },
-              { n:'04', title:'Facilities Maintenance', body:'Ongoing maintenance contracts for government-owned and leased facilities. Preventive maintenance programs, work order fulfillment, and on-call emergency response.' },
+              { n:'03', title:'HVAC', body:'HVAC replacement, repair, and preventive maintenance for government and institutional facilities. Unit replacements, system diagnostics, and emergency service calls.' },
+              { n:'04', title:'General Construction', body:'General contracting for government build-outs, office remodels, institutional renovations, and new construction. Full project management, subcontractor coordination, and quality control.' },
               { n:'05', title:'Unit Turns & Rehab', body:'Fast, high-quality unit turn work for government housing, VA facilities, and multi-unit residential properties. Standardized scopes, fast scheduling, itemized documentation.' },
               { n:'06', title:'Capital Improvements', body:'Capital improvement planning and execution for institutional clients. Full scope management from assessment through completion, with documentation suitable for agency reporting.' },
+            ].map(({ n, title, body }) => (
+              <div key={n} className="scope-box">
+                <span className="scope-num">{n}</span>
+                <h3>{title}</h3>
+                <p>{body}</p>
+              </div>
+            ))}
+          </div>
+          <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--gold)', margin: '32px 0 12px', opacity: '0.8' }}>Non-Licensed Facilities Services — Available for Spot Purchases</p>
+          <div className="scope-grid">
+            {[
+              { n:'07', title:'Janitorial & Custodial', body:'Janitorial and custodial services for government offices, facilities, and institutional properties. One-time deep cleans, recurring contracts, and post-construction clean-up. NIGP 910-39.' },
+              { n:'08', title:'Pressure Washing', body:'Professional pressure washing for building exteriors, parking lots, walkways, and government facilities. Scheduled maintenance programs and single-event service. NIGP 968-94.' },
+              { n:'09', title:'Painting & Wall Covering', body:'Interior and exterior painting for government and institutional facilities. Surface prep, color-matching, and finishes suitable for occupied commercial and institutional environments. NIGP 910-54.' },
+              { n:'10', title:'Flooring', body:'Flooring maintenance, repair, and replacement for government facilities. Tile, LVP, carpet, and specialty flooring. Fast turnaround on spot repairs and unit rehabs. NIGP 910-25.' },
+              { n:'11', title:'Window Washing', body:'Commercial window washing for government buildings, institutional facilities, and multi-story properties. Scheduled maintenance programs and on-demand service. NIGP 910-81.' },
+              { n:'12', title:'Grounds Maintenance', body:'General grounds maintenance for government properties and facilities — mowing, edging, debris removal, and property upkeep. Available for recurring contracts and spot purchases. NIGP 98852.' },
             ].map(({ n, title, body }) => (
               <div key={n} className="scope-box">
                 <span className="scope-num">{n}</span>
@@ -501,7 +570,7 @@ export default function Government() {
         <img src="/logo.png" alt="Sanches Group" />
         <p>© {new Date().getFullYear()} Joe Sanches LLC · Sanches Group · Leander, Texas</p>
         <p>512-663-8867 · hello@joefsanches.com</p>
-        <p style={{ marginTop: '6px' }}>Texas HUB Certified · VOSB · SAM.gov · Licensed &amp; Insured</p>
+        <p style={{ marginTop: '6px' }}>Texas HUB · VetHUB Certified · SDVOSB · SAM.gov · Licensed &amp; Insured</p>
         <img
           src="https://comptroller.texas.gov/purchasing/images/vethub-certified-logo-2025.svg"
           alt="Texas Veteran HUB Certified"
