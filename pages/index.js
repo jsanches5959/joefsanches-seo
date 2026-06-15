@@ -455,8 +455,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Sanches Group | Licensed Contractor · Government Certified · Leander, Texas</title>
-        <meta name="description" content="Sanches Group — service-disabled veteran-owned contractor in Leander, TX. Licensed plumbing, electrical, HVAC, general construction, and facilities maintenance. Texas HUB certified, SDVOSB, SAM.gov active. Government, commercial, and residential." />
+        <title>Sanches Group | General Contractor · Government Certified · Leander, Texas</title>
+        <meta name="description" content="Sanches Group — service-disabled veteran-owned general contractor in Leander, TX. General construction, unit turns, remodeling, facilities maintenance, janitorial, painting, and pressure washing. Texas HUB certified, SDVOSB, SAM.gov active." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://joefsanches.com" />
         <style dangerouslySetInnerHTML={{ __html: css }} />
@@ -486,7 +486,7 @@ export default function Home() {
           <span className="hero-eyebrow">Service-Disabled Veteran-Owned · Leander, Texas</span>
           <h1>Sanches Group</h1>
           <span className="hero-what">
-            Licensed plumbing · electrical · HVAC · general construction · facilities maintenance · government contracting
+            General construction · unit turns · remodeling · facilities maintenance · janitorial · painting · pressure washing · government contracting
           </span>
           <span className="hero-who">
             Serving <span>government agencies</span> · <span>property managers</span> · <span>commercial owners</span> · <span>homeowners</span>
@@ -513,8 +513,8 @@ export default function Home() {
               <span className="spec-label">21829543</span>
             </div>
             <div className="spec">
-              <span className="spec-val">Licensed</span>
-              <span className="spec-label">Plumbing · Elec · GC</span>
+              <span className="spec-val">Gen. Contractor</span>
+              <span className="spec-label">No TX License Req.</span>
             </div>
             <div className="spec">
               <span className="spec-val">Insured</span>
@@ -530,19 +530,19 @@ export default function Home() {
           <div className="audience-card">
             <span className="audience-card-label">For Government</span>
             <span className="audience-card-title">Agencies &amp; Procurement</span>
-            <p>Texas HUB, SDVOSB, SAM.gov. Licensed trades and facilities work for federal, state, and municipal contracts. Spot purchases and long-term contracts.</p>
+            <p>Texas HUB, SDVOSB, SAM.gov. General construction, facilities maintenance, and non-licensed spot purchase services. Direct award eligible.</p>
             <a href="#government">See certifications &amp; codes →</a>
           </div>
           <div className="audience-card">
             <span className="audience-card-label">For Property Managers</span>
             <span className="audience-card-title">Multi-Family &amp; Commercial</span>
-            <p>Vendor relationship only — we do the work, never compete with your business. Plumbing, electrical, HVAC, unit turns, capital improvements.</p>
+            <p>Vendor relationship only — we do the work, never compete with your business. Unit turns, remodeling, painting, janitorial, capital improvements.</p>
             <a href="#multifamily">How we work →</a>
           </div>
           <div className="audience-card">
             <span className="audience-card-label">For Homeowners</span>
-            <span className="audience-card-title">Residential Trades</span>
-            <p>Licensed plumbing, electrical, and general construction for homeowners and residential investors across Central Texas. Call for a quote.</p>
+            <span className="audience-card-title">Construction &amp; Renovation</span>
+            <p>General construction, remodeling, painting, flooring, and property maintenance for homeowners and residential investors across Central Texas.</p>
             <a href="tel:5126638867">512-663-8867 →</a>
           </div>
           <div className="audience-card">
@@ -558,59 +558,61 @@ export default function Home() {
       <section className="sec" id="services">
         <div className="w">
           <p className="sec-eyebrow">What We Do</p>
-          <h2 className="sec-title">One company.<br/>Everything licensed.</h2>
-          <p className="sec-lead">From a burst pipe to a federal maintenance contract — Sanches Group has the licenses, the certifications, and the operational capacity to handle it. Owner on every job. No subcontracting your work to unknown crews.</p>
+          <h2 className="sec-title">One company.<br/>Get it done right.</h2>
+          <p className="sec-lead">Sanches Group delivers general construction, property maintenance, and facilities services for government agencies, property managers, and homeowners across Central Texas. Owner on every job. No mystery crews.</p>
           <div className="lanes">
             <div className="lane">
               <span className="lane-num">01</span>
-              <h3>Plumbing</h3>
-              <p>Licensed plumbing for residential, multi-family, commercial, and government properties. Repairs, installations, water heaters, re-pipes, emergency calls, and unit-turn work.</p>
-              <div className="lane-tags">
-                <span className="lane-tag">TX Licensed</span>
-                <span className="lane-tag">NIGP 91000</span>
-              </div>
-            </div>
-            <div className="lane">
-              <span className="lane-num">02</span>
-              <h3>Electrical</h3>
-              <p>Code-compliant electrical work — panel upgrades, rewiring, lighting, EV charger infrastructure, commercial service installations, and government facility work.</p>
-              <div className="lane-tags">
-                <span className="lane-tag">TX Licensed</span>
-                <span className="lane-tag">NIGP 91082</span>
-              </div>
-            </div>
-            <div className="lane">
-              <span className="lane-num">03</span>
-              <h3>HVAC</h3>
-              <p>HVAC replacement, repair, and preventive maintenance for residential, multi-family, and government facilities. Emergency service. Unit replacements and system diagnostics.</p>
-              <div className="lane-tags">
-                <span className="lane-tag">TX Licensed</span>
-                <span className="lane-tag">NIGP 91450</span>
-              </div>
-            </div>
-            <div className="lane">
-              <span className="lane-num">04</span>
               <h3>General Construction</h3>
-              <p>General contracting for remodels, commercial build-outs, unit turns, government renovations, and new construction. We manage the schedule, the subs, and the quality.</p>
+              <p>Remodels, build-outs, room additions, interior renovations, and new construction for residential and commercial properties. Texas does not require a statewide GC license — we manage scope, subs, and delivery.</p>
               <div className="lane-tags">
-                <span className="lane-tag">TX GC License</span>
+                <span className="lane-tag">Residential</span>
+                <span className="lane-tag">Commercial</span>
                 <span className="lane-tag">NAICS 236220</span>
               </div>
             </div>
             <div className="lane">
-              <span className="lane-num">05</span>
-              <h3>Facilities &amp; Maintenance</h3>
-              <p>Ongoing maintenance contracts, unit turns, capital improvements, and spot services for property managers, government clients, and commercial owners. Janitorial, pressure washing, painting, flooring, window washing.</p>
+              <span className="lane-num">02</span>
+              <h3>Unit Turns &amp; Rehab</h3>
+              <p>Fast, high-quality unit turn work for multi-family properties, government housing, and rental portfolios. Drywall, paint, flooring, fixtures, cleaning — complete turnaround under one crew.</p>
               <div className="lane-tags">
-                <span className="lane-tag">Commercial</span>
+                <span className="lane-tag">Multi-Family</span>
+                <span className="lane-tag">NAICS 236118</span>
+              </div>
+            </div>
+            <div className="lane">
+              <span className="lane-num">03</span>
+              <h3>Painting &amp; Drywall</h3>
+              <p>Interior and exterior painting, drywall repair and installation, texture matching, and wall covering for residential, commercial, and government facilities. Fast scheduling and itemized invoicing.</p>
+              <div className="lane-tags">
+                <span className="lane-tag">Residential</span>
+                <span className="lane-tag">Gov Eligible</span>
+                <span className="lane-tag">NIGP 910-54</span>
+              </div>
+            </div>
+            <div className="lane">
+              <span className="lane-num">04</span>
+              <h3>Flooring &amp; Pressure Washing</h3>
+              <p>Flooring installation, repair, and maintenance (LVP, tile, carpet). Commercial pressure washing for building exteriors, parking lots, driveways, and walkways. Available for spot purchases.</p>
+              <div className="lane-tags">
+                <span className="lane-tag">NIGP 910-25</span>
+                <span className="lane-tag">NIGP 968-94</span>
+              </div>
+            </div>
+            <div className="lane">
+              <span className="lane-num">05</span>
+              <h3>Janitorial &amp; Facilities</h3>
+              <p>Janitorial and custodial services, window washing, grounds maintenance, and ongoing facilities maintenance contracts for commercial, government, and institutional clients. No formal solicitation required under $25K.</p>
+              <div className="lane-tags">
                 <span className="lane-tag">Gov Eligible</span>
                 <span className="lane-tag">Spot Purchases</span>
+                <span className="lane-tag">NIGP 910-39</span>
               </div>
             </div>
             <div className="lane">
               <span className="lane-num">06</span>
               <h3>Government Contracting</h3>
-              <p>Federal, state, and municipal contracts for maintenance, construction, and trades work. Texas HUB certified, SDVOSB, SAM.gov active. Available for solicitations, spot purchases, and HUB subcontracting plans.</p>
+              <p>Federal, state, and municipal contracts for construction, maintenance, and facilities work. Texas HUB certified, SDVOSB, SAM.gov active. Available for solicitations, spot purchases under $25K, and HUB subcontracting plans.</p>
               <div className="lane-tags">
                 <span className="lane-tag">TX HUB</span>
                 <span className="lane-tag">SDVOSB</span>
@@ -626,7 +628,7 @@ export default function Home() {
         <div className="w">
           <p className="sec-eyebrow">Government Contracting</p>
           <h2 className="sec-title">Certified. Registered.<br/>Ready to perform.</h2>
-          <p className="sec-lead">All certifications current. SAM.gov active. Licensed and insured in Texas. Pursuing federal, state, and municipal contracts for maintenance, construction, and trades work across Central Texas.</p>
+          <p className="sec-lead">All certifications current. SAM.gov active. Fully insured. Pursuing federal, state, and municipal contracts for general construction, facilities maintenance, and non-licensed spot purchase services across Central Texas.</p>
 
           {/* Certs + NAICS */}
           <div className="gov-top">
@@ -657,8 +659,8 @@ export default function Home() {
               <div className="cert-row">
                 <span className="cert-ico">🪪</span>
                 <div>
-                  <div className="cert-name">Texas-Licensed Trades &amp; General Contractor</div>
-                  <div className="cert-sub">Licensed plumbing, electrical, and GC in Texas. Full commercial GL + workers&apos; compensation coverage.</div>
+                  <div className="cert-name">Fully Insured — Texas</div>
+                  <div className="cert-sub">Commercial general liability ($1M+ per occurrence) and workers&apos; compensation. Certificate of insurance available on request.</div>
                 </div>
               </div>
               <div className="cert-row">
@@ -729,19 +731,19 @@ export default function Home() {
         <div className="w">
           <p className="sec-eyebrow">Multi-Family &amp; Commercial</p>
           <h2 className="sec-title">Your vendor.<br/>Not your competition.</h2>
-          <p className="sec-lead">Sanches Group works as an outside trades contractor for property management companies, apartment complexes, and commercial owners. We do the work. You keep the client relationship. We never talk to your owners about anything outside the scope of work.</p>
+          <p className="sec-lead">Sanches Group works as an outside contractor for property management companies, apartment complexes, and commercial owners. We do the work. You keep the client relationship. We never talk to your owners about anything outside the scope of work.</p>
           <div className="mf-grid">
             <div className="mf-box">
               <h3>For Property Managers</h3>
-              <p>One call covers all your trades. Fast turnaround, itemized invoicing, no surprises. We handle it — nights, weekends, and emergency calls included.</p>
+              <p>One call covers your maintenance and renovation needs. Fast turnaround, itemized invoicing, photo documentation — no surprises.</p>
               <ul className="check">
-                <li>Licensed plumbing, electrical, and HVAC</li>
-                <li>Fast unit-turn between tenants</li>
-                <li>Preventive maintenance programs</li>
-                <li>Emergency response — nights &amp; weekends</li>
-                <li>Itemized invoicing, photo documentation</li>
+                <li>Unit turns — drywall, paint, flooring, clean</li>
+                <li>Interior and exterior painting</li>
+                <li>Flooring installation and repair</li>
+                <li>General construction and remodeling</li>
+                <li>Janitorial and custodial services</li>
+                <li>Pressure washing</li>
                 <li>Fully insured — we carry the liability</li>
-                <li>Janitorial, painting, flooring, pressure washing</li>
               </ul>
             </div>
             <div className="mf-box">
@@ -749,12 +751,12 @@ export default function Home() {
               <p>Ongoing maintenance contracts for 5-unit to 100+ unit portfolios. One point of contact for every trade. No rotating crews, no surprises on the invoice.</p>
               <ul className="check">
                 <li>Capital improvement and renovation</li>
-                <li>Common area maintenance</li>
-                <li>HVAC, plumbing, electrical coordination</li>
+                <li>Common area maintenance and upkeep</li>
+                <li>Drywall, paint, and finish work</li>
                 <li>Scope-of-work and project documentation</li>
                 <li>Competitive contract pricing</li>
                 <li>Central Texas — all major markets</li>
-                <li>HUB-certified where reporting required</li>
+                <li>HUB-certified where state reporting required</li>
               </ul>
             </div>
             <div className="promise">
@@ -813,12 +815,12 @@ export default function Home() {
               <p className="about-bio">Joe Sanches built Sanches Group on the same standards he carried in uniform: show up, do the work, stand behind it. Based in Leander, Texas, he holds the licenses, certifications, and operational experience to deliver maintenance, construction, and government contracting work across all sectors — under one roof, with one point of contact: the owner.</p>
               <p className="about-bio">Every contract goes through Joe. When you deal with Sanches Group, you deal with the owner directly.</p>
               <div className="creds">
-                <span className="cred">Service-Disabled U.S. Veteran</span>
+                <span className="cred">Service-Disabled U.S. Veteran (20%+)</span>
                 <span className="cred">SDVOSB Certified</span>
-                <span className="cred">Texas HUB · B2G VID 21829543</span>
+                <span className="cred">Texas HUB · VetHUB</span>
+                <span className="cred">B2G VID: 21829543</span>
                 <span className="cred">SAM.gov Registered</span>
                 <span className="cred">TREC Licensed Realtor</span>
-                <span className="cred">Licensed Trades · TX</span>
                 <span className="cred">General Contractor</span>
                 <span className="cred">Fully Insured</span>
               </div>
@@ -915,7 +917,7 @@ export default function Home() {
               </div>
               <div className="inq">
                 <h4>Residential &amp; Home Buyers</h4>
-                <p>Plumbing, electrical, HVAC, or renovation work — or buying and selling a home in Austin.</p>
+                <p>Renovation, remodeling, unit turns, or buying and selling a home in Austin.</p>
                 <a href="tel:5126638867" className="inq-ghost">Call 512-663-8867 →</a>
               </div>
             </div>
@@ -926,23 +928,23 @@ export default function Home() {
       {/* COMPLIANCE DISCLOSURES */}
       <div className="compliance">
         <div className="compliance-inner">
-          <span className="compliance-eyebrow">Texas Licensed Contractor Regulatory Disclosures</span>
+          <span className="compliance-eyebrow">Disclosures &amp; Compliance</span>
           <div className="compliance-grid">
             <div className="compliance-block">
-              <span className="compliance-block-label">Plumbing — 22 Tex. Admin. Code § 367.10</span>
-              <p>Responsible Master Plumber (RMP): <strong style={{ color:'#3a4030' }}>[RMP FULL NAME]</strong>, License No. <strong style={{ color:'#3a4030' }}>[M-XXXXXX]</strong>. Regulated by the Texas State Board of Plumbing Examiners (TSBPE) · tsbpe.texas.gov · P.O. Box 4200, Austin, TX 78765 · 512-936-5200. All plumbing work performed under valid RMP oversight in compliance with the Texas Plumbing License Law.</p>
-            </div>
-            <div className="compliance-block">
-              <span className="compliance-block-label">HVAC / ACR — 16 Tex. Admin. Code § 75.71</span>
-              <p>HVAC and air conditioning/refrigeration services regulated by the Texas Department of Licensing and Regulation (TDLR) · www.tdlr.texas.gov · P.O. Box 12157, Austin, TX 78711. Complaints: 1-800-803-9202 or 512-463-6599. Class A/B ACR Contractor License: <strong style={{ color:'#3a4030' }}>[ACR LICENSE NO.]</strong>. Work performed in compliance with applicable TDLR requirements.</p>
-            </div>
-            <div className="compliance-block">
-              <span className="compliance-block-label">Vehicle Compliance</span>
-              <p>All Sanches Group service vehicles display the company name and applicable license numbers in 2-inch contrasting letters on both sides of each vehicle, in full compliance with Texas trade licensing advertising requirements for licensed plumbing and HVAC contractors.</p>
+              <span className="compliance-block-label">Scope Limitation Notice</span>
+              <p>Sanches Group does not currently advertise or perform licensed plumbing, electrical, or HVAC services directly. Work requiring licensed trade qualifiers is referred to or subcontracted through licensed professionals. Texas does not require a statewide general contractor license — general construction and remodeling services are provided directly.</p>
             </div>
             <div className="compliance-block">
               <span className="compliance-block-label">Spot Purchase Availability</span>
-              <p>Sanches Group is immediately available for municipal and state agency spot purchases under $25,000 — including janitorial (NIGP 910-39), pressure washing (NIGP 968-94), painting (NIGP 910-54), flooring (NIGP 910-25), and window washing (NIGP 910-81). No formal solicitation required. Direct award eligible as a certified Texas HUB vendor. B2G VID: 21829543.</p>
+              <p>Immediately available for state and municipal spot purchases under $25,000 — janitorial (NIGP 910-39), pressure washing (NIGP 968-94), painting (NIGP 910-54), flooring (NIGP 910-25), window washing (NIGP 910-81), and grounds maintenance (NIGP 98852). No formal solicitation required. Direct award eligible. B2G VID: 21829543.</p>
+            </div>
+            <div className="compliance-block">
+              <span className="compliance-block-label">Property Management Non-Solicitation</span>
+              <p>Sanches Group&apos;s real estate division handles individual buyer/seller transactions only. We maintain a strict vendor-only policy with property management clients and will never solicit their portfolio owners, pursue management contracts, or compete with their business in any form.</p>
+            </div>
+            <div className="compliance-block">
+              <span className="compliance-block-label">Entity Information</span>
+              <p>Joe Sanches LLC · DBA Sanches Group · 809 Heartleaf Dr, Leander, TX 78641 · EIN: 39-4911899 · B2G VID: 21829543 · Formed October 13, 2025 · State of Texas. 100% service-disabled veteran-owned (service-connected disability rating 20%+).</p>
             </div>
           </div>
         </div>

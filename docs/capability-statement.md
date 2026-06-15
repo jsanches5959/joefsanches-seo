@@ -9,17 +9,18 @@
 
 ## Core Competencies
 
-- Licensed Plumbing — repairs, installations, water heaters, re-pipes, emergency response
-- Licensed Electrical — panel upgrades, rewiring, lighting, EV charger infrastructure
-- HVAC — unit replacement, repair, preventive maintenance, emergency service
-- General Construction — renovations, build-outs, institutional remodels
-- Facilities Maintenance — ongoing contracts, preventive maintenance programs, on-call response
-- Janitorial & Custodial Services — commercial clean, deep clean, post-construction
-- Pressure Washing — building exteriors, parking lots, walkways
-- Painting & Wall Covering — interior/exterior, commercial and institutional
-- Flooring — maintenance, repair, and replacement (tile, LVP, carpet)
-- Unit Turns & Rehab — government housing, VA facilities, multi-unit residential
+- General Construction — renovations, build-outs, institutional remodels, light commercial new construction
+- Unit Turns & Rehab — government housing, VA facilities, multi-unit residential; standardized scopes, photo documentation
+- Painting & Drywall — interior/exterior, commercial and institutional; surface prep, patching, finish
+- Flooring — maintenance, repair, and replacement (tile, LVP, carpet, specialty)
 - Capital Improvements — full scope management, agency-ready documentation
+- Building Maintenance — ongoing contracts, preventive inspections, minor repairs, on-call response
+- Janitorial & Custodial Services — commercial clean, deep clean, post-construction; NIGP 910-39
+- Pressure Washing — building exteriors, parking lots, walkways; NIGP 968-94
+- Window Washing — commercial and institutional; scheduled maintenance and on-demand; NIGP 910-81
+- Grounds Maintenance — mowing, edging, debris removal, property upkeep; NIGP 98852
+
+**Note:** Sanches Group does not directly perform licensed plumbing, HVAC/ACR, or electrical work. Any work requiring a Texas trade license is referred to or subcontracted through appropriately licensed professionals.
 
 ---
 
@@ -74,9 +75,12 @@
 
 ## Past Performance / Coverage Area
 
-**Service Area:** Central Texas — Williamson County, Travis County, Hays County, Bell County; regional HVAC and facilities work across Texas.
+**Service Area:** Central Texas — Williamson County, Travis County, Hays County, Bell County; facilities and construction work across Texas.
 
-**Past Performance References:** Available upon request. Government housing, multi-family institutional, municipal facilities.
+**Past Performance References (available upon request):**
+- **Tidy Flamingo LLC** (property management firm, Central Texas) — drywall, unit turns, painting, and general rehab across multi-family and residential portfolio. Ongoing vendor relationship. Contact available on request.
+- Multi-family residential unit turns and rehab — interior remodeling, flooring, drywall, painting.
+- Government housing inspection and repair scopes — available references on request.
 
 ---
 
@@ -88,7 +92,7 @@
 | DBA | Sanches Group |
 | Entity Type | Limited Liability Company |
 | State of Incorporation | Texas |
-| Year Established | 2024 |
+| Year Established | 2025 (formed October 13, 2025) |
 | Federal EIN | 39-4911899 |
 | B2G / System Vendor Number | 21829543 |
 | Physical Address | 809 Heartleaf Dr, Leander, TX 78641 |
@@ -114,17 +118,10 @@
 
 ---
 
-## Texas Licensed Contractor Regulatory Disclosures
+## Scope Limitation Notice
 
-**Plumbing — 22 Tex. Admin. Code § 367.10**  
-Responsible Master Plumber (RMP): **[RMP FULL NAME]**, License No. **[M-XXXXXX]**. Regulated by the Texas State Board of Plumbing Examiners (TSBPE) · tsbpe.texas.gov · P.O. Box 4200, Austin, TX 78765 · 512-936-5200.
-
-**HVAC / ACR — 16 Tex. Admin. Code § 75.71**  
-HVAC services regulated by the Texas Department of Licensing and Regulation (TDLR) · www.tdlr.texas.gov · P.O. Box 12157, Austin, TX 78711. Complaints: 1-800-803-9202 or 512-463-6599. ACR Contractor License: **[ACR LICENSE NO.]**.
-
-**Vehicle Compliance**  
-All service vehicles display company name and license numbers in 2-inch contrasting letters on both sides per Texas trade licensing advertising requirements.
+Joe Sanches LLC / Sanches Group does not advertise or directly perform licensed plumbing, HVAC/ACR, or electrical work. Work requiring a Texas trade license (TSBPE or TDLR) is referred to or subcontracted through appropriately licensed professionals. Registered NAICS and NIGP codes reflect bidding eligibility as a general contractor coordinating licensed subcontractors, not direct trade service provision.
 
 ---
 
-*Capability Statement · Joe Sanches LLC · EIN: 39-4911899 · B2G VID: 21829543 · June 2026*
+*Capability Statement · Joe Sanches LLC · EIN: 39-4911899 · B2G VID: 21829543 · Formed: October 13, 2025 · June 2026*

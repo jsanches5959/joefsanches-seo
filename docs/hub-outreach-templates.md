@@ -22,14 +22,15 @@ These templates introduce Sanches Group to HUB Coordinators at major Texas agenc
 > - SAM.gov — Active Federal Registration
 >
 > **Our Core Services (NIGP Codes on CMBL Profile):**
-> - HVAC Replacement & Repair (NIGP 91450)
 > - Building Maintenance & Repair (NIGP 91000)
-> - Electrical Maintenance (NIGP 91082)
-> - Janitorial / Custodial Services (NIGP 910-39)
-> - Pressure Washing (NIGP 968-94)
+> - General Construction & Remodeling (NIGP 91000)
+> - Unit Turns & Rehab (NIGP 91000)
 > - Painting & Wall Covering (NIGP 910-54)
 > - Flooring Maintenance & Repair (NIGP 910-25)
+> - Janitorial / Custodial Services (NIGP 910-39)
+> - Pressure Washing (NIGP 968-94)
 > - Window Washing (NIGP 910-81)
+> - Grounds Maintenance (NIGP 98852)
 >
 > We're specifically set up to handle **spot purchases under $25,000** with fast scheduling and itemized documentation. As a certified HUB vendor, we can also serve as a subcontractor for prime contractors looking to fulfill HUB subcontracting plan requirements.
 >
@@ -62,15 +63,15 @@ These templates introduce Sanches Group to HUB Coordinators at major Texas agenc
 > **Why we're a fit for TxDOT:**
 > - Our service area covers the Austin District and surrounding counties
 > - We're set up for fast-response spot purchases and maintenance calls
-> - All trade work is licensed and insured — we're not a broker; we self-perform
-> - HVAC, electrical, plumbing, and grounds maintenance align directly with TxDOT rest area and district office facility needs
+> - We self-perform construction, painting, janitorial, pressure washing, and grounds maintenance — not a broker
+> - Building maintenance, unit turns, painting, and grounds work align directly with TxDOT rest area and district office facility needs
 >
 > **Certifications:**
 > - Texas HUB · B2G VID: 21829543 · Effective 6/9/2026 · Valid through 6/9/2030
 > - SDVOSB (VA-Verified Service-Disabled Veteran-Owned)
 > - SAM.gov Active
 >
-> **CMBL NIGP Codes:** 91000, 91082, 91450, 98852, 910-39, 968-94, 910-54, 910-25, 910-81
+> **CMBL NIGP Codes:** 91000, 91082, 91141, 98852, 910-39, 968-94, 910-54, 910-25, 910-81
 >
 > Please find our capability statement attached. I'm happy to schedule a brief call at your convenience to discuss any upcoming opportunities or to answer questions about our qualifications.
 >
@@ -93,8 +94,8 @@ These templates introduce Sanches Group to HUB Coordinators at major Texas agenc
 > **Joe Sanches LLC (Sanches Group)** is a Texas VetHUB-certified, SDVOSB-verified contractor based in Leander, TX. We can serve as a HUB subcontractor for your HUB Subcontracting Plan on:
 >
 > - [SPECIFIC TRADE/NIGP CODE relevant to the prime's project]
-> - Building maintenance, HVAC, electrical, plumbing
-> - Janitorial, pressure washing, painting, flooring (non-licensed spot purchase scope)
+> - General construction, building maintenance, unit turns, painting, drywall
+> - Janitorial, pressure washing, flooring, window washing, grounds maintenance (spot purchase scope)
 >
 > **Certifications:**
 > - Texas HUB · B2G VID: 21829543 · Valid 6/9/2026–6/9/2030
