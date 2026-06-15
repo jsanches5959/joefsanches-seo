@@ -14,7 +14,7 @@ These templates introduce Sanches Group to HUB Coordinators at major Texas agenc
 
 > Dear [HUB Coordinator Name],
 >
-> My name is Joe Sanches, and I'm writing to introduce **Joe Sanches LLC (Sanches Group)** as a newly certified Texas VetHUB vendor. We're a service-disabled veteran-owned small business based in Leander, TX (Williamson County), and we're actively pursuing spot purchase and contract opportunities with [AGENCY NAME].
+> My name is Joe Sanches, and I'm writing to introduce **Joe Sanches LLC (Sanches Group)** as a newly certified Texas VetHUB vendor. We're a service-disabled veteran-owned small business based in Leander, TX (809 Heartleaf Dr, Leander, TX 78641 · Williamson County), and we're actively pursuing spot purchase and contract opportunities with [AGENCY NAME].
 >
 > **Our Certifications:**
 > - Texas HUB — VetHUB Certified · B2G VID: 21829543 · Valid through 6/9/2030
@@ -39,7 +39,8 @@ These templates introduce Sanches Group to HUB Coordinators at major Texas agenc
 > Joe Sanches  
 > 512-663-8867 (call/text)  
 > hello@joefsanches.com  
-> B2G VID: 21829543  
+> 809 Heartleaf Dr, Leander, TX 78641  
+> B2G VID: 21829543 · EIN: 39-4911899  
 > joefsanches.com/government
 >
 > Thank you for your time. I look forward to the opportunity to serve [AGENCY NAME].
