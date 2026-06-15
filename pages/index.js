@@ -399,6 +399,30 @@ const css = `
   footer .disc { font-size: 11px; color: #2a3020; margin-top: 12px; line-height: 1.6; }
   .hub-logo-footer { height: 44px; width: auto; margin: 12px auto 0; display: block; opacity: 0.85; }
 
+  /* ── COMPLIANCE ── */
+  .compliance {
+    background: #020202; border-top: 1px solid rgba(255,255,255,0.04);
+    padding: 36px 40px;
+  }
+  .compliance-inner { max-width: 1160px; margin: 0 auto; }
+  .compliance-eyebrow {
+    font-size: 9px; font-weight: 900; letter-spacing: 2.5px; text-transform: uppercase;
+    color: #3a4030; margin-bottom: 20px; display: block;
+  }
+  .compliance-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .compliance-block { }
+  .compliance-block-label {
+    font-size: 9px; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase;
+    color: #3a4030; margin-bottom: 6px; display: block;
+  }
+  .compliance-block p {
+    font-size: 12px; color: #2e3428; line-height: 1.75;
+  }
+  @media (max-width: 700px) {
+    .compliance { padding: 24px 20px; }
+    .compliance-grid { grid-template-columns: 1fr; gap: 20px; }
+  }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 940px) {
     .nav-links { display: none; }
@@ -620,7 +644,7 @@ export default function Home() {
                 <span className="cert-ico">🎖️</span>
                 <div>
                   <div className="cert-name">SDVOSB — Service-Disabled Veteran-Owned Small Business</div>
-                  <div className="cert-sub">VA-verified. Eligible for federal SDVOSB set-aside contracts — highest small business preference tier.</div>
+                  <div className="cert-sub">VA-verified. Joe Sanches carries a service-connected disability rating of 20% or greater. Eligible for SDVOSB set-aside contracts under 38 U.S.C. § 8127 — the highest federal small business preference tier.</div>
                 </div>
               </div>
               <div className="cert-row">
@@ -641,7 +665,7 @@ export default function Home() {
                 <span className="cert-ico">🇺🇸</span>
                 <div>
                   <div className="cert-name">Service-Disabled Veteran — Owned &amp; Operated</div>
-                  <div className="cert-sub">Joe Sanches is a U.S. service-disabled veteran. 100% owned and operated by the veteran — not just named.</div>
+                  <div className="cert-sub">Joe Sanches is a U.S. service-disabled veteran with a service-connected disability rating of 20% or greater. 100% owned and operated by the veteran — unconditionally.</div>
                 </div>
               </div>
               <div style={{ paddingTop: '20px', marginTop: '4px' }}>
@@ -785,8 +809,8 @@ export default function Home() {
             <div className="about">
               <p className="sec-eyebrow">Founder &amp; Principal</p>
               <h2>Joe Sanches</h2>
-              <span className="about-role">Founder · Joe Sanches LLC / Sanches Group · Service-Disabled U.S. Veteran · Licensed Realtor (TREC)</span>
-              <p className="about-bio">Joe Sanches built Sanches Group on the same standards he carried in uniform: show up, do the work, stand behind it. Based in Leander, Texas, he has the licenses, the certifications, and the operational experience to handle maintenance, construction, and contracting work across government, commercial, and residential sectors — under one roof, with one point of contact.</p>
+              <span className="about-role">Founder · Joe Sanches LLC / Sanches Group · Service-Disabled U.S. Veteran (20%+) · Licensed Realtor (TREC)</span>
+              <p className="about-bio">Joe Sanches built Sanches Group on the same standards he carried in uniform: show up, do the work, stand behind it. Based in Leander, Texas, he holds the licenses, certifications, and operational experience to deliver maintenance, construction, and government contracting work across all sectors — under one roof, with one point of contact: the owner.</p>
               <p className="about-bio">Every contract goes through Joe. When you deal with Sanches Group, you deal with the owner directly.</p>
               <div className="creds">
                 <span className="cred">Service-Disabled U.S. Veteran</span>
@@ -855,6 +879,13 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="c-item">
+                  <span className="c-icon">📋</span>
+                  <div>
+                    <span className="c-label">Federal EIN</span>
+                    <div className="c-val">39-4911899</div>
+                  </div>
+                </div>
+                <div className="c-item">
                   <span className="c-icon">🌐</span>
                   <div>
                     <span className="c-label">Real Estate Site</span>
@@ -864,8 +895,9 @@ export default function Home() {
                 <div className="c-item">
                   <span className="c-icon">📍</span>
                   <div>
-                    <span className="c-label">Location</span>
-                    <div className="c-val">Leander, TX · Williamson County</div>
+                    <span className="c-label">Address</span>
+                    <div className="c-val">809 Heartleaf Dr, Leander, TX 78641</div>
+                    <span className="c-sub">Williamson County · Central Texas</span>
                   </div>
                 </div>
               </div>
@@ -891,18 +923,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* COMPLIANCE DISCLOSURES */}
+      <div className="compliance">
+        <div className="compliance-inner">
+          <span className="compliance-eyebrow">Texas Licensed Contractor Regulatory Disclosures</span>
+          <div className="compliance-grid">
+            <div className="compliance-block">
+              <span className="compliance-block-label">Plumbing — 22 Tex. Admin. Code § 367.10</span>
+              <p>Responsible Master Plumber (RMP): <strong style={{ color:'#3a4030' }}>[RMP FULL NAME]</strong>, License No. <strong style={{ color:'#3a4030' }}>[M-XXXXXX]</strong>. Regulated by the Texas State Board of Plumbing Examiners (TSBPE) · tsbpe.texas.gov · P.O. Box 4200, Austin, TX 78765 · 512-936-5200. All plumbing work performed under valid RMP oversight in compliance with the Texas Plumbing License Law.</p>
+            </div>
+            <div className="compliance-block">
+              <span className="compliance-block-label">HVAC / ACR — 16 Tex. Admin. Code § 75.71</span>
+              <p>HVAC and air conditioning/refrigeration services regulated by the Texas Department of Licensing and Regulation (TDLR) · www.tdlr.texas.gov · P.O. Box 12157, Austin, TX 78711. Complaints: 1-800-803-9202 or 512-463-6599. Class A/B ACR Contractor License: <strong style={{ color:'#3a4030' }}>[ACR LICENSE NO.]</strong>. Work performed in compliance with applicable TDLR requirements.</p>
+            </div>
+            <div className="compliance-block">
+              <span className="compliance-block-label">Vehicle Compliance</span>
+              <p>All Sanches Group service vehicles display the company name and applicable license numbers in 2-inch contrasting letters on both sides of each vehicle, in full compliance with Texas trade licensing advertising requirements for licensed plumbing and HVAC contractors.</p>
+            </div>
+            <div className="compliance-block">
+              <span className="compliance-block-label">Spot Purchase Availability</span>
+              <p>Sanches Group is immediately available for municipal and state agency spot purchases under $25,000 — including janitorial (NIGP 910-39), pressure washing (NIGP 968-94), painting (NIGP 910-54), flooring (NIGP 910-25), and window washing (NIGP 910-81). No formal solicitation required. Direct award eligible as a certified Texas HUB vendor. B2G VID: 21829543.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* FOOTER */}
       <footer>
         <img src="/logo.png" alt="Sanches Group" />
-        <p>© {new Date().getFullYear()} Joe Sanches LLC · Sanches Group · Leander, Texas</p>
-        <p>512-663-8867 · <a href="mailto:hello@joefsanches.com">hello@joefsanches.com</a></p>
-        <p style={{ marginTop:'6px' }}>Service-Disabled Veteran-Owned · Texas HUB Certified · SDVOSB · SAM.gov · Licensed &amp; Insured</p>
+        <p>© {new Date().getFullYear()} Joe Sanches LLC · Sanches Group · 809 Heartleaf Dr, Leander, TX 78641</p>
+        <p>512-663-8867 · <a href="mailto:hello@joefsanches.com">hello@joefsanches.com</a> · EIN: 39-4911899</p>
+        <p style={{ marginTop:'6px' }}>Service-Disabled Veteran-Owned · Texas HUB Certified (VetHUB) · SDVOSB · SAM.gov Active · Licensed &amp; Insured</p>
         <img
           src="https://comptroller.texas.gov/purchasing/images/vethub-certified-logo-2025.svg"
           alt="Texas Veteran-Owned Business Certified"
           className="hub-logo-footer"
         />
-        <p className="disc">Real estate services by Joe Sanches, Licensed Realtor (TREC). Real estate activity is individual buyer/seller representation only — structurally separate from Sanches Group maintenance and contracting operations.</p>
+        <p className="disc">Real estate services by Joe Sanches, Licensed Realtor (TREC). Real estate activity is individual buyer/seller representation only — structurally separate from Sanches Group maintenance and contracting operations. Sanches Group does not solicit property management clients&apos; portfolio owners or compete for property management contracts.</p>
       </footer>
     </>
   );

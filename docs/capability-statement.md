@@ -3,7 +3,7 @@
 
 ---
 
-**Leander, Texas · (512) 663-8867 · hello@joefsanches.com · joefsanches.com/government**
+**809 Heartleaf Dr, Leander, TX 78641 · (512) 663-8867 · hello@joefsanches.com · joefsanches.com/government**
 
 ---
 
@@ -25,7 +25,7 @@
 
 ## Differentiators
 
-- **Service-disabled veteran-owned and operated** — Joe Sanches, founder and principal, is a U.S. service-disabled veteran
+- **Service-disabled veteran-owned and operated** — Joe Sanches, founder and principal, is a U.S. service-disabled veteran with a service-connected disability rating of 20% or greater (SDVOSB-verified)
 - **All certifications current** — Texas HUB, SDVOSB, SAM.gov active as of June 2026
 - **Self-performing** — no broker model; work is performed by our licensed and insured crews
 - **Responsive** — direct line to the principal; no bid coordinators or intermediaries
@@ -89,11 +89,14 @@
 | Entity Type | Limited Liability Company |
 | State of Incorporation | Texas |
 | Year Established | 2024 |
+| Federal EIN | 39-4911899 |
 | B2G / System Vendor Number | 21829543 |
+| Physical Address | 809 Heartleaf Dr, Leander, TX 78641 |
+| County | Williamson County, TX |
 | UEI (SAM.gov) | Available on request |
 | CAGE Code | Available on request |
 | Size Standard | Small Business |
-| Ownership | 100% Service-Disabled Veteran-Owned |
+| Ownership | 100% Service-Disabled Veteran-Owned (20%+ disability rating) |
 
 ---
 
@@ -103,10 +106,25 @@
 📞 **512-663-8867** (call or text)  
 ✉️ **hello@joefsanches.com**  
 🌐 **joefsanches.com/government**  
-📍 Leander, TX 78641
+📍 809 Heartleaf Dr, Leander, TX 78641 · Williamson County
 
 *For solicitations, teaming inquiries, HUB subcontracting plans, or capability statement requests — contact Joe directly. Response within one business day.*
 
 ---
 
-*Capability Statement · Joe Sanches LLC · June 2026*
+---
+
+## Texas Licensed Contractor Regulatory Disclosures
+
+**Plumbing — 22 Tex. Admin. Code § 367.10**  
+Responsible Master Plumber (RMP): **[RMP FULL NAME]**, License No. **[M-XXXXXX]**. Regulated by the Texas State Board of Plumbing Examiners (TSBPE) · tsbpe.texas.gov · P.O. Box 4200, Austin, TX 78765 · 512-936-5200.
+
+**HVAC / ACR — 16 Tex. Admin. Code § 75.71**  
+HVAC services regulated by the Texas Department of Licensing and Regulation (TDLR) · www.tdlr.texas.gov · P.O. Box 12157, Austin, TX 78711. Complaints: 1-800-803-9202 or 512-463-6599. ACR Contractor License: **[ACR LICENSE NO.]**.
+
+**Vehicle Compliance**  
+All service vehicles display company name and license numbers in 2-inch contrasting letters on both sides per Texas trade licensing advertising requirements.
+
+---
+
+*Capability Statement · Joe Sanches LLC · EIN: 39-4911899 · B2G VID: 21829543 · June 2026*

@@ -300,6 +300,12 @@ export default function Government() {
               <span className="cert-chip-sub">Joe Sanches LLC</span>
             </div>
           </div>
+          <div className="cert-chip">
+            <div>
+              <span className="cert-chip-label">Federal EIN</span>
+              <span className="cert-chip-sub">39-4911899</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -341,7 +347,7 @@ export default function Government() {
                 <span className="cred-ico">🎖️</span>
                 <div>
                   <div className="cred-name">SDVOSB — Service-Disabled Veteran-Owned Small Business</div>
-                  <div className="cred-detail">Verified through the U.S. Department of Veterans Affairs. Eligible for VA SDVOSB set-aside contracts and federal service-disabled veteran preference programs — highest federal small business preference tier.</div>
+                  <div className="cred-detail">Verified through the U.S. Department of Veterans Affairs. Joe Sanches carries a service-connected disability rating of 20% or greater. Eligible for SDVOSB set-aside contracts under 38 U.S.C. § 8127 — the highest federal small business preference tier.</div>
                 </div>
               </div>
               <div className="cred-item">
@@ -355,7 +361,7 @@ export default function Government() {
                 <span className="cred-ico">🇺🇸</span>
                 <div>
                   <div className="cred-name">Service-Disabled Veteran — Owned &amp; Operated</div>
-                  <div className="cred-detail">Joe Sanches, founder and principal, is a U.S. service-disabled veteran. 100% service-disabled veteran-owned and operated — not just named, actually run by the veteran.</div>
+                  <div className="cred-detail">Joe Sanches, founder and principal, is a U.S. service-disabled veteran with a service-connected disability rating of 20% or greater. 100% service-disabled veteran-owned and operated — unconditionally. Federal EIN: 39-4911899.</div>
                 </div>
               </div>
             </div>
@@ -537,15 +543,23 @@ export default function Government() {
               <div className="c-row">
                 <span className="c-ico">📍</span>
                 <div>
-                  <span className="c-lbl">Location</span>
-                  <div className="c-val">Leander, TX · Williamson County · Central Texas</div>
+                  <span className="c-lbl">Address</span>
+                  <div className="c-val">809 Heartleaf Dr, Leander, TX 78641</div>
+                  <div style={{ fontSize:'11px', color:'var(--muted)', marginTop:'2px' }}>Williamson County · Central Texas</div>
                 </div>
               </div>
               <div className="c-row">
                 <span className="c-ico">🆔</span>
                 <div>
-                  <span className="c-lbl">B2G Vendor ID</span>
+                  <span className="c-lbl">B2G Vendor ID (Texas HUB / CMBL)</span>
                   <div className="c-val">21829543</div>
+                </div>
+              </div>
+              <div className="c-row">
+                <span className="c-ico">📋</span>
+                <div>
+                  <span className="c-lbl">Federal EIN</span>
+                  <div className="c-val">39-4911899</div>
                 </div>
               </div>
             </div>
@@ -565,19 +579,44 @@ export default function Government() {
         </div>
       </section>
 
+      {/* COMPLIANCE DISCLOSURES */}
+      <div style={{ background: '#020202', borderTop: '1px solid rgba(255,255,255,0.04)', padding: '36px 40px' }}>
+        <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
+          <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '2.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '20px' }}>Texas Licensed Contractor Regulatory Disclosures</p>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '28px' }}>
+            <div>
+              <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>Plumbing — 22 Tex. Admin. Code § 367.10</p>
+              <p style={{ fontSize: '12px', color: '#2e3428', lineHeight: '1.75' }}>Responsible Master Plumber (RMP): <strong style={{ color: '#3a4030' }}>[RMP FULL NAME]</strong>, License No. <strong style={{ color: '#3a4030' }}>[M-XXXXXX]</strong>. Regulated by the Texas State Board of Plumbing Examiners (TSBPE) · tsbpe.texas.gov · P.O. Box 4200, Austin, TX 78765 · 512-936-5200. All plumbing work performed under valid RMP oversight in compliance with the Texas Plumbing License Law.</p>
+            </div>
+            <div>
+              <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>HVAC / ACR — 16 Tex. Admin. Code § 75.71</p>
+              <p style={{ fontSize: '12px', color: '#2e3428', lineHeight: '1.75' }}>HVAC and air conditioning/refrigeration services regulated by the Texas Department of Licensing and Regulation (TDLR) · www.tdlr.texas.gov · P.O. Box 12157, Austin, TX 78711. Complaints: 1-800-803-9202 or 512-463-6599. Class A/B ACR Contractor License: <strong style={{ color: '#3a4030' }}>[ACR LICENSE NO.]</strong>. Work performed in compliance with applicable TDLR requirements.</p>
+            </div>
+            <div>
+              <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>Vehicle Compliance</p>
+              <p style={{ fontSize: '12px', color: '#2e3428', lineHeight: '1.75' }}>All Sanches Group service vehicles display the company name and applicable license numbers in 2-inch contrasting letters on both sides, in full compliance with Texas plumbing and HVAC contractor advertising requirements.</p>
+            </div>
+            <div>
+              <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>Property Management Non-Solicitation Policy</p>
+              <p style={{ fontSize: '12px', color: '#2e3428', lineHeight: '1.75' }}>Sanches Group&apos;s real estate division handles individual buyer/seller transactions only. We maintain a strict vendor-only relationship with property management clients. We will never solicit your portfolio owners, pursue management contracts, or compete with your business in any form.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* FOOTER */}
       <footer>
         <img src="/logo.png" alt="Sanches Group" />
-        <p>© {new Date().getFullYear()} Joe Sanches LLC · Sanches Group · Leander, Texas</p>
-        <p>512-663-8867 · hello@joefsanches.com</p>
-        <p style={{ marginTop: '6px' }}>Texas HUB · VetHUB Certified · SDVOSB · SAM.gov · Licensed &amp; Insured</p>
+        <p>© {new Date().getFullYear()} Joe Sanches LLC · Sanches Group · 809 Heartleaf Dr, Leander, TX 78641</p>
+        <p>512-663-8867 · hello@joefsanches.com · EIN: 39-4911899</p>
+        <p style={{ marginTop: '6px' }}>Service-Disabled Veteran-Owned (20%+) · Texas HUB · VetHUB Certified · SDVOSB · SAM.gov · Licensed &amp; Insured</p>
         <img
           src="https://comptroller.texas.gov/purchasing/images/vethub-certified-logo-2025.svg"
           alt="Texas Veteran HUB Certified"
           className="hub-logo-footer"
         />
         <p style={{ marginTop: '10px', fontSize: '11px', color: '#2a3020' }}>
-          Texas HUB Certification effective 6/9/2026 · B2G VID: 21829543 · Issued by Texas Comptroller of Public Accounts
+          Texas HUB Certification effective 6/9/2026 · Valid through 6/9/2030 · B2G VID: 21829543 · EIN: 39-4911899 · Issued by Texas Comptroller of Public Accounts
         </p>
       </footer>
     </>
