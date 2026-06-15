@@ -223,7 +223,7 @@ export default function Government() {
     <>
       <Head>
         <title>Government Contracting | Sanches Group | Texas HUB · VOSB · SAM.gov</title>
-        <meta name="description" content="Sanches Group is a Texas HUB-certified (VetHUB), SDVOSB-verified, SAM.gov-registered service-disabled veteran-owned contractor. Licensed trades, janitorial, and facilities services for government and institutional clients in Central Texas." />
+        <meta name="description" content="Sanches Group is a Texas HUB-certified (VetHUB), SDVOSB-verified, SAM.gov-registered service-disabled veteran-owned contractor. General construction, facilities maintenance, janitorial, and spot purchase services for government and institutional clients in Central Texas." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://joefsanches.com/government" />
         <style dangerouslySetInnerHTML={{ __html: css }} />
@@ -251,14 +251,14 @@ export default function Government() {
         <div className="hero-inner">
           <span className="hero-eyebrow">Government Contracting</span>
           <h1>Certified.<br/>Registered.<br/>Ready to Perform.</h1>
-          <p>Sanches Group is a Texas HUB-certified, SDVOSB-verified, SAM.gov-registered contractor pursuing federal, state, and municipal contracts for maintenance, construction, licensed trades, and facilities services across Central Texas. Service-disabled veteran-owned and operated.</p>
+          <p>Sanches Group is a Texas HUB-certified, SDVOSB-verified, SAM.gov-registered contractor pursuing federal, state, and municipal contracts for general construction, facilities maintenance, and spot purchase services across Central Texas. Service-disabled veteran-owned and operated.</p>
           <div className="hero-badges">
             <span className="badge">Texas HUB · VetHUB Certified</span>
             <span className="badge">SDVOSB — Service-Disabled Veteran</span>
             <span className="badge">SAM.gov Active</span>
-            <span className="badge">Licensed Plumbing · Electrical · GC</span>
+            <span className="badge">General Construction · Remodeling</span>
             <span className="badge">Full Commercial Insurance</span>
-            <span className="badge">Spot Purchases · Janitorial · Trades</span>
+            <span className="badge">Spot Purchases · Janitorial · Facilities</span>
           </div>
           <div className="hero-ctas">
             <a href="mailto:hello@joefsanches.com?subject=Capability%20Statement%20Request%20%E2%80%94%20Sanches%20Group&body=Agency%2FOrganization%3A%0ANAICS%20Code(s)%3A%0AContract%20type%3A%0A" className="btn-gold">Request Capability Statement</a>
@@ -329,8 +329,8 @@ export default function Government() {
               <div className="cred-item">
                 <span className="cred-ico">🪪</span>
                 <div>
-                  <div className="cred-name">Texas-Licensed Trades</div>
-                  <div className="cred-detail">Licensed plumbing, electrical, and general contracting in Texas. Full commercial general liability and workers' compensation coverage.</div>
+                  <div className="cred-name">Fully Insured — Texas</div>
+                  <div className="cred-detail">Commercial general liability ($1M+ per occurrence) and workers' compensation coverage. Certificate of insurance available to agencies upon request with any additional insured endorsement required.</div>
                 </div>
               </div>
               <div style={{ marginTop: '20px', paddingTop: '20px', borderTop: '1px solid var(--div)' }}>
@@ -463,16 +463,16 @@ export default function Government() {
         <div className="w">
           <span className="sec-label">Scope of Work</span>
           <h2 className="sec-title">What we deliver.</h2>
-          <p className="sec-lead">Sanches Group handles both licensed trades and non-licensed facilities services for government and institutional clients — from emergency repairs and spot purchases under $25K to multi-site maintenance contracts.</p>
-          <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '12px', opacity: '0.8' }}>Licensed Trade Services</p>
+          <p className="sec-lead">Sanches Group self-performs general construction, remodeling, unit turns, and facilities maintenance — no licensed trades advertised. Spot purchases under $25K available immediately for non-licensed services.</p>
+          <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '12px', opacity: '0.8' }}>Construction &amp; Maintenance Services</p>
           <div className="scope-grid" style={{ marginBottom: '2px' }}>
             {[
-              { n:'01', title:'Plumbing', body:'Licensed plumbing for government facilities, military housing, municipal buildings, and institutional properties. Repairs, installations, water heaters, re-pipes, and emergency response.' },
-              { n:'02', title:'Electrical', body:'Code-compliant electrical work for government and commercial facilities — panel upgrades, rewiring, lighting, EV charger infrastructure, and commercial service installations.' },
-              { n:'03', title:'HVAC', body:'HVAC replacement, repair, and preventive maintenance for government and institutional facilities. Unit replacements, system diagnostics, and emergency service calls.' },
-              { n:'04', title:'General Construction', body:'General contracting for government build-outs, office remodels, institutional renovations, and new construction. Full project management, subcontractor coordination, and quality control.' },
-              { n:'05', title:'Unit Turns & Rehab', body:'Fast, high-quality unit turn work for government housing, VA facilities, and multi-unit residential properties. Standardized scopes, fast scheduling, itemized documentation.' },
-              { n:'06', title:'Capital Improvements', body:'Capital improvement planning and execution for institutional clients. Full scope management from assessment through completion, with documentation suitable for agency reporting.' },
+              { n:'01', title:'General Construction', body:'General contracting for government build-outs, office remodels, institutional renovations, and light commercial construction. Full project management, subcontractor coordination, and agency-ready documentation. NIGP 91000.' },
+              { n:'02', title:'Unit Turns & Rehab', body:'Fast, high-quality unit turn work for government housing, VA facilities, and multi-unit residential properties. Standardized scopes, fast scheduling, itemized photo documentation. NIGP 91000.' },
+              { n:'03', title:'Painting & Drywall', body:'Interior and exterior painting, drywall repair and finish for government and institutional facilities. Surface prep, patching, color-matching, and finishes suitable for occupied environments. NIGP 910-54.' },
+              { n:'04', title:'Flooring', body:'Flooring maintenance, repair, and replacement for government facilities. Tile, LVP, carpet, and specialty flooring. Fast turnaround on spot repairs and rehab scopes. NIGP 910-25.' },
+              { n:'05', title:'Capital Improvements', body:'Capital improvement planning and execution for institutional clients. Full scope management from assessment through completion, with documentation suitable for agency reporting. NIGP 91000.' },
+              { n:'06', title:'Building Maintenance', body:'Ongoing building maintenance programs for government properties — preventive inspections, minor repairs, punch list work, and on-call response. NIGP 91000, 91082.' },
             ].map(({ n, title, body }) => (
               <div key={n} className="scope-box">
                 <span className="scope-num">{n}</span>
@@ -481,15 +481,13 @@ export default function Government() {
               </div>
             ))}
           </div>
-          <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--gold)', margin: '32px 0 12px', opacity: '0.8' }}>Non-Licensed Facilities Services — Available for Spot Purchases</p>
+          <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--gold)', margin: '32px 0 12px', opacity: '0.8' }}>Spot Purchase Services — Available Immediately (&lt;$25K)</p>
           <div className="scope-grid">
             {[
               { n:'07', title:'Janitorial & Custodial', body:'Janitorial and custodial services for government offices, facilities, and institutional properties. One-time deep cleans, recurring contracts, and post-construction clean-up. NIGP 910-39.' },
               { n:'08', title:'Pressure Washing', body:'Professional pressure washing for building exteriors, parking lots, walkways, and government facilities. Scheduled maintenance programs and single-event service. NIGP 968-94.' },
-              { n:'09', title:'Painting & Wall Covering', body:'Interior and exterior painting for government and institutional facilities. Surface prep, color-matching, and finishes suitable for occupied commercial and institutional environments. NIGP 910-54.' },
-              { n:'10', title:'Flooring', body:'Flooring maintenance, repair, and replacement for government facilities. Tile, LVP, carpet, and specialty flooring. Fast turnaround on spot repairs and unit rehabs. NIGP 910-25.' },
-              { n:'11', title:'Window Washing', body:'Commercial window washing for government buildings, institutional facilities, and multi-story properties. Scheduled maintenance programs and on-demand service. NIGP 910-81.' },
-              { n:'12', title:'Grounds Maintenance', body:'General grounds maintenance for government properties and facilities — mowing, edging, debris removal, and property upkeep. Available for recurring contracts and spot purchases. NIGP 98852.' },
+              { n:'09', title:'Window Washing', body:'Commercial window washing for government buildings, institutional facilities, and multi-story properties. Scheduled maintenance programs and on-demand service. NIGP 910-81.' },
+              { n:'10', title:'Grounds Maintenance', body:'General grounds maintenance for government properties and facilities — mowing, edging, debris removal, and property upkeep. Available for recurring contracts and spot purchases. NIGP 98852.' },
             ].map(({ n, title, body }) => (
               <div key={n} className="scope-box">
                 <span className="scope-num">{n}</span>
@@ -582,19 +580,19 @@ export default function Government() {
       {/* COMPLIANCE DISCLOSURES */}
       <div style={{ background: '#020202', borderTop: '1px solid rgba(255,255,255,0.04)', padding: '36px 40px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '2.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '20px' }}>Texas Licensed Contractor Regulatory Disclosures</p>
+          <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '2.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '20px' }}>Disclosures &amp; Policies</p>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '28px' }}>
             <div>
-              <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>Plumbing — 22 Tex. Admin. Code § 367.10</p>
-              <p style={{ fontSize: '12px', color: '#2e3428', lineHeight: '1.75' }}>Responsible Master Plumber (RMP): <strong style={{ color: '#3a4030' }}>[RMP FULL NAME]</strong>, License No. <strong style={{ color: '#3a4030' }}>[M-XXXXXX]</strong>. Regulated by the Texas State Board of Plumbing Examiners (TSBPE) · tsbpe.texas.gov · P.O. Box 4200, Austin, TX 78765 · 512-936-5200. All plumbing work performed under valid RMP oversight in compliance with the Texas Plumbing License Law.</p>
+              <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>Scope Limitation</p>
+              <p style={{ fontSize: '12px', color: '#2e3428', lineHeight: '1.75' }}>Sanches Group / Joe Sanches LLC does not advertise or directly perform licensed plumbing, HVAC/ACR, or electrical work. Any work requiring a Texas trade license (TSBPE/TDLR) is referred to or subcontracted through appropriately licensed professionals. Registered NAICS and NIGP codes reflect bidding eligibility as a general contractor with licensed subcontractors, not direct service provision.</p>
             </div>
             <div>
-              <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>HVAC / ACR — 16 Tex. Admin. Code § 75.71</p>
-              <p style={{ fontSize: '12px', color: '#2e3428', lineHeight: '1.75' }}>HVAC and air conditioning/refrigeration services regulated by the Texas Department of Licensing and Regulation (TDLR) · www.tdlr.texas.gov · P.O. Box 12157, Austin, TX 78711. Complaints: 1-800-803-9202 or 512-463-6599. Class A/B ACR Contractor License: <strong style={{ color: '#3a4030' }}>[ACR LICENSE NO.]</strong>. Work performed in compliance with applicable TDLR requirements.</p>
+              <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>Entity Information</p>
+              <p style={{ fontSize: '12px', color: '#2e3428', lineHeight: '1.75' }}>Joe Sanches LLC · DBA Sanches Group · 809 Heartleaf Dr, Leander, TX 78641 · Williamson County · EIN: 39-4911899 · B2G VID: 21829543 · Formed: October 13, 2025 · Texas LLC.</p>
             </div>
             <div>
-              <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>Vehicle Compliance</p>
-              <p style={{ fontSize: '12px', color: '#2e3428', lineHeight: '1.75' }}>All Sanches Group service vehicles display the company name and applicable license numbers in 2-inch contrasting letters on both sides, in full compliance with Texas plumbing and HVAC contractor advertising requirements.</p>
+              <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>Spot Purchase Availability</p>
+              <p style={{ fontSize: '12px', color: '#2e3428', lineHeight: '1.75' }}>Sanches Group is available for state agency spot purchases under $25,000 for non-licensed services (janitorial, pressure washing, painting, flooring, grounds maintenance, window washing, building maintenance). Quote requests welcome — response within one business day.</p>
             </div>
             <div>
               <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>Property Management Non-Solicitation Policy</p>
@@ -609,7 +607,7 @@ export default function Government() {
         <img src="/logo.png" alt="Sanches Group" />
         <p>© {new Date().getFullYear()} Joe Sanches LLC · Sanches Group · 809 Heartleaf Dr, Leander, TX 78641</p>
         <p>512-663-8867 · hello@joefsanches.com · EIN: 39-4911899</p>
-        <p style={{ marginTop: '6px' }}>Service-Disabled Veteran-Owned (20%+) · Texas HUB · VetHUB Certified · SDVOSB · SAM.gov · Licensed &amp; Insured</p>
+        <p style={{ marginTop: '6px' }}>Service-Disabled Veteran-Owned (20%+) · Texas HUB · VetHUB Certified · SDVOSB · SAM.gov · Insured</p>
         <img
           src="https://comptroller.texas.gov/purchasing/images/vethub-certified-logo-2025.svg"
           alt="Texas Veteran HUB Certified"
