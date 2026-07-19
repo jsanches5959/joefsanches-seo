@@ -1,5 +1,6 @@
 ---
-title: "VA Loan Homes in Leander TX: A Veteran's Complete Guide to Buying in 2026"
+title: "VA Loan Homes in Leander TX: 2026 Veteran's Guide"
+description: "VA-approved builders, $0-down VA loans, and the best Leander TX neighborhoods for veterans in 2026 — from a military-veteran Realtor who's used the benefit."
 slug: va-loan-homes-leander-tx
 date: 2026-06-05T12:00:00.000Z
 ---

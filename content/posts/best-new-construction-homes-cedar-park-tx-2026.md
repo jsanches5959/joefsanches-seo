@@ -1,5 +1,6 @@
 ---
-title: "Best New Construction Homes in Cedar Park TX 2026: Builders, Communities & Prices"
+title: "Best New Construction Homes in Cedar Park TX 2026"
+description: "The best new construction homes in Cedar Park TX for 2026 — top builders, communities, price ranges, and current incentives worth knowing before you buy."
 slug: best-new-construction-homes-cedar-park-tx-2026
 date: 2026-06-11T08:30:00.000Z
 ---

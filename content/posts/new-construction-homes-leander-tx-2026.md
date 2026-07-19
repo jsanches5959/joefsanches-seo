@@ -1,5 +1,6 @@
 ---
-title: "new construction homes leander tx 2026"
+title: "New Construction Homes in Leander TX (2026 Guide)"
+description: "Every new construction community in Leander TX for 2026 — builders, price ranges, incentives, and quick-move-in homes worth touring this year."
 slug: new-construction-homes-leander-tx-2026
 date: 2026-03-11T11:20:05.494Z
 ---
