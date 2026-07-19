@@ -1,5 +1,6 @@
 ---
-title: "Leander TX Home Builders Ranked 2026: Lennar vs KB Home vs Taylor Morrison vs Toll Brothers"
+title: "Leander TX Home Builders Ranked (2026)"
+description: "Leander TX's top home builders ranked for 2026 — Lennar, KB Home, Taylor Morrison, Toll Brothers and more, rated on quality, value, and resale."
 slug: leander-tx-home-builders-ranked-2026
 date: 2026-06-11T13:45:00.000Z
 ---

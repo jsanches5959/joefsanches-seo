@@ -1,5 +1,6 @@
 ---
-title: "2026 property tax rate in Leander"
+title: "2026 Property Tax Rate in Leander TX, Explained"
+description: "What the 2026 property tax rate in Leander TX means for your monthly payment, how MUD districts stack up, and simple ways to reduce what you owe."
 slug: 2026-property-tax-rate-in-leander
 date: 2026-03-08T12:06:25.527Z
 ---

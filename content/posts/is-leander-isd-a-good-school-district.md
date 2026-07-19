@@ -1,5 +1,6 @@
 ---
-title: Is Leander ISD a good school district?
+title: "Is Leander ISD a Good School District? (2026)"
+description: "Is Leander ISD a good school district? A 2026 look at ratings, growth, and what it means for home values — an honest take from a local Realtor."
 slug: is-leander-isd-a-good-school-district
 date: 2026-02-28T14:19:37.652Z
 ---

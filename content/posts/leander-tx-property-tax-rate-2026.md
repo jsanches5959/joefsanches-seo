@@ -1,5 +1,6 @@
 ---
-title: "Leander TX Property Tax Rate 2026: Complete Guide for Buyers & Homeowners"
+title: "Leander TX Property Tax Rate 2026 (What You Pay)"
+description: "The 2026 Leander TX property tax rate by neighborhood and MUD district, what a typical home pays, and legal ways to lower your bill this year."
 slug: leander-tx-property-tax-rate-2026
 date: 2026-03-07T00:00:00.000Z
 ---

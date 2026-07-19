@@ -46,7 +46,19 @@ export async function getStaticProps({ params }) {
     .split('\n')
     .map(l => l.trim())
     .find(l => l.length > 60 && !l.startsWith('#') && !l.startsWith('-') && !l.startsWith('*') && !l.startsWith('!') && !l.startsWith('|') && !l.startsWith('>'));
-  const description = data.description || (firstParagraph ? firstParagraph.replace(/\*\*/g, '').substring(0, 160) : null) || 'Joe Sanches is a licensed Realtor and military veteran serving buyers and sellers in Leander, Cedar Park, and greater Austin.';
+  // Clean markdown (links, bold, italics) out of the fallback so the snippet reads as prose
+  const cleanFallback = firstParagraph
+    ? firstParagraph
+        .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+        .replace(/[*_`]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim()
+    : null;
+  // Trim to ~155 chars on a word boundary so Google doesn't cut mid-word
+  const trimmedFallback = cleanFallback && cleanFallback.length > 155
+    ? cleanFallback.substring(0, 155).replace(/\s+\S*$/, '') + '…'
+    : cleanFallback;
+  const description = data.description || trimmedFallback || 'Joe Sanches is a licensed Realtor and military veteran serving buyers and sellers in Leander, Cedar Park, and greater Austin.';
 
   return {
     props: {
@@ -90,7 +102,7 @@ export default function Post({ slug, title, date, contentHtml, description }) {
   return (
     <>
       <Head>
-        <title>{title} | Joe Sanches Realtor - Leander, TX</title>
+        <title>{title} | Joe Sanches Realtor</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={postUrl} />

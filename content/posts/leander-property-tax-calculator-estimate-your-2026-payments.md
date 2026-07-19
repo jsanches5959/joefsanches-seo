@@ -1,5 +1,6 @@
 ---
-title: "Leander Property Tax Calculator: Estimate Your 2026 Payments"
+title: "Leander Property Tax Calculator (2026 Estimate)"
+description: "Estimate your 2026 Leander TX property tax bill in seconds. See how appraised value, MUD districts, and exemptions change what you'll actually pay."
 slug: leander-property-tax-calculator-estimate-your-2026-payments
 date: 2026-03-04T14:00:51.736Z
 ---

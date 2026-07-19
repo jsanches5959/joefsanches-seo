@@ -1,5 +1,6 @@
 ---
-title: "Leander ISD vs. Round Rock ISD: A Real Estate Perspective on Local Schools"
+title: "Leander ISD vs Round Rock ISD: 2026 Comparison"
+description: "Leander ISD vs Round Rock ISD compared for 2026 — school ratings, home prices, and which district is the smarter buy. An honest breakdown from a local Realtor."
 slug: leander-isd-vs-round-rock-isd-real-estate-perspective
 date: 2026-03-07T00:00:00.000Z
 ---
