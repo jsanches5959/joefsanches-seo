@@ -23,6 +23,28 @@ body{
 *{box-sizing:border-box;}
 a{color:inherit; text-decoration:none;}
 
+/* Animated energy strip across the very top of every page */
+body::before{
+  content:"";
+  position: fixed;
+  top:0; left:0; right:0;
+  height: 2px;
+  z-index: 2000;
+  pointer-events: none;
+  background: linear-gradient(90deg,
+    transparent, var(--accent), var(--accent-light), var(--gold), var(--accent), transparent);
+  background-size: 200% 100%;
+  animation: energyStrip 8s linear infinite;
+  opacity: .8;
+}
+@keyframes energyStrip{
+  0%  { background-position: 200% 0; }
+  100%{ background-position: -200% 0; }
+}
+@media (prefers-reduced-motion: reduce){
+  body::before{ animation: none; }
+}
+
 .container{
   max-width: 980px;
   margin:0 auto;
@@ -40,11 +62,60 @@ a{color:inherit; text-decoration:none;}
   align-items:center;
   gap:12px;
 }
+/* ---- Holographic logo ---- */
 .logo{
   width: 64px;
   height: 64px;
   object-fit: contain;
-  filter: drop-shadow(0 0 12px rgba(107,120,84,0.45));
+  filter:
+    drop-shadow(0 0 6px rgba(138,154,107,.9))
+    drop-shadow(0 0 18px rgba(107,120,84,.55))
+    drop-shadow(0 0 36px rgba(200,168,75,.25))
+    brightness(1.15) saturate(1.3);
+  transform: perspective(600px) rotateY(0deg);
+  animation:
+    holoSway 7s ease-in-out infinite,
+    holoGlow 4s ease-in-out infinite,
+    holoFlicker 6s linear infinite;
+  will-change: transform, filter, opacity;
+  /* projector-style floor reflection (Chromium/Safari; harmless elsewhere) */
+  -webkit-box-reflect: below 4px linear-gradient(transparent 62%, rgba(255,255,255,.28));
+}
+.logo:hover{
+  /* energize the projection on hover */
+  animation-duration: 3s, 1.6s, 2.5s;
+}
+@keyframes holoSway{
+  0%,100%{ transform: perspective(600px) rotateY(-14deg); }
+  50%    { transform: perspective(600px) rotateY(14deg); }
+}
+@keyframes holoGlow{
+  0%,100%{
+    filter:
+      drop-shadow(0 0 6px rgba(138,154,107,.9))
+      drop-shadow(0 0 18px rgba(107,120,84,.55))
+      drop-shadow(0 0 36px rgba(200,168,75,.25))
+      hue-rotate(0deg) brightness(1.15) saturate(1.3);
+  }
+  50%{
+    filter:
+      drop-shadow(0 0 10px rgba(138,154,107,1))
+      drop-shadow(0 0 28px rgba(107,120,84,.75))
+      drop-shadow(0 0 52px rgba(200,168,75,.45))
+      hue-rotate(30deg) brightness(1.4) saturate(1.55);
+  }
+}
+@keyframes holoFlicker{
+  0%,100%{ opacity:1; }
+  7%   { opacity:.84; }
+  8%   { opacity:1; }
+  44%  { opacity:.92; }
+  45%  { opacity:1; }
+  76%  { opacity:.8; }
+  77.5%{ opacity:1; }
+}
+@media (prefers-reduced-motion: reduce){
+  .logo{ animation: none; transform: none; }
 }
 .brand h1{
   margin:0;
@@ -92,10 +163,12 @@ a{color:inherit; text-decoration:none;}
 .btn:hover{
   background: rgba(255,255,255,.08);
   transform: translateY(-1px);
+  box-shadow: 0 0 18px rgba(107,120,84,.35);
 }
 .btn.accent:hover{
   background: rgba(107,120,84, 0.35);
   border-color: var(--accent-light);
+  box-shadow: 0 0 22px rgba(138,154,107,.5), 0 0 44px rgba(200,168,75,.2);
 }
 
 .hero{
@@ -107,6 +180,7 @@ a{color:inherit; text-decoration:none;}
     radial-gradient(1000px 500px at 10% 0%, rgba(107,120,84,.1), transparent 55%),
     linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
   overflow:hidden;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 20px 60px rgba(0,0,0,.35);
 }
 
 .heroTitle{
@@ -115,6 +189,15 @@ a{color:inherit; text-decoration:none;}
   letter-spacing:-.6px;
   line-height: 1.1;
   color: white;
+}
+/* Gradient-metal hero titles where supported */
+@supports (-webkit-background-clip: text){
+  .heroTitle{
+    background: linear-gradient(120deg, #FFFFFF 0%, #E0E5D8 45%, var(--accent-light) 75%, var(--gold) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 .heroLead{
   margin: 14px 0 0;
@@ -170,10 +253,12 @@ a{color:inherit; text-decoration:none;}
   border: 1px solid var(--border);
   background: var(--card);
   padding: 20px;
-  transition: border-color 0.2s ease;
+  transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
 }
 .card:hover{
-  border-color: rgba(107,120,84, 0.4);
+  border-color: rgba(107,120,84, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0,0,0,.45), 0 0 24px rgba(107,120,84,.18);
 }
 .cardTitle{
   margin:0;
@@ -223,7 +308,7 @@ a{color:inherit; text-decoration:none;}
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.3), 0 -2px 28px rgba(107,120,84,.35);
 }
 
 .floating-contact-bar a {
