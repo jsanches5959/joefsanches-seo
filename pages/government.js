@@ -42,7 +42,8 @@ const css = `
     padding: 14px 40px; max-width: 1100px; margin: 0 auto;
   }
   .nav-logo { display: flex; align-items: center; gap: 12px; }
-  .nav-logo img { height: 36px; filter: drop-shadow(0 0 8px rgba(107,120,84,0.5)); }
+  .nav-logo img { height: 36px; filter: drop-shadow(0 0 8px rgba(107,120,84,0.5)); animation: holoSway 7s ease-in-out infinite, holoGlow 4s ease-in-out infinite, holoFlicker 6s linear infinite; }
+  @media (prefers-reduced-motion: reduce) { .nav-logo img { animation: none; } }
   .nav-logo span { font-size: 13px; font-weight: 700; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
   .nav-links { display: flex; gap: 24px; list-style: none; align-items: center; }
   .nav-links a { font-size: 13px; font-weight: 500; color: var(--muted); letter-spacing: 0.3px; text-transform: uppercase; }
