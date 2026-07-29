@@ -47,6 +47,7 @@ const css = `
   .nav-logo img {
     height: 40px;
     filter: drop-shadow(0 0 8px rgba(107,120,84,0.5));
+    animation: holoSway 7s ease-in-out infinite, holoGlow 4s ease-in-out infinite, holoFlicker 6s linear infinite;
   }
   .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
   .nav-links a { font-size: 13px; font-weight: 500; color: var(--muted); letter-spacing: 0.3px; text-transform: uppercase; }
@@ -83,6 +84,20 @@ const css = `
     margin: 0 auto 32px;
     display: block;
     filter: drop-shadow(0 0 40px rgba(107,120,84,0.55)) drop-shadow(0 0 80px rgba(107,120,84,0.2));
+    animation: holoSway 8s ease-in-out infinite, holoGlowXL 4.5s ease-in-out infinite, holoFlicker 7s linear infinite;
+    -webkit-box-reflect: below 8px linear-gradient(transparent 68%, rgba(255,255,255,.22));
+  }
+  /* scaled-up glow pulse for the large hero hologram */
+  @keyframes holoGlowXL {
+    0%, 100% {
+      filter: drop-shadow(0 0 24px rgba(138,154,107,.7)) drop-shadow(0 0 56px rgba(107,120,84,.45)) drop-shadow(0 0 96px rgba(200,168,75,.2)) hue-rotate(0deg) brightness(1.12) saturate(1.25);
+    }
+    50% {
+      filter: drop-shadow(0 0 36px rgba(138,154,107,.95)) drop-shadow(0 0 84px rgba(107,120,84,.65)) drop-shadow(0 0 140px rgba(200,168,75,.4)) hue-rotate(28deg) brightness(1.35) saturate(1.5);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .nav-logo img, .hero-logo { animation: none; }
   }
 
   .hero-eyebrow {
