@@ -144,7 +144,7 @@ export default function Post({ slug, title, date, contentHtml, description }) {
               <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
               <div>
                 <h1>Joe Sanches</h1>
-                <p className="sub">Real Estate Expert • Leander, TX</p>
+                <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
           </div>
@@ -207,6 +207,13 @@ export default function Post({ slug, title, date, contentHtml, description }) {
                 Get the Deal
               </a>
             </div>
+            <div className="card" style={{ background: 'rgba(200,168,75,0.05)', borderColor: 'rgba(200,168,75,0.3)', textAlign: 'center', marginBottom: '20px' }}>
+              <h3 className="cardTitle" style={{ color: 'var(--gold)', letterSpacing: '1px' }}>SANCHES GROUP</h3>
+              <p style={{ fontSize: '13px', color: 'var(--muted)', marginTop: '10px', lineHeight: '1.6' }}>
+                Construction · unit turns · facilities maintenance · government contracting. Service-Disabled Veteran-Owned.
+              </p>
+              <a href="/" className="btn" style={{ marginTop: '14px', fontSize: '13px', justifyContent: 'center' }}>Visit the Contracting Site →</a>
+            </div>
             <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center', position: 'sticky', top: '20px' }}>
               <img 
                 src="/joe.png" 
@@ -219,7 +226,7 @@ export default function Post({ slug, title, date, contentHtml, description }) {
                 }} 
               />
               <h3 className="cardTitle" style={{ color: 'var(--accent-light)' }}>Joe Sanches</h3>
-              <p style={{ fontSize: '14px', color: 'var(--muted)', marginTop: '8px' }}>Real Estate Expert</p>
+              <p style={{ fontSize: '14px', color: 'var(--muted)', marginTop: '8px' }}>Realtor · Sanches Group</p>
               <p style={{ fontSize: '13px', color: 'var(--muted)', marginTop: '12px', lineHeight: '1.6' }}>
                 Helping Leander homeowners buy and sell with confidence. Military veteran with strategic pricing expertise.
               </p>
@@ -232,7 +239,8 @@ export default function Post({ slug, title, date, contentHtml, description }) {
         </div>
 
         <footer className="footer">
-          <p>© {new Date().getFullYear()} Joe Sanches Realtor • Leander, Texas</p>
+          <p>© {new Date().getFullYear()} Joe Sanches LLC · Sanches Group · Leander, Texas</p>
+          <p style={{ marginTop: '6px' }}><a href="/" style={{ textDecoration: 'underline' }}>Construction · Facilities · Government Contracting — Sanches Group</a></p>
           <p style={{ marginTop: '8px' }}>Phone: 512-663-8867 • Email: hello@joefsanches.com</p>
           <div style={{ marginTop: '16px' }}>
             <a href="https://g.page/r/CS5gIVIj8I-AEBE/review" target="_blank" rel="noopener noreferrer" className="btn" style={{ fontSize: '12px', opacity: 0.8 }}>

@@ -162,7 +162,7 @@ export default function NorthlinePage({ communityData, liveHomes }) {
               <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
               <div>
                 <h1>Joe Sanches</h1>
-                <p className="sub">Real Estate Expert • Leander, TX</p>
+                <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
           </div>
@@ -343,7 +343,8 @@ export default function NorthlinePage({ communityData, liveHomes }) {
         </div>
 
         <footer className="footer">
-          <p>© {new Date().getFullYear()} Joe Sanches Realtor • Leander, Texas</p>
+          <p>© {new Date().getFullYear()} Joe Sanches LLC · Sanches Group · Leander, Texas</p>
+          <p style={{ marginTop: '6px' }}><a href="/" style={{ textDecoration: 'underline' }}>Construction · Facilities · Government Contracting — Sanches Group</a></p>
           <p style={{ marginTop: '8px' }}>Phone: 512-663-8867 • Email: hello@joefsanches.com</p>
           <p style={{ marginTop: '8px', fontSize: '12px', opacity: 0.6 }}>Prices and availability subject to change. Tax rates are estimates — confirm at wcad.org.</p>
         </footer>

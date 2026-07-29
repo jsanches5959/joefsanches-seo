@@ -175,7 +175,7 @@ export default function LeaderISDSchoolsHub() {
               <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
               <div>
                 <h1>Joe Sanches</h1>
-                <p className="sub">Real Estate Expert • Leander, TX</p>
+                <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
           </div>
