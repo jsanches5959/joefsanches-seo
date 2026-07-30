@@ -88,6 +88,10 @@ const css = `
     color: var(--gold); font-size: 11px; font-weight: 900;
     padding: 7px 16px; border-radius: 2px; letter-spacing: 1.5px; text-transform: uppercase;
   }
+  .badge.vid {
+    border-color: var(--gold); background: rgba(200,168,75,0.12);
+    color: #E8D9A8;
+  }
   .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
   .btn-gold {
     background: var(--gold); color: var(--black);
@@ -254,6 +258,7 @@ export default function Government() {
           <h1>Certified.<br/>Registered.<br/>Ready to Perform.</h1>
           <p>Sanches Group is a Texas HUB-certified, SDVOSB-verified, SAM.gov-registered contractor pursuing federal, state, and municipal contracts for general construction, facilities maintenance, and spot purchase services across Central Texas. Service-disabled veteran-owned and operated.</p>
           <div className="hero-badges">
+            <span className="badge vid">B2G VID 21829543</span>
             <span className="badge">Texas HUB · VetHUB Certified</span>
             <span className="badge">SDVOSB — Service-Disabled Veteran</span>
             <span className="badge">SAM.gov Active</span>
