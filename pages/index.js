@@ -112,6 +112,21 @@ const css = `
     text-transform: uppercase;
   }
 
+  /* Credential ribbon — the first read after the name */
+  .hero-creds {
+    display: flex; align-items: center; justify-content: center;
+    gap: 16px; flex-wrap: wrap;
+    margin: 4px 0 34px;
+  }
+  .hero-creds .kc {
+    font-size: 12px; font-weight: 800; letter-spacing: 2.6px;
+    text-transform: uppercase; color: var(--gold); white-space: nowrap;
+  }
+  .hero-creds .kd {
+    width: 5px; height: 5px; background: var(--gold);
+    transform: rotate(45deg); opacity: .55; flex: 0 0 auto;
+  }
+
   .hero-what {
     font-size: 16px; color: var(--text); letter-spacing: 0.5px;
     margin-bottom: 14px; display: block; line-height: 1.6;
@@ -144,17 +159,20 @@ const css = `
   }
   .btn-outline:hover { background: var(--gp); }
 
+  /* Open keyline spec plate — no box, hairlines above and below, deliberate 3x2 */
   .hero-specs {
-    display: inline-flex; border: 1px solid var(--gb); border-radius: 4px; overflow: hidden;
-    flex-wrap: wrap;
+    display: grid; grid-template-columns: repeat(3, minmax(160px, 220px));
+    justify-content: center; row-gap: 26px;
+    border-top: 1px solid var(--gb); border-bottom: 1px solid var(--gb);
+    padding: 24px 0; margin: 0 auto;
   }
   .spec {
-    padding: 16px 26px; border-right: 1px solid var(--gb);
+    padding: 2px 18px; border-right: 1px solid var(--div);
     text-align: center;
   }
-  .spec:last-child { border-right: none; }
-  .spec-val { font-size: 12px; font-weight: 900; color: var(--gold); display: block; letter-spacing: 1px; text-transform: uppercase; line-height: 1; }
-  .spec-label { font-size: 10px; color: var(--muted); margin-top: 5px; display: block; letter-spacing: 0.8px; text-transform: uppercase; }
+  .spec:nth-child(3n) { border-right: none; }
+  .spec-val { font-size: 14px; font-weight: 900; color: var(--gold); display: block; letter-spacing: 1.2px; text-transform: uppercase; line-height: 1.1; }
+  .spec-label { font-size: 10px; color: var(--muted); margin-top: 6px; display: block; letter-spacing: 1px; text-transform: uppercase; }
 
   /* ── AUDIENCE STRIP ── */
   .audience-strip {
@@ -444,6 +462,10 @@ const css = `
     .hero { padding: 60px 20px 56px; }
     .hero h1 { font-size: 44px; }
     .hero-logo { width: 130px; height: 130px; }
+    .hero-creds { gap: 12px; }
+    .hero-creds .kc { font-size: 11px; letter-spacing: 2px; }
+    .hero-specs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px 0; padding: 18px 0; }
+    .spec { border-right: none; padding: 0 10px; }
     .w { padding: 0 20px; }
     .sec { padding: 56px 0; }
     .lanes { grid-template-columns: 1fr; gap: 2px; }
@@ -500,6 +522,15 @@ export default function Home() {
           <img src="/logo.png" alt="Sanches Group" className="hero-logo" />
           <span className="hero-eyebrow">Service-Disabled Veteran-Owned · Leander, Texas</span>
           <h1>Sanches Group</h1>
+          <div className="hero-creds" aria-label="Certifications and vendor credentials">
+            <span className="kc">TX HUB Certified</span>
+            <span className="kd" aria-hidden="true" />
+            <span className="kc">SDVOSB</span>
+            <span className="kd" aria-hidden="true" />
+            <span className="kc">SAM.gov Active</span>
+            <span className="kd" aria-hidden="true" />
+            <span className="kc">B2G VID 21829543</span>
+          </div>
           <span className="hero-what">
             General construction · unit turns · remodeling · facilities maintenance · janitorial · painting · pressure washing · government contracting
           </span>
@@ -524,8 +555,8 @@ export default function Home() {
               <span className="spec-label">Active Federal Reg.</span>
             </div>
             <div className="spec">
-              <span className="spec-val">B2G VID</span>
-              <span className="spec-label">21829543</span>
+              <span className="spec-val">21829543</span>
+              <span className="spec-label">Texas B2G VID</span>
             </div>
             <div className="spec">
               <span className="spec-val">Gen. Contractor</span>
