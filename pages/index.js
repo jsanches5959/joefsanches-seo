@@ -131,6 +131,11 @@ const css = `
     font-size: 16px; color: var(--text); letter-spacing: 0.5px;
     margin-bottom: 14px; display: block; line-height: 1.6;
   }
+  .hero-what strong {
+    display: block; color: var(--white); font-weight: 800;
+    font-size: 15px; letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 12px;
+  }
 
   .hero-who {
     font-size: 13px; color: var(--muted); letter-spacing: 2px;
@@ -330,27 +335,6 @@ const css = `
   .promise h3 { font-size: 12px; font-weight: 900; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
   .promise p { font-size: 14px; color: var(--muted); line-height: 1.75; }
 
-  /* ── RE ── */
-  .re-box {
-    background: var(--card); border: 1px solid var(--div);
-    padding: 44px 48px;
-    display: grid; grid-template-columns: 1fr 1fr; gap: 48px;
-  }
-  .re-box h3 { font-size: 22px; font-weight: 900; color: var(--white); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
-  .re-box p { font-size: 15px; color: var(--muted); line-height: 1.75; margin-bottom: 16px; }
-  .re-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
-  .re-tag {
-    background: rgba(107,120,84,0.1); border: 1px solid var(--ob);
-    color: var(--olive2); font-size: 11px; font-weight: 700;
-    padding: 5px 12px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.5px;
-  }
-  .re-note {
-    border-left: 3px solid var(--gold);
-    padding: 16px 20px;
-    background: var(--gp);
-    font-size: 13px; color: var(--muted); line-height: 1.7;
-  }
-
   /* ── ABOUT ── */
   .about-grid { display: grid; grid-template-columns: 300px 1fr; gap: 64px; align-items: start; }
   .about-img {
@@ -474,7 +458,6 @@ const css = `
     .gov-codes-grid { grid-template-columns: 1fr; }
     .mf-grid { grid-template-columns: 1fr; }
     .promise { grid-column: auto; }
-    .re-box { grid-template-columns: 1fr; padding: 28px 24px; }
     .about-grid { grid-template-columns: 1fr; }
     .about-img { max-width: 240px; }
     .contact-grid { grid-template-columns: 1fr; }
@@ -509,7 +492,6 @@ export default function Home() {
             <li><a href="#services">Services</a></li>
             <li><a href="#government">Gov Contracting</a></li>
             <li><a href="#multifamily">Multi-Family</a></li>
-            <li><a href="#real-estate">Real Estate</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="tel:5126638867" className="nav-call">512-663-8867</a></li>
           </ul>
@@ -532,6 +514,7 @@ export default function Home() {
             <span className="kc">B2G VID 21829543</span>
           </div>
           <span className="hero-what">
+            <strong>One company. Every service. Military standard.</strong>
             General construction · unit turns · remodeling · facilities maintenance · janitorial · painting · pressure washing · government contracting
           </span>
           <span className="hero-who">
@@ -592,10 +575,10 @@ export default function Home() {
             <a href="tel:5126638867">512-663-8867 →</a>
           </div>
           <div className="audience-card">
-            <span className="audience-card-label">Buying or Selling?</span>
-            <span className="audience-card-title">Real Estate Division</span>
-            <p>Joe is a licensed Realtor (TREC) representing buyers and sellers in Leander, Cedar Park, and the Austin suburbs. Separate from contracting.</p>
-            <a href="/realtor">Realtor site →</a>
+            <span className="audience-card-label">For Commercial Owners</span>
+            <span className="audience-card-title">Facilities &amp; Maintenance</span>
+            <p>Janitorial, pressure washing, painting, flooring, and recurring facilities maintenance for offices, retail, and institutional properties.</p>
+            <a href="#services">View services →</a>
           </div>
         </div>
       </div>
@@ -814,38 +797,6 @@ export default function Home() {
       </section>
 
       {/* REAL ESTATE */}
-      <section className="sec dark" id="real-estate">
-        <div className="w">
-          <p className="sec-eyebrow">Real Estate Division</p>
-          <h2 className="sec-title">Buying or selling<br/>in Austin?</h2>
-          <p className="sec-lead">Joe Sanches is a licensed Realtor (TREC) representing individual buyers and sellers in Leander, Cedar Park, and the greater Austin area. This division is structurally separate from all contracting operations.</p>
-          <div className="re-box">
-            <div>
-              <h3>Buyer &amp; Seller Representation</h3>
-              <p>Every neighborhood, every builder, every school zone in Leander and Cedar Park. VA loan expertise. New construction navigation from contract to close. Military relocation specialists.</p>
-              <div className="re-tags">
-                <span className="re-tag">First-Time Buyers</span>
-                <span className="re-tag">VA &amp; VLB Loans</span>
-                <span className="re-tag">New Construction</span>
-                <span className="re-tag">Resale</span>
-                <span className="re-tag">Seller Representation</span>
-                <span className="re-tag">Military Relocation</span>
-                <span className="re-tag">Out-of-State Buyers</span>
-              </div>
-              <div style={{ display:'flex', gap:'12px', flexWrap:'wrap' }}>
-                <a href="/realtor" className="btn-gold">Realtor Site →</a>
-                <a href="https://a.nhb.app/u/joe" className="btn-outline" target="_blank" rel="noopener noreferrer">Browse New Construction</a>
-              </div>
-            </div>
-            <div>
-              <div className="re-note">
-                <strong style={{ color:'var(--white)', display:'block', marginBottom:'8px' }}>Note for property managers &amp; contractors</strong>
-                The real estate division handles individual purchase and sale transactions only. It does not engage with rental portfolios, management operations, or commercial acquisition on behalf of third parties. Structurally separated within Sanches Group. Our contracting clients&apos; portfolios are never solicited.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ABOUT */}
       <section className="sec" id="about">
@@ -857,9 +808,10 @@ export default function Home() {
             <div className="about">
               <p className="sec-eyebrow">Founder &amp; Principal</p>
               <h2>Joe Sanches</h2>
-              <span className="about-role">Founder · Joe Sanches LLC / Sanches Group · Service-Disabled U.S. Veteran (20%+) · Licensed Realtor (TREC)</span>
+              <span className="about-role">Founder · Joe Sanches LLC / Sanches Group · Service-Disabled U.S. Veteran (20%+)</span>
               <p className="about-bio">Joe Sanches built Sanches Group on the same standards he carried in uniform: show up, do the work, stand behind it. Based in Leander, Texas, he holds the licenses, certifications, and operational experience to deliver maintenance, construction, and government contracting work across all sectors — under one roof, with one point of contact: the owner.</p>
               <p className="about-bio">Every contract goes through Joe. When you deal with Sanches Group, you deal with the owner directly.</p>
+              <p className="about-bio">Joe also holds a Texas real estate license (TREC). Individual buyer and seller representation is handled separately at <a href="/realtor" style={{ color: 'var(--gold)', textDecoration: 'underline' }}>joefsanches.com/realtor</a>.</p>
               <div className="creds">
                 <span className="cred">Service-Disabled U.S. Veteran (20%+)</span>
                 <span className="cred">SDVOSB Certified</span>
@@ -884,7 +836,7 @@ export default function Home() {
         <div className="w">
           <p className="sec-eyebrow">Service Area</p>
           <h2 className="sec-title">Central Texas.</h2>
-          <p className="sec-lead">Maintenance, construction, government contracting, and real estate across the Austin metro. Primary base: Leander, Williamson County. Government and large-scope commercial work statewide.</p>
+          <p className="sec-lead">Maintenance, construction, and government contracting across the Austin metro. Primary base: Leander, Williamson County. Government and large-scope commercial work statewide.</p>
           <div className="areas">
             {['Leander','Cedar Park','Austin','Round Rock','Georgetown','Pflugerville','Liberty Hill','Hutto','Kyle','Buda','San Marcos','Temple','Statewide (Gov)'].map(a => (
               <span key={a} className="area">{a}</span>
@@ -931,13 +883,6 @@ export default function Home() {
                   <div>
                     <span className="c-label">Federal EIN</span>
                     <div className="c-val">39-4911899</div>
-                  </div>
-                </div>
-                <div className="c-item">
-                  <span className="c-icon">🌐</span>
-                  <div>
-                    <span className="c-label">Real Estate Site</span>
-                    <div className="c-val"><a href="/realtor">joefsanches.com/realtor</a></div>
                   </div>
                 </div>
                 <div className="c-item">
