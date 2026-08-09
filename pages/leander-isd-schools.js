@@ -142,8 +142,8 @@ export default function LeaderISDSchoolsHub() {
   return (
     <>
       <Head>
-        <title>Leander ISD Schools Guide 2026 | Ratings, Zones & More | Joe Sanches</title>
-        <meta name="description" content="Complete guide to Leander ISD schools in 2026. Every elementary, middle school, and high school with ratings, zoning info, and programs. Essential reading before buying a home in Leander TX." />
+        <title>Leander ISD Schools Ranked 2026: Best & Worst | Joe Sanches</title>
+        <meta name="description" content="Every Leander ISD school ranked for 2026 — the standouts, the ones to watch, and exactly how each zone moves home values. Read this before you pick a neighborhood." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/leander-isd-schools`} />
         <meta property="og:title" content="Leander ISD Schools Guide 2026 | Ratings, Zones & More | Joe Sanches" />

@@ -143,8 +143,8 @@ export default function LeanderRealEstateMarket2026() {
   return (
     <>
       <Head>
-        <title>Leander TX Real Estate Market Report 2026 | Joe Sanches</title>
-        <meta name="description" content="Live Leander TX market data: median prices, days on market, inventory trends for 2026. Expert analysis from local Realtor Joe Sanches." />
+        <title>Leander TX Housing Market 2026: Is It Cooling? | Joe Sanches</title>
+        <meta name="description" content="Leander TX housing market 2026: are prices actually falling? Median price, days on market, inventory, and what it means for buyers and sellers right now — from a local Realtor." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/leander-real-estate-market-2026`} />
         <meta property="og:title" content="Leander TX Real Estate Market Report 2026 | Joe Sanches" />

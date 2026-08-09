@@ -1,6 +1,6 @@
 ---
-title: "Leander ISD Schools: 2026 Review of All 47 Campuses"
-description: "A 2026 review of all 47 Leander ISD schools — ratings, standout campuses, and what home buyers should know before choosing a neighborhood."
+title: "Leander ISD Schools Ranked: All 47 Campuses (2026)"
+description: "Every one of Leander ISD's 47 campuses reviewed for 2026 — the standouts, the ones to watch, and what each does to home values in its zone."
 slug: leander-isd-schools-review-2026
 date: 2026-02-28T15:48:40Z
 ---

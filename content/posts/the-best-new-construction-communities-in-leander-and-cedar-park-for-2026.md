@@ -1,6 +1,6 @@
 ---
-title: "Best New Construction: Leander & Cedar Park 2026"
-description: "The best new construction communities in Leander and Cedar Park for 2026, ranked by value, schools, and builder reputation — a local Realtor's top picks."
+title: "Best New Construction in Leander & Cedar Park, Ranked"
+description: "A Realtor's ranked picks for new construction in Leander and Cedar Park in 2026 — the communities worth your weekend, and the ones that aren't."
 slug: the-best-new-construction-communities-in-leander-and-cedar-park-for-2026
 date: 2026-03-04T14:07:04.746Z
 ---
