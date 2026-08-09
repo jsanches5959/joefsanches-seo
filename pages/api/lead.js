@@ -53,9 +53,11 @@ function buildEmail(lead) {
 }
 
 async function deliverViaSmtp(lead) {
-  const user = process.env.SMTP_USER;
+  // The sending account defaults to the site's own mailbox, so enabling SMTP
+  // only requires configuring the app password itself.
+  const user = process.env.SMTP_USER || TO_EMAIL;
   const pass = process.env.SMTP_PASS;
-  if (!user || !pass) return false;
+  if (!pass) return false;
 
   // Imported lazily so the route still builds and runs when SMTP is unused.
   const nodemailer = (await import('nodemailer')).default;
