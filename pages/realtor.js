@@ -1,5 +1,6 @@
 
 import Link from 'next/link';
+import LeadForm from '../components/LeadForm';
 import Head from 'next/head';
 import fs from 'fs';
 import path from 'path';
@@ -343,6 +344,23 @@ export default function Realtor({ posts }) {
                 <p style={{ color: 'var(--muted)' }}>New insights coming soon...</p>
               )}
             </div>
+
+            <section id="contact-form" style={{ marginTop: '48px' }}>
+              <div
+                className="card"
+                style={{
+                  background: 'rgba(107,120,84,0.05)',
+                  borderColor: 'rgba(200,168,75,0.3)',
+                  padding: '32px',
+                }}
+              >
+                <LeadForm
+                  heading="Tell Joe what you're looking for"
+                  blurb="Buying, selling, or just weighing your options — send the details and Joe will get back to you personally, usually the same day."
+                  compact
+                />
+              </div>
+            </section>
 
             <section id="faq" style={{ marginTop: '48px' }}>
               <h2 style={{ fontSize: '20px', fontWeight: 700, color: 'white', marginBottom: '6px' }}>
