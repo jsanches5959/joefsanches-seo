@@ -501,6 +501,7 @@ export default function Home() {
             <li><a href="#government">Gov Contracting</a></li>
             <li><a href="#multifamily">Multi-Family</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="tel:5126638867" className="nav-call">512-663-8867</a></li>
           </ul>
         </div>
