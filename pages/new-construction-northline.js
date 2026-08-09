@@ -58,6 +58,22 @@ const faqSchema = {
     },
     {
       "@type": "Question",
+      "name": "Is Northline a good fit for someone relocating from California or the Bay Area?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Northline is usually the first community I show buyers relocating from the San Francisco Bay Area, Silicon Valley, or Seattle, because it is the only transit-oriented development in the Leander area. It is built next to the Capital MetroRail station with retail and restaurants integrated into the village core, so it comes closest to the walkable feel Bay Area buyers expect. Every other community in Leander is a conventional car-dependent suburban subdivision. The main adjustment for California buyers is property tax: Northline carries a MUD district, putting the effective rate near 2.45%–2.52%, which is far above what Proposition 13 assessments produce in California."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you live in Northline Leander without a car?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not entirely, but Northline gets closer than anywhere else in Leander. You can walk to the village core for coffee, food, and errands, and take the Capital MetroRail toward downtown Austin without driving. However, MetroRail runs on a commuter schedule rather than a high-frequency transit schedule, so most residents still keep at least one car for trips outside the rail timetable."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "What is Taylor Morrison's Invitation to Dream program?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -325,6 +341,19 @@ export default function NorthlinePage({ communityData, liveHomes }) {
                     <span style={{ color: 'white', fontWeight: 600 }}>{v}</span>
                   </div>
                 ))}
+              </div>
+              <div className="card" style={{ background: 'rgba(200,168,75,.05)', borderColor: 'rgba(200,168,75,.3)', marginTop: '16px' }}>
+                <h3 style={{ color: 'var(--gold)', margin: '0 0 10px', fontSize: '15px' }}>Relocating from California?</h3>
+                <p style={{ color: 'var(--muted)', fontSize: '13px', lineHeight: 1.65, margin: '0 0 12px' }}>
+                  Northline is the only transit-oriented community in Leander — and the one I show Bay Area and Seattle buyers first. Read the full relocation breakdown, including the MUD tax math that surprises California buyers.
+                </p>
+                <Link
+                  href="/posts/moving-from-bay-area-to-leander-tx-walkable-transit-neighborhoods"
+                  className="btn"
+                  style={{ display: 'block', textAlign: 'center', padding: '10px', fontSize: '13px' }}
+                >
+                  Bay Area → Leander Guide →
+                </Link>
               </div>
             </div>
           </aside>
