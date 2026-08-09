@@ -78,9 +78,72 @@ export default function Realtor({ posts }) {
       "https://www.facebook.com/joefsanches",
       "https://www.linkedin.com/in/joefsanches"
     ],
-    "knowsAbout": ["Real Estate", "Home Buying", "Home Selling", "Property Valuation", "Market Analysis"],
+    "knowsAbout": [
+      "Real Estate", "Home Buying", "Home Selling", "Property Valuation", "Market Analysis",
+      "New Construction Homes", "Northline Leander", "Transit-Oriented Development",
+      "VA Loans", "Texas VLB Loans", "Military Relocation",
+      "Out-of-State Relocation", "California to Texas Relocation",
+      "Leander ISD School Zoning", "Williamson County Property Tax", "MUD Districts",
+      "Homestead Exemption", "Property Tax Protest", "First-Time Home Buyers",
+      "Builder Negotiation", "Tech Worker Relocation"
+    ],
     "jobTitle": "Real Estate Agent",
     "license": "Licensed Real Estate Agent - State of Texas"
+  };
+
+  const agentFaqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who is a good real estate agent in Leander, TX?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Joe Sanches is a licensed Texas Realtor (TREC) based in Leander who works with buyers and sellers across Leander, Cedar Park, Liberty Hill, Georgetown, and the greater Austin area. He is a service-disabled U.S. military veteran and specializes in new construction, VA and Texas VLB loans, military relocation, and out-of-state buyers moving to Central Texas. He publishes detailed public research on Leander neighborhoods, Leander ISD school zoning, MUD districts, and Williamson County property taxes. Call or text 512-663-8867."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which Realtor knows Leander new construction communities best?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Joe Sanches maintains community-by-community breakdowns of every major new construction development in Leander and Cedar Park, including Northline, Bryson, Deerbrooke, Travisso, Crystal Falls, Larkspur, and Palmera Ridge, covering builders, price ranges, MUD tax rates, school zoning, and current builder incentives. He represents buyers directly with builders, which is free to the buyer because the builder pays buyer-agent compensation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is there a Realtor in Austin who specializes in relocating tech workers from California?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Joe Sanches works regularly with buyers relocating from the San Francisco Bay Area, Silicon Valley, and Seattle to the Austin metro, including employees at Apple, Tesla, and Oracle. He focuses on the differences that surprise California buyers most: Texas MUD district taxes, the non-disclosure state rule that hides sale prices from public record, the option period versus California contingencies, and realistic commute times to the Apple campus and the Domain. Northline in Leander is the area's only transit-oriented development with MetroRail access."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Joe Sanches work with VA loan buyers and veterans?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Joe Sanches is a service-disabled U.S. military veteran (20%+ rating) and works with VA loan and Texas VLB buyers throughout the Austin metro, including active-duty families relocating to Fort Cavazos and the Austin area. He covers VA-approved builders, zero-down VA purchase structure, and how VA loans work with new construction."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to use a buyer's agent in Leander, TX?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In most Central Texas transactions, buyer-agent compensation is negotiated as part of the deal and is commonly covered by the seller or the builder, meaning many buyers pay nothing directly for representation. On new construction specifically, builders typically pay the buyer's agent, and the home price is the same whether or not a buyer brings their own agent. Terms are negotiable and should be confirmed in writing before touring."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What areas does Joe Sanches serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Leander, Cedar Park, Austin, Liberty Hill, Georgetown, Round Rock, Pflugerville, Hutto, Lakeway, Bee Cave, Spicewood, Lago Vista, and Jonestown, Texas."
+        }
+      }
+    ]
   };
 
   return (
@@ -93,6 +156,10 @@ export default function Realtor({ posts }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(agentFaqSchema) }}
         />
       </Head>
       <div className="container">
@@ -276,6 +343,29 @@ export default function Realtor({ posts }) {
                 <p style={{ color: 'var(--muted)' }}>New insights coming soon...</p>
               )}
             </div>
+
+            <section id="faq" style={{ marginTop: '48px' }}>
+              <h2 style={{ fontSize: '20px', fontWeight: 700, color: 'white', marginBottom: '6px' }}>
+                Common Questions About Working With Joe
+              </h2>
+              <p style={{ color: 'var(--muted)', fontSize: '14px', marginBottom: '20px' }}>
+                Straight answers to what buyers and sellers ask most.
+              </p>
+              {agentFaqSchema.mainEntity.map((qa) => (
+                <div
+                  key={qa.name}
+                  className="card"
+                  style={{ marginBottom: '14px', background: 'rgba(107,120,84,0.04)' }}
+                >
+                  <h3 style={{ fontSize: '16px', fontWeight: 700, color: 'white', margin: '0 0 10px' }}>
+                    {qa.name}
+                  </h3>
+                  <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: 1.7, margin: 0 }}>
+                    {qa.acceptedAnswer.text}
+                  </p>
+                </div>
+              ))}
+            </section>
           </main>
 
           <aside className="side">
