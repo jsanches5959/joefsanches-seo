@@ -55,8 +55,10 @@ function buildEmail(lead) {
 async function deliverViaSmtp(lead) {
   // The sending account defaults to the site's own mailbox, so enabling SMTP
   // only requires configuring the app password itself.
-  const user = process.env.SMTP_USER || TO_EMAIL;
-  const pass = process.env.SMTP_PASS;
+  const user = (process.env.SMTP_USER || TO_EMAIL).trim();
+  // Google displays app passwords in four spaced groups ("abcd efgh ijkl mnop").
+  // Strip whitespace so a pasted-as-shown value still authenticates.
+  const pass = (process.env.SMTP_PASS || '').replace(/\s+/g, '');
   if (!pass) return false;
 
   // Imported lazily so the route still builds and runs when SMTP is unused.
