@@ -2,6 +2,7 @@
  * Lead form receiver.
  *
  * Delivery is pluggable via environment variables, checked in order:
+ *   SMTP_USER + SMTP_PASS   (Gmail / Google Workspace app password by default)
  *   RESEND_API_KEY (+ optional LEAD_TO_EMAIL, LEAD_FROM_EMAIL)
  *   WEB3FORMS_KEY
  *
@@ -49,6 +50,34 @@ function buildEmail(lead) {
   ].filter((l) => l !== null);
 
   return { subject, text: lines.join('\n') };
+}
+
+async function deliverViaSmtp(lead) {
+  const user = process.env.SMTP_USER;
+  const pass = process.env.SMTP_PASS;
+  if (!user || !pass) return false;
+
+  // Imported lazily so the route still builds and runs when SMTP is unused.
+  const nodemailer = (await import('nodemailer')).default;
+
+  const port = Number(process.env.SMTP_PORT || 465);
+  const transport = nodemailer.createTransport({
+    host: process.env.SMTP_HOST || 'smtp.gmail.com',
+    port,
+    secure: port === 465,
+    auth: { user, pass },
+  });
+
+  const { subject, text } = buildEmail(lead);
+  await transport.sendMail({
+    // Gmail requires From to be the authenticated account (or a verified alias).
+    from: `"Sanches Group Website" <${process.env.LEAD_FROM_EMAIL || user}>`,
+    to: TO_EMAIL,
+    subject,
+    text,
+    ...(lead.email ? { replyTo: lead.email } : {}),
+  });
+  return true;
 }
 
 async function deliverViaResend(lead) {
@@ -168,12 +197,24 @@ export default async function handler(req, res) {
     })}`
   );
 
+  // Try each configured channel in turn. Each is isolated so that a failure
+  // in one (expired app password, provider outage) still falls through to the
+  // next rather than aborting the chain.
   let delivered = false;
-  try {
-    delivered = (await deliverViaResend(lead)) || (await deliverViaWeb3Forms(lead));
-  } catch (err) {
-    console.error(`[LEAD] Delivery threw: ${String(err).slice(0, 300)}`);
-    delivered = false;
+  for (const [label, deliver] of [
+    ['SMTP', deliverViaSmtp],
+    ['Resend', deliverViaResend],
+    ['Web3Forms', deliverViaWeb3Forms],
+  ]) {
+    try {
+      if (await deliver(lead)) {
+        delivered = true;
+        console.log(`[LEAD] Delivered via ${label}`);
+        break;
+      }
+    } catch (err) {
+      console.error(`[LEAD] ${label} threw: ${String(err).slice(0, 300)}`);
+    }
   }
 
   if (!delivered) {
