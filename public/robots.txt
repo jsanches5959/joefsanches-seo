@@ -4,7 +4,63 @@ Disallow: /api/
 Disallow: /.next/
 Disallow: /node_modules/
 
+# ---------------------------------------------------------------
+# AI assistants and answer engines are explicitly welcome.
+# Referrals arrive from ChatGPT/Perplexity recommendations, so these
+# crawlers are allowed full access with no crawl delay.
+# ---------------------------------------------------------------
+
+# OpenAI — live retrieval when a user asks ChatGPT a question
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+
+# OpenAI — ChatGPT search index
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+
+# OpenAI — model training (brand recall without a live search)
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+
+User-agent: Claude-User
+Allow: /
+Disallow: /api/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /api/
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /api/
+
+# Google Gemini / AI Overviews grounding
+User-agent: Google-Extended
+Allow: /
+
+# Apple Intelligence / Siri
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft Copilot
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+
 Sitemap: https://joefsanches.com/sitemap.xml
 
-# Crawl delay to be respectful
+# Crawl delay to be respectful (search crawlers; ignored by Googlebot)
 Crawl-delay: 1
