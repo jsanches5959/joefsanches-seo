@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import LeadForm from '../components/LeadForm';
 
 const css = `
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -20,6 +21,8 @@ const css = `
   }
 
   html { scroll-behavior: smooth; }
+  /* Sticky nav is ~77px tall; keep anchored sections clear of it. */
+  section[id], div[id] { scroll-margin-top: 92px; }
 
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
@@ -362,6 +365,10 @@ const css = `
   }
 
   /* ── CONTACT ── */
+  .lead-form-wrap {
+    background: var(--card); border: 1px solid var(--gb);
+    padding: 36px 40px; margin-bottom: 2px;
+  }
   .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
   .contact-main {
     background: var(--card); border: 1px solid var(--gb);
@@ -461,6 +468,7 @@ const css = `
     .about-grid { grid-template-columns: 1fr; }
     .about-img { max-width: 240px; }
     .contact-grid { grid-template-columns: 1fr; }
+    .lead-form-wrap { padding: 24px 20px; }
     .areas { gap: 2px; }
     footer { padding: 28px 20px; }
   }
@@ -850,7 +858,13 @@ export default function Home() {
         <div className="w">
           <p className="sec-eyebrow">Contact</p>
           <h2 className="sec-title">Talk to Joe directly.</h2>
-          <p className="sec-lead">No answering service. No bid coordinator. Government contract, maintenance agreement, construction project, or buying a home — reach Joe directly at the number below.</p>
+          <p className="sec-lead">No answering service. No bid coordinator. Government contract, maintenance agreement, construction project, or buying a home — reach Joe directly.</p>
+          <div className="lead-form-wrap">
+            <LeadForm
+              heading="Request a quote"
+              blurb="Tell Joe what you need and he'll get back to you — usually the same day. Prefer to talk? Call or text 512-663-8867."
+            />
+          </div>
           <div className="contact-grid">
             <div className="contact-main">
               <h3>Joe Sanches</h3>
