@@ -119,7 +119,7 @@ const css = `
   .hero-creds {
     display: flex; align-items: center; justify-content: center;
     gap: 16px; flex-wrap: wrap;
-    margin: 4px 0 34px;
+    margin: 0 0 40px;
   }
   .hero-creds .kc {
     font-size: 12px; font-weight: 800; letter-spacing: 2.6px;
@@ -181,6 +181,27 @@ const css = `
   .spec:nth-child(3n) { border-right: none; }
   .spec-val { font-size: 14px; font-weight: 900; color: var(--gold); display: block; letter-spacing: 1.2px; text-transform: uppercase; line-height: 1.1; }
   .spec-label { font-size: 10px; color: var(--muted); margin-top: 6px; display: block; letter-spacing: 1px; text-transform: uppercase; }
+
+  .svc-links-label {
+    margin-top: 40px; margin-bottom: 14px;
+    font-size: 10px; font-weight: 900; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--gold);
+  }
+  .svc-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+  .svc-link {
+    display: block; padding: 18px 20px;
+    border: 1px solid var(--div); border-radius: 4px;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .svc-link:hover { border-color: var(--gb); transform: translateY(-2px); }
+  .svc-link strong {
+    display: block; color: var(--white); font-size: 15px;
+    font-weight: 800; margin-bottom: 4px;
+  }
+  .svc-link span {
+    font-size: 11px; color: var(--muted);
+    letter-spacing: 1px; text-transform: uppercase;
+  }
 
   /* ── AUDIENCE STRIP ── */
   .audience-strip {
@@ -460,6 +481,7 @@ const css = `
     .w { padding: 0 20px; }
     .sec { padding: 56px 0; }
     .lanes { grid-template-columns: 1fr; gap: 2px; }
+    .svc-links { grid-template-columns: 1fr; }
     .audience-inner { grid-template-columns: 1fr 1fr; }
     .gov-top { grid-template-columns: 1fr; }
     .gov-codes-grid { grid-template-columns: 1fr; }
@@ -511,27 +533,28 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-inner">
           <img src="/logo.png" alt="Sanches Group" className="hero-logo" />
-          <span className="hero-eyebrow">Service-Disabled Veteran-Owned · Leander, Texas</span>
+          <span className="hero-eyebrow">Leander · Cedar Park · Georgetown · Greater Austin</span>
           <h1>Sanches Group</h1>
-          <div className="hero-creds" aria-label="Certifications and vendor credentials">
-            <span className="kc">TX HUB Certified</span>
-            <span className="kd" aria-hidden="true" />
-            <span className="kc">SDVOSB</span>
-            <span className="kd" aria-hidden="true" />
-            <span className="kc">SAM.gov Active</span>
-            <span className="kd" aria-hidden="true" />
-            <span className="kc">B2G VID 21829543</span>
-          </div>
           <span className="hero-what">
-            <strong>One company. Every service. Military standard.</strong>
-            General construction · unit turns · remodeling · facilities maintenance · janitorial · painting · pressure washing · government contracting
+            <strong>Construction, repairs &amp; maintenance — done right.</strong>
+            Remodeling · drywall repair · interior &amp; exterior painting · flooring · handyman
+            repairs · pressure washing · facilities maintenance
           </span>
           <span className="hero-who">
-            Serving <span>government agencies</span> · <span>property managers</span> · <span>commercial owners</span> · <span>homeowners</span>
+            For <span>homeowners</span> · <span>property managers</span> · <span>commercial owners</span> · <span>government agencies</span>
           </span>
           <div className="hero-ctas">
-            <a href="#government" className="btn-gold">Government Contracting</a>
-            <a href="#contact" className="btn-outline">Request a Quote</a>
+            <a href="#contact" className="btn-gold">Get a Free Estimate</a>
+            <a href="tel:5126638867" className="btn-outline">Call 512-663-8867</a>
+          </div>
+          <div className="hero-creds" aria-label="Licensing and credentials">
+            <span className="kc">Licensed &amp; Insured</span>
+            <span className="kd" aria-hidden="true" />
+            <span className="kc">Veteran-Owned</span>
+            <span className="kd" aria-hidden="true" />
+            <span className="kc">Free Estimates</span>
+            <span className="kd" aria-hidden="true" />
+            <span className="kc">Owner on Every Job</span>
           </div>
           <div className="hero-specs">
             <div className="spec">
@@ -657,6 +680,34 @@ export default function Home() {
                 <span className="lane-tag">SAM.gov</span>
               </div>
             </div>
+          </div>
+
+          <p className="svc-links-label">Service details &amp; free estimates</p>
+          <div className="svc-links">
+            <a className="svc-link" href="/services/drywall-repair-leander-tx">
+              <strong>Drywall Repair &amp; Installation</strong>
+              <span>Leander, TX</span>
+            </a>
+            <a className="svc-link" href="/services/interior-exterior-painting-leander-tx">
+              <strong>Interior &amp; Exterior Painting</strong>
+              <span>Leander, TX</span>
+            </a>
+            <a className="svc-link" href="/services/handyman-services-leander-tx">
+              <strong>Handyman &amp; Home Repairs</strong>
+              <span>Leander, TX</span>
+            </a>
+            <a className="svc-link" href="/services/home-remodeling-leander-tx">
+              <strong>Remodeling &amp; General Construction</strong>
+              <span>Leander, TX</span>
+            </a>
+            <a className="svc-link" href="/services/pressure-washing-leander-tx">
+              <strong>Pressure Washing</strong>
+              <span>Leander, TX</span>
+            </a>
+            <a className="svc-link" href="/services/facilities-maintenance-austin-tx">
+              <strong>Facilities Maintenance &amp; Janitorial</strong>
+              <span>Austin, TX</span>
+            </a>
           </div>
         </div>
       </section>

@@ -64,6 +64,20 @@ function generateSitemap() {
     console.error("Could not read neighborhoods.json:", e.message);
   }
 
+  // Service pages — auto-generate from services.json
+  let servicePages = [];
+  try {
+    const svcFile = path.join(root, "content", "services.json");
+    const services = JSON.parse(fs.readFileSync(svcFile, "utf8"));
+    servicePages = services.map(s => ({
+      url: `/services/${s.slug}`,
+      lastmod: today,
+      priority: "0.9",
+    }));
+  } catch (e) {
+    console.error("Could not read services.json:", e.message);
+  }
+
   // Read all blog posts
   let blogPosts = [];
   try {
@@ -85,7 +99,7 @@ function generateSitemap() {
   }
 
   // Combine all pages
-  const allPages = [...hubPages, ...communityPages, ...builderPages, ...neighborhoodPages, ...blogPosts];
+  const allPages = [...hubPages, ...communityPages, ...builderPages, ...servicePages, ...neighborhoodPages, ...blogPosts];
 
   // Generate XML
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
