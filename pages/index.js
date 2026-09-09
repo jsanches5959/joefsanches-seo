@@ -62,7 +62,14 @@ const css = `
   }
   .nav-call:hover { background: var(--gold2) !important; }
 
-  /* ── HERO ── */
+  /* ── HERO ──
+     Layered background, back to front:
+       .hero            base + optional job photo via --hero-photo
+       .hero::before    brand glow + fine scanlines
+       .hero-sweep      chrome light bar raking across
+       .hero-strobe     slow flash pulses (well under the 3/sec
+                        photosensitivity threshold, off for reduced motion)
+  */
   .hero {
     background: var(--black);
     border-bottom: 1px solid var(--gb);
@@ -70,14 +77,104 @@ const css = `
     text-align: center;
     position: relative;
     overflow: hidden;
+    isolation: isolate;
+  }
+  /* Drop a photo in by setting --hero-photo: url('/hero-patchwork.jpg') */
+  .hero::after {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: var(--hero-photo, none);
+    background-size: cover;
+    background-position: center;
+    opacity: .22;
+    filter: grayscale(1) contrast(1.15) brightness(.8);
+    pointer-events: none;
+    z-index: -2;
   }
   .hero::before {
     content: '';
     position: absolute; inset: 0;
     background:
       radial-gradient(600px 400px at 50% 100%, rgba(107,120,84,0.06) 0%, transparent 70%),
-      radial-gradient(800px 300px at 50% -10%, rgba(200,168,75,0.04) 0%, transparent 60%);
+      radial-gradient(800px 300px at 50% -10%, rgba(200,168,75,0.04) 0%, transparent 60%),
+      repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.022) 0px,
+        rgba(255,255,255,0.022) 1px,
+        transparent 1px,
+        transparent 4px
+      );
     pointer-events: none;
+    z-index: -1;
+  }
+
+  /* Chrome light bar raking across the hero */
+  .hero-sweep {
+    position: absolute; inset: -40% -60%;
+    pointer-events: none; z-index: -1;
+    background: linear-gradient(
+      104deg,
+      transparent 38%,
+      rgba(255,255,255,0.05) 45%,
+      rgba(214,222,232,0.34) 49%,
+      rgba(255,255,255,0.80) 50%,
+      rgba(214,222,232,0.34) 51%,
+      rgba(255,255,255,0.05) 55%,
+      transparent 62%
+    );
+    mix-blend-mode: screen;
+    opacity: .55;
+    transform: translateX(-60%);
+    animation: heroSweep 7s cubic-bezier(.6,0,.35,1) infinite;
+  }
+  @keyframes heroSweep {
+    0%   { transform: translateX(-70%); opacity: 0; }
+    12%  { opacity: .6; }
+    46%  { opacity: .5; }
+    62%  { transform: translateX(70%); opacity: 0; }
+    100% { transform: translateX(70%); opacity: 0; }
+  }
+
+  /* Strobe flashes — slow and low-contrast on purpose */
+  .hero-strobe {
+    position: absolute; inset: 0;
+    pointer-events: none; z-index: -1;
+    background:
+      radial-gradient(900px 420px at 50% 34%, rgba(226,236,248,0.16), transparent 68%);
+    mix-blend-mode: screen;
+    opacity: 0;
+    animation: heroStrobe 9s steps(1, end) infinite;
+  }
+  @keyframes heroStrobe {
+    0%, 3%   { opacity: 0; }
+    4%       { opacity: .85; }
+    5%       { opacity: .10; }
+    6%       { opacity: .70; }
+    7%       { opacity: 0; }
+    52%      { opacity: .55; }
+    53%      { opacity: 0; }
+    100%     { opacity: 0; }
+  }
+
+  /* Metallic edge along the bottom of the hero */
+  .hero::marker { content: none; }
+  .hero-rule {
+    position: absolute; left: 0; right: 0; bottom: 0; height: 1px;
+    pointer-events: none; z-index: 0;
+    background: linear-gradient(90deg,
+      transparent, rgba(226,236,248,.5), var(--gold), rgba(226,236,248,.5), transparent);
+    background-size: 220% 100%;
+    animation: heroRule 6s linear infinite;
+  }
+  @keyframes heroRule {
+    0%   { background-position: 220% 0; }
+    100% { background-position: -220% 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-sweep, .hero-strobe, .hero-rule { animation: none; }
+    .hero-strobe { opacity: 0; }
+    .hero-sweep { opacity: .18; }
   }
   .hero-inner { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; }
 
@@ -202,6 +299,14 @@ const css = `
     font-size: 11px; color: var(--muted);
     letter-spacing: 1px; text-transform: uppercase;
   }
+
+  .hero-specs-link {
+    display: inline-block; margin-bottom: 14px;
+    font-size: 11px; font-weight: 800; letter-spacing: 1.6px;
+    text-transform: uppercase; color: var(--muted);
+    border-bottom: 1px solid transparent;
+  }
+  .hero-specs-link:hover { color: var(--gold); border-bottom-color: var(--gb); }
 
   /* ── AUDIENCE STRIP ── */
   .audience-strip {
@@ -531,6 +636,9 @@ export default function Home() {
 
       {/* HERO */}
       <section className="hero" id="top">
+        <span className="hero-sweep" aria-hidden="true" />
+        <span className="hero-strobe" aria-hidden="true" />
+        <span className="hero-rule" aria-hidden="true" />
         <div className="hero-inner">
           <img src="/logo.png" alt="Sanches Group" className="hero-logo" />
           <span className="hero-eyebrow">Leander · Cedar Park · Georgetown · Greater Austin</span>
@@ -556,6 +664,7 @@ export default function Home() {
             <span className="kd" aria-hidden="true" />
             <span className="kc">Owner on Every Job</span>
           </div>
+          <a className="hero-specs-link" href="/credentials">What these mean &amp; how to verify them →</a>
           <div className="hero-specs">
             <div className="spec">
               <span className="spec-val">TX HUB</span>
@@ -575,7 +684,7 @@ export default function Home() {
             </div>
             <div className="spec">
               <span className="spec-val">Gen. Contractor</span>
-              <span className="spec-label">No TX License Req.</span>
+              <span className="spec-label">Construction &amp; Remodeling</span>
             </div>
             <div className="spec">
               <span className="spec-val">Insured</span>

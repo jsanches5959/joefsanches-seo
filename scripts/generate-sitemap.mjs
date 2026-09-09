@@ -22,6 +22,7 @@ function generateSitemap() {
     { url: "/property-tax-leander-tx", priority: "0.95" },
     { url: "/new-construction-leander-tx", priority: "0.95" },
     { url: "/leander-neighborhoods", priority: "0.9" },
+    { url: "/credentials", priority: "0.8" },
     { url: "/leander-isd-schools", priority: "0.9" },
     { url: "/sell-my-house-leander-tx", priority: "0.9" },
     { url: "/buy-home-leander-tx", priority: "0.9" },
