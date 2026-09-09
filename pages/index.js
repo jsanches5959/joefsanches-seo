@@ -73,13 +73,32 @@ const css = `
   .hero {
     background: var(--black);
     border-bottom: 1px solid var(--gb);
-    padding: 100px 40px 88px;
+    padding: 100px 40px 132px;
     text-align: center;
     position: relative;
     overflow: hidden;
     isolation: isolate;
   }
-  /* Drop a photo in by setting --hero-photo: url('/hero-patchwork.jpg') */
+  /* Austin skyline, anchored bottom, behind every other hero layer */
+  .hero-skyline {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    height: 300px;
+    /* 100% auto keeps the whole skyline in frame; cover crops it to fragments */
+    background: url('/austin-skyline.svg') bottom center / 100% auto no-repeat;
+    opacity: .45;
+    pointer-events: none;
+    z-index: -3;
+  }
+  /* fade the skyline into the page so it sits behind the copy */
+  .hero-skyline::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(to bottom,
+      var(--black) 0%, rgba(8,8,8,.55) 30%, rgba(8,8,8,0) 62%);
+  }
+  @media (max-width: 900px) { .hero-skyline { height: 190px; opacity: .34; } }
+
+  /* Optional job photo: set --hero-photo: url('/hero-patchwork.jpg') */
   .hero::after {
     content: '';
     position: absolute; inset: 0;
@@ -636,6 +655,7 @@ export default function Home() {
 
       {/* HERO */}
       <section className="hero" id="top">
+        <span className="hero-skyline" aria-hidden="true" />
         <span className="hero-sweep" aria-hidden="true" />
         <span className="hero-strobe" aria-hidden="true" />
         <span className="hero-rule" aria-hidden="true" />
