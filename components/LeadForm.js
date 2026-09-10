@@ -21,6 +21,9 @@ const STORAGE_KEY = 'jfs_attr_v1';
 export default function LeadForm({ heading, blurb, compact = false }) {
   const [status, setStatus] = useState('idle'); // idle | sending | sent | mailto | error
   const [error, setError] = useState('');
+  // Held so the fallback panel can show what they typed and offer other routes.
+  const [pending, setPending] = useState(null);
+  const [copied, setCopied] = useState(false);
 
   async function onSubmit(e) {
     e.preventDefault();
@@ -82,19 +85,19 @@ export default function LeadForm({ heading, blurb, compact = false }) {
         return;
       }
 
-      // No delivery channel configured (or delivery failed). Rather than
-      // claim success for a lead that would be lost, hand the visitor a
-      // prefilled email so the message still reaches Joe.
-      openMailFallback(payload);
+      // No delivery channel configured (or delivery failed). Show every way
+      // to reach Joe rather than silently firing a mailto: a visitor with no
+      // mail client configured would otherwise hit a dead end with their
+      // message lost. Their input is deliberately not cleared.
+      setPending(payload);
       setStatus('mailto');
-      form.reset();
     } catch {
-      openMailFallback(payload);
+      setPending(payload);
       setStatus('mailto');
     }
   }
 
-  function openMailFallback(p) {
+  function buildMailto(p) {
     try {
       const src = p.attribution?.source ? ` [via ${p.attribution.source}]` : '';
       const subject = `Website inquiry — ${p.service || 'General'}${src}`;
@@ -112,11 +115,25 @@ export default function LeadForm({ heading, blurb, compact = false }) {
         .filter((l) => l !== null)
         .join('\n');
 
-      window.location.href =
-        `mailto:hello@joefsanches.com?subject=${encodeURIComponent(subject)}` +
-        `&body=${encodeURIComponent(body)}`;
+      return {
+        href:
+          `mailto:hello@joefsanches.com?subject=${encodeURIComponent(subject)}` +
+          `&body=${encodeURIComponent(body)}`,
+        plain: body,
+      };
     } catch {
-      /* ignore */
+      return { href: 'mailto:hello@joefsanches.com', plain: '' };
+    }
+  }
+
+  async function copyDetails() {
+    const { plain } = buildMailto(pending) || {};
+    try {
+      await navigator.clipboard.writeText(plain || '');
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    } catch {
+      setCopied(false);
     }
   }
 
@@ -139,11 +156,33 @@ export default function LeadForm({ heading, blurb, compact = false }) {
       {heading ? <h3 className="lf-title">{heading}</h3> : null}
       {blurb ? <p className="lf-blurb">{blurb}</p> : null}
 
-      {status === 'mailto' && (
-        <p className="lf-note">
-          Your email app should have opened with the message ready to send. If it
-          didn&apos;t, call or text <a href="tel:5126638867">512-663-8867</a>.
-        </p>
+      {status === 'mailto' && pending && (
+        <div className="lf-fallback">
+          <h4>Almost there — pick how to send it</h4>
+          <p>
+            We couldn&apos;t send this automatically from the website. Your message is
+            ready below — use whichever is easiest. Fastest is usually a text.
+          </p>
+          <div className="lf-fb-actions">
+            <a href="tel:5126638867" className="lf-fb-btn primary">Call 512-663-8867</a>
+            <a
+              href={`sms:5126638867?&body=${encodeURIComponent(
+                `${pending.name} — ${pending.service || 'inquiry'}. ${pending.message || ''}`.slice(0, 300)
+              )}`}
+              className="lf-fb-btn"
+            >
+              Text Joe
+            </a>
+            <a href={(buildMailto(pending) || {}).href} className="lf-fb-btn">Open Email</a>
+            <button type="button" className="lf-fb-btn" onClick={copyDetails}>
+              {copied ? 'Copied ✓' : 'Copy Details'}
+            </button>
+          </div>
+          <pre className="lf-fb-pre">{(buildMailto(pending) || {}).plain}</pre>
+          <p className="lf-fb-fine">
+            Or email <a href="mailto:hello@joefsanches.com">hello@joefsanches.com</a> directly.
+          </p>
+        </div>
       )}
 
       <form onSubmit={onSubmit} noValidate>
@@ -260,6 +299,38 @@ const styles = `
     background: rgba(200,168,75,0.06); border: 1px solid rgba(200,168,75,0.25);
   }
   .lf-note a, .lf-done a { color: var(--gold, #C8A84B); text-decoration: underline; }
+  .lf-fallback {
+    border: 1px solid rgba(200,168,75,.35);
+    background: rgba(200,168,75,.06);
+    border-radius: 6px; padding: 20px; margin-bottom: 20px;
+  }
+  .lf-fallback h4 {
+    margin: 0 0 8px; font-size: 15px; font-weight: 800;
+    color: var(--gold, #C8A84B); text-transform: uppercase; letter-spacing: 1px;
+  }
+  .lf-fallback > p {
+    margin: 0 0 16px; font-size: 14px; line-height: 1.65;
+    color: var(--muted, rgba(180,190,160,.75));
+  }
+  .lf-fb-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .lf-fb-btn {
+    flex: 1 1 auto; min-width: 130px; text-align: center;
+    padding: 11px 16px; border-radius: 4px; cursor: pointer;
+    border: 1px solid rgba(200,168,75,.4); background: transparent;
+    color: var(--gold, #C8A84B); font-size: 13px; font-weight: 800;
+    letter-spacing: .6px; text-transform: uppercase; font-family: inherit;
+    text-decoration: none;
+  }
+  .lf-fb-btn.primary { background: var(--gold, #C8A84B); color: #0A0C08; border-color: transparent; }
+  .lf-fb-btn:hover { filter: brightness(1.12); }
+  .lf-fb-pre {
+    margin: 0 0 12px; padding: 12px 14px; max-height: 170px; overflow: auto;
+    background: rgba(0,0,0,.35); border: 1px solid rgba(255,255,255,.08);
+    border-radius: 4px; font-size: 12.5px; line-height: 1.6; white-space: pre-wrap;
+    color: var(--muted, rgba(180,190,160,.8)); font-family: ui-monospace, Menlo, monospace;
+  }
+  .lf-fb-fine { margin: 0; font-size: 12px; color: var(--muted, rgba(180,190,160,.65)); }
+  .lf-fb-fine a { color: var(--gold, #C8A84B); text-decoration: underline; }
   .lf-hp {
     position: absolute; left: -9999px; width: 1px; height: 1px;
     overflow: hidden;
