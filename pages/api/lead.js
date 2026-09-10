@@ -195,6 +195,72 @@ async function deliverViaFormSubmit(lead) {
   return true;
 }
 
+
+/**
+ * Google Forms — the primary destination.
+ *
+ * Submissions POST to the form's public formResponse endpoint, which needs no
+ * credential. Google records the response in the linked spreadsheet and, when
+ * response notifications are enabled on the form, emails the owner.
+ *
+ * Field ids come from the form's own pre-filled link. The service selection is
+ * a multiple-choice question, and an unrecognised choice can be dropped, so the
+ * selection is also written into the free-text details field. That way the
+ * service is never lost even if the choice does not match an option exactly.
+ *
+ * Set DISABLE_GOOGLE_FORM=1 to turn this off.
+ */
+const GOOGLE_FORM_ID = '1FAIpQLSeW7v97edpgF1UOf_R_vN0KNlDDNsZwqcDzGJNJU_0CbZmrNg';
+const GOOGLE_FORM_FIELDS = {
+  name: 'entry.895299563',
+  phone: 'entry.858160361',
+  email: 'entry.722361172',
+  service: 'entry.1168278347',
+  details: 'entry.1435707068',
+};
+
+async function deliverViaGoogleForm(lead) {
+  if (process.env.DISABLE_GOOGLE_FORM === '1') return false;
+
+  // Everything worth keeping goes into the free-text field as well, so no
+  // detail depends on the multiple-choice value being accepted.
+  const details = [
+    lead.message || '(no message)',
+    '',
+    `Service: ${lead.service || '—'}`,
+    `Found via: ${lead.source || 'Unknown'}${lead.channel ? ` (${lead.channel})` : ''}`,
+    `First page: ${lead.landing || '—'}`,
+    lead.campaign ? `Campaign: ${lead.campaign}` : null,
+    `Submitted: ${lead.at}`,
+  ]
+    .filter((l) => l !== null)
+    .join('\n');
+
+  const form = new URLSearchParams();
+  form.set(GOOGLE_FORM_FIELDS.name, lead.name);
+  form.set(GOOGLE_FORM_FIELDS.phone, lead.phone || '—');
+  form.set(GOOGLE_FORM_FIELDS.email, lead.email || '—');
+  if (lead.service) form.set(GOOGLE_FORM_FIELDS.service, lead.service);
+  form.set(GOOGLE_FORM_FIELDS.details, details);
+
+  const res = await fetch(
+    `https://docs.google.com/forms/d/e/${GOOGLE_FORM_ID}/formResponse`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: form.toString(),
+      redirect: 'follow',
+    }
+  );
+
+  // Google answers a successful submission with 200, and historically also
+  // with a redirect to its confirmation page. Both mean accepted.
+  if (res.status === 200 || (res.status >= 300 && res.status < 400)) return true;
+
+  console.error(`[LEAD] Google Form returned ${res.status}`);
+  return false;
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
@@ -259,6 +325,7 @@ export default async function handler(req, res) {
   // next rather than aborting the chain.
   let delivered = false;
   for (const [label, deliver] of [
+    ['GoogleForm', deliverViaGoogleForm],
     ['SMTP', deliverViaSmtp],
     ['Resend', deliverViaResend],
     ['Web3Forms', deliverViaWeb3Forms],
