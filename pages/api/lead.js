@@ -142,6 +142,59 @@ async function deliverViaWeb3Forms(lead) {
   return true;
 }
 
+
+/**
+ * FormSubmit — a free forwarding service that needs no account and no API
+ * key. Submissions POST to formsubmit.co/<destination address>, and the
+ * service forwards them by email.
+ *
+ * This is the fallback that works with zero configuration, so the form still
+ * delivers when no credential is present. The destination address is already
+ * published across the site, so putting it in the endpoint reveals nothing
+ * new. It runs last, after any properly configured channel.
+ *
+ * FormSubmit requires a one-time activation: the first submission triggers a
+ * confirmation email to the destination, and delivery begins once the link in
+ * it is clicked.
+ */
+async function deliverViaFormSubmit(lead) {
+  if (process.env.DISABLE_FORMSUBMIT === '1') return false;
+
+  const { subject } = buildEmail(lead);
+  const res = await fetch(
+    `https://formsubmit.co/ajax/${encodeURIComponent(TO_EMAIL)}`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({
+        _subject: subject,
+        _template: 'table',
+        _captcha: 'false',
+        Name: lead.name,
+        Phone: lead.phone || '—',
+        Email: lead.email || '—',
+        Service: lead.service || '—',
+        Message: lead.message || '(none)',
+        'Found via': `${lead.source || 'Unknown'}${lead.channel ? ` (${lead.channel})` : ''}`,
+        'First page': lead.landing || '—',
+        Submitted: lead.at,
+      }),
+    }
+  );
+
+  if (!res.ok) {
+    const detail = await res.text().catch(() => '');
+    console.error(`[LEAD] FormSubmit failed ${res.status}: ${detail.slice(0, 300)}`);
+    return false;
+  }
+  const body = await res.json().catch(() => ({}));
+  if (body && body.success === 'false') {
+    console.error(`[LEAD] FormSubmit rejected: ${JSON.stringify(body).slice(0, 300)}`);
+    return false;
+  }
+  return true;
+}
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
@@ -209,6 +262,7 @@ export default async function handler(req, res) {
     ['SMTP', deliverViaSmtp],
     ['Resend', deliverViaResend],
     ['Web3Forms', deliverViaWeb3Forms],
+    ['FormSubmit', deliverViaFormSubmit],
   ]) {
     try {
       if (await deliver(lead)) {

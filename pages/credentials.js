@@ -179,7 +179,7 @@ export default function Credentials() {
         </main>
 
         <footer className="cr-foot">
-          <p>Sanches Group · Joe Sanches LLC · 809 Heartleaf Dr, Leander, TX 78641</p>
+          <p>Sanches Group · Joe Sanches LLC · Leander, Texas</p>
           <p>EIN 39-4911899 · B2G VID 21829543</p>
           <p><Link href="/government">Government &amp; institutional contracting →</Link></p>
         </footer>
