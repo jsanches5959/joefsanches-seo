@@ -548,7 +548,7 @@ export default function Government() {
                 <span className="c-ico">📍</span>
                 <div>
                   <span className="c-lbl">Address</span>
-                  <div className="c-val">809 Heartleaf Dr, Leander, TX 78641</div>
+                  <div className="c-val">Leander, Texas</div>
                   <div style={{ fontSize:'11px', color:'var(--muted)', marginTop:'2px' }}>Williamson County · Central Texas</div>
                 </div>
               </div>
@@ -594,7 +594,7 @@ export default function Government() {
             </div>
             <div>
               <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>Entity Information</p>
-              <p style={{ fontSize: '12px', color: '#2e3428', lineHeight: '1.75' }}>Joe Sanches LLC · DBA Sanches Group · 809 Heartleaf Dr, Leander, TX 78641 · Williamson County · EIN: 39-4911899 · B2G VID: 21829543 · Formed: October 13, 2025 · Texas LLC.</p>
+              <p style={{ fontSize: '12px', color: '#2e3428', lineHeight: '1.75' }}>Joe Sanches LLC · DBA Sanches Group · Leander, Texas · Williamson County · EIN: 39-4911899 · B2G VID: 21829543 · Formed: October 13, 2025 · Texas LLC.</p>
             </div>
             <div>
               <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>Spot Purchase Availability</p>
@@ -611,7 +611,7 @@ export default function Government() {
       {/* FOOTER */}
       <footer>
         <img src="/logo.png" alt="Sanches Group" />
-        <p>© {new Date().getFullYear()} Joe Sanches LLC · Sanches Group · 809 Heartleaf Dr, Leander, TX 78641</p>
+        <p>© {new Date().getFullYear()} Joe Sanches LLC · Sanches Group · Leander, Texas</p>
         <p>512-663-8867 · hello@joefsanches.com · EIN: 39-4911899</p>
         <p style={{ marginTop: '6px' }}>Service-Disabled Veteran-Owned (20%+) · Texas HUB · VetHUB Certified · SDVOSB · SAM.gov · Insured</p>
         <img

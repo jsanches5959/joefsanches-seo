@@ -169,7 +169,7 @@ export default function Service({ service, others }) {
         </main>
 
         <footer className="svc-foot">
-          <p>Sanches Group · Joe Sanches LLC · 809 Heartleaf Dr, Leander, TX 78641</p>
+          <p>Sanches Group · Joe Sanches LLC · Leander, Texas</p>
           <p>512-663-8867 · hello@joefsanches.com</p>
           <p className="svc-fine">
             Serving Leander, Cedar Park, Georgetown, Liberty Hill, Round Rock, Pflugerville

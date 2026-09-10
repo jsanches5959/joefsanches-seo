@@ -3,7 +3,7 @@
 
 ---
 
-**809 Heartleaf Dr, Leander, TX 78641 · (512) 663-8867 · hello@joefsanches.com · joefsanches.com/government**
+**Leander, Texas · (512) 663-8867 · hello@joefsanches.com · joefsanches.com/government**
 
 ---
 
@@ -95,7 +95,7 @@
 | Year Established | 2025 (formed October 13, 2025) |
 | Federal EIN | 39-4911899 |
 | B2G / System Vendor Number | 21829543 |
-| Physical Address | 809 Heartleaf Dr, Leander, TX 78641 |
+| Physical Address | Leander, Texas |
 | County | Williamson County, TX |
 | UEI (SAM.gov) | Available on request |
 | CAGE Code | Available on request |
@@ -110,7 +110,7 @@
 📞 **512-663-8867** (call or text)  
 ✉️ **hello@joefsanches.com**  
 🌐 **joefsanches.com/government**  
-📍 809 Heartleaf Dr, Leander, TX 78641 · Williamson County
+📍 Leander, Texas · Williamson County
 
 *For solicitations, teaming inquiries, HUB subcontracting plans, or capability statement requests — contact Joe directly. Response within one business day.*
 

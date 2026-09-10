@@ -1084,7 +1084,7 @@ export default function Home() {
                   <span className="c-icon">📍</span>
                   <div>
                     <span className="c-label">Address</span>
-                    <div className="c-val">809 Heartleaf Dr, Leander, TX 78641</div>
+                    <div className="c-val">Leander, Texas</div>
                     <span className="c-sub">Williamson County · Central Texas</span>
                   </div>
                 </div>
@@ -1130,7 +1130,7 @@ export default function Home() {
             </div>
             <div className="compliance-block">
               <span className="compliance-block-label">Entity Information</span>
-              <p>Joe Sanches LLC · DBA Sanches Group · 809 Heartleaf Dr, Leander, TX 78641 · EIN: 39-4911899 · B2G VID: 21829543 · Formed October 13, 2025 · State of Texas. 100% service-disabled veteran-owned (service-connected disability rating 20%+).</p>
+              <p>Joe Sanches LLC · DBA Sanches Group · Leander, Texas · EIN: 39-4911899 · B2G VID: 21829543 · Formed October 13, 2025 · State of Texas. 100% service-disabled veteran-owned (service-connected disability rating 20%+).</p>
             </div>
           </div>
         </div>
@@ -1139,7 +1139,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer>
         <img src="/logo.png" alt="Sanches Group" />
-        <p>© {new Date().getFullYear()} Joe Sanches LLC · Sanches Group · 809 Heartleaf Dr, Leander, TX 78641</p>
+        <p>© {new Date().getFullYear()} Joe Sanches LLC · Sanches Group · Leander, Texas</p>
         <p>512-663-8867 · <a href="mailto:hello@joefsanches.com">hello@joefsanches.com</a> · EIN: 39-4911899</p>
         <p style={{ marginTop:'6px' }}>Service-Disabled Veteran-Owned · Texas HUB Certified (VetHUB) · SDVOSB · SAM.gov Active · Licensed &amp; Insured</p>
         <img
