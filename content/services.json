@@ -57,6 +57,28 @@
         "Do you paint after the repair?",
         "Yes. We can prime and paint the repaired area, or repaint the full wall if matching an aged paint color would leave a visible patch."
       ]
+    ],
+    "guides": [
+      {
+        "slug": "drywall-cracks-when-to-worry-central-texas",
+        "title": "Which drywall cracks mean foundation trouble"
+      },
+      {
+        "slug": "drywall-repair-cost-leander-cedar-park",
+        "title": "What drywall repair actually costs here"
+      },
+      {
+        "slug": "match-drywall-texture-orange-peel-knockdown",
+        "title": "Orange peel vs knockdown: why your patch shows"
+      },
+      {
+        "slug": "nail-pops-new-construction-texas",
+        "title": "Nail pops in a new build: what actually fixes them"
+      },
+      {
+        "slug": "water-damaged-drywall-patch-or-replace",
+        "title": "Water-damaged drywall: patch, replace or mold?"
+      }
     ]
   },
   {
@@ -117,6 +139,20 @@
         "Do you do apartment and rental unit painting?",
         "Yes. We handle unit turns for property managers across the Austin metro, including paint, drywall repair, and flooring on a turn schedule."
       ]
+    ],
+    "guides": [
+      {
+        "slug": "interior-painting-cost-leander-tx",
+        "title": "Interior painting cost, room by room"
+      },
+      {
+        "slug": "paint-sheen-guide-eggshell-satin-semigloss",
+        "title": "Eggshell, satin or semi-gloss: picking a sheen"
+      },
+      {
+        "slug": "exterior-paint-texas-heat-how-long-lasts",
+        "title": "Why exterior paint fails fast in Texas"
+      }
     ]
   },
   {
@@ -178,6 +214,20 @@
         "What areas do you serve?",
         "Leander, Cedar Park, Georgetown, Liberty Hill, Round Rock, Pflugerville, and the greater Austin area."
       ]
+    ],
+    "guides": [
+      {
+        "slug": "nail-pops-new-construction-texas",
+        "title": "Nail pops in a new build: what actually fixes them"
+      },
+      {
+        "slug": "drywall-repair-cost-leander-cedar-park",
+        "title": "What drywall repair actually costs here"
+      },
+      {
+        "slug": "paint-sheen-guide-eggshell-satin-semigloss",
+        "title": "Eggshell, satin or semi-gloss: picking a sheen"
+      }
     ]
   },
   {
@@ -242,6 +292,20 @@
         "Do you do commercial build-outs?",
         "Yes. We do tenant finish-out and commercial renovation across the Austin metro, including work for government and institutional clients."
       ]
+    ],
+    "guides": [
+      {
+        "slug": "drywall-repair-cost-leander-cedar-park",
+        "title": "What drywall repair actually costs here"
+      },
+      {
+        "slug": "interior-painting-cost-leander-tx",
+        "title": "Interior painting cost, room by room"
+      },
+      {
+        "slug": "match-drywall-texture-orange-peel-knockdown",
+        "title": "Matching drywall texture so the patch disappears"
+      }
     ]
   },
   {
@@ -303,6 +367,12 @@
         "Should I pressure wash before selling my house?",
         "Almost always. It's inexpensive relative to its effect on listing photos and first impressions, and it's one of the few pre-listing items that pays for itself visibly."
       ]
+    ],
+    "guides": [
+      {
+        "slug": "exterior-paint-texas-heat-how-long-lasts",
+        "title": "Why exterior paint fails fast in Texas"
+      }
     ]
   },
   {
@@ -365,6 +435,16 @@
         "How fast can you handle unit turns?",
         "Turn timelines depend on scope and unit count. We work to the schedule the property needs and price by the turn rather than hourly."
       ]
+    ],
+    "guides": [
+      {
+        "slug": "interior-painting-cost-leander-tx",
+        "title": "Interior painting cost, room by room"
+      },
+      {
+        "slug": "drywall-repair-cost-leander-cedar-park",
+        "title": "What drywall repair actually costs here"
+      }
     ]
   }
 ]
