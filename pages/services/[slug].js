@@ -105,7 +105,7 @@ export default function Service({ service, others }) {
           <div className="svc-trust">
             <span>Licensed &amp; Insured</span><i />
             <span>Free Estimates</span><i />
-            <span>Owner on Every Job</span><i />
+            <span>One Point of Contact</span><i />
             <span>Veteran-Owned</span>
           </div>
           <div className="svc-ctas">
@@ -151,7 +151,7 @@ export default function Service({ service, others }) {
             <h2>Get a free estimate</h2>
             <div className="svc-form">
               <LeadForm
-                blurb={`Tell us about your ${service.shortName.toLowerCase()} job — a photo helps. Joe reads every one and usually replies the same day.`}
+                blurb={`Tell us about your ${service.shortName.toLowerCase()} job — a photo helps. We read every one and usually reply the same day.`}
                 compact
               />
             </div>
@@ -188,7 +188,7 @@ export default function Service({ service, others }) {
       <style jsx global>{`
         :root {
           --sg-black:#080808; --sg-card:#0f110d; --sg-gold:#c8a84b; --sg-gold2:#e4c76b;
-          --sg-white:#fff; --sg-text:#d4d8cc; --sg-muted:#7a8070;
+          --sg-white:#fff; --sg-text:#d4d8cc; --sg-muted:#8f9486;
           --sg-gb:rgba(200,168,75,.28); --sg-div:rgba(255,255,255,.07);
         }
         body { margin:0; background:var(--sg-black); color:var(--sg-text);
@@ -204,7 +204,7 @@ export default function Service({ service, others }) {
         .svc-call { background:var(--sg-gold); color:var(--sg-black)!important; padding:9px 18px;
           border-radius:4px; font-weight:900; font-size:13px; }
         .svc-hero { max-width:820px; margin:0 auto; padding:56px 24px 40px; }
-        .svc-crumb { font-size:12px; color:var(--sg-muted); margin:0 0 18px;
+        .svc-crumb { font-size:13px; color:var(--sg-muted); margin:0 0 18px;
           text-transform:uppercase; letter-spacing:1.5px; }
         .svc-crumb span { opacity:.5; margin:0 6px; }
         .svc-hero-icon { color:var(--sg-gold); display:block; margin-bottom:18px; opacity:.85; }
@@ -212,7 +212,7 @@ export default function Service({ service, others }) {
           letter-spacing:-1.2px; margin:0 0 20px; }
         .svc-intro { font-size:18px; line-height:1.7; margin:0 0 28px; }
         .svc-trust { display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin-bottom:30px; }
-        .svc-trust span { font-size:11px; font-weight:800; letter-spacing:2px;
+        .svc-trust span { font-size:12px; font-weight:800; letter-spacing:2px;
           text-transform:uppercase; color:var(--sg-gold); }
         .svc-trust i { width:4px; height:4px; background:var(--sg-gold); opacity:.5;
           transform:rotate(45deg); }
@@ -248,11 +248,11 @@ export default function Service({ service, others }) {
         .svc-other:hover .svc-other-icon { opacity:1; }
         .svc-other-text { display:block; min-width:0; }
         .svc-other strong { display:block; color:var(--sg-white); font-size:15px; margin-bottom:4px; }
-        .svc-other-text span { font-size:12px; color:var(--sg-muted); text-transform:uppercase; letter-spacing:1px; }
+        .svc-other-text span { font-size:13px; color:var(--sg-muted); text-transform:uppercase; letter-spacing:1px; }
         .svc-foot { border-top:1px solid var(--sg-gb); padding:32px 24px; text-align:center;
           font-size:13px; color:var(--sg-muted); }
         .svc-foot p { margin:0 0 8px; }
-        .svc-fine { font-size:11px; max-width:640px; margin:14px auto!important; line-height:1.7; opacity:.8; }
+        .svc-fine { font-size:12px; max-width:640px; margin:14px auto!important; line-height:1.7; opacity:.8; }
         @media (max-width:640px) {
           .svc-hero h1 { font-size:32px; }
           .svc-intro { font-size:16px; }

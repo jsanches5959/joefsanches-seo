@@ -148,7 +148,7 @@ export default function LeadForm({ heading, blurb, compact = false }) {
       <div className="lf-done">
         <h3>Got it — thank you.</h3>
         <p>
-          Your message is in. Joe reads every one personally and typically responds
+          Your message is in. We read every one and typically respond
           the same day. If it&apos;s urgent, call or text{' '}
           <a href="tel:5126638867">512-663-8867</a>.
         </p>
@@ -254,14 +254,14 @@ const styles = `
     margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.5px;
   }
   .lf-blurb {
-    font-size: 14px; color: var(--muted, rgba(180,190,160,.65));
-    line-height: 1.65; margin: 0 0 22px;
+    font-size: 15px; color: var(--muted, #8f9486);
+    line-height: 1.7; margin: 0 0 22px;
   }
   .lf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
   label { display: block; }
   label span {
-    display: block; font-size: 10px; font-weight: 900; letter-spacing: 1.5px;
-    text-transform: uppercase; color: var(--gold, #C8A84B); margin-bottom: 6px;
+    display: block; font-size: 12px; font-weight: 900; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--gold, #C8A84B); margin-bottom: 7px;
   }
   label span em { font-style: normal; opacity: .7; }
   .lf-full { display: block; margin-bottom: 16px; }
@@ -270,10 +270,10 @@ const styles = `
     background: rgba(255,255,255,0.03);
     border: 1px solid rgba(200,168,75,0.25);
     border-radius: 4px; color: var(--white, #fff);
-    font-size: 15px; font-family: inherit;
+    font-size: 16px; font-family: inherit;
     transition: border-color .15s ease, box-shadow .15s ease;
   }
-  input::placeholder, textarea::placeholder { color: rgba(255,255,255,0.28); }
+  input::placeholder, textarea::placeholder { color: rgba(255,255,255,0.5); }
   input:focus, select:focus, textarea:focus {
     outline: none; border-color: var(--gold, #C8A84B);
     box-shadow: 0 0 0 3px rgba(200,168,75,0.12);
@@ -284,7 +284,7 @@ const styles = `
     width: 100%; padding: 15px 24px;
     background: var(--gold, #C8A84B); color: #0A0C08;
     border: none; border-radius: 4px; cursor: pointer;
-    font-weight: 900; font-size: 14px; letter-spacing: 1px;
+    font-weight: 900; font-size: 15px; letter-spacing: .8px;
     text-transform: uppercase; font-family: inherit;
     transition: filter .15s ease, transform .15s ease;
   }
