@@ -87,7 +87,63 @@ const paths = {
       <path d="M12 8.2 13 10.82 15.8 10.96 13.62 12.73 14.35 15.44 12 13.9 9.65 15.44 10.38 12.73 8.2 10.96 11 10.82Z" />
     </>
   ),
+  // Roof slope with shingle courses — roofing.
+  roof: (
+    <>
+      <path d="M1.6 14.2 12 5.2l10.4 9" />
+      <path d="M1.6 14.2h20.8" />
+      <path d="M6.4 14.2 12 9.4l5.6 4.8" />
+    </>
+  ),
+
+  // Pergola over a slab — patios, decks and outdoor structures.
+  deck: (
+    <>
+      <path d="M2.4 6.6h19.2" />
+      <path d="M6 3.6v3M10 3.6v3M14 3.6v3M18 3.6v3" />
+      <path d="M4.6 6.6v13.8M19.4 6.6v13.8" />
+      <path d="M2.4 20.4h19.2" />
+    </>
+  ),
+
+  // Lightning bolt — electrical.
+  bolt: (
+    <>
+      <path d="M13.4 2.6 4.6 13.8h6.2l-1.2 7.6 8.8-11.2h-6.2l1.2-7.6Z" />
+    </>
+  ),
+
+  // Wall unit with airflow — heating and cooling.
+  hvac: (
+    <>
+      <rect x="2.6" y="4.4" width="18.8" height="7" rx="1.8" />
+      <path d="M5.4 9h13.2" />
+      <path d="M7 14.4c1.4 1.4 1.4 2.6 0 4M12 14.4c1.4 1.4 1.4 2.6 0 4M17 14.4c1.4 1.4 1.4 2.6 0 4" />
+    </>
+  ),
+
+  // Pipe run through an inline valve — plumbing.
+  pipe: (
+    <>
+      <path d="M2.2 12h6.6M15.2 12h6.6" />
+      <rect x="8.8" y="9.4" width="6.4" height="5.2" rx="1" />
+      <path d="M12 9.4V6.4M9.8 6.4h4.4" />
+    </>
+  ),
+
+  // Staggered planks — flooring.
+  planks: (
+    <>
+      <rect x="2.4" y="5.6" width="8" height="4.2" rx=".6" />
+      <rect x="12.4" y="5.6" width="9.2" height="4.2" rx=".6" />
+      <rect x="2.4" y="11.4" width="9.2" height="4.2" rx=".6" />
+      <rect x="13.6" y="11.4" width="8" height="4.2" rx=".6" />
+      <rect x="2.4" y="17.2" width="8" height="4.2" rx=".6" />
+      <rect x="12.4" y="17.2" width="9.2" height="4.2" rx=".6" />
+    </>
+  ),
 };
+
 
 export default function ToolIcon({ name, size = 24, className = '' }) {
   const art = paths[name];

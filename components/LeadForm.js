@@ -1,11 +1,17 @@
 import { useState } from 'react';
 
 const SERVICES = [
-  'Construction / Remodeling',
+  'Remodeling / General Construction',
+  'Drywall / Painting',
+  'Flooring',
+  'Patios / Decks',
+  'Handyman / Repairs',
+  'Roofing',
+  'Electrical / Plumbing / HVAC',
+  'Pressure Washing',
+  'Janitorial / Facilities Maintenance',
   'Unit Turns / Multi-Family',
-  'Facilities / Janitorial / Pressure Washing',
   'Government Contracting',
-  'Buying or Selling a Home',
   'Something else',
 ];
 
