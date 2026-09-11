@@ -212,7 +212,7 @@ export default function Credentials() {
         .cr-intro { font-size:17px; margin:0; }
         .cr-body { max-width:780px; margin:0 auto; padding:0 24px 60px; }
         .cr-card { padding:34px 0; border-top:1px solid var(--c-div); }
-        .cr-tag { display:inline-block; font-size:10px; font-weight:900; letter-spacing:2px;
+        .cr-tag { display:inline-block; font-size:12px; font-weight:900; letter-spacing:2px;
           text-transform:uppercase; color:var(--c-gold); border:1px solid var(--c-gb);
           padding:5px 12px; border-radius:2px; margin-bottom:14px; }
         .cr-card h2 { font-size:27px; font-weight:900; color:var(--c-white);
@@ -222,7 +222,7 @@ export default function Credentials() {
         .cr-card p { margin:0; font-size:16px; }
         .cr-meta { display:flex; flex-wrap:wrap; gap:28px; margin:0 0 4px;
           padding:14px 0; border-top:1px solid var(--c-div); border-bottom:1px solid var(--c-div); }
-        .cr-meta dt { font-size:10px; font-weight:900; letter-spacing:1.5px;
+        .cr-meta dt { font-size:12px; font-weight:900; letter-spacing:1.5px;
           text-transform:uppercase; color:var(--c-muted); margin-bottom:3px; }
         .cr-meta dd { margin:0; font-size:14px; color:var(--c-white); font-weight:600; }
         .cr-steps { margin:0; padding-left:20px; }

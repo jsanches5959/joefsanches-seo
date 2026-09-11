@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import LeadForm from '../components/LeadForm';
+import JobberForm from '../components/JobberForm';
 import ToolIcon from '../components/ToolIcon';
 
 const css = `
@@ -10,7 +11,7 @@ const css = `
     --ink:    #0d0e0b;
     --bone:   #f4f2ec;
     --text:   #adb1a3;
-    --muted:  #6c7162;
+    --muted:  #8f9486;
     --gold:   #c8a84b;
     --gold2:  #e8cd77;
     --line:   rgba(244,242,236,0.08);
@@ -25,7 +26,8 @@ const css = `
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background: var(--black);
     color: var(--text);
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.75;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -39,8 +41,8 @@ const css = `
      reads as one document rather than a stack of unrelated blocks. */
   .eyebrow {
     display: block;
-    font-size: 10px; font-weight: 900;
-    letter-spacing: 0.3em; text-transform: uppercase;
+    font-size: 11px; font-weight: 900;
+    letter-spacing: 0.2em; text-transform: uppercase;
     color: var(--gold); margin-bottom: 22px;
   }
   .title {
@@ -52,10 +54,10 @@ const css = `
     margin-bottom: 22px;
   }
   .lead {
-    font-size: clamp(15px, 1.5vw, 18px);
+    font-size: clamp(16px, 1.5vw, 19px);
     color: var(--text);
     max-width: 62ch;
-    line-height: 1.75;
+    line-height: 1.8;
   }
 
   .sec { padding: clamp(72px, 11vw, 148px) 0; border-top: 1px solid var(--line); }
@@ -82,15 +84,15 @@ const css = `
   }
   .nav-links { display: flex; gap: 30px; list-style: none; align-items: center; }
   .nav-links a {
-    font-size: 11px; font-weight: 700; color: var(--muted);
-    letter-spacing: 0.16em; text-transform: uppercase;
+    font-size: 12px; font-weight: 700; color: var(--muted);
+    letter-spacing: 0.12em; text-transform: uppercase;
     transition: color .2s ease;
   }
   .nav-links a:hover { color: var(--bone); }
   .nav-call {
     background: var(--gold); color: var(--black) !important;
     padding: 10px 20px; border-radius: 2px;
-    font-weight: 900; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+    font-weight: 900; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
     transition: background .2s ease;
   }
   .nav-call:hover { background: var(--gold2) !important; }
@@ -137,8 +139,8 @@ const css = `
     filter: brightness(1.8) saturate(1.25) drop-shadow(0 0 22px rgba(200,168,75,.32));
   }
   .hero-eyebrow {
-    display: block; font-size: 10px; font-weight: 900;
-    letter-spacing: 0.34em; text-transform: uppercase;
+    display: block; font-size: 11px; font-weight: 900;
+    letter-spacing: 0.22em; text-transform: uppercase;
     color: var(--muted); margin-bottom: 26px;
   }
   /* The statement. Three words, three lines, as large as the viewport allows. */
@@ -161,15 +163,15 @@ const css = `
   }
   .hero h1 span { display: block; }
   .hero-sub {
-    font-size: clamp(15px, 1.7vw, 19px);
-    color: var(--text); line-height: 1.72;
+    font-size: clamp(16px, 1.7vw, 20px);
+    color: var(--text); line-height: 1.78;
     max-width: 640px; margin: 0 auto 40px;
   }
   .hero-sub strong { color: var(--bone); font-weight: 700; }
   .hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 44px; }
   .btn-gold, .btn-outline {
     display: inline-block; padding: 15px 30px; border-radius: 2px;
-    font-size: 12px; font-weight: 900; letter-spacing: 0.13em; text-transform: uppercase;
+    font-size: 13px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase;
     transition: background .2s ease, border-color .2s ease, color .2s ease;
   }
   .btn-gold { background: var(--gold); color: var(--black) !important; }
@@ -181,7 +183,7 @@ const css = `
     flex-wrap: wrap; row-gap: 10px;
   }
   .hero-trust span {
-    font-size: 10px; font-weight: 800; letter-spacing: 0.2em;
+    font-size: 11px; font-weight: 800; letter-spacing: 0.14em;
     text-transform: uppercase; color: var(--muted); padding: 0 18px;
     border-right: 1px solid var(--line);
   }
@@ -205,22 +207,22 @@ const css = `
   .cap-icon { color: var(--gold); opacity: .72; transition: opacity .25s ease, transform .25s ease; }
   .cap:hover .cap-icon { opacity: 1; transform: translateY(-2px); }
   .cap-name {
-    font-size: 15px; font-weight: 800; color: var(--bone);
-    line-height: 1.3; letter-spacing: -0.01em;
+    font-size: 16px; font-weight: 800; color: var(--bone);
+    line-height: 1.35; letter-spacing: -0.01em;
   }
   .cap-note {
-    font-size: 9.5px; font-weight: 800; letter-spacing: 0.17em;
+    font-size: 11px; font-weight: 800; letter-spacing: 0.12em;
     text-transform: uppercase; color: var(--muted); margin-top: -7px;
   }
   .cap-foot {
-    margin-top: 26px; font-size: 13px; color: var(--muted);
-    line-height: 1.7; max-width: 74ch;
+    margin-top: 26px; font-size: 14px; color: var(--muted);
+    line-height: 1.75; max-width: 74ch;
   }
 
   /* Deep links to the full service pages. */
   .svc-links-label {
     margin-top: 60px; margin-bottom: 16px;
-    font-size: 10px; font-weight: 900; letter-spacing: 0.28em;
+    font-size: 11px; font-weight: 900; letter-spacing: 0.2em;
     text-transform: uppercase; color: var(--gold);
   }
   .svc-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
@@ -233,62 +235,93 @@ const css = `
   .svc-icon { color: var(--gold); opacity: .75; flex-shrink: 0; transition: opacity .2s ease; }
   .svc-link:hover .svc-icon { opacity: 1; }
   .svc-link-text { display: block; min-width: 0; }
-  .svc-link strong { display: block; color: var(--bone); font-size: 14px; font-weight: 800; margin-bottom: 3px; }
-  .svc-link-text span { font-size: 10px; color: var(--muted); letter-spacing: 0.16em; text-transform: uppercase; }
+  .svc-link strong { display: block; color: var(--bone); font-size: 15px; font-weight: 800; margin-bottom: 4px; }
+  .svc-link-text span { font-size: 11px; color: var(--muted); letter-spacing: 0.12em; text-transform: uppercase; }
 
   /* ── WHO WE WORK FOR ── */
   .who { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); margin-top: 48px; border: 1px solid var(--line); }
   .who-item { background: var(--black); padding: 30px 24px; }
-  .who-item strong { display: block; color: var(--bone); font-size: 15px; font-weight: 800; margin-bottom: 8px; }
-  .who-item p { font-size: 13px; color: var(--muted); line-height: 1.7; }
+  .who-item strong { display: block; color: var(--bone); font-size: 16px; font-weight: 800; margin-bottom: 9px; }
+  .who-item p { font-size: 15px; color: var(--text); line-height: 1.75; }
 
   /* ── CREDENTIAL BAND ── */
   .specs { display: grid; grid-template-columns: repeat(6, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 48px; }
   .spec { background: var(--black); padding: 26px 16px; text-align: center; }
-  .spec-val { display: block; font-size: 14px; font-weight: 900; color: var(--gold); letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.2; }
-  .spec-label { display: block; font-size: 9.5px; color: var(--muted); margin-top: 8px; letter-spacing: 0.13em; text-transform: uppercase; }
+  .spec-val { display: block; font-size: 15px; font-weight: 900; color: var(--gold); letter-spacing: 0.05em; text-transform: uppercase; line-height: 1.25; }
+  .spec-label { display: block; font-size: 11px; color: var(--muted); margin-top: 8px; letter-spacing: 0.1em; text-transform: uppercase; }
   .band-links { margin-top: 26px; display: flex; gap: 26px; flex-wrap: wrap; }
-  .band-links a { font-size: 12px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; border-bottom: 1px solid var(--gline); padding-bottom: 3px; }
+  .band-links a { font-size: 13px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; border-bottom: 1px solid var(--gline); padding-bottom: 3px; }
 
   /* ── ABOUT ── */
   .about-grid { display: grid; grid-template-columns: 280px 1fr; gap: clamp(30px, 5vw, 64px); align-items: start; }
   .about-img { width: 100%; border-radius: 3px; display: block; filter: grayscale(.25) contrast(1.05); }
-  .about-role { display: block; font-size: 11px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 22px; }
-  .about-bio { font-size: 15px; color: var(--text); line-height: 1.8; margin-bottom: 16px; max-width: 60ch; }
+  .about-role { display: block; font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 22px; }
+  .about-bio { font-size: 16px; color: var(--text); line-height: 1.85; margin-bottom: 16px; max-width: 60ch; }
   .creds { display: flex; flex-wrap: wrap; gap: 8px; margin: 26px 0; }
-  .cred { font-size: 10px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line); padding: 7px 12px; border-radius: 2px; }
+  .cred { font-size: 11px; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line); padding: 8px 13px; border-radius: 2px; }
 
   /* ── AREAS ── */
   .areas { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 44px; }
-  .area { font-size: 12px; font-weight: 700; letter-spacing: 0.06em; color: var(--text); border: 1px solid var(--line); padding: 10px 16px; border-radius: 2px; }
+  .area { font-size: 14px; font-weight: 700; letter-spacing: 0.04em; color: var(--text); border: 1px solid var(--line); padding: 11px 17px; border-radius: 2px; }
 
   /* ── CONTACT ── */
   .lead-form-wrap { margin-top: 48px; background: var(--ink); border: 1px solid var(--line); border-radius: 4px; padding: clamp(24px, 4vw, 40px); }
+  .form-title { font-size: 22px; font-weight: 900; color: var(--bone); letter-spacing: -0.02em; margin-bottom: 10px; }
+  .form-blurb { font-size: 16px; color: var(--text); line-height: 1.75; margin-bottom: 26px; }
+  /* Jobber ships light-theme styles for its embed; these bring it onto the
+     dark page and hold the 16px input floor that stops iOS zooming on focus. */
+  .jobber-wrap { --jb-field: rgba(255,255,255,0.04); }
+  .jobber-wrap input:not([type=submit]):not([type=button]),
+  .jobber-wrap select,
+  .jobber-wrap textarea {
+    font-size: 16px !important;
+    background: var(--jb-field) !important;
+    border: 1px solid var(--gline) !important;
+    color: var(--bone) !important;
+    border-radius: 3px !important;
+  }
+  .jobber-wrap input::placeholder,
+  .jobber-wrap textarea::placeholder { color: rgba(244,242,236,0.5) !important; }
+  .jobber-wrap label,
+  .jobber-wrap legend { color: var(--text) !important; font-size: 14px !important; }
+  .jobber-wrap h1, .jobber-wrap h2, .jobber-wrap h3, .jobber-wrap h4 { color: var(--bone) !important; }
+  .jobber-wrap p, .jobber-wrap span, .jobber-wrap div { color: var(--text); }
+  .jobber-wrap a { color: var(--gold); }
+  .jobber-wrap button,
+  .jobber-wrap input[type=submit] {
+    background: var(--gold) !important; color: var(--black) !important;
+    border: none !important; border-radius: 2px !important;
+    font-weight: 900 !important; font-size: 15px !important;
+    letter-spacing: 0.08em !important; text-transform: uppercase !important;
+    padding: 15px 28px !important; cursor: pointer;
+  }
+  .jobber-fallback { font-size: 16px; color: var(--text); }
+  .form-alt { margin-top: 22px; font-size: 15px; color: var(--muted); line-height: 1.7; }
   .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 56px); margin-top: 52px; }
   .c-item { padding: 18px 0; border-bottom: 1px solid var(--line); }
-  .c-label { display: block; font-size: 9.5px; font-weight: 900; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
-  .c-val { font-size: 17px; font-weight: 700; color: var(--bone); }
+  .c-label { display: block; font-size: 11px; font-weight: 900; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 7px; }
+  .c-val { font-size: 18px; font-weight: 700; color: var(--bone); }
   .c-val a { color: var(--bone); }
   .c-val a:hover { color: var(--gold); }
   .inq { border: 1px solid var(--line); border-radius: 3px; padding: 24px; margin-bottom: 12px; }
   .inq.gold { border-color: var(--gline); background: var(--gfill); }
-  .inq h4 { font-size: 14px; font-weight: 900; color: var(--bone); margin-bottom: 8px; letter-spacing: -0.01em; }
-  .inq p { font-size: 13px; color: var(--muted); line-height: 1.7; margin-bottom: 14px; }
-  .inq-btn { font-size: 11px; font-weight: 900; letter-spacing: 0.13em; text-transform: uppercase; }
+  .inq h4 { font-size: 16px; font-weight: 900; color: var(--bone); margin-bottom: 9px; letter-spacing: -0.01em; }
+  .inq p { font-size: 15px; color: var(--text); line-height: 1.75; margin-bottom: 15px; }
+  .inq-btn { font-size: 12px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
 
   /* ── COMPLIANCE + FOOTER ── */
   .compliance { background: #050504; border-top: 1px solid var(--line); padding: 52px clamp(20px, 5vw, 48px); }
   .compliance-inner { max-width: 1180px; margin: 0 auto; }
-  .compliance-eyebrow { display: block; font-size: 9.5px; font-weight: 900; letter-spacing: 0.28em; text-transform: uppercase; color: #4a4f42; margin-bottom: 26px; }
+  .compliance-eyebrow { display: block; font-size: 11px; font-weight: 900; letter-spacing: 0.2em; text-transform: uppercase; color: #8f9486; margin-bottom: 26px; }
   .compliance-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px 48px; }
-  .compliance-block-label { display: block; font-size: 9.5px; font-weight: 900; letter-spacing: 0.16em; text-transform: uppercase; color: #4a4f42; margin-bottom: 7px; }
-  .compliance-block p { font-size: 12px; color: #3c4136; line-height: 1.8; }
+  .compliance-block-label { display: block; font-size: 11px; font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; color: #8f9486; margin-bottom: 8px; }
+  .compliance-block p { font-size: 13px; color: #7d8374; line-height: 1.85; }
 
   footer { background: #050504; border-top: 1px solid var(--line); padding: 48px clamp(20px, 5vw, 48px); text-align: center; }
   footer img.mark { height: 42px; margin-bottom: 20px; opacity: .8; }
-  footer p { font-size: 12px; color: var(--muted); margin-bottom: 5px; }
+  footer p { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
   .foot-nav { display: flex; gap: 22px; justify-content: center; flex-wrap: wrap; margin: 20px 0 16px; }
-  .foot-nav a { font-size: 10px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+  .foot-nav a { font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
   .foot-nav a:hover { color: var(--gold); }
   .hub-logo-footer { height: 56px; margin-top: 18px; opacity: .75; }
 
@@ -311,7 +344,7 @@ const css = `
     .svc-links { grid-template-columns: 1fr; }
     .who { grid-template-columns: 1fr; }
     .specs { grid-template-columns: repeat(2, 1fr); }
-    .hero-trust span { padding: 0 11px; font-size: 9px; letter-spacing: 0.14em; }
+    .hero-trust span { padding: 0 10px; font-size: 11px; letter-spacing: 0.08em; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -427,8 +460,8 @@ export default function Home() {
           </h1>
           <p className="hero-sub">
             <strong>One contractor for the whole property.</strong> A patch in the drywall
-            or a full remodel — it goes on one list, one schedule, one invoice. Owner on
-            every job.
+            or a full remodel — it goes on one list, one schedule, one invoice, with one
+            person accountable from estimate to punch list.
           </p>
           <div className="hero-ctas">
             <a href="#contact" className="btn-gold">Get a Free Estimate</a>
@@ -438,7 +471,7 @@ export default function Home() {
             <span>Licensed &amp; Insured</span>
             <span>Veteran-Owned</span>
             <span>Free Estimates</span>
-            <span>Owner on Every Job</span>
+            <span>One Point of Contact</span>
           </div>
         </div>
       </section>
@@ -452,7 +485,7 @@ export default function Home() {
             Whatever the property needs, it goes on one list. Our own crews self-perform the
             construction and finish trades. Roofing, electrical, plumbing and heating and air
             run through licensed partners under our management — you still deal with one
-            person, and that person is the owner.
+            company and one point of contact.
           </p>
 
           <div className="cap-grid">
@@ -559,8 +592,10 @@ export default function Home() {
                 under one roof — with one point of contact.
               </p>
               <p className="about-bio">
-                Every contract goes through Joe. When you deal with Sanches Group, you deal with
-                the owner directly.
+                Today Joe answers the phone, writes the estimates and runs the crews himself. As
+                the company grows that will not always be him — but the standard does not move:
+                every job has one named person accountable for it, and you will always know who
+                that is.
               </p>
               <div className="creds">
                 <span className="cred">Service-Disabled U.S. Veteran</span>
@@ -605,10 +640,18 @@ export default function Home() {
             will get back to you — usually the same day.
           </p>
           <div className="lead-form-wrap">
-            <LeadForm
-              heading="Request a free estimate"
-              blurb="Tell Joe what you need — a photo helps. Prefer to talk? Call or text 512-663-8867."
-            />
+            <h3 className="form-title">Request a free estimate</h3>
+            <p className="form-blurb">
+              Tell us what the property needs — a photo helps. Prefer to talk? Call or text{' '}
+              <a href="tel:5126638867">512-663-8867</a>.
+            </p>
+            <JobberForm />
+            {/* Always visible, not a noscript fallback: if Jobber's script is
+                blocked or slow, the visitor still has a way to reach us. */}
+            <p className="form-alt">
+              Form not loading? Call or text <a href="tel:5126638867">512-663-8867</a> or
+              email <a href="mailto:hello@joefsanches.com">hello@joefsanches.com</a>.
+            </p>
           </div>
           <div className="contact-grid">
             <div>

@@ -69,7 +69,7 @@ const css = `
   }
   .hero-inner { position: relative; z-index: 1; max-width: 820px; }
   .hero-eyebrow {
-    font-size: 10px; font-weight: 900; letter-spacing: 3px;
+    font-size:12px; font-weight: 900; letter-spacing:1.4px;
     text-transform: uppercase; color: var(--gold);
     margin-bottom: 20px; display: flex; align-items: center; gap: 12px;
   }
@@ -124,13 +124,13 @@ const css = `
     padding: 12px 24px; border-right: 1px solid var(--gb);
   }
   .cert-chip:last-child { border-right: none; }
-  .cert-chip-label { font-size: 10px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); display: block; line-height: 1; }
+  .cert-chip-label { font-size:12px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); display: block; line-height: 1; }
   .cert-chip-sub { font-size: 11px; color: var(--muted); margin-top: 3px; display: block; }
 
   /* SECTION */
   .sec { padding: 80px 0; border-bottom: 1px solid var(--div); }
   .sec.dark { background: #050504; }
-  .sec-label { font-size: 10px; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: block; }
+  .sec-label { font-size:12px; font-weight: 900; letter-spacing:1.4px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: block; }
   .sec-title { font-size: 38px; font-weight: 900; color: var(--white); letter-spacing: -1px; line-height: 1.1; margin-bottom: 14px; text-transform: uppercase; }
   .sec-lead { font-size: 16px; color: var(--muted); max-width: 640px; line-height: 1.75; margin-bottom: 48px; }
 
@@ -140,7 +140,7 @@ const css = `
     background: var(--card); border: 1px solid var(--gb);
     padding: 32px 28px;
   }
-  .cred-box-label { font-size: 10px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; display: block; }
+  .cred-box-label { font-size:12px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; display: block; }
   .cred-item { display: flex; align-items: flex-start; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--div); }
   .cred-item:last-child { border-bottom: none; padding-bottom: 0; }
   .cred-ico { font-size: 18px; flex-shrink: 0; padding-top: 2px; }
@@ -156,7 +156,7 @@ const css = `
   .naics-code { color: var(--gold); font-weight: 900; font-size: 13px; padding-right: 24px; white-space: nowrap; width: 80px; }
   .naics-name { font-size: 14px; color: var(--text); }
   .naics-tag {
-    display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 1px;
+    display: inline-block; font-size:12px; font-weight: 700; letter-spacing: 1px;
     text-transform: uppercase; color: var(--olive2); border: 1px solid var(--ob);
     padding: 3px 8px; border-radius: 2px; margin-left: 10px; vertical-align: middle;
   }
@@ -176,7 +176,7 @@ const css = `
     background: var(--card); border: 1px solid var(--div);
     padding: 28px 24px;
   }
-  .scope-num { font-size: 10px; font-weight: 900; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 12px; opacity: 0.7; }
+  .scope-num { font-size:12px; font-weight: 900; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 12px; opacity: 0.7; }
   .scope-box h3 { font-size: 16px; font-weight: 800; color: var(--white); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
   .scope-box p { font-size: 13px; color: var(--muted); line-height: 1.65; }
 
@@ -188,7 +188,7 @@ const css = `
   .contact-box > p { font-size: 13px; color: var(--muted); margin-bottom: 24px; line-height: 1.6; }
   .c-row { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px; }
   .c-ico { width: 36px; height: 36px; flex-shrink: 0; border: 1px solid var(--gb); border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 14px; background: var(--gp); }
-  .c-lbl { font-size: 10px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 2px; }
+  .c-lbl { font-size:12px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 2px; }
   .c-val { font-size: 14px; color: var(--text); }
   .c-val a { color: var(--white); font-weight: 700; }
   .inq-btn {
@@ -586,23 +586,23 @@ export default function Government() {
       {/* COMPLIANCE DISCLOSURES */}
       <div style={{ background: '#020202', borderTop: '1px solid rgba(255,255,255,0.04)', padding: '36px 40px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '2.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '20px' }}>Disclosures &amp; Policies</p>
+          <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.4px', textTransform: 'uppercase', color: '#8f9486', marginBottom: '20px' }}>Disclosures &amp; Policies</p>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '28px' }}>
             <div>
-              <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>Scope Limitation</p>
-              <p style={{ fontSize: '12px', color: '#2e3428', lineHeight: '1.75' }}>Sanches Group / Joe Sanches LLC does not advertise or directly perform licensed plumbing, HVAC/ACR, or electrical work. Any work requiring a Texas trade license (TSBPE/TDLR) is referred to or subcontracted through appropriately licensed professionals. Registered NAICS and NIGP codes reflect bidding eligibility as a general contractor with licensed subcontractors, not direct service provision.</p>
+              <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.2px', textTransform: 'uppercase', color: '#8f9486', marginBottom: '6px' }}>Scope Limitation</p>
+              <p style={{ fontSize: '13px', color: '#7d8374', lineHeight: '1.85' }}>Roofing, electrical, plumbing and HVAC/ACR work is performed by appropriately licensed contractors engaged and managed by Sanches Group. Sanches Group / Joe Sanches LLC does not hold, and does not represent itself as holding, Texas trade qualifier licences (TSBPE/TDLR) in those categories. Registered NAICS and NIGP codes reflect bidding eligibility as a general contractor delivering through licensed subcontractors.</p>
             </div>
             <div>
-              <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>Entity Information</p>
-              <p style={{ fontSize: '12px', color: '#2e3428', lineHeight: '1.75' }}>Joe Sanches LLC · DBA Sanches Group · Leander, Texas · Williamson County · EIN: 39-4911899 · B2G VID: 21829543 · Formed: October 13, 2025 · Texas LLC.</p>
+              <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.2px', textTransform: 'uppercase', color: '#8f9486', marginBottom: '6px' }}>Entity Information</p>
+              <p style={{ fontSize: '13px', color: '#7d8374', lineHeight: '1.85' }}>Joe Sanches LLC · DBA Sanches Group · Leander, Texas · Williamson County · EIN: 39-4911899 · B2G VID: 21829543 · Formed: October 13, 2025 · Texas LLC.</p>
             </div>
             <div>
-              <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>Spot Purchase Availability</p>
-              <p style={{ fontSize: '12px', color: '#2e3428', lineHeight: '1.75' }}>Sanches Group is available for state agency spot purchases under $25,000 for non-licensed services (janitorial, pressure washing, painting, flooring, grounds maintenance, window washing, building maintenance). Quote requests welcome — response within one business day.</p>
+              <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.2px', textTransform: 'uppercase', color: '#8f9486', marginBottom: '6px' }}>Spot Purchase Availability</p>
+              <p style={{ fontSize: '13px', color: '#7d8374', lineHeight: '1.85' }}>Sanches Group is available for state agency spot purchases under $25,000 for non-licensed services (janitorial, pressure washing, painting, flooring, grounds maintenance, window washing, building maintenance). Quote requests welcome — response within one business day.</p>
             </div>
             <div>
-              <p style={{ fontSize: '9px', fontWeight: '900', letterSpacing: '1.5px', textTransform: 'uppercase', color: '#3a4030', marginBottom: '6px' }}>Property Management Non-Solicitation Policy</p>
-              <p style={{ fontSize: '12px', color: '#2e3428', lineHeight: '1.75' }}>Sanches Group&apos;s real estate division handles individual buyer/seller transactions only. We maintain a strict vendor-only relationship with property management clients. We will never solicit your portfolio owners, pursue management contracts, or compete with your business in any form.</p>
+              <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.2px', textTransform: 'uppercase', color: '#8f9486', marginBottom: '6px' }}>Property Management Non-Solicitation Policy</p>
+              <p style={{ fontSize: '13px', color: '#7d8374', lineHeight: '1.85' }}>Sanches Group works as an outside vendor for property management clients. We maintain a strict vendor-only relationship: we will never solicit your portfolio owners, pursue management contracts, or compete with your business in any form.</p>
             </div>
           </div>
         </div>
@@ -619,7 +619,7 @@ export default function Government() {
           alt="Texas Veteran HUB Certified"
           className="hub-logo-footer"
         />
-        <p style={{ marginTop: '10px', fontSize: '11px', color: '#2a3020' }}>
+        <p style={{ marginTop: '10px', fontSize: '13px', color: '#7d8374' }}>
           Texas HUB Certification effective 6/9/2026 · Valid through 6/9/2030 · B2G VID: 21829543 · EIN: 39-4911899 · Issued by Texas Comptroller of Public Accounts
         </p>
       </footer>
