@@ -117,9 +117,12 @@ body::before{
 @media (prefers-reduced-motion: reduce){
   .logo{ animation: none; transform: none; }
 }
-.brand h1{
+.brand h1,
+.brand .brand-name{
+  display:block;
   margin:0;
   font-size: 20px;
+  font-weight: 700;
   letter-spacing: .2px;
   color: white;
 }

@@ -25,7 +25,14 @@ export async function getStaticProps({ params }) {
   const fileContents = fs.readFileSync(fullPath, 'utf8');
 
   const { data, content } = matter(fileContents);
-  const processedContent = await remark().use(html).process(content);
+
+  // The template already renders the title as the page's H1. Every post file
+  // also opens with a matching "# Title" line, so the heading was being output
+  // twice — visible duplication for readers and two H1s for search engines.
+  // Strip the leading H1 from the body; the rest of the content is untouched.
+  const body = content.replace(/^\s*#\s+.+?\n/, '');
+
+  const processedContent = await remark().use(html).process(body);
   const contentHtml = processedContent.toString();
 
   // Ensure date is JSON-serializable and safe
@@ -58,7 +65,37 @@ export async function getStaticProps({ params }) {
   const trimmedFallback = cleanFallback && cleanFallback.length > 155
     ? cleanFallback.substring(0, 155).replace(/\s+\S*$/, '') + '…'
     : cleanFallback;
-  const description = data.description || trimmedFallback || 'Joe Sanches is a licensed Realtor and military veteran serving buyers and sellers in Leander, Cedar Park, and greater Austin.';
+  // Posts are either real estate (the original 104) or contracting. The page
+  // brands itself accordingly: someone who searched "drywall crack repair"
+  // should not land on a realtor's page being sold a house.
+  const contracting = data.category === 'contracting';
+
+  // Pull the FAQ block into FAQPage structured data. The questions are already
+  // written on the page for readers; declaring them makes the same content
+  // eligible for "People also ask" and gives answer engines exact pairs to
+  // quote rather than a guess at where an answer starts and stops.
+  const faqs = [];
+  const faqSection = content.split(/\n##\s+Frequently asked questions\s*\n/i)[1];
+  if (faqSection) {
+    // Stop at the next H2 so the closing summary is not swept in.
+    const block = faqSection.split(/\n##\s+/)[0];
+    const re = /\*\*(.+?)\*\*\s*\n([\s\S]*?)(?=\n\s*\n\*\*|\n\s*---|$)/g;
+    let m;
+    while ((m = re.exec(block)) !== null) {
+      const q = m[1].trim();
+      const a = m[2]
+        .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')  // links to plain text
+        .replace(/[*_`]/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+      if (q.endsWith('?') && a.length > 30) faqs.push({ q, a });
+    }
+  }
+
+  const fallbackBlurb = contracting
+    ? 'Sanches Group — construction, drywall, painting and property maintenance in Leander, Cedar Park and greater Austin.'
+    : 'Joe Sanches is a licensed Realtor and military veteran serving buyers and sellers in Leander, Cedar Park, and greater Austin.';
+  const description = data.description || trimmedFallback || fallbackBlurb;
 
   return {
     props: {
@@ -67,11 +104,13 @@ export async function getStaticProps({ params }) {
       date,
       contentHtml,
       description,
+      contracting,
+      faqs,
     },
   };
 }
 
-export default function Post({ slug, title, date, contentHtml, description }) {
+export default function Post({ slug, title, date, contentHtml, description, contracting, faqs = [] }) {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joefsanches.com';
   const postUrl = `${baseUrl}/posts/${slug}`;
   const publishedDate = date ? new Date(date).toISOString() : new Date().toISOString();
@@ -90,8 +129,10 @@ export default function Post({ slug, title, date, contentHtml, description }) {
       url: baseUrl,
     },
     publisher: {
-      '@type': 'Organization',
-      name: 'Joe Sanches Realtor',
+      '@type': contracting ? 'GeneralContractor' : 'Organization',
+      name: contracting ? 'Sanches Group' : 'Joe Sanches Realtor',
+      telephone: '+1-512-663-8867',
+      areaServed: 'Leander, Cedar Park, Georgetown, Round Rock, Austin TX',
       logo: {
         '@type': 'ImageObject',
         url: `${baseUrl}/logo.png`,
@@ -102,7 +143,7 @@ export default function Post({ slug, title, date, contentHtml, description }) {
   return (
     <>
       <Head>
-        <title>{title} | Joe Sanches Realtor</title>
+        <title>{title} | {contracting ? 'Sanches Group' : 'Joe Sanches Realtor'}</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={postUrl} />
@@ -113,7 +154,7 @@ export default function Post({ slug, title, date, contentHtml, description }) {
         <meta property="og:description" content={description} />
         <meta property="og:url" content={postUrl} />
         <meta property="og:image" content={`${baseUrl}/logo.png`} />
-        <meta property="og:site_name" content="Joe Sanches Realtor" />
+        <meta property="og:site_name" content={contracting ? 'Sanches Group' : 'Joe Sanches Realtor'} />
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -126,6 +167,22 @@ export default function Post({ slug, title, date, contentHtml, description }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
         />
+        {faqs.length > 0 ? (
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'FAQPage',
+                mainEntity: faqs.map((f) => ({
+                  '@type': 'Question',
+                  name: f.q,
+                  acceptedAnswer: { '@type': 'Answer', text: f.a },
+                })),
+              }),
+            }}
+          />
+        ) : null}
       </Head>
       <div className="container">
         <div className="floating-contact-bar">
@@ -143,8 +200,15 @@ export default function Post({ slug, title, date, contentHtml, description }) {
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
               <div>
-                <h1>Joe Sanches</h1>
-                <p className="sub">Real Estate · A Sanches Group Company</p>
+                {/* The masthead is site identity, not the page's heading — the
+                    article title is the H1. Styled by .brand so it looks the
+                    same as before. */}
+                <span className="brand-name">{contracting ? 'Sanches Group' : 'Joe Sanches'}</span>
+                <p className="sub">
+                  {contracting
+                    ? 'Construction · Repairs · Maintenance'
+                    : 'Real Estate · A Sanches Group Company'}
+                </p>
               </div>
             </Link>
           </div>
@@ -181,9 +245,13 @@ export default function Post({ slug, title, date, contentHtml, description }) {
               />
 
               <section style={{ marginTop: '60px', padding: '40px', borderRadius: '16px', border: '1px solid var(--border)', background: 'rgba(107,120,84,0.05)' }}>
-                <h2 style={{ fontSize: '26px', marginBottom: '16px', color: 'white' }}>Want help in Leander / Austin?</h2>
+                <h2 style={{ fontSize: '26px', marginBottom: '16px', color: 'white' }}>
+                  {contracting ? 'Need this fixed?' : 'Want help in Leander / Austin?'}
+                </h2>
                 <p style={{ color: 'var(--muted)', marginBottom: '28px', fontSize: '16px', lineHeight: '1.6' }}>
-                  Whether you're buying, selling, or just have questions about the local market, I'm here to help.
+                  {contracting
+                    ? 'Sanches Group handles drywall, texture, painting and the rest of the punch list across Leander, Cedar Park, Georgetown and greater Austin. Free estimates — send a photo and we will tell you straight whether it is a patch or a bigger job.'
+                    : "Whether you're buying, selling, or just have questions about the local market, I'm here to help."}
                 </p>
                 <div className="actions">
                   <a href="tel:5126638867" className="btn accent" style={{ padding: '12px 20px', fontSize: '15px' }}>Call or Text (512) 663-8867</a>
@@ -194,6 +262,40 @@ export default function Post({ slug, title, date, contentHtml, description }) {
           </main>
 
           <aside className="side">
+            {contracting ? (
+              <>
+                <div className="card" style={{ background: 'rgba(200,168,75,0.06)', borderColor: 'rgba(200,168,75,0.3)', textAlign: 'center', marginBottom: '20px' }}>
+                  <h3 className="cardTitle" style={{ color: 'var(--gold)', letterSpacing: '1px' }}>FREE ESTIMATE</h3>
+                  <p style={{ fontSize: '14px', color: 'var(--muted)', marginTop: '10px', marginBottom: '16px', lineHeight: '1.6' }}>
+                    Send a photo of the damage. We&apos;ll tell you what it is and what it costs — no charge, no pressure.
+                  </p>
+                  <a href="sms:5126638867" className="btn accent" style={{ justifyContent: 'center', fontSize: '14px', display: 'block', textAlign: 'center', padding: '12px 20px' }}>
+                    Text a Photo
+                  </a>
+                </div>
+                <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', marginBottom: '20px' }}>
+                  <h3 className="cardTitle" style={{ color: 'var(--accent-light)', marginBottom: '14px' }}>SERVICES</h3>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '14px', lineHeight: '2' }}>
+                    <li><a href="/services/drywall-repair-leander-tx">Drywall Repair &amp; Texture →</a></li>
+                    <li><a href="/services/interior-exterior-painting-leander-tx">Interior &amp; Exterior Painting →</a></li>
+                    <li><a href="/services/home-remodeling-leander-tx">Remodeling &amp; Construction →</a></li>
+                    <li><a href="/services/handyman-services-leander-tx">Handyman &amp; Repairs →</a></li>
+                  </ul>
+                </div>
+                <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center', position: 'sticky', top: '20px' }}>
+                  <h3 className="cardTitle" style={{ color: 'var(--accent-light)' }}>Sanches Group</h3>
+                  <p style={{ fontSize: '14px', color: 'var(--muted)', marginTop: '8px' }}>Leander · Cedar Park · Austin</p>
+                  <p style={{ fontSize: '13px', color: 'var(--muted)', marginTop: '12px', lineHeight: '1.6' }}>
+                    Construction, drywall, paint and property maintenance across Central Texas. Licensed &amp; insured. Veteran-owned.
+                  </p>
+                  <div style={{ marginTop: '20px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                    <a href="tel:5126638867" className="btn accent" style={{ fontSize: '13px', justifyContent: 'center' }}>Call / Text</a>
+                    <a href="/#contact" className="btn" style={{ fontSize: '13px', justifyContent: 'center' }}>Request an Estimate</a>
+                  </div>
+                </div>
+              </>
+            ) : (
+              <>
             <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center', marginBottom: '20px' }}>
               <h3 className="cardTitle" style={{ color: 'var(--accent-light)', marginBottom: '12px' }}>STOP OVERPAYING</h3>
               <p style={{ fontSize: '14px', color: 'var(--muted)', marginBottom: '16px', lineHeight: '1.6' }}>
@@ -235,6 +337,8 @@ export default function Post({ slug, title, date, contentHtml, description }) {
                 <a href="mailto:hello@joefsanches.com" className="btn" style={{ fontSize: '13px', justifyContent: 'center' }}>Email</a>
               </div>
             </div>
+              </>
+            )}
           </aside>
         </div>
 

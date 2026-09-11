@@ -157,6 +157,23 @@ export default function Service({ service, others }) {
             </div>
           </section>
 
+          {service.guides && service.guides.length ? (
+            <section>
+              <h2>Read first</h2>
+              <p className="svc-guide-lead">
+                Straight answers on what this work costs and what actually goes wrong — written
+                for Central Texas homes, not copied from a national template.
+              </p>
+              <ul className="svc-guides">
+                {service.guides.map((g) => (
+                  <li key={g.slug}>
+                    <Link href={`/posts/${g.slug}`}>{g.title} →</Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+
           <section>
             <h2>Other services</h2>
             <div className="svc-others">
@@ -240,6 +257,11 @@ export default function Service({ service, others }) {
         .svc-faq h3 { font-size:17px; font-weight:700; color:var(--sg-white); margin:0 0 8px; }
         .svc-faq p { margin:0; color:var(--sg-muted); font-size:15px; line-height:1.75; }
         .svc-form { background:var(--sg-card); border:1px solid var(--sg-gb); padding:28px; border-radius:6px; }
+        .svc-guide-lead { font-size:15px; color:var(--sg-muted); line-height:1.75; margin:0 0 18px; max-width:64ch; }
+        .svc-guides { list-style:none; padding:0; margin:0; border-top:1px solid var(--sg-div); }
+        .svc-guides li { border-bottom:1px solid var(--sg-div); }
+        .svc-guides a { display:block; padding:16px 2px; font-size:16px; font-weight:600; color:var(--sg-white); transition:color .18s ease, padding-left .18s ease; }
+        .svc-guides a:hover { color:var(--sg-gold); padding-left:8px; }
         .svc-others { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; }
         .svc-other { display:flex; align-items:center; gap:13px; padding:18px; border:1px solid var(--sg-div); border-radius:5px;
           transition:border-color .2s ease, transform .2s ease; }
