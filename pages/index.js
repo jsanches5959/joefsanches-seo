@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import LeadForm from '../components/LeadForm';
+import ToolIcon from '../components/ToolIcon';
 
 const css = `
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -305,16 +306,24 @@ const css = `
   }
   .svc-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
   .svc-link {
-    display: block; padding: 18px 20px;
+    display: flex; align-items: center; gap: 14px; padding: 18px 20px;
     border: 1px solid var(--div); border-radius: 4px;
     transition: border-color .2s ease, transform .2s ease;
   }
   .svc-link:hover { border-color: var(--gb); transform: translateY(-2px); }
+  .svc-icon {
+    color: var(--gold); opacity: 0.75; flex-shrink: 0;
+    transition: opacity .2s ease;
+  }
+  .svc-link:hover .svc-icon { opacity: 1; }
+  /* min-width:0 lets a long service name wrap instead of forcing the row
+     wider than its grid column. */
+  .svc-link-text { display: block; min-width: 0; }
   .svc-link strong {
     display: block; color: var(--white); font-size: 15px;
     font-weight: 800; margin-bottom: 4px;
   }
-  .svc-link span {
+  .svc-link-text span {
     font-size: 11px; color: var(--muted);
     letter-spacing: 1px; text-transform: uppercase;
   }
@@ -384,11 +393,20 @@ const css = `
     transition: border-color 0.2s, background 0.2s;
   }
   .lane:hover { border-color: var(--ob); background: #141810; }
+  .lane-head {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 16px;
+  }
   .lane-num {
     font-size: 10px; font-weight: 900; letter-spacing: 2px;
-    text-transform: uppercase; color: var(--gold); margin-bottom: 16px;
+    text-transform: uppercase; color: var(--gold);
     display: block; opacity: 0.6;
   }
+  .lane-icon {
+    color: var(--gold); opacity: 0.7; flex-shrink: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  .lane:hover .lane-icon { opacity: 1; transform: translateY(-2px); }
   .lane h3 { font-size: 18px; font-weight: 800; color: var(--white); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
   .lane p { font-size: 14px; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
   .lane-tags { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -752,7 +770,10 @@ export default function Home() {
           <p className="sec-lead">Sanches Group delivers general construction, property maintenance, and facilities services for government agencies, property managers, and homeowners across Central Texas. Owner on every job. No mystery crews.</p>
           <div className="lanes">
             <div className="lane">
-              <span className="lane-num">01</span>
+              <div className="lane-head">
+                <span className="lane-num">01</span>
+                <ToolIcon name="hardhat" size={30} className="lane-icon" />
+              </div>
               <h3>General Construction</h3>
               <p>Remodels, build-outs, room additions, interior renovations, and new construction for residential and commercial properties. Texas does not require a statewide GC license — we manage scope, subs, and delivery.</p>
               <div className="lane-tags">
@@ -762,7 +783,10 @@ export default function Home() {
               </div>
             </div>
             <div className="lane">
-              <span className="lane-num">02</span>
+              <div className="lane-head">
+                <span className="lane-num">02</span>
+                <ToolIcon name="building" size={30} className="lane-icon" />
+              </div>
               <h3>Unit Turns &amp; Rehab</h3>
               <p>Fast, high-quality unit turn work for multi-family properties, government housing, and rental portfolios. Drywall, paint, flooring, fixtures, cleaning — complete turnaround under one crew.</p>
               <div className="lane-tags">
@@ -771,7 +795,10 @@ export default function Home() {
               </div>
             </div>
             <div className="lane">
-              <span className="lane-num">03</span>
+              <div className="lane-head">
+                <span className="lane-num">03</span>
+                <ToolIcon name="roller" size={30} className="lane-icon" />
+              </div>
               <h3>Painting &amp; Drywall</h3>
               <p>Interior and exterior painting, drywall repair and installation, texture matching, and wall covering for residential, commercial, and government facilities. Fast scheduling and itemized invoicing.</p>
               <div className="lane-tags">
@@ -781,7 +808,10 @@ export default function Home() {
               </div>
             </div>
             <div className="lane">
-              <span className="lane-num">04</span>
+              <div className="lane-head">
+                <span className="lane-num">04</span>
+                <ToolIcon name="sprayer" size={30} className="lane-icon" />
+              </div>
               <h3>Flooring &amp; Pressure Washing</h3>
               <p>Flooring installation, repair, and maintenance (LVP, tile, carpet). Commercial pressure washing for building exteriors, parking lots, driveways, and walkways. Available for spot purchases.</p>
               <div className="lane-tags">
@@ -790,7 +820,10 @@ export default function Home() {
               </div>
             </div>
             <div className="lane">
-              <span className="lane-num">05</span>
+              <div className="lane-head">
+                <span className="lane-num">05</span>
+                <ToolIcon name="squeegee" size={30} className="lane-icon" />
+              </div>
               <h3>Janitorial &amp; Facilities</h3>
               <p>Janitorial and custodial services, window washing, grounds maintenance, and ongoing facilities maintenance contracts for commercial, government, and institutional clients. No formal solicitation required under $25K.</p>
               <div className="lane-tags">
@@ -800,7 +833,10 @@ export default function Home() {
               </div>
             </div>
             <div className="lane">
-              <span className="lane-num">06</span>
+              <div className="lane-head">
+                <span className="lane-num">06</span>
+                <ToolIcon name="shield" size={30} className="lane-icon" />
+              </div>
               <h3>Government Contracting</h3>
               <p>Federal, state, and municipal contracts for construction, maintenance, and facilities work. Texas HUB certified, SDVOSB, SAM.gov active. Available for solicitations, spot purchases under $25K, and HUB subcontracting plans.</p>
               <div className="lane-tags">
@@ -814,28 +850,46 @@ export default function Home() {
           <p className="svc-links-label">Service details &amp; free estimates</p>
           <div className="svc-links">
             <a className="svc-link" href="/services/drywall-repair-leander-tx">
-              <strong>Drywall Repair &amp; Installation</strong>
-              <span>Leander, TX</span>
+              <ToolIcon name="trowel" size={30} className="svc-icon" />
+              <span className="svc-link-text">
+                <strong>Drywall Repair &amp; Installation</strong>
+                <span>Leander, TX</span>
+              </span>
             </a>
             <a className="svc-link" href="/services/interior-exterior-painting-leander-tx">
-              <strong>Interior &amp; Exterior Painting</strong>
-              <span>Leander, TX</span>
+              <ToolIcon name="roller" size={30} className="svc-icon" />
+              <span className="svc-link-text">
+                <strong>Interior &amp; Exterior Painting</strong>
+                <span>Leander, TX</span>
+              </span>
             </a>
             <a className="svc-link" href="/services/handyman-services-leander-tx">
-              <strong>Handyman &amp; Home Repairs</strong>
-              <span>Leander, TX</span>
+              <ToolIcon name="toolbox" size={30} className="svc-icon" />
+              <span className="svc-link-text">
+                <strong>Handyman &amp; Home Repairs</strong>
+                <span>Leander, TX</span>
+              </span>
             </a>
             <a className="svc-link" href="/services/home-remodeling-leander-tx">
-              <strong>Remodeling &amp; General Construction</strong>
-              <span>Leander, TX</span>
+              <ToolIcon name="hardhat" size={30} className="svc-icon" />
+              <span className="svc-link-text">
+                <strong>Remodeling &amp; General Construction</strong>
+                <span>Leander, TX</span>
+              </span>
             </a>
             <a className="svc-link" href="/services/pressure-washing-leander-tx">
-              <strong>Pressure Washing</strong>
-              <span>Leander, TX</span>
+              <ToolIcon name="sprayer" size={30} className="svc-icon" />
+              <span className="svc-link-text">
+                <strong>Pressure Washing</strong>
+                <span>Leander, TX</span>
+              </span>
             </a>
             <a className="svc-link" href="/services/facilities-maintenance-austin-tx">
-              <strong>Facilities Maintenance &amp; Janitorial</strong>
-              <span>Austin, TX</span>
+              <ToolIcon name="squeegee" size={30} className="svc-icon" />
+              <span className="svc-link-text">
+                <strong>Facilities Maintenance &amp; Janitorial</strong>
+                <span>Austin, TX</span>
+              </span>
             </a>
           </div>
         </div>

@@ -3,6 +3,7 @@ import path from 'path';
 import Head from 'next/head';
 import Link from 'next/link';
 import LeadForm from '../../components/LeadForm';
+import ToolIcon from '../../components/ToolIcon';
 
 const baseUrl = 'https://joefsanches.com';
 
@@ -98,6 +99,7 @@ export default function Service({ service, others }) {
             <Link href="/">Home</Link> <span>/</span> <Link href="/#services">Services</Link>{' '}
             <span>/</span> {service.shortName}
           </p>
+          <ToolIcon name={service.icon} size={52} className="svc-hero-icon" />
           <h1>{service.h1}</h1>
           <p className="svc-intro">{service.intro}</p>
           <div className="svc-trust">
@@ -160,8 +162,11 @@ export default function Service({ service, others }) {
             <div className="svc-others">
               {others.map((o) => (
                 <Link key={o.slug} href={`/services/${o.slug}`} className="svc-other">
-                  <strong>{o.name}</strong>
-                  <span>{o.city}</span>
+                  <ToolIcon name={o.icon} size={28} className="svc-other-icon" />
+                  <span className="svc-other-text">
+                    <strong>{o.name}</strong>
+                    <span>{o.city}</span>
+                  </span>
                 </Link>
               ))}
             </div>
@@ -202,6 +207,7 @@ export default function Service({ service, others }) {
         .svc-crumb { font-size:12px; color:var(--sg-muted); margin:0 0 18px;
           text-transform:uppercase; letter-spacing:1.5px; }
         .svc-crumb span { opacity:.5; margin:0 6px; }
+        .svc-hero-icon { color:var(--sg-gold); display:block; margin-bottom:18px; opacity:.85; }
         .svc-hero h1 { font-size:46px; line-height:1.08; font-weight:900; color:var(--sg-white);
           letter-spacing:-1.2px; margin:0 0 20px; }
         .svc-intro { font-size:18px; line-height:1.7; margin:0 0 28px; }
@@ -235,11 +241,14 @@ export default function Service({ service, others }) {
         .svc-faq p { margin:0; color:var(--sg-muted); font-size:15px; line-height:1.75; }
         .svc-form { background:var(--sg-card); border:1px solid var(--sg-gb); padding:28px; border-radius:6px; }
         .svc-others { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; }
-        .svc-other { display:block; padding:18px; border:1px solid var(--sg-div); border-radius:5px;
+        .svc-other { display:flex; align-items:center; gap:13px; padding:18px; border:1px solid var(--sg-div); border-radius:5px;
           transition:border-color .2s ease, transform .2s ease; }
         .svc-other:hover { border-color:var(--sg-gb); transform:translateY(-2px); }
+        .svc-other-icon { color:var(--sg-gold); opacity:.75; flex-shrink:0; transition:opacity .2s ease; }
+        .svc-other:hover .svc-other-icon { opacity:1; }
+        .svc-other-text { display:block; min-width:0; }
         .svc-other strong { display:block; color:var(--sg-white); font-size:15px; margin-bottom:4px; }
-        .svc-other span { font-size:12px; color:var(--sg-muted); text-transform:uppercase; letter-spacing:1px; }
+        .svc-other-text span { font-size:12px; color:var(--sg-muted); text-transform:uppercase; letter-spacing:1px; }
         .svc-foot { border-top:1px solid var(--sg-gb); padding:32px 24px; text-align:center;
           font-size:13px; color:var(--sg-muted); }
         .svc-foot p { margin:0 0 8px; }
