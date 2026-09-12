@@ -104,9 +104,8 @@ const css = `
      lives further down the page where it has room. */
   .hero {
     position: relative; isolation: isolate; overflow: hidden;
-    min-height: min(88vh, 820px);
     display: flex; align-items: center;
-    padding: clamp(72px, 12vw, 128px) clamp(20px, 5vw, 48px) clamp(56px, 9vw, 104px);
+    padding: clamp(38px, 5vw, 68px) clamp(20px, 5vw, 48px) clamp(30px, 4vw, 52px);
     text-align: center;
   }
   .hero-inner { max-width: 940px; margin: 0 auto; width: 100%; }
@@ -134,14 +133,14 @@ const css = `
     opacity: .16; filter: grayscale(1) contrast(1.2) brightness(.7);
   }
   .hero-logo {
-    width: 96px; height: 96px; object-fit: contain;
-    margin: 0 auto 30px; display: block;
+    width: 56px; height: 56px; object-fit: contain;
+    margin: 0 auto 16px; display: block;
     filter: brightness(1.8) saturate(1.25) drop-shadow(0 0 22px rgba(200,168,75,.32));
   }
   .hero-eyebrow {
     display: block; font-size: 11px; font-weight: 900;
     letter-spacing: 0.22em; text-transform: uppercase;
-    color: var(--muted); margin-bottom: 26px;
+    color: var(--muted); margin-bottom: 18px;
   }
   /* The statement. Three words, three lines, as large as the viewport allows. */
   .hero h1 {
@@ -149,7 +148,7 @@ const css = `
     line-height: 0.92;
     letter-spacing: -0.045em;
     font-weight: 900;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: var(--bone);
   }
   @supports (-webkit-background-clip: text) or (background-clip: text) {
@@ -165,10 +164,10 @@ const css = `
   .hero-sub {
     font-size: clamp(16px, 1.7vw, 20px);
     color: var(--text); line-height: 1.78;
-    max-width: 640px; margin: 0 auto 40px;
+    max-width: 640px; margin: 0 auto 26px;
   }
   .hero-sub strong { color: var(--bone); font-weight: 700; }
-  .hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 44px; }
+  .hero-ctas { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 26px; }
   .btn-gold, .btn-outline {
     display: inline-block; padding: 15px 30px; border-radius: 2px;
     font-size: 13px; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase;
@@ -265,7 +264,18 @@ const css = `
   .area { font-size: 14px; font-weight: 700; letter-spacing: 0.04em; color: var(--text); border: 1px solid var(--line); padding: 11px 17px; border-radius: 2px; }
 
   /* ── CONTACT ── */
-  .lead-form-wrap { margin-top: 48px; background: var(--ink); border: 1px solid var(--line); border-radius: 4px; padding: clamp(24px, 4vw, 40px); }
+  /* The estimate section is the page's primary action, so it gets a warmer
+     ground and a gold edge rather than the neutral treatment of the rest. */
+  .estimate { background: var(--ink); border-top: 1px solid var(--gline); padding-top: clamp(34px, 4vw, 54px); }
+  .estimate-head { text-align: center; max-width: 680px; margin: 0 auto; }
+  .estimate-title {
+    font-size: clamp(24px, 3.4vw, 36px); line-height: 1.1;
+    letter-spacing: -0.03em; font-weight: 900; color: var(--bone);
+    margin-bottom: 10px;
+  }
+  .estimate-sub { font-size: 16px; color: var(--text); line-height: 1.7; }
+  .estimate .lead-form-wrap { max-width: 820px; margin-left: auto; margin-right: auto; border-color: var(--gline); background: var(--black); }
+  .lead-form-wrap { margin-top: 28px; background: var(--ink); border: 1px solid var(--line); border-radius: 4px; padding: clamp(24px, 4vw, 40px); }
   .form-title { font-size: 22px; font-weight: 900; color: var(--bone); letter-spacing: -0.02em; margin-bottom: 10px; }
   .form-blurb { font-size: 16px; color: var(--text); line-height: 1.75; margin-bottom: 26px; }
   /* Jobber ships light-theme styles for its embed; these bring it onto the
@@ -296,7 +306,27 @@ const css = `
     padding: 15px 28px !important; cursor: pointer;
   }
   .jobber-fallback { font-size: 16px; color: var(--text); }
-  .form-alt { margin-top: 22px; font-size: 15px; color: var(--muted); line-height: 1.7; }
+  /* Embed states. An empty bordered box reads as broken, so the panel always
+     says what is happening. */
+  .jf-state { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 28px 8px; font-size: 16px; color: var(--muted); }
+  .jf-spinner {
+    width: 16px; height: 16px; border-radius: 50%;
+    border: 2px solid var(--gline); border-top-color: var(--gold);
+    animation: jfspin .8s linear infinite;
+  }
+  @keyframes jfspin { to { transform: rotate(360deg); } }
+  .jf-failed { flex-direction: column; text-align: center; gap: 8px; padding: 22px 8px 6px; }
+  .jf-failed-title { font-size: 17px; font-weight: 800; color: var(--bone); }
+  .jf-failed-body { font-size: 15px; color: var(--text); line-height: 1.7; max-width: 46ch; }
+  .jf-failed-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 14px; }
+  .jf-btn {
+    display: inline-block; padding: 13px 22px; border-radius: 2px;
+    border: 1px solid var(--gline); color: var(--bone) !important;
+    font-size: 13px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase;
+  }
+  .jf-btn:hover { border-color: var(--gold); color: var(--gold) !important; }
+  .jf-btn.primary { background: var(--gold); color: var(--black) !important; border-color: var(--gold); }
+  .jf-btn.primary:hover { background: var(--gold2); color: var(--black) !important; }
   .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 56px); margin-top: 52px; }
   .c-item { padding: 18px 0; border-bottom: 1px solid var(--line); }
   .c-label { display: block; font-size: 11px; font-weight: 900; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 7px; }
@@ -340,11 +370,26 @@ const css = `
     .compliance-grid { grid-template-columns: 1fr; }
   }
   @media (max-width: 620px) {
+    .hero-logo { display: none; }
+    .hero-sub { font-size: 15px; }
     .cap-grid { grid-template-columns: repeat(2, 1fr); }
     .svc-links { grid-template-columns: 1fr; }
     .who { grid-template-columns: 1fr; }
     .specs { grid-template-columns: repeat(2, 1fr); }
     .hero-trust span { padding: 0 10px; font-size: 11px; letter-spacing: 0.08em; }
+  }
+
+  /* Short screens — most laptops — are constrained by height, not width, and
+     a hero sized for a 1080p monitor pushes the form below the fold on them.
+     Scale the hero to the height actually available. */
+  @media (max-height: 940px) and (min-width: 700px) {
+    .hero { padding-top: clamp(22px, 3vw, 40px); padding-bottom: clamp(18px, 2.5vw, 34px); }
+    .hero h1 { font-size: clamp(38px, 6.6vw, 82px); margin-bottom: 16px; }
+    .hero-logo { width: 46px; height: 46px; margin-bottom: 12px; }
+    .hero-eyebrow { margin-bottom: 14px; }
+    .hero-sub { font-size: 16px; margin-bottom: 20px; }
+    .hero-ctas { margin-bottom: 20px; }
+    .estimate { padding-top: 30px; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -472,6 +517,23 @@ export default function Home() {
             <span>Veteran-Owned</span>
             <span>Free Estimates</span>
             <span>One Point of Contact</span>
+          </div>
+        </div>
+      </section>
+
+      {/* FREE ESTIMATE — deliberately the first thing after the hero. A
+          contractor's form buried at the foot of the page is a form nobody
+          reaches on a phone. */}
+      <section className="sec estimate" id="contact">
+        <div className="w">
+          <div className="estimate-head">
+            <h2 className="estimate-title">Tell us what needs fixing.</h2>
+            <p className="estimate-sub">
+              Free estimate — a photo helps. You&apos;ll usually hear back the same day.
+            </p>
+          </div>
+          <div className="lead-form-wrap">
+            <JobberForm />
           </div>
         </div>
       </section>
@@ -630,29 +692,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONTACT */}
-      <section className="sec ink" id="contact">
+      {/* CONTACT DETAILS — the form itself sits directly under the hero */}
+      <section className="sec ink" id="reach">
         <div className="w">
           <span className="eyebrow">Contact</span>
-          <h2 className="title">Talk to Joe directly.</h2>
+          <h2 className="title">Talk to us directly.</h2>
           <p className="lead">
-            No answering service. No bid coordinator. Tell him what the property needs and he
-            will get back to you — usually the same day.
+            No answering service. No bid coordinator. Tell us what the property needs and you
+            will hear back — usually the same day.
           </p>
-          <div className="lead-form-wrap">
-            <h3 className="form-title">Request a free estimate</h3>
-            <p className="form-blurb">
-              Tell us what the property needs — a photo helps. Prefer to talk? Call or text{' '}
-              <a href="tel:5126638867">512-663-8867</a>.
-            </p>
-            <JobberForm />
-            {/* Always visible, not a noscript fallback: if Jobber's script is
-                blocked or slow, the visitor still has a way to reach us. */}
-            <p className="form-alt">
-              Form not loading? Call or text <a href="tel:5126638867">512-663-8867</a> or
-              email <a href="mailto:hello@joefsanches.com">hello@joefsanches.com</a>.
-            </p>
-          </div>
           <div className="contact-grid">
             <div>
               <div className="c-item">
