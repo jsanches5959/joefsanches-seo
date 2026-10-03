@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
 const SERVICES = [
+  'Tree Removal / Trimming',
+  'Landscaping / Grounds Maintenance',
   'Remodeling / General Construction',
   'Drywall / Painting',
   'Flooring',
@@ -12,6 +14,7 @@ const SERVICES = [
   'Janitorial / Facilities Maintenance',
   'Unit Turns / Multi-Family',
   'Government Contracting',
+  'Buying or Selling a Home',
   'Something else',
 ];
 
@@ -24,7 +27,11 @@ const STORAGE_KEY = 'jfs_attr_v1';
  * reports delivered:false, and the form falls back to opening a prefilled
  * email rather than showing a success message for a lead that went nowhere.
  */
-export default function LeadForm({ heading, blurb, compact = false }) {
+// The pick most visitors arrive for. A page can preselect its own trade
+// instead, so a tree lead is not filed under remodeling by default.
+const DEFAULT_SERVICE = 'Remodeling / General Construction';
+
+export default function LeadForm({ heading, blurb, compact = false, defaultService, placeholder }) {
   const [status, setStatus] = useState('idle'); // idle | sending | sent | mailto | error
   const [error, setError] = useState('');
   // Held so the fallback panel can show what they typed and offer other routes.
@@ -216,7 +223,10 @@ export default function LeadForm({ heading, blurb, compact = false }) {
           </label>
           <label>
             <span>I need help with</span>
-            <select name="service" defaultValue={SERVICES[0]}>
+            <select
+              name="service"
+              defaultValue={SERVICES.includes(defaultService) ? defaultService : DEFAULT_SERVICE}
+            >
               {SERVICES.map((s) => (
                 <option key={s} value={s}>{s}</option>
               ))}
@@ -229,7 +239,7 @@ export default function LeadForm({ heading, blurb, compact = false }) {
           <textarea
             name="message"
             rows={compact ? 3 : 4}
-            placeholder="Property address, scope of work, timeline, or anything else that helps."
+            placeholder={placeholder || 'Property address, scope of work, timeline, or anything else that helps.'}
           />
         </label>
 
@@ -248,111 +258,112 @@ export default function LeadForm({ heading, blurb, compact = false }) {
 }
 
 const styles = `
+  /* Light by default to match the site. Every colour is a token with a
+     fallback, so a page can retint the form without forking it. */
   .lf { width: 100%; }
   .lf-title {
-    font-size: 20px; font-weight: 900; color: var(--white, #fff);
-    margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.5px;
+    font-size: 20px; font-weight: 900; color: var(--ink, #16180f);
+    margin: 0 0 8px; letter-spacing: -0.01em;
   }
   .lf-blurb {
-    font-size: 15px; color: var(--muted, #8f9486);
+    font-size: 16px; color: var(--text, #3d4135);
     line-height: 1.7; margin: 0 0 22px;
   }
   .lf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
   label { display: block; }
   label span {
     display: block; font-size: 12px; font-weight: 900; letter-spacing: 1px;
-    text-transform: uppercase; color: var(--gold, #C8A84B); margin-bottom: 7px;
+    text-transform: uppercase; color: var(--olive-ink, #4f5a3c); margin-bottom: 7px;
   }
   label span em { font-style: normal; opacity: .7; }
   .lf-full { display: block; margin-bottom: 16px; }
   input, select, textarea {
     width: 100%; padding: 12px 14px;
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(200,168,75,0.25);
-    border-radius: 4px; color: var(--white, #fff);
+    background: #fff;
+    border: 1px solid rgba(22,24,15,0.18);
+    border-radius: 6px; color: var(--ink, #16180f);
     font-size: 16px; font-family: inherit;
     transition: border-color .15s ease, box-shadow .15s ease;
   }
-  input::placeholder, textarea::placeholder { color: rgba(255,255,255,0.5); }
+  input::placeholder, textarea::placeholder { color: #80857a; }
   input:focus, select:focus, textarea:focus {
     outline: none; border-color: var(--gold, #C8A84B);
-    box-shadow: 0 0 0 3px rgba(200,168,75,0.12);
+    box-shadow: 0 0 0 3px rgba(200,168,75,0.22);
   }
-  select option { background: #111410; color: #fff; }
   textarea { resize: vertical; min-height: 90px; }
   button {
-    width: 100%; padding: 15px 24px;
-    background: var(--gold, #C8A84B); color: #0A0C08;
-    border: none; border-radius: 4px; cursor: pointer;
+    width: 100%; padding: 16px 24px;
+    background: var(--gold, #C8A84B); color: #16180f;
+    border: none; border-radius: 6px; cursor: pointer;
     font-weight: 900; font-size: 15px; letter-spacing: .8px;
     text-transform: uppercase; font-family: inherit;
     transition: filter .15s ease, transform .15s ease;
   }
-  button:hover:not(:disabled) { filter: brightness(1.1); transform: translateY(-1px); }
+  button:hover:not(:disabled) { filter: brightness(1.06); transform: translateY(-1px); }
   button:disabled { opacity: .6; cursor: default; }
   .lf-fine {
-    font-size: 11px; color: var(--muted, rgba(180,190,160,.65));
+    font-size: 12px; color: var(--muted, #5f6455);
     text-align: center; margin: 12px 0 0;
   }
   .lf-error {
-    font-size: 13px; color: #E8A0A0; margin: 0 0 12px;
-    padding: 10px 12px; border-radius: 4px;
-    background: rgba(200,80,80,0.08); border: 1px solid rgba(200,80,80,0.25);
+    font-size: 14px; color: #8f2424; margin: 0 0 12px;
+    padding: 10px 12px; border-radius: 6px;
+    background: #fbeaea; border: 1px solid #efc4c4;
   }
   .lf-note {
-    font-size: 13px; color: var(--muted, rgba(180,190,160,.65));
-    margin: 0 0 16px; padding: 12px 14px; border-radius: 4px;
-    background: rgba(200,168,75,0.06); border: 1px solid rgba(200,168,75,0.25);
+    font-size: 14px; color: var(--text, #3d4135);
+    margin: 0 0 16px; padding: 12px 14px; border-radius: 6px;
+    background: #fbf6e6; border: 1px solid rgba(200,168,75,0.45);
   }
-  .lf-note a, .lf-done a { color: var(--gold, #C8A84B); text-decoration: underline; }
+  .lf-note a, .lf-done a { color: var(--gold-ink, #7d6318); text-decoration: underline; }
   .lf-fallback {
-    border: 1px solid rgba(200,168,75,.35);
-    background: rgba(200,168,75,.06);
-    border-radius: 6px; padding: 20px; margin-bottom: 20px;
+    border: 1px solid rgba(200,168,75,.5);
+    background: #fbf6e6;
+    border-radius: 8px; padding: 20px; margin-bottom: 20px;
   }
   .lf-fallback h4 {
     margin: 0 0 8px; font-size: 15px; font-weight: 800;
-    color: var(--gold, #C8A84B); text-transform: uppercase; letter-spacing: 1px;
+    color: var(--ink, #16180f); text-transform: uppercase; letter-spacing: 1px;
   }
   .lf-fallback > p {
-    margin: 0 0 16px; font-size: 14px; line-height: 1.65;
-    color: var(--muted, rgba(180,190,160,.75));
+    margin: 0 0 16px; font-size: 15px; line-height: 1.65;
+    color: var(--text, #3d4135);
   }
   .lf-fb-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
   .lf-fb-btn {
     flex: 1 1 auto; min-width: 130px; text-align: center;
-    padding: 11px 16px; border-radius: 4px; cursor: pointer;
-    border: 1px solid rgba(200,168,75,.4); background: transparent;
-    color: var(--gold, #C8A84B); font-size: 13px; font-weight: 800;
+    padding: 11px 16px; border-radius: 6px; cursor: pointer;
+    border: 1px solid rgba(22,24,15,.2); background: #fff;
+    color: var(--ink, #16180f); font-size: 13px; font-weight: 800;
     letter-spacing: .6px; text-transform: uppercase; font-family: inherit;
-    text-decoration: none;
+    text-decoration: none; width: auto;
   }
-  .lf-fb-btn.primary { background: var(--gold, #C8A84B); color: #0A0C08; border-color: transparent; }
-  .lf-fb-btn:hover { filter: brightness(1.12); }
+  .lf-fb-btn.primary { background: var(--gold, #C8A84B); color: #16180f; border-color: transparent; }
+  .lf-fb-btn:hover { filter: brightness(1.04); }
   .lf-fb-pre {
     margin: 0 0 12px; padding: 12px 14px; max-height: 170px; overflow: auto;
-    background: rgba(0,0,0,.35); border: 1px solid rgba(255,255,255,.08);
-    border-radius: 4px; font-size: 12.5px; line-height: 1.6; white-space: pre-wrap;
-    color: var(--muted, rgba(180,190,160,.8)); font-family: ui-monospace, Menlo, monospace;
+    background: #fff; border: 1px solid rgba(22,24,15,.12);
+    border-radius: 6px; font-size: 13px; line-height: 1.6; white-space: pre-wrap;
+    color: var(--text, #3d4135); font-family: ui-monospace, Menlo, monospace;
   }
-  .lf-fb-fine { margin: 0; font-size: 12px; color: var(--muted, rgba(180,190,160,.65)); }
-  .lf-fb-fine a { color: var(--gold, #C8A84B); text-decoration: underline; }
+  .lf-fb-fine { margin: 0; font-size: 13px; color: var(--muted, #5f6455); }
+  .lf-fb-fine a { color: var(--gold-ink, #7d6318); text-decoration: underline; }
   .lf-hp {
     position: absolute; left: -9999px; width: 1px; height: 1px;
     overflow: hidden;
   }
   .lf-done {
-    padding: 32px 28px; border-radius: 6px;
-    background: rgba(107,120,84,0.08);
-    border: 1px solid rgba(200,168,75,0.3);
+    padding: 32px 28px; border-radius: 8px;
+    background: #f1f4ea;
+    border: 1px solid rgba(107,120,84,0.35);
   }
   .lf-done h3 {
     margin: 0 0 10px; font-size: 20px; font-weight: 900;
-    color: var(--gold, #C8A84B); text-transform: uppercase; letter-spacing: .5px;
+    color: var(--ink, #16180f); letter-spacing: -.01em;
   }
   .lf-done p {
-    margin: 0; font-size: 14px; line-height: 1.7;
-    color: var(--muted, rgba(180,190,160,.65));
+    margin: 0; font-size: 15px; line-height: 1.7;
+    color: var(--text, #3d4135);
   }
   @media (max-width: 640px) {
     .lf-row { grid-template-columns: 1fr; }

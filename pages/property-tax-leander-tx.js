@@ -64,7 +64,7 @@ function Section({ id, title, children }) {
   return (
     <section id={id} style={{ marginTop: '56px' }}>
       <h2 style={{
-        fontSize: '26px', fontWeight: 700, color: 'white',
+        fontSize: '26px', fontWeight: 700, color: 'var(--ink)',
         borderBottom: '1px solid rgba(107,120,84,.3)',
         paddingBottom: '12px', marginBottom: '24px'
       }}>{title}</h2>
@@ -78,7 +78,7 @@ function TaxTable({ rows, headers }) {
     <div style={{ overflowX: 'auto', marginBottom: '24px' }}>
       <table style={{
         width: '100%', borderCollapse: 'collapse',
-        fontSize: '14px', color: '#E0E5D8'
+        fontSize: '14px', color: 'var(--text)'
       }}>
         <thead>
           <tr>
@@ -99,7 +99,7 @@ function TaxTable({ rows, headers }) {
                 <td key={j} style={{
                   padding: '10px 14px',
                   fontWeight: j === 0 ? 600 : 400,
-                  color: j === 0 ? 'white' : '#E0E5D8'
+                  color: j === 0 ? 'var(--ink)' : 'var(--text)'
                 }}>{cell}</td>
               ))}
             </tr>
@@ -241,7 +241,7 @@ export default function PropertyTaxHub() {
                 ]}
               />
               <Callout>
-                <strong style={{ color: 'white' }}>Important:</strong> These are estimated 2025–2026 rates based on published WCAD and City of Leander data. Individual rates are set each September and may vary slightly. Always verify at <strong style={{ color: 'var(--accent-light)' }}>wcad.org</strong> for your specific parcel.
+                <strong style={{ color: 'var(--ink)' }}>Important:</strong> These are estimated 2025–2026 rates based on published WCAD and City of Leander data. Individual rates are set each September and may vary slightly. Always verify at <strong style={{ color: 'var(--accent-light)' }}>wcad.org</strong> for your specific parcel.
               </Callout>
             </Section>
 
@@ -250,10 +250,10 @@ export default function PropertyTaxHub() {
               <p style={{ color: 'var(--muted)', lineHeight: '1.8', marginBottom: '20px' }}>
                 Municipal Utility Districts (MUDs) are special taxing entities created to fund infrastructure — water, sewer, drainage — in newly developed areas. Builders use MUDs to finance infrastructure bonds that homeowners then repay through their property taxes. They are the single biggest source of tax variation between Leander neighborhoods.
               </p>
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>How MUD Taxes Work</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>How MUD Taxes Work</h3>
               <ul style={{ color: 'var(--muted)', lineHeight: '2', paddingLeft: '20px', marginBottom: '24px' }}>
                 <li>MUD taxes are levied in addition to city, county, and school district taxes</li>
-                <li>Rates range from <strong style={{ color: 'white' }}>0.10% to 0.40%</strong> depending on the MUD's outstanding bond debt</li>
+                <li>Rates range from <strong style={{ color: 'var(--ink)' }}>0.10% to 0.40%</strong> depending on the MUD's outstanding bond debt</li>
                 <li>As bonds are paid off (typically 15–30 years), the MUD rate declines and eventually disappears</li>
                 <li>Newer communities have higher MUD rates; established communities have lower or no MUD rates</li>
                 <li>MUD boundaries don't always match neighborhood boundaries — verify by address</li>
@@ -272,7 +272,7 @@ export default function PropertyTaxHub() {
                 ]}
               />
               <Callout>
-                <strong style={{ color: 'white' }}>Buyer tip:</strong> Always ask "Is this home in a MUD district?" before writing an offer. On a $450,000 home, a 0.35% MUD adds <strong style={{ color: 'white' }}>$1,575/year ($131/month)</strong> to your tax bill — money that could go toward your mortgage principal instead.
+                <strong style={{ color: 'var(--ink)' }}>Buyer tip:</strong> Always ask "Is this home in a MUD district?" before writing an offer. On a $450,000 home, a 0.35% MUD adds <strong style={{ color: 'var(--ink)' }}>$1,575/year ($131/month)</strong> to your tax bill — money that could go toward your mortgage principal instead.
               </Callout>
             </Section>
 
@@ -284,7 +284,7 @@ export default function PropertyTaxHub() {
 
               {/* Travisso */}
               <div className="card" style={{ marginBottom: '20px' }}>
-                <h3 style={{ color: 'white', margin: '0 0 12px', fontSize: '18px' }}>Travisso</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '18px' }}>Travisso</h3>
                 <TaxTable
                   headers={['Component', 'Rate']}
                   rows={[
@@ -302,7 +302,7 @@ export default function PropertyTaxHub() {
 
               {/* Crystal Falls */}
               <div className="card" style={{ marginBottom: '20px' }}>
-                <h3 style={{ color: 'white', margin: '0 0 12px', fontSize: '18px' }}>Crystal Falls</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '18px' }}>Crystal Falls</h3>
                 <TaxTable
                   headers={['Component', 'Rate']}
                   rows={[
@@ -320,7 +320,7 @@ export default function PropertyTaxHub() {
 
               {/* Bryson */}
               <div className="card" style={{ marginBottom: '20px' }}>
-                <h3 style={{ color: 'white', margin: '0 0 12px', fontSize: '18px' }}>Bryson</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '18px' }}>Bryson</h3>
                 <TaxTable
                   headers={['Component', 'Rate']}
                   rows={[
@@ -338,7 +338,7 @@ export default function PropertyTaxHub() {
 
               {/* Larkspur */}
               <div className="card" style={{ marginBottom: '20px' }}>
-                <h3 style={{ color: 'white', margin: '0 0 12px', fontSize: '18px' }}>Larkspur</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '18px' }}>Larkspur</h3>
                 <TaxTable
                   headers={['Component', 'Rate']}
                   rows={[
@@ -356,7 +356,7 @@ export default function PropertyTaxHub() {
 
               {/* Northline */}
               <div className="card" style={{ marginBottom: '20px' }}>
-                <h3 style={{ color: 'white', margin: '0 0 12px', fontSize: '18px' }}>Northline</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '18px' }}>Northline</h3>
                 <TaxTable
                   headers={['Component', 'Rate']}
                   rows={[
@@ -374,7 +374,7 @@ export default function PropertyTaxHub() {
 
               {/* Deerbrooke */}
               <div className="card" style={{ marginBottom: '20px' }}>
-                <h3 style={{ color: 'white', margin: '0 0 12px', fontSize: '18px' }}>Deerbrooke</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '18px' }}>Deerbrooke</h3>
                 <TaxTable
                   headers={['Component', 'Rate']}
                   rows={[
@@ -392,7 +392,7 @@ export default function PropertyTaxHub() {
 
               {/* Caballo Ranch */}
               <div className="card" style={{ marginBottom: '20px' }}>
-                <h3 style={{ color: 'white', margin: '0 0 12px', fontSize: '18px' }}>Caballo Ranch</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '18px' }}>Caballo Ranch</h3>
                 <TaxTable
                   headers={['Component', 'Rate']}
                   rows={[
@@ -410,7 +410,7 @@ export default function PropertyTaxHub() {
 
               {/* Block House Creek */}
               <div className="card" style={{ marginBottom: '20px' }}>
-                <h3 style={{ color: 'white', margin: '0 0 12px', fontSize: '18px' }}>Block House Creek (Cedar Park)</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '18px' }}>Block House Creek (Cedar Park)</h3>
                 <TaxTable
                   headers={['Component', 'Rate']}
                   rows={[
@@ -436,9 +436,9 @@ export default function PropertyTaxHub() {
               </p>
 
               <div className="card" style={{ marginBottom: '16px' }}>
-                <h3 style={{ color: 'white', margin: '0 0 8px', fontSize: '18px' }}>General Homestead Exemption</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 8px', fontSize: '18px' }}>General Homestead Exemption</h3>
                 <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: '0 0 12px' }}>
-                  The most important exemption. Removes <strong style={{ color: 'white' }}>$100,000</strong> from your school district (Leander ISD) taxable value. This is the 2023 legislative increase from the previous $40,000.
+                  The most important exemption. Removes <strong style={{ color: 'var(--ink)' }}>$100,000</strong> from your school district (Leander ISD) taxable value. This is the 2023 legislative increase from the previous $40,000.
                 </p>
                 <TaxTable
                   headers={['Home Value', 'Taxable After Exemption', 'Est. Annual Savings']}
@@ -450,14 +450,14 @@ export default function PropertyTaxHub() {
                   ]}
                 />
                 <p style={{ color: 'var(--muted)', fontSize: '13px', margin: 0 }}>
-                  <strong style={{ color: 'white' }}>How to apply:</strong> File Form 50-114 with WCAD between Jan 1 – April 30. File once; it renews automatically. Must own and occupy as primary residence as of January 1.
+                  <strong style={{ color: 'var(--ink)' }}>How to apply:</strong> File Form 50-114 with WCAD between Jan 1 – April 30. File once; it renews automatically. Must own and occupy as primary residence as of January 1.
                 </p>
               </div>
 
               <div className="card" style={{ marginBottom: '16px' }}>
-                <h3 style={{ color: 'white', margin: '0 0 8px', fontSize: '18px' }}>Over-65 Exemption + Tax Ceiling</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 8px', fontSize: '18px' }}>Over-65 Exemption + Tax Ceiling</h3>
                 <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: '0 0 12px' }}>
-                  Homeowners 65+ receive an additional <strong style={{ color: 'white' }}>$10,000</strong> exemption on school district taxes. More importantly, your school district tax bill is <strong style={{ color: 'white' }}>frozen</strong> — it cannot increase as long as you own and live in the home, even if values rise.
+                  Homeowners 65+ receive an additional <strong style={{ color: 'var(--ink)' }}>$10,000</strong> exemption on school district taxes. More importantly, your school district tax bill is <strong style={{ color: 'var(--ink)' }}>frozen</strong> — it cannot increase as long as you own and live in the home, even if values rise.
                 </p>
                 <ul style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '2', paddingLeft: '20px', margin: '0 0 12px' }}>
                   <li>Additional $10,000 off school district taxable value</li>
@@ -468,16 +468,16 @@ export default function PropertyTaxHub() {
               </div>
 
               <div className="card" style={{ marginBottom: '16px' }}>
-                <h3 style={{ color: 'white', margin: '0 0 8px', fontSize: '18px' }}>Disabled Person Exemption</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 8px', fontSize: '18px' }}>Disabled Person Exemption</h3>
                 <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>
                   Same $10,000 additional exemption and tax ceiling as the over-65 exemption, available to homeowners with a qualifying disability under the Social Security Act. Cannot be combined with the over-65 exemption — claim whichever benefits you more.
                 </p>
               </div>
 
               <div className="card" style={{ marginBottom: '16px' }}>
-                <h3 style={{ color: 'white', margin: '0 0 8px', fontSize: '18px' }}>100% Disabled Veteran Exemption</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 8px', fontSize: '18px' }}>100% Disabled Veteran Exemption</h3>
                 <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: '0 0 12px' }}>
-                  Veterans rated 100% disabled by the VA receive a <strong style={{ color: 'white' }}>complete property tax exemption</strong> — $0 property tax on their primary residence. This applies across all taxing units including city, county, and school district.
+                  Veterans rated 100% disabled by the VA receive a <strong style={{ color: 'var(--ink)' }}>complete property tax exemption</strong> — $0 property tax on their primary residence. This applies across all taxing units including city, county, and school district.
                 </p>
                 <TaxTable
                   headers={['VA Disability Rating', 'Exemption Amount']}
@@ -495,14 +495,14 @@ export default function PropertyTaxHub() {
               </div>
 
               <div className="card" style={{ marginBottom: '16px' }}>
-                <h3 style={{ color: 'white', margin: '0 0 8px', fontSize: '18px' }}>Agricultural (1-d-1 Open Space) Valuation</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 8px', fontSize: '18px' }}>Agricultural (1-d-1 Open Space) Valuation</h3>
                 <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>
-                  Qualifying agricultural land is taxed on <strong style={{ color: 'white' }}>productivity value</strong> rather than market value — typically reducing the taxable value by 70–90%. Applies to acreage actively used for farming, ranching, wildlife management, or timber. Relevant for larger rural properties on the Leander/Liberty Hill fringe.
+                  Qualifying agricultural land is taxed on <strong style={{ color: 'var(--ink)' }}>productivity value</strong> rather than market value — typically reducing the taxable value by 70–90%. Applies to acreage actively used for farming, ranching, wildlife management, or timber. Relevant for larger rural properties on the Leander/Liberty Hill fringe.
                 </p>
               </div>
 
               <Callout>
-                <strong style={{ color: 'white' }}>File with WCAD:</strong> Williamson Central Appraisal District — 625 FM 1460, Georgetown TX 78626 — wcad.org — Deadline: April 30 annually for the current tax year.
+                <strong style={{ color: 'var(--ink)' }}>File with WCAD:</strong> Williamson Central Appraisal District — 625 FM 1460, Georgetown TX 78626 — wcad.org — Deadline: April 30 annually for the current tax year.
               </Callout>
             </Section>
 
@@ -512,8 +512,8 @@ export default function PropertyTaxHub() {
                 Use this quick formula to estimate your annual property tax in Leander or Cedar Park.
               </p>
               <div className="card" style={{ marginBottom: '20px' }}>
-                <h3 style={{ color: 'white', margin: '0 0 16px', fontSize: '17px' }}>The Formula</h3>
-                <div style={{ background: 'rgba(107,120,84,.1)', borderRadius: '8px', padding: '16px', fontFamily: 'monospace', fontSize: '15px', color: 'white', marginBottom: '16px' }}>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 16px', fontSize: '17px' }}>The Formula</h3>
+                <div style={{ background: 'rgba(107,120,84,.1)', borderRadius: '8px', padding: '16px', fontFamily: 'monospace', fontSize: '15px', color: 'var(--ink)', marginBottom: '16px' }}>
                   (Appraised Value − $100,000 homestead) × Combined Rate = Annual Tax
                 </div>
                 <p style={{ color: 'var(--muted)', fontSize: '14px', margin: 0 }}>The $100,000 deduction applies only to the school district (LISD) portion. For a quick estimate, subtract it from your full appraised value before multiplying.</p>
@@ -537,7 +537,7 @@ export default function PropertyTaxHub() {
             {/* Section 6: City Comparisons */}
             <Section id="city-comparisons" title="Leander Property Tax vs Other Austin-Area Cities">
 
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>Leander vs Cedar Park</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>Leander vs Cedar Park</h3>
               <TaxTable
                 headers={['', 'Leander (no MUD)', 'Leander (MUD 0.30%)', 'Cedar Park (no MUD)']}
                 rows={[
@@ -552,7 +552,7 @@ export default function PropertyTaxHub() {
                 Cedar Park runs slightly cheaper than base Leander and significantly cheaper than MUD-burdened Leander neighborhoods. Both share Leander ISD. Cedar Park has more established infrastructure with fewer active MUD districts. <Link href="/posts/cedar-park-vs-leander-property-tax-real-numbers-2026" style={{ color: 'var(--accent-light)' }}>Full Cedar Park vs Leander comparison →</Link>
               </p>
 
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>Leander vs Round Rock</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>Leander vs Round Rock</h3>
               <TaxTable
                 headers={['', 'Leander (no MUD)', 'Round Rock']}
                 rows={[
@@ -566,7 +566,7 @@ export default function PropertyTaxHub() {
                 Round Rock runs notably cheaper than Leander — often $600–$1,100/year on a comparable home. The trade-off: Round Rock ISD is solid but generally doesn't rank as high as Leander ISD, and the commute patterns favor different parts of Austin.
               </p>
 
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>Leander vs Pflugerville</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>Leander vs Pflugerville</h3>
               <TaxTable
                 headers={['', 'Leander (no MUD)', 'Pflugerville']}
                 rows={[
@@ -580,7 +580,7 @@ export default function PropertyTaxHub() {
                 Pflugerville's tax rate is comparable to base Leander. The bigger distinction is location — they serve opposite sides of the metro. Pflugerville is better for I-35 and east Austin commuters; Leander is better for 183A and north Austin commuters. <Link href="/posts/leander-vs-pflugerville-real-estate-2026" style={{ color: 'var(--accent-light)' }}>Full Leander vs Pflugerville comparison →</Link>
               </p>
 
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>Leander vs Hutto</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>Leander vs Hutto</h3>
               <TaxTable
                 headers={['', 'Leander (no MUD)', 'Hutto']}
                 rows={[
@@ -615,17 +615,17 @@ export default function PropertyTaxHub() {
               <p style={{ color: 'var(--muted)', lineHeight: '1.8', marginBottom: '20px' }}>
                 If WCAD's appraisal of your home is higher than market value, you have the right to protest — and winning is more common than most homeowners realize.
               </p>
-              <h3 style={{ fontSize: '19px', color: 'white', marginBottom: '12px' }}>Step-by-Step Process</h3>
+              <h3 style={{ fontSize: '19px', color: 'var(--ink)', marginBottom: '12px' }}>Step-by-Step Process</h3>
               <ol style={{ color: 'var(--muted)', lineHeight: '2.2', paddingLeft: '24px', marginBottom: '24px' }}>
-                <li><strong style={{ color: 'white' }}>Receive your Notice of Appraised Value</strong> — WCAD mails these in April. You have until <strong style={{ color: 'white' }}>May 15</strong> (or 30 days after notice, whichever is later) to file a protest.</li>
-                <li><strong style={{ color: 'white' }}>File your protest online</strong> at wcad.org or submit Form 50-132 by mail. State your grounds: "Value is over market value" and/or "Unequal appraisal."</li>
-                <li><strong style={{ color: 'white' }}>Gather comparable sales</strong> — Find 3–5 homes that sold in the last 12 months near yours with similar square footage, age, and condition but lower assessed values. MLS data, Zillow, or HAR.com work.</li>
-                <li><strong style={{ color: 'white' }}>Attend the informal hearing</strong> — A WCAD appraiser will review your evidence and often settle before a formal ARB hearing. Come prepared with printed comps.</li>
-                <li><strong style={{ color: 'white' }}>Request a formal ARB hearing</strong> if the informal offer is unsatisfactory. The Appraisal Review Board is independent of WCAD.</li>
-                <li><strong style={{ color: 'white' }}>Consider binding arbitration or district court</strong> for high-value homes where the potential savings justify the cost.</li>
+                <li><strong style={{ color: 'var(--ink)' }}>Receive your Notice of Appraised Value</strong> — WCAD mails these in April. You have until <strong style={{ color: 'var(--ink)' }}>May 15</strong> (or 30 days after notice, whichever is later) to file a protest.</li>
+                <li><strong style={{ color: 'var(--ink)' }}>File your protest online</strong> at wcad.org or submit Form 50-132 by mail. State your grounds: "Value is over market value" and/or "Unequal appraisal."</li>
+                <li><strong style={{ color: 'var(--ink)' }}>Gather comparable sales</strong> — Find 3–5 homes that sold in the last 12 months near yours with similar square footage, age, and condition but lower assessed values. MLS data, Zillow, or HAR.com work.</li>
+                <li><strong style={{ color: 'var(--ink)' }}>Attend the informal hearing</strong> — A WCAD appraiser will review your evidence and often settle before a formal ARB hearing. Come prepared with printed comps.</li>
+                <li><strong style={{ color: 'var(--ink)' }}>Request a formal ARB hearing</strong> if the informal offer is unsatisfactory. The Appraisal Review Board is independent of WCAD.</li>
+                <li><strong style={{ color: 'var(--ink)' }}>Consider binding arbitration or district court</strong> for high-value homes where the potential savings justify the cost.</li>
               </ol>
               <Callout>
-                <strong style={{ color: 'white' }}>Evidence that wins protests:</strong> Recent sales of comparable homes at lower values, photos of deferred maintenance or condition issues, repair estimates, an independent appraisal, or proof that similar homes in your neighborhood are assessed lower (unequal appraisal argument).
+                <strong style={{ color: 'var(--ink)' }}>Evidence that wins protests:</strong> Recent sales of comparable homes at lower values, photos of deferred maintenance or condition issues, repair estimates, an independent appraisal, or proof that similar homes in your neighborhood are assessed lower (unequal appraisal argument).
               </Callout>
               <p style={{ color: 'var(--muted)', lineHeight: '1.8' }}>
                 <Link href="/posts/how-to-protest-your-2026-property-taxes-in-williamson-county-a-step-by-step-guide" style={{ color: 'var(--accent-light)' }}>
@@ -663,7 +663,7 @@ export default function PropertyTaxHub() {
                 },
               ].map(({ q, a }, i) => (
                 <div key={i} className="card" style={{ marginBottom: '12px' }}>
-                  <h3 style={{ color: 'white', margin: '0 0 8px', fontSize: '16px' }}>{q}</h3>
+                  <h3 style={{ color: 'var(--ink)', margin: '0 0 8px', fontSize: '16px' }}>{q}</h3>
                   <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{a}</p>
                 </div>
               ))}
@@ -711,7 +711,7 @@ export default function PropertyTaxHub() {
               </div>
 
               <div className="card" style={{ background: 'rgba(107,120,84,.05)', borderColor: 'rgba(107,120,84,.2)' }}>
-                <h3 style={{ color: 'white', margin: '0 0 12px', fontSize: '15px' }}>Quick Rates Reference</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '15px' }}>Quick Rates Reference</h3>
                 {[
                   ['Travisso', '~2.34%'],
                   ['Crystal Falls', '~2.22%–2.42%'],
@@ -724,13 +724,13 @@ export default function PropertyTaxHub() {
                 ].map(([n, r]) => (
                   <div key={n} style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(107,120,84,.1)', padding: '8px 0', fontSize: '13px' }}>
                     <span style={{ color: 'var(--muted)' }}>{n}</span>
-                    <span style={{ color: 'white', fontWeight: 600 }}>{r}</span>
+                    <span style={{ color: 'var(--ink)', fontWeight: 600 }}>{r}</span>
                   </div>
                 ))}
               </div>
 
               <div className="card" style={{ background: 'rgba(107,120,84,.05)', borderColor: 'rgba(107,120,84,.2)' }}>
-                <h3 style={{ color: 'white', margin: '0 0 12px', fontSize: '15px' }}>Key Deadlines 2026</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '15px' }}>Key Deadlines 2026</h3>
                 {[
                   ['Jan 1', 'Ownership date for exemptions'],
                   ['Apr 30', 'Exemption filing deadline'],
@@ -751,7 +751,7 @@ export default function PropertyTaxHub() {
 
         {/* Footer CTA */}
         <div className="card" style={{ marginTop: '56px', textAlign: 'center', background: 'rgba(107,120,84,.05)', borderColor: 'rgba(107,120,84,.2)', padding: '48px 32px' }}>
-          <h2 style={{ color: 'white', margin: '0 0 12px', fontSize: '26px' }}>Questions About Your Specific Property?</h2>
+          <h2 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '26px' }}>Questions About Your Specific Property?</h2>
           <p style={{ color: 'var(--muted)', maxWidth: '60ch', margin: '0 auto 28px', lineHeight: '1.7' }}>
             I pull exact tax breakdowns for every home I show — MUD status, exemption eligibility, protest history. Get the real number before you commit.
           </p>

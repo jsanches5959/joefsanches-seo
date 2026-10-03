@@ -220,7 +220,7 @@ export default function Realtor({ posts }) {
 
         {/* Hub Pages Navigation */}
         <section style={{ marginTop: '48px', marginBottom: '48px' }}>
-          <h2 style={{ fontSize: '20px', fontWeight: 700, color: 'white', marginBottom: '6px' }}>Leander TX Real Estate Guides</h2>
+          <h2 style={{ fontSize: '20px', fontWeight: 700, color: 'var(--ink)', marginBottom: '6px' }}>Leander TX Real Estate Guides</h2>
           <p style={{ color: 'var(--muted)', fontSize: '14px', marginBottom: '24px' }}>Everything you need to buy, sell, or move to Leander TX.</p>
 
           {/* Buyer & Seller Hubs */}
@@ -247,7 +247,7 @@ export default function Realtor({ posts }) {
           </div>
 
           {/* New Construction */}
-          <h3 style={{ fontSize: '16px', fontWeight: 600, color: 'white', marginBottom: '12px' }}>New Construction</h3>
+          <h3 style={{ fontSize: '16px', fontWeight: 600, color: 'var(--ink)', marginBottom: '12px' }}>New Construction</h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '12px', marginBottom: '16px' }}>
             {[
               { href: '/new-construction-leander-tx', label: 'New Construction Hub', desc: 'All builders & communities' },
@@ -280,7 +280,7 @@ export default function Realtor({ posts }) {
             display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px'
           }}>
             <div>
-              <div style={{ color: 'white', fontWeight: 600, fontSize: '15px', marginBottom: '4px' }}>Browse All New Homes in Leander & Cedar Park</div>
+              <div style={{ color: 'var(--ink)', fontWeight: 600, fontSize: '15px', marginBottom: '4px' }}>Browse All New Homes in Leander & Cedar Park</div>
               <div style={{ color: 'var(--muted)', fontSize: '13px' }}>Live inventory updated daily — search by price, community, and move-in date</div>
             </div>
             <a
@@ -288,7 +288,7 @@ export default function Realtor({ posts }) {
               target="_blank"
               rel="noopener noreferrer"
               style={{
-                display: 'inline-block', background: 'var(--accent)', color: 'white',
+                display: 'inline-block', background: 'var(--accent)', color: '#fff',
                 padding: '10px 20px', borderRadius: '8px', fontWeight: 600,
                 fontSize: '14px', textDecoration: 'none', whiteSpace: 'nowrap'
               }}
@@ -298,7 +298,7 @@ export default function Realtor({ posts }) {
           </div>
 
           {/* Neighborhoods & Schools */}
-          <h3 style={{ fontSize: '16px', fontWeight: 600, color: 'white', marginBottom: '12px' }}>Neighborhoods & Schools</h3>
+          <h3 style={{ fontSize: '16px', fontWeight: 600, color: 'var(--ink)', marginBottom: '12px' }}>Neighborhoods & Schools</h3>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '12px' }}>
             {[
               { href: '/leander-neighborhoods', label: 'Neighborhoods Guide', desc: 'Every community compared' },
@@ -326,7 +326,7 @@ export default function Realtor({ posts }) {
 
         <div className="grid">
           <main className="main">
-            <h3 style={{ marginBottom: '20px', fontSize: '18px', color: 'white' }}>Latest Insights</h3>
+            <h3 style={{ marginBottom: '20px', fontSize: '18px', color: 'var(--ink)' }}>Latest Insights</h3>
             <div className="list">
               {posts.length > 0 ? (
                 posts.map((post) => (
@@ -363,7 +363,7 @@ export default function Realtor({ posts }) {
             </section>
 
             <section id="faq" style={{ marginTop: '48px' }}>
-              <h2 style={{ fontSize: '20px', fontWeight: 700, color: 'white', marginBottom: '6px' }}>
+              <h2 style={{ fontSize: '20px', fontWeight: 700, color: 'var(--ink)', marginBottom: '6px' }}>
                 Common Questions About Working With Joe
               </h2>
               <p style={{ color: 'var(--muted)', fontSize: '14px', marginBottom: '20px' }}>
@@ -375,7 +375,7 @@ export default function Realtor({ posts }) {
                   className="card"
                   style={{ marginBottom: '14px', background: 'rgba(107,120,84,0.04)' }}
                 >
-                  <h3 style={{ fontSize: '16px', fontWeight: 700, color: 'white', margin: '0 0 10px' }}>
+                  <h3 style={{ fontSize: '16px', fontWeight: 700, color: 'var(--ink)', margin: '0 0 10px' }}>
                     {qa.name}
                   </h3>
                   <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: 1.7, margin: 0 }}>

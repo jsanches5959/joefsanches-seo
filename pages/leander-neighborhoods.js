@@ -95,7 +95,7 @@ const neighborhoods = [
 function Section({ id, title, children }) {
   return (
     <section id={id} style={{ marginBottom: '48px' }}>
-      <h2 style={{ fontSize: '26px', color: 'white', borderBottom: '2px solid var(--accent)', paddingBottom: '10px', marginBottom: '20px' }}>{title}</h2>
+      <h2 style={{ fontSize: '26px', color: 'var(--ink)', borderBottom: '2px solid var(--accent)', paddingBottom: '10px', marginBottom: '20px' }}>{title}</h2>
       {children}
     </section>
   );
@@ -220,7 +220,7 @@ export default function LeaderNeighborhoodsHub() {
                 This growth has produced an extraordinary variety of neighborhoods: luxury Hill Country estates in Travisso, resort-style master-planned communities in Bryson, walkable urban-style blocks in Northline, and mature tree-lined streets in Block House Creek. The common thread across all of them: Leander ISD schools, Hill Country proximity, and strong long-term appreciation.
               </p>
               <Callout>
-                <strong style={{ color: 'white' }}>Key fact:</strong> Leander was ranked one of the top 10 fastest-growing cities in the United States for multiple consecutive years. That growth trajectory directly supports property values — and makes neighborhood selection a long-term investment decision, not just a lifestyle one.
+                <strong style={{ color: 'var(--ink)' }}>Key fact:</strong> Leander was ranked one of the top 10 fastest-growing cities in the United States for multiple consecutive years. That growth trajectory directly supports property values — and makes neighborhood selection a long-term investment decision, not just a lifestyle one.
               </Callout>
             </Section>
 
@@ -240,11 +240,11 @@ export default function LeaderNeighborhoodsHub() {
                   <tbody>
                     {neighborhoods.map((n, i) => (
                       <tr key={n.name} style={{ background: i % 2 === 0 ? 'rgba(107,120,84,.04)' : 'transparent', borderBottom: '1px solid rgba(107,120,84,.12)' }}>
-                        <td style={{ padding: '10px 12px', color: 'white', fontWeight: 600 }}>{n.name}</td>
-                        <td style={{ padding: '10px 12px', color: '#E0E5D8' }}>{n.price}</td>
-                        <td style={{ padding: '10px 12px', color: '#E0E5D8' }}>{n.tax}</td>
-                        <td style={{ padding: '10px 12px', color: '#E0E5D8' }}>{n.schools.split(',').pop().trim()}</td>
-                        <td style={{ padding: '10px 12px', color: n.mud === 'No MUD' ? 'var(--accent-light)' : '#E0E5D8' }}>{n.mud === 'No MUD' ? 'No MUD' : 'Yes'}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--ink)', fontWeight: 600 }}>{n.name}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--text)' }}>{n.price}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--text)' }}>{n.tax}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--text)' }}>{n.schools.split(',').pop().trim()}</td>
+                        <td style={{ padding: '10px 12px', color: n.mud === 'No MUD' ? 'var(--accent-light)' : 'var(--text)' }}>{n.mud === 'No MUD' ? 'No MUD' : 'Yes'}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -256,13 +256,13 @@ export default function LeaderNeighborhoodsHub() {
               {neighborhoods.map(n => (
                 <div key={n.name} className="card" style={{ marginBottom: '16px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '8px' }}>
-                    <h3 style={{ color: 'white', margin: 0, fontSize: '18px' }}>{n.name}</h3>
+                    <h3 style={{ color: 'var(--ink)', margin: 0, fontSize: '18px' }}>{n.name}</h3>
                     <span className="pill">{n.price}</span>
                   </div>
                   <p style={{ color: 'var(--accent-light)', fontSize: '13px', margin: '0 0 6px' }}>{n.vibe}</p>
                   <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', fontSize: '13px', color: 'var(--muted)', marginBottom: '8px' }}>
-                    <span>Tax rate: <strong style={{ color: 'white' }}>{n.tax}</strong></span>
-                    <span>MUD: <strong style={{ color: 'white' }}>{n.mud}</strong></span>
+                    <span>Tax rate: <strong style={{ color: 'var(--ink)' }}>{n.tax}</strong></span>
+                    <span>MUD: <strong style={{ color: 'var(--ink)' }}>{n.mud}</strong></span>
                   </div>
                   <p style={{ color: 'var(--muted)', fontSize: '13px', margin: 0 }}>Schools: {n.schools}</p>
                 </div>
@@ -280,7 +280,7 @@ export default function LeaderNeighborhoodsHub() {
                 { q: 'New vs. resale preference', a: 'Bryson, Deerbrooke, and Northline are primarily new construction. Block House Creek, Caballo Ranch, and Crystal Falls (early phases) offer mature resale inventory. Your preference shapes which communities are even relevant.' },
               ].map((item, i) => (
                 <div key={i} className="card" style={{ marginBottom: '14px' }}>
-                  <p style={{ color: 'white', fontWeight: 600, margin: '0 0 8px' }}>{item.q}</p>
+                  <p style={{ color: 'var(--ink)', fontWeight: 600, margin: '0 0 8px' }}>{item.q}</p>
                   <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{item.a}</p>
                 </div>
               ))}
@@ -292,11 +292,11 @@ export default function LeaderNeighborhoodsHub() {
               </p>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '16px' }}>
                 <div className="card">
-                  <h3 style={{ color: 'white', margin: '0 0 10px', fontSize: '17px' }}>Cedar Park</h3>
+                  <h3 style={{ color: 'var(--ink)', margin: '0 0 10px', fontSize: '17px' }}>Cedar Park</h3>
                   <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>More established than Leander, with more retail, restaurants, and services along 183, 1431, and Whitestone Blvd. Home prices range from $280K–$650K depending on neighborhood. Brushy Creek area is a Cedar Park standout. Also served by Leander ISD.</p>
                 </div>
                 <div className="card">
-                  <h3 style={{ color: 'white', margin: '0 0 10px', fontSize: '17px' }}>Liberty Hill</h3>
+                  <h3 style={{ color: 'var(--ink)', margin: '0 0 10px', fontSize: '17px' }}>Liberty Hill</h3>
                   <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>West of Leander on TX-29. Smaller town feel with larger lots and acreage options. Santa Rita Ranch is a major master-planned community here. Liberty Hill ISD (separate from Leander ISD). More affordable per square foot but longer commutes to Austin.</p>
                 </div>
               </div>
@@ -305,7 +305,7 @@ export default function LeaderNeighborhoodsHub() {
             <Section id="faq" title="Leander Neighborhoods FAQ">
               {faqSchema.mainEntity.map((q, i) => (
                 <div key={i} className="card" style={{ marginBottom: '16px' }}>
-                  <h3 style={{ color: 'white', margin: '0 0 10px', fontSize: '16px' }}>{q.name}</h3>
+                  <h3 style={{ color: 'var(--ink)', margin: '0 0 10px', fontSize: '16px' }}>{q.name}</h3>
                   <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{q.acceptedAnswer.text}</p>
                 </div>
               ))}
@@ -327,7 +327,7 @@ export default function LeaderNeighborhoodsHub() {
 
         {/* Bottom CTA */}
         <div className="card" style={{ textAlign: 'center', padding: '40px 24px', marginTop: '40px' }}>
-          <h2 style={{ color: 'white', fontSize: '28px', marginBottom: '12px' }}>Not Sure Which Neighborhood is Right for You?</h2>
+          <h2 style={{ color: 'var(--ink)', fontSize: '28px', marginBottom: '12px' }}>Not Sure Which Neighborhood is Right for You?</h2>
           <p style={{ color: 'var(--muted)', marginBottom: '24px', maxWidth: '560px', margin: '0 auto 24px' }}>
             Joe has lived and worked in Leander for years. A 20-minute call will narrow your search to 2–3 neighborhoods that match your priorities — at no cost.
           </p>

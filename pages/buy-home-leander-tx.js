@@ -106,7 +106,7 @@ const comparisonRows = [
 function Section({ id, title, children }) {
   return (
     <section id={id} style={{ marginBottom: '48px' }}>
-      <h2 style={{ fontSize: '26px', color: 'white', borderBottom: '2px solid var(--accent)', paddingBottom: '10px', marginBottom: '20px' }}>{title}</h2>
+      <h2 style={{ fontSize: '26px', color: 'var(--ink)', borderBottom: '2px solid var(--accent)', paddingBottom: '10px', marginBottom: '20px' }}>{title}</h2>
       {children}
     </section>
   );
@@ -237,12 +237,12 @@ export default function BuyHomeLeanderTx() {
                 ].map((stat, i) => (
                   <div key={i} className="card" style={{ padding: '16px' }}>
                     <p style={{ color: 'var(--accent-light)', fontSize: '12px', margin: '0 0 6px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{stat.label}</p>
-                    <p style={{ color: 'white', fontWeight: 600, margin: 0, fontSize: '15px' }}>{stat.value}</p>
+                    <p style={{ color: 'var(--ink)', fontWeight: 600, margin: 0, fontSize: '15px' }}>{stat.value}</p>
                   </div>
                 ))}
               </div>
               <Callout>
-                <strong style={{ color: 'white' }}>Value vs. Austin:</strong> A home that would cost $650,000 in North Austin or the Mueller area can often be found for $440,000–$470,000 in Leander with a larger lot, newer construction, and equivalent or better school ratings. The trade-off is commute time — typically 35–45 minutes by car or 45–50 minutes on the MetroRail Red Line.
+                <strong style={{ color: 'var(--ink)' }}>Value vs. Austin:</strong> A home that would cost $650,000 in North Austin or the Mueller area can often be found for $440,000–$470,000 in Leander with a larger lot, newer construction, and equivalent or better school ratings. The trade-off is commute time — typically 35–45 minutes by car or 45–50 minutes on the MetroRail Red Line.
               </Callout>
             </Section>
 
@@ -256,10 +256,10 @@ export default function BuyHomeLeanderTx() {
                     <div style={{
                       minWidth: '36px', height: '36px', borderRadius: '50%',
                       background: 'var(--accent)', display: 'flex', alignItems: 'center',
-                      justifyContent: 'center', color: 'white', fontWeight: 700, fontSize: '14px', flexShrink: 0
+                      justifyContent: 'center', color: '#fff', fontWeight: 700, fontSize: '14px', flexShrink: 0
                     }}>{step.num}</div>
                     <div>
-                      <p style={{ color: 'white', fontWeight: 600, margin: '0 0 6px', fontSize: '15px' }}>{step.title}</p>
+                      <p style={{ color: 'var(--ink)', fontWeight: 600, margin: '0 0 6px', fontSize: '15px' }}>{step.title}</p>
                       <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{step.desc}</p>
                     </div>
                   </div>
@@ -293,7 +293,7 @@ export default function BuyHomeLeanderTx() {
               </p>
 
               <Callout>
-                <strong style={{ color: 'white' }}>True monthly cost example:</strong> A $445,000 home in Bryson (MUD, ~2.57% tax, $100/mo HOA) with 10% down at 6.8% interest: PITI = ~$3,450/month + $100 HOA = ~$3,550/month total. The same purchase price in Block House Creek (no MUD, ~2.2% tax, no HOA): ~$3,270/month — a $280/month difference from tax and HOA alone.
+                <strong style={{ color: 'var(--ink)' }}>True monthly cost example:</strong> A $445,000 home in Bryson (MUD, ~2.57% tax, $100/mo HOA) with 10% down at 6.8% interest: PITI = ~$3,450/month + $100 HOA = ~$3,550/month total. The same purchase price in Block House Creek (no MUD, ~2.2% tax, no HOA): ~$3,270/month — a $280/month difference from tax and HOA alone.
               </Callout>
             </Section>
 
@@ -314,8 +314,8 @@ export default function BuyHomeLeanderTx() {
                     {comparisonRows.map((row, i) => (
                       <tr key={row.factor} style={{ background: i % 2 === 0 ? 'rgba(107,120,84,.04)' : 'transparent', borderBottom: '1px solid rgba(107,120,84,.12)' }}>
                         <td style={{ padding: '12px 14px', color: 'var(--accent-light)', fontWeight: 600 }}>{row.factor}</td>
-                        <td style={{ padding: '12px 14px', color: '#E0E5D8' }}>{row.newConst}</td>
-                        <td style={{ padding: '12px 14px', color: '#E0E5D8' }}>{row.resale}</td>
+                        <td style={{ padding: '12px 14px', color: 'var(--text)' }}>{row.newConst}</td>
+                        <td style={{ padding: '12px 14px', color: 'var(--text)' }}>{row.resale}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -340,13 +340,13 @@ export default function BuyHomeLeanderTx() {
                   { title: 'New Construction Compatible', desc: 'VA loans work for new construction in Leander — including spec homes from Pulte, Meritage, and Taylor Morrison. Some builders prefer conventional, but Joe knows which are VA-friendly.' },
                 ].map((item, i) => (
                   <div key={i} className="card">
-                    <p style={{ color: 'white', fontWeight: 600, margin: '0 0 8px', fontSize: '15px' }}>{item.title}</p>
+                    <p style={{ color: 'var(--ink)', fontWeight: 600, margin: '0 0 8px', fontSize: '15px' }}>{item.title}</p>
                     <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{item.desc}</p>
                   </div>
                 ))}
               </div>
               <Callout>
-                <strong style={{ color: 'white' }}>Veteran to veteran:</strong> Joe served in the U.S. military before becoming a Realtor. He has helped multiple veterans use their VA benefit to buy homes in Leander with little to no money out of pocket. If you're a veteran or active-duty service member, call Joe first — he'll make sure you're using every benefit available to you.
+                <strong style={{ color: 'var(--ink)' }}>Veteran to veteran:</strong> Joe served in the U.S. military before becoming a Realtor. He has helped multiple veterans use their VA benefit to buy homes in Leander with little to no money out of pocket. If you're a veteran or active-duty service member, call Joe first — he'll make sure you're using every benefit available to you.
               </Callout>
             </Section>
 
@@ -365,7 +365,7 @@ export default function BuyHomeLeanderTx() {
                 ].map((n, i) => (
                   <div key={i} className="card">
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '8px', flexWrap: 'wrap', gap: '6px' }}>
-                      <h3 style={{ color: 'white', margin: 0, fontSize: '17px' }}>{n.name}</h3>
+                      <h3 style={{ color: 'var(--ink)', margin: 0, fontSize: '17px' }}>{n.name}</h3>
                       <span className="pill" style={{ fontSize: '12px' }}>{n.range}</span>
                     </div>
                     <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{n.summary}</p>
@@ -381,7 +381,7 @@ export default function BuyHomeLeanderTx() {
             <Section id="faq" title="Frequently Asked Questions — Buying a Home in Leander TX">
               {faqSchema.mainEntity.map((q, i) => (
                 <div key={i} className="card" style={{ marginBottom: '16px' }}>
-                  <h3 style={{ color: 'white', margin: '0 0 10px', fontSize: '16px' }}>{q.name}</h3>
+                  <h3 style={{ color: 'var(--ink)', margin: '0 0 10px', fontSize: '16px' }}>{q.name}</h3>
                   <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{q.acceptedAnswer.text}</p>
                 </div>
               ))}
@@ -403,7 +403,7 @@ export default function BuyHomeLeanderTx() {
 
         {/* Bottom CTA */}
         <div className="card" style={{ textAlign: 'center', padding: '40px 24px', marginTop: '40px' }}>
-          <h2 style={{ color: 'white', fontSize: '28px', marginBottom: '12px' }}>Start Your Home Search — Call Joe: 512-663-8867</h2>
+          <h2 style={{ color: 'var(--ink)', fontSize: '28px', marginBottom: '12px' }}>Start Your Home Search — Call Joe: 512-663-8867</h2>
           <p style={{ color: 'var(--muted)', marginBottom: '24px', maxWidth: '560px', margin: '0 auto 24px' }}>
             Joe is a local Leander expert and military veteran who works exclusively for buyers — not builders, not sellers. Your consultation is free and there is no obligation.
           </p>

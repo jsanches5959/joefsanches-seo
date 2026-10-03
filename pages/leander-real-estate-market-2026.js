@@ -109,7 +109,7 @@ const bestValueNeighborhoods = [
 function Section({ id, title, children }) {
   return (
     <section id={id} style={{ marginBottom: '48px' }}>
-      <h2 style={{ fontSize: '26px', color: 'white', borderBottom: '2px solid var(--accent)', paddingBottom: '10px', marginBottom: '20px' }}>{title}</h2>
+      <h2 style={{ fontSize: '26px', color: 'var(--ink)', borderBottom: '2px solid var(--accent)', paddingBottom: '10px', marginBottom: '20px' }}>{title}</h2>
       {children}
     </section>
   );
@@ -240,13 +240,13 @@ export default function LeanderRealEstateMarket2026() {
                 ].map((stat, i) => (
                   <div key={i} className="card" style={{ padding: '16px' }}>
                     <p style={{ color: 'var(--accent-light)', fontSize: '12px', margin: '0 0 6px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{stat.label}</p>
-                    <p style={{ color: 'white', fontWeight: 700, margin: '0 0 4px', fontSize: '22px' }}>{stat.value}</p>
+                    <p style={{ color: 'var(--ink)', fontWeight: 700, margin: '0 0 4px', fontSize: '22px' }}>{stat.value}</p>
                     <p style={{ color: 'var(--muted)', fontSize: '12px', margin: 0 }}>{stat.change}</p>
                   </div>
                 ))}
               </div>
               <Callout>
-                <strong style={{ color: 'white' }}>Market characterization:</strong> Leander is a competitive but balanced market in early 2026. Buyers have more negotiating leverage than at any point since 2020 — especially on new construction where builders are incentivizing — but resale homes in desirable neighborhoods still move quickly. The window for favorable terms on resale homes is best when properly advised.
+                <strong style={{ color: 'var(--ink)' }}>Market characterization:</strong> Leander is a competitive but balanced market in early 2026. Buyers have more negotiating leverage than at any point since 2020 — especially on new construction where builders are incentivizing — but resale homes in desirable neighborhoods still move quickly. The window for favorable terms on resale homes is best when properly advised.
               </Callout>
             </Section>
 
@@ -266,11 +266,11 @@ export default function LeanderRealEstateMarket2026() {
                   <tbody>
                     {neighborhoodPrices.map((n, i) => (
                       <tr key={n.name} style={{ background: i % 2 === 0 ? 'rgba(107,120,84,.04)' : 'transparent', borderBottom: '1px solid rgba(107,120,84,.12)' }}>
-                        <td style={{ padding: '10px 12px', color: 'white', fontWeight: 600 }}>{n.name}</td>
-                        <td style={{ padding: '10px 12px', color: '#E0E5D8' }}>{n.median}</td>
-                        <td style={{ padding: '10px 12px', color: '#E0E5D8' }}>{n.dom}</td>
-                        <td style={{ padding: '10px 12px', color: '#E0E5D8' }}>{n.inventory}</td>
-                        <td style={{ padding: '10px 12px', color: n.trend === 'Rising' ? 'var(--accent-light)' : '#E0E5D8' }}>{n.trend}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--ink)', fontWeight: 600 }}>{n.name}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--text)' }}>{n.median}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--text)' }}>{n.dom}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--text)' }}>{n.inventory}</td>
+                        <td style={{ padding: '10px 12px', color: n.trend === 'Rising' ? 'var(--accent-light)' : 'var(--text)' }}>{n.trend}</td>
                         <td style={{ padding: '10px 12px', color: 'var(--muted)', fontSize: '12px' }}>{n.notes}</td>
                       </tr>
                     ))}
@@ -294,13 +294,13 @@ export default function LeanderRealEstateMarket2026() {
                   { title: 'Closing Cost Assistance', desc: 'Builders are contributing $5,000–$15,000 toward buyer closing costs when buyers use the builder\'s preferred lender. Joe can advise on whether the preferred lender\'s rate is competitive.' },
                 ].map((item, i) => (
                   <div key={i} className="card">
-                    <p style={{ color: 'white', fontWeight: 600, margin: '0 0 8px', fontSize: '15px' }}>{item.title}</p>
+                    <p style={{ color: 'var(--ink)', fontWeight: 600, margin: '0 0 8px', fontSize: '15px' }}>{item.title}</p>
                     <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{item.desc}</p>
                   </div>
                 ))}
               </div>
               <Callout>
-                <strong style={{ color: 'white' }}>Important caveat:</strong> Builder incentives are conditional and time-limited. They often require using the builder's preferred lender (which may not offer the best rate), and they can be structured as "closing cost credits" that inflate the base price. Joe has worked with every major builder in Leander and knows how to read these incentive packages to determine their actual value.
+                <strong style={{ color: 'var(--ink)' }}>Important caveat:</strong> Builder incentives are conditional and time-limited. They often require using the builder's preferred lender (which may not offer the best rate), and they can be structured as "closing cost credits" that inflate the base price. Joe has worked with every major builder in Leander and knows how to read these incentive packages to determine their actual value.
               </Callout>
             </Section>
 
@@ -314,10 +314,10 @@ export default function LeanderRealEstateMarket2026() {
                     <div style={{
                       minWidth: '32px', height: '32px', borderRadius: '8px',
                       background: 'var(--accent)', display: 'flex', alignItems: 'center',
-                      justifyContent: 'center', color: 'white', fontWeight: 700, fontSize: '14px', flexShrink: 0
+                      justifyContent: 'center', color: '#fff', fontWeight: 700, fontSize: '14px', flexShrink: 0
                     }}>{i + 1}</div>
                     <div>
-                      <p style={{ color: 'white', fontWeight: 600, margin: '0 0 6px', fontSize: '16px' }}>{n.name}</p>
+                      <p style={{ color: 'var(--ink)', fontWeight: 600, margin: '0 0 6px', fontSize: '16px' }}>{n.name}</p>
                       <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{n.why}</p>
                     </div>
                   </div>
@@ -340,7 +340,7 @@ export default function LeanderRealEstateMarket2026() {
                 ].map((item, i) => (
                   <div key={i} className="card">
                     <p style={{ color: 'var(--accent-light)', fontSize: '12px', margin: '0 0 4px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{item.label}</p>
-                    <p style={{ color: 'white', fontWeight: 700, margin: '0 0 8px', fontSize: '16px' }}>{item.value}</p>
+                    <p style={{ color: 'var(--ink)', fontWeight: 700, margin: '0 0 8px', fontSize: '16px' }}>{item.value}</p>
                     <p style={{ color: 'var(--muted)', fontSize: '13px', lineHeight: '1.7', margin: 0 }}>{item.detail}</p>
                   </div>
                 ))}
@@ -363,11 +363,11 @@ export default function LeanderRealEstateMarket2026() {
                   <tbody>
                     {monthlyStats.map((row, i) => (
                       <tr key={row.month} style={{ background: i % 2 === 0 ? 'rgba(107,120,84,.04)' : 'transparent', borderBottom: '1px solid rgba(107,120,84,.12)' }}>
-                        <td style={{ padding: '10px 12px', color: 'white', fontWeight: 600 }}>{row.month}</td>
-                        <td style={{ padding: '10px 12px', color: '#E0E5D8' }}>{row.median}</td>
-                        <td style={{ padding: '10px 12px', color: '#E0E5D8' }}>{row.dom}</td>
-                        <td style={{ padding: '10px 12px', color: '#E0E5D8' }}>{row.closed}</td>
-                        <td style={{ padding: '10px 12px', color: '#E0E5D8' }}>{row.list}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--ink)', fontWeight: 600 }}>{row.month}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--text)' }}>{row.median}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--text)' }}>{row.dom}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--text)' }}>{row.closed}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--text)' }}>{row.list}</td>
                         <td style={{ padding: '10px 12px', color: 'var(--accent-light)' }}>{row.lpr}</td>
                       </tr>
                     ))}
@@ -382,7 +382,7 @@ export default function LeanderRealEstateMarket2026() {
             <Section id="faq" title="Frequently Asked Questions — Leander TX Market 2026">
               {faqSchema.mainEntity.map((q, i) => (
                 <div key={i} className="card" style={{ marginBottom: '16px' }}>
-                  <h3 style={{ color: 'white', margin: '0 0 10px', fontSize: '16px' }}>{q.name}</h3>
+                  <h3 style={{ color: 'var(--ink)', margin: '0 0 10px', fontSize: '16px' }}>{q.name}</h3>
                   <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{q.acceptedAnswer.text}</p>
                 </div>
               ))}
@@ -404,7 +404,7 @@ export default function LeanderRealEstateMarket2026() {
 
         {/* Bottom CTA */}
         <div className="card" style={{ textAlign: 'center', padding: '40px 24px', marginTop: '40px' }}>
-          <h2 style={{ color: 'white', fontSize: '28px', marginBottom: '12px' }}>Get a Market Update for Your Neighborhood</h2>
+          <h2 style={{ color: 'var(--ink)', fontSize: '28px', marginBottom: '12px' }}>Get a Market Update for Your Neighborhood</h2>
           <p style={{ color: 'var(--muted)', marginBottom: '24px', maxWidth: '560px', margin: '0 auto 24px' }}>
             Joe tracks Leander's market weekly. Whether you're thinking about buying, selling, or just want to know what your home is worth today, call or text for a no-pressure conversation.
           </p>

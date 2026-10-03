@@ -83,7 +83,7 @@ const faqSchema = {
 function Section({ id, title, children }) {
   return (
     <section id={id} style={{ marginBottom: '48px' }}>
-      <h2 style={{ fontSize: '26px', color: 'white', borderBottom: '2px solid var(--accent)', paddingBottom: '10px', marginBottom: '20px' }}>{title}</h2>
+      <h2 style={{ fontSize: '26px', color: 'var(--ink)', borderBottom: '2px solid var(--accent)', paddingBottom: '10px', marginBottom: '20px' }}>{title}</h2>
       {children}
     </section>
   );
@@ -205,15 +205,15 @@ export default function NewConstructionHub({ deals }) {
                 New construction in Leander delivers something the resale market rarely can: a home built to your spec, with a builder warranty, modern energy efficiency, and the latest floor plans designed for how families actually live today. Here's why buyers keep choosing new builds in 2026:
               </p>
               <ul style={{ color: 'var(--muted)', lineHeight: '2', paddingLeft: '20px', marginBottom: '20px' }}>
-                <li><strong style={{ color: 'white' }}>Builder warranties</strong> — structural coverage for 10 years, systems for 2 years, workmanship for 1 year</li>
-                <li><strong style={{ color: 'white' }}>Energy efficiency</strong> — foam insulation, spray-foam attics, tankless water heaters, and ENERGY STAR appliances reduce monthly utility bills by 20–35% vs. older homes</li>
-                <li><strong style={{ color: 'white' }}>No bidding wars</strong> — list price is list price; competition is with the builder, not other buyers</li>
-                <li><strong style={{ color: 'white' }}>Customization</strong> — choose countertops, cabinetry, flooring, and layout options (on dirt builds)</li>
-                <li><strong style={{ color: 'white' }}>Rate buydowns</strong> — builders have preferred lenders who offer below-market rates unavailable on resale</li>
-                <li><strong style={{ color: 'white' }}>Modern open plans</strong> — great rooms, primary suites downstairs, 3-car garages, and dedicated home offices built in</li>
+                <li><strong style={{ color: 'var(--ink)' }}>Builder warranties</strong> — structural coverage for 10 years, systems for 2 years, workmanship for 1 year</li>
+                <li><strong style={{ color: 'var(--ink)' }}>Energy efficiency</strong> — foam insulation, spray-foam attics, tankless water heaters, and ENERGY STAR appliances reduce monthly utility bills by 20–35% vs. older homes</li>
+                <li><strong style={{ color: 'var(--ink)' }}>No bidding wars</strong> — list price is list price; competition is with the builder, not other buyers</li>
+                <li><strong style={{ color: 'var(--ink)' }}>Customization</strong> — choose countertops, cabinetry, flooring, and layout options (on dirt builds)</li>
+                <li><strong style={{ color: 'var(--ink)' }}>Rate buydowns</strong> — builders have preferred lenders who offer below-market rates unavailable on resale</li>
+                <li><strong style={{ color: 'var(--ink)' }}>Modern open plans</strong> — great rooms, primary suites downstairs, 3-car garages, and dedicated home offices built in</li>
               </ul>
               <Callout>
-                <strong style={{ color: 'white' }}>Important:</strong> New construction in Leander almost always includes MUD district taxes. On a $450K home with a 0.30% MUD, that's an extra $1,350/year. Joe will pull the exact tax rate for any home you're considering before you write an offer.
+                <strong style={{ color: 'var(--ink)' }}>Important:</strong> New construction in Leander almost always includes MUD district taxes. On a $450K home with a 0.30% MUD, that's an extra $1,350/year. Joe will pull the exact tax rate for any home you're considering before you write an offer.
               </Callout>
             </Section>
 
@@ -262,7 +262,7 @@ export default function NewConstructionHub({ deals }) {
               ].map(b => (
                 <div key={b.name} className="card" style={{ marginBottom: '16px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '8px', marginBottom: '8px' }}>
-                    <h3 style={{ color: 'white', margin: 0, fontSize: '18px' }}>{b.name}</h3>
+                    <h3 style={{ color: 'var(--ink)', margin: 0, fontSize: '18px' }}>{b.name}</h3>
                     <span className="pill">{b.range}</span>
                   </div>
                   <p style={{ color: 'var(--accent-light)', fontSize: '13px', margin: '0 0 8px' }}>Active in: {b.communities}</p>
@@ -271,7 +271,7 @@ export default function NewConstructionHub({ deals }) {
               ))}
 
               <Callout>
-                <strong style={{ color: 'white' }}>Pro tip:</strong> Register your agent before visiting any model home — even just to browse. If you walk in unrepresented, the builder's sales agent represents the builder, not you. Joe can accompany you or register you in advance so you don't lose your representation rights.
+                <strong style={{ color: 'var(--ink)' }}>Pro tip:</strong> Register your agent before visiting any model home — even just to browse. If you walk in unrepresented, the builder's sales agent represents the builder, not you. Joe can accompany you or register you in advance so you don't lose your representation rights.
               </Callout>
             </Section>
 
@@ -290,7 +290,7 @@ export default function NewConstructionHub({ deals }) {
               ].map(c => (
                 <div key={c.name} className="card" style={{ marginBottom: '16px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '8px', marginBottom: '8px' }}>
-                    <h3 style={{ color: 'white', margin: 0, fontSize: '18px' }}>{c.name}</h3>
+                    <h3 style={{ color: 'var(--ink)', margin: 0, fontSize: '18px' }}>{c.name}</h3>
                     <span className="pill">{c.price}</span>
                   </div>
                   <p style={{ color: 'var(--accent-light)', fontSize: '13px', margin: '0 0 8px' }}>{c.status}</p>
@@ -304,25 +304,25 @@ export default function NewConstructionHub({ deals }) {
                 Builder incentives in 2026 are the strongest they've been in several years. As inventory of spec homes has grown, builders are motivated to move product. Here's what you can realistically negotiate:
               </p>
               <ul style={{ color: 'var(--muted)', lineHeight: '2', paddingLeft: '20px', marginBottom: '20px' }}>
-                <li><strong style={{ color: 'white' }}>Interest rate buydowns</strong> — 2-1 temporary buydowns (e.g., 4.5% year 1, 5.5% year 2, 6.5% year 3+) or permanent rate reductions via preferred lender</li>
-                <li><strong style={{ color: 'white' }}>Closing cost contributions</strong> — $5,000–$20,000 toward title, lender fees, and prepaids, especially on inventory homes</li>
-                <li><strong style={{ color: 'white' }}>Free upgrade packages</strong> — appliance packages ($4K–$8K value), upgraded flooring, extended tile in wet areas, quartz countertops</li>
-                <li><strong style={{ color: 'white' }}>Reduced lot premiums</strong> — cul-de-sac or greenbelt lots that carried $15K–$40K premiums may now be reduced or waived</li>
-                <li><strong style={{ color: 'white' }}>Price reductions on spec homes</strong> — completed inventory homes sitting 90+ days may be discounted $15K–$40K</li>
+                <li><strong style={{ color: 'var(--ink)' }}>Interest rate buydowns</strong> — 2-1 temporary buydowns (e.g., 4.5% year 1, 5.5% year 2, 6.5% year 3+) or permanent rate reductions via preferred lender</li>
+                <li><strong style={{ color: 'var(--ink)' }}>Closing cost contributions</strong> — $5,000–$20,000 toward title, lender fees, and prepaids, especially on inventory homes</li>
+                <li><strong style={{ color: 'var(--ink)' }}>Free upgrade packages</strong> — appliance packages ($4K–$8K value), upgraded flooring, extended tile in wet areas, quartz countertops</li>
+                <li><strong style={{ color: 'var(--ink)' }}>Reduced lot premiums</strong> — cul-de-sac or greenbelt lots that carried $15K–$40K premiums may now be reduced or waived</li>
+                <li><strong style={{ color: 'var(--ink)' }}>Price reductions on spec homes</strong> — completed inventory homes sitting 90+ days may be discounted $15K–$40K</li>
               </ul>
               {deals && deals.length > 0 && (
                 <div style={{ marginTop: '16px' }}>
-                  <h3 style={{ color: 'white', fontSize: '18px', marginBottom: '16px' }}>Current Featured Deals</h3>
+                  <h3 style={{ color: 'var(--ink)', fontSize: '18px', marginBottom: '16px' }}>Current Featured Deals</h3>
                   {deals.map((deal, i) => (
                     <div key={i} className="card" style={{ marginBottom: '12px' }}>
-                      <p style={{ color: 'white', fontWeight: 600, margin: '0 0 4px' }}>{deal.community} — {deal.builder}</p>
+                      <p style={{ color: 'var(--ink)', fontWeight: 600, margin: '0 0 4px' }}>{deal.community} — {deal.builder}</p>
                       <p style={{ color: 'var(--muted)', fontSize: '14px', margin: 0 }}>{deal.description}</p>
                     </div>
                   ))}
                 </div>
               )}
               <Callout>
-                <strong style={{ color: 'white' }}>Month-end strategy:</strong> Builder sales teams have monthly and quarterly quotas. The last 5 business days of any month — especially March, June, September, and December — are when incentive offers peak. Contact Joe before month end for the best leverage.
+                <strong style={{ color: 'var(--ink)' }}>Month-end strategy:</strong> Builder sales teams have monthly and quarterly quotas. The last 5 business days of any month — especially March, June, September, and December — are when incentive offers peak. Contact Joe before month end for the best leverage.
               </Callout>
             </Section>
 
@@ -339,9 +339,9 @@ export default function NewConstructionHub({ deals }) {
                 { step: '6', title: 'Final walkthrough & close', desc: 'The builder\'s rep will walk you through the completed home and create a punch list of items to fix before or after closing. Joe attends every final walkthrough.' },
               ].map(s => (
                 <div key={s.step} className="card" style={{ marginBottom: '14px', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                  <div style={{ minWidth: '36px', height: '36px', borderRadius: '50%', background: 'var(--accent)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 700, fontSize: '16px' }}>{s.step}</div>
+                  <div style={{ minWidth: '36px', height: '36px', borderRadius: '50%', background: 'var(--accent)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 700, fontSize: '16px' }}>{s.step}</div>
                   <div>
-                    <p style={{ color: 'white', fontWeight: 600, margin: '0 0 6px' }}>{s.title}</p>
+                    <p style={{ color: 'var(--ink)', fontWeight: 600, margin: '0 0 6px' }}>{s.title}</p>
                     <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{s.desc}</p>
                   </div>
                 </div>
@@ -352,7 +352,7 @@ export default function NewConstructionHub({ deals }) {
             <Section id="faq" title="New Construction FAQ — Leander TX">
               {faqSchema.mainEntity.map((q, i) => (
                 <div key={i} className="card" style={{ marginBottom: '16px' }}>
-                  <h3 style={{ color: 'white', margin: '0 0 10px', fontSize: '16px' }}>{q.name}</h3>
+                  <h3 style={{ color: 'var(--ink)', margin: '0 0 10px', fontSize: '16px' }}>{q.name}</h3>
                   <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{q.acceptedAnswer.text}</p>
                 </div>
               ))}
@@ -375,7 +375,7 @@ export default function NewConstructionHub({ deals }) {
 
         {/* Bottom CTA */}
         <div className="card" style={{ textAlign: 'center', padding: '40px 24px', marginTop: '40px' }}>
-          <h2 style={{ color: 'white', fontSize: '28px', marginBottom: '12px' }}>Ready to Find Your New Construction Home?</h2>
+          <h2 style={{ color: 'var(--ink)', fontSize: '28px', marginBottom: '12px' }}>Ready to Find Your New Construction Home?</h2>
           <p style={{ color: 'var(--muted)', marginBottom: '24px', maxWidth: '560px', margin: '0 auto 24px' }}>
             Joe Sanches is a local Leander expert with direct relationships at every major builder community. He'll get you the best deal — at no cost to you.
           </p>

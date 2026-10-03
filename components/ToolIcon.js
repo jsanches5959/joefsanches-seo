@@ -132,6 +132,35 @@ const paths = {
   ),
 
   // Staggered planks — flooring.
+  // Tree — removal, trimming and stump work.
+  tree: (
+    <>
+      <path d="M12 2.8c-2.6 0-4.6 1.9-4.8 4.3A3.9 3.9 0 0 0 5.4 14c.6 1.3 2 2.2 3.6 2.2h6c1.6 0 3-.9 3.6-2.2a3.9 3.9 0 0 0-1.8-6.9C16.6 4.7 14.6 2.8 12 2.8Z" />
+      <path d="M12 21.2V10.8" />
+      <path d="M12 14.4l-2.6-2.2M12 12.6l2.4-1.8" />
+      <path d="M8.4 21.2h7.2" />
+    </>
+  ),
+
+  // Sprouting leaf — landscaping and grounds maintenance.
+  leaf: (
+    <>
+      <path d="M12 21v-8.2" />
+      <path d="M12 12.8C12 8 8.6 5.2 3.6 5.2c0 4.8 3.2 7.6 8.4 7.6Z" />
+      <path d="M12 15.2c0-4.2 3-6.8 7.8-6.8 0 4.2-2.8 6.8-7.8 6.8Z" />
+      <path d="M7 21h10" />
+    </>
+  ),
+
+  // House with key line — real estate.
+  home: (
+    <>
+      <path d="M3.4 11.2 12 4l8.6 7.2" />
+      <path d="M5.6 9.4v11h12.8v-11" />
+      <path d="M10 20.4v-5.6h4v5.6" />
+    </>
+  ),
+
   planks: (
     <>
       <rect x="2.4" y="5.6" width="8" height="4.2" rx=".6" />

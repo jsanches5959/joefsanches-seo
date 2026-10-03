@@ -157,7 +157,7 @@ const relocationChecklist = [
 function Section({ id, title, children }) {
   return (
     <section id={id} style={{ marginBottom: '48px' }}>
-      <h2 style={{ fontSize: '26px', color: 'white', borderBottom: '2px solid var(--accent)', paddingBottom: '10px', marginBottom: '20px' }}>{title}</h2>
+      <h2 style={{ fontSize: '26px', color: 'var(--ink)', borderBottom: '2px solid var(--accent)', paddingBottom: '10px', marginBottom: '20px' }}>{title}</h2>
       {children}
     </section>
   );
@@ -289,7 +289,7 @@ export default function MovingToLeanderTx() {
                   { title: 'No State Income Tax', desc: 'Texas has no state income tax. For a household earning $150,000 coming from California or New York, that\'s a $10,000–$18,000 increase in take-home pay. Even accounting for higher property taxes, the net is typically strongly positive.' },
                 ].map((item, i) => (
                   <div key={i} className="card">
-                    <p style={{ color: 'white', fontWeight: 600, margin: '0 0 8px', fontSize: '15px' }}>{item.title}</p>
+                    <p style={{ color: 'var(--ink)', fontWeight: 600, margin: '0 0 8px', fontSize: '15px' }}>{item.title}</p>
                     <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{item.desc}</p>
                   </div>
                 ))}
@@ -322,9 +322,9 @@ export default function MovingToLeanderTx() {
                       { cat: 'HOA fees', austin: 'Varies ($0–200)', leander: 'Common ($50–150)', diff: 'About the same', positive: true },
                     ].map((row, i) => (
                       <tr key={row.cat} style={{ background: i % 2 === 0 ? 'rgba(107,120,84,.04)' : 'transparent', borderBottom: '1px solid rgba(107,120,84,.12)' }}>
-                        <td style={{ padding: '12px 14px', color: 'white', fontWeight: 600 }}>{row.cat}</td>
-                        <td style={{ padding: '12px 14px', color: '#E0E5D8' }}>{row.austin}</td>
-                        <td style={{ padding: '12px 14px', color: '#E0E5D8' }}>{row.leander}</td>
+                        <td style={{ padding: '12px 14px', color: 'var(--ink)', fontWeight: 600 }}>{row.cat}</td>
+                        <td style={{ padding: '12px 14px', color: 'var(--text)' }}>{row.austin}</td>
+                        <td style={{ padding: '12px 14px', color: 'var(--text)' }}>{row.leander}</td>
                         <td style={{ padding: '12px 14px', color: row.positive ? 'var(--accent-light)' : 'var(--muted)' }}>{row.diff}</td>
                       </tr>
                     ))}
@@ -332,7 +332,7 @@ export default function MovingToLeanderTx() {
                 </table>
               </div>
               <Callout>
-                <strong style={{ color: 'white' }}>Bottom line:</strong> For housing, Leander is substantially more affordable than Austin. For everything else, costs are broadly similar. The net for most relocating families is a significant improvement in home size and quality per dollar spent — at the cost of a 35–40 minute commute versus a 15–20 minute one from central Austin neighborhoods.
+                <strong style={{ color: 'var(--ink)' }}>Bottom line:</strong> For housing, Leander is substantially more affordable than Austin. For everything else, costs are broadly similar. The net for most relocating families is a significant improvement in home size and quality per dollar spent — at the cost of a 35–40 minute commute versus a 15–20 minute one from central Austin neighborhoods.
               </Callout>
             </Section>
 
@@ -344,12 +344,12 @@ export default function MovingToLeanderTx() {
                 {neighborhoods.map((n, i) => (
                   <div key={i} className="card">
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '8px', flexWrap: 'wrap', gap: '6px' }}>
-                      <h3 style={{ color: 'white', margin: 0, fontSize: '18px' }}>{n.name}</h3>
+                      <h3 style={{ color: 'var(--ink)', margin: 0, fontSize: '18px' }}>{n.name}</h3>
                       <span className="pill" style={{ fontSize: '11px' }}>{n.priceRange}</span>
                     </div>
                     <p style={{ color: 'var(--accent-light)', fontSize: '12px', margin: '0 0 8px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Best for: {n.bestFor}</p>
                     <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: '0 0 8px' }}>{n.profile}</p>
-                    <p style={{ color: 'white', fontSize: '13px', fontWeight: 600, margin: 0 }}>{n.highlight}</p>
+                    <p style={{ color: 'var(--ink)', fontSize: '13px', fontWeight: 600, margin: 0 }}>{n.highlight}</p>
                   </div>
                 ))}
               </div>
@@ -366,7 +366,7 @@ export default function MovingToLeanderTx() {
                 {schoolHighlights.map((school, i) => (
                   <div key={i} className="card" style={{ padding: '16px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px', flexWrap: 'wrap', gap: '4px' }}>
-                      <p style={{ color: 'white', fontWeight: 600, margin: 0, fontSize: '15px' }}>{school.name}</p>
+                      <p style={{ color: 'var(--ink)', fontWeight: 600, margin: 0, fontSize: '15px' }}>{school.name}</p>
                       <span className="pill" style={{ fontSize: '11px' }}>{school.grades}</span>
                     </div>
                     <p style={{ color: 'var(--muted)', fontSize: '13px', lineHeight: '1.7', margin: 0 }}>{school.notes}</p>
@@ -374,7 +374,7 @@ export default function MovingToLeanderTx() {
                 ))}
               </div>
               <Callout>
-                <strong style={{ color: 'white' }}>Important:</strong> School zoning is assigned to specific addresses, not general neighborhoods. A community like Crystal Falls spans multiple elementary school zones. Always verify your specific lot's school assignment at the Leander ISD website before signing a contract. Joe Sanches checks school zoning for every buyer client as a standard part of the process.
+                <strong style={{ color: 'var(--ink)' }}>Important:</strong> School zoning is assigned to specific addresses, not general neighborhoods. A community like Crystal Falls spans multiple elementary school zones. Always verify your specific lot's school assignment at the Leander ISD website before signing a contract. Joe Sanches checks school zoning for every buyer client as a standard part of the process.
               </Callout>
               <NavLink href="/leander-isd-schools" label="Detailed Leander ISD Schools Guide" />
             </Section>
@@ -395,9 +395,9 @@ export default function MovingToLeanderTx() {
                   <tbody>
                     {commuteData.map((row, i) => (
                       <tr key={row.destination} style={{ background: i % 2 === 0 ? 'rgba(107,120,84,.04)' : 'transparent', borderBottom: '1px solid rgba(107,120,84,.12)' }}>
-                        <td style={{ padding: '10px 12px', color: 'white', fontWeight: 600 }}>{row.destination}</td>
-                        <td style={{ padding: '10px 12px', color: '#E0E5D8' }}>{row.time}</td>
-                        <td style={{ padding: '10px 12px', color: '#E0E5D8' }}>{row.peakTime}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--ink)', fontWeight: 600 }}>{row.destination}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--text)' }}>{row.time}</td>
+                        <td style={{ padding: '10px 12px', color: 'var(--text)' }}>{row.peakTime}</td>
                         <td style={{ padding: '10px 12px', color: row.metrorail !== 'N/A' ? 'var(--accent-light)' : 'var(--muted)' }}>{row.metrorail}</td>
                         <td style={{ padding: '10px 12px', color: 'var(--muted)', fontSize: '12px' }}>{row.route}</td>
                       </tr>
@@ -406,7 +406,7 @@ export default function MovingToLeanderTx() {
                 </table>
               </div>
               <Callout>
-                <strong style={{ color: 'white' }}>183A Toll Costs:</strong> The 183A toll road is the primary arterial for Leander commuters. Round-trip tolls run approximately $3–$5/day depending on entry/exit points, or roughly $75–$110/month for a typical commuter. This is a real cost to budget for. TxTag transponders get the lowest rates.
+                <strong style={{ color: 'var(--ink)' }}>183A Toll Costs:</strong> The 183A toll road is the primary arterial for Leander commuters. Round-trip tolls run approximately $3–$5/day depending on entry/exit points, or roughly $75–$110/month for a typical commuter. This is a real cost to budget for. TxTag transponders get the lowest rates.
               </Callout>
             </Section>
 
@@ -426,7 +426,7 @@ export default function MovingToLeanderTx() {
                   { title: 'Austin Entertainment', desc: 'Live music on 6th Street, the Domain\'s restaurants and shopping, ACL Fest, SXSW — all of Austin\'s cultural amenities are 35–45 minutes away. Leander residents participate in Austin life on their own terms.' },
                 ].map((item, i) => (
                   <div key={i} className="card">
-                    <p style={{ color: 'white', fontWeight: 600, margin: '0 0 8px', fontSize: '15px' }}>{item.title}</p>
+                    <p style={{ color: 'var(--ink)', fontWeight: 600, margin: '0 0 8px', fontSize: '15px' }}>{item.title}</p>
                     <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{item.desc}</p>
                   </div>
                 ))}
@@ -446,7 +446,7 @@ export default function MovingToLeanderTx() {
                       justifyContent: 'center', color: 'var(--accent)', fontWeight: 700, fontSize: '13px', flexShrink: 0
                     }}>{i + 1}</div>
                     <div>
-                      <p style={{ color: 'white', fontWeight: 600, margin: '0 0 5px', fontSize: '15px' }}>{item.item}</p>
+                      <p style={{ color: 'var(--ink)', fontWeight: 600, margin: '0 0 5px', fontSize: '15px' }}>{item.item}</p>
                       <p style={{ color: 'var(--muted)', fontSize: '13px', lineHeight: '1.7', margin: 0 }}>{item.detail}</p>
                     </div>
                   </div>
@@ -465,7 +465,7 @@ export default function MovingToLeanderTx() {
                 { step: 'Be ready to move', desc: 'Leander\'s best homes — both new construction specs and resale — move within 10–25 days. If you find the right home during your visit trip, being pre-approved lets you make a same-day decision.' },
               ].map((item, i) => (
                 <div key={i} className="card" style={{ marginBottom: '12px' }}>
-                  <p style={{ color: 'white', fontWeight: 600, margin: '0 0 8px', fontSize: '15px' }}>{item.step}</p>
+                  <p style={{ color: 'var(--ink)', fontWeight: 600, margin: '0 0 8px', fontSize: '15px' }}>{item.step}</p>
                   <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{item.desc}</p>
                 </div>
               ))}
@@ -474,7 +474,7 @@ export default function MovingToLeanderTx() {
             <Section id="faq" title="Frequently Asked Questions — Moving to Leander TX">
               {faqSchema.mainEntity.map((q, i) => (
                 <div key={i} className="card" style={{ marginBottom: '16px' }}>
-                  <h3 style={{ color: 'white', margin: '0 0 10px', fontSize: '16px' }}>{q.name}</h3>
+                  <h3 style={{ color: 'var(--ink)', margin: '0 0 10px', fontSize: '16px' }}>{q.name}</h3>
                   <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{q.acceptedAnswer.text}</p>
                 </div>
               ))}
@@ -496,7 +496,7 @@ export default function MovingToLeanderTx() {
 
         {/* Bottom CTA */}
         <div className="card" style={{ textAlign: 'center', padding: '40px 24px', marginTop: '40px' }}>
-          <h2 style={{ color: 'white', fontSize: '28px', marginBottom: '12px' }}>Planning a Move to Leander? Joe Knows Every Neighborhood.</h2>
+          <h2 style={{ color: 'var(--ink)', fontSize: '28px', marginBottom: '12px' }}>Planning a Move to Leander? Joe Knows Every Neighborhood.</h2>
           <p style={{ color: 'var(--muted)', marginBottom: '24px', maxWidth: '560px', margin: '0 auto 24px' }}>
             Joe Sanches is a Leander-based Realtor and military veteran who has helped dozens of families and professionals relocate to Leander TX from across the country. Your relocation consultation is free.
           </p>

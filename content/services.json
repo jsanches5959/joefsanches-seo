@@ -5,6 +5,7 @@
     "name": "Drywall Repair & Installation",
     "shortName": "Drywall Repair",
     "city": "Leander, TX",
+    "leadService": "Drywall / Painting",
     "title": "Drywall Repair in Leander TX — Same-Week Patch & Texture",
     "description": "Drywall repair and installation in Leander, Cedar Park, and Georgetown TX. Holes, cracks, water damage, texture matching, full sheetrock installs. Free estimates, one point of contact.",
     "h1": "Drywall Repair & Installation in Leander, TX",
@@ -87,6 +88,7 @@
     "name": "Interior & Exterior Painting",
     "shortName": "Painting",
     "city": "Leander, TX",
+    "leadService": "Drywall / Painting",
     "title": "Painting Contractor in Leander TX — Interior & Exterior",
     "description": "Interior and exterior painting in Leander, Cedar Park, and Georgetown TX. Full-house repaints, single rooms, cabinets, trim, and commercial spaces. Free written estimates.",
     "h1": "Interior & Exterior Painting in Leander, TX",
@@ -161,6 +163,7 @@
     "name": "Handyman & Home Repairs",
     "shortName": "Handyman Repairs",
     "city": "Leander, TX",
+    "leadService": "Handyman / Repairs",
     "title": "Handyman Services in Leander TX — Repairs & Punch Lists",
     "description": "Handyman and home repair services in Leander, Cedar Park, and Georgetown TX. Drywall, doors, trim, fixtures, mounting, and punch lists. One call, one point of contact.",
     "h1": "Handyman & Home Repair Services in Leander, TX",
@@ -236,6 +239,7 @@
     "name": "Remodeling & General Construction",
     "shortName": "Remodeling",
     "city": "Leander, TX",
+    "leadService": "Remodeling / General Construction",
     "title": "Remodeling Contractor in Leander TX — Kitchens, Baths & Additions",
     "description": "Remodeling and general construction in Leander, Cedar Park, and Georgetown TX. Kitchens, bathrooms, room additions, and full interior renovations. Owner-run, written scope, free estimates.",
     "h1": "Remodeling & General Construction in Leander, TX",
@@ -314,6 +318,7 @@
     "name": "Pressure Washing",
     "shortName": "Pressure Washing",
     "city": "Leander, TX",
+    "leadService": "Pressure Washing",
     "title": "Pressure Washing in Leander TX — Driveways, Siding & Commercial",
     "description": "Pressure washing in Leander, Cedar Park, and Georgetown TX. Driveways, sidewalks, siding, patios, parking lots, and commercial exteriors. Residential and commercial. Free estimates.",
     "h1": "Pressure Washing in Leander, TX",
@@ -376,11 +381,76 @@
     ]
   },
   {
+    "slug": "landscaping-grounds-maintenance-leander-tx",
+    "icon": "leaf",
+    "name": "Landscaping & Grounds Maintenance",
+    "shortName": "Landscaping & Grounds",
+    "city": "Leander, TX",
+    "leadService": "Landscaping / Grounds Maintenance",
+    "title": "Landscaping & Grounds Maintenance in Leander TX — Residential & Commercial",
+    "description": "Landscaping and grounds maintenance in Leander, Cedar Park and Georgetown TX. Bed cleanup, mulch, shrub trimming, mowing and edging, brush clearing and recurring commercial grounds contracts. Subcontract crews for landscape companies. Free estimates.",
+    "h1": "Landscaping & Grounds Maintenance in Leander, TX",
+    "intro": "Grounds work is about showing up on schedule. A property that gets its beds cleaned, shrubs shaped and edges cut every cycle looks cared for, and one that gets it twice a year looks forgotten. We handle one-time cleanups for homeowners and recurring grounds for HOAs, property managers and commercial sites. Landscape companies can also hire our crews as overflow or subcontract labor, working under your name on your job.",
+    "included": [
+      "Bed cleanup, weeding and fresh mulch",
+      "Shrub and hedge trimming",
+      "Mowing, edging and blowing on a recurring schedule",
+      "Brush, vine and overgrowth clearing",
+      "Seasonal leaf and debris cleanup",
+      "Small tree and limb trimming (larger trees: see tree service)",
+      "Rock, border and simple bed installs",
+      "Subcontract and overflow crews for landscape companies",
+      "Recurring grounds contracts for HOAs, multi-family, commercial and government sites"
+    ],
+    "process": [
+      [
+        "Site walk",
+        "We walk the property, or the scope sheet if you're a landscape company handing off part of a job, and confirm what 'done' looks like."
+      ],
+      [
+        "Written pricing",
+        "A one-time price for cleanups. Recurring work is priced per visit or as a monthly contract with one invoice."
+      ],
+      [
+        "Scheduled crew",
+        "The same crew returns each cycle and learns the property. Commercial clients get a set service day."
+      ],
+      [
+        "Clean finish",
+        "Clippings, debris and green waste are hauled off. Photo reports on request for managed and government properties."
+      ]
+    ],
+    "faq": [
+      [
+        "Do you work as a subcontractor for landscape companies?",
+        "Yes. We take overflow, cleanup and install labor from landscape companies and general contractors. We carry our own insurance, work under your name on your job, and never solicit your customer. Certificate of insurance on request."
+      ],
+      [
+        "Do you offer recurring grounds maintenance contracts?",
+        "Yes. HOAs, property managers, commercial owners and public agencies can set up weekly, biweekly or monthly grounds service on one invoice. We're registered for government grounds work under NIGP 98852."
+      ],
+      [
+        "Can you do a one-time yard cleanup before I list or move in?",
+        "Yes. Pre-listing and move-in cleanups are some of our most common one-time jobs: beds, shrubs, edges, debris and a pressure wash if the hardscape needs it."
+      ],
+      [
+        "Do you also handle trees?",
+        "Yes. Removals, trimming, stump grinding and storm cleanup are on our tree service page. It's the same company and the same point of contact, so trees and grounds can go on one estimate."
+      ],
+      [
+        "What area do you cover?",
+        "Leander, Cedar Park, Georgetown, Liberty Hill, Round Rock and the greater Austin area. Recurring commercial and government contracts are available further out."
+      ]
+    ],
+    "guides": []
+  },
+  {
     "slug": "facilities-maintenance-austin-tx",
     "icon": "squeegee",
     "name": "Facilities Maintenance & Janitorial",
     "shortName": "Facilities & Janitorial",
     "city": "Austin, TX",
+    "leadService": "Janitorial / Facilities Maintenance",
     "title": "Facilities Maintenance & Janitorial — Austin & Central Texas",
     "description": "Commercial facilities maintenance and janitorial services across the Austin metro. Recurring cleaning, unit turns, repairs, painting, and grounds upkeep for property managers, commercial owners, and government facilities.",
     "h1": "Facilities Maintenance & Janitorial Services in Central Texas",

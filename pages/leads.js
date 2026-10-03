@@ -145,14 +145,14 @@ Happy to help!`;
                         Pre-Written Response:
                       </h4>
                       <div style={{
-                        background: 'rgba(0,0,0,0.3)',
+                        background: 'var(--paper-2)',
                         padding: '12px',
                         borderRadius: '6px',
                         marginBottom: '12px',
                         fontSize: '13px',
                         lineHeight: '1.6',
                         whiteSpace: 'pre-wrap',
-                        color: 'rgba(255,255,255,0.9)'
+                        color: 'var(--text)'
                       }}>
                         {generateResponse(lead)}
                       </div>

@@ -94,7 +94,7 @@ function Section({ id, title, children }) {
   return (
     <section id={id} style={{ marginTop: '56px' }}>
       <h2 style={{
-        fontSize: '26px', fontWeight: 700, color: 'white',
+        fontSize: '26px', fontWeight: 700, color: 'var(--ink)',
         borderBottom: '1px solid rgba(107,120,84,.3)',
         paddingBottom: '12px', marginBottom: '24px'
       }}>{title}</h2>
@@ -150,7 +150,7 @@ function FaqItem({ q, a }) {
       borderBottom: '1px solid rgba(107,120,84,.2)',
       paddingBottom: '24px', marginBottom: '24px'
     }}>
-      <h3 style={{ fontSize: '18px', color: 'white', marginBottom: '12px', fontWeight: 600 }}>{q}</h3>
+      <h3 style={{ fontSize: '18px', color: 'var(--ink)', marginBottom: '12px', fontWeight: 600 }}>{q}</h3>
       <p style={{ color: 'var(--muted)', lineHeight: '1.8', margin: 0 }}>{a}</p>
     </div>
   );
@@ -229,7 +229,7 @@ export default function WhatsMyHomeWorth() {
             <a
               href="#valuation-form"
               style={{
-                background: 'var(--accent)', color: 'white', padding: '14px 28px',
+                background: 'var(--accent)', color: '#fff', padding: '14px 28px',
                 borderRadius: '8px', textDecoration: 'none', fontWeight: 700,
                 fontSize: '16px', display: 'inline-block'
               }}
@@ -283,7 +283,7 @@ export default function WhatsMyHomeWorth() {
                 ))}
               </div>
               <Callout>
-                <strong style={{ color: 'white' }}>2026 context:</strong> The Federal Reserve's rate trajectory and continued Austin-area job growth are sustaining buyer demand in Leander even as affordability tightens. The window for sellers is real — but pricing accuracy matters more than ever. A local CMA is your most reliable tool.
+                <strong style={{ color: 'var(--ink)' }}>2026 context:</strong> The Federal Reserve's rate trajectory and continued Austin-area job growth are sustaining buyer demand in Leander even as affordability tightens. The window for sellers is real — but pricing accuracy matters more than ever. A local CMA is your most reliable tool.
               </Callout>
             </Section>
 
@@ -293,12 +293,12 @@ export default function WhatsMyHomeWorth() {
                 No two homes are valued the same way, even on the same street. Here are the primary factors Joe analyzes when preparing your CMA:
               </p>
 
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>Location and Neighborhood</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>Location and Neighborhood</h3>
               <p style={{ color: 'var(--muted)', lineHeight: '1.8', marginBottom: '20px' }}>
                 Within Leander, neighborhood matters enormously. Travisso commands a premium for its Hill Country views and resort-style amenities. Crystal Falls appeals to families with its golf course and walkability. Newer master-planned communities like Bryson and Northline attract buyers wanting modern construction. The same square footage can differ by $50,000–$100,000 depending on which community it sits in.
               </p>
 
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>Condition and Upgrades</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>Condition and Upgrades</h3>
               <CheckList items={[
                 'Updated kitchen (countertops, cabinets, appliances) — typically adds 3–7% to value',
                 'Primary bath renovation — buyers pay a premium for spa-style primary suites',
@@ -309,20 +309,20 @@ export default function WhatsMyHomeWorth() {
                 'Outdoor living — covered patios, pergolas, and pools add measurable value in Leander',
               ]} />
 
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>MUD District Status</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>MUD District Status</h3>
               <p style={{ color: 'var(--muted)', lineHeight: '1.8', marginBottom: '16px' }}>
                 MUD districts are a significant consideration for buyers in Leander. Homes without a MUD (or with a very low MUD rate) are worth more all else equal — because buyers are calculating their total monthly housing cost. A home that costs $400/year less in MUD taxes over 30 years represents significant savings. Joe accounts for MUD status in every CMA.
               </p>
               <Callout>
-                <strong style={{ color: 'white' }}>MUD example:</strong> Two identical $450,000 homes — one in a MUD at 0.35% ($1,575/yr extra) vs. one without. The no-MUD home is worth approximately $12,000–$18,000 more to a cost-conscious buyer, even at the same list price.
+                <strong style={{ color: 'var(--ink)' }}>MUD example:</strong> Two identical $450,000 homes — one in a MUD at 0.35% ($1,575/yr extra) vs. one without. The no-MUD home is worth approximately $12,000–$18,000 more to a cost-conscious buyer, even at the same list price.
               </Callout>
 
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>School Zoning</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>School Zoning</h3>
               <p style={{ color: 'var(--muted)', lineHeight: '1.8', marginBottom: '20px' }}>
                 All of Leander falls within Leander ISD, one of the top-rated districts in the Austin metro. However, specific elementary and middle school feeder patterns matter — families often pay a premium to be zoned to certain campuses. Joe knows the school zoning boundaries and how they affect buyer demand in each neighborhood.
               </p>
 
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>Lot and Setting</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>Lot and Setting</h3>
               <CheckList items={[
                 'Greenbelt or creek backing — typically adds 3–8% over interior lots',
                 'Cul-de-sac location — reduced traffic, popular with families, slight premium',
@@ -350,19 +350,19 @@ export default function WhatsMyHomeWorth() {
                   <div key={step} className="card" style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
                     <div style={{
                       width: '40px', height: '40px', borderRadius: '50%',
-                      background: 'var(--accent)', color: 'white',
+                      background: 'var(--accent)', color: '#fff',
                       display: 'flex', alignItems: 'center', justifyContent: 'center',
                       fontWeight: 700, fontSize: '16px', flexShrink: 0
                     }}>{step}</div>
                     <div>
-                      <h4 style={{ color: 'white', margin: '0 0 6px', fontSize: '16px', fontWeight: 600 }}>{title}</h4>
+                      <h4 style={{ color: 'var(--ink)', margin: '0 0 6px', fontSize: '16px', fontWeight: 600 }}>{title}</h4>
                       <p style={{ color: 'var(--muted)', margin: 0, lineHeight: '1.6', fontSize: '14px' }}>{desc}</p>
                     </div>
                   </div>
                 ))}
               </div>
               <Callout>
-                <strong style={{ color: 'white' }}>About Joe:</strong> Joe Sanches is a licensed Texas Realtor serving Leander, Cedar Park, Liberty Hill, and the greater Austin area. He is a veteran and specializes in helping homeowners understand their equity position and maximize their proceeds when they're ready to sell. He lives in the Leander market, knows the neighborhoods, and provides straight answers.
+                <strong style={{ color: 'var(--ink)' }}>About Joe:</strong> Joe Sanches is a licensed Texas Realtor serving Leander, Cedar Park, Liberty Hill, and the greater Austin area. He is a veteran and specializes in helping homeowners understand their equity position and maximize their proceeds when they're ready to sell. He lives in the Leander market, knows the neighborhoods, and provides straight answers.
               </Callout>
             </Section>
 
@@ -382,9 +382,9 @@ export default function WhatsMyHomeWorth() {
                       type="text"
                       placeholder="First and last name"
                       style={{
-                        width: '100%', background: 'rgba(255,255,255,.06)',
+                        width: '100%', background: 'var(--card)',
                         border: '1px solid rgba(107,120,84,.35)', borderRadius: '8px',
-                        padding: '12px 14px', color: 'white', fontSize: '15px',
+                        padding: '12px 14px', color: 'var(--ink)', fontSize: '15px',
                         outline: 'none', boxSizing: 'border-box'
                       }}
                     />
@@ -397,9 +397,9 @@ export default function WhatsMyHomeWorth() {
                       type="text"
                       placeholder="Street address, Leander TX"
                       style={{
-                        width: '100%', background: 'rgba(255,255,255,.06)',
+                        width: '100%', background: 'var(--card)',
                         border: '1px solid rgba(107,120,84,.35)', borderRadius: '8px',
-                        padding: '12px 14px', color: 'white', fontSize: '15px',
+                        padding: '12px 14px', color: 'var(--ink)', fontSize: '15px',
                         outline: 'none', boxSizing: 'border-box'
                       }}
                     />
@@ -412,9 +412,9 @@ export default function WhatsMyHomeWorth() {
                       type="email"
                       placeholder="your@email.com"
                       style={{
-                        width: '100%', background: 'rgba(255,255,255,.06)',
+                        width: '100%', background: 'var(--card)',
                         border: '1px solid rgba(107,120,84,.35)', borderRadius: '8px',
-                        padding: '12px 14px', color: 'white', fontSize: '15px',
+                        padding: '12px 14px', color: 'var(--ink)', fontSize: '15px',
                         outline: 'none', boxSizing: 'border-box'
                       }}
                     />
@@ -429,7 +429,7 @@ export default function WhatsMyHomeWorth() {
                   href="mailto:hello@joefsanches.com?subject=Home%20Valuation%20Request&body=Name%3A%0AAddress%3A%0AEmail%3A%0APhone%3A%0ABest%20time%20to%20call%3A"
                   style={{
                     display: 'block', width: '100%', textAlign: 'center',
-                    background: 'var(--accent)', color: 'white', padding: '16px',
+                    background: 'var(--accent)', color: '#fff', padding: '16px',
                     borderRadius: '8px', textDecoration: 'none', fontWeight: 700,
                     fontSize: '17px', boxSizing: 'border-box'
                   }}
@@ -478,7 +478,7 @@ export default function WhatsMyHomeWorth() {
                 href="mailto:hello@joefsanches.com?subject=Home%20Valuation%20Request&body=Name%3A%0AAddress%3A%0AEmail%3A%0APhone%3A%0ABest%20time%20to%20call%3A"
                 style={{
                   display: 'block', textAlign: 'center', background: 'var(--accent)',
-                  color: 'white', padding: '13px', borderRadius: '8px',
+                  color: '#fff', padding: '13px', borderRadius: '8px',
                   textDecoration: 'none', fontWeight: 700, fontSize: '15px', marginBottom: '12px'
                 }}
               >
@@ -515,7 +515,7 @@ export default function WhatsMyHomeWorth() {
 
         {/* Bottom CTA */}
         <div className="card" style={{ marginTop: '60px', textAlign: 'center', padding: '48px 32px' }}>
-          <h2 style={{ color: 'white', fontSize: '28px', marginBottom: '12px' }}>
+          <h2 style={{ color: 'var(--ink)', fontSize: '28px', marginBottom: '12px' }}>
             Ready to Know Your Home's Value?
           </h2>
           <p style={{ color: 'var(--muted)', marginBottom: '28px', lineHeight: '1.7', maxWidth: '560px', margin: '0 auto 28px' }}>
@@ -525,7 +525,7 @@ export default function WhatsMyHomeWorth() {
             <a
               href="mailto:hello@joefsanches.com?subject=Home%20Valuation%20Request&body=Name%3A%0AAddress%3A%0AEmail%3A%0APhone%3A%0ABest%20time%20to%20call%3A"
               style={{
-                background: 'var(--accent)', color: 'white', padding: '15px 32px',
+                background: 'var(--accent)', color: '#fff', padding: '15px 32px',
                 borderRadius: '8px', textDecoration: 'none', fontWeight: 700, fontSize: '16px'
               }}
             >
