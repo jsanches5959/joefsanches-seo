@@ -87,6 +87,34 @@ const FAQ = [
   ],
 ];
 
+const GUIDES = [
+  ['tree-removal-cost-leander-tx', 'How much tree removal costs in Leander'],
+  ['stump-grinding-cost-leander-cedar-park', 'Stump grinding cost, and when to leave the stump'],
+  ['tree-trimming-cost-cedar-park-tx', 'Tree trimming cost in Cedar Park and Leander'],
+  ['when-to-trim-oak-trees-central-texas', 'When to trim oaks: the oak wilt rules'],
+  ['live-oak-trimming-central-texas', 'Live oak trimming done right'],
+  ['tree-removal-permit-leander-cedar-park-austin', 'Do I need a permit to remove a tree?'],
+  ['hoa-tree-removal-rules-leander-tx', 'Getting HOA approval for tree removal'],
+  ['emergency-tree-removal-leander-tx', 'Emergency tree removal after a storm'],
+  ['tree-fell-on-house-texas-insurance', 'Tree fell on your house: who pays?'],
+  ['tree-near-power-lines-texas', 'Tree touching power lines: who to call'],
+  ['signs-tree-is-dying-central-texas', '9 signs a tree is dying'],
+  ['hypoxylon-canker-oak-trees-texas', 'Bark peeling off your oak? Hypoxylon canker'],
+  ['cedar-tree-removal-ashe-juniper-leander', 'Cedar (Ashe juniper) removal'],
+  ['hackberry-tree-removal-texas', 'Should that hackberry go?'],
+  ['lot-clearing-cost-leander-tx', 'Lot and brush clearing cost'],
+  ['wildfire-defensible-space-trees-hill-country', 'Wildfire defensible space around your home'],
+  ['neighbor-tree-branches-overhanging-texas-law', "Neighbor's tree over your yard: Texas rules"],
+  ['tree-roots-foundation-damage-texas', 'Tree roots and your foundation'],
+  ['best-time-to-remove-trees-central-texas', 'Best time of year for tree work'],
+  ['how-to-choose-tree-service-leander', '10 questions to ask a tree service'],
+  ['tree-work-before-selling-house-texas', 'Tree work before selling your house'],
+  ['tree-removal-cedar-park-tx', 'Tree removal in Cedar Park'],
+  ['tree-removal-georgetown-tx', 'Tree removal in Georgetown'],
+  ['tree-removal-liberty-hill-tx', 'Tree removal and cedar clearing in Liberty Hill'],
+  ['tree-service-round-rock-tx', 'Tree service in Round Rock'],
+];
+
 const AREAS = ['Leander', 'Cedar Park', 'Georgetown', 'Liberty Hill', 'Round Rock', 'Hutto', 'Pflugerville', 'Austin'];
 
 const serviceSchema = {
@@ -219,6 +247,11 @@ const css = `
   .tr-areas { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
   .tr-areas span { background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: 9px 15px; font-weight: 700; color: var(--ink); font-size: 15px; }
 
+  .tr-guides { list-style: none; padding: 0; margin: 28px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .tr-guides a { display: block; height: 100%; padding: 14px 16px; background: #fff; border: 1px solid var(--line); border-radius: 8px; color: var(--ink) !important; font-weight: 700; font-size: 15px; }
+  .tr-guides a:hover { border-color: var(--leaf); color: var(--leaf-ink) !important; }
+  @media (max-width: 960px) { .tr-guides { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 640px) { .tr-guides { grid-template-columns: 1fr; } }
   .tr-final { text-align: center; }
   .tr-final .tr-lead { margin: 0 auto 26px; }
   .tr-final .tr-ctas { justify-content: center; }
@@ -426,6 +459,18 @@ export default function TreeService() {
             <div className="tr-areas" aria-label="Service area">
               {AREAS.map((a) => <span key={a}>{a}</span>)}
             </div>
+          </div>
+        </section>
+
+        <section className="tr-sec">
+          <div className="tr-w">
+            <span className="tr-kicker">Tree guides</span>
+            <h2 className="tr-h2">Straight answers before you hire anyone.</h2>
+            <ul className="tr-guides">
+              {GUIDES.map(([slug, label]) => (
+                <li key={slug}><a href={`/posts/${slug}`}>{label} →</a></li>
+              ))}
+            </ul>
           </div>
         </section>
 
