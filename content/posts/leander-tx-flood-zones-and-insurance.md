@@ -1,5 +1,7 @@
 ---
-title: "leander tx flood zones and insurance"
+title: "Leander TX Flood Zones and Insurance: What Every Buyer Needs to Know"
+description: "Which parts of Leander carry real flood risk, how to check a specific home on the FEMA map, what flood insurance costs, and red flags to spot on a tour."
+seoTitle: "Leander TX Flood Zones & Flood Insurance: A Buyer's Guide"
 slug: leander-tx-flood-zones-and-insurance
 date: 2026-03-07T08:05:00.000Z
 ---

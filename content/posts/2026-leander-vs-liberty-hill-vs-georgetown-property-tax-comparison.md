@@ -1,5 +1,7 @@
 ---
 title: "2026 Leander vs. Liberty Hill vs. Georgetown: Property Tax Comparison"
+description: "2026 property tax rates for Leander, Liberty Hill and Georgetown side by side: the taxing entities, MUDs, and what each means for your monthly payment."
+seoTitle: "Leander vs Liberty Hill vs Georgetown Property Tax Rates 2026"
 slug: 2026-leander-vs-liberty-hill-vs-georgetown-property-tax-comparison
 date: 2026-03-04T14:01:51.618Z
 ---

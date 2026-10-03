@@ -1,5 +1,7 @@
 ---
-title: "leander tx commute to austin"
+title: "Leander TX Commute to Austin: What to Expect Before You Buy"
+description: "How long the Leander to Austin commute really takes, when the 183A toll road is worth it, how MetroRail fits in, and which subdivisions commute best."
+seoTitle: "Leander to Austin Commute: Real Drive Times, 183A & MetroRail"
 slug: leander-tx-commute-to-austin
 date: 2026-03-07T08:01:00.000Z
 ---
