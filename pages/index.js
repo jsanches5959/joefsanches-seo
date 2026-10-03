@@ -188,40 +188,6 @@ const css = `
     border-radius: 10px; padding: clamp(22px, 4vw, 40px);
     box-shadow: 0 18px 50px rgba(22,24,15,.07);
   }
-  /* Jobber ships its own light styles; these hold the brand and the 16px
-     input floor that stops iOS zooming on focus. */
-  .jobber-wrap input:not([type=submit]):not([type=button]),
-  .jobber-wrap select,
-  .jobber-wrap textarea {
-    font-size: 16px !important;
-    border-radius: 6px !important;
-  }
-  .jobber-wrap button,
-  .jobber-wrap input[type=submit] {
-    background: var(--gold) !important; color: var(--ink) !important;
-    border: none !important; border-radius: 6px !important;
-    font-weight: 900 !important; font-size: 15px !important;
-    letter-spacing: 0.06em !important; text-transform: uppercase !important;
-    padding: 15px 28px !important; cursor: pointer;
-  }
-  .jf-state { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 28px 8px; font-size: 16px; color: var(--muted); }
-  .jf-spinner {
-    width: 16px; height: 16px; border-radius: 50%;
-    border: 2px solid var(--line-2); border-top-color: var(--gold);
-    animation: jfspin .8s linear infinite;
-  }
-  @keyframes jfspin { to { transform: rotate(360deg); } }
-  .jf-failed { flex-direction: column; text-align: center; gap: 8px; padding: 22px 8px 6px; }
-  .jf-failed-title { font-size: 18px; font-weight: 800; color: var(--ink); }
-  .jf-failed-body { font-size: 16px; color: var(--text); line-height: 1.7; max-width: 46ch; }
-  .jf-failed-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 14px; }
-  .jf-btn {
-    display: inline-block; padding: 13px 22px; border-radius: 6px;
-    border: 1.5px solid var(--ink); color: var(--ink) !important;
-    font-size: 13px; font-weight: 900; letter-spacing: .06em; text-transform: uppercase;
-  }
-  .jf-btn.primary { background: var(--gold); border-color: var(--gold); }
-
   /* ── THE NAME ── */
   .name-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
   .does-list { list-style: none; border-top: 1px solid var(--line); }
@@ -687,7 +653,7 @@ export default function Home() {
             </div>
             <div className="who-item b2b">
               <strong>Landscape companies &amp; GCs</strong>
-              <p>Subcontract crews for tree removal, grounds, drywall, paint and finish work. We carry our own insurance, work under your name on your job, and never go around you to your client.</p>
+              <p>Crews for tree removal, grounds, drywall, paint and finish work. We work under your name on your job and never go around you to your client.</p>
             </div>
             <div className="who-item b2b">
               <strong>Property managers &amp; HOAs</strong>
@@ -843,7 +809,7 @@ export default function Home() {
             <div>
               <div className="inq gold">
                 <h4>Subcontract &amp; vendor partnerships</h4>
-                <p>Landscape companies, GCs, builders and property managers: crews for trees, grounds, finish work and turns. Certificate of insurance on request.</p>
+                <p>Landscape companies, GCs, builders and property managers: crews for trees, grounds, finish work and turns, on one invoice.</p>
                 <a href="mailto:hello@joefsanches.com?subject=Subcontract%20%2F%20Vendor%20Partnership%20%E2%80%94%20Sanches%20Group&body=Company%3A%0AType%20of%20work%3A%0ALocation(s)%3A%0AStart%20date%20%2F%20frequency%3A%0A" className="inq-btn">Discuss a Contract →</a>
               </div>
               <div className="inq">

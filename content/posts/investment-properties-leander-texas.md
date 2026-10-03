@@ -32,13 +32,13 @@ Understanding the local neighborhoods is crucial when searching for investment p
 
 A master-planned community with scenic parks, a private golf course, and community pools, Crystal Falls appeals to families and professionals alike. The neighborhood’s amenities and well-maintained homes make it a strong choice for rental properties targeting middle to upper-middle income tenants.
 
-### 2. **Teravista**
+### 2. **Block House Creek**
 
-Bordering Georgetown and Leander, Teravista is known for its golf course community and serene environment. Investment properties here tend to attract long-term renters seeking a suburban lifestyle close to urban conveniences.
+An established 1990s neighborhood with no MUD and one of the lowest combined tax rates in the area (about 2.18%). Lower taxes help cash flow, and the mature, move-in-ready housing stock and Leander ISD zoning keep long-term rental demand steady.
 
-### 3. **Sun City Texas**
+### 3. **Sun City Texas (Georgetown)**
 
-While technically a 55+ community, Sun City Texas offers unique opportunities for investors interested in senior housing and vacation rental markets.
+A 55+ community in nearby Georgetown, Sun City Texas offers unique opportunities for investors interested in senior housing and vacation rental markets.
 
 ### 4. **Downtown Leander**
 

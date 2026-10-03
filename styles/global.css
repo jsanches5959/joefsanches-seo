@@ -310,3 +310,41 @@ body::before{
     max-width: none;
   }
 }
+
+/* ── Jobber estimate form ──
+   The one form on the site: every estimate request goes straight into
+   Jobber. Jobber ships its own light styles; these hold the brand colours
+   and the 16px input floor that stops iOS zooming on focus, plus the
+   loading and failed states drawn by components/JobberForm.js. */
+.jobber-wrap input:not([type=submit]):not([type=button]),
+.jobber-wrap select,
+.jobber-wrap textarea {
+  font-size: 16px !important;
+  border-radius: 6px !important;
+}
+.jobber-wrap button,
+.jobber-wrap input[type=submit] {
+  background: var(--gold) !important; color: var(--ink) !important;
+  border: none !important; border-radius: 6px !important;
+  font-weight: 900 !important; font-size: 15px !important;
+  letter-spacing: 0.06em !important; text-transform: uppercase !important;
+  padding: 15px 28px !important; cursor: pointer;
+}
+.jf-state { display: flex; align-items: center; justify-content: center; gap: 12px; padding: 28px 8px; font-size: 16px; color: var(--muted); }
+.jf-spinner {
+  width: 16px; height: 16px; border-radius: 50%;
+  border: 2px solid var(--line-2); border-top-color: var(--gold);
+  animation: jfspin .8s linear infinite;
+}
+@keyframes jfspin { to { transform: rotate(360deg); } }
+.jf-failed { flex-direction: column; text-align: center; gap: 8px; padding: 22px 8px 6px; }
+.jf-failed-title { font-size: 18px; font-weight: 800; color: var(--ink); }
+.jf-failed-body { font-size: 16px; color: var(--text); line-height: 1.7; max-width: 46ch; }
+.jf-failed-actions { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 14px; }
+.jf-btn {
+  display: inline-block; padding: 13px 22px; border-radius: 6px;
+  border: 1.5px solid var(--ink); color: var(--ink) !important;
+  font-size: 13px; font-weight: 900; letter-spacing: .06em; text-transform: uppercase;
+}
+.jf-btn.primary { background: var(--gold); border-color: var(--gold); }
+

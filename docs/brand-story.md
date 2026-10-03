@@ -39,11 +39,10 @@ Real estate is **one more thing the same name looks after, not the headline**.
 
 Lead with the division they need and the vendor promises:
 
-1. We carry our own insurance (COI on request).
-2. We work under your name, on your job.
-3. We never solicit your customer.
-4. One invoice for recurring work.
-5. Texas HUB · SDVOSB · SAM.gov, if they have supplier-diversity goals.
+1. We work under your name, on your job.
+2. We never solicit your customer.
+3. One invoice for recurring work.
+4. Texas HUB · SDVOSB · SAM.gov, if they have supplier-diversity goals.
 
 Send them `joefsanches.com/trees` for tree work, or the homepage's **Who we work for** section. Don't send them the realtor page.
 
@@ -54,4 +53,4 @@ Send them `joefsanches.com/trees` for tree work, or the homepage's **Who we work
 
 ## Voice
 
-Plain, direct, first person where it's Joe talking. Promise only what's true now: written quotes, cleanup, one point of contact, insured, veteran-owned. Don't claim certifications or licenses the company doesn't hold. Trade work outside the company's own licenses goes through licensed partners, and the site says so.
+Plain, direct, first person where it's Joe talking. Promise only what's true now: written quotes, cleanup, one point of contact, veteran-owned. Don't claim insurance on tree work. Don't claim certifications or licenses the company doesn't hold. Trade work outside the company's own licenses goes through licensed partners, and the site says so.

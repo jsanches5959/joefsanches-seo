@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import LeadForm from '../components/LeadForm';
+import JobberForm from '../components/JobberForm';
 import ToolIcon from '../components/ToolIcon';
 
 /**
@@ -79,7 +79,7 @@ const FAQ = [
   ],
   [
     'Do you work for HOAs, property managers and landscape companies?',
-    'Yes. We handle common-area trees, recurring trimming and storm cleanup for HOAs and managed properties, and take tree work as a subcontractor for landscape companies and general contractors. We carry our own insurance and never solicit your customer. Certificate of insurance on request.',
+    'Yes. We handle common-area trees, recurring trimming and storm cleanup for HOAs and managed properties, and take tree work for landscape companies and general contractors. We work under your name on your job and never solicit your customer.',
   ],
   [
     'What areas do you cover?',
@@ -257,14 +257,14 @@ export default function TreeService() {
         <title>Tree Removal &amp; Trimming in Leander, TX | Free Quotes | Sanches Group</title>
         <meta
           name="description"
-          content="Joe does trees. Tree removal, trimming, stump grinding and storm cleanup in Leander, Cedar Park, Georgetown and Austin. Insured, veteran-owned, written quotes, full cleanup. Text a photo for a free quote: 512-663-8867."
+          content="Joe does trees. Tree removal, trimming, stump grinding and storm cleanup in Leander, Cedar Park, Georgetown and Austin. Veteran-owned, written quotes, full cleanup. Text a photo for a free quote: 512-663-8867."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={url} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Sanches Group" />
         <meta property="og:title" content="Joe does trees. Tree removal & trimming in Leander, TX" />
-        <meta property="og:description" content="Removals, trimming, stump grinding and storm cleanup. Insured, veteran-owned, full cleanup. Text a photo for a free quote: 512-663-8867." />
+        <meta property="og:description" content="Removals, trimming, stump grinding and storm cleanup. Veteran-owned, written quotes, full cleanup. Text a photo for a free quote: 512-663-8867." />
         <meta property="og:url" content={url} />
         <meta property="og:image" content={`${baseUrl}/logo.png`} />
         <meta name="twitter:card" content="summary" />
@@ -302,7 +302,7 @@ export default function TreeService() {
                 <a href="sms:5126638867" className="tr-btn line">Text a Photo</a>
               </div>
               <ul className="tr-checks">
-                <li>Fully insured</li>
+                <li>One point of contact</li>
                 <li>Veteran-owned</li>
                 <li>Written price up front</li>
                 <li>Full cleanup &amp; haul-off</li>
@@ -313,12 +313,8 @@ export default function TreeService() {
 
             <div className="tr-form" id="quote">
               <h2>Free tree quote</h2>
-              <p>Usually answered the same day. A photo by text is the fastest way to a price.</p>
-              <LeadForm
-                compact
-                defaultService="Tree Removal / Trimming"
-                placeholder="Address, how many trees, roughly how tall, and what's near them (house, fence, power lines)."
-              />
+              <p>Tell us the address, how many trees and what&apos;s near them. Usually answered the same day, and a photo by text is the fastest way to a price.</p>
+              <JobberForm />
             </div>
           </div>
         </header>
@@ -394,8 +390,8 @@ export default function TreeService() {
                   tree crew.
                 </p>
                 <p>
-                  We carry our own insurance, work under your name on your job, and never go
-                  around you to your client.
+                  We work under your name on your job, and never go around you to your
+                  client.
                 </p>
                 <a
                   href="mailto:hello@joefsanches.com?subject=Tree%20Service%20%E2%80%94%20Vendor%20%2F%20Subcontract%20Inquiry&body=Company%3A%0AProperty%20or%20job%20location(s)%3A%0AScope%20(removals%2C%20trimming%2C%20recurring)%3A%0ATimeline%3A%0A"
@@ -405,7 +401,7 @@ export default function TreeService() {
                 </a>
               </div>
               <ul>
-                <li>Certificate of insurance on request</li>
+                <li>Written scope and price before work starts</li>
                 <li>One invoice for recurring work</li>
                 <li>Photo reports for managed properties</li>
                 <li>Texas HUB · SDVOSB · SAM.gov registered</li>
@@ -450,7 +446,7 @@ export default function TreeService() {
         <footer className="tr-foot">
           <p><strong>Sanches Group Tree Service</strong> · Joe Sanches LLC · Leander, Texas</p>
           <p><a href="tel:5126638867">512-663-8867</a> · <a href="mailto:hello@joefsanches.com">hello@joefsanches.com</a></p>
-          <p>Service-disabled veteran-owned · Fully insured</p>
+          <p>Service-disabled veteran-owned · Written quotes · Full cleanup</p>
           <p style={{ marginTop: '14px' }}>
             Trees are one part of it. <a href="/">Joe does the whole property →</a>
           </p>

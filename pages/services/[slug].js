@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import Head from 'next/head';
 import Link from 'next/link';
-import LeadForm from '../../components/LeadForm';
+import JobberForm from '../../components/JobberForm';
 import ToolIcon from '../../components/ToolIcon';
 
 const baseUrl = 'https://joefsanches.com';
@@ -150,11 +150,11 @@ export default function Service({ service, others }) {
           <section id="quote">
             <h2>Get a free estimate</h2>
             <div className="svc-form">
-              <LeadForm
-                blurb={`Tell us about your ${service.shortName.toLowerCase()} job — a photo helps. We read every one and usually reply the same day.`}
-                compact
-                defaultService={service.leadService}
-              />
+              <p className="svc-form-blurb">
+                Tell us about your {service.shortName.toLowerCase()} job. A photo helps. We read every
+                request and usually reply the same day.
+              </p>
+              <JobberForm />
             </div>
           </section>
 
@@ -267,6 +267,7 @@ export default function Service({ service, others }) {
         .svc-faq h3 { font-size:17px; font-weight:700; color:var(--sg-white); margin:0 0 8px; }
         .svc-faq p { margin:0; color:var(--sg-text); font-size:15px; line-height:1.75; }
         .svc-form { background:var(--sg-card); border:1px solid var(--sg-div); border-top:4px solid var(--sg-gold); padding:28px; border-radius:10px; box-shadow:0 16px 44px rgba(22,24,15,.07); }
+        .svc-form-blurb { font-size:16px; color:var(--sg-text); line-height:1.7; margin:0 0 18px; }
         .svc-guide-lead { font-size:15px; color:var(--sg-muted); line-height:1.75; margin:0 0 18px; max-width:64ch; }
         .svc-guides { list-style:none; padding:0; margin:0; border-top:1px solid var(--sg-div); }
         .svc-guides li { border-bottom:1px solid var(--sg-div); }

@@ -13,11 +13,11 @@ When considering a move to the Greater Austin area, one of the most common quest
 
 ## Understanding Leander ISD: A Snapshot of the Community and Schools
 
-Leander ISD serves a rapidly growing population across portions of Leander, Cedar Park, and northwest Austin. The district includes numerous elementary, middle, and high schools that serve diverse neighborhoods such as **Serene Hills**, **Crystal Falls**, **Teravista**, and **Great Oaks**. While specific school ratings fluctuate and are available on state and third-party sites, understanding the district’s overall environment, culture, and offerings is critical for families.
+Leander ISD serves a rapidly growing population across portions of Leander, Cedar Park, and northwest Austin. The district includes numerous elementary, middle, and high schools that serve diverse neighborhoods such as **Crystal Falls**, **Travisso**, **Twin Creeks** and **Brushy Creek**. While specific school ratings fluctuate and are available on state and third-party sites, understanding the district’s overall environment, culture, and offerings is critical for families.
 
 ### What Makes Leander ISD Stand Out?
 
-- **Strong Community Engagement:** Leander ISD benefits from active parent involvement and community partnerships. Local businesses like **Element Salon & Spa** in downtown Leander and family-friendly spots like **Starbucks on Main Street** often host school fundraisers and events.
+- **Strong Community Engagement:** Leander ISD benefits from active parent involvement, booster clubs and local business partnerships that support school fundraisers and events.
 - **Diverse Educational Programs:** The district offers various programs including STEM initiatives, fine arts, and athletics, catering to a wide range of student interests and talents.
 - **Safety and Facilities:** Many schools in Leander ISD have invested in upgraded facilities and security measures to create a safe, welcoming environment for students.
 
@@ -27,21 +27,21 @@ Leander ISD serves a rapidly growing population across portions of Leander, Ceda
 
 When asking “Is Leander ISD a good school district?” it’s important to consider the neighborhoods you’re exploring. Different areas within the district offer unique advantages:
 
-### Serene Hills
+### Travisso
 
-Nestled on the western edge of Leander, Serene Hills is popular for its scenic Hill Country views, hiking trails, and access to schools like **Serene Hills Elementary**. Families enjoy local amenities such as the **Serene Hills Community Pool** and access to nearby parks.
+On the Cedar Park side of the Leander area, Travisso is zoned to Leander ISD schools including Cc Mason Elementary, Running Brushy Middle and Leander High School. Families get Hill Country views, a resort pool and trails.
 
 ### Crystal Falls
 
-Crystal Falls offers a family-friendly atmosphere with easy access to **Crystal Falls Elementary** and **Lilly Drive Middle School**. This neighborhood features community pools, playgrounds, and is close to retail hubs like **Leander Crossing** shopping center.
+Crystal Falls offers a family-friendly atmosphere with pools, trails and a golf course, and generally feeds schools including Whitestone Elementary, Leander Middle and Leander High School.
 
-### Teravista
+### Twin Creeks
 
-Located in the Cedar Park portion of Leander ISD, Teravista is a golf course community with a mix of housing styles. The neighborhood’s proximity to **Teravista Elementary** and **Cedar Park High School** makes it a sought-after area for families.
+A Cedar Park golf course community with a mix of housing styles, generally zoned to Cc Mason Elementary, Running Brushy Middle and Leander High School.
 
-### Great Oaks
+### Brushy Creek
 
-This established Leander neighborhood provides a suburban feel with mature trees and parks. Schools such as **Cambridge Elementary** and **Rouse High School** serve this area, with local favorites like **Great Oaks Park** providing recreational opportunities.
+This established, MUD-governed Cedar Park community has mature trees and one of the best park systems in Williamson County. It generally feeds Cypress Elementary, Cedar Park Middle and Cedar Park High School.
 
 ---
 
@@ -76,7 +76,7 @@ As someone who lives and works here, I’ve learned valuable tips that go beyond
 
 ## Comparing Leander ISD to Neighboring Districts: Cedar Park and Austin
 
-While Leander ISD is known for its family-friendly environment, some buyers also consider **Cedar Park ISD** or **Round Rock ISD**. Here’s how Leander ISD holds its own:
+While Leander ISD is known for its family-friendly environment, some buyers also consider **Round Rock ISD** or **Georgetown ISD** (Cedar Park has no district of its own; most of it is in Leander ISD). Here’s how Leander ISD holds its own:
 
 - **More Affordable Housing:** Neighborhoods zoned for Leander ISD often provide better value compared to Cedar Park, especially for larger lot sizes.
 - **Community Feel:** Leander ISD communities tend to have a more suburban, small-town charm compared to the denser urban feel of Austin ISD.

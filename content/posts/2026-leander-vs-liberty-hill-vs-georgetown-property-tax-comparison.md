@@ -31,7 +31,7 @@ Each community has a unique tax rate structure influenced by its growth, public 
 
 ### Leander Property Taxes: Balancing Growth and Services
 
-Leander, located just northwest of Austin, has experienced explosive growth over the past decade. Its proximity to tech hubs and family-friendly neighborhoods like Crystal Falls and Teravista make it a top pick for buyers.
+Leander, located just northwest of Austin, has experienced explosive growth over the past decade. Its proximity to tech hubs and family-friendly neighborhoods like Crystal Falls and Bryson make it a top pick for buyers.
 
 - **2026 Estimated Tax Rate:** Around 2.4% to 2.6% (varies by neighborhood)
 - **Local Taxing Entities:** Leander ISD (Independent School District), Williamson County, Leander city services, and various utility districts.
@@ -62,7 +62,7 @@ Understanding city-wide rates is helpful, but the impact on your wallet often de
 ### Leander Neighborhoods
 
 - **Crystal Falls:** Higher-end homes with HOA fees and MUD taxes factor into overall costs.
-- **Teravista:** Golf course community with moderate tax rates but additional special district fees.
+- **Bryson:** Newer master-planned community with a MUD, so a higher combined rate (about 2.47%).
 
 ### Liberty Hill Neighborhoods
 

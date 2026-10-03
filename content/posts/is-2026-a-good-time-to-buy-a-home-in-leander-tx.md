@@ -20,7 +20,7 @@ Leander is more than just a suburb of Austin—it’s a community with its own u
 Leander continues to experience steady growth, driven by:
 
 - **Proximity to Austin:** Easy access to downtown Austin via highways and commuter rails makes Leander a practical choice for professionals.
-- **New Developments:** Neighborhoods like Crystal Falls, Rough Hollow, and Bagdad Ranch offer a variety of modern homes, from single-family houses to townhomes.
+- **New Developments:** Neighborhoods like Crystal Falls, Bryson and Northline offer a variety of modern homes, from single-family houses to townhomes.
 - **Community Amenities:** Parks, trails, and family-oriented events such as Leander’s annual Founders Day Festival foster a strong sense of community.
 
 These factors contribute to sustained demand, which often means that well-priced homes move quickly.
@@ -76,8 +76,8 @@ Given the ongoing expansion of the Austin metro area, Leander’s properties are
 ### Neighborhood Highlights to Explore
 
 - **Crystal Falls:** Known for its resort-style amenities and family-friendly vibe.
-- **Rough Hollow:** Offers beautiful hill country views and access to Lake Travis.
-- **Stewart Ranch:** A newer community with energy-efficient homes and green spaces.
+- **Horizon Lake:** Rolling Hill Country terrain on the west side of Leander, about 20 minutes from Lake Travis.
+- **Deerbrooke:** A newer Meritage Homes community with energy-efficient homes and green spaces.
 
 Each neighborhood has its own character and price points to fit diverse buyer needs.
 

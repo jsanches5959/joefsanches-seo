@@ -22,7 +22,7 @@ Leander is best described as an **emerging affluent community** with pockets of 
 
 Key factors contributing to Leander’s economic profile include:
 
-- **New master-planned communities** like Crystal Falls and Teravista, featuring luxury homes, golf courses, and resort-style amenities.
+- **Upscale master-planned communities** like Crystal Falls in Leander and Travisso just across the Cedar Park line, featuring larger homes, golf, Hill Country views and resort-style amenities.
 - **Proximity to major employers** in Austin’s tech and healthcare sectors, attracting well-paid professionals.
 - **Continued infrastructure improvements** and community investment enhancing property values.
 
@@ -42,23 +42,21 @@ One of Leander’s premier master-planned communities, Crystal Falls combines na
 
 Crystal Falls homes often feature larger lots, high-end finishes, and community amenities that appeal to affluent buyers.
 
-### 2. Teravista
+### 2. Travisso
 
-Teravista is another sought-after neighborhood with a strong emphasis on community and recreation. Highlights include:
+Travisso is the top of the market in the Leander area, set high on the Balcones Escarpment on the Cedar Park side. Highlights include:
 
-- An 18-hole golf course designed by a PGA professional
-- Swimming pools, tennis courts, and playgrounds
-- Homes ranging from upscale single-family residences to executive-style properties
+- Sweeping Hill Country views from many homesites
+- A resort pool, tennis and pickleball, clubhouse and trails
+- Homes from about $500K to over $1.2M, zoned to Leander ISD
 
-Teravista’s amenities and architectural styles cater to buyers seeking a resort-like living experience without leaving Leander.
+### 3. Larkspur
 
-### 3. Wildhorse Ranch
+Larkspur is a smaller, design-forward community in central Leander built mostly by David Weekley Homes. It's less expensive than Crystal Falls or Travisso but attracts professionals who want a walkable neighborhood feel. It features:
 
-Wildhorse Ranch offers a blend of affordability and quality, attracting families and professionals. While not as uniformly affluent as Crystal Falls or Teravista, it features:
-
-- Well-maintained schools and parks nearby
-- Newer construction homes with modern designs
-- Easy access to shopping and dining in Leander’s historic downtown
+- Front porches, alley-loaded garages and tree-lined streets
+- A community pool, pocket parks and walking paths
+- One of the shorter commutes in Leander, about 30–40 minutes via 183A
 
 ---
 
@@ -139,7 +137,7 @@ If you’re considering buying or selling in Leander, Cedar Park, or anywhere in
 
 ## Ready to Explore Leander Real Estate?
 
-Contact me, Joe F. Sanches, your trusted local expert, for personalized guidance. Whether you want to tour Crystal Falls, Teravista, or uncover hidden gems in Leander, I have the insider knowledge to help you succeed.
+Contact me, Joe F. Sanches, your trusted local expert, for personalized guidance. Whether you want to tour Crystal Falls, Travisso, or uncover hidden gems in Leander, I have the insider knowledge to help you succeed.
 
 Call or text me today at 512-663-8867 or visit [joefsanches.com](http://joefsanches.com) to fill out a contact form and get started.
 

@@ -36,7 +36,7 @@ Property taxes in Leander, like many rapidly growing Texas suburbs, are influenc
 Leander is not monolithic; property tax rates and bills can vary depending on neighborhood and school district boundaries.
 
 - **Crystal Falls:** A popular master-planned community where new homes often have higher appraised values, impacting taxes.
-- **Teravista:** Known for golf course views and amenities, where community fees and tax rates reflect premium living.
+- **Travisso:** Known for Hill Country views and amenities, where HOA fees and a MUD rate reflect premium living.
 - **Vintage Oaks:** A more established neighborhood where property taxes tend to be stable but influenced by ongoing development.
 
 ### Schools and Their Role in Property Taxes
