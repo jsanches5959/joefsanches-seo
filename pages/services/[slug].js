@@ -96,7 +96,7 @@ export default function Service({ service, others }) {
 
         <header className="svc-hero">
           <p className="svc-crumb">
-            <Link href="/">Home</Link> <span>/</span> <Link href="/#services">Services</Link>{' '}
+            <Link href="/">Home</Link> <span>/</span> <Link href="/#work">Services</Link>{' '}
             <span>/</span> {service.shortName}
           </p>
           <ToolIcon name={service.icon} size={52} className="svc-hero-icon" />
@@ -153,6 +153,7 @@ export default function Service({ service, others }) {
               <LeadForm
                 blurb={`Tell us about your ${service.shortName.toLowerCase()} job — a photo helps. We read every one and usually reply the same day.`}
                 compact
+                defaultService={service.leadService}
               />
             </div>
           </section>
@@ -177,6 +178,13 @@ export default function Service({ service, others }) {
           <section>
             <h2>Other services</h2>
             <div className="svc-others">
+              <Link href="/tree-removal-leander-tx" className="svc-other">
+                <ToolIcon name="tree" size={28} className="svc-other-icon" />
+                <span className="svc-other-text">
+                  <strong>Tree Removal &amp; Trimming</strong>
+                  <span>Leander, TX</span>
+                </span>
+              </Link>
               {others.map((o) => (
                 <Link key={o.slug} href={`/services/${o.slug}`} className="svc-other">
                   <ToolIcon name={o.icon} size={28} className="svc-other-icon" />
@@ -191,6 +199,7 @@ export default function Service({ service, others }) {
         </main>
 
         <footer className="svc-foot">
+          <p><strong style={{ color: '#fff' }}>Joe does the whole property.</strong></p>
           <p>Sanches Group · Joe Sanches LLC · Leander, Texas</p>
           <p>512-663-8867 · hello@joefsanches.com</p>
           <p className="svc-fine">
@@ -204,41 +213,42 @@ export default function Service({ service, others }) {
 
       <style jsx global>{`
         :root {
-          --sg-black:#080808; --sg-card:#0f110d; --sg-gold:#c8a84b; --sg-gold2:#e4c76b;
-          --sg-white:#fff; --sg-text:#d4d8cc; --sg-muted:#8f9486;
-          --sg-gb:rgba(200,168,75,.28); --sg-div:rgba(255,255,255,.07);
+          --sg-black:#faf8f3; --sg-card:#ffffff; --sg-gold:#c8a84b; --sg-gold2:#d6b75a;
+          --sg-white:#16180f; --sg-text:#363a2f; --sg-muted:#5f6455;
+          --sg-gb:rgba(200,168,75,.5); --sg-div:rgba(22,24,15,.10);
+          --sg-gold-ink:#7d6318; --sg-olive:#6b7854; --sg-olive-ink:#4f5a3c;
         }
-        body { margin:0; background:var(--sg-black); color:var(--sg-text);
+        body { margin:0; background:var(--sg-black) !important; color:var(--sg-text);
           font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',sans-serif;
           line-height:1.65; }
-        .svc a { color:var(--sg-gold); text-decoration:none; }
+        .svc a { color:var(--sg-gold-ink); text-decoration:none; }
         .svc-nav { position:sticky; top:0; z-index:50; display:flex; align-items:center;
-          justify-content:space-between; padding:14px 24px; background:rgba(8,8,8,.97);
+          justify-content:space-between; padding:14px 24px; background:rgba(250,248,243,.94);
           backdrop-filter:blur(16px); border-bottom:1px solid var(--sg-gb); }
         .svc-brand { display:flex; align-items:center; gap:12px; color:var(--sg-white)!important;
           font-weight:900; letter-spacing:1px; text-transform:uppercase; font-size:14px; }
-        .svc-brand img { height:36px; filter:drop-shadow(0 0 8px rgba(107,120,84,.5)); }
-        .svc-call { background:var(--sg-gold); color:var(--sg-black)!important; padding:9px 18px;
-          border-radius:4px; font-weight:900; font-size:13px; }
+        .svc-brand img { height:42px; }
+        .svc-call { background:var(--sg-gold); color:var(--sg-white)!important; padding:10px 18px;
+          border-radius:6px; font-weight:900; font-size:14px; }
         .svc-hero { max-width:820px; margin:0 auto; padding:56px 24px 40px; }
         .svc-crumb { font-size:13px; color:var(--sg-muted); margin:0 0 18px;
           text-transform:uppercase; letter-spacing:1.5px; }
         .svc-crumb span { opacity:.5; margin:0 6px; }
-        .svc-hero-icon { color:var(--sg-gold); display:block; margin-bottom:18px; opacity:.85; }
+        .svc-hero-icon { color:var(--sg-olive); display:block; margin-bottom:18px; opacity:.85; }
         .svc-hero h1 { font-size:46px; line-height:1.08; font-weight:900; color:var(--sg-white);
           letter-spacing:-1.2px; margin:0 0 20px; }
         .svc-intro { font-size:18px; line-height:1.7; margin:0 0 28px; }
         .svc-trust { display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin-bottom:30px; }
-        .svc-trust span { font-size:12px; font-weight:800; letter-spacing:2px;
-          text-transform:uppercase; color:var(--sg-gold); }
+        .svc-trust span { font-size:12px; font-weight:800; letter-spacing:1.6px;
+          text-transform:uppercase; color:var(--sg-olive-ink); }
         .svc-trust i { width:4px; height:4px; background:var(--sg-gold); opacity:.5;
           transform:rotate(45deg); }
         .svc-ctas { display:flex; gap:12px; flex-wrap:wrap; }
-        .svc-btn { background:var(--sg-gold); color:var(--sg-black)!important; padding:15px 30px;
-          border-radius:4px; font-weight:900; font-size:14px; letter-spacing:1px;
+        .svc-btn { background:var(--sg-gold); color:var(--sg-white)!important; padding:15px 30px;
+          border-radius:6px; font-weight:900; font-size:14px; letter-spacing:1px;
           text-transform:uppercase; display:inline-block; }
-        .svc-btn.ghost { background:transparent; color:var(--sg-gold)!important;
-          border:1px solid var(--sg-gb); }
+        .svc-btn.ghost { background:#fff; color:var(--sg-white)!important;
+          border:1.5px solid var(--sg-white); }
         .svc-body { max-width:820px; margin:0 auto; padding:0 24px 60px; }
         .svc-body section { padding:40px 0; border-top:1px solid var(--sg-div); }
         .svc-body h2 { font-size:28px; font-weight:900; color:var(--sg-white);
@@ -249,32 +259,33 @@ export default function Service({ service, others }) {
           background:var(--sg-gold); transform:rotate(45deg); }
         .svc-steps { list-style:none; padding:0; margin:0; display:grid; gap:22px; }
         .svc-steps li { display:flex; gap:18px; align-items:flex-start; }
-        .svc-num { font-size:13px; font-weight:900; color:var(--sg-gold); letter-spacing:1px;
+        .svc-num { font-size:13px; font-weight:900; color:var(--sg-gold-ink); letter-spacing:1px;
           padding-top:3px; flex:0 0 auto; }
         .svc-steps strong { display:block; color:var(--sg-white); font-size:16px; margin-bottom:5px; }
-        .svc-steps p { margin:0; color:var(--sg-muted); font-size:15px; }
+        .svc-steps p { margin:0; color:var(--sg-text); font-size:15px; }
         .svc-faq { margin-bottom:24px; }
         .svc-faq h3 { font-size:17px; font-weight:700; color:var(--sg-white); margin:0 0 8px; }
-        .svc-faq p { margin:0; color:var(--sg-muted); font-size:15px; line-height:1.75; }
-        .svc-form { background:var(--sg-card); border:1px solid var(--sg-gb); padding:28px; border-radius:6px; }
+        .svc-faq p { margin:0; color:var(--sg-text); font-size:15px; line-height:1.75; }
+        .svc-form { background:var(--sg-card); border:1px solid var(--sg-div); border-top:4px solid var(--sg-gold); padding:28px; border-radius:10px; box-shadow:0 16px 44px rgba(22,24,15,.07); }
         .svc-guide-lead { font-size:15px; color:var(--sg-muted); line-height:1.75; margin:0 0 18px; max-width:64ch; }
         .svc-guides { list-style:none; padding:0; margin:0; border-top:1px solid var(--sg-div); }
         .svc-guides li { border-bottom:1px solid var(--sg-div); }
         .svc-guides a { display:block; padding:16px 2px; font-size:16px; font-weight:600; color:var(--sg-white); transition:color .18s ease, padding-left .18s ease; }
-        .svc-guides a:hover { color:var(--sg-gold); padding-left:8px; }
+        .svc-guides a:hover { color:var(--sg-gold-ink); padding-left:8px; }
         .svc-others { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; }
-        .svc-other { display:flex; align-items:center; gap:13px; padding:18px; border:1px solid var(--sg-div); border-radius:5px;
+        .svc-other { display:flex; align-items:center; gap:13px; padding:18px; background:var(--sg-card); border:1px solid var(--sg-div); border-radius:8px;
           transition:border-color .2s ease, transform .2s ease; }
         .svc-other:hover { border-color:var(--sg-gb); transform:translateY(-2px); }
-        .svc-other-icon { color:var(--sg-gold); opacity:.75; flex-shrink:0; transition:opacity .2s ease; }
+        .svc-other-icon { color:var(--sg-olive); opacity:1; flex-shrink:0; transition:opacity .2s ease; }
         .svc-other:hover .svc-other-icon { opacity:1; }
         .svc-other-text { display:block; min-width:0; }
         .svc-other strong { display:block; color:var(--sg-white); font-size:15px; margin-bottom:4px; }
         .svc-other-text span { font-size:13px; color:var(--sg-muted); text-transform:uppercase; letter-spacing:1px; }
-        .svc-foot { border-top:1px solid var(--sg-gb); padding:32px 24px; text-align:center;
-          font-size:13px; color:var(--sg-muted); }
+        .svc-foot { background:#14160f; border-top:3px solid var(--sg-gold); padding:36px 24px; text-align:center;
+          font-size:14px; color:#c9cdbf; }
+        .svc-foot a { color:#e8cd77; }
         .svc-foot p { margin:0 0 8px; }
-        .svc-fine { font-size:12px; max-width:640px; margin:14px auto!important; line-height:1.7; opacity:.8; }
+        .svc-fine { font-size:13px; max-width:640px; margin:14px auto!important; line-height:1.7; }
         @media (max-width:640px) {
           .svc-hero h1 { font-size:32px; }
           .svc-intro { font-size:16px; }

@@ -74,7 +74,7 @@ function Section({ id, title, children }) {
   return (
     <section id={id} style={{ marginTop: '56px' }}>
       <h2 style={{
-        fontSize: '26px', fontWeight: 700, color: 'white',
+        fontSize: '26px', fontWeight: 700, color: 'var(--ink)',
         borderBottom: '1px solid rgba(107,120,84,.3)',
         paddingBottom: '12px', marginBottom: '24px'
       }}>{title}</h2>
@@ -112,12 +112,12 @@ function StepCard({ number, title, desc }) {
     <div className="card" style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
       <div style={{
         width: '44px', height: '44px', borderRadius: '50%',
-        background: 'var(--accent)', color: 'white',
+        background: 'var(--accent)', color: '#fff',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
         fontWeight: 700, fontSize: '17px', flexShrink: 0
       }}>{number}</div>
       <div>
-        <h4 style={{ color: 'white', margin: '0 0 6px', fontSize: '16px', fontWeight: 600 }}>{title}</h4>
+        <h4 style={{ color: 'var(--ink)', margin: '0 0 6px', fontSize: '16px', fontWeight: 600 }}>{title}</h4>
         <p style={{ color: 'var(--muted)', margin: 0, lineHeight: '1.7', fontSize: '14px' }}>{desc}</p>
       </div>
     </div>
@@ -127,7 +127,7 @@ function StepCard({ number, title, desc }) {
 function CompareTable({ rows }) {
   return (
     <div style={{ overflowX: 'auto', marginBottom: '24px' }}>
-      <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px', color: '#E0E5D8' }}>
+      <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px', color: 'var(--text)' }}>
         <thead>
           <tr>
             {['Factor', 'New Construction', 'Resale'].map(h => (
@@ -143,9 +143,9 @@ function CompareTable({ rows }) {
         <tbody>
           {rows.map((row, i) => (
             <tr key={i} style={{ borderBottom: '1px solid rgba(107,120,84,.12)' }}>
-              <td style={{ padding: '10px 14px', fontWeight: 600, color: 'white' }}>{row[0]}</td>
-              <td style={{ padding: '10px 14px', color: '#E0E5D8' }}>{row[1]}</td>
-              <td style={{ padding: '10px 14px', color: '#E0E5D8' }}>{row[2]}</td>
+              <td style={{ padding: '10px 14px', fontWeight: 600, color: 'var(--ink)' }}>{row[0]}</td>
+              <td style={{ padding: '10px 14px', color: 'var(--text)' }}>{row[1]}</td>
+              <td style={{ padding: '10px 14px', color: 'var(--text)' }}>{row[2]}</td>
             </tr>
           ))}
         </tbody>
@@ -157,7 +157,7 @@ function CompareTable({ rows }) {
 function FaqItem({ q, a }) {
   return (
     <div style={{ borderBottom: '1px solid rgba(107,120,84,.2)', paddingBottom: '24px', marginBottom: '24px' }}>
-      <h3 style={{ fontSize: '18px', color: 'white', marginBottom: '12px', fontWeight: 600 }}>{q}</h3>
+      <h3 style={{ fontSize: '18px', color: 'var(--ink)', marginBottom: '12px', fontWeight: 600 }}>{q}</h3>
       <p style={{ color: 'var(--muted)', lineHeight: '1.8', margin: 0 }}>{a}</p>
     </div>
   );
@@ -235,7 +235,7 @@ export default function LeanderHomeBuyerGuide() {
             <a
               href="#guide-request"
               style={{
-                background: 'var(--accent)', color: 'white', padding: '14px 28px',
+                background: 'var(--accent)', color: '#fff', padding: '14px 28px',
                 borderRadius: '8px', textDecoration: 'none', fontWeight: 700, fontSize: '16px'
               }}
             >
@@ -293,9 +293,9 @@ export default function LeanderHomeBuyerGuide() {
                 ))}
               </div>
 
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>Leander vs Austin — The Value Case</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>Leander vs Austin — The Value Case</h3>
               <div style={{ overflowX: 'auto', marginBottom: '24px' }}>
-                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px', color: '#E0E5D8' }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px', color: 'var(--text)' }}>
                   <thead>
                     <tr>
                       {['', 'Leander TX', 'Austin (South/West)'].map(h => (
@@ -319,7 +319,7 @@ export default function LeanderHomeBuyerGuide() {
                       ['Property Tax Rate', '2.18%–2.55%', '1.9%–2.3% (no MUDs typical)'],
                     ].map((row, i) => (
                       <tr key={i} style={{ borderBottom: '1px solid rgba(107,120,84,.12)' }}>
-                        <td style={{ padding: '10px 14px', fontWeight: 600, color: 'white' }}>{row[0]}</td>
+                        <td style={{ padding: '10px 14px', fontWeight: 600, color: 'var(--ink)' }}>{row[0]}</td>
                         <td style={{ padding: '10px 14px' }}>{row[1]}</td>
                         <td style={{ padding: '10px 14px' }}>{row[2]}</td>
                       </tr>
@@ -328,7 +328,7 @@ export default function LeanderHomeBuyerGuide() {
                 </table>
               </div>
 
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>Leander Lifestyle</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>Leander Lifestyle</h3>
               <p style={{ color: 'var(--muted)', lineHeight: '1.8', marginBottom: '16px' }}>
                 Leander is not just a bedroom community. The city has invested heavily in parks, trails, the Leander Recreation Center, and a growing downtown district. The Cap Metro rail line connects Leander to downtown Austin without touching a highway. Old Town Leander is developing a walkable restaurant and retail scene. Residents have access to Lake Travis, Balcones Canyonlands National Wildlife Refuge, and the Hill Country — all within 20–30 minutes.
               </p>
@@ -399,9 +399,9 @@ export default function LeanderHomeBuyerGuide() {
                 The purchase price is only the beginning. Here's a complete breakdown of what buying a home in Leander actually costs.
               </p>
 
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>Upfront Costs</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>Upfront Costs</h3>
               <div style={{ overflowX: 'auto', marginBottom: '24px' }}>
-                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px', color: '#E0E5D8' }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px', color: 'var(--text)' }}>
                   <thead>
                     <tr>
                       {['Cost Item', 'Typical Amount', 'Notes'].map(h => (
@@ -427,18 +427,18 @@ export default function LeanderHomeBuyerGuide() {
                       ['Moving Costs', '$1,500–$5,000', 'Depends on distance and volume'],
                     ].map((row, i) => (
                       <tr key={i} style={{ borderBottom: '1px solid rgba(107,120,84,.12)' }}>
-                        <td style={{ padding: '10px 14px', fontWeight: 600, color: 'white' }}>{row[0]}</td>
+                        <td style={{ padding: '10px 14px', fontWeight: 600, color: 'var(--ink)' }}>{row[0]}</td>
                         <td style={{ padding: '10px 14px' }}>{row[1]}</td>
-                        <td style={{ padding: '10px 14px', color: '#c0c8b8' }}>{row[2]}</td>
+                        <td style={{ padding: '10px 14px', color: 'var(--muted)' }}>{row[2]}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
               </div>
 
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>Monthly Costs (Example: $450,000 Home, 6.5% Rate, 5% Down)</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>Monthly Costs (Example: $450,000 Home, 6.5% Rate, 5% Down)</h3>
               <div style={{ overflowX: 'auto', marginBottom: '24px' }}>
-                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px', color: '#E0E5D8' }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px', color: 'var(--text)' }}>
                   <thead>
                     <tr>
                       {['Cost Component', 'Monthly Estimate'].map(h => (
@@ -466,8 +466,8 @@ export default function LeanderHomeBuyerGuide() {
                         borderBottom: '1px solid rgba(107,120,84,.12)',
                         background: i >= 6 ? 'rgba(107,120,84,.06)' : 'transparent'
                       }}>
-                        <td style={{ padding: '10px 14px', fontWeight: i >= 6 ? 700 : 400, color: i >= 6 ? 'white' : '#E0E5D8' }}>{row[0]}</td>
-                        <td style={{ padding: '10px 14px', fontWeight: i >= 6 ? 700 : 400, color: i >= 6 ? 'var(--accent-light)' : '#E0E5D8' }}>{row[1]}</td>
+                        <td style={{ padding: '10px 14px', fontWeight: i >= 6 ? 700 : 400, color: i >= 6 ? 'var(--ink)' : 'var(--text)' }}>{row[0]}</td>
+                        <td style={{ padding: '10px 14px', fontWeight: i >= 6 ? 700 : 400, color: i >= 6 ? 'var(--accent-light)' : 'var(--text)' }}>{row[1]}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -475,12 +475,12 @@ export default function LeanderHomeBuyerGuide() {
               </div>
 
               <Callout>
-                <strong style={{ color: 'white' }}>MUD tip:</strong> Always ask whether a home is in a MUD district before falling in love with it. A 0.30% MUD on a $450K home adds $112.50/month — or $1,350/year — to your carrying cost. Over 30 years that's $40,500 in additional taxes. Joe always checks MUD status for every property before you tour.
+                <strong style={{ color: 'var(--ink)' }}>MUD tip:</strong> Always ask whether a home is in a MUD district before falling in love with it. A 0.30% MUD on a $450K home adds $112.50/month — or $1,350/year — to your carrying cost. Over 30 years that's $40,500 in additional taxes. Joe always checks MUD status for every property before you tour.
               </Callout>
 
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>Texas Property Tax Note</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>Texas Property Tax Note</h3>
               <p style={{ color: 'var(--muted)', lineHeight: '1.8', marginBottom: '16px' }}>
-                Texas has no state income tax, which is part of its appeal — but property taxes are above the national average. All Texas homeowners who occupy their home as a primary residence qualify for a <strong style={{ color: 'white' }}>$100,000 homestead exemption</strong> off the school district appraised value. File within the year you buy. This typically saves $1,800–$2,500/year. See Joe's <Link href="/property-tax-leander-tx" style={{ color: 'var(--accent-light)' }}>full property tax guide</Link> for the complete picture.
+                Texas has no state income tax, which is part of its appeal — but property taxes are above the national average. All Texas homeowners who occupy their home as a primary residence qualify for a <strong style={{ color: 'var(--ink)' }}>$100,000 homestead exemption</strong> off the school district appraised value. File within the year you buy. This typically saves $1,800–$2,500/year. See Joe's <Link href="/property-tax-leander-tx" style={{ color: 'var(--accent-light)' }}>full property tax guide</Link> for the complete picture.
               </p>
             </Section>
 
@@ -503,7 +503,7 @@ export default function LeanderHomeBuyerGuide() {
                 ['Realtor Representation', 'Critical — builder agent works for builder', 'Standard buyer representation'],
               ]} />
               <Callout>
-                <strong style={{ color: 'white' }}>New construction warning:</strong> Never go to a builder model without your Realtor. Builder sales agents are trained negotiators working exclusively for the builder. Having Joe as your buyer's representative costs you nothing (builder pays the commission) and gives you an advocate who can negotiate upgrades, lot premiums, closing cost credits, and protect you through the inspection and closing process.
+                <strong style={{ color: 'var(--ink)' }}>New construction warning:</strong> Never go to a builder model without your Realtor. Builder sales agents are trained negotiators working exclusively for the builder. Having Joe as your buyer's representative costs you nothing (builder pays the commission) and gives you an advocate who can negotiate upgrades, lot premiums, closing cost credits, and protect you through the inspection and closing process.
               </Callout>
             </Section>
 
@@ -553,7 +553,7 @@ export default function LeanderHomeBuyerGuide() {
                 ].map(({ name, range, desc, tags }) => (
                   <div key={name} className="card">
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '8px', marginBottom: '10px' }}>
-                      <h3 style={{ color: 'white', margin: 0, fontSize: '18px', fontWeight: 600 }}>{name}</h3>
+                      <h3 style={{ color: 'var(--ink)', margin: 0, fontSize: '18px', fontWeight: 600 }}>{name}</h3>
                       <span style={{
                         background: 'rgba(107,120,84,.15)', border: '1px solid rgba(107,120,84,.3)',
                         color: 'var(--accent-light)', padding: '4px 12px', borderRadius: '20px',
@@ -581,10 +581,10 @@ export default function LeanderHomeBuyerGuide() {
                 Joe Sanches is a veteran. He specializes in helping veterans and active-duty military use their VA loan benefit to buy homes in Leander — often with $0 down, no PMI, and competitive rates.
               </p>
               <Callout>
-                <strong style={{ color: 'white' }}>Joe's personal note:</strong> As a veteran myself, I know the VA loan process inside and out. I've helped veterans purchase homes in Leander, Cedar Park, and Liberty Hill using their VA benefit. If you've served, this benefit is one of the most powerful financial tools available — and most people don't fully understand how to use it. Let me walk you through it. Call or text: 512-663-8867.
+                <strong style={{ color: 'var(--ink)' }}>Joe's personal note:</strong> As a veteran myself, I know the VA loan process inside and out. I've helped veterans purchase homes in Leander, Cedar Park, and Liberty Hill using their VA benefit. If you've served, this benefit is one of the most powerful financial tools available — and most people don't fully understand how to use it. Let me walk you through it. Call or text: 512-663-8867.
               </Callout>
 
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>VA Loan Benefits</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>VA Loan Benefits</h3>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '14px', marginBottom: '24px' }}>
                 {[
                   { title: '$0 Down Payment', desc: 'No down payment required for eligible veterans, active-duty, and surviving spouses.' },
@@ -601,7 +601,7 @@ export default function LeanderHomeBuyerGuide() {
                 ))}
               </div>
 
-              <h3 style={{ fontSize: '20px', color: 'white', marginBottom: '16px' }}>VA Loan Eligibility (General Guidelines)</h3>
+              <h3 style={{ fontSize: '20px', color: 'var(--ink)', marginBottom: '16px' }}>VA Loan Eligibility (General Guidelines)</h3>
               <div style={{ color: 'var(--muted)', lineHeight: '2', paddingLeft: '20px', marginBottom: '24px' }}>
                 <ul style={{ paddingLeft: '20px' }}>
                   <li>90 days active duty during wartime</li>
@@ -612,7 +612,7 @@ export default function LeanderHomeBuyerGuide() {
               </div>
 
               <p style={{ color: 'var(--muted)', lineHeight: '1.8' }}>
-                Obtain your Certificate of Eligibility (COE) at <strong style={{ color: 'white' }}>va.gov</strong> or let your lender pull it for you. Joe works with VA-experienced lenders in Texas who know how to close VA loans on time and navigate the VA appraisal process specific to Central Texas properties.
+                Obtain your Certificate of Eligibility (COE) at <strong style={{ color: 'var(--ink)' }}>va.gov</strong> or let your lender pull it for you. Joe works with VA-experienced lenders in Texas who know how to close VA loans on time and navigate the VA appraisal process specific to Central Texas properties.
               </p>
             </Section>
 
@@ -624,7 +624,7 @@ export default function LeanderHomeBuyerGuide() {
 
               <div className="card" style={{ maxWidth: '560px' }}>
                 <div style={{ marginBottom: '16px' }}>
-                  <h4 style={{ color: 'white', margin: '0 0 12px', fontSize: '16px' }}>What's included:</h4>
+                  <h4 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '16px' }}>What's included:</h4>
                   <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                     {[
                       'Full PDF buyer\'s guide with checklists',
@@ -653,7 +653,7 @@ export default function LeanderHomeBuyerGuide() {
                   href="mailto:hello@joefsanches.com?subject=Leander%20Home%20Buyer%20Guide%20Request&body=Name%3A%0AEmail%3A%0APhone%3A%0ATimeframe%3A%0APrice%20range%3A"
                   style={{
                     display: 'block', width: '100%', textAlign: 'center',
-                    background: 'var(--accent)', color: 'white', padding: '16px',
+                    background: 'var(--accent)', color: '#fff', padding: '16px',
                     borderRadius: '8px', textDecoration: 'none', fontWeight: 700,
                     fontSize: '17px', boxSizing: 'border-box'
                   }}
@@ -702,7 +702,7 @@ export default function LeanderHomeBuyerGuide() {
                 href="mailto:hello@joefsanches.com?subject=Leander%20Home%20Buyer%20Guide%20Request&body=Name%3A%0AEmail%3A%0APhone%3A%0ATimeframe%3A%0APrice%20range%3A"
                 style={{
                   display: 'block', textAlign: 'center', background: 'var(--accent)',
-                  color: 'white', padding: '13px', borderRadius: '8px',
+                  color: '#fff', padding: '13px', borderRadius: '8px',
                   textDecoration: 'none', fontWeight: 700, fontSize: '15px', marginBottom: '12px'
                 }}
               >
@@ -736,7 +736,7 @@ export default function LeanderHomeBuyerGuide() {
             </div>
 
             <div className="card" style={{ marginTop: '16px', background: 'rgba(107,120,84,.06)' }}>
-              <h3 style={{ color: 'white', margin: '0 0 10px', fontSize: '15px' }}>VA Loan Buyers</h3>
+              <h3 style={{ color: 'var(--ink)', margin: '0 0 10px', fontSize: '15px' }}>VA Loan Buyers</h3>
               <p style={{ color: 'var(--muted)', fontSize: '13px', lineHeight: '1.6', marginBottom: '14px' }}>
                 Joe is a veteran. He knows the VA loan process and works with VA-experienced lenders in Leander TX.
               </p>
@@ -757,7 +757,7 @@ export default function LeanderHomeBuyerGuide() {
 
         {/* Bottom CTA */}
         <div className="card" style={{ marginTop: '60px', textAlign: 'center', padding: '48px 32px' }}>
-          <h2 style={{ color: 'white', fontSize: '28px', marginBottom: '12px' }}>
+          <h2 style={{ color: 'var(--ink)', fontSize: '28px', marginBottom: '12px' }}>
             Ready to Buy in Leander TX?
           </h2>
           <p style={{ color: 'var(--muted)', marginBottom: '28px', lineHeight: '1.7', maxWidth: '580px', margin: '0 auto 28px' }}>
@@ -767,7 +767,7 @@ export default function LeanderHomeBuyerGuide() {
             <a
               href="mailto:hello@joefsanches.com?subject=Leander%20Home%20Buyer%20Guide%20Request&body=Name%3A%0AEmail%3A%0APhone%3A%0ATimeframe%3A%0APrice%20range%3A"
               style={{
-                background: 'var(--accent)', color: 'white', padding: '15px 32px',
+                background: 'var(--accent)', color: '#fff', padding: '15px 32px',
                 borderRadius: '8px', textDecoration: 'none', fontWeight: 700, fontSize: '16px'
               }}
             >

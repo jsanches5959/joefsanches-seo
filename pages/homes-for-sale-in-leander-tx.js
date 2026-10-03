@@ -96,19 +96,19 @@ export default function LeanderHomes() {
         </header>
 
         <main className="main-content" style={{ maxWidth: '900px', margin: '40px auto', padding: '0 20px' }}>
-          <h1 style={{ fontSize: '48px', marginBottom: '24px', color: 'white', lineHeight: '1.1' }}>
+          <h1 style={{ fontSize: '48px', marginBottom: '24px', color: 'var(--ink)', lineHeight: '1.1' }}>
             Homes for Sale in Leander, TX: <span style={{ color: 'var(--accent-light)' }}>The 2026 Buyer's Guide</span>
           </h1>
           
           <section style={{ marginBottom: '40px' }}>
-            <p style={{ fontSize: '20px', lineHeight: '1.8', color: 'rgba(255,255,255,0.9)' }}>
+            <p style={{ fontSize: '20px', lineHeight: '1.8', color: 'var(--text)' }}>
               Leander, Texas continues to be one of the fastest-growing cities in the United States. With top-rated <strong>Leander ISD schools</strong>, beautiful Hill Country views, and a high quality of life, it's the premier destination for families and professionals moving to the Austin area.
             </p>
           </section>
 
           <section style={{ marginBottom: '40px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px' }}>
             <div style={{ background: 'rgba(107,120,84,0.1)', padding: '30px', borderRadius: '16px', border: '1px solid var(--border)' }}>
-              <h2 style={{ fontSize: '24px', color: 'white', marginBottom: '16px' }}>Leander Market Stats (2026)</h2>
+              <h2 style={{ fontSize: '24px', color: 'var(--ink)', marginBottom: '16px' }}>Leander Market Stats (2026)</h2>
               <ul style={{ listStyle: 'none', padding: 0 }}>
                 <li style={{ marginBottom: '12px' }}>📊 <strong>Median Price:</strong> $495,000 - $565,000</li>
                 <li style={{ marginBottom: '12px' }}>⏱️ <strong>Avg Days on Market:</strong> 38 Days</li>
@@ -116,8 +116,8 @@ export default function LeanderHomes() {
                 <li style={{ marginBottom: '12px' }}>🏫 <strong>Top District:</strong> Leander ISD</li>
               </ul>
             </div>
-            <div style={{ background: 'rgba(255,255,255,0.03)', padding: '30px', borderRadius: '16px', border: '1px solid var(--border)' }}>
-              <h2 style={{ fontSize: '24px', color: 'white', marginBottom: '16px' }}>Why Work With Joe?</h2>
+            <div style={{ background: 'var(--card)', padding: '30px', borderRadius: '16px', border: '1px solid var(--border)' }}>
+              <h2 style={{ fontSize: '24px', color: 'var(--ink)', marginBottom: '16px' }}>Why Work With Joe?</h2>
               <p style={{ fontSize: '15px', lineHeight: '1.6', color: 'var(--muted)' }}>
                 As a local Leander resident and military veteran, I don't just show houses—I provide a strategic advantage. From <strong>builder negotiations</strong> to <strong>market analysis</strong>, I ensure you never overpay.
               </p>
@@ -126,7 +126,7 @@ export default function LeanderHomes() {
           </section>
 
           <section style={{ marginBottom: '60px' }}>
-            <h2 style={{ fontSize: '32px', color: 'white', marginBottom: '20px' }}>The New Construction Advantage in Leander</h2>
+            <h2 style={{ fontSize: '32px', color: 'var(--ink)', marginBottom: '20px' }}>The New Construction Advantage in Leander</h2>
             <p style={{ lineHeight: '1.8', marginBottom: '20px' }}>
               Much of the best real estate in Leander is currently <strong>new construction</strong>. Communities like <strong>Travisso</strong>, <strong>Bryson</strong>, and <strong>Larkspur</strong> are being built by top-tier builders including Toll Brothers, Taylor Morrison, and Drees Custom Homes.
             </p>
@@ -136,7 +136,7 @@ export default function LeanderHomes() {
           </section>
 
           <section style={{ marginBottom: '60px' }}>
-            <h2 style={{ fontSize: '32px', color: 'white', marginBottom: '20px' }}>Top Neighborhoods to Watch</h2>
+            <h2 style={{ fontSize: '32px', color: 'var(--ink)', marginBottom: '20px' }}>Top Neighborhoods to Watch</h2>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
               <div className="card">
                 <h3 style={{ color: 'var(--accent-light)' }}>Crystal Falls</h3>
@@ -158,8 +158,8 @@ export default function LeanderHomes() {
           </section>
 
           <section style={{ marginBottom: '60px', padding: '50px', background: 'linear-gradient(135deg, rgba(107,120,84,0.2) 0%, rgba(107,120,84,0.05) 100%)', borderRadius: '24px', border: '1px solid var(--accent)', textAlign: 'center' }}>
-            <h2 style={{ fontSize: '36px', color: 'white', marginBottom: '16px' }}>Ready to Find Your Leander Home?</h2>
-            <p style={{ fontSize: '20px', marginBottom: '32px', color: 'rgba(255,255,255,0.8)' }}>
+            <h2 style={{ fontSize: '36px', color: 'var(--ink)', marginBottom: '16px' }}>Ready to Find Your Leander Home?</h2>
+            <p style={{ fontSize: '20px', marginBottom: '32px', color: 'var(--text)' }}>
               Get a custom list of homes, including <strong>off-market new construction</strong> and upcoming price drops.
             </p>
             <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -169,14 +169,14 @@ export default function LeanderHomes() {
           </section>
 
           <section style={{ marginBottom: '60px' }}>
-            <h2 style={{ fontSize: '32px', color: 'white', marginBottom: '24px' }}>Frequently Asked Questions</h2>
+            <h2 style={{ fontSize: '32px', color: 'var(--ink)', marginBottom: '24px' }}>Frequently Asked Questions</h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
               <div>
-                <h4 style={{ color: 'white', marginBottom: '8px' }}>Is Leander, TX a good place to buy a home in 2026?</h4>
+                <h4 style={{ color: 'var(--ink)', marginBottom: '8px' }}>Is Leander, TX a good place to buy a home in 2026?</h4>
                 <p style={{ fontSize: '15px' }}>Yes. With the Northline development and MetroRail extension, Leander is transitioning from a bedroom community to a self-sustaining urban hub, making it a strong long-term investment.</p>
               </div>
               <div>
-                <h4 style={{ color: 'white', marginBottom: '8px' }}>What are the best schools in Leander?</h4>
+                <h4 style={{ color: 'var(--ink)', marginBottom: '8px' }}>What are the best schools in Leander?</h4>
                 <p style={{ fontSize: '15px' }}>Leander ISD is consistently top-rated. Schools like Rouse High School and various new elementary schools in Larkspur and Bryson are highly sought after by parents.</p>
               </div>
             </div>
@@ -197,8 +197,8 @@ export default function LeanderHomes() {
           .container { min-height: 100vh; }
           .main-content h2 { margin-top: 40px; }
           .main-content p { color: var(--muted); }
-          .card { background: rgba(255,255,255,0.02); padding: 20px; borderRadius: 12px; border: 1px solid var(--border); }
-          strong { color: white; }
+          .card { background: var(--card); padding: 20px; borderRadius: 12px; border: 1px solid var(--border); }
+          strong { color: var(--ink); }
         `}</style>
       </div>
     </>

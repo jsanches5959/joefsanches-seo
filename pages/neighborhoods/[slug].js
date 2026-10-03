@@ -12,7 +12,7 @@ function Section({ id, title, children }) {
     <section id={id} style={{ marginBottom: '48px' }}>
       <h2 style={{
         fontSize: '22px',
-        color: 'white',
+        color: 'var(--ink)',
         margin: '0 0 20px',
         paddingBottom: '12px',
         borderBottom: '1px solid rgba(107,120,84,.2)',
@@ -36,7 +36,7 @@ function QuickFactRow({ label, value }) {
       gap: '16px'
     }}>
       <span style={{ color: 'var(--muted)', fontSize: '14px', flexShrink: 0 }}>{label}</span>
-      <span style={{ color: 'white', fontSize: '14px', fontWeight: 600, textAlign: 'right' }}>{value}</span>
+      <span style={{ color: 'var(--ink)', fontSize: '14px', fontWeight: 600, textAlign: 'right' }}>{value}</span>
     </div>
   );
 }
@@ -62,7 +62,7 @@ function FaqBlock({ q, a, index }) {
   return (
     <div className="card" style={{ marginBottom: '12px' }}>
       <h3 style={{
-        color: 'white',
+        color: 'var(--ink)',
         margin: '0 0 10px',
         fontSize: '16px',
         lineHeight: '1.4',
@@ -116,7 +116,7 @@ function InternalLink({ href, label }) {
 // ─── Page component ──────────────────────────────────────────────────────────
 
 export default function NeighborhoodPage({ neighborhood }) {
-  if (!neighborhood) return <div style={{ color: 'white', padding: '40px' }}>Neighborhood not found.</div>;
+  if (!neighborhood) return <div style={{ color: 'var(--ink)', padding: '40px' }}>Neighborhood not found.</div>;
 
   const {
     slug, name, city, state, type, overview, taxRate, mudDistrict, hoa,
@@ -287,14 +287,14 @@ export default function NeighborhoodPage({ neighborhood }) {
                 fontSize: '14px',
                 lineHeight: '1.75'
               }}>
-                <strong style={{ color: 'white' }}>Lifestyle: </strong>{lifestyle}
+                <strong style={{ color: 'var(--ink)' }}>Lifestyle: </strong>{lifestyle}
               </div>
             </Section>
 
             {/* Schools */}
             <Section id="schools" title={`Schools Serving ${name}`}>
               <p style={{ color: 'var(--muted)', lineHeight: '1.8', marginBottom: '16px', fontSize: '15px' }}>
-                {name} is zoned to <strong style={{ color: 'white' }}>{schoolDistrict}</strong>. The following campuses serve this community:
+                {name} is zoned to <strong style={{ color: 'var(--ink)' }}>{schoolDistrict}</strong>. The following campuses serve this community:
               </p>
               <div className="card">
                 {[
@@ -318,7 +318,7 @@ export default function NeighborhoodPage({ neighborhood }) {
                       letterSpacing: '0.05em',
                       flexShrink: 0
                     }}>{level}</span>
-                    <span style={{ color: 'white', fontSize: '15px', textAlign: 'right' }}>{school}</span>
+                    <span style={{ color: 'var(--ink)', fontSize: '15px', textAlign: 'right' }}>{school}</span>
                   </div>
                 ))}
                 <div style={{ padding: '12px 0 0', fontSize: '13px', color: 'var(--muted)' }}>
@@ -336,7 +336,7 @@ export default function NeighborhoodPage({ neighborhood }) {
               </ul>
               {nearbyParks && nearbyParks.length > 0 && (
                 <>
-                  <h3 style={{ color: 'white', fontSize: '17px', margin: '28px 0 12px' }}>Nearby Parks</h3>
+                  <h3 style={{ color: 'var(--ink)', fontSize: '17px', margin: '28px 0 12px' }}>Nearby Parks</h3>
                   <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                     {nearbyParks.map((park, i) => (
                       <AmenityItem key={i} text={park} />
@@ -431,7 +431,7 @@ export default function NeighborhoodPage({ neighborhood }) {
 
               {/* Quick snapshot card */}
               <div className="card" style={{ background: 'rgba(107,120,84,.05)', borderColor: 'rgba(107,120,84,.2)' }}>
-                <h3 style={{ color: 'white', margin: '0 0 14px', fontSize: '15px' }}>{name} At a Glance</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 14px', fontSize: '15px' }}>{name} At a Glance</h3>
                 {[
                   ['City', `${city}, TX`],
                   ['Tax Rate', taxRate],
@@ -449,14 +449,14 @@ export default function NeighborhoodPage({ neighborhood }) {
                     gap: '8px'
                   }}>
                     <span style={{ color: 'var(--muted)', flexShrink: 0 }}>{label}</span>
-                    <span style={{ color: 'white', fontWeight: 600, textAlign: 'right' }}>{value}</span>
+                    <span style={{ color: 'var(--ink)', fontWeight: 600, textAlign: 'right' }}>{value}</span>
                   </div>
                 ))}
               </div>
 
               {/* Builders card */}
               <div className="card" style={{ background: 'rgba(107,120,84,.05)', borderColor: 'rgba(107,120,84,.2)' }}>
-                <h3 style={{ color: 'white', margin: '0 0 12px', fontSize: '15px' }}>Builders</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '15px' }}>Builders</h3>
                 {builders.map((b) => (
                   <div key={b} style={{
                     borderBottom: '1px solid rgba(107,120,84,.1)',
@@ -479,7 +479,7 @@ export default function NeighborhoodPage({ neighborhood }) {
           borderColor: 'rgba(107,120,84,.2)',
           padding: '48px 32px'
         }}>
-          <h2 style={{ color: 'white', margin: '0 0 12px', fontSize: '26px' }}>
+          <h2 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '26px' }}>
             Ready to explore {name}? Call Joe: 512-663-8867
           </h2>
           <p style={{ color: 'var(--muted)', maxWidth: '60ch', margin: '0 auto 28px', lineHeight: '1.7' }}>

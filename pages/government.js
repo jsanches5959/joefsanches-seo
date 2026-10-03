@@ -4,19 +4,22 @@ const css = `
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --black:  #080808;
-    --card:   #0f110d;
+    /* Light theme. Names kept from the dark version: --black is now the
+       page ground and --white the heading ink. */
+    --black:  #faf8f3;
+    --card:   #ffffff;
     --olive:  #6b7854;
-    --olive2: #8a9a6b;
+    --olive2: #4f5a3c;
     --gold:   #c8a84b;
-    --gold2:  #e4c76b;
-    --gp:     rgba(200,168,75,0.1);
-    --gb:     rgba(200,168,75,0.28);
-    --ob:     rgba(107,120,84,0.2);
-    --white:  #ffffff;
-    --text:   #d4d8cc;
-    --muted:  #7a8070;
-    --div:    rgba(255,255,255,0.06);
+    --gold2:  #d6b75a;
+    --gold-ink: #7d6318;
+    --gp:     rgba(200,168,75,0.12);
+    --gb:     rgba(200,168,75,0.45);
+    --ob:     rgba(107,120,84,0.3);
+    --white:  #16180f;
+    --text:   #363a2f;
+    --muted:  #5f6455;
+    --div:    rgba(22,24,15,0.10);
   }
 
   html { scroll-behavior: smooth; }
@@ -26,14 +29,14 @@ const css = `
     color: var(--text);
     line-height: 1.65;
   }
-  a { color: var(--gold); text-decoration: none; }
-  a:hover { color: var(--gold2); }
+  a { color: var(--gold-ink); text-decoration: none; }
+  a:hover { color: var(--white); }
   .w { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
 
   /* NAV */
   .nav {
     position: sticky; top: 0; z-index: 200;
-    background: rgba(8,8,8,0.97);
+    background: rgba(250,248,243,0.95);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--gb);
   }
@@ -42,21 +45,23 @@ const css = `
     padding: 14px 40px; max-width: 1100px; margin: 0 auto;
   }
   .nav-logo { display: flex; align-items: center; gap: 12px; }
-  .nav-logo img { height: 36px; filter: drop-shadow(0 0 8px rgba(107,120,84,0.5)); animation: holoSway 7s ease-in-out infinite, holoGlow 4s ease-in-out infinite, holoFlicker 6s linear infinite; }
+  .nav-logo img { height: 42px; }
   @media (prefers-reduced-motion: reduce) { .nav-logo img { animation: none; } }
   .nav-logo span { font-size: 13px; font-weight: 700; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
   .nav-links { display: flex; gap: 24px; list-style: none; align-items: center; }
   .nav-links a { font-size: 13px; font-weight: 500; color: var(--muted); letter-spacing: 0.3px; text-transform: uppercase; }
-  .nav-links a:hover { color: var(--gold); }
+  .nav-links a:hover { color: var(--gold-ink); }
   .nav-call {
-    background: var(--gold); color: var(--black) !important;
+    background: var(--gold); color: #16180f !important;
     padding: 9px 20px; border-radius: 4px;
     font-weight: 900; font-size: 13px; letter-spacing: 0.5px; text-transform: uppercase;
   }
 
   /* HERO */
-  .hero {
+  section.hero {
     background: var(--black);
+    /* Undo the shared .hero card style from global.css. */
+    margin: 0; border: none; border-radius: 0; box-shadow: none;
     border-bottom: 2px solid var(--gb);
     padding: 80px 40px 72px;
     position: relative; overflow: hidden;
@@ -67,10 +72,11 @@ const css = `
     background: radial-gradient(700px 400px at 0% 50%, rgba(200,168,75,0.05), transparent 60%);
     pointer-events: none;
   }
-  .hero-inner { position: relative; z-index: 1; max-width: 820px; }
+  .hero-inner { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; }
+  .hero-inner h1, .hero-inner > p { max-width: 820px; }
   .hero-eyebrow {
     font-size:12px; font-weight: 900; letter-spacing:1.4px;
-    text-transform: uppercase; color: var(--gold);
+    text-transform: uppercase; color: var(--gold-ink);
     margin-bottom: 20px; display: flex; align-items: center; gap: 12px;
   }
   .hero-eyebrow::after { content: ''; flex: 0 0 40px; height: 1px; background: var(--gold); opacity: 0.4; }
@@ -85,23 +91,23 @@ const css = `
   }
   .badge {
     border: 1px solid var(--gb); background: var(--gp);
-    color: var(--gold); font-size: 11px; font-weight: 900;
+    color: var(--gold-ink); font-size: 11px; font-weight: 900;
     padding: 7px 16px; border-radius: 2px; letter-spacing: 1.5px; text-transform: uppercase;
   }
   .badge.vid {
     border-color: var(--gold); background: rgba(200,168,75,0.12);
-    color: #E8D9A8;
+    color: #5c4810;
   }
   .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
   .btn-gold {
-    background: var(--gold); color: var(--black);
+    background: var(--gold); color: #16180f;
     padding: 14px 28px; border-radius: 4px;
     font-weight: 900; font-size: 14px; letter-spacing: 1px; text-transform: uppercase;
     display: inline-block;
   }
-  .btn-gold:hover { background: var(--gold2); color: var(--black); }
+  .btn-gold:hover { background: var(--gold2); color: #16180f; }
   .btn-outline {
-    border: 1px solid var(--gb); color: var(--gold);
+    border: 1px solid var(--gb); color: var(--gold-ink);
     padding: 14px 28px; border-radius: 4px;
     font-weight: 700; font-size: 14px; letter-spacing: 1px; text-transform: uppercase;
     display: inline-block;
@@ -110,7 +116,7 @@ const css = `
 
   /* CERT STRIP */
   .cert-strip {
-    background: #050504; border-bottom: 1px solid var(--gb);
+    background: #f3f0e7; border-bottom: 1px solid var(--gb);
     padding: 24px 40px;
     display: flex; align-items: center; gap: 0; flex-wrap: wrap;
     max-width: 100%;
@@ -124,13 +130,13 @@ const css = `
     padding: 12px 24px; border-right: 1px solid var(--gb);
   }
   .cert-chip:last-child { border-right: none; }
-  .cert-chip-label { font-size:12px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); display: block; line-height: 1; }
+  .cert-chip-label { font-size:12px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-ink); display: block; line-height: 1; }
   .cert-chip-sub { font-size: 11px; color: var(--muted); margin-top: 3px; display: block; }
 
   /* SECTION */
   .sec { padding: 80px 0; border-bottom: 1px solid var(--div); }
-  .sec.dark { background: #050504; }
-  .sec-label { font-size:12px; font-weight: 900; letter-spacing:1.4px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; display: block; }
+  .sec.dark { background: #f3f0e7; }
+  .sec-label { font-size:12px; font-weight: 900; letter-spacing:1.4px; text-transform: uppercase; color: var(--gold-ink); margin-bottom: 12px; display: block; }
   .sec-title { font-size: 38px; font-weight: 900; color: var(--white); letter-spacing: -1px; line-height: 1.1; margin-bottom: 14px; text-transform: uppercase; }
   .sec-lead { font-size: 16px; color: var(--muted); max-width: 640px; line-height: 1.75; margin-bottom: 48px; }
 
@@ -140,20 +146,20 @@ const css = `
     background: var(--card); border: 1px solid var(--gb);
     padding: 32px 28px;
   }
-  .cred-box-label { font-size:12px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; display: block; }
+  .cred-box-label { font-size:12px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-ink); margin-bottom: 20px; display: block; }
   .cred-item { display: flex; align-items: flex-start; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--div); }
   .cred-item:last-child { border-bottom: none; padding-bottom: 0; }
   .cred-ico { font-size: 18px; flex-shrink: 0; padding-top: 2px; }
   .cred-name { font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 3px; }
   .cred-detail { font-size: 12px; color: var(--muted); line-height: 1.5; }
-  .cred-valid { font-size: 11px; color: var(--gold); font-weight: 700; margin-top: 4px; display: block; letter-spacing: 0.5px; }
+  .cred-valid { font-size: 11px; color: var(--gold-ink); font-weight: 700; margin-top: 4px; display: block; letter-spacing: 0.5px; }
 
   /* NAICS */
   .naics-table { width: 100%; border-collapse: collapse; }
   .naics-table tr { border-bottom: 1px solid var(--div); }
   .naics-table tr:last-child { border-bottom: none; }
   .naics-table td { padding: 14px 0; vertical-align: top; }
-  .naics-code { color: var(--gold); font-weight: 900; font-size: 13px; padding-right: 24px; white-space: nowrap; width: 80px; }
+  .naics-code { color: var(--gold-ink); font-weight: 900; font-size: 13px; padding-right: 24px; white-space: nowrap; width: 80px; }
   .naics-name { font-size: 14px; color: var(--text); }
   .naics-tag {
     display: inline-block; font-size:12px; font-weight: 700; letter-spacing: 1px;
@@ -176,7 +182,7 @@ const css = `
     background: var(--card); border: 1px solid var(--div);
     padding: 28px 24px;
   }
-  .scope-num { font-size:12px; font-weight: 900; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 12px; opacity: 0.7; }
+  .scope-num { font-size:12px; font-weight: 900; color: var(--gold-ink); letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 12px; opacity: 0.7; }
   .scope-box h3 { font-size: 16px; font-weight: 800; color: var(--white); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
   .scope-box p { font-size: 13px; color: var(--muted); line-height: 1.65; }
 
@@ -188,11 +194,11 @@ const css = `
   .contact-box > p { font-size: 13px; color: var(--muted); margin-bottom: 24px; line-height: 1.6; }
   .c-row { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px; }
   .c-ico { width: 36px; height: 36px; flex-shrink: 0; border: 1px solid var(--gb); border-radius: 2px; display: flex; align-items: center; justify-content: center; font-size: 14px; background: var(--gp); }
-  .c-lbl { font-size:12px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 2px; }
+  .c-lbl { font-size:12px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; color: var(--gold-ink); display: block; margin-bottom: 2px; }
   .c-val { font-size: 14px; color: var(--text); }
   .c-val a { color: var(--white); font-weight: 700; }
   .inq-btn {
-    display: inline-block; background: var(--gold); color: var(--black);
+    display: inline-block; background: var(--gold); color: #16180f;
     padding: 12px 24px; border-radius: 2px; font-size: 12px; font-weight: 900;
     letter-spacing: 1px; text-transform: uppercase; margin-top: 8px;
   }
@@ -200,17 +206,18 @@ const css = `
 
   /* FOOTER */
   footer {
-    background: #030303; border-top: 1px solid var(--gb);
+    background: #14160f; border-top: 3px solid var(--gold);
     padding: 32px 40px; text-align: center;
   }
-  footer img { height: 44px; margin: 0 auto 12px; display: block; filter: drop-shadow(0 0 10px rgba(107,120,84,0.4)); }
-  footer p { font-size: 12px; color: var(--muted); line-height: 1.7; }
-  .hub-logo-footer { height: 40px; width: auto; margin: 10px auto 0; display: block; opacity: 0.85; }
+  footer img { height: 56px; margin: 0 auto 12px; display: block; }
+  footer p { font-size: 13px; color: #b9bdaf; line-height: 1.7; }
+  footer a { color: #e8cd77; }
+  .hub-logo-footer { height: 44px; width: auto; margin: 12px auto 0; display: block; background: #fff; border-radius: 6px; padding: 5px; }
 
   /* RESPONSIVE */
   @media (max-width: 860px) {
     .nav-links { display: none; }
-    .hero { padding: 52px 20px 48px; }
+    section.hero { padding: 52px 20px 48px; }
     .hero h1 { font-size: 38px; }
     .w { padding: 0 20px; }
     .sec { padding: 52px 0; }
@@ -242,7 +249,7 @@ export default function Government() {
             <span>Sanches Group</span>
           </a>
           <ul className="nav-links">
-            <li><a href="/#services">Services</a></li>
+            <li><a href="/#work">Services</a></li>
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#naics">NAICS</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -470,7 +477,7 @@ export default function Government() {
           <span className="sec-label">Scope of Work</span>
           <h2 className="sec-title">What we deliver.</h2>
           <p className="sec-lead">Sanches Group self-performs general construction, remodeling, unit turns, and facilities maintenance — no licensed trades advertised. Spot purchases under $25K available immediately for non-licensed services.</p>
-          <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '12px', opacity: '0.8' }}>Construction &amp; Maintenance Services</p>
+          <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--gold-ink)', marginBottom: '12px', opacity: '0.8' }}>Construction &amp; Maintenance Services</p>
           <div className="scope-grid" style={{ marginBottom: '2px' }}>
             {[
               { n:'01', title:'General Construction', body:'General contracting for government build-outs, office remodels, institutional renovations, and light commercial construction. Full project management, subcontractor coordination, and agency-ready documentation. NIGP 91000.' },
@@ -487,7 +494,7 @@ export default function Government() {
               </div>
             ))}
           </div>
-          <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--gold)', margin: '32px 0 12px', opacity: '0.8' }}>Spot Purchase Services — Available Immediately (&lt;$25K)</p>
+          <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '2px', textTransform: 'uppercase', color: 'var(--gold-ink)', margin: '32px 0 12px', opacity: '0.8' }}>Spot Purchase Services — Available Immediately (&lt;$25K)</p>
           <div className="scope-grid">
             {[
               { n:'07', title:'Janitorial & Custodial', body:'Janitorial and custodial services for government offices, facilities, and institutional properties. One-time deep cleans, recurring contracts, and post-construction clean-up. NIGP 910-39.' },
@@ -584,25 +591,25 @@ export default function Government() {
       </section>
 
       {/* COMPLIANCE DISCLOSURES */}
-      <div style={{ background: '#020202', borderTop: '1px solid rgba(255,255,255,0.04)', padding: '36px 40px' }}>
+      <div style={{ background: '#14160f', borderTop: '1px solid rgba(255,255,255,0.08)', padding: '36px 40px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.4px', textTransform: 'uppercase', color: '#8f9486', marginBottom: '20px' }}>Disclosures &amp; Policies</p>
+          <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.4px', textTransform: 'uppercase', color: '#d9c27a', marginBottom: '20px' }}>Disclosures &amp; Policies</p>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '28px' }}>
             <div>
-              <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.2px', textTransform: 'uppercase', color: '#8f9486', marginBottom: '6px' }}>Scope Limitation</p>
-              <p style={{ fontSize: '13px', color: '#7d8374', lineHeight: '1.85' }}>Roofing, electrical, plumbing and HVAC/ACR work is performed by appropriately licensed contractors engaged and managed by Sanches Group. Sanches Group / Joe Sanches LLC does not hold, and does not represent itself as holding, Texas trade qualifier licences (TSBPE/TDLR) in those categories. Registered NAICS and NIGP codes reflect bidding eligibility as a general contractor delivering through licensed subcontractors.</p>
+              <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.2px', textTransform: 'uppercase', color: '#d9c27a', marginBottom: '6px' }}>Scope Limitation</p>
+              <p style={{ fontSize: '13px', color: '#b9bdaf', lineHeight: '1.85' }}>Roofing, electrical, plumbing and HVAC/ACR work is performed by appropriately licensed contractors engaged and managed by Sanches Group. Sanches Group / Joe Sanches LLC does not hold, and does not represent itself as holding, Texas trade qualifier licences (TSBPE/TDLR) in those categories. Registered NAICS and NIGP codes reflect bidding eligibility as a general contractor delivering through licensed subcontractors.</p>
             </div>
             <div>
-              <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.2px', textTransform: 'uppercase', color: '#8f9486', marginBottom: '6px' }}>Entity Information</p>
-              <p style={{ fontSize: '13px', color: '#7d8374', lineHeight: '1.85' }}>Joe Sanches LLC · DBA Sanches Group · Leander, Texas · Williamson County · EIN: 39-4911899 · B2G VID: 21829543 · Formed: October 13, 2025 · Texas LLC.</p>
+              <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.2px', textTransform: 'uppercase', color: '#d9c27a', marginBottom: '6px' }}>Entity Information</p>
+              <p style={{ fontSize: '13px', color: '#b9bdaf', lineHeight: '1.85' }}>Joe Sanches LLC · DBA Sanches Group · Leander, Texas · Williamson County · EIN: 39-4911899 · B2G VID: 21829543 · Formed: October 13, 2025 · Texas LLC.</p>
             </div>
             <div>
-              <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.2px', textTransform: 'uppercase', color: '#8f9486', marginBottom: '6px' }}>Spot Purchase Availability</p>
-              <p style={{ fontSize: '13px', color: '#7d8374', lineHeight: '1.85' }}>Sanches Group is available for state agency spot purchases under $25,000 for non-licensed services (janitorial, pressure washing, painting, flooring, grounds maintenance, window washing, building maintenance). Quote requests welcome — response within one business day.</p>
+              <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.2px', textTransform: 'uppercase', color: '#d9c27a', marginBottom: '6px' }}>Spot Purchase Availability</p>
+              <p style={{ fontSize: '13px', color: '#b9bdaf', lineHeight: '1.85' }}>Sanches Group is available for state agency spot purchases under $25,000 for non-licensed services (janitorial, pressure washing, painting, flooring, grounds maintenance, window washing, building maintenance). Quote requests welcome — response within one business day.</p>
             </div>
             <div>
-              <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.2px', textTransform: 'uppercase', color: '#8f9486', marginBottom: '6px' }}>Property Management Non-Solicitation Policy</p>
-              <p style={{ fontSize: '13px', color: '#7d8374', lineHeight: '1.85' }}>Sanches Group works as an outside vendor for property management clients. We maintain a strict vendor-only relationship: we will never solicit your portfolio owners, pursue management contracts, or compete with your business in any form.</p>
+              <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.2px', textTransform: 'uppercase', color: '#d9c27a', marginBottom: '6px' }}>Property Management Non-Solicitation Policy</p>
+              <p style={{ fontSize: '13px', color: '#b9bdaf', lineHeight: '1.85' }}>Sanches Group works as an outside vendor for property management clients. We maintain a strict vendor-only relationship: we will never solicit your portfolio owners, pursue management contracts, or compete with your business in any form.</p>
             </div>
           </div>
         </div>
@@ -619,7 +626,7 @@ export default function Government() {
           alt="Texas Veteran HUB Certified"
           className="hub-logo-footer"
         />
-        <p style={{ marginTop: '10px', fontSize: '13px', color: '#7d8374' }}>
+        <p style={{ marginTop: '10px', fontSize: '13px', color: '#b9bdaf' }}>
           Texas HUB Certification effective 6/9/2026 · Valid through 6/9/2030 · B2G VID: 21829543 · EIN: 39-4911899 · Issued by Texas Comptroller of Public Accounts
         </p>
       </footer>

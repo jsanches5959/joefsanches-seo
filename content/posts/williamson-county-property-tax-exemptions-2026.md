@@ -1,5 +1,7 @@
 ---
-title: "williamson county property tax exemptions 2026"
+title: "Williamson County Property Tax Exemptions 2026: Every Break You Qualify For"
+description: "Every Williamson County property tax exemption for 2026: homestead, over-65, disability, 100% disabled veteran and ag, plus how to file and the deadline."
+seoTitle: "Williamson County Property Tax Exemptions 2026 (Full List)"
 slug: williamson-county-property-tax-exemptions-2026
 date: 2026-03-07T08:02:00.000Z
 ---

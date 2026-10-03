@@ -82,7 +82,7 @@ const faqSchema = {
 function Section({ id, title, children }) {
   return (
     <section id={id} style={{ marginBottom: '48px' }}>
-      <h2 style={{ fontSize: '26px', color: 'white', borderBottom: '2px solid var(--accent)', paddingBottom: '10px', marginBottom: '20px' }}>{title}</h2>
+      <h2 style={{ fontSize: '26px', color: 'var(--ink)', borderBottom: '2px solid var(--accent)', paddingBottom: '10px', marginBottom: '20px' }}>{title}</h2>
       {children}
     </section>
   );
@@ -218,7 +218,7 @@ export default function SellMyHouseHub() {
                 The biggest competition you'll face isn't other resale homes — it's builder inventory. New construction in communities like Bryson, Deerbrooke, and Northline competes directly with resale. The advantage resale has: location in established neighborhoods, mature landscaping, larger lots, and no MUD district in older sections. Joe positions your home to win that comparison.
               </p>
               <Callout>
-                <strong style={{ color: 'white' }}>Key data point:</strong> Homes in Leander that were priced correctly on day one sold for an average of 1.2% over list price in Q1 2026. Homes that required price reductions averaged 2.8% below original list price — a spread of 4% on a $450K home is $18,000 left on the table.
+                <strong style={{ color: 'var(--ink)' }}>Key data point:</strong> Homes in Leander that were priced correctly on day one sold for an average of 1.2% over list price in Q1 2026. Homes that required price reductions averaged 2.8% below original list price — a spread of 4% on a $450K home is $18,000 left on the table.
               </Callout>
             </Section>
 
@@ -232,9 +232,9 @@ export default function SellMyHouseHub() {
                 { step: '6', title: 'Contract to close', desc: 'Joe coordinates title, inspections, appraisals, and lender timelines so the transaction doesn\'t fall apart after you\'re under contract. He attends or participates in every critical step.' },
               ].map(s => (
                 <div key={s.step} className="card" style={{ marginBottom: '14px', display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-                  <div style={{ minWidth: '36px', height: '36px', borderRadius: '50%', background: 'var(--accent)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontWeight: 700, fontSize: '16px' }}>{s.step}</div>
+                  <div style={{ minWidth: '36px', height: '36px', borderRadius: '50%', background: 'var(--accent)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 700, fontSize: '16px' }}>{s.step}</div>
                   <div>
-                    <p style={{ color: 'white', fontWeight: 600, margin: '0 0 6px' }}>{s.title}</p>
+                    <p style={{ color: 'var(--ink)', fontWeight: 600, margin: '0 0 6px' }}>{s.title}</p>
                     <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{s.desc}</p>
                   </div>
                 </div>
@@ -253,7 +253,7 @@ export default function SellMyHouseHub() {
                 <li>Never chase the market down — each price reduction signals desperation and invites low offers</li>
               </ul>
               <Callout>
-                <strong style={{ color: 'white' }}>Joe's track record:</strong> Joe's average list-to-sale ratio in Leander TX is 98.4% — meaning his sellers net within 1.6% of their list price, on average. That's a result of getting the price right at launch, not hoping for it at the finish line.
+                <strong style={{ color: 'var(--ink)' }}>Joe's track record:</strong> Joe's average list-to-sale ratio in Leander TX is 98.4% — meaning his sellers net within 1.6% of their list price, on average. That's a result of getting the price right at launch, not hoping for it at the finish line.
               </Callout>
             </Section>
 
@@ -268,7 +268,7 @@ export default function SellMyHouseHub() {
                 ].map(t => (
                   <div key={t.period} className="card" style={{ padding: '16px' }}>
                     <p style={{ color: 'var(--accent-light)', fontSize: '12px', fontWeight: 600, margin: '0 0 4px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{t.period}</p>
-                    <p style={{ color: 'white', fontWeight: 600, margin: '0 0 8px', fontSize: '15px' }}>{t.label}</p>
+                    <p style={{ color: 'var(--ink)', fontWeight: 600, margin: '0 0 8px', fontSize: '15px' }}>{t.label}</p>
                     <p style={{ color: 'var(--muted)', fontSize: '13px', margin: 0 }}>{t.desc}</p>
                   </div>
                 ))}
@@ -288,7 +288,7 @@ export default function SellMyHouseHub() {
                 { tip: 'Hire a professional cleaner before photos and open house', roi: 'Costs $200–$400. Pays for itself in offer quality.' },
               ].map((item, i) => (
                 <div key={i} className="card" style={{ marginBottom: '10px' }}>
-                  <p style={{ color: 'white', fontWeight: 600, margin: '0 0 6px' }}>{item.tip}</p>
+                  <p style={{ color: 'var(--ink)', fontWeight: 600, margin: '0 0 6px' }}>{item.tip}</p>
                   <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.6', margin: 0 }}>{item.roi}</p>
                 </div>
               ))}
@@ -297,7 +297,7 @@ export default function SellMyHouseHub() {
             <Section id="faq" title="Seller FAQ — Leander TX Real Estate">
               {faqSchema.mainEntity.map((q, i) => (
                 <div key={i} className="card" style={{ marginBottom: '16px' }}>
-                  <h3 style={{ color: 'white', margin: '0 0 10px', fontSize: '16px' }}>{q.name}</h3>
+                  <h3 style={{ color: 'var(--ink)', margin: '0 0 10px', fontSize: '16px' }}>{q.name}</h3>
                   <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{q.acceptedAnswer.text}</p>
                 </div>
               ))}
@@ -319,7 +319,7 @@ export default function SellMyHouseHub() {
 
         {/* Bottom CTA */}
         <div className="card" style={{ textAlign: 'center', padding: '40px 24px', marginTop: '40px' }}>
-          <h2 style={{ color: 'white', fontSize: '28px', marginBottom: '12px' }}>Ready to Sell? Joe Is Ready to Help.</h2>
+          <h2 style={{ color: 'var(--ink)', fontSize: '28px', marginBottom: '12px' }}>Ready to Sell? Joe Is Ready to Help.</h2>
           <p style={{ color: 'var(--muted)', marginBottom: '24px', maxWidth: '560px', margin: '0 auto 24px' }}>
             Get a free, no-obligation home valuation. Joe will tell you what your home is worth in today's market and what it takes to get top dollar.
           </p>

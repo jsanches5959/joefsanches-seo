@@ -72,7 +72,7 @@ function Section({ id, title, children }) {
   return (
     <section id={id} style={{ marginTop: '56px' }}>
       <h2 style={{
-        fontSize: '26px', fontWeight: 700, color: 'white',
+        fontSize: '26px', fontWeight: 700, color: 'var(--ink)',
         borderBottom: '1px solid rgba(107,120,84,.3)',
         paddingBottom: '12px', marginBottom: '24px'
       }}>{title}</h2>
@@ -85,7 +85,7 @@ function InfoRow({ label, value }) {
   return (
     <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(107,120,84,.12)', padding: '10px 0', fontSize: '14px' }}>
       <span style={{ color: 'var(--muted)' }}>{label}</span>
-      <span style={{ color: 'white', fontWeight: 600 }}>{value}</span>
+      <span style={{ color: 'var(--ink)', fontWeight: 600 }}>{value}</span>
     </div>
   );
 }
@@ -95,14 +95,14 @@ function HomeCard({ home }) {
     <div className="card" style={{ background: 'rgba(107,120,84,.05)', borderColor: 'rgba(107,120,84,.2)' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '8px' }}>
         <div>
-          <p style={{ margin: '0 0 4px', color: 'white', fontWeight: 700, fontSize: '20px' }}>
+          <p style={{ margin: '0 0 4px', color: 'var(--ink)', fontWeight: 700, fontSize: '20px' }}>
             ${home.price ? home.price.toLocaleString() : 'Call for price'}
           </p>
           <p style={{ margin: '0 0 6px', color: 'var(--muted)', fontSize: '13px' }}>{home.address}</p>
           <div style={{ display: 'flex', gap: '16px', fontSize: '13px', color: 'var(--muted)' }}>
-            {home.beds && <span><strong style={{ color: 'white' }}>{home.beds}</strong> bd</span>}
-            {home.baths && <span><strong style={{ color: 'white' }}>{home.baths}</strong> ba</span>}
-            {home.sqft && <span><strong style={{ color: 'white' }}>{home.sqft.toLocaleString()}</strong> sqft</span>}
+            {home.beds && <span><strong style={{ color: 'var(--ink)' }}>{home.beds}</strong> bd</span>}
+            {home.baths && <span><strong style={{ color: 'var(--ink)' }}>{home.baths}</strong> ba</span>}
+            {home.sqft && <span><strong style={{ color: 'var(--ink)' }}>{home.sqft.toLocaleString()}</strong> sqft</span>}
           </div>
         </div>
         <span style={{
@@ -258,7 +258,7 @@ export default function KBHomeLeander({ liveHomes }) {
             <Section id="faq" title="Frequently Asked Questions — KB Home Leander TX">
               {faqSchema.mainEntity.map(({ name, acceptedAnswer }) => (
                 <div key={name} className="card" style={{ marginBottom: '12px' }}>
-                  <h3 style={{ color: 'white', margin: '0 0 8px', fontSize: '16px' }}>{name}</h3>
+                  <h3 style={{ color: 'var(--ink)', margin: '0 0 8px', fontSize: '16px' }}>{name}</h3>
                   <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{acceptedAnswer.text}</p>
                 </div>
               ))}
@@ -303,7 +303,7 @@ export default function KBHomeLeander({ liveHomes }) {
               </div>
 
               <div className="card" style={{ background: 'rgba(107,120,84,.05)', borderColor: 'rgba(107,120,84,.2)' }}>
-                <h3 style={{ color: 'white', margin: '0 0 12px', fontSize: '15px' }}>KB Home Quick Facts</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '15px' }}>KB Home Quick Facts</h3>
                 {[
                   ['Price Range', '$320K–$450K'],
                   ['Build Model', 'Built-to-Order'],
@@ -315,13 +315,13 @@ export default function KBHomeLeander({ liveHomes }) {
                 ].map(([k, v]) => (
                   <div key={k} style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid rgba(107,120,84,.1)', padding: '8px 0', fontSize: '13px' }}>
                     <span style={{ color: 'var(--muted)' }}>{k}</span>
-                    <span style={{ color: 'white', fontWeight: 600 }}>{v}</span>
+                    <span style={{ color: 'var(--ink)', fontWeight: 600 }}>{v}</span>
                   </div>
                 ))}
               </div>
 
               <div className="card" style={{ background: 'rgba(107,120,84,.05)', borderColor: 'rgba(107,120,84,.2)' }}>
-                <h3 style={{ color: 'white', margin: '0 0 12px', fontSize: '15px' }}>Other Builders in Leander</h3>
+                <h3 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '15px' }}>Other Builders in Leander</h3>
                 {[
                   ['/lennar-homes-leander-tx', 'Lennar — Crystal Falls'],
                   ['/taylor-morrison-leander-tx', 'Taylor Morrison — Northline'],
@@ -339,7 +339,7 @@ export default function KBHomeLeander({ liveHomes }) {
 
         {/* Footer CTA */}
         <div className="card" style={{ marginTop: '56px', textAlign: 'center', background: 'rgba(107,120,84,.05)', borderColor: 'rgba(107,120,84,.2)', padding: '48px 32px' }}>
-          <h2 style={{ color: 'white', margin: '0 0 12px', fontSize: '26px' }}>Ready to Build with KB Home in Bryson?</h2>
+          <h2 style={{ color: 'var(--ink)', margin: '0 0 12px', fontSize: '26px' }}>Ready to Build with KB Home in Bryson?</h2>
           <p style={{ color: 'var(--muted)', maxWidth: '60ch', margin: '0 auto 28px', lineHeight: '1.7' }}>
             I'll guide you through every step of the KB built-to-order process — lot selection, design studio, contract review, and walkthroughs. It costs you nothing. KB Home pays my commission.
           </p>

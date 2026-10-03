@@ -108,7 +108,7 @@ const highs = [
 function Section({ id, title, children }) {
   return (
     <section id={id} style={{ marginBottom: '48px' }}>
-      <h2 style={{ fontSize: '26px', color: 'white', borderBottom: '2px solid var(--accent)', paddingBottom: '10px', marginBottom: '20px' }}>{title}</h2>
+      <h2 style={{ fontSize: '26px', color: 'var(--ink)', borderBottom: '2px solid var(--accent)', paddingBottom: '10px', marginBottom: '20px' }}>{title}</h2>
       {children}
     </section>
   );
@@ -243,7 +243,7 @@ export default function LeaderISDSchoolsHub() {
                 ))}
               </div>
               <Callout>
-                <strong style={{ color: 'white' }}>For buyers:</strong> LISD is a genuine draw that sustains property values. Homes zoned to top-rated campuses — particularly the Vista Ridge and Glenn high school feeders — command measurable price premiums over comparable homes in other zones.
+                <strong style={{ color: 'var(--ink)' }}>For buyers:</strong> LISD is a genuine draw that sustains property values. Homes zoned to top-rated campuses — particularly the Vista Ridge and Glenn high school feeders — command measurable price premiums over comparable homes in other zones.
               </Callout>
             </Section>
 
@@ -254,7 +254,7 @@ export default function LeaderISDSchoolsHub() {
               {elementaries.map(e => (
                 <div key={e.name} className="card" style={{ marginBottom: '12px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '12px' }}>
                   <div style={{ flex: 1 }}>
-                    <p style={{ color: 'white', fontWeight: 600, margin: '0 0 4px', fontSize: '15px' }}>{e.name}</p>
+                    <p style={{ color: 'var(--ink)', fontWeight: 600, margin: '0 0 4px', fontSize: '15px' }}>{e.name}</p>
                     <p style={{ color: 'var(--accent-light)', fontSize: '12px', margin: '0 0 6px' }}>{e.area}</p>
                     <p style={{ color: 'var(--muted)', fontSize: '13px', margin: 0 }}>{e.notes}</p>
                   </div>
@@ -270,7 +270,7 @@ export default function LeaderISDSchoolsHub() {
               {middles.map(m => (
                 <div key={m.name} className="card" style={{ marginBottom: '12px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '8px' }}>
-                    <p style={{ color: 'white', fontWeight: 600, margin: 0, fontSize: '15px' }}>{m.name}</p>
+                    <p style={{ color: 'var(--ink)', fontWeight: 600, margin: 0, fontSize: '15px' }}>{m.name}</p>
                     <span className="pill">{m.rating}</span>
                   </div>
                   <p style={{ color: 'var(--accent-light)', fontSize: '13px', margin: '0 0 4px' }}>Serves: {m.feeds}</p>
@@ -286,7 +286,7 @@ export default function LeaderISDSchoolsHub() {
               {highs.map(h => (
                 <div key={h.name} className="card" style={{ marginBottom: '16px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '8px', marginBottom: '8px' }}>
-                    <h3 style={{ color: 'white', margin: 0, fontSize: '18px' }}>{h.name}</h3>
+                    <h3 style={{ color: 'var(--ink)', margin: 0, fontSize: '18px' }}>{h.name}</h3>
                     <span className="pill">{h.rating}</span>
                   </div>
                   <p style={{ color: 'var(--muted)', fontSize: '13px', margin: '0 0 4px' }}>Est. {h.estd} · Enrollment ~{h.enrollment} · {h.address}</p>
@@ -306,7 +306,7 @@ export default function LeaderISDSchoolsHub() {
                 <li>Campus culture and parent involvement — talk to local parents, not just websites</li>
               </ul>
               <Callout>
-                <strong style={{ color: 'white' }}>Local insight:</strong> Every LISD high school sends graduates to UT Austin, Texas A&M, and other top universities every year. The district's worst-rated high school by GreatSchools still outperforms the majority of high schools in Texas by most objective measures.
+                <strong style={{ color: 'var(--ink)' }}>Local insight:</strong> Every LISD high school sends graduates to UT Austin, Texas A&M, and other top universities every year. The district's worst-rated high school by GreatSchools still outperforms the majority of high schools in Texas by most objective measures.
               </Callout>
             </Section>
 
@@ -331,7 +331,7 @@ export default function LeaderISDSchoolsHub() {
             <Section id="faq" title="Leander ISD Schools FAQ">
               {faqSchema.mainEntity.map((q, i) => (
                 <div key={i} className="card" style={{ marginBottom: '16px' }}>
-                  <h3 style={{ color: 'white', margin: '0 0 10px', fontSize: '16px' }}>{q.name}</h3>
+                  <h3 style={{ color: 'var(--ink)', margin: '0 0 10px', fontSize: '16px' }}>{q.name}</h3>
                   <p style={{ color: 'var(--muted)', fontSize: '14px', lineHeight: '1.7', margin: 0 }}>{q.acceptedAnswer.text}</p>
                 </div>
               ))}
@@ -353,7 +353,7 @@ export default function LeaderISDSchoolsHub() {
 
         {/* Bottom CTA */}
         <div className="card" style={{ textAlign: 'center', padding: '40px 24px', marginTop: '40px' }}>
-          <h2 style={{ color: 'white', fontSize: '28px', marginBottom: '12px' }}>Want to Buy in a Specific LISD School Zone?</h2>
+          <h2 style={{ color: 'var(--ink)', fontSize: '28px', marginBottom: '12px' }}>Want to Buy in a Specific LISD School Zone?</h2>
           <p style={{ color: 'var(--muted)', marginBottom: '24px', maxWidth: '560px', margin: '0 auto 24px' }}>
             Joe knows every attendance boundary, every rezoning risk, and which communities feed your target campus. Let's find your home in the right zone.
           </p>

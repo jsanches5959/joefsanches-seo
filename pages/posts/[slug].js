@@ -101,6 +101,9 @@ export async function getStaticProps({ params }) {
     props: {
       slug: params.slug,
       title: data.title || h1Title || params.slug,
+      // Optional search-result title. Lets a post that ranks but is not
+      // clicked be retitled for the results page without renaming its H1.
+      seoTitle: data.seoTitle || null,
       date,
       contentHtml,
       description,
@@ -110,7 +113,9 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export default function Post({ slug, title, date, contentHtml, description, contracting, faqs = [] }) {
+export default function Post({ slug, title, seoTitle, date, contentHtml, description, contracting, faqs = [] }) {
+  const brandSuffix = contracting ? 'Sanches Group' : 'Joe Sanches Realtor';
+  const docTitle = seoTitle || `${title} | ${brandSuffix}`;
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joefsanches.com';
   const postUrl = `${baseUrl}/posts/${slug}`;
   const publishedDate = date ? new Date(date).toISOString() : new Date().toISOString();
@@ -143,14 +148,14 @@ export default function Post({ slug, title, date, contentHtml, description, cont
   return (
     <>
       <Head>
-        <title>{title} | {contracting ? 'Sanches Group' : 'Joe Sanches Realtor'}</title>
+        <title>{docTitle}</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={postUrl} />
         
         {/* Open Graph Tags */}
         <meta property="og:type" content="article" />
-        <meta property="og:title" content={title} />
+        <meta property="og:title" content={seoTitle || title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={postUrl} />
         <meta property="og:image" content={`${baseUrl}/logo.png`} />
@@ -158,7 +163,7 @@ export default function Post({ slug, title, date, contentHtml, description, cont
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={title} />
+        <meta name="twitter:title" content={seoTitle || title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={`${baseUrl}/logo.png`} />
         
@@ -220,7 +225,7 @@ export default function Post({ slug, title, date, contentHtml, description, cont
 
         <div className="grid" style={{ marginTop: '40px' }}>
           <main className="main">
-            <article className="hero" style={{ padding: '40px' }}>
+            <article className="hero post-article" style={{ padding: '40px' }}>
               <Link href="/" style={{ color: 'var(--muted)', fontSize: '14px', marginBottom: '24px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
                 Back to Home
@@ -239,13 +244,13 @@ export default function Post({ slug, title, date, contentHtml, description, cont
                   marginTop: '32px', 
                   lineHeight: '1.8', 
                   fontSize: '17px', 
-                  color: 'rgba(255,255,255,0.9)' 
+                  color: 'var(--text)' 
                 }}
                 dangerouslySetInnerHTML={{ __html: contentHtml }} 
               />
 
               <section style={{ marginTop: '60px', padding: '40px', borderRadius: '16px', border: '1px solid var(--border)', background: 'rgba(107,120,84,0.05)' }}>
-                <h2 style={{ fontSize: '26px', marginBottom: '16px', color: 'white' }}>
+                <h2 style={{ fontSize: '26px', marginBottom: '16px', color: 'var(--ink)' }}>
                   {contracting ? 'Need this fixed?' : 'Want help in Leander / Austin?'}
                 </h2>
                 <p style={{ color: 'var(--muted)', marginBottom: '28px', fontSize: '16px', lineHeight: '1.6' }}>
@@ -258,6 +263,27 @@ export default function Post({ slug, title, date, contentHtml, description, cont
                   <a href="mailto:hello@joefsanches.com" className="btn" style={{ padding: '12px 20px', fontSize: '15px' }}>Email Joe</a>
                 </div>
               </section>
+
+              {/* The bridge between the two halves of the business. Someone
+                  reading about buying or selling here is about to need paint,
+                  repairs or tree work, and the same name does that too. */}
+              {!contracting ? (
+                <section className="prop-cta">
+                  <p className="prop-cta-eyebrow">Sanches Group · Property Services</p>
+                  <h2>Getting a house ready, or fixing what the inspection found?</h2>
+                  <p>
+                    Joe&apos;s crews do the work too: paint, drywall, tree removal and trimming,
+                    pressure washing, flooring and repairs. Sellers get it done before the listing
+                    photos, and buyers get it done before move-in. Free estimates, and one name
+                    accountable for the job.
+                  </p>
+                  <div className="actions">
+                    <a href="/#contact" className="btn accent" style={{ padding: '12px 20px', fontSize: '15px' }}>Get a Free Estimate</a>
+                    <a href="/tree-removal-leander-tx" className="btn" style={{ padding: '12px 20px', fontSize: '15px' }}>Tree Service →</a>
+                    <a href="/#work" className="btn" style={{ padding: '12px 20px', fontSize: '15px' }}>All Services →</a>
+                  </div>
+                </section>
+              ) : null}
             </article>
           </main>
 
@@ -265,7 +291,7 @@ export default function Post({ slug, title, date, contentHtml, description, cont
             {contracting ? (
               <>
                 <div className="card" style={{ background: 'rgba(200,168,75,0.06)', borderColor: 'rgba(200,168,75,0.3)', textAlign: 'center', marginBottom: '20px' }}>
-                  <h3 className="cardTitle" style={{ color: 'var(--gold)', letterSpacing: '1px' }}>FREE ESTIMATE</h3>
+                  <h3 className="cardTitle" style={{ color: 'var(--gold-ink)', letterSpacing: '1px' }}>FREE ESTIMATE</h3>
                   <p style={{ fontSize: '14px', color: 'var(--muted)', marginTop: '10px', marginBottom: '16px', lineHeight: '1.6' }}>
                     Send a photo of the damage. We&apos;ll tell you what it is and what it costs — no charge, no pressure.
                   </p>
@@ -310,11 +336,14 @@ export default function Post({ slug, title, date, contentHtml, description, cont
               </a>
             </div>
             <div className="card" style={{ background: 'rgba(200,168,75,0.05)', borderColor: 'rgba(200,168,75,0.3)', textAlign: 'center', marginBottom: '20px' }}>
-              <h3 className="cardTitle" style={{ color: 'var(--gold)', letterSpacing: '1px' }}>SANCHES GROUP</h3>
-              <p style={{ fontSize: '13px', color: 'var(--muted)', marginTop: '10px', lineHeight: '1.6' }}>
-                Construction · unit turns · facilities maintenance · government contracting. Service-Disabled Veteran-Owned.
+              <h3 className="cardTitle" style={{ color: 'var(--gold-ink)', letterSpacing: '1px' }}>JOE DOES THE WORK, TOO</h3>
+              <p style={{ fontSize: '14px', color: 'var(--muted)', marginTop: '10px', lineHeight: '1.6' }}>
+                Pre-listing repairs, inspection fixes, paint, drywall and tree work, from Sanches Group. Veteran-owned. Free estimates.
               </p>
-              <a href="/" className="btn" style={{ marginTop: '14px', fontSize: '13px', justifyContent: 'center' }}>Visit the Contracting Site →</a>
+              <div style={{ marginTop: '14px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <a href="sms:5126638867" className="btn accent" style={{ fontSize: '14px', justifyContent: 'center' }}>Text a Photo</a>
+                <a href="/" className="btn" style={{ fontSize: '14px', justifyContent: 'center' }}>See Property Services →</a>
+              </div>
             </div>
             <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center', position: 'sticky', top: '20px' }}>
               <img 
@@ -354,13 +383,18 @@ export default function Post({ slug, title, date, contentHtml, description, cont
         </footer>
 
         <style jsx global>{`
-          .contentHtml h2 { font-size: 28px; margin-top: 48px; margin-bottom: 20px; color: white; border-bottom: 1px solid var(--border); padding-bottom: 12px; }
-          .contentHtml h3 { font-size: 22px; margin-top: 36px; margin-bottom: 16px; color: white; }
+          .contentHtml h2 { font-size: 28px; margin-top: 48px; margin-bottom: 20px; color: var(--ink); border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+          .contentHtml h3 { font-size: 22px; margin-top: 36px; margin-bottom: 16px; color: var(--ink); }
           .contentHtml p { margin-bottom: 24px; }
           .contentHtml ul, .contentHtml ol { margin-bottom: 24px; padding-left: 24px; }
           .contentHtml li { margin-bottom: 12px; }
-          .contentHtml strong { color: white; }
+          .contentHtml strong { color: var(--ink); }
           .contentHtml a { color: var(--accent-light); text-decoration: underline; }
+          .prop-cta { margin-top: 24px; padding: 34px 36px; border-radius: 16px; background: var(--card); border: 1px solid var(--gold-border); border-top: 4px solid var(--gold); }
+          .prop-cta-eyebrow { margin: 0 0 8px; font-size: 12px; font-weight: 900; letter-spacing: 1.6px; text-transform: uppercase; color: var(--olive-ink); }
+          .prop-cta h2 { font-size: 24px; line-height: 1.25; margin: 0 0 12px; color: var(--ink); }
+          .prop-cta p { color: var(--text); font-size: 16px; line-height: 1.7; margin: 0 0 22px; }
+          @media (max-width: 600px) { .prop-cta { padding: 26px 22px; } }
           .contentHtml blockquote { border-left: 4px solid var(--accent); padding-left: 20px; margin: 32px 0; font-style: italic; color: var(--muted); }
           .container { padding-bottom: 100px; }
           @media (max-width: 860px) {

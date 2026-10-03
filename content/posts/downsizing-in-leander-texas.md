@@ -1,5 +1,7 @@
 ---
-title: "downsizing in leander texas"
+title: "Downsizing in Leander, Texas: What to Know Before You Sell the Big House"
+description: "Downsizing in Leander in 2026: tapping your equity, the tax math, whether to sell first or buy first, capital gains, and what most sellers get wrong."
+seoTitle: "Downsizing in Leander TX: Selling the Big House the Right Way"
 slug: downsizing-in-leander-texas
 date: 2026-03-07T08:04:00.000Z
 ---
