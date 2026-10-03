@@ -106,7 +106,7 @@ export default function Service({ service, others }) {
             <span>Licensed &amp; Insured</span><i />
             <span>Free Estimates</span><i />
             <span>One Point of Contact</span><i />
-            <span>Veteran-Owned</span>
+            <span>Written Quotes</span>
           </div>
           <div className="svc-ctas">
             <a href="#quote" className="svc-btn">Get a Free Estimate</a>

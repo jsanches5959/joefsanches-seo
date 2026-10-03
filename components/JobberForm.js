@@ -105,7 +105,6 @@ export default function JobberForm() {
           </p>
           <div className="jf-failed-actions">
             <a href="tel:5126638867" className="jf-btn primary">Call 512-663-8867</a>
-            <a href="sms:5126638867" className="jf-btn">Text a Photo</a>
             <a href="mailto:hello@joefsanches.com" className="jf-btn">Email Us</a>
           </div>
         </div>
