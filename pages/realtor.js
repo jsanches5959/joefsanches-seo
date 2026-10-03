@@ -1,6 +1,6 @@
 
 import Link from 'next/link';
-import LeadForm from '../components/LeadForm';
+import JobberForm from '../components/JobberForm';
 import Head from 'next/head';
 import fs from 'fs';
 import path from 'path';
@@ -354,11 +354,12 @@ export default function Realtor({ posts }) {
                   padding: '32px',
                 }}
               >
-                <LeadForm
-                  heading="Tell Joe what you're looking for"
-                  blurb="Buying, selling, or just weighing your options — send the details and Joe will get back to you personally, usually the same day."
-                  compact
-                />
+                <h3 className="cardTitle" style={{ fontSize: '20px', marginBottom: '8px' }}>Tell Joe what you&apos;re looking for</h3>
+                <p style={{ color: 'var(--text)', fontSize: '16px', lineHeight: 1.7, margin: '0 0 18px' }}>
+                  Buying, selling, or just weighing your options? Send the details and Joe will get
+                  back to you personally, usually the same day.
+                </p>
+                <JobberForm />
               </div>
             </section>
 

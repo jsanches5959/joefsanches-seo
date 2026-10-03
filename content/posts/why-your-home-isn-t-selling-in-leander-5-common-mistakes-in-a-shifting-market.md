@@ -20,7 +20,7 @@ One of the most frequent reasons homes aren’t selling in Leander is because se
 
 ### Local Insight: What Buyers Are Willing to Pay
 
-Buyers in Leander and Cedar Park are savvy — they’re researching neighborhoods like **Forest Oaks** and **Teravista** carefully. They know what similar homes have sold for, and they won’t waste time on overpriced listings. Additionally, homes near amenities like the **Leander Public Library** or popular trails such as the **Brushy Creek Regional Trail** tend to command fair market prices, but even these must be priced competitively.
+Buyers in Leander and Cedar Park are savvy — they’re researching neighborhoods like **Forest Oaks** and **Crystal Falls** carefully. They know what similar homes have sold for, and they won’t waste time on overpriced listings. Additionally, homes near amenities like the **Leander Public Library** or popular trails such as the **Brushy Creek Regional Trail** tend to command fair market prices, but even these must be priced competitively.
 
 ### How to Fix It
 
@@ -113,7 +113,7 @@ A: Timing varies by neighborhood and price point, but homes priced correctly and
 A: Focus on cost-effective improvements that increase appeal, such as fresh paint, updated fixtures, and landscaping. Consult a local expert to prioritize upgrades with the highest ROI in Leander.
 
 **Q3: How important is curb appeal in the Leander market?**  
-A: Very important. Leander buyers often drive through neighborhoods like **Crystal Falls** and **Teravista** before making decisions. First impressions can make or break buyer interest.
+A: Very important. Leander buyers often drive through neighborhoods like **Crystal Falls** and **Larkspur** before making decisions. First impressions can make or break buyer interest.
 
 **Q4: Can I sell my home without an agent in Leander?**  
 A: While it’s possible, working with a knowledgeable local agent like Joe F. Sanches can help you avoid common pitfalls and maximize your home’s value in a shifting market.

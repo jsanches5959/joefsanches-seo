@@ -27,7 +27,7 @@ Leander ISD’s decision to close certain schools is not made lightly. Several k
 
 Leander ISD serves a sprawling area including parts of Leander, Cedar Park, and northwest Austin. Notably:
 
-- Neighborhoods like **Crystal Falls** and **Teravista** have seen steady growth, leading to increased demand for newer schools.
+- Neighborhoods like **Bryson** and **Northline** have seen steady growth, leading to increased demand for newer schools.
 - Conversely, some established areas such as **Canyon Ridge** or **North Leander** may see slower growth or shifting demographics, influencing enrollment patterns.
 - The district is actively balancing growth in master-planned communities with changing family preferences, such as opting for private or charter schools, which also impacts public school attendance.
 
@@ -41,7 +41,7 @@ School closures can create uncertainty, but understanding the full picture is cr
 
 - **For Homebuyers:** Don’t just look at whether a school is closing—investigate where students are reassigned. Often, closures lead to boundary changes that direct families toward newer, updated campuses with better facilities.
 - **For Sellers:** If your home is near a closing school, highlighting the district’s plans and the benefits of new school options can reassure buyers.
-- **Neighborhoods to Watch:** Areas like **Brushy Creek** and **Jersey Village** might be impacted by these boundary adjustments, so staying informed about district communications is key.
+- **Neighborhoods to Watch:** Areas like **Brushy Creek** and **Block House Creek** might be impacted by these boundary adjustments, so staying informed about district communications is key.
 
 ### How Leander ISD Is Supporting Families Through Transitions
 

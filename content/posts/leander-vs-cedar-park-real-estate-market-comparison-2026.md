@@ -25,7 +25,7 @@ The Austin metro area continues evolving as remote work trends, infrastructure p
 
 ### Leander: Suburban Growth with Hill Country Charm
 
-- **Neighborhood Highlights:** Crystal Falls, Rough Hollow, and Teravista are standout communities featuring large lots, newer builds, and scenic hill country views.
+- **Neighborhood Highlights:** Crystal Falls, Larkspur, and Bryson are standout communities featuring large lots, newer builds, and scenic hill country views.
 - **Community Feel:** Leander boasts a more relaxed, suburban atmosphere with ample parks like Lakewood Park and access to the beautiful Balcones Canyonlands Preserve.
 - **Local Events:** The annual Leander Bluegrass Festival and the Leander Farmer’s Market foster a tight-knit, family-friendly community spirit.
 

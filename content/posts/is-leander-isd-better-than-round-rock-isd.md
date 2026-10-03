@@ -25,8 +25,8 @@ Before diving into which district might be “better,” it’s important to not
 
 ### 1. **Geographic and Community Context**
 
-- **Leander ISD** neighborhoods like *Teravista* and *Crystal Falls* in Leander and *West Cypress Hills* in Cedar Park are popular for families attracted to newer homes and community amenities. These areas often feature access to hiking trails, local parks, and community pools.
-- In **Round Rock ISD**, subdivisions such as *Forest Creek* and *Cedar Park Heights* offer proximity to the Round Rock Premium Outlets, Dell headquarters, and the Round Rock Sports Center, making it ideal for families valuing convenience and established local businesses.
+- **Leander ISD** neighborhoods like *Crystal Falls* and *Bryson* in Leander and *Twin Creeks* and *Travisso* in Cedar Park are popular for families attracted to newer homes and community amenities. These areas often feature access to hiking trails, local parks, and community pools.
+- In **Round Rock ISD**, subdivisions such as *Forest Creek*, *Teravista* and *Avery Ranch* offer proximity to the Round Rock Premium Outlets, Dell headquarters, and the Round Rock Sports Center, making it ideal for families valuing convenience and established local businesses.
 
 ### 2. **School Culture and Programs**
 
@@ -51,15 +51,15 @@ As a local expert, I always advise clients to look beyond just the district name
 
 ### Leander ISD Highlights
 
-- **Teravista**: Known for its family-friendly vibe, golf courses, and access to Leander High School and four elementary schools nearby.
+- **Twin Creeks** (Cedar Park): Known for its golf course and family-friendly vibe, zoned to Cc Mason Elementary, Running Brushy Middle and Leander High School.
 - **Crystal Falls**: A master-planned community with access to newer elementary and middle schools in Leander ISD plus walking trails and community pools.
-- **West Cypress Hills** (Cedar Park): Offers a strong community feel, newer schools, and proximity to Cedar Park’s retail hubs.
+- **Brushy Creek** (Cedar Park): An established MUD-governed community with an extensive park and trail system, feeding Cedar Park Middle and Cedar Park High School.
 
 ### Round Rock ISD Highlights
 
 - **Forest Creek**: Offers great access to Round Rock High School and is popular among families valuing a mix of suburban and urban amenities.
-- **Cedar Park Heights**: While technically in the Cedar Park area, parts fall into Round Rock ISD, providing access to well-established schools and local parks.
-- **Teravista (Portion in RRISD)**: Some areas of Teravista fall under Round Rock ISD, showing how school boundaries can intersect neighborhoods.
+- **Avery Ranch** (northwest Austin): A large established neighborhood, mostly zoned to Round Rock ISD, a good example of how a Cedar Park-area address can still fall outside Leander ISD.
+- **Teravista** (Round Rock / Georgetown): A golf course community zoned mostly to Round Rock ISD. It is sometimes mistaken for a Leander neighborhood, but it sits on the far side of Round Rock.
 
 ---
 

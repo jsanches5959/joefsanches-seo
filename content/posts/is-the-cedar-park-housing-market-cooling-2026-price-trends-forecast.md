@@ -45,7 +45,7 @@ Buyers can expect:
 
 ### 2. Increased Housing Inventory
 
-Cedar Park is experiencing a gradual increase in housing inventory, especially in new developments like **Union Park** and **Lakeline Vista**. This influx provides more choices for buyers, which can naturally slow down rapid price escalations.
+Cedar Park is experiencing a gradual increase in housing inventory, especially in new developments like **Walsh Ranch / Quarry** and **Travisso**. This influx provides more choices for buyers, which can naturally slow down rapid price escalations.
 
 ### 3. Local Economic Factors Influencing the Market
 

@@ -5,7 +5,6 @@
     "name": "Drywall Repair & Installation",
     "shortName": "Drywall Repair",
     "city": "Leander, TX",
-    "leadService": "Drywall / Painting",
     "title": "Drywall Repair in Leander TX — Same-Week Patch & Texture",
     "description": "Drywall repair and installation in Leander, Cedar Park, and Georgetown TX. Holes, cracks, water damage, texture matching, full sheetrock installs. Free estimates, one point of contact.",
     "h1": "Drywall Repair & Installation in Leander, TX",
@@ -88,7 +87,6 @@
     "name": "Interior & Exterior Painting",
     "shortName": "Painting",
     "city": "Leander, TX",
-    "leadService": "Drywall / Painting",
     "title": "Painting Contractor in Leander TX — Interior & Exterior",
     "description": "Interior and exterior painting in Leander, Cedar Park, and Georgetown TX. Full-house repaints, single rooms, cabinets, trim, and commercial spaces. Free written estimates.",
     "h1": "Interior & Exterior Painting in Leander, TX",
@@ -163,7 +161,6 @@
     "name": "Handyman & Home Repairs",
     "shortName": "Handyman Repairs",
     "city": "Leander, TX",
-    "leadService": "Handyman / Repairs",
     "title": "Handyman Services in Leander TX — Repairs & Punch Lists",
     "description": "Handyman and home repair services in Leander, Cedar Park, and Georgetown TX. Drywall, doors, trim, fixtures, mounting, and punch lists. One call, one point of contact.",
     "h1": "Handyman & Home Repair Services in Leander, TX",
@@ -239,7 +236,6 @@
     "name": "Remodeling & General Construction",
     "shortName": "Remodeling",
     "city": "Leander, TX",
-    "leadService": "Remodeling / General Construction",
     "title": "Remodeling Contractor in Leander TX — Kitchens, Baths & Additions",
     "description": "Remodeling and general construction in Leander, Cedar Park, and Georgetown TX. Kitchens, bathrooms, room additions, and full interior renovations. Owner-run, written scope, free estimates.",
     "h1": "Remodeling & General Construction in Leander, TX",
@@ -318,7 +314,6 @@
     "name": "Pressure Washing",
     "shortName": "Pressure Washing",
     "city": "Leander, TX",
-    "leadService": "Pressure Washing",
     "title": "Pressure Washing in Leander TX — Driveways, Siding & Commercial",
     "description": "Pressure washing in Leander, Cedar Park, and Georgetown TX. Driveways, sidewalks, siding, patios, parking lots, and commercial exteriors. Residential and commercial. Free estimates.",
     "h1": "Pressure Washing in Leander, TX",
@@ -386,7 +381,6 @@
     "name": "Landscaping & Grounds Maintenance",
     "shortName": "Landscaping & Grounds",
     "city": "Leander, TX",
-    "leadService": "Landscaping / Grounds Maintenance",
     "title": "Landscaping & Grounds Maintenance in Leander TX — Residential & Commercial",
     "description": "Landscaping and grounds maintenance in Leander, Cedar Park and Georgetown TX. Bed cleanup, mulch, shrub trimming, mowing and edging, brush clearing and recurring commercial grounds contracts. Subcontract crews for landscape companies. Free estimates.",
     "h1": "Landscaping & Grounds Maintenance in Leander, TX",
@@ -423,7 +417,7 @@
     "faq": [
       [
         "Do you work as a subcontractor for landscape companies?",
-        "Yes. We take overflow, cleanup and install labor from landscape companies and general contractors. We carry our own insurance, work under your name on your job, and never solicit your customer. Certificate of insurance on request."
+        "Yes. We take overflow, cleanup and install labor from landscape companies and general contractors. We work under your name on your job and never solicit your customer."
       ],
       [
         "Do you offer recurring grounds maintenance contracts?",
@@ -450,7 +444,6 @@
     "name": "Facilities Maintenance & Janitorial",
     "shortName": "Facilities & Janitorial",
     "city": "Austin, TX",
-    "leadService": "Janitorial / Facilities Maintenance",
     "title": "Facilities Maintenance & Janitorial — Austin & Central Texas",
     "description": "Commercial facilities maintenance and janitorial services across the Austin metro. Recurring cleaning, unit turns, repairs, painting, and grounds upkeep for property managers, commercial owners, and government facilities.",
     "h1": "Facilities Maintenance & Janitorial Services in Central Texas",

@@ -25,45 +25,43 @@ Before diving into specific communities, it’s important to understand why new 
 
 ## Top New Construction Communities in Leander for 2026
 
-### 1. **Saddle Ridge**
+### 1. **Bryson**
 
-Located on the northwest side of Leander, Saddle Ridge is a standout for families seeking spacious homes and a tranquil environment. Here’s what makes it special:
+In the northwest corner of Leander, Bryson is one of the city's most amenity-rich new communities. Here's what makes it special:
 
-- **Home Styles:** Primarily single-family homes with open floor plans and large yards.
-- **Community Features:** Walking trails, playgrounds, and nearby access to the scenic Brushy Creek Lake Park.
-- **Local Schools:** Served by the Leander Independent School District, with easy routes for school drop-offs.
-- **Nearby Amenities:** Close to Leander’s historic downtown with quaint shops and eateries.
+- **Home Styles:** Single-family homes from builders including KB Home and Pulte, typically about $310K–$450K.
+- **Community Features:** Lazy river, resort pool, splash pad, fishing pond, dog park and miles of trails.
+- **Local Schools:** Leander ISD, generally Jim Plain Elementary, Danielson Middle and Glenn High School.
+- **Trade-off:** A MUD community, with a combined tax rate around 2.47%.
 
 ### 2. **Crystal Falls**
 
-Crystal Falls master-planned community has been a favorite for a few years and continues to expand with new phases releasing in 2026.
+Crystal Falls is an established golf course community that still has newer phases building out.
 
-- **Why It’s Popular:** Offers resort-style amenities including a water park, fitness center, and sports courts.
-- **Homebuyers’ Perks:** Homes range from affordable starter options to larger executive models.
-- **Community Events:** Regular neighborhood gatherings such as outdoor movie nights and holiday celebrations.
-- **Commuter Advantage:** Quick access to US-183 and SH-29 for commuting to Austin or Round Rock.
+- **Why It's Popular:** Golf, pools, trails and Hill Country terrain, with Leander High School zoning.
+- **Homebuyers' Perks:** Homes range from about $340K to $650K, from older resales to new construction.
+- **Taxes:** About 2.28% combined, lower than most newer communities.
+- **Commuter Advantage:** About 35–45 minutes to Austin via the 183A toll road.
 
 ---
 
 ## Top New Construction Communities in Cedar Park for 2026
 
-### 1. **Villas at Rough Hollow**
+### 1. **Walsh Ranch / Quarry**
 
-A premier gated community situated around the beautiful Lake Travis area, Villas at Rough Hollow is perfect for buyers who want luxury and waterfront access.
+Western Cedar Park's newest large development, with limestone-terrace landscaping that nods to the land's quarry history.
 
-- **Key Features:** Stunning hill country views, private marina, and access to Rough Hollow’s championship golf course.
-- **Home Options:** From upscale condos to large single-family homes, many with energy-efficient smart home features.
-- **Lifestyle Amenities:** Clubhouse, pools, fitness center, and boat slips.
-- **Nearby Dining & Shopping:** Minutes from Cedar Park’s bustling 183A corridor for dining, entertainment, and retail.
+- **Key Features:** Builders including Toll Brothers and Taylor Morrison, homes typically about $400K–$650K, and access to the Brushy Creek trail system.
+- **Schools:** Leander ISD, generally Cc Mason Elementary, Running Brushy Middle and Cedar Park High School.
 
-### 2. **Parkside at Brushy Creek**
+### 2. **Travisso**
 
-Parkside blends community charm with modern conveniences, ideal for families and professionals alike.
+The high end of new construction on the Cedar Park side, on the Balcones Escarpment.
 
-- **Community Highlights:** Multiple parks, splash pads, and extensive hike-and-bike trails.
-- **Schools:** Zoned for Cedar Park ISD, with easy access to local elementary and middle schools.
-- **Home Variety:** New construction includes townhomes and single-family houses with customizable options.
-- **Access:** Located near major highways such as 183A Toll Road, making Austin commutes manageable.
+- **Community Highlights:** Hill Country views, resort pool, tennis and pickleball, clubhouse and trails.
+- **Schools:** Leander ISD, generally Cc Mason Elementary, Running Brushy Middle and Leander High School.
+- **Home Variety:** Builders including Toll Brothers, Taylor Morrison and Highland Homes, from about $500K to over $1.2M.
+- **Access:** 183A or RM 620 toward Austin.
 
 ---
 
@@ -91,7 +89,7 @@ While these communities offer great locations, consider your daily commute to wo
 
 ### Schools
 
-Leander ISD and Cedar Park ISD serve these areas, each with several elementary, middle, and high schools located within minutes of these communities. While I avoid rating schools, I can provide detailed zoning maps and school options to fit your family’s needs.
+Leander ISD serves all of these communities, each with several elementary, middle, and high schools located within minutes of these communities. While I avoid rating schools, I can provide detailed zoning maps and school options to fit your family’s needs.
 
 ### Shopping & Local Businesses
 

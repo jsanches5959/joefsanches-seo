@@ -19,7 +19,7 @@ In this comprehensive guide, we’ll break down the key factors driving growth a
 Before diving into neighborhoods and lifestyle, let’s look at each city’s defining characteristics.
 
 ### Cedar Park: A Thriving, Family-Centered Hub
-Located just 20 miles northwest of downtown Austin, Cedar Park boasts a bustling suburban atmosphere with a strong emphasis on family-friendly living. Known for its well-established neighborhoods like *Brushy Creek* and *Teravista*, Cedar Park offers a balanced mix of residential comfort and commercial development. Residents enjoy easy access to the Lakeline Mall, the H-E-B Center for concerts and sports, and numerous parks.
+Located just 20 miles northwest of downtown Austin, Cedar Park boasts a bustling suburban atmosphere with a strong emphasis on family-friendly living. Known for its well-established neighborhoods like *Brushy Creek* and *Twin Creeks*, Cedar Park offers a balanced mix of residential comfort and commercial development. Residents enjoy easy access to the Lakeline Mall, the H-E-B Center for concerts and sports, and numerous parks.
 
 ### Leander: The Rapidly Growing, Scenic Community
 Just north of Cedar Park, Leander has developed rapidly over the last decade but retains a more relaxed, small-town feel. It’s favored by buyers who want more space, scenic hill country views, and a quieter pace without sacrificing access to Austin. Neighborhoods such as *Crystal Falls* and *Grand Mesa* provide newer homes on larger lots, attracting families and retirees alike.
@@ -33,7 +33,7 @@ Just north of Cedar Park, Leander has developed rapidly over the last decade but
 - **Leander**: More new developments with modern floorplans, often featuring larger yards and open layouts. Typically offers slightly more affordable options for the space, appealing to buyers seeking value without sacrificing quality.
 
 ### Neighborhood Spotlight
-- **Cedar Park**: *Brushy Creek* is a standout with its interconnected trails, community pools, and playgrounds. *Teravista* is known for its golf course and amenity-rich lifestyle.
+- **Cedar Park**: *Brushy Creek* is a standout with its interconnected trails, community pools, and playgrounds. *Twin Creeks* is known for its golf course and amenity-rich lifestyle.
 - **Leander**: *Crystal Falls* offers a resort-style pool and hiking trails, while *Grand Mesa* is notable for its expansive homesites and hill country vistas.
 
 ---

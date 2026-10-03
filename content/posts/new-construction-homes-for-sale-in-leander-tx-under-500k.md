@@ -36,25 +36,25 @@ Leander’s location on the northwest side of Austin offers:
 
 When searching for new construction homes for sale in Leander TX under 500k, it’s essential to target neighborhoods that offer the best value, community amenities, and growth potential.
 
-### 1. **Teravista**
-- Offers a mix of single-family homes with community pools, parks, and golf course access.
-- New phases often feature homes under $500k with 3-4 bedrooms.
-- Close to Leander ISD schools and convenient shopping centers.
+### 1. **Bryson**
+- Resort-style amenities including a lazy river, splash pad, fishing pond and trails.
+- Homes typically about $310K–$450K, from builders including KB Home and Pulte.
+- Leander ISD, generally Jim Plain Elementary, Danielson Middle and Glenn High School.
 
-### 2. **Union Park**
-- A master-planned community with walking trails and a community center.
-- New construction homes here frequently fall below the $500,000 mark.
-- Family-oriented and near local businesses and dining.
+### 2. **Deerbrooke**
+- Built by Meritage Homes, known for energy-efficient construction.
+- Homes typically about $330K–$480K.
+- Resort pool, splash pad, pavilion and trails in northeast Leander.
 
-### 3. **Patterson Ranch**
-- Known for spacious lots and newer homes priced competitively.
-- Offers proximity to the Leander Rail Station for commuters to Austin.
-- Growing retail options nearby to support everyday needs.
+### 3. **Northline**
+- A walkable, mixed-use village next to the Leander MetroRail station.
+- Homes typically about $370K–$560K, many under $500K.
+- Shops, restaurants and gathering spaces within walking distance as the village builds out.
 
-### 4. **Jersey Village**
-- A newer neighborhood with affordable new builds.
-- Quiet streets and easy access to outdoor recreation like the nearby Crystal Falls Golf Club.
-- Popular for first-time homebuyers and growing families.
+### 4. **Caballo Ranch**
+- A newer master-planned community in northeast Leander with no MUD (about 2.35% combined).
+- Homes typically about $370K–$520K, from builders including Lennar and First Texas Homes.
+- Pool, splash pad, trails and open green space.
 
 ---
 
@@ -75,7 +75,7 @@ Working with a local expert like me ensures you get the latest inventory updates
 
 While I won’t delve into specific school ratings, it’s important to know that Leander is served by the **Leander Independent School District (LISD)**—one of the fastest-growing districts in Texas. The district includes numerous elementary, middle, and high schools located conveniently near most new construction neighborhoods.
 
-For families relocating from out of town, proximity to schools can significantly impact your home choice. Popular school zones in neighborhoods like Teravista and Union Park provide peace of mind for parents seeking quality education options.
+For families relocating from out of town, proximity to schools can significantly impact your home choice. School zones in neighborhoods like Bryson, Deerbrooke and Caballo Ranch (Danielson Middle and Glenn High School) give families newer campuses close to home. Always confirm zoning for the specific address, since Leander ISD boundaries move as new schools open. That provides peace of mind for parents seeking quality education options.
 
 ---
 
@@ -121,7 +121,7 @@ Navigating new construction contracts and timelines can be complex. I provide ex
 ## FAQ: New Construction Homes for Sale in Leander TX Under 500K
 
 **Q1: Are there many new construction homes available under $500,000 in Leander?**  
-Yes, several neighborhoods and builders focus on affordable new homes under $500K, especially in communities like Teravista, Union Park, and Jersey Village.
+Yes, several neighborhoods and builders focus on affordable new homes under $500K, especially in communities like Bryson, Deerbrooke, Northline and Caballo Ranch.
 
 **Q2: How long does it typically take to build a new home in Leander?**  
 Build times vary by builder and customization but usually range from 3 to 6 months after contract signing.

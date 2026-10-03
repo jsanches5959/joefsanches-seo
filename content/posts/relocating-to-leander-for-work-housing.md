@@ -30,27 +30,27 @@ Choosing the right neighborhood is crucial when relocating for work housing. Her
 
 ### 1. **Crystal Falls**
 
-- Master-planned with scenic lakes and trails
-- Amenities include community pools, playgrounds, and fitness centers
+- An established golf course community with trails, pools and Hill Country terrain
+- Homes from about $340K to $650K, zoned to Leander High School
 - Ideal for professionals seeking a balance between nature and convenience
 
-### 2. **Teravista**
+### 2. **Northline**
 
-- Golf course community with upscale homes and green spaces
-- Close to shopping centers and dining options
-- Popular among families and golf enthusiasts
+- A walkable village next to the Leander MetroRail station
+- Shops, restaurants and gathering spaces built into the neighborhood
+- A strong fit for commuters to downtown Austin who'd rather take the train
 
-### 3. **Seven Hills**
+### 3. **Larkspur**
 
-- Modern homes with energy-efficient designs
-- Community clubhouse and pools perfect for socializing
-- Well-suited for young professionals and growing families
+- A smaller David Weekley Homes community in central Leander
+- Community pool, pocket parks and walking paths
+- One of the shorter drives in Leander, about 30–40 minutes to Austin via 183A
 
-### 4. **Ranch at Brushy Creek**
+### 4. **Brushy Creek (Cedar Park)**
 
-- Spacious lots with a semi-rural feel
-- Access to Brushy Creek Regional Trail and parks
-- Perfect for those who want a quieter environment while staying close to work
+- An established, MUD-governed community with an extensive park system
+- Direct access to the Brushy Creek Regional Trail
+- Closer to Austin and the Parmer Lane tech corridor than most of Leander
 
 ---
 

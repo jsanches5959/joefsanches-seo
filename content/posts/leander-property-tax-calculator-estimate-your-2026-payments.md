@@ -17,7 +17,7 @@ Property taxes in Leander are a significant part of homeownership costs. The Cit
 
 ### What Makes Leander Unique?
 
-Leander is a rapidly growing city with diverse neighborhoods such as Crystal Falls, Teravista, and Forest Oaks, each with distinct community features and amenities. The local government’s tax rates reflect the needs and budgets of these flourishing areas. Additionally, nearby communities like Cedar Park and Austin have their own tax structures, which can impact those considering relocation or investment within the greater Austin metro.
+Leander is a rapidly growing city with diverse neighborhoods such as Crystal Falls, Bryson, and Block House Creek, each with distinct community features and amenities. The local government’s tax rates reflect the needs and budgets of these flourishing areas. Additionally, nearby communities like Cedar Park and Austin have their own tax structures, which can impact those considering relocation or investment within the greater Austin metro.
 
 ---
 
@@ -95,14 +95,14 @@ Understanding these differences helps buyers decide which area balances lifestyl
 
 ---
 
-## Local Neighborhood Spotlight: Estimate Taxes in Crystal Falls and Teravista
+## Local Neighborhood Spotlight: Estimate Taxes in Crystal Falls and Bryson
 
-Two popular Leander neighborhoods, Crystal Falls and Teravista, offer excellent community amenities, including golf courses, parks, and trails. However, they also have unique tax considerations:
+Two popular Leander neighborhoods show how much the rate can differ:
 
-- **Crystal Falls:** This master-planned community includes a MUD, which means monthly utility and tax assessments are part of your overall cost.
-- **Teravista:** Homeowners here pay into the Leander ISD and city taxes but may have fewer special district fees depending on the exact location.
+- **Crystal Falls:** about 2.28% combined. Most of the neighborhood has no MUD, so it carries one of the lower rates in Leander.
+- **Bryson:** about 2.47% combined. Like most newer master-planned communities, it includes a MUD rate that pays for the neighborhood's infrastructure.
 
-Using a Leander property tax calculator tailored for these neighborhoods helps you get a clear picture of your expected payments.
+On a $400,000 home, that difference is about $760 a year before exemptions. Always confirm the taxing units for the exact address on the appraisal district site.
 
 ---
 

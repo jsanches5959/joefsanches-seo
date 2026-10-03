@@ -37,23 +37,23 @@ Several factors contribute to Leander’s appeal:
 
 Knowing which neighborhoods are primed for growth or offer the best lifestyle fit is essential. Here are some hyper-local insights:
 
-### 1. **Teravista**
+### 1. **Bryson**
 
-- A master-planned community popular with families for its parks, golf courses, and community pools.
-- Homebuyers here appreciate the balance of suburban calm and amenities.
-- Real estate trends show consistent demand for single-family homes with modern finishes.
+- One of Leander's newest master-planned communities, popular with families for its resort-style amenities.
+- Homes typically about $310K–$450K, which keeps it in reach for many first-time and move-up buyers.
+- Ongoing new construction keeps inventory and builder incentives in play.
 
-### 2. **Anderson Mill**
+### 2. **Northline**
 
-- Known for its close-knit neighborhood feel and access to good schools.
-- Increasing interest from first-time buyers and young professionals.
-- New developments are adding variety to the housing inventory.
+- Leander's walkable, transit-oriented village next to the MetroRail station.
+- Growing interest from commuters and buyers who want shops and restaurants nearby.
+- New phases are adding variety to the housing inventory.
 
 ### 3. **Crystal Falls**
 
-- A newer community offering contemporary design and proximity to outdoor recreation.
-- Ideal for buyers seeking newer construction with energy-efficient features.
-- Market activity indicates a healthy turnover rate, making it a competitive area for buyers.
+- An established golf course community, with phases from the 2000s to new construction.
+- Popular with move-up buyers who want larger lots and Leander High School zoning.
+- A lower combined tax rate (about 2.28%) than most newer communities helps resale demand.
 
 ---
 

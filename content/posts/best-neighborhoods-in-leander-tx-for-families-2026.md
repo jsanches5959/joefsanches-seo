@@ -28,25 +28,25 @@ Leander’s proximity to Austin and Cedar Park means parents have easy commutes 
 
 When evaluating the best neighborhoods in Leander TX for families in 2026, it’s essential to consider factors like school proximity, safety, amenities, and community vibe. Below are some of the most sought-after family-friendly neighborhoods that I recommend:
 
-### 1. **Union Park**
+### 1. **Bryson**
 
-- **Overview:** Union Park is one of Leander’s premier master-planned communities designed with families in mind. It offers a variety of home styles and price points.
+- **Overview:** Bryson is one of Leander's newest and most amenity-rich master-planned communities, in the northwest corner of the city. Homes typically run about $310K–$450K.
 - **Family Features:**
-  - Multiple playgrounds and splash pads.
-  - Walking and biking trails connecting parks and schools.
-  - A community pool and clubhouse hosting family events.
-- **Nearby Schools:** Union Park Elementary and nearby middle schools are within walking distance, making school runs easier for parents.
-- **Local Businesses:** The community is close to retail centers with kid-friendly dining and family services.
+  - Lazy river, resort pool and splash pad.
+  - Fishing pond, dog park and miles of trails.
+  - A staffed community center with events through the year.
+- **Schools:** Zoned to Leander ISD, including Jim Plain Elementary, Danielson Middle and Glenn High School (confirm zoning for the specific address).
+- **Trade-off:** It's a MUD community, so the combined tax rate runs about 2.47%.
 
-### 2. **Teravista**
+### 2. **Brushy Creek**
 
-- **Overview:** Teravista is a large, established neighborhood known for its lush green spaces and family-focused amenities.
+- **Overview:** Brushy Creek, on the Cedar Park side, is governed by its own MUD, which runs one of the best park systems in Williamson County. Homes typically run about $320K–$480K.
 - **Family Features:**
-  - Two golf courses, including a Par 72 championship course, perfect for family outings.
-  - Multiple parks and playgrounds.
-  - Community clubhouse with sports courts and fitness centers.
-- **Nearby Schools:** Teravista Elementary and nearby LISD schools are easily accessible.
-- **Community Events:** Seasonal gatherings, holiday parades, and youth sports leagues promote family bonding and neighborly connections.
+  - Multiple pools, sports fields and recreation centers.
+  - Direct access to the Brushy Creek Regional Trail.
+  - No separate HOA; the MUD provides parks and recreation.
+- **Schools:** Leander ISD, generally feeding Cedar Park Middle and Cedar Park High School.
+- **Community Events:** The MUD runs youth programs and seasonal events.
 
 ### 3. **Grand Mesa**
 

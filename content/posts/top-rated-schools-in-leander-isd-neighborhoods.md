@@ -29,32 +29,32 @@ Leander Independent School District (ISD) is renowned for its commitment to qual
 
 When we talk about **top rated schools in Leander ISD neighborhoods**, it’s important to consider not just academic performance but also programs, extracurricular opportunities, and community involvement. Here’s an overview of standout neighborhoods paired with schools that consistently attract families prioritizing education.
 
-### 1. **Jersey Village: A Family-Focused Neighborhood Near Leander High and Running Brushy Middle**
+### 1. **Travisso: Hill Country Living Near Leander High and Running Brushy Middle**
 
-Jersey Village is a well-established community known for its mature trees, spacious lots, and proximity to local amenities like the **Jersey Village YMCA** and several community parks. Families here benefit from access to Leander High School and Running Brushy Middle School, both respected within the district.
-
-- **Neighborhood Highlights:**
-  - Easy access to the 183 Toll Road for Austin commuters
-  - Local favorites like Grumpy’s Little Cafe and Main Street Coffee House nearby
-  - Annual community events such as the Jersey Village Easter Egg Hunt and Fall Festival
-
-### 2. **Teravista: Golf Course Living with Access to Strong Elementary Schools**
-
-Teravista is a sought-after master-planned community in Round Rock but within Leander ISD boundaries, known for its golf course and resort-style amenities. The neighborhood feeds into highly regarded elementary schools, making it a favorite for families with younger children.
+Travisso, on the Cedar Park side of the Leander area, is generally zoned to Cc Mason Elementary, Running Brushy Middle School and Leander High School, all respected within the district.
 
 - **Neighborhood Highlights:**
-  - Teravista Golf Club and community pool
-  - Walking trails and playgrounds ideal for active families
-  - Close-knit HOA that organizes neighborhood socials and summer camps
+  - Sweeping Hill Country views and a resort pool, tennis and pickleball
+  - Hike-and-bike trails and a community clubhouse
+  - Access to Austin via 183A or RM 620
 
-### 3. **Crystal Falls: Modern Living with Excellent Middle and High School Access**
+### 2. **Twin Creeks: Golf Course Living with Access to Strong Schools**
 
-Crystal Falls, located near Cedar Park and Leander, offers newer construction homes with modern designs and community amenities like splash pads, sports fields, and picnic areas. The area is served by strong middle and high schools that emphasize college readiness and extracurricular success.
+Twin Creeks is a Cedar Park master-planned community within Leander ISD boundaries, built around the Twin Creeks Country Club. It generally feeds Cc Mason Elementary, Running Brushy Middle and Leander High School.
 
 - **Neighborhood Highlights:**
-  - Proximity to Crystal Falls Golf Club and local shopping centers
+  - 18-hole golf course, resort pool and swim team
+  - Creekside trails and playgrounds ideal for active families
+  - No MUD, so a lower combined tax rate than most newer communities
+
+### 3. **Crystal Falls: Established Living with Leander High School Access**
+
+Crystal Falls, in Leander, mixes established homes with newer phases, with pools, trails and parks throughout. It generally feeds Whitestone Elementary, Leander Middle and Leander High School.
+
+- **Neighborhood Highlights:**
+  - Crystal Falls Golf Club and Hill Country terrain
   - Family-friendly parks and walking trails throughout the neighborhood
-  - Easy access to Cedar Park Regional Medical Center and major highways
+  - Commutes to Austin of about 35–45 minutes via the 183A toll road
 
 ---
 
@@ -102,7 +102,7 @@ Partnering with someone like me, Joe F. Sanches, who understands Leander ISD ins
 If you’re open to areas adjacent to Leander ISD but still want highly rated schools, consider:
 
 - **Cedar Park Neighborhoods:** Known for excellent schools and vibrant local culture, with easy access to Austin.
-- **Brushy Creek:** A master-planned community with parks, trails, and schools that emphasize holistic development.
+- **Brushy Creek:** A MUD-governed Cedar Park community, also in Leander ISD, with one of the best park and trail systems in Williamson County.
 - **Georgetown:** Just north of Leander, offering historic charm and strong public schools in the Georgetown ISD.
 
 ---
