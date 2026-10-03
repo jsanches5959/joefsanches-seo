@@ -414,6 +414,7 @@ const CAPABILITIES = [
 ];
 
 const SERVICE_PAGES = [
+  { href: '/tree-removal', slug: 'tree-removal', icon: 'toolbox', name: 'Tree Removal', city: 'Travis & Williamson Counties' },
   { slug: 'home-remodeling-leander-tx',            icon: 'hardhat',  name: 'Remodeling & General Construction', city: 'Leander, TX' },
   { slug: 'drywall-repair-leander-tx',             icon: 'trowel',   name: 'Drywall Repair & Installation',     city: 'Leander, TX' },
   { slug: 'interior-exterior-painting-leander-tx', icon: 'roller',   name: 'Interior & Exterior Painting',      city: 'Leander, TX' },
@@ -570,7 +571,7 @@ export default function Home() {
           <p className="svc-links-label">Service details &amp; free estimates</p>
           <div className="svc-links">
             {SERVICE_PAGES.map((s) => (
-              <a className="svc-link" href={`/services/${s.slug}`} key={s.slug}>
+              <a className="svc-link" href={s.href || `/services/${s.slug}`} key={s.slug}>
                 <ToolIcon name={s.icon} size={30} className="svc-icon" />
                 <span className="svc-link-text">
                   <strong>{s.name}</strong>
