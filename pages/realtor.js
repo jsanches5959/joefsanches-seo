@@ -198,7 +198,7 @@ export default function Realtor({ posts }) {
               </p>
               <div className="heroMeta">
                 <span className="pill">Local Expert</span>
-                <span className="pill">Military Veteran</span>
+                <span className="pill">New Construction</span>
                 <span className="pill">Top Negotiator</span>
               </div>
             </div>

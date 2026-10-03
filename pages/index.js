@@ -86,6 +86,7 @@ const css = `
   .nav-logo img { height: 44px; display: block; }
   .nav-logo b { font-size: 15px; font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase; }
   .nav-links { display: flex; gap: 26px; list-style: none; align-items: center; }
+  .nav-links a { white-space: nowrap; }
   .nav-links a {
     font-size: 13px; font-weight: 800; color: var(--muted);
     letter-spacing: 0.08em; text-transform: uppercase;
@@ -201,44 +202,24 @@ const css = `
   .does-list li b { color: var(--gold-ink); font-weight: 900; }
   .does-list .di { color: var(--olive); flex-shrink: 0; }
 
-  /* ── DIVISIONS ── */
-  .div-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 48px; }
-  .div-card {
-    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
-    padding: 30px 26px 26px; display: flex; flex-direction: column;
-    box-shadow: 0 10px 30px rgba(22,24,15,.05);
-    transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
-  }
-  .div-card:hover { transform: translateY(-3px); box-shadow: 0 18px 44px rgba(22,24,15,.09); border-color: rgba(200,168,75,.5); }
-  .div-card.feature { border-top: 4px solid var(--olive); }
-  .div-icon { color: var(--olive); margin-bottom: 16px; }
-  .div-tag { font-size: 12px; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; color: var(--olive-ink); margin-bottom: 6px; }
-  .div-card h3 { font-size: 26px; font-weight: 900; color: var(--ink); letter-spacing: -0.02em; line-height: 1.15; margin-bottom: 10px; }
-  .div-card > p { font-size: 16px; color: var(--text); line-height: 1.7; margin-bottom: 18px; }
-  .div-card ul { list-style: none; margin-bottom: 22px; flex: 1; }
-  .div-card li { font-size: 15px; color: var(--text); padding: 7px 0 7px 20px; position: relative; border-bottom: 1px dashed var(--line); }
-  .div-card li::before { content: ''; position: absolute; left: 2px; top: 16px; width: 7px; height: 7px; background: var(--gold); transform: rotate(45deg); }
-  .div-card li em { font-style: normal; font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-left: 6px; }
-  .div-link { font-size: 14px; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; color: var(--ink) !important; border-bottom: 2px solid var(--gold); padding-bottom: 3px; align-self: flex-start; }
-  .div-link:hover { color: var(--gold-ink) !important; }
   .cap-foot { margin-top: 26px; font-size: 14px; color: var(--muted); line-height: 1.75; max-width: 80ch; }
 
-  .svc-links-label {
-    margin-top: 56px; margin-bottom: 14px;
-    font-size: 12px; font-weight: 900; letter-spacing: 0.18em;
-    text-transform: uppercase; color: var(--olive-ink);
+  /* ── SERVICES GRID ── */
+  .svc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 40px; }
+  .svc-tile {
+    display: flex; flex-direction: column; gap: 6px; padding: 22px 20px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    color: var(--text) !important; transition: border-color .2s ease, transform .2s ease, box-shadow .2s ease;
   }
-  .svc-links { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
-  .svc-link {
-    display: flex; align-items: center; gap: 12px; padding: 16px 16px;
-    background: var(--card); border: 1px solid var(--line); border-radius: 8px;
-    transition: border-color .2s ease, transform .2s ease;
-  }
-  .svc-link:hover { border-color: rgba(200,168,75,.6); transform: translateY(-2px); }
-  .svc-icon { color: var(--olive); flex-shrink: 0; }
-  .svc-link-text { display: block; min-width: 0; }
-  .svc-link strong { display: block; color: var(--ink); font-size: 15px; font-weight: 800; line-height: 1.3; margin-bottom: 2px; }
-  .svc-link-text span { font-size: 12px; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+  .svc-tile:hover { border-color: rgba(200,168,75,.7); transform: translateY(-2px); box-shadow: 0 12px 30px rgba(22,24,15,.08); }
+  .svc-tile-icon { color: var(--olive); margin-bottom: 6px; }
+  .svc-tile strong { font-size: 17px; font-weight: 900; color: var(--ink); line-height: 1.25; }
+  .svc-tile span { font-size: 14px; color: var(--muted); line-height: 1.5; }
+  .how { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 28px; }
+  .how li { display: flex; gap: 14px; align-items: flex-start; padding: 20px; border-radius: 10px; background: rgba(200,168,75,.12); }
+  .how b { flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; background: var(--gold); color: var(--ink); display: flex; align-items: center; justify-content: center; font-weight: 900; }
+  .how strong { display: block; color: var(--ink); font-size: 16px; margin-bottom: 2px; }
+  .how p { font-size: 15px; color: var(--text); line-height: 1.6; }
 
   /* ── WHO WE SERVE ── */
   .who { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 44px; }
@@ -317,11 +298,12 @@ const css = `
   /* ── RESPONSIVE ── */
   @media (max-width: 1040px) {
     .specs { grid-template-columns: repeat(3, 1fr); }
-    .svc-links { grid-template-columns: repeat(2, 1fr); }
-    .div-grid { grid-template-columns: 1fr; }
+    .svc-grid { grid-template-columns: repeat(3, 1fr); }
   }
   @media (max-width: 860px) {
-    .nav-links li:not(:last-child) { display: none; }
+    .nav-links li.nav-text { display: none; }
+    .svc-grid { grid-template-columns: repeat(2, 1fr); }
+    .how { grid-template-columns: 1fr; }
     .name-grid { grid-template-columns: 1fr; }
     .who { grid-template-columns: 1fr; }
     .about-grid { grid-template-columns: 1fr; }
@@ -332,7 +314,6 @@ const css = `
   }
   @media (max-width: 620px) {
     .nav-logo b { display: none; }
-    .svc-links { grid-template-columns: 1fr; }
     .specs { grid-template-columns: repeat(2, 1fr); }
     .hero-trust span { padding: 0 9px; font-size: 11px; letter-spacing: 0.06em; }
     .hero-ctas a { flex: 1 1 100%; text-align: center; }
@@ -353,75 +334,27 @@ const css = `
 // The words the hero cycles through. The last one is the point of the list.
 const DOES = ['trees.', 'drywall.', 'paint.', 'remodels.', 'make-readies.', 'the whole property.'];
 
-const DIVISIONS = [
-  {
-    id: 'trees',
-    icon: 'tree',
-    tag: 'Outside',
-    name: 'Trees & Grounds',
-    blurb: 'Removals, trimming, stumps and storm cleanup, plus the grounds upkeep that keeps a property looking cared for.',
-    items: [
-      'Tree removal',
-      'Tree trimming & pruning',
-      'Stump grinding',
-      'Storm & limb cleanup',
-      'Brush & lot clearing',
-      'Landscaping & grounds maintenance',
-    ],
-    href: '/tree-removal-leander-tx',
-    cta: 'Tree service details',
-  },
-  {
-    id: 'build',
-    icon: 'hardhat',
-    tag: 'Inside & out',
-    name: 'Build & Repair',
-    blurb: 'Everything on the punch list, from a doorknob hole in the drywall to a full remodel.',
-    items: [
-      'Remodeling & build-outs',
-      'Drywall & texture',
-      'Interior & exterior painting',
-      'Flooring',
-      'Patios & decks',
-      'Handyman & repairs',
-      { name: 'Roofing, electrical, plumbing, HVAC', note: 'Licensed partners' },
-    ],
-    href: '/services/home-remodeling-leander-tx',
-    cta: 'Remodeling details',
-  },
-  {
-    id: 'commercial',
-    icon: 'building',
-    tag: 'Commercial',
-    name: 'Facilities & Contracts',
-    blurb: 'Recurring work for property managers, HOAs, builders, landscape companies and public agencies, on one schedule and one invoice.',
-    items: [
-      'Make-readies & unit turns',
-      'Janitorial & facilities',
-      'Pressure washing',
-      'Grounds maintenance contracts',
-      'Subcontract crews for GCs & landscapers',
-      'Government & spot purchases',
-    ],
-    href: '/services/facilities-maintenance-austin-tx',
-    cta: 'Commercial details',
-  },
-];
-
-const SERVICE_PAGES = [
-  { href: '/tree-removal-leander-tx',                         icon: 'tree',     name: 'Tree Removal & Trimming',       city: 'Leander, TX' },
-  { href: '/services/landscaping-grounds-maintenance-leander-tx', icon: 'leaf', name: 'Landscaping & Grounds',         city: 'Leander, TX' },
-  { href: '/services/home-remodeling-leander-tx',             icon: 'hardhat',  name: 'Remodeling & Construction',     city: 'Leander, TX' },
-  { href: '/services/drywall-repair-leander-tx',              icon: 'trowel',   name: 'Drywall Repair',                city: 'Leander, TX' },
-  { href: '/services/interior-exterior-painting-leander-tx',  icon: 'roller',   name: 'Interior & Exterior Painting',  city: 'Leander, TX' },
-  { href: '/services/handyman-services-leander-tx',           icon: 'toolbox',  name: 'Handyman & Repairs',            city: 'Leander, TX' },
-  { href: '/services/pressure-washing-leander-tx',            icon: 'sprayer',  name: 'Pressure Washing',              city: 'Leander, TX' },
-  { href: '/services/facilities-maintenance-austin-tx',       icon: 'squeegee', name: 'Facilities & Janitorial',       city: 'Austin, TX' },
+// Every service on one list. The homepage is where service blog posts send
+// readers, so it leads with this grid and the estimate form. A service with
+// its own page links there; the rest go straight to the form.
+const SERVICES = [
+  { icon: 'tree',     name: 'Tree Removal & Trimming',  note: 'Removals, pruning, stumps, storm cleanup', href: '/tree-removal-leander-tx' },
+  { icon: 'sprayer',  name: 'Pressure Washing',         note: 'Driveways, siding, decks, commercial lots', href: '/services/pressure-washing-leander-tx' },
+  { icon: 'trowel',   name: 'Drywall Repair',           note: 'Patches, cracks, water damage, texture',  href: '/services/drywall-repair-leander-tx' },
+  { icon: 'roller',   name: 'Painting',                 note: 'Interior, exterior, cabinets, trim',      href: '/services/interior-exterior-painting-leander-tx' },
+  { icon: 'building', name: 'Make-Readies & Unit Turns', note: 'Rentals, apartments, move-outs',         href: '/services/facilities-maintenance-austin-tx' },
+  { icon: 'squeegee', name: 'Cleaning & Janitorial',    note: 'Move-out, post-construction, recurring',  href: '/services/facilities-maintenance-austin-tx' },
+  { icon: 'leaf',     name: 'Landscaping & Grounds',    note: 'Cleanups, mulch, mowing, brush clearing', href: '/services/landscaping-grounds-maintenance-leander-tx' },
+  { icon: 'toolbox',  name: 'Handyman & Repairs',       note: 'The punch list you keep putting off',     href: '/services/handyman-services-leander-tx' },
+  { icon: 'hardhat',  name: 'Remodeling',               note: 'Kitchens, baths, build-outs',             href: '/services/home-remodeling-leander-tx' },
+  { icon: 'planks',   name: 'Flooring',                 note: 'LVP, tile, laminate, repairs',            href: '#contact' },
+  { icon: 'deck',     name: 'Patios & Decks',           note: 'New builds and repairs',                  href: '#contact' },
+  { icon: 'roof',     name: 'Roofing, Electrical, Plumbing & HVAC', note: 'Through licensed partners', href: '#contact' },
 ];
 
 const AREAS = ['Leander','Cedar Park','Austin','Round Rock','Georgetown','Pflugerville','Liberty Hill','Hutto','Kyle','Buda','San Marcos','Temple','Statewide (Gov)'];
 
-const allServices = DIVISIONS.flatMap((d) => d.items.map((i) => (typeof i === 'string' ? i : i.name)));
+const allServices = SERVICES.map((sv) => sv.name);
 
 const orgSchema = {
   '@context': 'https://schema.org',
@@ -483,7 +416,7 @@ export default function Home() {
     <>
       <Head>
         <title>Sanches Group | Tree Removal, Remodeling &amp; Repairs — Leander, TX</title>
-        <meta name="description" content="Joe does trees, drywall, paint, remodels and the rest. Sanches Group (Joe Sanches LLC) is a veteran-owned Leander, TX contractor: tree removal and trimming, landscaping, remodeling, drywall, painting, handyman and facilities maintenance. Free estimates." />
+        <meta name="description" content="Joe does trees, drywall, paint, remodels and the rest. Sanches Group (Joe Sanches LLC) is a Leander, TX property services company: tree removal, pressure washing, drywall repair, painting, make-readies, cleaning, landscaping and remodeling. Free estimates." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://joefsanches.com" />
         <meta property="og:type" content="website" />
@@ -498,7 +431,8 @@ export default function Home() {
         />
       </Head>
 
-      {/* NAV */}
+      {/* NAV — kept to the two things a visitor came for: the services and a
+          way to ask for a price. */}
       <nav className="nav">
         <div className="nav-inner">
           <a className="nav-logo" href="#top">
@@ -506,12 +440,9 @@ export default function Home() {
             <b>Sanches Group</b>
           </a>
           <ul className="nav-links">
-            <li><a href="/tree-removal-leander-tx">Trees</a></li>
-            <li><a href="#work">Services</a></li>
-            <li><a href="#clients">Commercial</a></li>
-            <li><a href="#government">Government</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="tel:5126638867" className="nav-call">Call 512-663-8867</a></li>
+            <li className="nav-text"><a href="#services">Services</a></li>
+            <li className="nav-text"><a href="tel:5126638867">512-663-8867</a></li>
+            <li><a href="#contact" className="nav-call">Free Estimate</a></li>
           </ul>
         </div>
       </nav>
@@ -529,29 +460,61 @@ export default function Home() {
             </span>
           </h1>
           <p className="hero-sub">
-            <strong>Tree removal, remodeling, drywall, paint and property maintenance</strong>{' '}
-            across Central Texas, from one company with one name on every job.
+            <strong>Tree service, pressure washing, drywall, painting, make-readies, cleaning</strong>{' '}
+            and the rest of the property, across Central Texas. Tell us what you need and get a
+            written price.
           </p>
           <div className="hero-ctas">
             <a href="#contact" className="btn-gold">Get a Free Estimate</a>
-            <a href="sms:5126638867" className="btn-outline">Text a Photo</a>
+            <a href="#services" className="btn-outline">See All Services</a>
           </div>
           <div className="hero-trust">
-            <span>Licensed &amp; Insured</span>
-            <span>Veteran-Owned</span>
             <span>Free Estimates</span>
+            <span>Written Quotes</span>
             <span>One Point of Contact</span>
+            <span>Licensed &amp; Insured</span>
           </div>
         </div>
       </section>
 
-      {/* FREE ESTIMATE — first thing after the hero, so it is reachable on a phone. */}
+      {/* SERVICES */}
+      <section className="sec alt" id="services">
+        <div className="w">
+          <span className="eyebrow">Services</span>
+          <h2 className="title">What do you need done?</h2>
+          <p className="lead">
+            Pick a service for the details, or go straight to the estimate form. One request
+            covers it, even if your list has five different jobs on it.
+          </p>
+          <div className="svc-grid">
+            {SERVICES.map((sv) => (
+              <a className="svc-tile" href={sv.href} key={sv.name}>
+                <ToolIcon name={sv.icon} size={34} className="svc-tile-icon" />
+                <strong>{sv.name}</strong>
+                <span>{sv.note}</span>
+              </a>
+            ))}
+          </div>
+          <ol className="how">
+            <li><b>1</b><div><strong>Tell us what you need</strong><p>Fill out the estimate form and add photos. It takes about two minutes.</p></div></li>
+            <li><b>2</b><div><strong>Get a written price</strong><p>Usually the same day, with no obligation.</p></div></li>
+            <li><b>3</b><div><strong>We get it done</strong><p>One point of contact from the estimate to the final walkthrough.</p></div></li>
+          </ol>
+          <p className="cap-foot">
+            Roofing, electrical, plumbing and heating and air are performed by appropriately
+            licensed contractors working under Sanches Group&apos;s management. We hold no trade
+            qualifier license for those categories and never claim to.
+          </p>
+        </div>
+      </section>
+
+      {/* FREE ESTIMATE */}
       <section className="sec estimate" id="contact">
         <div className="w">
           <div className="estimate-head">
             <h2 className="estimate-title">Tell Joe what the property needs.</h2>
             <p className="estimate-sub">
-              Free estimate. A photo helps. You&apos;ll usually hear back the same day.
+              Free estimate. Add photos in the form. You&apos;ll usually hear back the same day.
             </p>
           </div>
           <div className="lead-form-wrap">
@@ -584,56 +547,6 @@ export default function Home() {
             <li><ToolIcon name="building" size={30} className="di" /><p><span>Joe does</span> <b>make-readies.</b></p></li>
             <li><ToolIcon name="shield" size={30} className="di" /><p><span>Joe does</span> <b>the whole property.</b></p></li>
           </ul>
-        </div>
-      </section>
-
-      {/* WHAT WE DO */}
-      <section className="sec alt" id="work">
-        <div className="w">
-          <span className="eyebrow">What Joe does</span>
-          <h2 className="title">Three crews. One company.</h2>
-          <p className="lead">
-            The work is organized the way a property is: what&apos;s outside, what&apos;s
-            inside, and the recurring upkeep that keeps a building running. Pick one, or put
-            all three on the same list.
-          </p>
-
-          <div className="div-grid">
-            {DIVISIONS.map((d) => (
-              <div className={`div-card${d.id === 'trees' ? ' feature' : ''}`} key={d.id} id={d.id}>
-                <ToolIcon name={d.icon} size={40} className="div-icon" />
-                <span className="div-tag">{d.tag}</span>
-                <h3>{d.name}</h3>
-                <p>{d.blurb}</p>
-                <ul>
-                  {d.items.map((item) => (typeof item === 'string'
-                    ? <li key={item}>{item}</li>
-                    : <li key={item.name}>{item.name}<em>{item.note}</em></li>))}
-                </ul>
-                <a className="div-link" href={d.href}>{d.cta} →</a>
-              </div>
-            ))}
-          </div>
-
-          <p className="cap-foot">
-            Roofing, electrical, plumbing and heating and air are performed by appropriately
-            licensed contractors working under Sanches Group&apos;s management. We hold no trade
-            qualifier license for those categories and never claim to. We manage the scope, the
-            schedule and the standard, and stand behind the result.
-          </p>
-
-          <p className="svc-links-label">Service details &amp; free estimates</p>
-          <div className="svc-links">
-            {SERVICE_PAGES.map((s) => (
-              <a className="svc-link" href={s.href} key={s.href}>
-                <ToolIcon name={s.icon} size={28} className="svc-icon" />
-                <span className="svc-link-text">
-                  <strong>{s.name}</strong>
-                  <span>{s.city}</span>
-                </span>
-              </a>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -710,11 +623,11 @@ export default function Home() {
             <div>
               <span className="eyebrow">Founder &amp; Principal</span>
               <h2 className="title">Joe Sanches</h2>
-              <span className="about-role">Joe Sanches LLC · Sanches Group · Service-Disabled U.S. Veteran</span>
+              <span className="about-role">Founder · Joe Sanches LLC · Sanches Group</span>
               <p className="about-bio">
-                Joe built Sanches Group on the standards he carried in uniform: show up, do the
-                work, stand behind it. He put his own name on the company because a name is
-                harder to walk away from than a logo.
+                Joe built Sanches Group on a simple standard: show up, do the work, stand behind
+                it. He put his own name on the company because a name is harder to walk away
+                from than a logo.
               </p>
               <p className="about-bio">
                 Today Joe answers the phone, writes the estimates and runs the crews. As the
@@ -728,7 +641,6 @@ export default function Home() {
                 <span className="cred">Texas HUB · VetHUB</span>
                 <span className="cred">SAM.gov Registered</span>
                 <span className="cred">General Contractor</span>
-                <span className="cred">Fully Insured</span>
               </div>
               <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
                 <a href="tel:5126638867" className="btn-gold">Call 512-663-8867</a>
@@ -820,7 +732,7 @@ export default function Home() {
               <div className="inq">
                 <h4>Homeowners</h4>
                 <p>Trees, remodels, repairs, paint, flooring, decks and everything in between.</p>
-                <a href="sms:5126638867" className="inq-btn">Text a Photo →</a>
+                <a href="#contact" className="inq-btn">Get a Free Estimate →</a>
               </div>
             </div>
           </div>
@@ -861,7 +773,7 @@ export default function Home() {
         <img src="/logo.png" alt="Sanches Group" className="mark" />
         <div className="foot-nav">
           <a href="/tree-removal-leander-tx">Tree Service</a>
-          <a href="#work">Services</a>
+          <a href="#services">Services</a>
           <a href="/credentials">Credentials</a>
           <a href="/government">Government</a>
           <a href="#contact">Free Estimate</a>

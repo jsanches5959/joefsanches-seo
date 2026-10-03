@@ -5,6 +5,7 @@ import { remark } from 'remark';
 import html from 'remark-html';
 import Link from 'next/link';
 import Head from 'next/head';
+import JobberForm from '../../components/JobberForm';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
@@ -94,7 +95,7 @@ export async function getStaticProps({ params }) {
 
   const fallbackBlurb = contracting
     ? 'Sanches Group — construction, drywall, painting and property maintenance in Leander, Cedar Park and greater Austin.'
-    : 'Joe Sanches is a licensed Realtor and military veteran serving buyers and sellers in Leander, Cedar Park, and greater Austin.';
+    : 'Joe Sanches is a licensed Realtor serving buyers and sellers in Leander, Cedar Park, and greater Austin.';
   const description = data.description || trimmedFallback || fallbackBlurb;
 
   return {
@@ -195,10 +196,14 @@ export default function Post({ slug, title, seoTitle, date, contentHtml, descrip
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
             Call Joe
           </a>
-          <a href="sms:5126638867" className="text-btn">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-            Text Joe
-          </a>
+          {contracting ? (
+            <a href="#estimate" className="text-btn">Free Estimate</a>
+          ) : (
+            <a href="sms:5126638867" className="text-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              Text Joe
+            </a>
+          )}
         </div>
         <header className="topbar">
           <div className="brand">
@@ -255,13 +260,21 @@ export default function Post({ slug, title, seoTitle, date, contentHtml, descrip
                 </h2>
                 <p style={{ color: 'var(--muted)', marginBottom: '28px', fontSize: '16px', lineHeight: '1.6' }}>
                   {contracting
-                    ? 'Sanches Group handles drywall, texture, painting and the rest of the punch list across Leander, Cedar Park, Georgetown and greater Austin. Free estimates — send a photo and we will tell you straight whether it is a patch or a bigger job.'
+                    ? 'Tell us what you need and add a few photos. You will get a written price, usually the same day, with no obligation.'
                     : "Whether you're buying, selling, or just have questions about the local market, I'm here to help."}
                 </p>
-                <div className="actions">
-                  <a href="tel:5126638867" className="btn accent" style={{ padding: '12px 20px', fontSize: '15px' }}>Call or Text (512) 663-8867</a>
-                  <a href="mailto:hello@joefsanches.com" className="btn" style={{ padding: '12px 20px', fontSize: '15px' }}>Email Joe</a>
-                </div>
+                {/* Service posts exist to bring in work, so the estimate form sits
+                    right in the post instead of one click away. */}
+                {contracting ? (
+                  <div id="estimate" style={{ background: 'var(--card)', borderRadius: '12px', padding: '20px', scrollMarginTop: '20px' }}>
+                    <JobberForm />
+                  </div>
+                ) : (
+                  <div className="actions">
+                    <a href="tel:5126638867" className="btn accent" style={{ padding: '12px 20px', fontSize: '15px' }}>Call or Text (512) 663-8867</a>
+                    <a href="mailto:hello@joefsanches.com" className="btn" style={{ padding: '12px 20px', fontSize: '15px' }}>Email Joe</a>
+                  </div>
+                )}
               </section>
 
               {/* The bridge between the two halves of the business. Someone
@@ -293,26 +306,30 @@ export default function Post({ slug, title, seoTitle, date, contentHtml, descrip
                 <div className="card" style={{ background: 'rgba(200,168,75,0.06)', borderColor: 'rgba(200,168,75,0.3)', textAlign: 'center', marginBottom: '20px' }}>
                   <h3 className="cardTitle" style={{ color: 'var(--gold-ink)', letterSpacing: '1px' }}>FREE ESTIMATE</h3>
                   <p style={{ fontSize: '14px', color: 'var(--muted)', marginTop: '10px', marginBottom: '16px', lineHeight: '1.6' }}>
-                    Send a photo of the damage. We&apos;ll tell you what it is and what it costs — no charge, no pressure.
+                    Tell us what you need and add photos. You&apos;ll get a written price, with no charge and no pressure.
                   </p>
-                  <a href="sms:5126638867" className="btn accent" style={{ justifyContent: 'center', fontSize: '14px', display: 'block', textAlign: 'center', padding: '12px 20px' }}>
-                    Text a Photo
+                  <a href="#estimate" className="btn accent" style={{ justifyContent: 'center', fontSize: '14px', display: 'block', textAlign: 'center', padding: '12px 20px' }}>
+                    Get a Free Estimate
                   </a>
                 </div>
                 <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', marginBottom: '20px' }}>
                   <h3 className="cardTitle" style={{ color: 'var(--accent-light)', marginBottom: '14px' }}>SERVICES</h3>
                   <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '14px', lineHeight: '2' }}>
+                    <li><a href="/tree-removal-leander-tx">Tree Removal &amp; Trimming →</a></li>
+                    <li><a href="/services/pressure-washing-leander-tx">Pressure Washing →</a></li>
                     <li><a href="/services/drywall-repair-leander-tx">Drywall Repair &amp; Texture →</a></li>
                     <li><a href="/services/interior-exterior-painting-leander-tx">Interior &amp; Exterior Painting →</a></li>
-                    <li><a href="/services/home-remodeling-leander-tx">Remodeling &amp; Construction →</a></li>
+                    <li><a href="/services/facilities-maintenance-austin-tx">Make-Readies &amp; Cleaning →</a></li>
+                    <li><a href="/services/landscaping-grounds-maintenance-leander-tx">Landscaping &amp; Grounds →</a></li>
                     <li><a href="/services/handyman-services-leander-tx">Handyman &amp; Repairs →</a></li>
+                    <li><a href="/services/home-remodeling-leander-tx">Remodeling →</a></li>
                   </ul>
                 </div>
                 <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center', position: 'sticky', top: '20px' }}>
                   <h3 className="cardTitle" style={{ color: 'var(--accent-light)' }}>Sanches Group</h3>
                   <p style={{ fontSize: '14px', color: 'var(--muted)', marginTop: '8px' }}>Leander · Cedar Park · Austin</p>
                   <p style={{ fontSize: '13px', color: 'var(--muted)', marginTop: '12px', lineHeight: '1.6' }}>
-                    Construction, drywall, paint and property maintenance across Central Texas. Licensed &amp; insured. Veteran-owned.
+                    Tree service, pressure washing, drywall, paint, make-readies and property maintenance across Central Texas.
                   </p>
                   <div style={{ marginTop: '20px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                     <a href="tel:5126638867" className="btn accent" style={{ fontSize: '13px', justifyContent: 'center' }}>Call / Text</a>
@@ -338,10 +355,10 @@ export default function Post({ slug, title, seoTitle, date, contentHtml, descrip
             <div className="card" style={{ background: 'rgba(200,168,75,0.05)', borderColor: 'rgba(200,168,75,0.3)', textAlign: 'center', marginBottom: '20px' }}>
               <h3 className="cardTitle" style={{ color: 'var(--gold-ink)', letterSpacing: '1px' }}>JOE DOES THE WORK, TOO</h3>
               <p style={{ fontSize: '14px', color: 'var(--muted)', marginTop: '10px', lineHeight: '1.6' }}>
-                Pre-listing repairs, inspection fixes, paint, drywall and tree work, from Sanches Group. Veteran-owned. Free estimates.
+                Pre-listing repairs, inspection fixes, paint, drywall and tree work, from Sanches Group. Free estimates.
               </p>
               <div style={{ marginTop: '14px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                <a href="sms:5126638867" className="btn accent" style={{ fontSize: '14px', justifyContent: 'center' }}>Text a Photo</a>
+                <a href="/#contact" className="btn accent" style={{ fontSize: '14px', justifyContent: 'center' }}>Get a Free Estimate</a>
                 <a href="/" className="btn" style={{ fontSize: '14px', justifyContent: 'center' }}>See Property Services →</a>
               </div>
             </div>
@@ -359,7 +376,7 @@ export default function Post({ slug, title, seoTitle, date, contentHtml, descrip
               <h3 className="cardTitle" style={{ color: 'var(--accent-light)' }}>Joe Sanches</h3>
               <p style={{ fontSize: '14px', color: 'var(--muted)', marginTop: '8px' }}>Realtor · Sanches Group</p>
               <p style={{ fontSize: '13px', color: 'var(--muted)', marginTop: '12px', lineHeight: '1.6' }}>
-                Helping Leander homeowners buy and sell with confidence. Military veteran with strategic pricing expertise.
+                Helping Leander homeowners buy and sell with confidence, with strategic pricing and local market expertise.
               </p>
               <div style={{ marginTop: '20px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 <a href="tel:5126638867" className="btn accent" style={{ fontSize: '13px', justifyContent: 'center' }}>Call / Text</a>

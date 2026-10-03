@@ -50,7 +50,7 @@ const SERVICES = [
 ];
 
 const STEPS = [
-  ['Text a photo', 'Send a picture of the tree and what’s around it to 512-663-8867, or use the form. Most jobs can be roughly priced from a photo.'],
+  ['Request a quote', 'Fill out the quote form and add photos of the tree and what’s around it. Most jobs can be roughly priced from photos.'],
   ['Written quote', 'You get a written price before any work starts, with haul-off and stump grinding listed separately so you can choose.'],
   ['Scheduled work', 'We show up on the day we said, protect the lawn and beds, and keep you informed while we’re there.'],
   ['Full cleanup', 'Limbs, logs and debris are hauled off and the yard is raked and blown. You shouldn’t be able to tell where we stacked anything.'],
@@ -59,7 +59,7 @@ const STEPS = [
 const FAQ = [
   [
     'How much does tree removal cost in Leander?',
-    'It depends on the tree’s size, how close it is to the house or power lines, how easy it is to reach, and whether you want the stump ground. A small ornamental tree and a large live oak over a roof are very different jobs. Quotes are free and in writing. Text a photo to 512-663-8867 and we can usually give you a range the same day.',
+    'It depends on the tree’s size, how close it is to the house or power lines, how easy it is to reach, and whether you want the stump ground. A small ornamental tree and a large live oak over a roof are very different jobs. Quotes are free and in writing. Request a quote with a few photos and we can usually give you a range the same day.',
   ],
   [
     'When is it safe to trim oak trees in Central Texas?',
@@ -257,14 +257,14 @@ export default function TreeService() {
         <title>Tree Removal &amp; Trimming in Leander, TX | Free Quotes | Sanches Group</title>
         <meta
           name="description"
-          content="Joe does trees. Tree removal, trimming, stump grinding and storm cleanup in Leander, Cedar Park, Georgetown and Austin. Veteran-owned, written quotes, full cleanup. Text a photo for a free quote: 512-663-8867."
+          content="Joe does trees. Tree removal, trimming, stump grinding and storm cleanup in Leander, Cedar Park, Georgetown and Austin. Written quotes and full cleanup. Get a free quote online or call 512-663-8867."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={url} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Sanches Group" />
         <meta property="og:title" content="Joe does trees. Tree removal & trimming in Leander, TX" />
-        <meta property="og:description" content="Removals, trimming, stump grinding and storm cleanup. Veteran-owned, written quotes, full cleanup. Text a photo for a free quote: 512-663-8867." />
+        <meta property="og:description" content="Removals, trimming, stump grinding and storm cleanup. Written quotes and full cleanup. Get a free quote online or call 512-663-8867." />
         <meta property="og:url" content={url} />
         <meta property="og:image" content={`${baseUrl}/logo.png`} />
         <meta name="twitter:card" content="summary" />
@@ -299,11 +299,11 @@ export default function TreeService() {
               </p>
               <div className="tr-ctas">
                 <a href="#quote" className="tr-btn gold">Get a Free Quote</a>
-                <a href="sms:5126638867" className="tr-btn line">Text a Photo</a>
+                <a href="tel:5126638867" className="tr-btn line">Call 512-663-8867</a>
               </div>
               <ul className="tr-checks">
                 <li>One point of contact</li>
-                <li>Veteran-owned</li>
+                <li>Free estimates</li>
                 <li>Written price up front</li>
                 <li>Full cleanup &amp; haul-off</li>
                 <li>Oak-wilt-safe pruning</li>
@@ -313,7 +313,7 @@ export default function TreeService() {
 
             <div className="tr-form" id="quote">
               <h2>Free tree quote</h2>
-              <p>Tell us the address, how many trees and what&apos;s near them. Usually answered the same day, and a photo by text is the fastest way to a price.</p>
+              <p>Tell us the address, how many trees and what&apos;s near them. Add photos in the form. It&apos;s the fastest way to a price, and you&apos;ll usually hear back the same day.</p>
               <JobberForm />
             </div>
           </div>
@@ -342,7 +342,7 @@ export default function TreeService() {
         <section className="tr-sec alt">
           <div className="tr-w">
             <span className="tr-kicker">How it works</span>
-            <h2 className="tr-h2">Photo to clean yard in four steps.</h2>
+            <h2 className="tr-h2">Quote to clean yard in four steps.</h2>
             <ol className="tr-steps">
               {STEPS.map(([t, d]) => (
                 <li key={t}><strong>{t}</strong><p>{d}</p></li>
@@ -433,7 +433,7 @@ export default function TreeService() {
           <div className="tr-w">
             <h2 className="tr-h2">Got a tree that&apos;s worrying you?</h2>
             <p className="tr-lead">
-              Send a photo. You&apos;ll get an honest answer about whether it needs to come down,
+              Request a quote. You&apos;ll get an honest answer about whether it needs to come down,
               be trimmed or be left alone, and what it costs.
             </p>
             <div className="tr-ctas">
@@ -446,7 +446,7 @@ export default function TreeService() {
         <footer className="tr-foot">
           <p><strong>Sanches Group Tree Service</strong> · Joe Sanches LLC · Leander, Texas</p>
           <p><a href="tel:5126638867">512-663-8867</a> · <a href="mailto:hello@joefsanches.com">hello@joefsanches.com</a></p>
-          <p>Service-disabled veteran-owned · Written quotes · Full cleanup</p>
+          <p>Free estimates · Written quotes · Full cleanup</p>
           <p style={{ marginTop: '14px' }}>
             Trees are one part of it. <a href="/">Joe does the whole property →</a>
           </p>
@@ -454,7 +454,7 @@ export default function TreeService() {
 
         <div className="tr-bar">
           <a href="tel:5126638867" className="call">Call</a>
-          <a href="sms:5126638867" className="text">Text a Photo</a>
+          <a href="#quote" className="text">Free Quote</a>
         </div>
       </div>
     </>
