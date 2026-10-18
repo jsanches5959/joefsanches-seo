@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "vanity-pendant-lighting",
+    "image": "/work/vanity-pendant-lighting.jpg",
+    "title": "Brass pendants over a marble vanity",
+    "trade": "Lighting",
+    "city": "Central Texas",
+    "alt": "Brass globe pendant lights installed over a white marble double vanity in a dark primary bathroom",
+    "story": "Matched brass globe pendants hung over a marble double vanity. Hanging fixtures over stone leaves no margin for error: the drops have to be plumb, evenly spaced, and set at a height that lights the face rather than bouncing off the mirror behind it. Get the height wrong by two inches and everyone who uses the room sees it every morning.",
+    "partner": true
+  },
+  {
+    "slug": "built-in-wall-lighting",
+    "image": "/work/built-in-wall-lighting.jpg",
+    "title": "A built-in wall that lights itself",
+    "trade": "Carpentry & Lighting",
+    "city": "Central Texas",
+    "alt": "Custom built-in shelving wall with walnut interiors and concealed LED strip lighting, under construction",
+    "story": "A full-wall built-in with walnut-faced boxes, a recessed television bay, and LED strip concealed in every shelf. The strips sit in channels cut into the shelf edge so the light reads as an even glow instead of a row of dots, and every run comes back to one switch. The floor went down under ram board and tape before the first cut was made.",
+    "partner": true
+  },
+  {
+    "slug": "foyer-chandelier",
+    "image": "/work/foyer-chandelier.jpg",
+    "title": "Twenty lights, two storeys up",
+    "trade": "Lighting",
+    "city": "Central Texas",
+    "alt": "Large black iron candelabra chandelier installed in a two-storey entry with a round window",
+    "story": "A twenty-light iron chandelier set into a two-storey entry. At this height it is a rigging job as much as an electrical one — the box has to be rated for the weight, the chain measured so the fixture lands right for the room rather than right for the ceiling, and the whole thing lifted and levelled from a ladder without marking the walls.",
+    "partner": true
+  },
+  {
+    "slug": "apartment-meter-stack-progress",
+    "image": "/work/apartment-meter-stack-progress.jpg",
+    "title": "Rebuilding a meter bank, mid-job",
+    "trade": "Meter & Service Work",
+    "city": "Central Texas",
+    "alt": "Three meter sockets and disconnects being installed on the exterior of a multi-family building",
+    "story": "A three-unit meter stack going back on the side of a multi-family building: gutter trough across the top, meter sockets and disconnects below, all fed from a single point. Work like this has to satisfy the utility and the inspector at the same time, and the tenants inside cannot sit in the dark while it happens.",
+    "partner": true
+  },
+  {
+    "slug": "apartment-meter-stack-complete",
+    "image": "/work/apartment-meter-stack-complete.jpg",
+    "title": "The same job, finished",
+    "trade": "Meter & Service Work",
+    "city": "Central Texas",
+    "alt": "Completed three-unit meter stack with emergency disconnect switches on an apartment building exterior",
+    "story": "Three meters, three emergency disconnects, every conduit run plumb and every label square and legible. Exterior emergency disconnects are standard on rebuilt services now, which is why older apartment buildings around Austin keep needing their meter banks replaced rather than patched.",
+    "partner": true
+  }
+]
