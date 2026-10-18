@@ -142,6 +142,7 @@ const css = `
     display: inline-block; color: var(--gold-ink); white-space: nowrap;
     animation: wordIn .45s ease both;
   }
+  .home-hero h1 .word.mid  { font-size: .78em; }
   .home-hero h1 .word.long { font-size: .6em; }
   @keyframes wordIn {
     from { opacity: 0; transform: translateY(14px); }
@@ -331,8 +332,18 @@ const css = `
   }
 `;
 
-// The words the hero cycles through. The last one is the point of the list.
-const DOES = ['trees.', 'drywall.', 'paint.', 'remodels.', 'make-readies.', 'the whole property.'];
+// The words the hero cycles through. Every trade the crews self-perform, so
+// the length of the list is itself the message, and the last line is its
+// point. The licensed trades are deliberately absent: the site states that
+// Sanches Group holds no trade qualifier licence for them, and a headline
+// reading "Joe does electrical." would contradict that. They appear in the
+// services grid below with the partner framing instead.
+const DOES = [
+  'trees.', 'drywall.', 'paint.', 'flooring.', 'remodels.', 'decks.',
+  'patios.', 'built-ins.', 'make-readies.', 'unit turns.', 'cleaning.',
+  'landscaping.', 'pressure washing.', 'punch lists.',
+  'the whole property.',
+];
 
 // Every service on one list. The homepage is where service blog posts send
 // readers, so it leads with this grid and the estimate form. A service with
@@ -349,7 +360,9 @@ const SERVICES = [
   { icon: 'hardhat',  name: 'Remodeling',               note: 'Kitchens, baths, build-outs',             href: '/services/home-remodeling-leander-tx' },
   { icon: 'planks',   name: 'Flooring',                 note: 'LVP, tile, laminate, repairs',            href: '#contact' },
   { icon: 'deck',     name: 'Patios & Decks',           note: 'New builds and repairs',                  href: '#contact' },
-  { icon: 'roof',     name: 'Roofing, Electrical, Plumbing & HVAC', note: 'Through licensed partners', href: '#contact' },
+  { icon: 'toolbox',  name: 'Built-Ins & Carpentry',    note: 'Media walls, shelving, trim, doors',      href: '/work' },
+  { icon: 'bolt',     name: 'Lighting & EV Chargers',   note: 'Fixtures, chandeliers, Tesla chargers',   href: '/work' },
+  { icon: 'roof',     name: 'Roofing, Electrical, Plumbing & HVAC', note: 'Meter work too — through licensed partners', href: '#contact' },
 ];
 
 const AREAS = ['Leander','Cedar Park','Austin','Round Rock','Georgetown','Pflugerville','Liberty Hill','Hutto','Kyle','Buda','San Marcos','Temple','Statewide (Gov)'];
@@ -400,13 +413,14 @@ function RotatingWord() {
         if (n >= DOES.length - 1) { clearInterval(t); return n; }
         return n + 1;
       });
-    }, 1500);
+    }, 620);
     return () => clearInterval(t);
   }, []);
   const word = DOES[i];
+  const fit = word.length > 17 ? ' long' : word.length > 13 ? ' mid' : '';
   return (
     <span className="slot">
-      <span className={`word${word.length > 14 ? ' long' : ''}`} key={i}>{word}</span>
+      <span className={`word${fit}`} key={i}>{word}</span>
     </span>
   );
 }
@@ -416,7 +430,7 @@ export default function Home() {
     <>
       <Head>
         <title>Sanches Group | Tree Removal, Remodeling &amp; Repairs — Leander, TX</title>
-        <meta name="description" content="Joe does trees, drywall, paint, remodels and the rest. Sanches Group (Joe Sanches LLC) is a Leander, TX property services company: tree removal, pressure washing, drywall repair, painting, make-readies, cleaning, landscaping and remodeling. Free estimates." />
+        <meta name="description" content="Joe does trees, drywall, paint, flooring, remodels, decks, built-ins, make-readies, cleaning, landscaping, pressure washing and the whole punch list. Sanches Group (Joe Sanches LLC) is a Leander, TX property services company. Roofing, electrical, plumbing and HVAC through licensed partners. Free estimates." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://joefsanches.com" />
         <meta property="og:type" content="website" />
