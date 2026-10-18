@@ -441,6 +441,7 @@ export default function Home() {
           </a>
           <ul className="nav-links">
             <li className="nav-text"><a href="#services">Services</a></li>
+            <li className="nav-text"><a href="/work">Our Work</a></li>
             <li className="nav-text"><a href="tel:5126638867">512-663-8867</a></li>
             <li><a href="#contact" className="nav-call">Free Estimate</a></li>
           </ul>
@@ -772,6 +773,7 @@ export default function Home() {
       <footer>
         <img src="/logo.png" alt="Sanches Group" className="mark" />
         <div className="foot-nav">
+          <a href="/work">Recent Work</a>
           <a href="/tree-removal-leander-tx">Tree Service</a>
           <a href="#services">Services</a>
           <a href="/credentials">Credentials</a>
