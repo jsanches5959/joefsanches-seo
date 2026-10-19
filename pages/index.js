@@ -824,6 +824,7 @@ export default function Home() {
         <img src="/logo.png" alt="Sanches Group" className="mark" width="64" height="64" />
         <div className="foot-nav">
           <a href="/work">Recent Work</a>
+          <a href="/guides">Guides</a>
           <a href="/tree-removal-leander-tx">Tree Service</a>
           <a href="#services">Services</a>
           <a href="/credentials">Credentials</a>

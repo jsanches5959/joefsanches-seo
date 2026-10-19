@@ -278,6 +278,7 @@ export default function Work({ projects }) {
         <img src="/logo.png" alt="Sanches Group" className="mark" width="64" height="64" />
         <div className="foot-nav">
           <Link href="/work">Recent Work</Link>
+          <Link href="/guides">Guides</Link>
           <Link href="/#services">Services</Link>
           <Link href="/credentials">Credentials</Link>
           <Link href="/government">Government</Link>
