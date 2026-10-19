@@ -290,7 +290,7 @@ export default function TreeService() {
         <title>Tree Removal &amp; Trimming in Leander, TX — Free Quotes</title>
         <meta
           name="description"
-          content="Joe does trees. Tree removal, trimming, stump grinding and storm cleanup in Leander, Cedar Park, Georgetown and Austin. Written quotes and full cleanup. Get a free quote online or call 512-663-8867."
+          content="Tree removal, trimming, stump grinding and storm cleanup in Leander, Cedar Park, Georgetown and Austin TX. Written quotes, full cleanup, free estimate."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={url} />

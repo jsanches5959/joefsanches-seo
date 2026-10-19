@@ -145,7 +145,13 @@ export default function NeighborhoodPage({ neighborhood }) {
   // category words repeated on every page. The numbers are already in the
   // JSON, and a price and a tax rate in the snippet answer the question the
   // searcher came with.
-  const metaDesc = `${name} homes in ${city}, TX: median ${medianPrice}, range ${priceRange}. ${schoolDistrict} schools, ${taxRate} property tax, HOA ${hoa}.`;
+  // Google renders about 155 characters. Brushy Creek's HOA note ("$0
+  // (MUD-governed, no separate HOA)") is long enough to push past that on its
+  // own, so the price range — the least load-bearing clause — comes out when
+  // the whole thing won't fit.
+  const descFull = `${name} homes in ${city}, TX: median ${medianPrice}, range ${priceRange}. ${schoolDistrict} schools, ${taxRate} property tax, HOA ${hoa}.`;
+  const descShort = `${name} homes in ${city}, TX: median ${medianPrice}. ${schoolDistrict} schools, ${taxRate} property tax, HOA ${hoa}.`;
+  const metaDesc = descFull.length <= 155 ? descFull : descShort;
   const canonicalUrl = `${baseUrl}/neighborhoods/${slug}`;
   const overviewSnippet = overview.slice(0, 150).trim() + '…';
 

@@ -1,6 +1,6 @@
 ---
 title: "Bay Area to Leander TX: Walkable & Transit-Friendly Picks"
-description: "Moving from Palo Alto, San Jose, or San Francisco to Austin? The Leander and Cedar Park neighborhoods that actually feel walkable, with real commute times to Apple, the Domain, and downtown."
+description: "Moving from the Bay Area to Austin? The Leander and Cedar Park neighborhoods that actually feel walkable, with real commutes to Apple and the Domain."
 slug: moving-from-bay-area-to-leander-tx-walkable-transit-neighborhoods
 date: 2026-08-09T09:00:00.000Z
 ---

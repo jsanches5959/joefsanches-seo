@@ -4,7 +4,7 @@ seoTitle: "Tree Roots & Foundation Damage in Texas: The Real Risk"
 slug: tree-roots-foundation-damage-texas
 date: 2026-10-03T10:25:00.000Z
 category: contracting
-description: "How trees really affect slab foundations in Central Texas clay soil, which trees are the biggest concern near a house, and when removing a tree helps or makes things worse."
+description: "How trees really affect slab foundations in Central Texas clay, which trees are the biggest concern near a house, and when removal helps or hurts."
 ---
 
 # Can Tree Roots Damage Your Foundation in Texas? What Actually Happens

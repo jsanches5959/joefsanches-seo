@@ -4,7 +4,7 @@ seoTitle: "Lot & Brush Clearing Cost in Leander & Liberty Hill TX"
 slug: lot-clearing-cost-leander-tx
 date: 2026-10-03T10:15:00.000Z
 category: contracting
-description: "What it costs to clear brush, cedar and overgrowth from a lot or acreage around Leander, Liberty Hill and Georgetown, what drives the price, and how to plan clearing for a build or a backyard."
+description: "What it costs to clear brush, cedar and overgrowth from a lot or acreage around Leander, Liberty Hill and Georgetown, and what drives the price up."
 ---
 
 # Lot & Brush Clearing Cost in Leander and Liberty Hill (2026)

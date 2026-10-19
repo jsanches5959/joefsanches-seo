@@ -4,7 +4,7 @@ seoTitle: "Eggshell, Satin or Semi-Gloss: Which Paint Sheen?"
 slug: paint-sheen-guide-eggshell-satin-semigloss
 date: 2026-09-11T11:30:00.000Z
 category: contracting
-description: "Paint sheen is a trade between washability and hiding flaws. A room-by-room guide to flat, matte, eggshell, satin and semi-gloss — and the mistake that makes a good paint job look bad."
+description: "Paint sheen trades washability against hiding flaws. A room-by-room guide to flat, matte, eggshell, satin and semi-gloss, and the mistake to avoid."
 ---
 
 # Eggshell, Satin or Semi-Gloss: Picking a Paint Sheen You Won't Regret

@@ -103,7 +103,7 @@ export default function Credentials() {
         <title>Our Credentials Explained — Sanches Group | Leander, TX</title>
         <meta
           name="description"
-          content="What Texas HUB (VetHUB), SDVOSB, SAM.gov registration, the Texas B2G Vendor ID, and commercial insurance actually mean — how each is verified and why it matters to you."
+          content="What Texas HUB (VetHUB), SDVOSB, SAM.gov registration, the Texas B2G Vendor ID and commercial insurance actually mean, and how each one is verified."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={url} />

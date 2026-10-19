@@ -1,7 +1,7 @@
 ---
 title: "Selling Fast in Leander Texas: What Actually Gets Homes Sold Quickly in 2026"
 seoTitle: "Selling Fast in Leander TX: What Gets Homes Sold"
-description: "How to sell your home fast in Leander, TX without leaving money on the table — real pricing strategy, prep tips, and what buyers in 2026 are actually looking for."
+description: "How to sell your home fast in Leander, TX without leaving money on the table: pricing strategy, prep, and what 2026 buyers are actually looking for."
 slug: selling-fast-in-leander-texas
 date: 2026-02-26T06:17:34.368Z
 ---

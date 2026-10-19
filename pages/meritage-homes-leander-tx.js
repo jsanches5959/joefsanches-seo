@@ -134,7 +134,7 @@ export default function MeritageLeander({ liveHomes }) {
     <>
       <Head>
         <title>Meritage Homes in Leander TX — Deerbrooke, Energy Efficient</title>
-        <meta name="description" content="Meritage Homes in Deerbrooke, Leander TX. #1 energy-efficient builder — spray foam, tankless water heater, 16 SEER HVAC, HERS &lt; 60. Save $1K–$2K/year on utilities. $340K–$480K." />
+        <meta name="description" content="Meritage Homes in Deerbrooke, Leander TX. Spray foam, tankless water heater, 16 SEER HVAC, HERS under 60 — $1K–$2K a year in utilities. $340K–$480K." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/meritage-homes-leander-tx`} />
         <meta property="og:title" content="Meritage Homes Leander TX | Deerbrooke Energy Efficient | Joe Sanches" />

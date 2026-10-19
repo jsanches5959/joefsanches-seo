@@ -4,7 +4,7 @@ seoTitle: "Best Time for Tree Removal & Trimming in Central Texas"
 slug: best-time-to-remove-trees-central-texas
 date: 2026-10-03T10:20:00.000Z
 category: contracting
-description: "A month-by-month guide to tree removal and trimming around Leander, Cedar Park and Austin: when oaks can be cut, when to clear cedar, storm season, and when scheduling is easiest."
+description: "A month-by-month guide to tree removal and trimming around Leander, Cedar Park and Austin: when oaks can be cut, cedar clearing, and storm season."
 ---
 
 # Best Time of Year for Tree Removal and Trimming in Central Texas

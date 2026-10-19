@@ -4,7 +4,7 @@ seoTitle: "When to Trim Oak Trees in Texas: Oak Wilt Season Guide"
 slug: when-to-trim-oak-trees-central-texas
 date: 2026-10-03T09:30:00.000Z
 category: contracting
-description: "The safe and risky months to prune live oaks and red oaks around Leander, Cedar Park and Austin, why oak wilt spreads through fresh cuts, and why every oak cut should be painted."
+description: "The safe and risky months to prune live oaks and red oaks around Leander and Austin, why oak wilt spreads through fresh cuts, and why to paint every cut."
 ---
 
 # When to Trim Oak Trees in Central Texas (Oak Wilt Rules That Matter)

@@ -4,7 +4,7 @@ seoTitle: "Tree Removal in Cedar Park TX: Costs, Rules & Tips"
 slug: tree-removal-cedar-park-tx
 date: 2026-10-03T10:30:00.000Z
 category: contracting
-description: "Tree removal and trimming in Cedar Park: the trees that cause the most trouble here, HOA and city rules, oak wilt timing, typical costs and how to get a fast written quote."
+description: "Tree removal and trimming in Cedar Park: the trees that cause the most trouble here, HOA and city rules, oak wilt timing and typical costs."
 ---
 
 # Tree Removal in Cedar Park, TX: Local Guide to Costs, Rules and Common Trees

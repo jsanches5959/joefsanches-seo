@@ -4,7 +4,7 @@ seoTitle: "Drywall Cracks: Cosmetic or Foundation Trouble?"
 slug: drywall-cracks-when-to-worry-central-texas
 date: 2026-09-11T09:00:00.000Z
 category: contracting
-description: "Most drywall cracks in Central Texas homes are cosmetic and cost under $400 to fix. Five patterns are not. Here is how to tell them apart before you spend money on the wrong thing."
+description: "Most drywall cracks in Central Texas homes are cosmetic and cost under $400 to fix. Five patterns are not. How to tell them apart before you spend."
 ---
 
 # Drywall Cracks in Texas Homes: Which Ones Are Cosmetic and Which Mean Foundation Trouble

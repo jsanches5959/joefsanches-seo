@@ -4,7 +4,7 @@ seoTitle: "Is My Tree Dying? 9 Warning Signs in Central Texas"
 slug: signs-tree-is-dying-central-texas
 date: 2026-10-03T09:55:00.000Z
 category: contracting
-description: "How to tell if a tree is dead, dying or dangerous in Leander, Cedar Park and Austin: drought stress, oak wilt, hypoxylon canker, decay, cracks and lean. What to watch and when to call."
+description: "How to tell if a tree is dead, dying or dangerous in Leander, Cedar Park and Austin: drought stress, oak wilt, canker, decay, cracks and lean."
 ---
 
 # Is My Tree Dying? 9 Warning Signs for Central Texas Trees

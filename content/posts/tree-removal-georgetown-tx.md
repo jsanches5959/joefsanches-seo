@@ -4,7 +4,7 @@ seoTitle: "Tree Removal in Georgetown TX: Heritage Trees & Costs"
 slug: tree-removal-georgetown-tx
 date: 2026-10-03T10:35:00.000Z
 category: contracting
-description: "Tree removal and trimming in Georgetown, TX: why to check the city's heritage tree rules first, the trees common here, oak wilt timing, typical costs and how to get a quote."
+description: "Tree removal and trimming in Georgetown, TX: the city's heritage tree rules, the trees common here, oak wilt timing, typical costs and getting a quote."
 ---
 
 # Tree Removal in Georgetown, TX: Heritage Trees, Costs and What to Know

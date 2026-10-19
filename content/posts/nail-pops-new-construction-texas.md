@@ -4,7 +4,7 @@ seoTitle: "Nail Pops in a New House: Why, and What Fixes It"
 slug: nail-pops-new-construction-texas
 date: 2026-09-11T10:30:00.000Z
 category: contracting
-description: "Nail pops in a new Leander or Cedar Park build are normal framing shrinkage, not a defect. Why they appear in year two, why re-driving the nail makes it worse, and how to use your builder warranty before it expires."
+description: "Nail pops in a new Leander or Cedar Park build are framing shrinkage, not a defect. Why re-driving the nail makes it worse, and how to use the warranty."
 ---
 
 # Nail Pops in a Two-Year-Old House: Why It Happens and What Actually Fixes It

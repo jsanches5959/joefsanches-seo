@@ -139,8 +139,10 @@ const css = `
 
 export default function Work({ projects }) {
   const title = 'Recent Work | Sanches Group — Leander & Central Texas';
+  // Kept under the ~155 characters Google renders, so the last clause is read
+  // rather than replaced with an ellipsis.
   const description =
-    'Photos from recent Sanches Group projects across Central Texas — lighting, custom built-ins, and apartment meter and service work. Licensed trades delivered through our licensed partners.';
+    'Photos from recent Sanches Group jobs around Central Texas — lighting, custom built-ins, and apartment meter and service work. Not staged, not stock.';
 
   const schema = {
     '@context': 'https://schema.org',

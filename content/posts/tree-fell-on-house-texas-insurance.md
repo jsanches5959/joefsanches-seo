@@ -4,7 +4,7 @@ seoTitle: "Tree Fell on House in Texas: Insurance & What to Do"
 slug: tree-fell-on-house-texas-insurance
 date: 2026-10-03T09:20:00.000Z
 category: contracting
-description: "A tree on your roof after a Central Texas storm: what to do in the first hour, how homeowners insurance usually handles it, what happens when it's the neighbor's tree, and how to get it removed safely."
+description: "A tree on your roof after a Central Texas storm: what to do in the first hour, how insurance usually handles it, and what if it's the neighbor's tree."
 ---
 
 # Tree Fell on Your House in Texas? Who Pays and What to Do First

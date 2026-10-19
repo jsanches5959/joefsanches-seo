@@ -235,7 +235,7 @@ export default function Government() {
     <>
       <Head>
         <title>Government Contracting — Texas HUB, VOSB, SAM.gov Active</title>
-        <meta name="description" content="Sanches Group is a Texas HUB-certified (VetHUB), SDVOSB-verified, SAM.gov-registered service-disabled veteran-owned contractor. General construction, facilities maintenance, janitorial, and spot purchase services for government and institutional clients in Central Texas." />
+        <meta name="description" content="Texas HUB-certified, SDVOSB-verified, SAM.gov-registered veteran-owned contractor. Construction, facilities maintenance and janitorial for government." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://joefsanches.com/government" />
         <style dangerouslySetInnerHTML={{ __html: css }} />

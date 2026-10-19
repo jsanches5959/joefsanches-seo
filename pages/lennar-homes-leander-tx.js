@@ -134,7 +134,7 @@ export default function LennarLeander({ liveHomes }) {
     <>
       <Head>
         <title>Lennar Homes in Leander TX | New Construction | Joe Sanches</title>
-        <meta name="description" content="Browse Lennar new homes in Leander TX. Crystal Falls and more — Everything's Included package, Wi-Fi smart home, 1-2-10 warranty. $340K–$520K. Free buyer's agent." />
+        <meta name="description" content="Lennar new homes in Leander TX, Crystal Falls and more. Everything's Included package, smart home, 1-2-10 warranty, $340K–$520K. Free buyer's agent." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/lennar-homes-leander-tx`} />
         <meta property="og:title" content="Lennar Homes in Leander TX | New Construction | Joe Sanches" />

@@ -1,7 +1,7 @@
 ---
 title: "Quick Sale Homes in Leander & Austin Area: How to Buy or Sell Fast in 2026"
 seoTitle: "Quick Sale Homes in Leander & Austin: Buy or Sell Fast"
-description: "A local Realtor's guide to quick-sale homes in Leander and the Austin area — how to find motivated sellers, close in 2–3 weeks, and avoid getting burned on price."
+description: "A local Realtor's guide to quick-sale homes in Leander and Austin: finding motivated sellers, closing in 2-3 weeks, and not getting burned on price."
 slug: quick-sale-homes-leander-austin-area
 date: 2026-02-27T14:09:52.548Z
 ---

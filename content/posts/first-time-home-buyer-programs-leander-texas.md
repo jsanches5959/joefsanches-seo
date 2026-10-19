@@ -1,7 +1,7 @@
 ---
 title: "First-Time Home Buyer Programs in Leander Texas: Down Payment Help & Grants"
 seoTitle: "First-Time Buyer Programs in Leander TX: Grants"
-description: "The best first-time home buyer programs available in Leander TX — TSAHC, MCC, TDHCA, VA, and local grants. Real numbers and eligibility explained by a local agent."
+description: "The best first-time home buyer programs in Leander TX - TSAHC, MCC, TDHCA, VA and local grants. Real numbers and eligibility, explained plainly."
 slug: first-time-home-buyer-programs-leander-texas
 date: 2026-02-28T14:10:06.207Z
 ---

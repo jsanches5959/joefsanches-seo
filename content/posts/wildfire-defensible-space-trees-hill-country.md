@@ -4,7 +4,7 @@ seoTitle: "Wildfire Defensible Space: Trees & Cedar Near Your Home"
 slug: wildfire-defensible-space-trees-hill-country
 date: 2026-10-03T10:55:00.000Z
 category: contracting
-description: "How to make the trees and brush around a Leander, Liberty Hill or Cedar Park home less of a wildfire risk: the zones around the house, cedar and ladder fuels, and what to trim or clear."
+description: "How to make the trees and brush around a Leander or Liberty Hill home less of a wildfire risk: the zones, cedar and ladder fuels, what to trim or clear."
 ---
 
 # Wildfire Defensible Space for Hill Country Homes: Trees, Cedar and What to Clear

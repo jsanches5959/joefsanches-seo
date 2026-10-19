@@ -151,7 +151,7 @@ export default function Realtor({ posts }) {
     <>
       <Head>
         <title>Joe Sanches | Leander & Austin TX Realtor | Homes for Sale</title>
-        <meta name="description" content="Joe Sanches is a top-rated Realtor in Leander, Cedar Park, and Austin, TX. Specializing in first-time buyers, new construction, and strategic home sales in Liberty Hill and Central Texas." />
+        <meta name="description" content="Joe Sanches is a Realtor in Leander, Cedar Park and Austin TX, working first-time buyers, new construction and home sales across Central Texas." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://joefsanches.com/realtor" />
         <script

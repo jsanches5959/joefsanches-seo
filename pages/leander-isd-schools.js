@@ -143,7 +143,7 @@ export default function LeaderISDSchoolsHub() {
     <>
       <Head>
         <title>Leander ISD Schools Ranked 2026: Best & Worst | Joe Sanches</title>
-        <meta name="description" content="Every Leander ISD school ranked for 2026 — the standouts, the ones to watch, and exactly how each zone moves home values. Read this before you pick a neighborhood." />
+        <meta name="description" content="Every Leander ISD school ranked for 2026 — the standouts, the ones to watch, and how each zone moves home values. Read it before you pick an area." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/leander-isd-schools`} />
         <meta property="og:title" content="Leander ISD Schools Guide 2026 | Ratings, Zones & More | Joe Sanches" />

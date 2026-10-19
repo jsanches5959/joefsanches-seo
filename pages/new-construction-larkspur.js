@@ -133,7 +133,7 @@ export default function LarkspurPage({ communityData, liveHomes }) {
     <>
       <Head>
         <title>New Construction Homes in Larkspur Leander TX | Joe Sanches</title>
-        <meta name="description" content="New David Weekley homes in Larkspur, Leander TX. Boutique community, resort pool, walking trails, LISD schools. Prices $420K–$580K. Live inventory updated daily." />
+        <meta name="description" content="New David Weekley homes in Larkspur, Leander TX. Boutique community, resort pool, walking trails, Leander ISD. $420K–$580K, inventory updated daily." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/new-construction-larkspur`} />
         <meta property="og:title" content="New Construction Homes in Larkspur Leander TX | Joe Sanches" />

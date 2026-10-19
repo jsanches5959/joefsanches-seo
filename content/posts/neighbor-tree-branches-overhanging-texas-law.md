@@ -4,7 +4,7 @@ seoTitle: "Neighbor's Tree Overhanging My Yard: Texas Rules"
 slug: neighbor-tree-branches-overhanging-texas-law
 date: 2026-10-03T09:45:00.000Z
 category: contracting
-description: "Can you trim your neighbor's tree branches in Texas? How the property-line rule generally works, who pays, what happens if the tree is dead or falls, and how to handle it without a fight."
+description: "Can you trim your neighbor's branches in Texas? How the property-line rule works, who pays, what happens if the tree is dead, and how to avoid a fight."
 ---
 
 # Neighbor's Tree Hanging Over Your Yard in Texas? What You Can (and Can't) Do
