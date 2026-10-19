@@ -571,7 +571,7 @@ export default function LeanderHomeBuyerGuide() {
               </div>
               <p style={{ color: 'var(--muted)', fontSize: '14px', marginTop: '20px' }}>
                 View full neighborhood guides at{' '}
-                <Link href="/neighborhoods" style={{ color: 'var(--accent-light)' }}>joefsanches.com/neighborhoods</Link>
+                <Link href="/leander-neighborhoods" style={{ color: 'var(--accent-light)' }}>joefsanches.com/leander-neighborhoods</Link>
               </p>
             </Section>
 
@@ -731,7 +731,7 @@ export default function LeanderHomeBuyerGuide() {
                 <Link href="/property-tax-leander-tx" style={{ color: 'var(--accent-light)', fontSize: '14px', textDecoration: 'none' }}>→ Leander Property Tax Guide 2026</Link>
                 <Link href="/homes-for-sale-in-leander-tx" style={{ color: 'var(--accent-light)', fontSize: '14px', textDecoration: 'none' }}>→ Homes for Sale in Leander TX</Link>
                 <Link href="/whats-my-home-worth" style={{ color: 'var(--accent-light)', fontSize: '14px', textDecoration: 'none' }}>→ What's My Home Worth?</Link>
-                <Link href="/neighborhoods" style={{ color: 'var(--accent-light)', fontSize: '14px', textDecoration: 'none' }}>→ Neighborhood Guides</Link>
+                <Link href="/leander-neighborhoods" style={{ color: 'var(--accent-light)', fontSize: '14px', textDecoration: 'none' }}>→ Neighborhood Guides</Link>
               </div>
             </div>
 

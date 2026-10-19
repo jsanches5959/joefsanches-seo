@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/neighborhoods",
+      "destination": "/leander-neighborhoods",
+      "permanent": true
+    },
+    {
       "source": "/trees",
       "destination": "/tree-removal-leander-tx",
       "permanent": false

@@ -507,7 +507,7 @@ export default function WhatsMyHomeWorth() {
                 <Link href="/property-tax-leander-tx" style={{ color: 'var(--accent-light)', fontSize: '14px', textDecoration: 'none' }}>→ Leander Property Tax Guide 2026</Link>
                 <Link href="/homes-for-sale-in-leander-tx" style={{ color: 'var(--accent-light)', fontSize: '14px', textDecoration: 'none' }}>→ Homes for Sale in Leander TX</Link>
                 <Link href="/leander-home-buyer-guide" style={{ color: 'var(--accent-light)', fontSize: '14px', textDecoration: 'none' }}>→ Leander Home Buyer's Guide</Link>
-                <Link href="/neighborhoods" style={{ color: 'var(--accent-light)', fontSize: '14px', textDecoration: 'none' }}>→ Leander Neighborhood Guides</Link>
+                <Link href="/leander-neighborhoods" style={{ color: 'var(--accent-light)', fontSize: '14px', textDecoration: 'none' }}>→ Leander Neighborhood Guides</Link>
               </div>
             </div>
           </aside>

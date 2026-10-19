@@ -6,6 +6,7 @@ import html from 'remark-html';
 import Link from 'next/link';
 import Head from 'next/head';
 import JobberForm from '../../components/JobberForm';
+import { relatedPosts } from '../../lib/related';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
@@ -110,11 +111,12 @@ export async function getStaticProps({ params }) {
       description,
       contracting,
       faqs,
+      related: relatedPosts(params.slug),
     },
   };
 }
 
-export default function Post({ slug, title, seoTitle, date, contentHtml, description, contracting, faqs = [] }) {
+export default function Post({ slug, title, seoTitle, date, contentHtml, description, contracting, faqs = [], related = [] }) {
   // Google renders roughly 60 characters of a title. " | Joe Sanches Realtor"
   // is 22 of them, and on an informational query a personal brand nobody has
   // heard of sells nothing — it just truncates the headline's last words. The
@@ -303,6 +305,24 @@ export default function Post({ slug, title, seoTitle, date, contentHtml, descrip
                   </div>
                 </section>
               ) : null}
+
+              {/* Before this, no post on the site linked to another post. A
+                  reader who finished one had nowhere to go but back, and
+                  sixty-three posts had a single inbound link anywhere. Sits
+                  below the estimate form on purpose: the form gets the prime
+                  position, these catch the reader who wasn't ready for it. */}
+              {related.length ? (
+                <nav className="related" aria-label="Related reading">
+                  <h2>Keep reading</h2>
+                  <ul>
+                    {related.map((r) => (
+                      <li key={r.slug}>
+                        <Link href={`/posts/${r.slug}`}>{r.title}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              ) : null}
             </article>
           </main>
 
@@ -418,6 +438,15 @@ export default function Post({ slug, title, seoTitle, date, contentHtml, descrip
           .prop-cta h2 { font-size: 24px; line-height: 1.25; margin: 0 0 12px; color: var(--ink); }
           .prop-cta p { color: var(--text); font-size: 16px; line-height: 1.7; margin: 0 0 22px; }
           @media (max-width: 600px) { .prop-cta { padding: 26px 22px; } }
+          /* Related reading. Two columns on desktop so six links take four
+             lines rather than six, and 17px with generous row spacing because
+             a good share of the people reading this site are over sixty. */
+          .related { margin-top: 44px; padding-top: 28px; border-top: 1px solid var(--border); }
+          .related h2 { font-size: 20px; margin: 0 0 16px; color: var(--ink); letter-spacing: -0.01em; }
+          .related ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 2px 32px; }
+          .related li { border-bottom: 1px solid var(--border); }
+          .related a { display: block; padding: 13px 0; font-size: 17px; line-height: 1.45; color: var(--text); text-decoration: none; }
+          .related a:hover, .related a:focus-visible { color: var(--ink); text-decoration: underline; }
           .contentHtml blockquote { border-left: 4px solid var(--accent); padding-left: 20px; margin: 32px 0; font-style: italic; color: var(--muted); }
           .container { padding-bottom: 100px; }
           @media (max-width: 860px) {

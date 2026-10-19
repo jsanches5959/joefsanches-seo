@@ -1,5 +1,23 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import fs from 'fs';
+import path from 'path';
+
+/* The ten neighborhoods described in detail below are hard-coded with their own
+   figures. This reads the full set of twenty guides so the page can link to all
+   of them — before this, /leander-neighborhoods linked to none, which left
+   fourteen neighborhood pages with no inbound link anywhere on the site. */
+export async function getStaticProps() {
+  const file = path.join(process.cwd(), 'content/neighborhoods.json');
+  const all = JSON.parse(fs.readFileSync(file, 'utf8'));
+  return {
+    props: {
+      guides: all.map(({ slug, name, city, medianPrice, schoolDistrict }) => ({
+        slug, name, city, medianPrice, schoolDistrict,
+      })),
+    },
+  };
+}
 
 const baseUrl = 'https://joefsanches.com';
 
@@ -80,16 +98,16 @@ const faqSchema = {
 };
 
 const neighborhoods = [
-  { name: 'Crystal Falls', price: '$420K–$750K', tax: '~2.22%–2.42%', schools: 'Akin Elem, Leander MS, Vista Ridge HS', vibe: 'Established, golf course, Hill Country', mud: 'Partial (newer phases only)' },
-  { name: 'Bryson', price: '$330K–$550K', tax: '~2.57%', schools: 'Danielson Elem, Leander MS, Glenn HS', vibe: 'Resort amenities, newer builds', mud: 'Yes — MUD #22 (~0.35%)' },
-  { name: 'Travisso', price: '$580K–$1.1M', tax: '~2.34%', schools: 'Cypress Elem, Cedar Park MS, Cedar Park HS', vibe: 'Luxury, panoramic Hill Country views', mud: 'Yes — MUD #12 (~0.12%)' },
-  { name: 'Larkspur', price: '$380K–$560K', tax: '~2.42%–2.50%', schools: 'Pleasant Hill Elem, Leander MS, Glenn HS', vibe: 'Family-friendly, trails, newer builds', mud: 'Yes — MUD #18 (~0.20%–0.28%)' },
-  { name: 'Northline', price: '$320K–$480K', tax: '~2.52%', schools: 'Bagdad Elem, Danielson MS, Rouse HS', vibe: 'Urban-walkable, MetroRail access', mud: 'Yes — MUD #19 (~0.30%)' },
-  { name: 'Deerbrooke', price: '$350K–$600K', tax: '~2.50%', schools: 'Gillespie Elem, Running Brushy MS, Rouse HS', vibe: 'Newest community, greenbelt trails', mud: 'Yes — MUD #25 (~0.28%)' },
-  { name: 'Block House Creek', price: '$300K–$480K', tax: '~2.18%–2.22%', schools: 'Block House Creek Elem, Running Brushy MS, Leander HS', vibe: 'Established, mature trees, no MUD', mud: 'No MUD' },
-  { name: 'Horizon Lake', price: '$320K–$500K', tax: '~2.28%–2.38%', schools: 'Winkley Elem, Cedar Park MS, Cedar Park HS', vibe: 'Lake access, relaxed, spacious lots', mud: 'Minimal' },
-  { name: 'Caballo Ranch', price: '$340K–$520K', tax: '~2.22%–2.35%', schools: 'Camacho Elem, Leander MS, Rouse HS', vibe: 'Quiet, established, low overhead', mud: 'Partial' },
-  { name: 'Bar W Ranch', price: '$400K–$650K', tax: '~2.40%–2.50%', schools: 'Bagdad Elem, Danielson MS, Rouse HS', vibe: 'Newer, Hill Country setting, Meritage', mud: 'Yes — newer MUD' },
+  { name: 'Crystal Falls', slug: 'crystal-falls', price: '$420K–$750K', tax: '~2.22%–2.42%', schools: 'Akin Elem, Leander MS, Vista Ridge HS', vibe: 'Established, golf course, Hill Country', mud: 'Partial (newer phases only)' },
+  { name: 'Bryson', slug: 'bryson', price: '$330K–$550K', tax: '~2.57%', schools: 'Danielson Elem, Leander MS, Glenn HS', vibe: 'Resort amenities, newer builds', mud: 'Yes — MUD #22 (~0.35%)' },
+  { name: 'Travisso', slug: 'travisso', price: '$580K–$1.1M', tax: '~2.34%', schools: 'Cypress Elem, Cedar Park MS, Cedar Park HS', vibe: 'Luxury, panoramic Hill Country views', mud: 'Yes — MUD #12 (~0.12%)' },
+  { name: 'Larkspur', slug: 'larkspur', price: '$380K–$560K', tax: '~2.42%–2.50%', schools: 'Pleasant Hill Elem, Leander MS, Glenn HS', vibe: 'Family-friendly, trails, newer builds', mud: 'Yes — MUD #18 (~0.20%–0.28%)' },
+  { name: 'Northline', slug: 'northline', price: '$320K–$480K', tax: '~2.52%', schools: 'Bagdad Elem, Danielson MS, Rouse HS', vibe: 'Urban-walkable, MetroRail access', mud: 'Yes — MUD #19 (~0.30%)' },
+  { name: 'Deerbrooke', slug: 'deerbrooke', price: '$350K–$600K', tax: '~2.50%', schools: 'Gillespie Elem, Running Brushy MS, Rouse HS', vibe: 'Newest community, greenbelt trails', mud: 'Yes — MUD #25 (~0.28%)' },
+  { name: 'Block House Creek', slug: 'block-house-creek', price: '$300K–$480K', tax: '~2.18%–2.22%', schools: 'Block House Creek Elem, Running Brushy MS, Leander HS', vibe: 'Established, mature trees, no MUD', mud: 'No MUD' },
+  { name: 'Horizon Lake', slug: 'horizon-lake', price: '$320K–$500K', tax: '~2.28%–2.38%', schools: 'Winkley Elem, Cedar Park MS, Cedar Park HS', vibe: 'Lake access, relaxed, spacious lots', mud: 'Minimal' },
+  { name: 'Caballo Ranch', slug: 'caballo-ranch', price: '$340K–$520K', tax: '~2.22%–2.35%', schools: 'Camacho Elem, Leander MS, Rouse HS', vibe: 'Quiet, established, low overhead', mud: 'Partial' },
+  { name: 'Bar W Ranch', slug: 'bar-w-ranch', price: '$400K–$650K', tax: '~2.40%–2.50%', schools: 'Bagdad Elem, Danielson MS, Rouse HS', vibe: 'Newer, Hill Country setting, Meritage', mud: 'Yes — newer MUD' },
 ];
 
 function Section({ id, title, children }) {
@@ -125,7 +143,7 @@ function NavLink({ href, label }) {
   );
 }
 
-export default function LeaderNeighborhoodsHub() {
+export default function LeaderNeighborhoodsHub({ guides }) {
   return (
     <>
       <Head>
@@ -203,6 +221,7 @@ export default function LeaderNeighborhoodsHub() {
             <NavLink href="#overview" label="Leander's Growth Story" />
             <NavLink href="#comparison" label="Neighborhood Comparison Table" />
             <NavLink href="#deep-dives" label="Neighborhood Deep Dives" />
+            <NavLink href="#all-guides" label="Every Neighborhood Guide" />
             <NavLink href="#how-to-choose" label="How to Choose Your Neighborhood" />
             <NavLink href="#nearby" label="Cedar Park & Liberty Hill" />
             <NavLink href="#faq" label="Frequently Asked Questions" />
@@ -264,9 +283,52 @@ export default function LeaderNeighborhoodsHub() {
                     <span>Tax rate: <strong style={{ color: 'var(--ink)' }}>{n.tax}</strong></span>
                     <span>MUD: <strong style={{ color: 'var(--ink)' }}>{n.mud}</strong></span>
                   </div>
-                  <p style={{ color: 'var(--muted)', fontSize: '13px', margin: 0 }}>Schools: {n.schools}</p>
+                  <p style={{ color: 'var(--muted)', fontSize: '13px', margin: '0 0 10px' }}>Schools: {n.schools}</p>
+                  <Link
+                    href={`/neighborhoods/${n.slug}`}
+                    style={{ color: 'var(--accent-light)', fontSize: '13px', fontWeight: 700 }}
+                  >
+                    Full {n.name} guide — prices, schools, taxes and HOA →
+                  </Link>
                 </div>
               ))}
+            </Section>
+
+            {/* Every guide, including the ten not written up above. These had no
+                inbound link anywhere on the site, so Google could only reach
+                them through the sitemap and they earned no link equity. */}
+            <Section id="all-guides" title="Every Neighborhood Guide">
+              <p style={{ color: 'var(--muted)', lineHeight: '1.8', marginBottom: '16px' }}>
+                Twenty neighborhoods across Leander, Cedar Park, Georgetown and Liberty Hill, each
+                with its own page covering home prices, school assignment, property tax rate, HOA
+                dues and commute times.
+              </p>
+              {['Leander', 'Cedar Park', 'Georgetown', 'Liberty Hill'].map((cityName) => {
+                const inCity = guides.filter((g) => g.city === cityName);
+                if (!inCity.length) return null;
+                return (
+                  <div key={cityName} style={{ marginBottom: '20px' }}>
+                    <h3 style={{ color: 'var(--ink)', fontSize: '16px', margin: '0 0 10px' }}>
+                      {cityName}
+                    </h3>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '10px' }}>
+                      {inCity.map((g) => (
+                        <Link
+                          key={g.slug}
+                          href={`/neighborhoods/${g.slug}`}
+                          className="card"
+                          style={{ padding: '12px 14px', display: 'block' }}
+                        >
+                          <strong style={{ color: 'var(--ink)', fontSize: '15px' }}>{g.name}</strong>
+                          <span style={{ display: 'block', color: 'var(--muted)', fontSize: '13px', marginTop: '4px' }}>
+                            Median {g.medianPrice} · {g.schoolDistrict}
+                          </span>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                );
+              })}
             </Section>
 
             <Section id="how-to-choose" title="How to Choose the Right Leander Neighborhood">
