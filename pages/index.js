@@ -413,7 +413,7 @@ function RotatingWord() {
         if (n >= DOES.length - 1) { clearInterval(t); return n; }
         return n + 1;
       });
-    }, 620);
+    }, 880);
     return () => clearInterval(t);
   }, []);
   const word = DOES[i];
