@@ -407,6 +407,9 @@ export default function Post({ slug, title, seoTitle, canonicalTo, date, content
                     <li><a href="/services/landscaping-grounds-maintenance-leander-tx">Landscaping &amp; Grounds →</a></li>
                     <li><a href="/services/handyman-services-leander-tx">Handyman &amp; Repairs →</a></li>
                     <li><a href="/services/home-remodeling-leander-tx">Remodeling →</a></li>
+                    <li><a href="/services/flooring-installation-leander-tx">Flooring →</a></li>
+                    <li><a href="/work">See Recent Work →</a></li>
+                    <li><a href="/guides">All Guides →</a></li>
                   </ul>
                 </div>
                 <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center', position: 'sticky', top: '20px' }}>
