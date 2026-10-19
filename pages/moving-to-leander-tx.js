@@ -191,7 +191,7 @@ export default function MovingToLeanderTx() {
   return (
     <>
       <Head>
-        <title>Moving to Leander TX 2026 | Complete Relocation Guide | Joe Sanches</title>
+        <title>Moving to Leander TX in 2026 — Complete Relocation Guide</title>
         <meta name="description" content="Everything you need to know about moving to Leander TX: neighborhoods, schools, cost of living, commute times, and what makes this Austin suburb special." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/moving-to-leander-tx`} />

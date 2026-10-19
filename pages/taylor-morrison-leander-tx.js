@@ -133,7 +133,7 @@ export default function TaylorMorrisonLeander({ liveHomes }) {
   return (
     <>
       <Head>
-        <title>Taylor Morrison Homes in Leander TX | Northline & Larkspur | Joe Sanches</title>
+        <title>Taylor Morrison Homes in Leander TX — Northline & Larkspur</title>
         <meta name="description" content="Taylor Morrison new homes in Leander TX — Northline and Larkspur communities. Invitation to Dream personalization, in-house financing, 1-2-10 warranty. $380K–$580K." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/taylor-morrison-leander-tx`} />

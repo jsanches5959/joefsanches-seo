@@ -1,5 +1,6 @@
 ---
 title: "Moving to Leander TX in 2026: A Local's Complete Relocation Guide"
+seoTitle: "Moving to Leander TX: A Local's Complete Guide"
 slug: moving-to-leander-tx-complete-relocation-guide-2026
 date: 2026-06-05T12:01:00.000Z
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Why Your Home Isn't Selling in Leander: 5 Common Mistakes in a Shifting Market"
+seoTitle: "Why Your Home Isn't Selling in Leander: 5 Mistakes"
 slug: why-your-home-isn-t-selling-in-leander-5-common-mistakes-in-a-shifting-market
 date: 2026-03-04T14:07:31.268Z
 ---

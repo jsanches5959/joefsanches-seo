@@ -1,5 +1,6 @@
 ---
 title: "Leander TX Ranked #8 Best Place to Live in America in 2026 — What That Means for Home Values"
+seoTitle: "Leander TX Ranked #8 Best Place to Live in America"
 slug: leander-tx-best-places-to-live-ranked
 date: 2026-06-05T10:00:00.000Z
 ---

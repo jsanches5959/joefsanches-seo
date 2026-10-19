@@ -1,5 +1,6 @@
 ---
 title: "Military Relocation to Austin TX: Complete VA Home Buying Guide for 2026"
+seoTitle: "Military Relocation to Austin: VA Home Buying Guide"
 slug: military-relocation-to-austin-tx-va-loan-guide-2026
 date: 2026-06-11T08:00:00.000Z
 ---

@@ -287,7 +287,7 @@ export default function TreeService() {
   return (
     <>
       <Head>
-        <title>Tree Removal &amp; Trimming in Leander, TX | Free Quotes | Sanches Group</title>
+        <title>Tree Removal &amp; Trimming in Leander, TX — Free Quotes</title>
         <meta
           name="description"
           content="Joe does trees. Tree removal, trimming, stump grinding and storm cleanup in Leander, Cedar Park, Georgetown and Austin. Written quotes and full cleanup. Get a free quote online or call 512-663-8867."

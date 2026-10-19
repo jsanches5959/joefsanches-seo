@@ -1,5 +1,6 @@
 ---
 title: "Round Rock TX Real Estate 2026: Buyer's Guide to Homes, Schools, and Neighborhoods"
+seoTitle: "Round Rock TX Real Estate 2026: A Buyer's Guide"
 slug: round-rock-tx-real-estate-buyer-guide-2026
 date: 2026-06-11T14:15:00.000Z
 ---

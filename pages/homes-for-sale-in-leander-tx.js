@@ -64,7 +64,7 @@ export default function LeanderHomes() {
   return (
     <>
       <Head>
-        <title>Homes for Sale in Leander, TX | New Construction & Local Expert Joe Sanches</title>
+        <title>Homes for Sale in Leander, TX — New Construction & Resale</title>
         <meta name="description" content="Searching for homes for sale in Leander, TX? Get expert local insights on new construction, market stats, and professional guidance from Joe Sanches, your Leander real estate expert." />
         <meta name="keywords" content="homes for sale in leander tx, leander tx real estate, new construction leander tx, crystal falls homes, travisso homes, realtor leander tx" />
         <link rel="canonical" href={pageUrl} />

@@ -1,5 +1,6 @@
 ---
 title: "Drywall Cracks in Texas Homes: Which Ones Are Cosmetic and Which Mean Foundation Trouble"
+seoTitle: "Drywall Cracks: Cosmetic or Foundation Trouble?"
 slug: drywall-cracks-when-to-worry-central-texas
 date: 2026-09-11T09:00:00.000Z
 category: contracting

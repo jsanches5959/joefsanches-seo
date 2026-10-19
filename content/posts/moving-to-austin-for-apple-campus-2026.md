@@ -1,5 +1,6 @@
 ---
 title: "Moving to Austin for Apple Campus 2026: Best Neighborhoods for Apple Employees"
+seoTitle: "Moving to Austin for Apple: Best Neighborhoods"
 slug: moving-to-austin-for-apple-campus-2026
 date: 2026-06-11T14:30:00.000Z
 ---

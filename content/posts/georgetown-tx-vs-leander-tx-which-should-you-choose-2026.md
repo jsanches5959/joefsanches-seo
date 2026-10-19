@@ -1,5 +1,6 @@
 ---
 title: "Georgetown TX vs Leander TX: Which Austin Suburb Should You Choose in 2026?"
+seoTitle: "Georgetown vs Leander TX: Which Suburb Wins in 2026?"
 slug: georgetown-tx-vs-leander-tx-which-should-you-choose-2026
 date: 2026-06-11T09:00:00.000Z
 ---

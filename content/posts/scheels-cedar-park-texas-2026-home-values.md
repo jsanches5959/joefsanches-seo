@@ -1,5 +1,6 @@
 ---
 title: "SCHEELS Opening Cedar Park Texas August 2026: What It Means for Home Values"
+seoTitle: "SCHEELS Cedar Park 2026: What It Means for Homes"
 slug: scheels-cedar-park-texas-2026-home-values
 date: 2026-06-04T08:01:00.000Z
 ---

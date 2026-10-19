@@ -1,5 +1,6 @@
 ---
 title: "How to Find a Texas HUB Certified Contractor in Austin: A Guide for Property Managers and Procurement Teams"
+seoTitle: "How to Find a Texas HUB Certified Contractor"
 slug: how-to-find-texas-hub-certified-contractor-austin
 date: 2026-06-11T10:00:00.000Z
 ---

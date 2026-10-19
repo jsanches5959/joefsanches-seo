@@ -1,5 +1,6 @@
 ---
 title: Why Leander Has the Highest Property Tax Rates in Williamson County (And How to Lower Yours)
+seoTitle: "Why Leander Has Williamson County's Highest Tax Rates"
 slug: why-leander-has-the-highest-property-tax-rates-in-williamson-county-and-how-to-lower-yours
 date: 2026-03-04T14:01:22.748Z
 ---

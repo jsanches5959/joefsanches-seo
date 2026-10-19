@@ -1,5 +1,6 @@
 ---
 title: "Leander Home Prices Are Down in 2026 — Is This the Best Time to Buy in Years?"
+seoTitle: "Leander Home Prices Are Down. Is It Time to Buy?"
 slug: leander-home-prices-down-2026-best-time-to-buy
 date: 2026-06-04T08:02:00.000Z
 ---

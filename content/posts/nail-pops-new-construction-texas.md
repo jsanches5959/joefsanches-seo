@@ -1,5 +1,6 @@
 ---
 title: "Nail Pops in a Two-Year-Old House: Why It Happens and What Actually Fixes It"
+seoTitle: "Nail Pops in a New House: Why, and What Fixes It"
 slug: nail-pops-new-construction-texas
 date: 2026-09-11T10:30:00.000Z
 category: contracting

@@ -1,5 +1,6 @@
 ---
 title: "What Drywall Repair Actually Costs in Central Texas (Real 2026 Numbers)"
+seoTitle: "Drywall Repair Cost in Central Texas: 2026 Numbers"
 slug: drywall-repair-cost-leander-cedar-park
 date: 2026-09-11T09:30:00.000Z
 category: contracting

@@ -1,5 +1,6 @@
 ---
 title: "Texas First-Time Homebuyer Programs 2026: Down Payment Assistance and Grants"
+seoTitle: "Texas First-Time Homebuyer Programs and Grants 2026"
 slug: texas-first-time-homebuyer-programs-2026
 date: 2026-06-11T14:45:00.000Z
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Why Exterior Paint Fails Fast in Texas — and How Long It Should Actually Last"
+seoTitle: "How Long Exterior Paint Lasts in the Texas Heat"
 slug: exterior-paint-texas-heat-how-long-lasts
 date: 2026-09-11T12:00:00.000Z
 category: contracting

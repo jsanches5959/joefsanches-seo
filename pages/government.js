@@ -234,7 +234,7 @@ export default function Government() {
   return (
     <>
       <Head>
-        <title>Government Contracting | Sanches Group | Texas HUB · VOSB · SAM.gov</title>
+        <title>Government Contracting — Texas HUB, VOSB, SAM.gov Active</title>
         <meta name="description" content="Sanches Group is a Texas HUB-certified (VetHUB), SDVOSB-verified, SAM.gov-registered service-disabled veteran-owned contractor. General construction, facilities maintenance, janitorial, and spot purchase services for government and institutional clients in Central Texas." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://joefsanches.com/government" />

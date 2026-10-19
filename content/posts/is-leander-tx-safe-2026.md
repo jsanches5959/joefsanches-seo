@@ -1,5 +1,6 @@
 ---
 title: "Is Leander TX Safe? Crime Rates, Stats & What Locals Actually Say in 2026"
+seoTitle: "Is Leander TX Safe? Crime Rates and Real Stats"
 description: "Is Leander TX safe to live in? Honest look at crime rates, the safest neighborhoods, how Leander compares to Austin and Cedar Park, and what locals actually say."
 slug: is-leander-tx-safe-2026
 date: 2026-06-07T10:00:00.000Z

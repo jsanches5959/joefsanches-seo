@@ -167,7 +167,7 @@ export default function LeanderHomeBuyerGuide() {
   return (
     <>
       <Head>
-        <title>Leander TX Home Buyer's Guide 2026 | Free Download | Joe Sanches</title>
+        <title>Leander TX Home Buyer's Guide 2026 — Free Download</title>
         <meta name="description" content="The complete guide to buying a home in Leander TX in 2026. Steps, costs, neighborhoods, VA loans, new construction vs resale — from a local Leander Realtor. Free." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/leander-home-buyer-guide`} />

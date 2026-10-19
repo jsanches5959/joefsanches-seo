@@ -140,7 +140,7 @@ export default function BuyHomeLeanderTx() {
   return (
     <>
       <Head>
-        <title>Buy a Home in Leander TX | Expert Buyer's Agent | Joe Sanches</title>
+        <title>Buy a Home in Leander TX — Buyer's Agent & Local Guide</title>
         <meta name="description" content="Work with Joe Sanches, Leander TX buyer's agent and military veteran. New construction, resale, VA loans. Free consultation: 512-663-8867." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/buy-home-leander-tx`} />

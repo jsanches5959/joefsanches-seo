@@ -1,5 +1,6 @@
 ---
 title: Is the Cedar Park Housing Market Cooling? 2026 Price Trends & Forecast
+seoTitle: "Is the Cedar Park Housing Market Cooling in 2026?"
 slug: is-the-cedar-park-housing-market-cooling-2026-price-trends-forecast
 date: 2026-03-04T14:05:56.593Z
 ---

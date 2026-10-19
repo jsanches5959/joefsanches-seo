@@ -1,5 +1,6 @@
 ---
 title: "Palmera Ridge Leander TX: New Homes From the $270s in Leander ISD"
+seoTitle: "Palmera Ridge Leander TX: New Homes From the $270s"
 slug: palmera-ridge-leander-tx-new-homes
 date: 2026-06-05T10:01:00.000Z
 ---

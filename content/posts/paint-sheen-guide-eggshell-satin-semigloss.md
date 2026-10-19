@@ -1,5 +1,6 @@
 ---
 title: "Eggshell, Satin or Semi-Gloss: Picking a Paint Sheen You Won't Regret"
+seoTitle: "Eggshell, Satin or Semi-Gloss: Which Paint Sheen?"
 slug: paint-sheen-guide-eggshell-satin-semigloss
 date: 2026-09-11T11:30:00.000Z
 category: contracting

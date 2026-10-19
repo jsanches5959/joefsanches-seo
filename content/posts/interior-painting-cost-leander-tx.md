@@ -1,5 +1,6 @@
 ---
 title: "Interior Painting Cost in Leander and Cedar Park: Room-by-Room Numbers"
+seoTitle: "Interior Painting Cost in Leander & Cedar Park TX"
 slug: interior-painting-cost-leander-tx
 date: 2026-09-11T11:00:00.000Z
 category: contracting

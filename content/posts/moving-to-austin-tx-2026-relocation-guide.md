@@ -1,5 +1,6 @@
 ---
 title: "Moving to Austin TX 2026: Complete Relocation Guide for Out-of-State Buyers"
+seoTitle: "Moving to Austin TX: Complete 2026 Relocation Guide"
 slug: moving-to-austin-tx-2026-relocation-guide
 date: 2026-06-11T12:00:00.000Z
 ---

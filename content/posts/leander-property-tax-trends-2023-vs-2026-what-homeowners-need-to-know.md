@@ -1,5 +1,6 @@
 ---
 title: "Leander Property Tax Trends: 2023 vs. 2026 – What Homeowners Need to Know"
+seoTitle: "Leander Property Tax Trends: 2023 vs 2026"
 slug: leander-property-tax-trends-2023-vs-2026-what-homeowners-need-to-know
 date: 2026-03-04T14:02:40.625Z
 ---

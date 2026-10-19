@@ -1,5 +1,6 @@
 ---
 title: "How to Choose a Realtor in Leander TX: What to Actually Look For in 2026"
+seoTitle: "How to Choose a Realtor in Leander TX: 2026 Guide"
 description: "How to find and choose the right Realtor in Leander TX — what credentials matter, what questions to ask, and the red flags that tell you to keep looking."
 slug: how-to-choose-a-realtor-in-leander-tx
 date: 2026-06-07T11:00:00.000Z

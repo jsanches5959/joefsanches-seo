@@ -1,5 +1,6 @@
 ---
 title: "Cedar Park vs Leander Property Tax Rate 2026: What a $450K Home Actually Costs You"
+seoTitle: "Cedar Park vs Leander Taxes: A $450K Home Compared"
 slug: cedar-park-vs-leander-property-tax-real-numbers-2026
 date: 2026-03-06T10:00:00.000Z
 description: "Exact 2026 property tax rates for Cedar Park and Leander TX. See the real dollar difference on a $450,000 home — and which city saves you more."

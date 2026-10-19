@@ -435,7 +435,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Sanches Group | Tree Removal, Remodeling &amp; Repairs — Leander, TX</title>
+        <title>Sanches Group — Tree Removal &amp; Remodeling in Leander TX</title>
         <meta name="description" content="Joe does trees, drywall, paint, flooring, remodels, decks, built-ins, make-readies, cleaning, landscaping, pressure washing and the whole punch list. Sanches Group (Joe Sanches LLC) is a Leander, TX property services company. Roofing, electrical, plumbing and HVAC through licensed partners. Free estimates." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://joefsanches.com" />

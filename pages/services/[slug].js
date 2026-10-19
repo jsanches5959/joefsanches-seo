@@ -67,10 +67,16 @@ export default function Service({ service, others }) {
     })),
   };
 
+  // " | Sanches Group" is 16 of the ~60 characters Google renders, spent on a
+  // brand nobody is searching for yet. It earns its place only when the title
+  // it's attached to already fits without it.
+  const docTitle =
+    service.title.length + 16 <= 60 ? `${service.title} | Sanches Group` : service.title;
+
   return (
     <>
       <Head>
-        <title>{`${service.title} | Sanches Group`}</title>
+        <title>{docTitle}</title>
         <meta name="description" content={service.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={url} />

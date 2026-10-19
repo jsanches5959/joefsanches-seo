@@ -1,5 +1,6 @@
 ---
 title: "What to Expect at Closing in Texas 2026: A First-Timer's Guide"
+seoTitle: "What to Expect at Closing in Texas: A First-Timer's Guide"
 slug: what-to-expect-at-closing-in-texas-2026
 date: 2026-06-11T14:00:00.000Z
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Living in Leander TX: Honest Pros and Cons From Someone Who Works Here Daily"
+seoTitle: "Living in Leander TX: Honest Pros and Cons"
 description: "The real pros and cons of living in Leander, TX — not the Chamber of Commerce version. Property taxes, traffic, heat, schools, and what's genuinely great about this city."
 slug: leander-tx-pros-and-cons-2026
 date: 2026-06-07T10:30:00.000Z

@@ -133,7 +133,7 @@ export default function MeritageLeander({ liveHomes }) {
   return (
     <>
       <Head>
-        <title>Meritage Homes in Leander TX | Deerbrooke | Energy Efficient | Joe Sanches</title>
+        <title>Meritage Homes in Leander TX — Deerbrooke, Energy Efficient</title>
         <meta name="description" content="Meritage Homes in Deerbrooke, Leander TX. #1 energy-efficient builder — spray foam, tankless water heater, 16 SEER HVAC, HERS &lt; 60. Save $1K–$2K/year on utilities. $340K–$480K." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/meritage-homes-leander-tx`} />

@@ -1,5 +1,6 @@
 ---
 title: "How to Negotiate with Home Builders in Texas 2026: 8 Tactics That Actually Work"
+seoTitle: "How to Negotiate With Texas Home Builders: 8 Tactics"
 slug: how-to-negotiate-with-home-builders-in-texas-2026
 date: 2026-06-11T11:30:00.000Z
 ---
