@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import JobberForm from '../../components/JobberForm';
 import ToolIcon from '../../components/ToolIcon';
+import { breadcrumbSchema } from '../../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 
@@ -84,9 +85,24 @@ export default function Service({ service, others }) {
         <meta property="og:title" content={service.title} />
         <meta property="og:description" content={service.description} />
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={`${baseUrl}/logo.png`} />
+        <meta property="og:image" content={`${baseUrl}/og-image.jpg`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={service.title} />
+        <meta name="twitter:description" content={service.description} />
+        <meta name="twitter:image" content={`${baseUrl}/og-image.jpg`} />
         <script type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              breadcrumbSchema([
+                { name: 'Services', url: '/#services' },
+                { name: service.shortName || service.name },
+              ])
+            ),
+          }} />
         <script type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       </Head>
@@ -94,7 +110,7 @@ export default function Service({ service, others }) {
       <div className="svc">
         <nav className="svc-nav">
           <Link href="/" className="svc-brand">
-            <img src="/logo.png" alt="Sanches Group" />
+            <img src="/logo.png" alt="Sanches Group" width="44" height="44" />
             <span>Sanches Group</span>
           </Link>
           <a href="tel:5126638867" className="svc-call">512-663-8867</a>

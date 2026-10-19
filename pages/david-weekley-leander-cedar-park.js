@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 const BUILDER = 'David Weekley';
@@ -137,12 +138,24 @@ export default function DavidWeekleyLeander({ liveHomes }) {
         <meta name="description" content="David Weekley new homes in Leander and Cedar Park TX, Larkspur community. Award-winning service, 10-year structural warranty. $420K–$600K." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/david-weekley-leander-cedar-park`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="David Weekley Homes in Leander & Cedar Park TX | Joe Sanches" />
+        <meta name="twitter:description" content="David Weekley new homes in Leander and Cedar Park TX, Larkspur community. Award-winning service, 10-year structural warranty. $420K–$600K." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="David Weekley Homes in Leander & Cedar Park TX | Joe Sanches" />
         <meta property="og:description" content="New David Weekley homes in Leander TX — Larkspur community. Award-winning builder, 10-year warranty, $420K–$600K." />
         <meta property="og:url" content={`${baseUrl}/david-weekley-leander-cedar-park`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'New Construction', url: '/new-construction-leander-tx' }, { name: 'David Weekley' }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -162,9 +175,9 @@ export default function DavidWeekleyLeander({ liveHomes }) {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -187,7 +200,7 @@ export default function DavidWeekleyLeander({ liveHomes }) {
         {/* Hero */}
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Updated March 2026</div>
-          <h2 className="heroTitle">David Weekley Homes in Leander & Cedar Park TX — 2026</h2>
+          <h1 className="heroTitle">David Weekley Homes in Leander & Cedar Park TX — 2026</h1>
           <p className="heroLead">
             David Weekley Homes is a Texas-based builder with J.D. Power recognition for customer satisfaction and a 10-year structural warranty that leads the industry. In Leander, David Weekley builds in Larkspur — a boutique community with resort pool, walking trails, and Larkspur Elementary on-site. Prices from the low $420s. Working with Joe as your buyer's agent costs you nothing.
           </p>

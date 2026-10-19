@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 const BUILDER = 'Meritage';
@@ -137,12 +138,24 @@ export default function MeritageLeander({ liveHomes }) {
         <meta name="description" content="Meritage Homes in Deerbrooke, Leander TX. Spray foam, tankless water heater, 16 SEER HVAC, HERS under 60 — $1K–$2K a year in utilities. $340K–$480K." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/meritage-homes-leander-tx`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Meritage Homes in Leander TX — Deerbrooke, Energy Efficient" />
+        <meta name="twitter:description" content="Meritage Homes in Deerbrooke, Leander TX. Spray foam, tankless water heater, 16 SEER HVAC, HERS under 60 — $1K–$2K a year in utilities. $340K–$480K." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="Meritage Homes Leander TX | Deerbrooke Energy Efficient | Joe Sanches" />
         <meta property="og:description" content="New Meritage homes in Deerbrooke, Leander TX. #1 energy-efficient builder, spray foam standard, save $1K–$2K/year, $340K–$480K." />
         <meta property="og:url" content={`${baseUrl}/meritage-homes-leander-tx`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'New Construction', url: '/new-construction-leander-tx' }, { name: 'Meritage Homes' }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -162,9 +175,9 @@ export default function MeritageLeander({ liveHomes }) {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -187,7 +200,7 @@ export default function MeritageLeander({ liveHomes }) {
         {/* Hero */}
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Updated March 2026</div>
-          <h2 className="heroTitle">Meritage Homes in Leander TX — Deerbrooke Energy-Efficient Community</h2>
+          <h1 className="heroTitle">Meritage Homes in Leander TX — Deerbrooke Energy-Efficient Community</h1>
           <p className="heroLead">
             Meritage Homes is the #1 energy-efficient builder in America — and their Deerbrooke community in Leander proves it. Spray foam insulation, tankless water heaters, 16 SEER HVAC, and a HERS score below 60 are standard in every home. Save $1,000–$2,000/year on utilities. Zoned to Leander ISD. Prices from the low $340s. Working with Joe costs you nothing — Meritage pays the commission.
           </p>

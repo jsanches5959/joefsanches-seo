@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 const BUILDER = 'Taylor Morrison';
@@ -137,12 +138,24 @@ export default function TaylorMorrisonLeander({ liveHomes }) {
         <meta name="description" content="Taylor Morrison new homes in Leander TX — Northline and Larkspur. Design personalization, in-house financing, 1-2-10 warranty. $380K–$580K." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/taylor-morrison-leander-tx`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Taylor Morrison Homes in Leander TX — Northline & Larkspur" />
+        <meta name="twitter:description" content="Taylor Morrison new homes in Leander TX — Northline and Larkspur. Design personalization, in-house financing, 1-2-10 warranty. $380K–$580K." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="Taylor Morrison Homes Leander TX | Northline & Larkspur | Joe Sanches" />
         <meta property="og:description" content="New Taylor Morrison homes in Northline and Larkspur, Leander TX. Personalization program, in-house mortgage, $380K–$580K." />
         <meta property="og:url" content={`${baseUrl}/taylor-morrison-leander-tx`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'New Construction', url: '/new-construction-leander-tx' }, { name: 'Taylor Morrison' }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -162,9 +175,9 @@ export default function TaylorMorrisonLeander({ liveHomes }) {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -187,7 +200,7 @@ export default function TaylorMorrisonLeander({ liveHomes }) {
         {/* Hero */}
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Updated March 2026</div>
-          <h2 className="heroTitle">Taylor Morrison Homes in Leander TX — Northline & Larkspur 2026</h2>
+          <h1 className="heroTitle">Taylor Morrison Homes in Leander TX — Northline & Larkspur 2026</h1>
           <p className="heroLead">
             Taylor Morrison builds in two of Leander's most desirable communities: Northline and Larkspur. Their "Invitation to Dream" personalization program lets buyers customize layouts and finishes extensively. Taylor Morrison Home Funding offers in-house financing with bundled incentives. Backed by a 1-2-10 warranty and LISD schools. Working with Joe costs you nothing — Taylor Morrison pays the commission.
           </p>

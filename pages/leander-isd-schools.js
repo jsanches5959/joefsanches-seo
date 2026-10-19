@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 
@@ -146,6 +147,11 @@ export default function LeaderISDSchoolsHub() {
         <meta name="description" content="Every Leander ISD school ranked for 2026 — the standouts, the ones to watch, and how each zone moves home values. Read it before you pick an area." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/leander-isd-schools`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Leander ISD Schools Ranked 2026: Best & Worst | Joe Sanches" />
+        <meta name="twitter:description" content="Every Leander ISD school ranked for 2026 — the standouts, the ones to watch, and how each zone moves home values. Read it before you pick an area." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="Leander ISD Schools Guide 2026 | Ratings, Zones & More | Joe Sanches" />
         <meta property="og:description" content="Every Leander ISD school — ratings, zoning, programs, and expert tips for home buyers choosing a neighborhood based on schools." />
         <meta property="og:url" content={`${baseUrl}/leander-isd-schools`} />
@@ -153,6 +159,13 @@ export default function LeaderISDSchoolsHub() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'Real Estate', url: '/realtor' }, { name: 'Leander ISD Schools' }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -172,9 +185,9 @@ export default function LeaderISDSchoolsHub() {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -195,7 +208,7 @@ export default function LeaderISDSchoolsHub() {
         {/* Hero */}
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Updated March 2026</div>
-          <h2 className="heroTitle">Leander ISD Schools: The Complete 2026 Guide for Home Buyers</h2>
+          <h1 className="heroTitle">Leander ISD Schools: The Complete 2026 Guide for Home Buyers</h1>
           <p className="heroLead">
             Leander ISD is one of the most important factors driving real estate demand in the Leander and Cedar Park area — and for good reason. With four high schools, a growing roster of elementary campuses, and consistently strong state ratings, LISD is a major asset for any homeowner in the district. Here's everything you need to know before you buy.
           </p>

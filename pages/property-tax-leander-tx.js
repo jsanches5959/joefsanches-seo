@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 
@@ -142,12 +143,24 @@ export default function PropertyTaxHub() {
         <meta name="description" content="The 2026 Leander and Cedar Park rates, every MUD district listed separately, Williamson County exemptions, and what a $500K home actually pays." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/property-tax-leander-tx`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Leander TX Property Tax Rate 2026: Every MUD, Every Rate" />
+        <meta name="twitter:description" content="The 2026 Leander and Cedar Park rates, every MUD district listed separately, Williamson County exemptions, and what a $500K home actually pays." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="Leander TX Property Tax Rate 2026 — Complete Guide" />
         <meta property="og:description" content="Every MUD district, neighborhood tax rate, and 2026 exemption in Leander TX and Cedar Park. The most detailed property tax resource in the Austin metro." />
         <meta property="og:url" content={`${baseUrl}/property-tax-leander-tx`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'Real Estate', url: '/realtor' }, { name: 'Property Tax Rates' }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -167,9 +180,9 @@ export default function PropertyTaxHub() {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -190,7 +203,7 @@ export default function PropertyTaxHub() {
         {/* Hero */}
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Updated March 2026</div>
-          <h2 className="heroTitle">Leander TX Property Tax Rate 2026: The Complete Guide</h2>
+          <h1 className="heroTitle">Leander TX Property Tax Rate 2026: The Complete Guide</h1>
           <p className="heroLead">
             Every MUD district. Every neighborhood rate. Every exemption. Every city comparison. 
             This is the most comprehensive property tax resource for Leander, Cedar Park, and Williamson County — built for buyers, sellers, and homeowners who want straight answers.

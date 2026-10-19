@@ -5,6 +5,7 @@ import Head from 'next/head';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 export async function getStaticProps() {
   const postsDirectory = path.join(process.cwd(), 'content/posts');
@@ -68,7 +69,7 @@ export default function Realtor({ posts }) {
       { "@type": "City", "name": "Jonestown", "addressRegion": "TX" }
     ],
     "priceRange": "$300000-$1000000",
-    "image": "https://joefsanches.com/joe.png",
+    "image": "https://joefsanches.com/joe.jpg",
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": "30.573489",
@@ -154,6 +155,15 @@ export default function Realtor({ posts }) {
         <meta name="description" content="Joe Sanches is a Realtor in Leander, Cedar Park and Austin TX, working first-time buyers, new construction and home sales across Central Texas." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://joefsanches.com/realtor" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Joe Sanches | Leander &amp; Austin TX Realtor | Homes for Sale" />
+        <meta property="og:description" content="Joe Sanches is a Realtor in Leander, Cedar Park and Austin TX, working first-time buyers, new construction and home sales across Central Texas." />
+        <meta property="og:url" content="https://joefsanches.com/realtor" />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Joe Sanches | Leander &amp; Austin TX Realtor | Homes for Sale" />
+        <meta name="twitter:description" content="Joe Sanches is a Realtor in Leander, Cedar Park and Austin TX, working first-time buyers, new construction and home sales across Central Texas." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
@@ -161,6 +171,13 @@ export default function Realtor({ posts }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(agentFaqSchema) }}
+        />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'Real Estate' }])),
+          }}
         />
       </Head>
       <div className="container">
@@ -176,9 +193,9 @@ export default function Realtor({ posts }) {
         </div>
         <header className="topbar">
           <div className="brand">
-            <img src="/logo.png" alt="Sanches Group" className="logo" />
+            <img src="/logo.png" alt="Sanches Group" className="logo" width="64" height="64" />
             <div>
-              <h1>Joe Sanches</h1>
+              <span className="brand-name">Joe Sanches</span>
               <p className="sub">Licensed Realtor · Leander, TX</p>
               <a href="/" className="brand-group-link">Sanches Group ↗</a>
             </div>
@@ -192,7 +209,7 @@ export default function Realtor({ posts }) {
         <section className="hero">
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', alignItems: 'center' }}>
             <div>
-              <h2 className="heroTitle">Helping Leander homeowners buy and sell with confidence.</h2>
+              <h1 className="heroTitle">Helping Leander homeowners buy and sell with confidence.</h1>
               <p className="heroLead">
                 Strategic pricing, military discipline, and modern marketing to get you the best results in the Austin market.
               </p>
@@ -204,8 +221,11 @@ export default function Realtor({ posts }) {
             </div>
             <div style={{ textAlign: 'center' }}>
               <img
-                src="/joe.png"
+                src="/joe.jpg"
                 alt="Joe Sanches"
+                width="1000"
+                height="734"
+                loading="lazy"
                 style={{
                   borderRadius: '16px',
                   width: '100%',

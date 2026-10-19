@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 const BUILDER = 'KB Home';
@@ -137,12 +138,24 @@ export default function KBHomeLeander({ liveHomes }) {
         <meta name="description" content="KB Home new construction in Bryson, Leander TX. Built-to-order, KB Design Studio, ENERGY STAR certified, $320K–$450K. Free buyer's representation." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/kb-home-leander-tx`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="KB Home in Leander TX | Bryson Community | Joe Sanches" />
+        <meta name="twitter:description" content="KB Home new construction in Bryson, Leander TX. Built-to-order, KB Design Studio, ENERGY STAR certified, $320K–$450K. Free buyer's representation." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="KB Home in Leander TX | Bryson Community | Joe Sanches" />
         <meta property="og:description" content="New KB Home construction in Bryson, Leander TX. Built-to-order, ENERGY STAR, $320K–$450K. Free buyer's agent." />
         <meta property="og:url" content={`${baseUrl}/kb-home-leander-tx`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'New Construction', url: '/new-construction-leander-tx' }, { name: 'KB Home' }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -162,9 +175,9 @@ export default function KBHomeLeander({ liveHomes }) {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -187,7 +200,7 @@ export default function KBHomeLeander({ liveHomes }) {
         {/* Hero */}
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Updated March 2026</div>
-          <h2 className="heroTitle">KB Home in Leander TX — Bryson Community 2026</h2>
+          <h1 className="heroTitle">KB Home in Leander TX — Bryson Community 2026</h1>
           <p className="heroLead">
             KB Home's built-to-order approach gives Leander buyers genuine control: choose your floor plan, pick your lot, and customize finishes at the KB Design Studio. Every home is ENERGY STAR certified. Bryson is Leander's most affordable new construction entry point at $320K–$450K. Working with Joe as your buyer's agent costs you nothing — KB Home pays the commission.
           </p>

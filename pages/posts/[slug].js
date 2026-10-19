@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Head from 'next/head';
 import JobberForm from '../../components/JobberForm';
 import { relatedPosts } from '../../lib/related';
+import { breadcrumbSchema } from '../../lib/breadcrumbs';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
@@ -167,19 +168,33 @@ export default function Post({ slug, title, seoTitle, date, contentHtml, descrip
         <meta property="og:title" content={seoTitle || title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={postUrl} />
-        <meta property="og:image" content={`${baseUrl}/logo.png`} />
+        <meta property="og:image" content={`${baseUrl}/og-image.jpg`} />
         <meta property="og:site_name" content={contracting ? 'Sanches Group' : 'Joe Sanches Realtor'} />
         
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={seoTitle || title} />
         <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={`${baseUrl}/logo.png`} />
+        <meta name="twitter:image" content={`${baseUrl}/og-image.jpg`} />
         
         {/* Article Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        />
+        {/* Breadcrumb trail. Google draws this in place of the URL in a
+            search result, so "joefsanches.com › posts › when-to-trim-oak-tr…"
+            becomes "Home › Guides › When to Trim Oak Trees". */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              breadcrumbSchema([
+                { name: 'Guides', url: '/guides' },
+                { name: seoTitle || title },
+              ])
+            ),
+          }}
         />
         {faqs.length > 0 ? (
           <script
@@ -216,7 +231,7 @@ export default function Post({ slug, title, seoTitle, date, contentHtml, descrip
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
                 {/* The masthead is site identity, not the page's heading — the
                     article title is the H1. Styled by .brand so it looks the
@@ -239,10 +254,14 @@ export default function Post({ slug, title, seoTitle, date, contentHtml, descrip
         <div className="grid" style={{ marginTop: '40px' }}>
           <main className="main">
             <article className="hero post-article" style={{ padding: '40px' }}>
-              <Link href="/" style={{ color: 'var(--muted)', fontSize: '14px', marginBottom: '24px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
-                Back to Home
-              </Link>
+              {/* A real trail rather than "Back to Home", matching the
+                  BreadcrumbList declared above and giving the guides index a
+                  link from every post. */}
+              <nav className="crumbs" aria-label="Breadcrumb">
+                <Link href="/">Home</Link>
+                <span aria-hidden="true">›</span>
+                <Link href="/guides">Guides</Link>
+              </nav>
               <h1 className="heroTitle" style={{ fontSize: '42px', marginBottom: '20px' }}>{title}</h1>
               {date ? (
                 <p className="pill" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', marginBottom: '32px' }}>
@@ -390,8 +409,11 @@ export default function Post({ slug, title, seoTitle, date, contentHtml, descrip
             </div>
             <div className="card" style={{ background: 'rgba(107,120,84,0.05)', borderColor: 'rgba(107,120,84,0.2)', textAlign: 'center', position: 'sticky', top: '20px' }}>
               <img 
-                src="/joe.png" 
-                alt="Joe Sanches" 
+                src="/joe.jpg" 
+                alt="Joe Sanches"
+                width="1000"
+                height="734"
+                loading="lazy"
                 style={{ 
                   borderRadius: '12px', 
                   width: '100%', 
@@ -438,6 +460,10 @@ export default function Post({ slug, title, seoTitle, date, contentHtml, descrip
           .prop-cta h2 { font-size: 24px; line-height: 1.25; margin: 0 0 12px; color: var(--ink); }
           .prop-cta p { color: var(--text); font-size: 16px; line-height: 1.7; margin: 0 0 22px; }
           @media (max-width: 600px) { .prop-cta { padding: 26px 22px; } }
+          .crumbs { display: flex; align-items: center; gap: 8px; margin-bottom: 22px; font-size: 14px; color: var(--muted); flex-wrap: wrap; }
+          .crumbs a { color: var(--muted); text-decoration: none; }
+          .crumbs a:hover, .crumbs a:focus-visible { color: var(--ink); text-decoration: underline; }
+
           /* Related reading. Two columns on desktop so six links take four
              lines rather than six, and 17px with generous row spacing because
              a good share of the people reading this site are over sixty. */

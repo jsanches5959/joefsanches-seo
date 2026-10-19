@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 const COMMUNITY = 'Crystal Falls';
@@ -136,12 +137,24 @@ export default function CrystalFallsPage({ communityData, liveHomes }) {
         <meta name="description" content="New Lennar homes in Crystal Falls, Leander TX. Golf course community, top Leander ISD schools, $370K–$520K. Live incentives and available inventory." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/new-construction-crystal-falls`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="New Construction in Crystal Falls, Leander TX — Lennar 2026" />
+        <meta name="twitter:description" content="New Lennar homes in Crystal Falls, Leander TX. Golf course community, top Leander ISD schools, $370K–$520K. Live incentives and available inventory." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="New Construction Crystal Falls Leander TX — Lennar 2026" />
         <meta property="og:description" content="Browse Lennar new homes in Crystal Falls, Leander TX. Golf course views, LISD schools, $370K–$520K. Live inventory updated daily." />
         <meta property="og:url" content={`${baseUrl}/new-construction-crystal-falls`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'New Construction', url: '/new-construction-leander-tx' }, { name: 'Crystal Falls' }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -161,9 +174,9 @@ export default function CrystalFallsPage({ communityData, liveHomes }) {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -186,7 +199,7 @@ export default function CrystalFallsPage({ communityData, liveHomes }) {
         {/* Hero */}
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Updated March 2026</div>
-          <h2 className="heroTitle">New Construction Homes in Crystal Falls — Leander TX</h2>
+          <h1 className="heroTitle">New Construction Homes in Crystal Falls — Leander TX</h1>
           <p className="heroLead">
             Crystal Falls is one of Leander's most established master-planned communities, built around a 3,500-acre nature corridor and the Crystal Falls Golf Club. Lennar and CalAtlantic homes range from the high $300s to the low $500s. LISD schools. Low-pressure buyer representation — free to you, paid by the builder.
           </p>

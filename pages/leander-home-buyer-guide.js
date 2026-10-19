@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 
@@ -171,12 +172,24 @@ export default function LeanderHomeBuyerGuide() {
         <meta name="description" content="The complete guide to buying a home in Leander TX in 2026 — steps, costs, neighborhoods, VA loans, and new construction vs resale. Free download." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/leander-home-buyer-guide`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Leander TX Home Buyer's Guide 2026 — Free Download" />
+        <meta name="twitter:description" content="The complete guide to buying a home in Leander TX in 2026 — steps, costs, neighborhoods, VA loans, and new construction vs resale. Free download." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="Leander TX Home Buyer's Guide 2026 | Joe Sanches Realtor" />
         <meta property="og:description" content="The complete guide to buying a home in Leander TX in 2026 — steps, costs, neighborhoods, VA loans, and new construction vs resale. Free download." />
         <meta property="og:url" content={`${baseUrl}/leander-home-buyer-guide`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'Real Estate', url: '/realtor' }, { name: "Home Buyer's Guide" }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -197,9 +210,9 @@ export default function LeanderHomeBuyerGuide() {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -220,7 +233,7 @@ export default function LeanderHomeBuyerGuide() {
         {/* Hero */}
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Updated 2026 — Free Guide</div>
-          <h2 className="heroTitle">The Complete Leander TX Home Buyer's Guide</h2>
+          <h1 className="heroTitle">The Complete Leander TX Home Buyer's Guide</h1>
           <p className="heroLead">
             Everything you need to buy a home in Leander TX in 2026 — from getting pre-approved to closing day. The 10-step buying process, true cost breakdown, neighborhood comparisons, new construction vs resale, VA loan info, and local insights you won't find on Zillow.
           </p>

@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const css = `
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -231,6 +232,36 @@ const css = `
 `;
 
 export default function Government() {
+  const govSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'GeneralContractor',
+    name: 'Sanches Group',
+    legalName: 'Joe Sanches LLC',
+    url: 'https://joefsanches.com/government',
+    logo: 'https://joefsanches.com/logo.png',
+    telephone: '+1-512-663-8867',
+    email: 'hello@joefsanches.com',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Leander',
+      addressRegion: 'TX',
+      addressCountry: 'US',
+    },
+    areaServed: { '@type': 'State', name: 'Texas' },
+    description:
+      'Texas HUB-certified, SDVOSB-verified, SAM.gov-registered service-disabled veteran-owned contractor providing general construction, facilities maintenance and janitorial services to government and institutional clients.',
+    hasCredential: [
+      'Texas HUB (Historically Underutilized Business) certification',
+      'SDVOSB (Service-Disabled Veteran-Owned Small Business) verification',
+      'SAM.gov active registration',
+      'Texas B2G Vendor ID',
+    ].map((name) => ({
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'certification',
+      name,
+    })),
+  };
+
   return (
     <>
       <Head>
@@ -238,14 +269,37 @@ export default function Government() {
         <meta name="description" content="Texas HUB-certified, SDVOSB-verified, SAM.gov-registered veteran-owned contractor. Construction, facilities maintenance and janitorial for government." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://joefsanches.com/government" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Government Contracting — Texas HUB, VOSB, SAM.gov Active" />
+        <meta property="og:description" content="Texas HUB-certified, SDVOSB-verified, SAM.gov-registered veteran-owned contractor. Construction, facilities maintenance and janitorial for government." />
+        <meta property="og:url" content="https://joefsanches.com/government" />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Government Contracting — Texas HUB, VOSB, SAM.gov Active" />
+        <meta name="twitter:description" content="Texas HUB-certified, SDVOSB-verified, SAM.gov-registered veteran-owned contractor. Construction, facilities maintenance and janitorial for government." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
+        {/* This was the one page on the site with no structured data. The
+            certifications are the whole point of it, so they are declared
+            rather than left to be read off the page. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(govSchema) }}
+        />
         <style dangerouslySetInnerHTML={{ __html: css }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'Government Contracting' }])),
+          }}
+        />
       </Head>
 
       {/* NAV */}
       <nav className="nav">
         <div className="nav-inner">
           <a className="nav-logo" href="/">
-            <img src="/logo.png" alt="Sanches Group" />
+            <img src="/logo.png" alt="Sanches Group" width="44" height="44" />
             <span>Sanches Group</span>
           </a>
           <ul className="nav-links">
@@ -351,7 +405,8 @@ export default function Government() {
                   src="https://comptroller.texas.gov/purchasing/images/vethub-certified-logo-2025.svg"
                   alt="Texas Veteran HUB Certified"
                   style={{ height: '56px', width: 'auto' }}
-                />
+          loading="lazy"
+        />
               </div>
             </div>
             <div className="cred-box">
@@ -617,7 +672,7 @@ export default function Government() {
 
       {/* FOOTER */}
       <footer>
-        <img src="/logo.png" alt="Sanches Group" />
+        <img src="/logo.png" alt="Sanches Group" width="44" height="44" />
         <p>© {new Date().getFullYear()} Joe Sanches LLC · Sanches Group · Leander, Texas</p>
         <p>512-663-8867 · hello@joefsanches.com · EIN: 39-4911899</p>
         <p style={{ marginTop: '6px' }}>Service-Disabled Veteran-Owned (20%+) · Texas HUB · VetHUB Certified · SDVOSB · SAM.gov · Insured</p>
@@ -625,6 +680,7 @@ export default function Government() {
           src="https://comptroller.texas.gov/purchasing/images/vethub-certified-logo-2025.svg"
           alt="Texas Veteran HUB Certified"
           className="hub-logo-footer"
+          loading="lazy"
         />
         <p style={{ marginTop: '10px', fontSize: '13px', color: '#b9bdaf' }}>
           Texas HUB Certification effective 6/9/2026 · Valid through 6/9/2030 · B2G VID: 21829543 · EIN: 39-4911899 · Issued by Texas Comptroller of Public Accounts

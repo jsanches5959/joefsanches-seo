@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 const BUILDER = 'Lennar';
@@ -137,12 +138,24 @@ export default function LennarLeander({ liveHomes }) {
         <meta name="description" content="Lennar new homes in Leander TX, Crystal Falls and more. Everything's Included package, smart home, 1-2-10 warranty, $340K–$520K. Free buyer's agent." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/lennar-homes-leander-tx`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Lennar Homes in Leander TX | New Construction | Joe Sanches" />
+        <meta name="twitter:description" content="Lennar new homes in Leander TX, Crystal Falls and more. Everything's Included package, smart home, 1-2-10 warranty, $340K–$520K. Free buyer's agent." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="Lennar Homes in Leander TX | New Construction | Joe Sanches" />
         <meta property="og:description" content="New Lennar homes in Leander TX — Crystal Falls and more. Everything's Included, smart home, 1-2-10 warranty, $340K–$520K." />
         <meta property="og:url" content={`${baseUrl}/lennar-homes-leander-tx`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'New Construction', url: '/new-construction-leander-tx' }, { name: 'Lennar Homes' }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -162,9 +175,9 @@ export default function LennarLeander({ liveHomes }) {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -187,7 +200,7 @@ export default function LennarLeander({ liveHomes }) {
         {/* Hero */}
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Updated March 2026</div>
-          <h2 className="heroTitle">Lennar Homes in Leander TX — New Construction 2026</h2>
+          <h1 className="heroTitle">Lennar Homes in Leander TX — New Construction 2026</h1>
           <p className="heroLead">
             Lennar builds in multiple Leander communities including Crystal Falls. Their "Everything's Included" package bundles granite, stainless, tile, and a Wi-Fi CERTIFIED smart home at no extra charge. Backed by a 1-2-10 structural warranty and quick-move-in inventory available 60–90 days to close. Working with Joe as your buyer's agent costs you nothing — Lennar pays the commission.
           </p>

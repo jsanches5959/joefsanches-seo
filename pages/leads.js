@@ -62,7 +62,7 @@ Happy to help!`;
           <div className="brand">
             <Link href="/">
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+                <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
                 <div>
                   <h1>Lead Dashboard</h1>
                   <p className="sub">High-Intent Reddit Leads</p>

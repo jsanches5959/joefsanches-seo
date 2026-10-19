@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 
@@ -164,12 +165,24 @@ export default function WhatsMyHomeWorth() {
         <meta name="description" content="Get a free, no-obligation home valuation from Joe Sanches, Leander TX Realtor. Know what your home is worth in today's market. Call or text 512-663-8867." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/whats-my-home-worth`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="What's My Home Worth in Leander TX? | Free CMA | Joe Sanches" />
+        <meta name="twitter:description" content="Get a free, no-obligation home valuation from Joe Sanches, Leander TX Realtor. Know what your home is worth in today's market. Call or text 512-663-8867." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="What's My Home Worth in Leander TX? | Free CMA | Joe Sanches" />
         <meta property="og:description" content="Get a free, no-obligation Comparative Market Analysis from a local Leander TX Realtor. Know your home's real value — no Zillow guesses." />
         <meta property="og:url" content={`${baseUrl}/whats-my-home-worth`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'Real Estate', url: '/realtor' }, { name: "What's My Home Worth" }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -190,9 +203,9 @@ export default function WhatsMyHomeWorth() {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -213,7 +226,7 @@ export default function WhatsMyHomeWorth() {
         {/* Hero */}
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Free — No Obligation</div>
-          <h2 className="heroTitle">What's My Home Worth in Leander TX?</h2>
+          <h1 className="heroTitle">What's My Home Worth in Leander TX?</h1>
           <p className="heroLead">
             Get a free, accurate Comparative Market Analysis from a local Realtor who knows every neighborhood, MUD district, and school zone in Leander. No automated estimates. Real sold data. A number you can actually use.
           </p>

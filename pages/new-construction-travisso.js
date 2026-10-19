@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 const COMMUNITY = 'Travisso';
@@ -136,12 +137,24 @@ export default function TravissoPage({ communityData, liveHomes }) {
         <meta name="description" content="New Toll Brothers and Taylor Morrison luxury homes in Travisso, Cedar Park TX. Hill Country views, resort amenity center, LISD schools. Prices $500K–$850K." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/new-construction-travisso`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="New Construction Homes in Travisso, Cedar Park TX" />
+        <meta name="twitter:description" content="New Toll Brothers and Taylor Morrison luxury homes in Travisso, Cedar Park TX. Hill Country views, resort amenity center, LISD schools. Prices $500K–$850K." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="New Construction Homes in Travisso Cedar Park TX | Joe Sanches" />
         <meta property="og:description" content="Browse Toll Brothers and Taylor Morrison luxury new homes in Travisso, Cedar Park TX. Hill Country views, resort amenities, LISD schools, $500K–$850K." />
         <meta property="og:url" content={`${baseUrl}/new-construction-travisso`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'New Construction', url: '/new-construction-leander-tx' }, { name: 'Travisso' }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -161,9 +174,9 @@ export default function TravissoPage({ communityData, liveHomes }) {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -186,7 +199,7 @@ export default function TravissoPage({ communityData, liveHomes }) {
         {/* Hero */}
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Updated March 2026</div>
-          <h2 className="heroTitle">New Construction Homes in Travisso — Cedar Park TX</h2>
+          <h1 className="heroTitle">New Construction Homes in Travisso — Cedar Park TX</h1>
           <p className="heroLead">
             Travisso is the Austin area's premier luxury master-planned community, set in the Texas Hill Country near Cedar Park. Toll Brothers and Taylor Morrison build homes from the $500s to $850K+, with dramatic Hill Country views, a resort amenity center, and Leandro Lake. Zoned to top-rated LISD schools — Cypress Ranch Elementary, Cedar Park Middle, Cedar Park High.
           </p>

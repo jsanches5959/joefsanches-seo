@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import JobberForm from '../components/JobberForm';
 import ToolIcon from '../components/ToolIcon';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 /**
  * Tree service microsite — the page Joe shares (joefsanches.com/trees
@@ -299,18 +300,25 @@ export default function TreeService() {
         <meta property="og:title" content="Joe does trees. Tree removal & trimming in Leander, TX" />
         <meta property="og:description" content="Removals, trimming, stump grinding and storm cleanup. Written quotes and full cleanup. Get a free quote online or call 512-663-8867." />
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={`${baseUrl}/logo.png`} />
+        <meta property="og:image" content={`${baseUrl}/og-image.jpg`} />
         <meta name="twitter:card" content="summary" />
         <style dangerouslySetInnerHTML={{ __html: css }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'Services', url: '/#services' }, { name: 'Tree Removal & Trimming' }])),
+          }}
+        />
       </Head>
 
       <div className="tr">
         <nav className="tr-nav">
           <div className="tr-w">
             <a href="/" className="tr-brand">
-              <img src="/logo.png" alt="" />
+              <img src="/logo.png" alt="" width="44" height="44" />
               <span>
                 <b>Sanches Group</b>
                 <small>Tree Service</small>

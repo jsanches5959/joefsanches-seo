@@ -443,7 +443,13 @@ export default function Home() {
         <meta property="og:title" content="Joe does the whole property. | Sanches Group, Leander TX" />
         <meta property="og:description" content="Tree removal, remodeling, drywall, paint and property maintenance across Central Texas — one company, one name on every job." />
         <meta property="og:url" content="https://joefsanches.com" />
-        <meta property="og:image" content="https://joefsanches.com/logo.png" />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        {/* Without these, the homepage shared on X or in any app that reads
+            Twitter cards came through as a bare link. */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Joe does the whole property. | Sanches Group, Leander TX" />
+        <meta name="twitter:description" content="Tree removal, remodeling, drywall, paint and property maintenance across Central Texas — one company, one name on every job." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <style dangerouslySetInnerHTML={{ __html: css }} />
         <script
           type="application/ld+json"
@@ -456,7 +462,7 @@ export default function Home() {
       <nav className="nav">
         <div className="nav-inner">
           <a className="nav-logo" href="#top">
-            <img src="/logo.png" alt="" />
+            <img src="/logo.png" alt="" width="44" height="44" />
             <b>Sanches Group</b>
           </a>
           <ul className="nav-links">
@@ -663,7 +669,7 @@ export default function Home() {
         <div className="w">
           <div className="about-grid">
             <div>
-              <img src="/joe.png" alt="Joe Sanches, founder of Sanches Group" className="about-img" />
+              <img src="/joe.jpg" alt="Joe Sanches, founder of Sanches Group" className="about-img" width="1000" height="734" loading="lazy" />
             </div>
             <div>
               <span className="eyebrow">Founder &amp; Principal</span>
@@ -815,7 +821,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer>
-        <img src="/logo.png" alt="Sanches Group" className="mark" />
+        <img src="/logo.png" alt="Sanches Group" className="mark" width="64" height="64" />
         <div className="foot-nav">
           <a href="/work">Recent Work</a>
           <a href="/tree-removal-leander-tx">Tree Service</a>
@@ -832,6 +838,7 @@ export default function Home() {
           src="https://comptroller.texas.gov/purchasing/images/vethub-certified-logo-2025.svg"
           alt="Texas Veteran-Owned Business Certified"
           className="hub-logo-footer"
+          loading="lazy"
         />
       </footer>
     </>

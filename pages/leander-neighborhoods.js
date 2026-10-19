@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 /* The ten neighborhoods described in detail below are hard-coded with their own
    figures. This reads the full set of twenty guides so the page can link to all
@@ -151,6 +152,11 @@ export default function LeaderNeighborhoodsHub({ guides }) {
         <meta name="description" content="Compare every Leander TX neighborhood for 2026 — Crystal Falls, Bryson, Travisso, Larkspur, Northline and more. Prices, schools, taxes and lifestyle." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/leander-neighborhoods`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Leander TX Neighborhoods Guide 2026 | Joe Sanches Realtor" />
+        <meta name="twitter:description" content="Compare every Leander TX neighborhood for 2026 — Crystal Falls, Bryson, Travisso, Larkspur, Northline and more. Prices, schools, taxes and lifestyle." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="Leander TX Neighborhoods Guide 2026 | Joe Sanches Realtor" />
         <meta property="og:description" content="Every Leander TX neighborhood compared side-by-side. Prices, taxes, schools, and local expert insights from Joe Sanches." />
         <meta property="og:url" content={`${baseUrl}/leander-neighborhoods`} />
@@ -158,6 +164,13 @@ export default function LeaderNeighborhoodsHub({ guides }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'Real Estate', url: '/realtor' }, { name: 'Neighborhoods' }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -177,9 +190,9 @@ export default function LeaderNeighborhoodsHub({ guides }) {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -200,7 +213,7 @@ export default function LeaderNeighborhoodsHub({ guides }) {
         {/* Hero */}
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Updated March 2026</div>
-          <h2 className="heroTitle">Leander TX Neighborhoods: The Complete 2026 Comparison Guide</h2>
+          <h1 className="heroTitle">Leander TX Neighborhoods: The Complete 2026 Comparison Guide</h1>
           <p className="heroLead">
             Leander has grown from a small railroad town into one of Texas's fastest-expanding cities — and that means dozens of distinct neighborhoods, each with a different price point, personality, and property tax profile. This guide compares all of them so you can find your fit before you ever set foot in a model home or open house.
           </p>
