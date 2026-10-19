@@ -1,5 +1,6 @@
 ---
 title: "Williamson County vs. Travis County: Which Side of Leander Saves You More in Taxes?"
+seoTitle: "Williamson vs Travis County: Which Side of Leander?"
 slug: williamson-county-vs-travis-county-which-side-of-leander-saves-you-more-in-taxes
 date: 2026-03-04T14:02:18.727Z
 ---

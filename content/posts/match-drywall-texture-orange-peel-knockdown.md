@@ -3,7 +3,7 @@ title: "Orange Peel vs Knockdown: Why Your Drywall Patch Still Shows"
 slug: match-drywall-texture-orange-peel-knockdown
 date: 2026-09-11T10:00:00.000Z
 category: contracting
-description: "A patch that shows is almost never a mud problem. It is texture and sheen. How to identify orange peel, knockdown, skip trowel and Level 5 — and what it takes to make a repair actually disappear."
+description: "A patch that shows is almost never a mud problem - it's texture and sheen. How to identify orange peel, knockdown, skip trowel and Level 5, and match them."
 ---
 
 # Orange Peel vs Knockdown: Why Your Drywall Patch Still Shows

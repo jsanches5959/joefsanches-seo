@@ -134,7 +134,7 @@ export default function KBHomeLeander({ liveHomes }) {
     <>
       <Head>
         <title>KB Home in Leander TX | Bryson Community | Joe Sanches</title>
-        <meta name="description" content="KB Home new construction in Bryson, Leander TX. Built-to-order process, KB Design Studio, ENERGY STAR certified. Prices $320K–$450K. Free buyer's agent representation." />
+        <meta name="description" content="KB Home new construction in Bryson, Leander TX. Built-to-order, KB Design Studio, ENERGY STAR certified, $320K–$450K. Free buyer's representation." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/kb-home-leander-tx`} />
         <meta property="og:title" content="KB Home in Leander TX | Bryson Community | Joe Sanches" />

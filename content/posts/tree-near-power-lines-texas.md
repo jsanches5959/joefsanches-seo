@@ -4,7 +4,7 @@ seoTitle: "Tree Touching Power Lines in Texas: Who to Call"
 slug: tree-near-power-lines-texas
 date: 2026-10-03T10:10:00.000Z
 category: contracting
-description: "A tree or limb on or near a power line is a utility issue first. Who handles which lines, why you shouldn't trim near them yourself, and how to get the rest of the tree dealt with."
+description: "A limb near a power line is a utility issue first. Who handles which lines, why you shouldn't trim them yourself, and how to deal with the rest."
 ---
 
 # Tree Touching Power Lines in Texas? Who to Call and What Not to Do

@@ -1,5 +1,6 @@
 ---
 title: "Builder Incentives Leander TX June 2026: Rate Buydowns and Design Credits You Need to Know About"
+seoTitle: "Builder Incentives in Leander TX: Rate Buydowns 2026"
 slug: builder-incentives-leander-tx-june-2026
 date: 2026-06-04T08:00:00.000Z
 ---

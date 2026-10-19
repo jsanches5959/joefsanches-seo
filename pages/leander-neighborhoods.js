@@ -130,7 +130,7 @@ export default function LeaderNeighborhoodsHub() {
     <>
       <Head>
         <title>Leander TX Neighborhoods Guide 2026 | Joe Sanches Realtor</title>
-        <meta name="description" content="Compare every Leander TX neighborhood in 2026 — Crystal Falls, Bryson, Travisso, Larkspur, Northline, Deerbrooke, Block House Creek, and more. Prices, schools, taxes, and lifestyle from local expert Joe Sanches." />
+        <meta name="description" content="Compare every Leander TX neighborhood for 2026 — Crystal Falls, Bryson, Travisso, Larkspur, Northline and more. Prices, schools, taxes and lifestyle." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/leander-neighborhoods`} />
         <meta property="og:title" content="Leander TX Neighborhoods Guide 2026 | Joe Sanches Realtor" />

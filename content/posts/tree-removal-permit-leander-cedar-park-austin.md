@@ -4,7 +4,7 @@ seoTitle: "Tree Removal Permit: Leander, Cedar Park & Austin Rules"
 slug: tree-removal-permit-leander-cedar-park-austin
 date: 2026-10-03T09:10:00.000Z
 category: contracting
-description: "When you need a permit to remove a tree around Austin. How Austin's protected and heritage tree rules work, what to check in Leander, Cedar Park and Georgetown, and the HOA step most people forget."
+description: "When you need a permit to remove a tree around Austin. How protected and heritage tree rules work in Leander, Cedar Park and Georgetown, plus the HOA step."
 ---
 
 # Do I Need a Permit to Remove a Tree in Leander, Cedar Park or Austin?

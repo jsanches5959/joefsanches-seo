@@ -1,5 +1,6 @@
 ---
 title: "New Construction vs. Resale in Leander TX 2026: Which Is the Better Buy?"
+seoTitle: "New Construction vs Resale in Leander TX (2026)"
 slug: leander-tx-new-construction-vs-resale-2026
 date: 2026-06-11T10:30:00.000Z
 ---

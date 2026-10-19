@@ -1,6 +1,6 @@
 ---
 title: "Areas to Avoid in Austin & Leander: A Local's Guide"
-description: "Where families actually live, where the money is, and the Austin and Leander areas a local Realtor tells clients to think twice about before buying in 2026."
+description: "Where families actually live, where the money is, and the Austin and Leander areas a local Realtor tells clients to think twice about before buying."
 slug: austin-leander-living-guide-families-wealthy-areas-to-avoid
 date: 2026-03-01T20:00:00Z
 ---

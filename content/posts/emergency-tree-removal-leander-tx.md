@@ -4,7 +4,7 @@ seoTitle: "Emergency Tree Removal in Leander & Cedar Park TX"
 slug: emergency-tree-removal-leander-tx
 date: 2026-10-03T09:25:00.000Z
 category: contracting
-description: "A tree or big limb down after a Central Texas storm? What counts as an emergency, what to do while you wait, what it costs, and how to avoid storm-chaser scams."
+description: "A tree or big limb down after a Central Texas storm? What counts as an emergency, what to do while you wait, what it costs, and how to avoid scams."
 ---
 
 # Emergency Tree Removal in Leander & Cedar Park: What to Do After a Storm

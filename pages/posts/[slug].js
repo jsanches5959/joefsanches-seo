@@ -115,8 +115,14 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Post({ slug, title, seoTitle, date, contentHtml, description, contracting, faqs = [] }) {
-  const brandSuffix = contracting ? 'Sanches Group' : 'Joe Sanches Realtor';
-  const docTitle = seoTitle || `${title} | ${brandSuffix}`;
+  // Google renders roughly 60 characters of a title. " | Joe Sanches Realtor"
+  // is 22 of them, and on an informational query a personal brand nobody has
+  // heard of sells nothing — it just truncates the headline's last words. The
+  // suffix is now only added when the whole thing still fits, and the realtor
+  // posts use the locale instead, which is what people actually searched for.
+  const brandSuffix = contracting ? ' | Sanches Group' : ' | Leander, TX';
+  const docTitle = seoTitle
+    || (title.length + brandSuffix.length <= 60 ? title + brandSuffix : title);
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joefsanches.com';
   const postUrl = `${baseUrl}/posts/${slug}`;
   const publishedDate = date ? new Date(date).toISOString() : new Date().toISOString();

@@ -1,6 +1,7 @@
 ---
 title: "New Construction Homes in Leander TX Under $500K: 2026 Communities & Prices"
-description: "Where to find new construction homes in Leander TX under $500K in 2026 — Palmera Ridge, Bryson, Deerbrooke, and more. Builder incentives, prices, and what's available."
+seoTitle: "New Construction in Leander TX Under $500K (2026)"
+description: "Where to find new construction homes in Leander TX under $500K in 2026 - Palmera Ridge, Bryson, Deerbrooke and more, with incentives and prices."
 slug: new-construction-homes-for-sale-in-leander-tx-under-500k
 date: 2026-02-27T21:32:38.243Z
 ---

@@ -4,7 +4,7 @@ seoTitle: "Tree Work Before Selling Your House in Texas"
 slug: tree-work-before-selling-house-texas
 date: 2026-10-03T11:00:00.000Z
 category: contracting
-description: "Selling a home in Leander or Cedar Park? The tree problems inspectors flag, the trimming that makes listing photos look better, and what's worth doing before you list."
+description: "Selling a home in Leander or Cedar Park? The tree problems inspectors flag, the trimming that improves listing photos, and what's worth doing first."
 ---
 
 # Tree Work Before Selling Your House: What Buyers and Inspectors Notice

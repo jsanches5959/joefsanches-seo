@@ -132,7 +132,7 @@ export default function TravissoPage({ communityData, liveHomes }) {
   return (
     <>
       <Head>
-        <title>New Construction Homes in Travisso Cedar Park TX | Joe Sanches</title>
+        <title>New Construction Homes in Travisso, Cedar Park TX</title>
         <meta name="description" content="New Toll Brothers and Taylor Morrison luxury homes in Travisso, Cedar Park TX. Hill Country views, resort amenity center, LISD schools. Prices $500K–$850K." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/new-construction-travisso`} />

@@ -132,8 +132,8 @@ export default function CrystalFallsPage({ communityData, liveHomes }) {
   return (
     <>
       <Head>
-        <title>New Construction Crystal Falls Leander TX — Lennar Homes 2026 | Joe Sanches</title>
-        <meta name="description" content="New Lennar homes for sale in Crystal Falls, Leander TX. Golf course community, top LISD schools. Prices $370K–$520K. See live builder incentives and available inventory." />
+        <title>New Construction in Crystal Falls, Leander TX — Lennar 2026</title>
+        <meta name="description" content="New Lennar homes in Crystal Falls, Leander TX. Golf course community, top Leander ISD schools, $370K–$520K. Live incentives and available inventory." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/new-construction-crystal-falls`} />
         <meta property="og:title" content="New Construction Crystal Falls Leander TX — Lennar 2026" />

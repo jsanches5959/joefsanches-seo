@@ -1,5 +1,6 @@
 ---
 title: "Kyle TX Real Estate 2026: Home Prices, Schools, and What Buyers Need to Know"
+seoTitle: "Kyle TX Real Estate 2026: Prices, Schools, Homes"
 slug: kyle-tx-real-estate-homes-for-sale-2026
 date: 2026-06-11T13:15:00.000Z
 ---

@@ -4,7 +4,7 @@ seoTitle: "Live Oak Trimming in Leander & Cedar Park TX: A Guide"
 slug: live-oak-trimming-central-texas
 date: 2026-10-03T09:35:00.000Z
 category: contracting
-description: "How to trim live oaks the right way around Leander and Cedar Park: roof and driveway clearance, thinning vs. topping, how much to cut, when to do it, and what it typically costs."
+description: "How to trim live oaks the right way around Leander and Cedar Park: roof and driveway clearance, thinning vs topping, how much to cut, and what it costs."
 ---
 
 # Live Oak Trimming in Central Texas: Clearance, Thinning and What Not to Do

@@ -132,7 +132,7 @@ export default function BrysonPage({ communityData, liveHomes }) {
   return (
     <>
       <Head>
-        <title>New Construction Bryson Leander TX — KB Home 2026 | Joe Sanches</title>
+        <title>New Construction in Bryson, Leander TX — KB Home 2026</title>
         <meta name="description" content="New KB Home and Centex homes in Bryson, Leander TX. Resort-style pool, splash pad, top LISD schools. Prices $320K–$450K. Live inventory and incentives." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/new-construction-bryson`} />

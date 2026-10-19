@@ -117,7 +117,7 @@ export default function SellMyHouseHub() {
     <>
       <Head>
         <title>Sell My House in Leander TX Fast | Joe Sanches Realtor</title>
-        <meta name="description" content="Sell your Leander TX home fast and for top dollar. Joe Sanches provides proven pricing strategy, professional marketing, and expert negotiation. Free home valuation — no obligation." />
+        <meta name="description" content="Sell your Leander TX home for what it's worth: pricing strategy, professional marketing and negotiation. Free valuation, no obligation to list." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/sell-my-house-leander-tx`} />
         <meta property="og:title" content="Sell My House in Leander TX Fast | Joe Sanches Realtor" />

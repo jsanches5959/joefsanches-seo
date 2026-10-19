@@ -1,5 +1,6 @@
 ---
 title: "Homes for Sale in Leander TX Under $500K — What's Actually Available in 2026"
+seoTitle: "Homes for Sale in Leander TX Under $500K (2026)"
 slug: homes-for-sale-leander-tx-under-500k-2026
 date: 2026-06-05T11:00:00.000Z
 ---

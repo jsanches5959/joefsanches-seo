@@ -1,9 +1,10 @@
 ---
 title: "What Drywall Repair Actually Costs in Central Texas (Real 2026 Numbers)"
+seoTitle: "Drywall Repair Cost in Central Texas: 2026 Numbers"
 slug: drywall-repair-cost-leander-cedar-park
 date: 2026-09-11T09:30:00.000Z
 category: contracting
-description: "Real drywall repair prices for Leander, Cedar Park and Austin — by job, not by square foot. Why the minimum service call exists, what drives the number up, and when to batch your repairs."
+description: "Real drywall repair prices for Leander, Cedar Park and Austin, by job rather than by square foot. Why there's a minimum call, and when to batch repairs."
 ---
 
 # What Drywall Repair Actually Costs in Central Texas (Real 2026 Numbers)

@@ -1,6 +1,7 @@
 ---
 title: "The Leander TX Home Buying Process in 2026: Step-by-Step From Search to Keys"
-description: "How buying a home in Leander TX actually works in 2026 — from pre-approval to closing, with Leander-specific details on timelines, builders, VA loans, and MUD taxes."
+seoTitle: "The Leander TX Home Buying Process, Step by Step"
+description: "How buying a home in Leander TX actually works in 2026, from pre-approval to closing, with local detail on timelines, builders, VA loans and MUD taxes."
 slug: leander-tx-home-buying-process-2026
 date: 2026-06-07T12:30:00.000Z
 ---

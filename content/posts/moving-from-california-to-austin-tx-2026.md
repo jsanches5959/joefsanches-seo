@@ -1,5 +1,6 @@
 ---
 title: "Moving from California to Austin TX 2026: The Real Numbers You Need"
+seoTitle: "Moving From California to Austin: The Real Numbers"
 slug: moving-from-california-to-austin-tx-2026
 date: 2026-06-11T13:00:00.000Z
 ---

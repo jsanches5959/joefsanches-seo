@@ -1,6 +1,7 @@
 ---
 title: "Is Leander ISD Worth the Property Taxes? An Honest Answer for 2026 Buyers"
-description: "Leander's property taxes run 2.1–2.5% — one of the highest rates in the Austin metro. Is Leander ISD actually worth paying more in taxes than neighboring districts?"
+seoTitle: "Is Leander ISD Worth the Property Taxes?"
+description: "Leander's property taxes run 2.1-2.5%, among the highest in the Austin metro. Is Leander ISD actually worth paying more than neighboring districts?"
 slug: is-leander-isd-worth-the-property-taxes
 date: 2026-06-07T11:30:00.000Z
 ---

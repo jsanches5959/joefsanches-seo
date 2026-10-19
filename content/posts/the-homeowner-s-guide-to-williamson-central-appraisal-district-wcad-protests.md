@@ -1,5 +1,6 @@
 ---
 title: The Homeowner’s Guide to Williamson Central Appraisal District (WCAD) Protests
+seoTitle: "WCAD Protests: A Williamson County Homeowner's Guide"
 slug: the-homeowner-s-guide-to-williamson-central-appraisal-district-wcad-protests
 date: 2026-03-04T14:03:06.431Z
 ---

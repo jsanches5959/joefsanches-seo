@@ -4,7 +4,7 @@ seoTitle: "Hypoxylon Canker on Oak Trees in Texas: What to Do"
 slug: hypoxylon-canker-oak-trees-texas
 date: 2026-10-03T10:00:00.000Z
 category: contracting
-description: "Bark peeling off your oak to reveal tan, gray or black crust? That's often hypoxylon canker, a sign of a badly stressed tree. What causes it in Central Texas and when the tree needs to come down."
+description: "Bark peeling off your oak to reveal tan, gray or black crust is often hypoxylon canker, a badly stressed tree. What causes it and when it must come down."
 ---
 
 # Hypoxylon Canker on Oak Trees in Texas: Signs, Causes and What to Do

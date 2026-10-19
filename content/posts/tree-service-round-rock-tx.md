@@ -4,7 +4,7 @@ seoTitle: "Tree Service in Round Rock TX: Removal & Trimming Costs"
 slug: tree-service-round-rock-tx
 date: 2026-10-03T10:45:00.000Z
 category: contracting
-description: "Tree removal and trimming in Round Rock: common problem trees in older and newer neighborhoods, clay soil and foundations, oak wilt timing, HOA rules and typical costs."
+description: "Tree removal and trimming in Round Rock: common problem trees, clay soil and foundations, oak wilt timing, HOA rules and what the work typically costs."
 ---
 
 # Tree Service in Round Rock, TX: Removal, Trimming and What It Costs

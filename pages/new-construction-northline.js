@@ -148,7 +148,7 @@ export default function NorthlinePage({ communityData, liveHomes }) {
   return (
     <>
       <Head>
-        <title>New Construction Northline Leander TX — Taylor Morrison 2026 | Joe Sanches</title>
+        <title>New Construction in Northline, Leander TX — Taylor Morrison</title>
         <meta name="description" content="Taylor Morrison new homes in Northline, Leander TX. Walkable village, near MetroRail, Domain & Apple. $380K–$560K. Live builder inventory and incentives." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/new-construction-northline`} />

@@ -1,5 +1,6 @@
 ---
 title: "Best Austin Suburbs 2026: Leander vs Cedar Park vs Round Rock vs Georgetown vs Pflugerville"
+seoTitle: "Best Austin Suburbs 2026: All Five, Compared"
 slug: best-austin-suburbs-2026-comparison
 date: 2026-06-11T11:00:00.000Z
 ---

@@ -4,7 +4,7 @@ seoTitle: "Tree Trimming Cost in Cedar Park & Leander TX (2026)"
 slug: tree-trimming-cost-cedar-park-tx
 date: 2026-10-03T09:40:00.000Z
 category: contracting
-description: "What tree trimming and pruning cost around Cedar Park, Leander and north Austin, what changes the price, and how to compare quotes so you know what you're actually paying for."
+description: "What tree trimming and pruning cost around Cedar Park, Leander and north Austin, what changes the price, and how to compare quotes properly."
 ---
 
 # Tree Trimming Cost in Cedar Park & Leander, TX (2026)

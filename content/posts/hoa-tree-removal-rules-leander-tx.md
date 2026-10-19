@@ -4,7 +4,7 @@ seoTitle: "HOA Tree Removal Rules in Leander & Cedar Park TX"
 slug: hoa-tree-removal-rules-leander-tx
 date: 2026-10-03T09:15:00.000Z
 category: contracting
-description: "Most Leander and Cedar Park HOAs require approval before you remove a tree. What they usually ask for, how to get a dead or hazardous tree approved quickly, and what happens if you skip it."
+description: "Most Leander and Cedar Park HOAs require approval before you remove a tree. What they ask for, how to get a hazardous tree approved fast, and the risk."
 ---
 
 # HOA Tree Removal Rules in Leander & Cedar Park: How to Get Approved

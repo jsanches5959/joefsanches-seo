@@ -1,5 +1,6 @@
 ---
 title: "Liberty Hill TX New Construction 2026: Is It Worth Moving Further Out?"
+seoTitle: "Liberty Hill TX New Construction: Worth the Drive?"
 slug: liberty-hill-tx-new-construction-2026
 date: 2026-06-11T09:30:00.000Z
 ---

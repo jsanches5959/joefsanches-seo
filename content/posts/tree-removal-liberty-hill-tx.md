@@ -4,7 +4,7 @@ seoTitle: "Tree Removal & Cedar Clearing in Liberty Hill TX"
 slug: tree-removal-liberty-hill-tx
 date: 2026-10-03T10:40:00.000Z
 category: contracting
-description: "Tree removal, cedar clearing and lot clearing in Liberty Hill: acreage vs. subdivision lots, rocky Hill Country terrain, fire safety, oak wilt and what the work typically costs."
+description: "Tree removal, cedar clearing and lot clearing in Liberty Hill: acreage vs subdivision lots, rocky terrain, fire safety, oak wilt and typical costs."
 ---
 
 # Tree Removal & Cedar Clearing in Liberty Hill, TX: A Local Guide

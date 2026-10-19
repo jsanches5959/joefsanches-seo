@@ -134,7 +134,7 @@ export default function DavidWeekleyLeander({ liveHomes }) {
     <>
       <Head>
         <title>David Weekley Homes in Leander & Cedar Park TX | Joe Sanches</title>
-        <meta name="description" content="David Weekley new homes in Leander and Cedar Park TX — Larkspur community. J.D. Power award-winning service, 10-year structural warranty. $420K–$600K. Free buyer's agent." />
+        <meta name="description" content="David Weekley new homes in Leander and Cedar Park TX, Larkspur community. Award-winning service, 10-year structural warranty. $420K–$600K." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/david-weekley-leander-cedar-park`} />
         <meta property="og:title" content="David Weekley Homes in Leander & Cedar Park TX | Joe Sanches" />

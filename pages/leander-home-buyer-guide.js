@@ -167,12 +167,12 @@ export default function LeanderHomeBuyerGuide() {
   return (
     <>
       <Head>
-        <title>Leander TX Home Buyer's Guide 2026 | Free Download | Joe Sanches</title>
-        <meta name="description" content="The complete guide to buying a home in Leander TX in 2026. Steps, costs, neighborhoods, VA loans, new construction vs resale — from a local Leander Realtor. Free." />
+        <title>Leander TX Home Buyer's Guide 2026 — Free Download</title>
+        <meta name="description" content="The complete guide to buying a home in Leander TX in 2026 — steps, costs, neighborhoods, VA loans, and new construction vs resale. Free download." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/leander-home-buyer-guide`} />
         <meta property="og:title" content="Leander TX Home Buyer's Guide 2026 | Joe Sanches Realtor" />
-        <meta property="og:description" content="Everything you need to know about buying a home in Leander TX — step-by-step process, costs, neighborhoods, VA loans, and new construction tips from a local expert." />
+        <meta property="og:description" content="The complete guide to buying a home in Leander TX in 2026 — steps, costs, neighborhoods, VA loans, and new construction vs resale. Free download." />
         <meta property="og:url" content={`${baseUrl}/leander-home-buyer-guide`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageSchema) }} />

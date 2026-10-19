@@ -118,7 +118,7 @@ export default function NewConstructionHub({ deals }) {
     <>
       <Head>
         <title>New Construction Homes Leander TX 2026 | Joe Sanches Realtor</title>
-        <meta name="description" content="Complete guide to buying new construction in Leander TX. Top builders (Lennar, KB Home, Taylor Morrison), communities, current incentives, and the full buying process from a local expert." />
+        <meta name="description" content="Buying new construction in Leander TX: top builders, every community, current incentives and the whole process, from an agent who works it daily." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/new-construction-leander-tx`} />
         <meta property="og:title" content="New Construction Homes Leander TX 2026 | Joe Sanches Realtor" />

@@ -1,5 +1,6 @@
 ---
 title: "How to Protest Your 2026 Property Taxes in Williamson County: A Step-by-Step Guide"
+seoTitle: "How to Protest Property Taxes in Williamson County"
 slug: how-to-protest-your-2026-property-taxes-in-williamson-county-a-step-by-step-guide
 date: 2026-03-04T14:04:32.069Z
 ---

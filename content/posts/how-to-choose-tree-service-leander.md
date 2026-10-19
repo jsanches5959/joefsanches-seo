@@ -4,7 +4,7 @@ seoTitle: "How to Choose a Tree Service in Leander TX: 10 Questions"
 slug: how-to-choose-tree-service-leander
 date: 2026-10-03T10:50:00.000Z
 category: contracting
-description: "Before you hire anyone to cut a tree around Leander or Cedar Park, ask these 10 questions about pricing, cleanup, oak wilt, insurance and damage, plus the red flags that mean walk away."
+description: "Before you hire anyone to cut a tree around Leander or Cedar Park, ask these 10 questions about price, cleanup, oak wilt, insurance and damage."
 ---
 
 # How to Choose a Tree Service in Leander: 10 Questions to Ask First

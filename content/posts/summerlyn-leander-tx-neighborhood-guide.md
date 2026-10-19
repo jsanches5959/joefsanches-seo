@@ -1,5 +1,6 @@
 ---
 title: "Summerlyn Leander TX: The Underrated Neighborhood Worth Knowing About in 2026"
+seoTitle: "Summerlyn Leander TX: An Underrated Neighborhood"
 slug: summerlyn-leander-tx-neighborhood-guide
 date: 2026-06-05T11:01:00.000Z
 ---

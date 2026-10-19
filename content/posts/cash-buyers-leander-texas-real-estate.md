@@ -1,6 +1,7 @@
 ---
 title: "Cash Buyers in Leander TX: What Sellers and Buyers Need to Know in 2026"
-description: "How cash buyers work in Leander's real estate market, what sellers should know about cash offers, and whether paying cash gives you a real competitive edge in 2026."
+seoTitle: "Cash Buyers in Leander TX: What Sellers Should Know"
+description: "How cash buyers work in Leander's market, what sellers should know about cash offers, and whether paying cash is a real edge in 2026."
 slug: cash-buyers-leander-texas-real-estate
 date: 2026-02-27T20:26:28.928Z
 ---

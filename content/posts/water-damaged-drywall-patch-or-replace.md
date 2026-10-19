@@ -3,7 +3,7 @@ title: "Water-Damaged Drywall: Patch, Replace, or Worry About Mold?"
 slug: water-damaged-drywall-patch-or-replace
 date: 2026-09-11T12:30:00.000Z
 category: contracting
-description: "A brown ring on the ceiling is a symptom, not the problem. How to find the leak, decide whether drywall can be dried or must come out, when mold is a real concern, and what insurance does and does not cover."
+description: "A brown ring on the ceiling is a symptom. How to find the leak, decide if the drywall can be dried or must come out, and what insurance actually covers."
 ---
 
 # Water-Damaged Drywall: Patch, Replace, or Worry About Mold?

@@ -125,8 +125,33 @@ export default function NeighborhoodPage({ neighborhood }) {
     yearBuilt, amenities, builders, nearbyParks, lifestyle, faqs
   } = neighborhood;
 
-  const title = `${name} ${city} TX | Homes, Schools & Community Guide | Joe Sanches`;
-  const metaDesc = `${name} in ${city}, TX — complete neighborhood guide covering home prices, schools, property taxes, commute times, and amenities. Updated 2026. Joe Sanches, 512-663-8867.`;
+  // Google renders roughly 60 characters of a title. The old one spent 48 of
+  // them on " | Homes, Schools & Community Guide | Joe Sanches" — identical on
+  // all twenty pages, truncated on every one of them, so what survived in the
+  // results was boilerplate rather than the neighborhood. "Homes for Sale" is
+  // also what people type into the box; "Community Guide" is not. Longest tail
+  // that still fits wins, so the short names get the full phrase and
+  // "Walsh Ranch / Quarry, Cedar Park TX" still comes out intact.
+  const stem = `${name}, ${city} TX`;
+  const tail = [
+    ' — Homes for Sale, Schools & HOA',
+    ' — Homes for Sale & Schools',
+    ' — Homes & Schools',
+    '',
+  ].find((t) => stem.length + t.length <= 60);
+  const title = stem + tail;
+
+  // Same problem below the title: the old description was one sentence of
+  // category words repeated on every page. The numbers are already in the
+  // JSON, and a price and a tax rate in the snippet answer the question the
+  // searcher came with.
+  // Google renders about 155 characters. Brushy Creek's HOA note ("$0
+  // (MUD-governed, no separate HOA)") is long enough to push past that on its
+  // own, so the price range — the least load-bearing clause — comes out when
+  // the whole thing won't fit.
+  const descFull = `${name} homes in ${city}, TX: median ${medianPrice}, range ${priceRange}. ${schoolDistrict} schools, ${taxRate} property tax, HOA ${hoa}.`;
+  const descShort = `${name} homes in ${city}, TX: median ${medianPrice}. ${schoolDistrict} schools, ${taxRate} property tax, HOA ${hoa}.`;
+  const metaDesc = descFull.length <= 155 ? descFull : descShort;
   const canonicalUrl = `${baseUrl}/neighborhoods/${slug}`;
   const overviewSnippet = overview.slice(0, 150).trim() + '…';
 

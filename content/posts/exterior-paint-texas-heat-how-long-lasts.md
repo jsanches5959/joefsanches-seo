@@ -1,9 +1,10 @@
 ---
 title: "Why Exterior Paint Fails Fast in Texas — and How Long It Should Actually Last"
+seoTitle: "How Long Exterior Paint Lasts in the Texas Heat"
 slug: exterior-paint-texas-heat-how-long-lasts
 date: 2026-09-11T12:00:00.000Z
 category: contracting
-description: "Texas sun and heat cut exterior paint life hard, and south and west walls fail years before the rest. What actually causes peeling, chalking and fading here, and why you may not need to paint the whole house."
+description: "Texas sun cuts exterior paint life hard, and south and west walls fail years before the rest. What causes peeling, chalking and fading, and what to do."
 ---
 
 # Why Exterior Paint Fails Fast in Texas — and How Long It Should Actually Last

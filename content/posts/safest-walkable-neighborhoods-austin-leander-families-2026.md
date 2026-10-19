@@ -1,8 +1,9 @@
 ---
 title: "Safest & Most Walkable Neighborhoods in Austin and Leander for Families (2026 Guide)"
+seoTitle: "Safest, Most Walkable Neighborhoods Near Austin"
 slug: safest-walkable-neighborhoods-austin-leander-families-2026
 date: 2026-03-01T16:00:00Z
-description: "Looking for the safest and most walkable neighborhoods in Austin and Leander? Our 2026 guide covers top family-friendly areas like Mueller, Hyde Park, and Block House Creek."
+description: "The safest and most walkable neighborhoods in Austin and Leander for 2026, including Mueller, Hyde Park and Block House Creek, compared for families."
 ---
 
 # Safest & Most Walkable Neighborhoods in Austin and Leander for Families (2026 Guide)

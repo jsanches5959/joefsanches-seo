@@ -132,8 +132,8 @@ export default function DeerbrookePage({ communityData, liveHomes }) {
   return (
     <>
       <Head>
-        <title>New Construction Homes in Deerbrooke Leander TX | Joe Sanches</title>
-        <meta name="description" content="New Meritage Homes in Deerbrooke, Leander TX. Spray foam insulation, HERS &lt; 60, natural gas, LISD schools. Prices $340K–$480K. Live inventory updated daily." />
+        <title>New Construction Homes in Deerbrooke, Leander TX</title>
+        <meta name="description" content="New Meritage Homes in Deerbrooke, Leander TX. Spray foam insulation, HERS under 60, natural gas, LISD schools. $340K&ndash;$480K, inventory updated daily." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/new-construction-deerbrooke`} />
         <meta property="og:title" content="New Construction Homes in Deerbrooke Leander TX | Joe Sanches" />
