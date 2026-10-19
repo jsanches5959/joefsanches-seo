@@ -201,6 +201,12 @@ const css = `
   .does-list li p { margin: 0; line-height: 1.2; }
   .does-list li span { color: var(--muted); font-weight: 700; }
   .does-list li b { color: var(--gold-ink); font-weight: 900; }
+  /* The background list carries a heading plus a line of detail, so it needs
+     ordinary text sizing rather than the display size used for "Joe does X". */
+  .why-list li { align-items: flex-start; font-size: 17px; font-weight: 700; letter-spacing: 0; padding: 18px 0; }
+  .why-list li b { display: block; color: var(--ink); font-size: 17px; font-weight: 900; margin-bottom: 3px; line-height: 1.3; }
+  .why-list li span { display: block; color: var(--muted); font-size: 15px; font-weight: 400; line-height: 1.6; }
+  .why-list .di { margin-top: 2px; }
   .does-list .di { color: var(--olive); flex-shrink: 0; }
 
   .cap-foot { margin-top: 26px; font-size: 14px; color: var(--muted); line-height: 1.75; max-width: 80ch; }
@@ -538,29 +544,53 @@ export default function Home() {
         </div>
       </section>
 
-      {/* THE NAME */}
+      {/* WHY — the reason to call, sitting directly under the estimate form.
+          A homeowner is afraid of four things: being overcharged, shoddy work,
+          cheap materials, and the guy vanishing. Joe's actual background
+          answers all four, so it is told here rather than buried in About. */}
       <section className="sec">
         <div className="w name-grid">
           <div>
-            <span className="eyebrow">Why it&apos;s called Joe Sanches LLC</span>
-            <h2 className="title">My name is on the company. <em>So it&apos;s on every job.</em></h2>
+            <span className="eyebrow">Why people call us</span>
+            <h2 className="title">Three careers. <em>One trade.</em></h2>
             <p className="lead">
-              Plenty of contractors hide behind a logo. I put my name on mine on purpose, so
-              there&apos;s never a question of who answers for the work.
+              My father and his brothers were framers. I was on job sites before I was old
+              enough to work on them, and I never really left.
             </p>
             <p className="lead">
-              A leaning oak, a cracked ceiling, a forty-unit make-ready: it&apos;s the same
-              company, the same standard and one person you can call. That&apos;s what
-              &ldquo;Joe does it&rdquo; means. You don&apos;t have to find a different company
-              for every job.
+              Then five years in aviation maintenance. You follow the procedure, you write
+              down what you did, and you do not skip a step &mdash; because the cost of skipping
+              one isn&apos;t a callback. That habit doesn&apos;t switch off when you change
+              industries.
+            </p>
+            <p className="lead">
+              After that, close to a decade in consumer products: how things get made, what
+              they actually cost, and which ones are still working in year five. Plenty of
+              contractors can install a material. Fewer can tell you what it costs at source,
+              which brands fail early, and where the markup is hiding.
+            </p>
+            <p className="lead">
+              And it is not just me. It is me and people I have worked alongside for years.
+              My name is on the company, so it is on every job they do too.
             </p>
           </div>
-          <ul className="does-list" aria-label="What Joe does">
-            <li><ToolIcon name="tree" size={30} className="di" /><p><span>Joe does</span> <b>trees.</b></p></li>
-            <li><ToolIcon name="trowel" size={30} className="di" /><p><span>Joe does</span> <b>drywall.</b></p></li>
-            <li><ToolIcon name="roller" size={30} className="di" /><p><span>Joe does</span> <b>paint.</b></p></li>
-            <li><ToolIcon name="building" size={30} className="di" /><p><span>Joe does</span> <b>make-readies.</b></p></li>
-            <li><ToolIcon name="shield" size={30} className="di" /><p><span>Joe does</span> <b>the whole property.</b></p></li>
+          <ul className="does-list why-list" aria-label="Joe&rsquo;s background">
+            <li>
+              <ToolIcon name="hardhat" size={30} className="di" />
+              <p><b>Raised by framers</b><span>Father and uncles framed houses. On site before I could drive.</span></p>
+            </li>
+            <li>
+              <ToolIcon name="shield" size={30} className="di" />
+              <p><b>5 years, aviation maintenance</b><span>Follow the procedure. Document it. Never skip a step.</span></p>
+            </li>
+            <li>
+              <ToolIcon name="planks" size={30} className="di" />
+              <p><b>A decade in consumer products</b><span>What materials really cost, and which ones last.</span></p>
+            </li>
+            <li>
+              <ToolIcon name="toolbox" size={30} className="di" />
+              <p><b>A bench, not a one-man band</b><span>Trades I have worked with for years, not whoever is free.</span></p>
+            </li>
           </ul>
         </div>
       </section>
@@ -640,22 +670,22 @@ export default function Home() {
               <h2 className="title">Joe Sanches</h2>
               <span className="about-role">Founder · Joe Sanches LLC · Sanches Group</span>
               <p className="about-bio">
-                Joe built Sanches Group on a simple standard: show up, do the work, stand behind
-                it. He put his own name on the company because a name is harder to walk away
-                from than a logo.
+                Joe answers the phone, walks the job and writes the estimate. As the company
+                grows that won&apos;t always be him swinging the hammer, but every job has one
+                named person accountable for it and you will always know which one.
               </p>
               <p className="about-bio">
-                Today Joe answers the phone, writes the estimates and runs the crews. As the
-                company grows that won&apos;t always be him on every job, but the standard
-                stays the same. Every job has one named person accountable for it, and
-                you&apos;ll always know who that is.
+                Sanches Group also holds the certifications to work for government and
+                institutional clients &mdash; the same crews, the same standard, with the
+                paperwork those contracts require.
               </p>
               <div className="creds">
-                <span className="cred">Service-Disabled U.S. Veteran</span>
-                <span className="cred">SDVOSB Certified</span>
-                <span className="cred">Texas HUB · VetHUB</span>
-                <span className="cred">SAM.gov Registered</span>
+                <span className="cred">Licensed &amp; Insured</span>
                 <span className="cred">General Contractor</span>
+                <span className="cred">Written Estimates</span>
+                <span className="cred">Texas HUB · VetHUB</span>
+                <span className="cred">SDVOSB Certified</span>
+                <span className="cred">SAM.gov Registered</span>
               </div>
               <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
                 <a href="tel:5126638867" className="btn-gold">Call 512-663-8867</a>
