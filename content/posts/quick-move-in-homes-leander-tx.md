@@ -1,6 +1,6 @@
 ---
 title: "Quick Move-In Homes in Leander TX: What's Available in 2026 and How to Find Them"
-seoTitle: "Quick Move-In Homes in Leander TX: 2026 Inventory"
+seoTitle: "Builder Spec Homes in Leander TX: Quick Move-In"
 description: "How to find quick move-in homes in Leander TX in 2026: which builders have spec inventory, typical timelines, and how to negotiate when you must move."
 slug: quick-move-in-homes-leander-tx
 date: 2026-02-23T07:19:09.093Z

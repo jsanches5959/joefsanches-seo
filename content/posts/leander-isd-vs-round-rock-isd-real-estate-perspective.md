@@ -1,5 +1,6 @@
 ---
 title: "Leander ISD vs Round Rock ISD: Which Is Worth Moving For?"
+seoTitle: "Leander ISD vs Round Rock ISD: Effect on Home Values"
 description: "Ratings, home prices and commute compared for 2026 — and which district is actually the better buy if you are picking a house around it."
 slug: leander-isd-vs-round-rock-isd-real-estate-perspective
 date: 2026-03-07T00:00:00.000Z
