@@ -1,6 +1,6 @@
 ---
-title: "Cedar Park Property Tax Rate 2026: What You'll Really Pay"
-description: "The real 2026 Cedar Park TX property tax rate, what a typical home pays per month, how it compares to Leander, and the exemptions most owners never file."
+title: "Cedar Park Property Tax Rate 2026: What You Really Pay"
+description: "The actual 2026 rate, what a typical Cedar Park home pays per month, how it stacks up against Leander, and the exemptions most owners miss."
 slug: cedar-park-tx-property-tax-rate-2026
 date: 2026-03-07T00:00:00.000Z
 ---

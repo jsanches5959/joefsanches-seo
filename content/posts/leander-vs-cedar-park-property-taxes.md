@@ -1,6 +1,6 @@
 ---
-title: "Leander vs Cedar Park Property Taxes: Real Numbers"
-description: "Which city actually costs more? Side-by-side 2026 tax rates for Leander and Cedar Park, what a $500K home really pays in each, and the MUD districts that change the answer."
+title: "Leander vs Cedar Park Property Taxes: Who Pays More?"
+description: "Side-by-side 2026 rates, what a $500K home pays each year in both cities, and the MUD districts that change the answer completely."
 slug: leander-vs-cedar-park-property-taxes
 date: 2026-02-22T07:02:23.618Z
 ---

@@ -138,8 +138,8 @@ export default function PropertyTaxHub() {
   return (
     <>
       <Head>
-        <title>Leander TX Property Tax Rate 2026 — Complete Hub | Joe Sanches Realtor</title>
-        <meta name="description" content="The most comprehensive property tax guide for Leander TX and Cedar Park. Every MUD district, neighborhood tax rate, 2026 Williamson County exemptions, and city-by-city comparisons." />
+        <title>Leander TX Property Tax Rate 2026: Every MUD, Every Rate</title>
+        <meta name="description" content="The 2026 Leander and Cedar Park rates, every MUD district listed separately, Williamson County exemptions, and what a $500K home actually pays." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/property-tax-leander-tx`} />
         <meta property="og:title" content="Leander TX Property Tax Rate 2026 — Complete Guide" />
