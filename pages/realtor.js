@@ -306,7 +306,7 @@ export default function Realtor({ posts }) {
             <a
               href="https://a.nhb.app/u/joe"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="sponsored nofollow noopener noreferrer"
               style={{
                 display: 'inline-block', background: 'var(--accent)', color: '#fff',
                 padding: '10px 20px', borderRadius: '8px', fontWeight: 600,

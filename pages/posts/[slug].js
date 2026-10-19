@@ -11,6 +11,28 @@ import { breadcrumbSchema } from '../../lib/breadcrumbs';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
+/* Domains we are paid to send people to. Google's guidance is explicit:
+   a link created in exchange for compensation has to carry rel="sponsored" or
+   rel="nofollow", and a site with dozens of unmarked ones is a link scheme
+   whether or not that was the intent. a.nhb.app is a new-home referral link
+   and it appears in 28 posts. */
+const SPONSORED = ['a.nhb.app'];
+
+/* Markdown gives plain <a href>. Outbound links get rel and open in a new tab
+   so a reader following a source does not lose the page they were reading —
+   rel="noopener" is what stops the opened page from reaching back through
+   window.opener. Editorial links to wcad.org, va.gov and the like are left
+   followable on purpose; pointing at the authority you are citing is the
+   normal, honest thing to do. */
+function markOutboundLinks(markup) {
+  return markup.replace(/<a href="(https?:\/\/[^"]+)"/g, (whole, href) => {
+    if (href.includes('joefsanches.com')) return whole;
+    const paid = SPONSORED.some((d) => href.includes(d));
+    const rel = paid ? 'sponsored nofollow noopener' : 'noopener';
+    return `<a href="${href}" rel="${rel}" target="_blank"`;
+  });
+}
+
 export async function getStaticPaths() {
   const filenames = fs.readdirSync(postsDirectory);
   const paths = filenames
@@ -36,7 +58,7 @@ export async function getStaticProps({ params }) {
   const body = content.replace(/^\s*#\s+.+?\n/, '');
 
   const processedContent = await remark().use(html).process(body);
-  const contentHtml = processedContent.toString();
+  const contentHtml = markOutboundLinks(processedContent.toString());
 
   // Ensure date is JSON-serializable and safe
   let date = null;

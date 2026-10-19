@@ -135,7 +135,7 @@ function HomeCard({ home }) {
         </div>
       )}
       {home.url && (
-        <a href={home.url} target="_blank" rel="noopener noreferrer"
+        <a href={home.url} target="_blank" rel="sponsored nofollow noopener noreferrer"
           className="btn accent"
           style={{ display: 'inline-block', marginTop: '14px', padding: '10px 18px', fontSize: '13px' }}>
           View Home →
