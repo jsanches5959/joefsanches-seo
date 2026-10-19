@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 export default function LeanderHomes() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joefsanches.com';
@@ -13,7 +14,7 @@ export default function LeanderHomes() {
     "url": pageUrl,
     "telephone": "+1-512-663-8867",
     "email": "hello@joefsanches.com",
-    "image": "https://joefsanches.com/joe.png",
+    "image": "https://joefsanches.com/joe.jpg",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Leander",
@@ -68,6 +69,15 @@ export default function LeanderHomes() {
         <meta name="description" content="Homes for sale in Leander, TX — new construction and resale, current market stats, and what each neighborhood is actually like before you tour one." />
         <meta name="keywords" content="homes for sale in leander tx, leander tx real estate, new construction leander tx, crystal falls homes, travisso homes, realtor leander tx" />
         <link rel="canonical" href={pageUrl} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Homes for Sale in Leander, TX — New Construction &amp; Resale" />
+        <meta property="og:description" content="Homes for sale in Leander, TX — new construction and resale, current market stats, and what each neighborhood is actually like before you tour one." />
+        <meta property="og:url" content="https://joefsanches.com/homes-for-sale-in-leander-tx" />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Homes for Sale in Leander, TX — New Construction &amp; Resale" />
+        <meta name="twitter:description" content="Homes for sale in Leander, TX — new construction and resale, current market stats, and what each neighborhood is actually like before you tour one." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(realEstateAgentSchema) }}
@@ -76,15 +86,22 @@ export default function LeanderHomes() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'Real Estate', url: '/realtor' }, { name: 'Homes for Sale' }])),
+          }}
+        />
       </Head>
 
       <div className="container">
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>

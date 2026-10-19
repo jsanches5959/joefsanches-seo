@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 
@@ -147,6 +148,11 @@ export default function LeanderRealEstateMarket2026() {
         <meta name="description" content="Leander TX housing market 2026: are prices actually falling? Median price, days on market, inventory, and what it means for buyers and sellers now." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/leander-real-estate-market-2026`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Leander TX Housing Market 2026: Is It Cooling? | Joe Sanches" />
+        <meta name="twitter:description" content="Leander TX housing market 2026: are prices actually falling? Median price, days on market, inventory, and what it means for buyers and sellers now." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="Leander TX Real Estate Market Report 2026 | Joe Sanches" />
         <meta property="og:description" content="Live Leander TX market data: median prices, days on market, inventory trends for 2026. Expert analysis from local Realtor Joe Sanches." />
         <meta property="og:url" content={`${baseUrl}/leander-real-estate-market-2026`} />
@@ -154,6 +160,13 @@ export default function LeanderRealEstateMarket2026() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'Real Estate', url: '/realtor' }, { name: '2026 Market Report' }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -173,9 +186,9 @@ export default function LeanderRealEstateMarket2026() {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -196,7 +209,7 @@ export default function LeanderRealEstateMarket2026() {
         {/* Hero */}
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Updated March 2026</div>
-          <h2 className="heroTitle">Leander TX Real Estate Market Report 2026</h2>
+          <h1 className="heroTitle">Leander TX Real Estate Market Report 2026</h1>
           <p className="heroLead">
             A data-driven look at Leander's housing market in 2026: what prices are doing, which neighborhoods are outperforming, how new construction is shaping supply, and what buyers and sellers should expect for the rest of the year.
           </p>

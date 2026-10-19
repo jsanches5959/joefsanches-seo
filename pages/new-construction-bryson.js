@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 const COMMUNITY = 'Bryson';
@@ -136,12 +137,24 @@ export default function BrysonPage({ communityData, liveHomes }) {
         <meta name="description" content="New KB Home and Centex homes in Bryson, Leander TX. Resort-style pool, splash pad, top LISD schools. Prices $320K–$450K. Live inventory and incentives." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/new-construction-bryson`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="New Construction in Bryson, Leander TX — KB Home 2026" />
+        <meta name="twitter:description" content="New KB Home and Centex homes in Bryson, Leander TX. Resort-style pool, splash pad, top LISD schools. Prices $320K–$450K. Live inventory and incentives." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="New Construction Bryson Leander TX — KB Home 2026" />
         <meta property="og:description" content="Browse KB Home new homes in Bryson, Leander TX. Resort amenities, LISD schools, $320K–$450K. Live builder deals updated daily." />
         <meta property="og:url" content={`${baseUrl}/new-construction-bryson`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'New Construction', url: '/new-construction-leander-tx' }, { name: 'Bryson' }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -159,9 +172,9 @@ export default function BrysonPage({ communityData, liveHomes }) {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -182,7 +195,7 @@ export default function BrysonPage({ communityData, liveHomes }) {
 
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Updated March 2026</div>
-          <h2 className="heroTitle">New Construction Homes in Bryson — Leander TX</h2>
+          <h1 className="heroTitle">New Construction Homes in Bryson — Leander TX</h1>
           <p className="heroLead">
             Bryson is Leander's premier resort-style master-planned community, featuring a signature pool, splash pad, sports courts, and miles of trails. KB Home and Centex offer built-to-order homes from the $320s. LISD schools. Lowest entry prices of any new construction community in Leander.
           </p>

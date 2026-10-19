@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 
@@ -121,6 +122,11 @@ export default function NewConstructionHub({ deals }) {
         <meta name="description" content="Buying new construction in Leander TX: top builders, every community, current incentives and the whole process, from an agent who works it daily." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/new-construction-leander-tx`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="New Construction Homes Leander TX 2026 | Joe Sanches Realtor" />
+        <meta name="twitter:description" content="Buying new construction in Leander TX: top builders, every community, current incentives and the whole process, from an agent who works it daily." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="New Construction Homes Leander TX 2026 | Joe Sanches Realtor" />
         <meta property="og:description" content="Find new construction homes in Leander TX. Builders, communities, incentives, and expert guidance from Joe Sanches — your local Leander realtor." />
         <meta property="og:url" content={`${baseUrl}/new-construction-leander-tx`} />
@@ -128,6 +134,13 @@ export default function NewConstructionHub({ deals }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'Real Estate', url: '/realtor' }, { name: 'New Construction' }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -147,9 +160,9 @@ export default function NewConstructionHub({ deals }) {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -170,7 +183,7 @@ export default function NewConstructionHub({ deals }) {
         {/* Hero */}
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Updated March 2026</div>
-          <h2 className="heroTitle">New Construction Homes in Leander TX: The Complete 2026 Guide</h2>
+          <h1 className="heroTitle">New Construction Homes in Leander TX: The Complete 2026 Guide</h1>
           <p className="heroLead">
             Leander is one of Texas's hottest new construction markets — and for good reason. Top builders are actively developing in communities from Bryson to Deerbrooke to Northline. This guide covers every builder, every community, current incentives, and the exact steps to get your new home under contract.
           </p>

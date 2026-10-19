@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 
@@ -109,15 +110,25 @@ export default function Credentials() {
         <link rel="canonical" href={url} />
         <meta property="og:title" content="Our Credentials Explained — Sanches Group" />
         <meta property="og:url" content={url} />
-        <meta property="og:image" content={`${baseUrl}/logo.png`} />
+        <meta property="og:image" content={`${baseUrl}/og-image.jpg`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Our Credentials Explained — Sanches Group" />
+        <meta name="twitter:image" content={`${baseUrl}/og-image.jpg`} />
         <script type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'Credentials' }])),
+          }}
+        />
       </Head>
 
       <div className="cr">
         <nav className="cr-nav">
           <Link href="/" className="cr-brand">
-            <img src="/logo.png" alt="Sanches Group" />
+            <img src="/logo.png" alt="Sanches Group" width="44" height="44" />
             <span>Sanches Group</span>
           </Link>
           <a href="tel:5126638867" className="cr-call">512-663-8867</a>

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { breadcrumbSchema } from '../../lib/breadcrumbs';
 import path from 'path';
 import fs from 'fs';
 
@@ -205,9 +206,29 @@ export default function NeighborhoodPage({ neighborhood, siblings = [] }) {
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Joe Sanches Realtor" />
+        {/* These pages had no image to show and no Twitter card, so a link
+            shared in a text message or on Facebook came through as a bare
+            URL. */}
+        <meta property="og:image" content={`${baseUrl}/og-image.jpg`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={metaDesc} />
+        <meta name="twitter:image" content={`${baseUrl}/og-image.jpg`} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+        />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              breadcrumbSchema([
+                { name: 'Neighborhoods', url: '/leander-neighborhoods' },
+                { name: `${name}, ${city} TX` },
+              ])
+            ),
+          }}
         />
         <script
           type="application/ld+json"
@@ -237,9 +258,9 @@ export default function NeighborhoodPage({ neighborhood, siblings = [] }) {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -264,9 +285,9 @@ export default function NeighborhoodPage({ neighborhood, siblings = [] }) {
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px', textTransform: 'capitalize' }}>
             {type}
           </div>
-          <h2 className="heroTitle">
+          <h1 className="heroTitle">
             {name} {city} TX — Neighborhood Guide
-          </h2>
+          </h1>
           <p className="heroLead">{overviewSnippet}</p>
           <div className="heroMeta" style={{ marginTop: '20px' }}>
             <span className="pill">{city}, TX</span>

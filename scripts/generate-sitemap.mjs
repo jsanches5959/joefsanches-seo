@@ -1,113 +1,123 @@
 import fs from "fs";
 import path from "path";
+import { execFileSync } from "child_process";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
+const pagesDir = path.join(root, "pages");
 const postsDir = path.join(root, "content", "posts");
 const publicDir = path.join(root, "public");
 
-// Base URL - update this to your actual domain
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://joefsanches.com";
 
-function generateSitemap() {
-  const today = new Date().toISOString().split("T")[0];
+/* This used to be three hand-written arrays of URLs. Every new page had to be
+   remembered here or it never reached the sitemap, and /guides is exactly the
+   kind of page that gets forgotten. The routes are now read off the filesystem,
+   the same way Next.js builds them, so the sitemap cannot fall behind. */
 
-  // Hub pages — highest priority
-  const hubPages = [
-    { url: "/", priority: "1.0" },
-    { url: "/tree-removal-leander-tx", priority: "0.95" },
-    { url: "/work", priority: "0.9" },
-    { url: "/government", priority: "0.95" },
-    { url: "/realtor", priority: "0.9" },
-    { url: "/homes-for-sale-in-leander-tx", priority: "0.9" },
-    { url: "/property-tax-leander-tx", priority: "0.95" },
-    { url: "/new-construction-leander-tx", priority: "0.95" },
-    { url: "/leander-neighborhoods", priority: "0.9" },
-    { url: "/credentials", priority: "0.8" },
-    { url: "/leander-isd-schools", priority: "0.9" },
-    { url: "/sell-my-house-leander-tx", priority: "0.9" },
-    { url: "/buy-home-leander-tx", priority: "0.9" },
-    { url: "/leander-real-estate-market-2026", priority: "0.9" },
-    { url: "/moving-to-leander-tx", priority: "0.85" },
-    { url: "/whats-my-home-worth", priority: "0.9" },
-    { url: "/leander-home-buyer-guide", priority: "0.85" },
-  ].map(p => ({ ...p, lastmod: today }));
+// Pages that exist but should not be in a sitemap.
+const EXCLUDE = new Set(["/404", "/500", "/_app", "/_document", "/leads"]);
 
-  // Community pages
-  const communityPages = [
-    "/new-construction-crystal-falls",
-    "/new-construction-bryson",
-    "/new-construction-northline",
-    "/new-construction-larkspur",
-    "/new-construction-deerbrooke",
-    "/new-construction-travisso",
-  ].map(url => ({ url, lastmod: today, priority: "0.85" }));
-
-  // Builder pages
-  const builderPages = [
-    "/lennar-homes-leander-tx",
-    "/kb-home-leander-tx",
-    "/taylor-morrison-leander-tx",
-    "/david-weekley-leander-cedar-park",
-    "/meritage-homes-leander-tx",
-  ].map(url => ({ url, lastmod: today, priority: "0.8" }));
-
-  // Neighborhood pages — auto-generate from neighborhoods.json
-  let neighborhoodPages = [];
+/* lastmod matters: a sitemap that claims every page changed today, every time
+   it is regenerated, is telling Google something plainly untrue, and Google
+   responds by ignoring the field. The last commit that touched the file is the
+   honest answer. Falls back to the file's mtime outside a git checkout. */
+function lastModified(file) {
   try {
-    const nhFile = path.join(root, "content", "neighborhoods.json");
-    const neighborhoods = JSON.parse(fs.readFileSync(nhFile, "utf8"));
-    neighborhoodPages = neighborhoods.map(n => ({
-      url: `/neighborhoods/${n.slug}`,
-      lastmod: today,
-      priority: "0.8",
+    const out = execFileSync("git", ["log", "-1", "--format=%cs", "--", file], {
+      cwd: root,
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+    }).trim();
+    if (/^\d{4}-\d{2}-\d{2}$/.test(out)) return out;
+  } catch (e) {
+    // Not a git checkout, or the file is untracked.
+  }
+  return fs.statSync(file).mtime.toISOString().split("T")[0];
+}
+
+/* Priority is a hint about relative importance within the site. The service
+   and money pages lead, then the hubs, then the guides. */
+function priorityFor(url) {
+  if (url === "/") return "1.0";
+  if (url.startsWith("/services/")) return "0.9";
+  if (url.startsWith("/posts/")) return "0.7";
+  if (url.startsWith("/neighborhoods/")) return "0.8";
+  if (/^\/(tree-removal-leander-tx|government|property-tax-leander-tx|new-construction-leander-tx)$/.test(url)) return "0.95";
+  if (/^\/(lennar|kb-home|taylor-morrison|david-weekley|meritage)/.test(url)) return "0.8";
+  if (/^\/(credentials|moving-to-leander-tx|leander-home-buyer-guide)$/.test(url)) return "0.85";
+  return "0.9";
+}
+
+// Top-level and nested .js routes, minus dynamic ones and the API directory.
+function staticRoutes(dir = pagesDir, prefix = "") {
+  const found = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (entry.name === "api") continue;
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      found.push(...staticRoutes(full, `${prefix}/${entry.name}`));
+      continue;
+    }
+    if (!entry.name.endsWith(".js")) continue;
+    if (entry.name.startsWith("[")) continue; // dynamic; expanded from content below
+    const name = entry.name.replace(/\.js$/, "");
+    const url = name === "index" ? prefix || "/" : `${prefix}/${name}`;
+    if (EXCLUDE.has(url)) continue;
+    // A page whose only job is to redirect is not a destination. /sanches-group
+    // is a permanent redirect to the homepage and was being listed as a URL to
+    // index, which asks Google to crawl something it will only be bounced from.
+    if (/\bredirect:\s*\{/.test(fs.readFileSync(full, "utf8"))) continue;
+    found.push({ url, file: full });
+  }
+  return found;
+}
+
+// The dynamic routes, expanded from the content that drives them.
+function fromJson(jsonName, routePrefix) {
+  const file = path.join(root, "content", jsonName);
+  try {
+    return JSON.parse(fs.readFileSync(file, "utf8")).map((item) => ({
+      url: `${routePrefix}/${item.slug}`,
+      file,
     }));
   } catch (e) {
-    console.error("Could not read neighborhoods.json:", e.message);
+    console.error(`Could not read ${jsonName}: ${e.message}`);
+    return [];
   }
+}
 
-  // Service pages — auto-generate from services.json
-  let servicePages = [];
+function fromPosts() {
   try {
-    const svcFile = path.join(root, "content", "services.json");
-    const services = JSON.parse(fs.readFileSync(svcFile, "utf8"));
-    servicePages = services.map(s => ({
-      url: `/services/${s.slug}`,
-      lastmod: today,
-      priority: "0.9",
-    }));
+    return fs
+      .readdirSync(postsDir)
+      .filter((f) => f.endsWith(".md"))
+      .map((f) => ({
+        url: `/posts/${f.replace(/\.md$/, "")}`,
+        file: path.join(postsDir, f),
+      }));
   } catch (e) {
-    console.error("Could not read services.json:", e.message);
+    console.error(`Error reading posts: ${e.message}`);
+    return [];
   }
+}
 
-  // Read all blog posts
-  let blogPosts = [];
-  try {
-    const files = fs.readdirSync(postsDir);
-    blogPosts = files
-      .filter((file) => file.endsWith(".md"))
-      .map((file) => {
-        const filePath = path.join(postsDir, file);
-        const stat = fs.statSync(filePath);
-        const slug = file.replace(".md", "");
-        return {
-          url: `/posts/${slug}`,
-          lastmod: stat.mtime.toISOString().split("T")[0],
-          priority: "0.7",
-        };
-      });
-  } catch (error) {
-    console.error("Error reading posts directory:", error);
-  }
+const pages = [
+  ...staticRoutes(),
+  ...fromJson("neighborhoods.json", "/neighborhoods"),
+  ...fromJson("services.json", "/services"),
+  ...fromPosts(),
+]
+  .map((p) => ({ url: p.url, lastmod: lastModified(p.file), priority: priorityFor(p.url) }))
+  .sort((a, b) => Number(b.priority) - Number(a.priority) || a.url.localeCompare(b.url));
 
-  // Combine all pages
-  const allPages = [...hubPages, ...communityPages, ...builderPages, ...servicePages, ...neighborhoodPages, ...blogPosts];
+const seen = new Set();
+const unique = pages.filter((p) => !seen.has(p.url) && seen.add(p.url));
 
-  // Generate XML
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${allPages
+${unique
   .map(
     (page) => `  <url>
     <loc>${BASE_URL}${page.url}</loc>
@@ -118,10 +128,6 @@ ${allPages
   .join("\n")}
 </urlset>`;
 
-  // Write to public directory
-  const sitemapPath = path.join(publicDir, "sitemap.xml");
-  fs.writeFileSync(sitemapPath, xml, "utf8");
-  console.log(`✅ Sitemap generated: ${sitemapPath}`);
-}
-
-generateSitemap();
+const sitemapPath = path.join(publicDir, "sitemap.xml");
+fs.writeFileSync(sitemapPath, xml, "utf8");
+console.log(`✅ Sitemap generated: ${sitemapPath} (${unique.length} URLs)`);

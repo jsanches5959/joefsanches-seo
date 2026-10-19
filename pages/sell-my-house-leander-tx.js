@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 
@@ -120,6 +121,11 @@ export default function SellMyHouseHub() {
         <meta name="description" content="Sell your Leander TX home for what it's worth: pricing strategy, professional marketing and negotiation. Free valuation, no obligation to list." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/sell-my-house-leander-tx`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Sell My House in Leander TX Fast | Joe Sanches Realtor" />
+        <meta name="twitter:description" content="Sell your Leander TX home for what it's worth: pricing strategy, professional marketing and negotiation. Free valuation, no obligation to list." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="Sell My House in Leander TX Fast | Joe Sanches Realtor" />
         <meta property="og:description" content="Top-dollar results for Leander TX home sellers. Joe Sanches handles pricing, marketing, and negotiation so you can close on your timeline." />
         <meta property="og:url" content={`${baseUrl}/sell-my-house-leander-tx`} />
@@ -127,6 +133,13 @@ export default function SellMyHouseHub() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'Real Estate', url: '/realtor' }, { name: 'Sell My House' }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -146,9 +159,9 @@ export default function SellMyHouseHub() {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -169,7 +182,7 @@ export default function SellMyHouseHub() {
         {/* Hero */}
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Updated March 2026</div>
-          <h2 className="heroTitle">Sell Your Leander TX Home Fast — and for Top Dollar</h2>
+          <h1 className="heroTitle">Sell Your Leander TX Home Fast — and for Top Dollar</h1>
           <p className="heroLead">
             Selling in Leander means competing with new construction inventory and savvy buyers who've done their homework. The difference between a good sale and a great sale is pricing strategy, professional marketing, and expert negotiation. That's exactly what Joe Sanches delivers — with a track record in this market, not just a license.
           </p>

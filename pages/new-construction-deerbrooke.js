@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import fs from 'fs';
 import path from 'path';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 const COMMUNITY = 'Deerbrooke';
@@ -136,12 +137,24 @@ export default function DeerbrookePage({ communityData, liveHomes }) {
         <meta name="description" content="New Meritage Homes in Deerbrooke, Leander TX. Spray foam insulation, HERS under 60, natural gas, LISD schools. $340K&ndash;$480K, inventory updated daily." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/new-construction-deerbrooke`} />
+        <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="New Construction Homes in Deerbrooke, Leander TX" />
+        <meta name="twitter:description" content="New Meritage Homes in Deerbrooke, Leander TX. Spray foam insulation, HERS under 60, natural gas, LISD schools. $340K&ndash;$480K, inventory updated daily." />
+        <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="New Construction Homes in Deerbrooke Leander TX | Joe Sanches" />
         <meta property="og:description" content="Browse Meritage new homes in Deerbrooke, Leander TX. #1 energy-efficient builder, spray foam standard, LISD schools, $340K–$480K." />
         <meta property="og:url" content={`${baseUrl}/new-construction-deerbrooke`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'New Construction', url: '/new-construction-leander-tx' }, { name: 'Deerbrooke' }])),
+          }}
+        />
       </Head>
 
       <div className="container" style={{ paddingBottom: '120px' }}>
@@ -161,9 +174,9 @@ export default function DeerbrookePage({ communityData, liveHomes }) {
         <header className="topbar">
           <div className="brand">
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-              <img src="/logo.png" alt="Joe Sanches Logo" className="logo" />
+              <img src="/logo.png" alt="Joe Sanches" className="logo" width="64" height="64" />
               <div>
-                <h1>Joe Sanches</h1>
+                <span className="brand-name">Joe Sanches</span>
                 <p className="sub">Real Estate · A Sanches Group Company</p>
               </div>
             </Link>
@@ -186,7 +199,7 @@ export default function DeerbrookePage({ communityData, liveHomes }) {
         {/* Hero */}
         <div className="hero" style={{ marginTop: '20px' }}>
           <div className="pill" style={{ display: 'inline-flex', marginBottom: '16px' }}>Updated March 2026</div>
-          <h2 className="heroTitle">New Construction Homes in Deerbrooke — Leander TX</h2>
+          <h1 className="heroTitle">New Construction Homes in Deerbrooke — Leander TX</h1>
           <p className="heroLead">
             Deerbrooke is Leander's premier energy-efficient community, built by Meritage Homes — the #1 energy-efficient homebuilder in America. Spray foam insulation and a HERS score below 60 are standard. Natural gas. Leander ISD schools. Prices from the low $340s, with lower monthly utility costs than any conventional new home in the area.
           </p>

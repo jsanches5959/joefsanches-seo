@@ -3,6 +3,7 @@ import path from 'path';
 import Head from 'next/head';
 import Link from 'next/link';
 import JobberForm from '../components/JobberForm';
+import { breadcrumbSchema } from '../lib/breadcrumbs';
 
 const baseUrl = 'https://joefsanches.com';
 
@@ -171,17 +172,28 @@ export default function Work({ projects }) {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={`${baseUrl}${projects[0].image}`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={`${baseUrl}${projects[0].image}`} />
         <style dangerouslySetInnerHTML={{ __html: css }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+        {/* Google draws the trail in place of the URL in a search result. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbSchema([{ name: 'Recent Work' }])),
+          }}
         />
       </Head>
 
       <nav className="nav">
         <div className="nav-inner">
           <Link className="nav-logo" href="/">
-            <img src="/logo.png" alt="Sanches Group" />
+            <img src="/logo.png" alt="Sanches Group" width="44" height="44" />
             <b>Sanches Group</b>
           </Link>
           <ul className="nav-links">
@@ -263,7 +275,7 @@ export default function Work({ projects }) {
       </main>
 
       <footer>
-        <img src="/logo.png" alt="Sanches Group" className="mark" />
+        <img src="/logo.png" alt="Sanches Group" className="mark" width="64" height="64" />
         <div className="foot-nav">
           <Link href="/work">Recent Work</Link>
           <Link href="/#services">Services</Link>
