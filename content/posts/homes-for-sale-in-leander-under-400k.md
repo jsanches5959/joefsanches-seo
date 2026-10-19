@@ -1,7 +1,7 @@
 ---
 title: "Homes for Sale in Leander TX Under $400K: What's Actually Available in 2026"
 seoTitle: "Homes for Sale in Leander TX Under $400K (2026)"
-description: "What $400K buys you in Leander, TX today — neighborhoods, home sizes, and tradeoffs. A real inventory guide from a local agent who works this market full-time."
+description: "What $400K buys you in Leander, TX today - neighborhoods, home sizes and tradeoffs. A real inventory guide from an agent who works this market daily."
 slug: homes-for-sale-in-leander-under-400k
 date: 2026-02-20T05:48:30.638Z
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Leander TX Metro Rail Commute to Austin: Everything Buyers Need to Know in 2026"
-description: "Can you take the train from Leander to downtown Austin? The MetroRail route, schedule, which neighborhoods suit train commuters, and the effect on home values."
+description: "Can you take the train from Leander to downtown Austin? The MetroRail route, schedule, which neighborhoods suit train commuters, and the effect on values."
 seoTitle: "Leander MetroRail to Austin: Route, Schedule & Neighborhoods"
 slug: leander-tx-metro-rail-commute-to-austin
 date: 2026-06-05T09:01:00.000Z

@@ -1,7 +1,7 @@
 ---
 title: "Leander vs Cedar Park Real Estate 2026: Which Market Is Better for Buyers?"
 seoTitle: "Leander vs Cedar Park: Which Is Better for Buyers?"
-description: "Leander vs Cedar Park real estate compared side-by-side for 2026 — median prices, inventory, school districts, commutes, and where you get more for your money."
+description: "Leander vs Cedar Park real estate compared for 2026: median prices, inventory, school districts, commutes, and where you get more for your money."
 slug: leander-vs-cedar-park-real-estate-market-comparison-2026
 date: 2026-03-04T12:14:44.983Z
 ---

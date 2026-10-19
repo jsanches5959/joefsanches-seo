@@ -1,7 +1,7 @@
 ---
 title: Top 5 Leander-Area Neighborhoods with the Lowest Property Tax Rates in 2026
 seoTitle: "Leander Neighborhoods With the Lowest Property Taxes"
-description: "The Leander-area neighborhoods with the lowest 2026 property tax rates, why rates vary so much by MUD, and how to check a home's real tax bill before you buy."
+description: "The Leander-area neighborhoods with the lowest 2026 property tax rates, why rates vary so much by MUD, and how to check a home's real bill before you buy."
 slug: top-5-leander-neighborhoods-with-the-lowest-property-tax-rates-in-2026
 date: 2026-03-04T14:03:53.674Z
 ---
