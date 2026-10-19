@@ -37,13 +37,26 @@ export default function Service({ service, others }) {
     description: service.description,
     url,
     serviceType: service.name,
+    /* The @id is what matters here. Without it this reads as a second,
+       unrelated contractor that happens to share a phone number with the one
+       on the homepage, so none of the trust the homepage entity has built
+       carries across to the service pages. With it, all seven services attach
+       to the same business. */
     provider: {
+      '@id': `${baseUrl}/#sanchesgroup`,
       '@type': 'GeneralContractor',
       name: 'Sanches Group',
       alternateName: 'Joe Sanches LLC',
       telephone: '+1-512-663-8867',
       email: 'hello@joefsanches.com',
       url: baseUrl,
+      image: `${baseUrl}/og-image.jpg`,
+      sameAs: [
+        'https://g.page/r/CS5gIVIj8I-AEBE',
+        'https://www.facebook.com/joefsanches',
+        'https://www.linkedin.com/in/joefsanches',
+      ],
+      geo: { '@type': 'GeoCoordinates', latitude: 30.5788, longitude: -97.8531 },
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Leander',

@@ -151,7 +151,12 @@ export default function Work({ projects }) {
     name: 'Recent Work — Sanches Group',
     description,
     url: `${baseUrl}/work`,
-    about: { '@type': 'GeneralContractor', name: 'Sanches Group', telephone: '+1-512-663-8867' },
+    about: {
+      '@id': `${baseUrl}/#sanchesgroup`,
+      '@type': 'GeneralContractor',
+      name: 'Sanches Group',
+      telephone: '+1-512-663-8867',
+    },
     hasPart: projects.map((p) => ({
       '@type': 'ImageObject',
       contentUrl: `${baseUrl}${p.image}`,

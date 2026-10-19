@@ -234,6 +234,7 @@ const css = `
 export default function Government() {
   const govSchema = {
     '@context': 'https://schema.org',
+    '@id': 'https://joefsanches.com/#sanchesgroup',
     '@type': 'GeneralContractor',
     name: 'Sanches Group',
     legalName: 'Joe Sanches LLC',

@@ -126,6 +126,7 @@ const serviceSchema = {
   description: 'Tree removal, trimming and pruning, stump grinding, storm cleanup and lot clearing in Leander, Cedar Park, Georgetown and the Austin area.',
   url,
   provider: {
+    '@id': 'https://joefsanches.com/#sanchesgroup',
     '@type': 'GeneralContractor',
     '@id': `${baseUrl}/#sanchesgroup`,
     name: 'Sanches Group',

@@ -385,7 +385,8 @@ const orgSchema = {
   url: 'https://joefsanches.com',
   telephone: '+1-512-663-8867',
   email: 'hello@joefsanches.com',
-  image: 'https://joefsanches.com/logo.png',
+  // Google wants a wide image here, not the square mark; logo stays square.
+  image: 'https://joefsanches.com/og-image.jpg',
   logo: 'https://joefsanches.com/logo.png',
   priceRange: '$$',
   founder: { '@type': 'Person', name: 'Joe Sanches' },
@@ -395,6 +396,24 @@ const orgSchema = {
     addressRegion: 'TX',
     postalCode: '78641',
     addressCountry: 'US',
+  },
+  /* Tying the site to the Google Business Profile and the social accounts is
+     how Google works out that this website and that listing are the same
+     business. For a local contractor the listing is where most of the calls
+     come from, so the connection is worth making explicit rather than leaving
+     Google to infer it from a matching phone number. */
+  sameAs: [
+    'https://g.page/r/CS5gIVIj8I-AEBE',
+    'https://www.facebook.com/joefsanches',
+    'https://www.linkedin.com/in/joefsanches',
+  ],
+  /* Leander, TX. The business has no storefront to show, but a coordinate
+     still helps Google place "near me" searches against the service area. */
+  geo: { '@type': 'GeoCoordinates', latitude: 30.5788, longitude: -97.8531 },
+  serviceArea: {
+    '@type': 'GeoCircle',
+    geoMidpoint: { '@type': 'GeoCoordinates', latitude: 30.5788, longitude: -97.8531 },
+    geoRadius: '64000',
   },
   areaServed: AREAS.filter((a) => a !== 'Statewide (Gov)').map((name) => ({ '@type': 'City', name: `${name}, TX` })),
   knowsAbout: allServices,

@@ -169,7 +169,8 @@ export default function Post({ slug, title, seoTitle, canonicalTo, date, content
     '@type': 'BlogPosting',
     headline: title,
     description: description,
-    image: `${baseUrl}/logo.png`,
+    // Google wants a wide image for an article, not the square mark.
+    image: `${baseUrl}/og-image.jpg`,
     datePublished: publishedDate,
     dateModified: publishedDate,
     author: {
@@ -178,6 +179,10 @@ export default function Post({ slug, title, seoTitle, canonicalTo, date, content
       url: baseUrl,
     },
     publisher: {
+      // The contracting posts attach to the same business entity the homepage
+      // and the service pages declare, rather than describing a separate
+      // contractor that happens to share a phone number.
+      ...(contracting ? { '@id': `${baseUrl}/#sanchesgroup` } : {}),
       '@type': contracting ? 'GeneralContractor' : 'Organization',
       name: contracting ? 'Sanches Group' : 'Joe Sanches Realtor',
       telephone: '+1-512-663-8867',
