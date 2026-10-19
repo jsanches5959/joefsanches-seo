@@ -192,6 +192,7 @@ export default function NeighborhoodPage({ neighborhood, siblings = [] }) {
     { href: '/leander-neighborhoods', label: 'All Leander & Cedar Park Neighborhoods — Compare Side by Side' },
     { href: '/property-tax-leander-tx', label: 'Property Tax Guide: Leander TX & Cedar Park 2026' },
     { href: '/homes-for-sale-in-leander-tx', label: 'Homes for Sale in Leander TX — Current Listings' },
+    { href: '/realtor', label: 'Buying or Selling in Leander — Work With Joe' },
   ];
 
   return (
