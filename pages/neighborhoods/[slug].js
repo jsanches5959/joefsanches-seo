@@ -115,7 +115,7 @@ function InternalLink({ href, label }) {
 
 // ─── Page component ──────────────────────────────────────────────────────────
 
-export default function NeighborhoodPage({ neighborhood }) {
+export default function NeighborhoodPage({ neighborhood, siblings = [] }) {
   if (!neighborhood) return <div style={{ color: 'var(--ink)', padding: '40px' }}>Neighborhood not found.</div>;
 
   const {
@@ -188,7 +188,7 @@ export default function NeighborhoodPage({ neighborhood }) {
     ...(isLeander
       ? [{ href: '/new-construction-leander-tx', label: 'New Construction Homes in Leander TX — Current Inventory' }]
       : []),
-    { href: '/neighborhoods', label: 'All Leander & Cedar Park Neighborhoods — Compare Side by Side' },
+    { href: '/leander-neighborhoods', label: 'All Leander & Cedar Park Neighborhoods — Compare Side by Side' },
     { href: '/property-tax-leander-tx', label: 'Property Tax Guide: Leander TX & Cedar Park 2026' },
     { href: '/homes-for-sale-in-leander-tx', label: 'Homes for Sale in Leander TX — Current Listings' },
   ];
@@ -254,7 +254,7 @@ export default function NeighborhoodPage({ neighborhood }) {
         <nav style={{ marginTop: '20px', fontSize: '13px', color: 'var(--muted)', display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' }}>
           <Link href="/" style={{ color: 'var(--accent-light)' }}>Home</Link>
           <span>›</span>
-          <Link href="/neighborhoods" style={{ color: 'var(--accent-light)' }}>Neighborhoods</Link>
+          <Link href="/leander-neighborhoods" style={{ color: 'var(--accent-light)' }}>Neighborhoods</Link>
           <span>›</span>
           <span>{name}, {city}</span>
         </nav>
@@ -424,6 +424,26 @@ export default function NeighborhoodPage({ neighborhood }) {
             </Section>
 
             {/* Internal Links */}
+            {siblings.length ? (
+              <Section id="compare" title="Compare Nearby Neighborhoods">
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(230px, 1fr))', gap: '10px' }}>
+                  {siblings.map((n) => (
+                    <Link
+                      key={n.slug}
+                      href={`/neighborhoods/${n.slug}`}
+                      className="card"
+                      style={{ padding: '12px 14px', display: 'block' }}
+                    >
+                      <strong style={{ color: 'var(--ink)', fontSize: '15px' }}>{n.name}</strong>
+                      <span style={{ display: 'block', color: 'var(--muted)', fontSize: '13px', marginTop: '4px' }}>
+                        {n.city}, TX · median {n.medianPrice}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </Section>
+            ) : null}
+
             <Section id="related" title="Related Resources">
               <div style={{ display: 'grid', gap: '10px' }}>
                 {internalLinks.map(({ href, label }) => (
@@ -561,8 +581,25 @@ export async function getStaticProps({ params }) {
     return { notFound: true };
   }
 
+  /* Neighbours to link to at the foot of the page. Same city first, since
+     somebody reading about Larkspur is most likely comparing it with another
+     Leander community, then the rest to fill out the row. Before this each
+     neighborhood page had exactly one inbound link, from the hub, and none at
+     all from a page on the same subject. */
+  const others = neighborhoods.filter((n) => n.slug !== params.slug);
+  const rank = (n) => (n.city === neighborhood.city ? 0 : 1);
+  const ordered = others.sort((a, b) => rank(a) - rank(b) || a.name.localeCompare(b.name));
+  /* Taking the first six alphabetically would mean every Leander page links to
+     Bar W Ranch and no page links to Northline. Rotating the window by this
+     page's own position spreads the links evenly while staying deterministic,
+     so each build produces the same set. */
+  const offset = neighborhoods.findIndex((n) => n.slug === params.slug);
+  const siblings = Array.from({ length: Math.min(6, ordered.length) }, (_, i) =>
+    ordered[(offset + i) % ordered.length])
+    .map(({ slug, name, city, medianPrice }) => ({ slug, name, city, medianPrice }));
+
   return {
-    props: { neighborhood },
+    props: { neighborhood, siblings },
     revalidate: 3600,
   };
 }
