@@ -129,6 +129,13 @@ export async function getStaticProps({ params }) {
       // Optional search-result title. Lets a post that ranks but is not
       // clicked be retitled for the results page without renaming its H1.
       seoTitle: data.seoTitle || null,
+      /* Optional path to the page that should own this subject in search.
+         Three pages were competing for "leander property tax rate 2026",
+         which splits the signals three ways and lets Google pick whichever
+         it likes rather than the one we built to rank. A canonical points
+         them at one winner without deleting anything, and can be lifted by
+         deleting one line of front matter. */
+      canonicalTo: data.canonicalTo || null,
       date,
       contentHtml,
       description,
@@ -139,15 +146,20 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export default function Post({ slug, title, seoTitle, date, contentHtml, description, contracting, faqs = [], related = [] }) {
+export default function Post({ slug, title, seoTitle, canonicalTo, date, contentHtml, description, contracting, faqs = [], related = [] }) {
   // Google renders roughly 60 characters of a title. " | Joe Sanches Realtor"
   // is 22 of them, and on an informational query a personal brand nobody has
   // heard of sells nothing — it just truncates the headline's last words. The
   // suffix is now only added when the whole thing still fits, and the realtor
   // posts use the locale instead, which is what people actually searched for.
   const brandSuffix = contracting ? ' | Sanches Group' : ' | Leander, TX';
+  // "Move-In Ready Homes in Leander TX | Leander, TX" — the suffix is only
+  // worth the characters when it adds something the title doesn't already say.
+  const suffixAddsNothing = /leander/i.test(title) && !contracting;
   const docTitle = seoTitle
-    || (title.length + brandSuffix.length <= 60 ? title + brandSuffix : title);
+    || (!suffixAddsNothing && title.length + brandSuffix.length <= 60
+      ? title + brandSuffix
+      : title);
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://joefsanches.com';
   const postUrl = `${baseUrl}/posts/${slug}`;
   const publishedDate = date ? new Date(date).toISOString() : new Date().toISOString();
@@ -183,7 +195,7 @@ export default function Post({ slug, title, seoTitle, date, contentHtml, descrip
         <title>{docTitle}</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href={postUrl} />
+        <link rel="canonical" href={canonicalTo ? `${baseUrl}${canonicalTo}` : postUrl} />
         
         {/* Open Graph Tags */}
         <meta property="og:type" content="article" />

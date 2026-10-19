@@ -93,6 +93,9 @@ function fromPosts() {
     return fs
       .readdirSync(postsDir)
       .filter((f) => f.endsWith(".md"))
+      // A post whose front matter points its canonical somewhere else is not
+      // the URL we want indexed, so listing it here would contradict the page.
+      .filter((f) => !/^canonicalTo:/m.test(fs.readFileSync(path.join(postsDir, f), "utf8")))
       .map((f) => ({
         url: `/posts/${f.replace(/\.md$/, "")}`,
         file: path.join(postsDir, f),
