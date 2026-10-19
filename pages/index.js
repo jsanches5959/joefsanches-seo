@@ -364,9 +364,9 @@ const SERVICES = [
   { icon: 'leaf',     name: 'Landscaping & Grounds',    note: 'Cleanups, mulch, mowing, brush clearing', href: '/services/landscaping-grounds-maintenance-leander-tx' },
   { icon: 'toolbox',  name: 'Handyman & Repairs',       note: 'The punch list you keep putting off',     href: '/services/handyman-services-leander-tx' },
   { icon: 'hardhat',  name: 'Remodeling',               note: 'Kitchens, baths, build-outs',             href: '/services/home-remodeling-leander-tx' },
-  { icon: 'planks',   name: 'Flooring',                 note: 'LVP, tile, laminate, repairs',            href: '#contact' },
-  { icon: 'deck',     name: 'Patios & Decks',           note: 'New builds and repairs',                  href: '#contact' },
-  { icon: 'toolbox',  name: 'Built-Ins & Carpentry',    note: 'Media walls, shelving, trim, doors',      href: '/work' },
+  { icon: 'planks',   name: 'Flooring',                 note: 'LVP, tile, laminate, repairs',            href: '/services/flooring-installation-leander-tx' },
+  { icon: 'deck',     name: 'Patios & Decks',           note: 'New builds and repairs',                  href: '/services/deck-patio-builder-leander-tx' },
+  { icon: 'toolbox',  name: 'Built-Ins & Carpentry',    note: 'Media walls, shelving, trim, doors',      href: '/services/built-ins-carpentry-leander-tx' },
   { icon: 'bolt',     name: 'Lighting & EV Chargers',   note: 'Fixtures, chandeliers, Tesla chargers',   href: '/work' },
   { icon: 'roof',     name: 'Roofing, Electrical, Plumbing & HVAC', note: 'Meter work too — through licensed partners', href: '#contact' },
 ];
