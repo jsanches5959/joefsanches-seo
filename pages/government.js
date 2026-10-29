@@ -653,7 +653,7 @@ export default function Government() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '28px' }}>
             <div>
               <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.2px', textTransform: 'uppercase', color: '#d9c27a', marginBottom: '6px' }}>Scope Limitation</p>
-              <p style={{ fontSize: '13px', color: '#b9bdaf', lineHeight: '1.85' }}>Roofing, electrical, plumbing and HVAC/ACR work is performed by appropriately licensed contractors engaged and managed by Sanches Group. Sanches Group / Joe Sanches LLC does not hold, and does not represent itself as holding, Texas trade qualifier licences (TSBPE/TDLR) in those categories. Registered NAICS and NIGP codes reflect bidding eligibility as a general contractor delivering through licensed subcontractors.</p>
+              <p style={{ fontSize: '13px', color: '#b9bdaf', lineHeight: '1.85' }}>Roofing, electrical, plumbing and HVAC/ACR work is performed by appropriately licensed contractors engaged and managed by Sanches Group. Sanches Group / Joe Sanches LLC does not hold, and does not represent itself as holding, Texas trade qualifier licenses (TSBPE/TDLR) in those categories. Registered NAICS and NIGP codes reflect bidding eligibility as a general contractor delivering through licensed subcontractors.</p>
             </div>
             <div>
               <p style={{ fontSize: '11px', fontWeight: '900', letterSpacing: '1.2px', textTransform: 'uppercase', color: '#d9c27a', marginBottom: '6px' }}>Entity Information</p>

@@ -603,7 +603,7 @@ export async function getStaticProps({ params }) {
     return { notFound: true };
   }
 
-  /* Neighbours to link to at the foot of the page. Same city first, since
+  /* Neighbors to link to at the foot of the page. Same city first, since
      somebody reading about Larkspur is most likely comparing it with another
      Leander community, then the rest to fill out the row. Before this each
      neighborhood page had exactly one inbound link, from the hub, and none at

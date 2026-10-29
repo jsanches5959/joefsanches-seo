@@ -190,6 +190,7 @@ const css = `
     color: var(--leaf-ink); background: rgba(63,107,53,.1); border: 1px solid rgba(63,107,53,.25); padding: 7px 13px; border-radius: 999px; margin-bottom: 18px; }
   .tr-hero h1 { font-size: clamp(44px, 7.4vw, 92px); line-height: .98; letter-spacing: -.045em; font-weight: 900; color: var(--ink); margin: 0 0 18px; }
   .tr-hero h1 span { color: var(--leaf); }
+  .tr-hero h1 .tr-lede { display: block; color: var(--ink); font-size: clamp(32px, 5.2vw, 62px); letter-spacing: -.02em; line-height: 1.08; margin-bottom: .04em; }
   .tr-sub { font-size: clamp(17px, 1.7vw, 20px); line-height: 1.7; color: var(--text); margin: 0 0 24px; max-width: 52ch; }
   .tr-sub strong { color: var(--ink); }
   .tr-ctas { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 26px; }
@@ -298,7 +299,7 @@ export default function TreeService() {
         <link rel="canonical" href={url} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Sanches Group" />
-        <meta property="og:title" content="Joe does trees. Tree removal & trimming in Leander, TX" />
+        <meta property="og:title" content="Sanches Group does trees. Tree removal & trimming in Leander, TX" />
         <meta property="og:description" content="Removals, trimming, stump grinding and storm cleanup. Written quotes and full cleanup. Get a free quote online or call 512-663-8867." />
         <meta property="og:url" content={url} />
         <meta property="og:image" content={`${baseUrl}/og-image.jpg`} />
@@ -333,7 +334,7 @@ export default function TreeService() {
           <div className="tr-w tr-hero-grid">
             <div>
               <span className="tr-eyebrow">Removal · Trimming · Stumps · Storm cleanup</span>
-              <h1>Joe does <span>trees.</span></h1>
+              <h1><span className="tr-lede">Sanches Group</span> <span>trees.</span></h1>
               <p className="tr-sub">
                 <strong>Tree removal, trimming and stump grinding</strong> in Leander, Cedar Park,
                 Georgetown and the Austin area. Written quotes, careful work around your house,
@@ -344,7 +345,7 @@ export default function TreeService() {
                 <a href="tel:5126638867" className="tr-btn line">Call 512-663-8867</a>
               </div>
               <ul className="tr-checks">
-                <li>One point of contact</li>
+                <li>Any project, one call</li>
                 <li>Free estimates</li>
                 <li>Written price up front</li>
                 <li>Full cleanup &amp; haul-off</li>
@@ -502,7 +503,7 @@ export default function TreeService() {
           <p><a href="tel:5126638867">512-663-8867</a> · <a href="mailto:hello@joefsanches.com">hello@joefsanches.com</a></p>
           <p>Free estimates · Written quotes · Full cleanup</p>
           <p style={{ marginTop: '14px' }}>
-            Trees are one part of it. <a href="/">Joe does the whole property →</a>
+            Trees are one part of it. <a href="/">Sanches Group does the whole property →</a>
           </p>
         </footer>
 

@@ -140,7 +140,7 @@ export default function Service({ service, others }) {
           <div className="svc-trust">
             <span>Licensed &amp; Insured</span><i />
             <span>Free Estimates</span><i />
-            <span>One Point of Contact</span><i />
+            <span>Any Project, One Call</span><i />
             <span>Written Quotes</span>
           </div>
           <div className="svc-ctas">
@@ -234,7 +234,7 @@ export default function Service({ service, others }) {
         </main>
 
         <footer className="svc-foot">
-          <p><strong style={{ color: '#fff' }}>Joe does the whole property.</strong></p>
+          <p><strong style={{ color: '#fff' }}>Sanches Group does the whole property.</strong></p>
           <p>Sanches Group · Joe Sanches LLC · Leander, Texas</p>
           <p>512-663-8867 · hello@joefsanches.com</p>
           <p className="svc-fine">

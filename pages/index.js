@@ -4,7 +4,7 @@ import JobberForm from '../components/JobberForm';
 import ToolIcon from '../components/ToolIcon';
 
 /**
- * The brand in one line: "Joe does ___."
+ * The brand in one line: "Sanches Group — ___."
  *
  * The company is Joe Sanches LLC, and the name is the point — it is one
  * accountable name across very different kinds of work. The line keeps a
@@ -16,7 +16,7 @@ import ToolIcon from '../components/ToolIcon';
  * proof (certifications), the person, and then — last, and kept separate —
  * the real estate side. A landscape company or facility manager reads a
  * property services contractor top to bottom; a homeowner who is also
- * selling finds Joe's licence at the end, framed as one more thing the same
+ * selling finds Joe's license at the end, framed as one more thing the same
  * name looks after.
  */
 
@@ -134,7 +134,18 @@ const css = `
     color: var(--ink);
     margin-bottom: 22px;
   }
-  .home-hero h1 .joe { display: block; }
+  /* The setup line. At full display size "Sanches Group does" is 18
+     characters and runs off a phone screen, so it is set smaller than the
+     trade below it — which also puts the emphasis where it belongs. */
+  .home-hero h1 .lede {
+    display: block; letter-spacing: -0.02em; line-height: 1.08; margin-bottom: .04em;
+    /* Sized independently of the h1 rather than as a fraction of it. As a
+       fraction small enough to fit the name on a phone, it came
+       out barely larger than the paragraph beneath it and stopped reading as
+       a headline. This clamp keeps it dominant at every width and still
+       inside the gutters at 360px. */
+    font-size: clamp(34px, 10.5vw, 100px);
+  }
   /* A fixed-height slot, so the page below never jumps as the word changes.
      The closing phrase is longer than the rest and is set smaller to fit. */
   .home-hero h1 .slot { display: flex; align-items: center; justify-content: center; height: 1.04em; }
@@ -202,13 +213,22 @@ const css = `
   .does-list li span { color: var(--muted); font-weight: 700; }
   .does-list li b { color: var(--gold-ink); font-weight: 900; }
   /* The background list carries a heading plus a line of detail, so it needs
-     ordinary text sizing rather than the display size used for "Joe does X". */
+     ordinary text sizing rather than the display size used for the hero lockup. */
   .why-list li { align-items: flex-start; font-size: 17px; font-weight: 700; letter-spacing: 0; padding: 18px 0; }
   .why-list li b { display: block; color: var(--ink); font-size: 17px; font-weight: 900; margin-bottom: 3px; line-height: 1.3; }
   .why-list li span { display: block; color: var(--muted); font-size: 15px; font-weight: 400; line-height: 1.6; }
   .why-list .di { margin-top: 2px; }
   .does-list .di { color: var(--olive); flex-shrink: 0; }
 
+  /* The claim the grid can't make for itself: the list is what people ask
+     for most, not the limit. Set as a panel so it reads as a statement
+     rather than another tile. */
+  .anything { margin-top: 28px; background: #fbf7ea; border: 1px solid var(--gold-border);
+    border-left: 4px solid var(--gold); border-radius: 10px; padding: clamp(22px, 3vw, 32px); }
+  .anything h3 { font-size: clamp(20px, 2.4vw, 26px); font-weight: 900; color: var(--ink);
+    letter-spacing: -.02em; margin: 0 0 10px; }
+  .anything p { font-size: 16px; color: var(--text); line-height: 1.8; max-width: 70ch; margin: 0; }
+  .anything p + p { margin-top: 10px; }
   .cap-foot { margin-top: 26px; font-size: 14px; color: var(--muted); line-height: 1.75; max-width: 80ch; }
 
   /* ── SERVICES GRID ── */
@@ -341,14 +361,15 @@ const css = `
 // The words the hero cycles through. Every trade the crews self-perform, so
 // the length of the list is itself the message, and the last line is its
 // point. The licensed trades are deliberately absent: the site states that
-// Sanches Group holds no trade qualifier licence for them, and a headline
-// reading "Joe does electrical." would contradict that. They appear in the
+// Sanches Group holds no trade qualifier license for them, and a headline
+// reading "Sanches Group does electrical." would contradict that. They appear
 // services grid below with the partner framing instead.
 const DOES = [
   'trees.', 'drywall.', 'paint.', 'flooring.', 'remodels.', 'decks.',
   'patios.', 'built-ins.', 'make-readies.', 'unit turns.', 'cleaning.',
-  'landscaping.', 'pressure washing.', 'punch lists.',
-  'the whole property.',
+  'hauling.', 'cleanouts.', 'landscaping.', 'pressure washing.',
+  'punch lists.',
+  'Ready for anything.',
 ];
 
 // Every service on one list. The homepage is where service blog posts send
@@ -380,8 +401,8 @@ const orgSchema = {
   '@type': 'GeneralContractor',
   '@id': 'https://joefsanches.com/#sanchesgroup',
   name: 'Sanches Group',
-  alternateName: ['Joe Sanches LLC', 'Joe Does It'],
-  slogan: 'Joe does the whole property.',
+  alternateName: ['Joe Sanches LLC'],
+  slogan: 'Ready for anything.',
   url: 'https://joefsanches.com',
   telephone: '+1-512-663-8867',
   email: 'hello@joefsanches.com',
@@ -455,18 +476,18 @@ export default function Home() {
     <>
       <Head>
         <title>Sanches Group — Tree Removal &amp; Remodeling in Leander TX</title>
-        <meta name="description" content="Tree removal, remodeling, drywall, paint, flooring, decks and make-readies in Leander, Cedar Park and Georgetown TX. One call, one point of contact." />
+        <meta name="description" content="Tree removal, remodeling, drywall, paint, flooring, hauling and make-readies across Leander, Cedar Park and the Austin area. Any project — just ask." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://joefsanches.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Joe does the whole property. | Sanches Group, Leander TX" />
+        <meta property="og:title" content="Sanches Group — Ready for Anything | Leander, TX" />
         <meta property="og:description" content="Tree removal, remodeling, drywall, paint and property maintenance across Central Texas — one company, one name on every job." />
         <meta property="og:url" content="https://joefsanches.com" />
         <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
         {/* Without these, the homepage shared on X or in any app that reads
             Twitter cards came through as a bare link. */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Joe does the whole property. | Sanches Group, Leander TX" />
+        <meta name="twitter:title" content="Sanches Group — Ready for Anything | Leander, TX" />
         <meta name="twitter:description" content="Tree removal, remodeling, drywall, paint and property maintenance across Central Texas — one company, one name on every job." />
         <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <style dangerouslySetInnerHTML={{ __html: css }} />
@@ -497,27 +518,28 @@ export default function Home() {
       <section className="home-hero" id="top">
         <span className="hero-skyline" aria-hidden="true" />
         <div className="hero-inner">
-          <span className="hero-eyebrow">Joe Sanches LLC · Leander, Texas</span>
+          <span className="hero-eyebrow">Leander · Williamson &amp; Travis County · Central Texas</span>
           <h1>
-            <span className="sr">Joe does trees, drywall, paint, remodels, make-readies — the whole property.</span>
+            <span className="sr">Sanches Group — trees, drywall, paint, remodels, hauling, make-readies. Ready for anything.</span>
             <span aria-hidden="true">
-              <span className="joe">Joe does</span>
+              <span className="lede">Sanches Group</span>
               <RotatingWord />
             </span>
           </h1>
           <p className="hero-sub">
-            <strong>Tree service, pressure washing, drywall, painting, make-readies, cleaning</strong>{' '}
-            and the rest of the property, across Central Texas. Tell us what you need and get a
-            written price.
+            <strong>Whatever the property needs, we can put a crew on it.</strong> Trees,
+            remodels, drywall, paint, flooring, hauling, turns, grounds &mdash; and the jobs
+            that don&rsquo;t have a name. Tell us what it is. If it isn&rsquo;t ours, we&rsquo;ll
+            tell you that too, and usually who to call.
           </p>
           <div className="hero-ctas">
             <a href="#contact" className="btn-gold">Get a Free Estimate</a>
             <a href="#services" className="btn-outline">See All Services</a>
           </div>
           <div className="hero-trust">
-            <span>Free Estimates</span>
-            <span>Written Quotes</span>
-            <span>One Point of Contact</span>
+            <span>Any Project, One Call</span>
+            <span>Crews Across Central Texas</span>
+            <span>Free, Written Estimates</span>
             <span>Licensed &amp; Insured</span>
           </div>
         </div>
@@ -541,10 +563,25 @@ export default function Home() {
               </a>
             ))}
           </div>
+          <div className="anything">
+            <h3>Not on the list? Ask anyway.</h3>
+            <p>
+              That grid is what people ask for most &mdash; it is not the edge of what we do.
+              A shed that needs tearing out. A garage packed to the roof. A fence the storm
+              took. A punch list three other people have already looked at and passed on.
+              If it is on the property, we can usually mobilize a crew for it inside the week.
+            </p>
+            <p>
+              And when it genuinely is not ours, you get a straight answer the same day and
+              the name of someone who does it properly. That is worth more to you than a
+              maybe, and it costs us nothing to be honest about.
+            </p>
+          </div>
+
           <ol className="how">
             <li><b>1</b><div><strong>Tell us what you need</strong><p>Fill out the estimate form and add photos. It takes about two minutes.</p></div></li>
             <li><b>2</b><div><strong>Get a written price</strong><p>Usually the same day, with no obligation.</p></div></li>
-            <li><b>3</b><div><strong>We get it done</strong><p>One point of contact from the estimate to the final walkthrough.</p></div></li>
+            <li><b>3</b><div><strong>We mobilize</strong><p>The right crew on site, and the same name answerable for it until the last item is signed off.</p></div></li>
           </ol>
           <p className="cap-foot">
             Roofing, electrical, plumbing and heating and air are performed by appropriately
