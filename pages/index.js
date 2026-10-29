@@ -265,7 +265,7 @@ const css = `
 
   /* ── ABOUT ── */
   .about-grid { display: grid; grid-template-columns: 300px 1fr; gap: clamp(30px, 5vw, 64px); align-items: start; }
-  .about-img { width: 100%; border-radius: 10px; display: block; box-shadow: 0 16px 40px rgba(22,24,15,.14); }
+  .about-img { width: 100%; height: auto; border-radius: 10px; display: block; box-shadow: 0 16px 40px rgba(22,24,15,.14); }
   .about-role { display: block; font-size: 13px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--olive-ink); margin-bottom: 20px; }
   .about-bio { font-size: 17px; color: var(--text); line-height: 1.85; margin-bottom: 16px; max-width: 62ch; }
   .creds { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0; }
@@ -606,52 +606,64 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHY — the reason to call, sitting directly under the estimate form.
-          A homeowner is afraid of four things: being overcharged, shoddy work,
-          cheap materials, and the guy vanishing. Joe's actual background
-          answers all four, so it is told here rather than buried in About. */}
+      {/* HOW WE OPERATE — this used to be a personal résumé ("Three careers.
+          One trade.") under the owner's byline. It is now a set of operating
+          rules, with the same biography underneath them as evidence rather
+          than as the subject. A property owner is afraid of four things:
+          being overcharged, shoddy work, cheap materials, and the contractor
+          vanishing. Rules answer all four; a CV answers none of them. */}
       <section className="sec">
         <div className="w name-grid">
           <div>
-            <span className="eyebrow">Why people call us</span>
-            <h2 className="title">Three careers. <em>One trade.</em></h2>
+            <span className="eyebrow">How we operate</span>
+            <h2 className="title">Five rules we <em>don&rsquo;t break.</em></h2>
             <p className="lead">
-              My father and his brothers were framers. I was on job sites before I was old
-              enough to work on them, and I never really left.
+              Most of what goes wrong on a job site goes wrong for the same handful of
+              reasons, every time. These are the ones we refuse to repeat.
             </p>
             <p className="lead">
-              Then five years in aviation maintenance. You follow the procedure, you write
-              down what you did, and you do not skip a step &mdash; because the cost of skipping
-              one isn&apos;t a callback. That habit doesn&apos;t switch off when you change
-              industries.
+              <strong>Every job has an end state.</strong> A written scope and a date it is
+              finished, agreed before anyone picks up a tool. Jobs drag because nobody ever
+              defined done.
             </p>
             <p className="lead">
-              After that, close to a decade in consumer products: how things get made, what
-              they actually cost, and which ones are still working in year five. Plenty of
-              contractors can install a material. Fewer can tell you what it costs at source,
-              which brands fail early, and where the markup is hiding.
+              <strong>Logistics is the job.</strong> Anyone can swing a hammer. The gap
+              between a three-day job and a three-week one is whether the material was
+              ordered, the lead times were checked, and the trades were sequenced so nobody
+              is waiting on anybody. That is the part we are actually good at.
             </p>
             <p className="lead">
-              And it is not just me. It is me and people I have worked alongside for years.
-              My name is on the company, so it is on every job they do too.
+              <strong>Procedure, written down.</strong> What was done, by whom, on what day.
+              You should never have to take our word for what happened on your property
+              while you were at work.
+            </p>
+            <p className="lead">
+              <strong>One name owns the outcome.</strong> Whoever runs your job answers for
+              it from the first walkthrough to the last item signed off &mdash; not a
+              salesperson at the start and a voicemail box afterwards.
+            </p>
+            <p className="lead">
+              <strong>We say no out loud.</strong> A crew that takes everything is good at
+              nothing. If a job is not ours you hear it the same day, with a name to call
+              instead. That answer is worth more to you than a maybe.
             </p>
           </div>
-          <ul className="does-list why-list" aria-label="Joe&rsquo;s background">
+          <ul className="does-list why-list" aria-label="Where these rules come from">
             <li>
               <ToolIcon name="hardhat" size={30} className="di" />
-              <p><b>Raised by framers</b><span>Father and uncles framed houses. On site before I could drive.</span></p>
+              <p><b>A framing family</b><span>Sanches crews framed houses in this state before this company existed.</span></p>
             </li>
             <li>
               <ToolIcon name="shield" size={30} className="di" />
-              <p><b>5 years, aviation maintenance</b><span>Follow the procedure. Document it. Never skip a step.</span></p>
+              <p><b>Five years, aviation maintenance</b><span>Where &ldquo;document it and never skip a step&rdquo; stops being a slogan.</span></p>
             </li>
             <li>
               <ToolIcon name="planks" size={30} className="di" />
-              <p><b>A decade in consumer products</b><span>What materials really cost, and which ones last.</span></p>
+              <p><b>A decade moving product</b><span>Lead times, landed cost, and which brands quietly fail in year three.</span></p>
             </li>
             <li>
               <ToolIcon name="toolbox" size={30} className="di" />
-              <p><b>A bench, not a one-man band</b><span>Trades I have worked with for years, not whoever is free.</span></p>
+              <p><b>A bench, not a body shop</b><span>Trades we have worked with for years, not whoever answered the phone.</span></p>
             </li>
           </ul>
         </div>
@@ -725,21 +737,24 @@ export default function Home() {
         <div className="w">
           <div className="about-grid">
             <div>
-              <img src="/joe.jpg" alt="Joe Sanches, founder of Sanches Group" className="about-img" width="1000" height="734" loading="lazy" />
+              <img src="/joe.jpg" alt="Joe Sanches, who runs Sanches Group" className="about-img" width="760" height="872" loading="lazy" />
             </div>
             <div>
-              <span className="eyebrow">Founder &amp; Principal</span>
-              <h2 className="title">Joe Sanches</h2>
-              <span className="about-role">Founder · Joe Sanches LLC · Sanches Group</span>
+              <span className="eyebrow">The name</span>
+              <h2 className="title">Sanches is a framing name.</h2>
+              <span className="about-role">Joe Sanches LLC · Sanches Group · Leander, Texas</span>
               <p className="about-bio">
-                Joe answers the phone, walks the job and writes the estimate. As the company
-                grows that won&apos;t always be him swinging the hammer, but every job has one
-                named person accountable for it and you will always know which one.
+                My father and his brothers framed houses. I was on job sites before I was old
+                enough to work on them, and the name on this company is the one that was on
+                those crews. That is the whole reason it is the name and not something
+                invented in a branding exercise.
               </p>
               <p className="about-bio">
-                Sanches Group also holds the certifications to work for government and
-                institutional clients &mdash; the same crews, the same standard, with the
-                paperwork those contracts require.
+                Sanches Group is what it grew into: crews, a bench of trades, and the
+                certifications to work for government and institutional clients alongside
+                homeowners. I still answer the phone and walk the job. As this grows that
+                will not always be me on site &mdash; but it will always be a name you can
+                put to the work.
               </p>
               <div className="creds">
                 <span className="cred">Licensed &amp; Insured</span>
