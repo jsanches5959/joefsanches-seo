@@ -4,7 +4,7 @@ import JobberForm from '../components/JobberForm';
 import ToolIcon from '../components/ToolIcon';
 
 /**
- * The brand in one line: "Joe does ___."
+ * The brand in one line: "Sanches Group — ___."
  *
  * The company is Joe Sanches LLC, and the name is the point — it is one
  * accountable name across very different kinds of work. The line keeps a
@@ -16,7 +16,7 @@ import ToolIcon from '../components/ToolIcon';
  * proof (certifications), the person, and then — last, and kept separate —
  * the real estate side. A landscape company or facility manager reads a
  * property services contractor top to bottom; a homeowner who is also
- * selling finds Joe's licence at the end, framed as one more thing the same
+ * selling finds Joe's license at the end, framed as one more thing the same
  * name looks after.
  */
 
@@ -134,7 +134,18 @@ const css = `
     color: var(--ink);
     margin-bottom: 22px;
   }
-  .home-hero h1 .joe { display: block; }
+  /* The setup line. At full display size "Sanches Group does" is 18
+     characters and runs off a phone screen, so it is set smaller than the
+     trade below it — which also puts the emphasis where it belongs. */
+  .home-hero h1 .lede {
+    display: block; letter-spacing: -0.02em; line-height: 1.08; margin-bottom: .04em;
+    /* Sized independently of the h1 rather than as a fraction of it. As a
+       fraction small enough to fit the name on a phone, it came
+       out barely larger than the paragraph beneath it and stopped reading as
+       a headline. This clamp keeps it dominant at every width and still
+       inside the gutters at 360px. */
+    font-size: clamp(34px, 10.5vw, 100px);
+  }
   /* A fixed-height slot, so the page below never jumps as the word changes.
      The closing phrase is longer than the rest and is set smaller to fit. */
   .home-hero h1 .slot { display: flex; align-items: center; justify-content: center; height: 1.04em; }
@@ -202,7 +213,7 @@ const css = `
   .does-list li span { color: var(--muted); font-weight: 700; }
   .does-list li b { color: var(--gold-ink); font-weight: 900; }
   /* The background list carries a heading plus a line of detail, so it needs
-     ordinary text sizing rather than the display size used for "Joe does X". */
+     ordinary text sizing rather than the display size used for the hero lockup. */
   .why-list li { align-items: flex-start; font-size: 17px; font-weight: 700; letter-spacing: 0; padding: 18px 0; }
   .why-list li b { display: block; color: var(--ink); font-size: 17px; font-weight: 900; margin-bottom: 3px; line-height: 1.3; }
   .why-list li span { display: block; color: var(--muted); font-size: 15px; font-weight: 400; line-height: 1.6; }
@@ -341,8 +352,8 @@ const css = `
 // The words the hero cycles through. Every trade the crews self-perform, so
 // the length of the list is itself the message, and the last line is its
 // point. The licensed trades are deliberately absent: the site states that
-// Sanches Group holds no trade qualifier licence for them, and a headline
-// reading "Joe does electrical." would contradict that. They appear in the
+// Sanches Group holds no trade qualifier license for them, and a headline
+// reading "Sanches Group does electrical." would contradict that. They appear
 // services grid below with the partner framing instead.
 const DOES = [
   'trees.', 'drywall.', 'paint.', 'flooring.', 'remodels.', 'decks.',
@@ -380,8 +391,8 @@ const orgSchema = {
   '@type': 'GeneralContractor',
   '@id': 'https://joefsanches.com/#sanchesgroup',
   name: 'Sanches Group',
-  alternateName: ['Joe Sanches LLC', 'Joe Does It'],
-  slogan: 'Joe does the whole property.',
+  alternateName: ['Joe Sanches LLC'],
+  slogan: 'Sanches Group does the whole property.',
   url: 'https://joefsanches.com',
   telephone: '+1-512-663-8867',
   email: 'hello@joefsanches.com',
@@ -459,14 +470,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://joefsanches.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Joe does the whole property. | Sanches Group, Leander TX" />
+        <meta property="og:title" content="Sanches Group does the whole property. | Leander, TX" />
         <meta property="og:description" content="Tree removal, remodeling, drywall, paint and property maintenance across Central Texas — one company, one name on every job." />
         <meta property="og:url" content="https://joefsanches.com" />
         <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
         {/* Without these, the homepage shared on X or in any app that reads
             Twitter cards came through as a bare link. */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Joe does the whole property. | Sanches Group, Leander TX" />
+        <meta name="twitter:title" content="Sanches Group does the whole property. | Leander, TX" />
         <meta name="twitter:description" content="Tree removal, remodeling, drywall, paint and property maintenance across Central Texas — one company, one name on every job." />
         <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <style dangerouslySetInnerHTML={{ __html: css }} />
@@ -499,9 +510,9 @@ export default function Home() {
         <div className="hero-inner">
           <span className="hero-eyebrow">Joe Sanches LLC · Leander, Texas</span>
           <h1>
-            <span className="sr">Joe does trees, drywall, paint, remodels, make-readies — the whole property.</span>
+            <span className="sr">Sanches Group — trees, drywall, paint, remodels, make-readies, the whole property.</span>
             <span aria-hidden="true">
-              <span className="joe">Joe does</span>
+              <span className="lede">Sanches Group</span>
               <RotatingWord />
             </span>
           </h1>

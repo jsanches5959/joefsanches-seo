@@ -234,7 +234,7 @@ export default function Service({ service, others }) {
         </main>
 
         <footer className="svc-foot">
-          <p><strong style={{ color: '#fff' }}>Joe does the whole property.</strong></p>
+          <p><strong style={{ color: '#fff' }}>Sanches Group does the whole property.</strong></p>
           <p>Sanches Group · Joe Sanches LLC · Leander, Texas</p>
           <p>512-663-8867 · hello@joefsanches.com</p>
           <p className="svc-fine">
