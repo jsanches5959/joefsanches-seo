@@ -453,12 +453,13 @@ export default function Post({ slug, title, seoTitle, canonicalTo, date, content
               <img 
                 src="/joe.jpg" 
                 alt="Joe Sanches"
-                width="1000"
-                height="734"
+                width="760"
+                height="872"
                 loading="lazy"
                 style={{ 
                   borderRadius: '12px', 
-                  width: '100%', 
+                  width: '100%',
+                  height: 'auto', 
                   marginBottom: '16px',
                   border: '2px solid rgba(107,120,84,0.3)'
                 }} 

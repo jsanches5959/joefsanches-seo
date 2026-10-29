@@ -223,12 +223,13 @@ export default function Realtor({ posts }) {
               <img
                 src="/joe.jpg"
                 alt="Joe Sanches"
-                width="1000"
-                height="734"
+                width="760"
+                height="872"
                 loading="lazy"
                 style={{
                   borderRadius: '16px',
                   width: '100%',
+                  height: 'auto',
                   maxWidth: '320px',
                   boxShadow: '0 20px 40px rgba(107,120,84,0.2)',
                   border: '2px solid rgba(107,120,84,0.3)'
