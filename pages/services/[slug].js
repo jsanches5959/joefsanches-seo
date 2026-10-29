@@ -140,7 +140,7 @@ export default function Service({ service, others }) {
           <div className="svc-trust">
             <span>Licensed &amp; Insured</span><i />
             <span>Free Estimates</span><i />
-            <span>One Point of Contact</span><i />
+            <span>Any Project, One Call</span><i />
             <span>Written Quotes</span>
           </div>
           <div className="svc-ctas">

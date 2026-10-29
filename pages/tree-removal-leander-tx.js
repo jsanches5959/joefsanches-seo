@@ -345,7 +345,7 @@ export default function TreeService() {
                 <a href="tel:5126638867" className="tr-btn line">Call 512-663-8867</a>
               </div>
               <ul className="tr-checks">
-                <li>One point of contact</li>
+                <li>Any project, one call</li>
                 <li>Free estimates</li>
                 <li>Written price up front</li>
                 <li>Full cleanup &amp; haul-off</li>

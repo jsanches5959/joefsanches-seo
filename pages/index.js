@@ -220,6 +220,15 @@ const css = `
   .why-list .di { margin-top: 2px; }
   .does-list .di { color: var(--olive); flex-shrink: 0; }
 
+  /* The claim the grid can't make for itself: the list is what people ask
+     for most, not the limit. Set as a panel so it reads as a statement
+     rather than another tile. */
+  .anything { margin-top: 28px; background: #fbf7ea; border: 1px solid var(--gold-border);
+    border-left: 4px solid var(--gold); border-radius: 10px; padding: clamp(22px, 3vw, 32px); }
+  .anything h3 { font-size: clamp(20px, 2.4vw, 26px); font-weight: 900; color: var(--ink);
+    letter-spacing: -.02em; margin: 0 0 10px; }
+  .anything p { font-size: 16px; color: var(--text); line-height: 1.8; max-width: 70ch; margin: 0; }
+  .anything p + p { margin-top: 10px; }
   .cap-foot { margin-top: 26px; font-size: 14px; color: var(--muted); line-height: 1.75; max-width: 80ch; }
 
   /* ── SERVICES GRID ── */
@@ -358,8 +367,9 @@ const css = `
 const DOES = [
   'trees.', 'drywall.', 'paint.', 'flooring.', 'remodels.', 'decks.',
   'patios.', 'built-ins.', 'make-readies.', 'unit turns.', 'cleaning.',
-  'landscaping.', 'pressure washing.', 'punch lists.',
-  'the whole property.',
+  'hauling.', 'cleanouts.', 'landscaping.', 'pressure washing.',
+  'punch lists.',
+  'Ready for anything.',
 ];
 
 // Every service on one list. The homepage is where service blog posts send
@@ -392,7 +402,7 @@ const orgSchema = {
   '@id': 'https://joefsanches.com/#sanchesgroup',
   name: 'Sanches Group',
   alternateName: ['Joe Sanches LLC'],
-  slogan: 'Sanches Group does the whole property.',
+  slogan: 'Ready for anything.',
   url: 'https://joefsanches.com',
   telephone: '+1-512-663-8867',
   email: 'hello@joefsanches.com',
@@ -466,18 +476,18 @@ export default function Home() {
     <>
       <Head>
         <title>Sanches Group — Tree Removal &amp; Remodeling in Leander TX</title>
-        <meta name="description" content="Tree removal, remodeling, drywall, paint, flooring, decks and make-readies in Leander, Cedar Park and Georgetown TX. One call, one point of contact." />
+        <meta name="description" content="Tree removal, remodeling, drywall, paint, flooring, hauling and make-readies across Leander, Cedar Park and the Austin area. Any project — just ask." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://joefsanches.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Sanches Group does the whole property. | Leander, TX" />
+        <meta property="og:title" content="Sanches Group — Ready for Anything | Leander, TX" />
         <meta property="og:description" content="Tree removal, remodeling, drywall, paint and property maintenance across Central Texas — one company, one name on every job." />
         <meta property="og:url" content="https://joefsanches.com" />
         <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
         {/* Without these, the homepage shared on X or in any app that reads
             Twitter cards came through as a bare link. */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Sanches Group does the whole property. | Leander, TX" />
+        <meta name="twitter:title" content="Sanches Group — Ready for Anything | Leander, TX" />
         <meta name="twitter:description" content="Tree removal, remodeling, drywall, paint and property maintenance across Central Texas — one company, one name on every job." />
         <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <style dangerouslySetInnerHTML={{ __html: css }} />
@@ -508,27 +518,28 @@ export default function Home() {
       <section className="home-hero" id="top">
         <span className="hero-skyline" aria-hidden="true" />
         <div className="hero-inner">
-          <span className="hero-eyebrow">Joe Sanches LLC · Leander, Texas</span>
+          <span className="hero-eyebrow">Leander · Williamson &amp; Travis County · Central Texas</span>
           <h1>
-            <span className="sr">Sanches Group — trees, drywall, paint, remodels, make-readies, the whole property.</span>
+            <span className="sr">Sanches Group — trees, drywall, paint, remodels, hauling, make-readies. Ready for anything.</span>
             <span aria-hidden="true">
               <span className="lede">Sanches Group</span>
               <RotatingWord />
             </span>
           </h1>
           <p className="hero-sub">
-            <strong>Tree service, pressure washing, drywall, painting, make-readies, cleaning</strong>{' '}
-            and the rest of the property, across Central Texas. Tell us what you need and get a
-            written price.
+            <strong>Whatever the property needs, we can put a crew on it.</strong> Trees,
+            remodels, drywall, paint, flooring, hauling, turns, grounds &mdash; and the jobs
+            that don&rsquo;t have a name. Tell us what it is. If it isn&rsquo;t ours, we&rsquo;ll
+            tell you that too, and usually who to call.
           </p>
           <div className="hero-ctas">
             <a href="#contact" className="btn-gold">Get a Free Estimate</a>
             <a href="#services" className="btn-outline">See All Services</a>
           </div>
           <div className="hero-trust">
-            <span>Free Estimates</span>
-            <span>Written Quotes</span>
-            <span>One Point of Contact</span>
+            <span>Any Project, One Call</span>
+            <span>Crews Across Central Texas</span>
+            <span>Free, Written Estimates</span>
             <span>Licensed &amp; Insured</span>
           </div>
         </div>
@@ -552,10 +563,25 @@ export default function Home() {
               </a>
             ))}
           </div>
+          <div className="anything">
+            <h3>Not on the list? Ask anyway.</h3>
+            <p>
+              That grid is what people ask for most &mdash; it is not the edge of what we do.
+              A shed that needs tearing out. A garage packed to the roof. A fence the storm
+              took. A punch list three other people have already looked at and passed on.
+              If it is on the property, we can usually mobilize a crew for it inside the week.
+            </p>
+            <p>
+              And when it genuinely is not ours, you get a straight answer the same day and
+              the name of someone who does it properly. That is worth more to you than a
+              maybe, and it costs us nothing to be honest about.
+            </p>
+          </div>
+
           <ol className="how">
             <li><b>1</b><div><strong>Tell us what you need</strong><p>Fill out the estimate form and add photos. It takes about two minutes.</p></div></li>
             <li><b>2</b><div><strong>Get a written price</strong><p>Usually the same day, with no obligation.</p></div></li>
-            <li><b>3</b><div><strong>We get it done</strong><p>One point of contact from the estimate to the final walkthrough.</p></div></li>
+            <li><b>3</b><div><strong>We mobilize</strong><p>The right crew on site, and the same name answerable for it until the last item is signed off.</p></div></li>
           </ol>
           <p className="cap-foot">
             Roofing, electrical, plumbing and heating and air are performed by appropriately
