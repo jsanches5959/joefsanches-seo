@@ -872,5 +872,80 @@
         "title": "Meter bank replacement for older Austin apartments"
       }
     ]
+  },
+  {
+    "slug": "handyman-services-cedar-park-tx",
+    "icon": "toolbox",
+    "name": "Handyman & Home Repairs",
+    "shortName": "Handyman Repairs",
+    "city": "Cedar Park, TX",
+    "title": "Handyman Services in Cedar Park TX — Repairs & Punch Lists",
+    "description": "Handyman and home repair in Cedar Park, Leander and Georgetown TX. Drywall, doors, trim, fixtures, mounting and punch lists. One point of contact.",
+    "h1": "Handyman & Home Repair Services in Cedar Park, TX",
+    "intro": "Cedar Park homes accumulate the same kind of list everywhere — a door that won't latch, a bathroom fan that rattles, baseboard that came loose, three things that need mounting. In the older Buttercup Creek and Anderson Mill homes it's aging hardware, tired caulk and fence lines; in the newer builds out toward Twin Creeks and Ranch at Brushy Creek it's the punch list that shows up the year the builder warranty ends. Individually none of it is worth a service call. Together it's a half day. We work through the list in one visit instead of you chasing four different people. Sanches Group manages your project start to finish — one call, one name owns the result.",
+    "included": [
+      "Door repair and adjustment — latching, sticking, hinges, hardware",
+      "Trim, baseboard, and crown molding repair or replacement",
+      "Drywall patching and touch-up paint",
+      "TV, shelf, mirror, and cabinet mounting",
+      "Fixture replacement — towel bars, hardware, blinds, screens",
+      "Caulking — tubs, showers, counters, exterior gaps",
+      "Fence and gate repair — leaning panels, sagging gates",
+      "Punch lists — new build walk-throughs and pre-listing repairs"
+    ],
+    "process": [
+      [
+        "Send the list",
+        "Text or email everything you need done. Photos help. We'll tell you what's a fit and what needs a specialist."
+      ],
+      [
+        "Written estimate",
+        "One price for the whole list, in writing."
+      ],
+      [
+        "One visit",
+        "We work through the list in a single trip wherever possible."
+      ],
+      [
+        "Walk it together",
+        "You check each item before we leave."
+      ]
+    ],
+    "faq": [
+      [
+        "What kinds of repairs do you handle?",
+        "General carpentry and finish work: drywall, doors, trim, flooring, mounting, caulking, fence and gate repair, and punch lists. If part of a job needs a licensed trade — plumbing, electrical, HVAC — our licensed partners handle that part and we manage it for you."
+      ],
+      [
+        "Do you have a minimum charge?",
+        "We price by the job rather than by the hour, and small jobs are more economical when grouped. If you have one small item, it's usually worth waiting until you have a few."
+      ],
+      [
+        "Do you work on rental properties?",
+        "Yes. We do repairs, turns, and maintenance for landlords and property managers throughout the Austin metro, and we work on a vendor-only basis — we never solicit our property management clients' owners."
+      ],
+      [
+        "Can you do a pre-listing repair list for a home sale?",
+        "Yes, and this is common for us. Sellers get an inspection or agent punch list and need it handled before photos. Send the list and we'll price the whole thing."
+      ],
+      [
+        "What areas do you serve?",
+        "Cedar Park first, then Leander, Georgetown, Liberty Hill, Round Rock, Pflugerville, and the greater Austin area."
+      ]
+    ],
+    "guides": [
+      {
+        "slug": "nail-pops-new-construction-texas",
+        "title": "Nail pops in a new build: what actually fixes them"
+      },
+      {
+        "slug": "drywall-repair-cost-leander-cedar-park",
+        "title": "What drywall repair actually costs here"
+      },
+      {
+        "slug": "paint-sheen-guide-eggshell-satin-semigloss",
+        "title": "Eggshell, satin or semi-gloss: picking a sheen"
+      }
+    ]
   }
 ]
