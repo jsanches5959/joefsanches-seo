@@ -595,9 +595,8 @@ export default function Home() {
             <li><b>3</b><div><strong>We mobilize</strong><p>The right crew on site, and the same name answerable for it until the last item is signed off.</p></div></li>
           </ol>
           <p className="cap-foot">
-            Roofing, electrical, plumbing and heating and air are performed by appropriately
-            licensed contractors working under Sanches Group&apos;s management. We hold no trade
-            qualifier license for those categories and never claim to.
+            Sanches Group manages your project start to finish. Licensed trades are handled
+            by our licensed partners — one call, one name owns the result.
           </p>
         </div>
       </section>
@@ -779,6 +778,9 @@ export default function Home() {
                 <a href="tel:5126638867" className="btn-gold">Call 512-663-8867</a>
                 <a href="mailto:hello@joefsanches.com" className="btn-outline">hello@joefsanches.com</a>
               </div>
+              <p className="about-bio" style={{ marginTop: '18px' }}>
+                <a href="/about">The full story — framing, aviation maintenance, and a decade moving product →</a>
+              </p>
             </div>
           </div>
         </div>
@@ -879,7 +881,7 @@ export default function Home() {
           <div className="compliance-grid">
             <div className="compliance-block">
               <span className="compliance-block-label">Licensed Trade Work</span>
-              <p>Roofing, electrical, plumbing and HVAC work is performed by appropriately licensed contractors engaged and managed by Sanches Group. Sanches Group does not hold, and does not represent itself as holding, TDLR trade qualifier licenses in those categories. Texas does not require a statewide general contractor license; general construction, remodeling, finish trades and tree work are self-performed.</p>
+              <p>Sanches Group manages your project start to finish. Licensed trades are handled by our licensed partners — one call, one name owns the result. General construction, remodeling, finish trades and tree work are self-performed by our own crews.</p>
             </div>
             <div className="compliance-block">
               <span className="compliance-block-label">Spot Purchase Availability</span>
