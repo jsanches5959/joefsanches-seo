@@ -239,8 +239,8 @@ export default function Service({ service, others }) {
           <p>512-663-8867 · hello@joefsanches.com</p>
           <p className="svc-fine">
             Serving Leander, Cedar Park, Georgetown, Liberty Hill, Round Rock, Pflugerville
-            and the greater Austin area. Licensed trade work (plumbing, electrical, HVAC) is
-            referred to or subcontracted through appropriately licensed professionals.
+            and the greater Austin area. Licensed trades are handled by our licensed
+            partners — one call, one name owns the result.
           </p>
           <p><Link href="/government">Government &amp; institutional contracting →</Link></p>
         </footer>
