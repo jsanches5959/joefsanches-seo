@@ -196,7 +196,7 @@
     "faq": [
       [
         "What kinds of repairs do you handle?",
-        "General carpentry and finish work: drywall, doors, trim, flooring, mounting, caulking, fence and gate repair, and punch lists. We do not advertise or perform licensed plumbing, electrical, or HVAC work directly — that work is referred to or subcontracted through licensed trade professionals."
+        "General carpentry and finish work: drywall, doors, trim, flooring, mounting, caulking, fence and gate repair, and punch lists. If part of a job needs a licensed trade — plumbing, electrical, HVAC — our licensed partners handle that part and we manage it for you."
       ],
       [
         "Do you have a minimum charge?",
@@ -274,7 +274,7 @@
     "faq": [
       [
         "Do you need a license to be a general contractor in Texas?",
-        "Texas does not require a statewide general contractor license for general construction and remodeling. We carry full commercial liability insurance, and any work requiring a licensed trade — plumbing, electrical, or HVAC — is performed by appropriately licensed professionals brought in for that scope."
+        "Texas does not license general contractors statewide. We carry full commercial liability insurance, and licensed trades are handled by our licensed partners — one call, one name owns the result."
       ],
       [
         "How long does a kitchen or bathroom remodel take?",
@@ -701,7 +701,7 @@
       ],
       [
         "Do you do the lighting in a built-in?",
-        "We build the channels and the runs into the piece. The electrical work itself is performed by appropriately licensed electrical contractors we engage and manage, which is how it should be."
+        "We build the channels and the runs into the piece. The electrical work itself is handled by our licensed electrical partners, which is how it should be."
       ],
       [
         "Painted or stained?",
@@ -732,7 +732,7 @@
     "title": "Electrician Services in Leander TX — Lighting & EV Chargers",
     "description": "Electrical, lighting and EV charger work in Leander, Cedar Park and Austin TX. Fixtures, chandeliers, meter banks, panel work — performed by licensed electrical partners we engage and manage. Free written estimates.",
     "h1": "Electrical, Lighting & EV Charger Services in Leander, TX",
-    "intro": "Start with the honest part: Sanches Group does not hold an electrical license, and we don't pretend to. Electrical work is performed by licensed electrical contractors we engage and manage — the same bench of trades we've worked with for years. You get one estimate, one point of contact, and one name answerable for the job, and the work itself is done by people licensed to do it. That's the right way round, and it's how every project on our work page was run.",
+    "intro": "Sanches Group manages your project start to finish. Licensed trades are handled by our licensed partners — one call, one name owns the result. You get one estimate and one point of contact, and the electrical work itself is done by people licensed to do it — the same bench of trades we've worked with for years. That's how every project on our work page was run.",
     "included": [
       "Light fixture installation — pendants, sconces, recessed lighting, ceiling fixtures",
       "Chandelier installation, including two-storey entries and high ceilings (rated boxes, proper rigging)",
@@ -764,7 +764,7 @@
     "faq": [
       [
         "Are you licensed electricians?",
-        "No, and we say so plainly. Sanches Group does not hold, and does not represent itself as holding, a TDLR trade qualifier license for electrical work. All electrical work is performed by appropriately licensed electrical contractors engaged and managed by Sanches Group. You deal with one point of contact; the licensed work is done by licensed people."
+        "We're a general contractor, so we run the whole job. For electrical work, our licensed electrical partners do the install and we manage it end to end."
       ],
       [
         "How much does it cost to install an EV charger at home?",
@@ -785,6 +785,81 @@
       [
         "What areas do you cover for electrical work?",
         "Leander, Cedar Park, Georgetown, Liberty Hill, Round Rock, Pflugerville and the greater Austin area — the same footprint as the rest of our work."
+      ]
+    ],
+    "guides": [
+      {
+        "slug": "ev-charger-installation-cost-leander-cedar-park",
+        "title": "What an EV charger install actually costs here"
+      },
+      {
+        "slug": "meter-bank-replacement-austin-apartments",
+        "title": "Meter bank replacement for older Austin apartments"
+      }
+    ]
+  },
+  {
+    "slug": "electrical-lighting-cedar-park-tx",
+    "icon": "bolt",
+    "name": "Electrical, Lighting & EV Chargers",
+    "shortName": "Electrical & Lighting",
+    "city": "Cedar Park, TX",
+    "title": "Electrician Services in Cedar Park TX — Lighting & EV Chargers",
+    "description": "Electrical, lighting and EV charger work in Cedar Park, Leander and Austin TX. Fixtures, chandeliers, panel work and meter banks — performed by licensed electrical partners we engage and manage. Free written estimates.",
+    "h1": "Electrical, Lighting & EV Charger Services in Cedar Park, TX",
+    "intro": "Cedar Park's housing runs from 1970s ranch homes near Buttercup Creek and the established streets around Cypress Creek to the newer builds out toward Twin Creeks and Ranch at Brushy Creek — and the electrical questions are different in each. Older homes ask about panel capacity and tired wiring; newer ones ask for EV chargers, recessed lighting and fixtures swapped before move-in. Sanches Group manages your project start to finish. Licensed trades are handled by our licensed partners — one call, one name owns the result. You get one estimate, one point of contact, and the work itself is done by people licensed to do it.",
+    "included": [
+      "EV charger installation — Tesla Wall Connector and other Level 2 chargers, dedicated 240V circuits",
+      "Panel upgrades and breaker work — including older panels that can't carry a charger, hot tub or addition",
+      "Light fixture installation — pendants, sconces, recessed lighting, ceiling fixtures",
+      "Chandelier installation, including high ceilings and two-storey entries (rated boxes, proper rigging)",
+      "Concealed LED strip lighting in built-ins, shelving, media walls and under cabinets",
+      "Ceiling fan installation and replacement",
+      "Meter bank and electrical service rebuilds for apartment buildings and older properties",
+      "Troubleshooting — dead outlets, tripping breakers, flickering lights"
+    ],
+    "process": [
+      [
+        "Tell us what you need",
+        "Send photos of the space and the panel if you can. Panel capacity, run distance and access decide most of an electrical quote, and most of that is visible in a picture before anyone drives out."
+      ],
+      [
+        "Assessment and written estimate",
+        "Our licensed electrical partner assesses the job — panel capacity, circuit route, City of Cedar Park permit requirements — and you get one written price for the whole thing before work starts."
+      ],
+      [
+        "Licensed work, managed",
+        "The licensed contractor performs the work and pulls any permit required. For service and meter work we coordinate the utility disconnect and reconnect and the inspection sequence, so the house isn't sitting dark waiting on paperwork."
+      ],
+      [
+        "Test and walk it",
+        "Everything is tested in front of you — every fixture, every circuit, every label on the panel — before the job is called done."
+      ]
+    ],
+    "faq": [
+      [
+        "Are you licensed electricians?",
+        "We're a general contractor, so we run the whole job. For electrical work, our licensed electrical partners do the install and we manage it end to end."
+      ],
+      [
+        "How much does it cost to install an EV charger in a Cedar Park home?",
+        "For most Cedar Park homes with a modern 200-amp panel and the charger near the panel, the all-in figure typically lands between $900 and $2,500 including the charger. Older homes around Buttercup Creek and Anderson Mill West more often need panel work first, which moves it up. We break the real numbers down in our EV charger cost guide, and you get a written estimate for your house before anything starts."
+      ],
+      [
+        "My Cedar Park home has an older panel. Can it handle a charger or hot tub?",
+        "Sometimes — it depends on the panel's rating, how full it already is, and the load calculation. That's exactly what the assessment is for: our licensed partner runs the numbers and tells you honestly whether the panel carries it, needs a subpanel, or needs replacing. Nobody sells you an upgrade the math doesn't call for."
+      ],
+      [
+        "Who handles permits and inspections in Cedar Park?",
+        "The licensed electrical contractor pulls the City of Cedar Park permit where one is required, and we manage the schedule around the inspection. Service and meter work also involves your utility — Pedernales Electric across much of Cedar Park, Austin Energy in the southern pockets — and that coordination is part of the job, not an extra."
+      ],
+      [
+        "Can you hang a chandelier in a two-storey entry?",
+        "Yes. At that height it's a rigging job as much as an electrical one: the box has to be rated for the fixture's weight, the drop measured for the room rather than the ceiling, and the fixture lifted and leveled without marking the walls. Our work page shows a twenty-light chandelier we ran in a two-storey entry."
+      ],
+      [
+        "What areas do you cover for electrical work?",
+        "Cedar Park first, then Leander, Georgetown, Liberty Hill, Round Rock, Pflugerville and the greater Austin area — the same footprint as the rest of our work."
       ]
     ],
     "guides": [
