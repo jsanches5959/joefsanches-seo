@@ -328,7 +328,18 @@ const css = `
     .svc-grid { grid-template-columns: repeat(3, 1fr); }
   }
   @media (max-width: 860px) {
+    /* The section links can go on a phone — the page is one scroll — but the
+       phone number cannot. Most local searches are mobile and most of those
+       visitors came to call, so the number stays in the sticky header as a
+       bordered tap target next to the estimate button. */
     .nav-links li.nav-text { display: none; }
+    .nav-links li.nav-phone { display: block; }
+    .nav-links { gap: 12px; }
+    .nav-links li.nav-phone a {
+      color: var(--ink);
+      border: 1.5px solid var(--ink); border-radius: 6px;
+      padding: 9px 13px;
+    }
     .svc-grid { grid-template-columns: repeat(2, 1fr); }
     .how { grid-template-columns: 1fr; }
     .name-grid { grid-template-columns: 1fr; }
@@ -388,7 +399,7 @@ const SERVICES = [
   { icon: 'planks',   name: 'Flooring',                 note: 'LVP, tile, laminate, repairs',            href: '/services/flooring-installation-leander-tx' },
   { icon: 'deck',     name: 'Patios & Decks',           note: 'New builds and repairs',                  href: '/services/deck-patio-builder-leander-tx' },
   { icon: 'toolbox',  name: 'Built-Ins & Carpentry',    note: 'Media walls, shelving, trim, doors',      href: '/services/built-ins-carpentry-leander-tx' },
-  { icon: 'bolt',     name: 'Lighting & EV Chargers',   note: 'Fixtures, chandeliers, Tesla chargers',   href: '/work' },
+  { icon: 'bolt',     name: 'Lighting & EV Chargers',   note: 'Fixtures, chandeliers, Tesla chargers',   href: '/services/electrical-lighting-leander-tx' },
   { icon: 'roof',     name: 'Roofing, Electrical, Plumbing & HVAC', note: 'Meter work too — through licensed partners', href: '#contact' },
 ];
 
@@ -508,7 +519,7 @@ export default function Home() {
           <ul className="nav-links">
             <li className="nav-text"><a href="#services">Services</a></li>
             <li className="nav-text"><a href="/work">Our Work</a></li>
-            <li className="nav-text"><a href="tel:5126638867">512-663-8867</a></li>
+            <li className="nav-text nav-phone"><a href="tel:5126638867">512-663-8867</a></li>
             <li><a href="#contact" className="nav-call">Free Estimate</a></li>
           </ul>
         </div>
