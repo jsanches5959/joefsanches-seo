@@ -947,5 +947,92 @@
         "title": "Eggshell, satin or semi-gloss: picking a sheen"
       }
     ]
+  },
+  {
+    "slug": "drywall-repair-cedar-park-tx",
+    "icon": "trowel",
+    "name": "Drywall Repair & Installation",
+    "shortName": "Drywall Repair",
+    "city": "Cedar Park, TX",
+    "title": "Drywall Repair in Cedar Park TX — Patch & Texture Matching",
+    "description": "Drywall repair in Cedar Park, Leander and Austin TX. Holes, cracks, water damage, texture matching, popcorn ceiling removal and full sheetrock installs. Typical small patch $200–$400. Free written estimates.",
+    "h1": "Drywall Repair & Installation in Cedar Park, TX",
+    "intro": "Most drywall calls in Cedar Park are small: a doorknob through a bedroom wall in Buttercup Creek, a settling crack over a doorway in Anderson Mill West, a ceiling stain after a roof leak near Cypress Creek. Those repairs are easy to do and easy to do badly — a patch that doesn't match the surrounding texture is more obvious than the hole was. In the newer builds out toward Twin Creeks and Ranch at Brushy Creek it's usually nail pops and seam cracks in the first few years. We match texture before we finish, so the repair disappears into the wall. Sanches Group manages your project start to finish — one call, one name owns the result.",
+    "included": [
+      "Hole and crack repair — doorknobs, furniture damage, settling cracks common on Central Texas clay soil",
+      "Water damage repair, including ceiling cut-out and replacement",
+      "Texture matching — orange peel, knockdown, skip trowel, smooth",
+      "Full sheetrock hanging, taping, floating, and finishing",
+      "Corner bead repair and replacement",
+      "Popcorn ceiling removal and retexture — common in Cedar Park's 1970s–1990s homes",
+      "Nail pop and seam repair in newer Twin Creeks, Ranch at Brushy Creek and Whitestone-area builds",
+      "Paint to match after repair (see painting services)"
+    ],
+    "process": [
+      [
+        "Look at it",
+        "Add photos to your estimate request and we can usually tell you what it needs before we drive out. Bigger jobs get a walk-through."
+      ],
+      [
+        "Written estimate",
+        "You get the price in writing before anything starts. No hourly surprises."
+      ],
+      [
+        "Repair and texture",
+        "We cut back to solid material, patch, and match the existing texture — not a generic finish."
+      ],
+      [
+        "Clean up",
+        "Drywall dust travels. We contain the work area and leave the room clean."
+      ]
+    ],
+    "faq": [
+      [
+        "How much does drywall repair cost in Cedar Park TX?",
+        "Typical ranges in Cedar Park: a small hole patch (doorknob or fist-sized) is $200–$400, a medium hole up to about 12 inches is $300–$550, and a water-damaged ceiling section is $600–$1,500. There is a $200–$350 minimum service call because a proper patch takes multiple coats across multiple visits. We give a written estimate before starting — see our drywall cost guide for the full breakdown."
+      ],
+      [
+        "Can you match my existing wall texture?",
+        "Yes. Texture matching is the part most repairs get wrong. We identify the existing texture — orange peel, knockdown, skip trowel, or smooth — and match it before finishing, so the patch isn't visible once painted."
+      ],
+      [
+        "Do you repair water-damaged ceilings?",
+        "Yes. We cut out the damaged section back to solid material, replace it, texture to match, and paint. If the leak is still active, that needs to be fixed first — we'll tell you if that's the case rather than covering it up."
+      ],
+      [
+        "Why does my Cedar Park home keep getting cracks over doors and windows?",
+        "Central Texas clay soil expands and contracts with moisture, and Cedar Park homes move a little with it. Hairline cracks at door and window corners are usually cosmetic settling, not foundation failure. We cut, tape and texture them properly so they stay closed longer — and we'll tell you honestly if a crack pattern looks like something a foundation company should see."
+      ],
+      [
+        "How fast can you get out here?",
+        "For small repairs in Cedar Park, Leander and Georgetown we can usually schedule within the same week. Request an estimate with a few photos and we'll tell you what we can do. Batching several patches into one visit costs less than separate calls."
+      ],
+      [
+        "Do you paint after the repair?",
+        "Yes. We can prime and paint the repaired area, or repaint the full wall if matching an aged paint color would leave a visible patch."
+      ]
+    ],
+    "guides": [
+      {
+        "slug": "drywall-repair-cost-leander-cedar-park",
+        "title": "What drywall repair actually costs here"
+      },
+      {
+        "slug": "drywall-cracks-when-to-worry-central-texas",
+        "title": "Which drywall cracks mean foundation trouble"
+      },
+      {
+        "slug": "match-drywall-texture-orange-peel-knockdown",
+        "title": "Orange peel vs knockdown: why your patch shows"
+      },
+      {
+        "slug": "nail-pops-new-construction-texas",
+        "title": "Nail pops in a new build: what actually fixes them"
+      },
+      {
+        "slug": "water-damaged-drywall-patch-or-replace",
+        "title": "Water-damaged drywall: patch, replace or mold?"
+      }
+    ]
   }
 ]
