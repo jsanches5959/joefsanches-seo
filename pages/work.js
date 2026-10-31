@@ -259,10 +259,8 @@ export default function Work({ projects }) {
               <p>
                 Our own crews self-perform construction and finish work: remodeling, carpentry,
                 drywall, paint, flooring. Licensed trades &mdash; electrical, plumbing, HVAC and
-                roofing &mdash; are performed by appropriately licensed contractors we engage and
-                manage. Sanches Group does not hold, and does not claim to hold, trade
-                qualifier licenses in those categories. We manage the scope, the schedule and
-                the standard, and we stand behind the finished job.
+                roofing &mdash; are handled by our licensed partners, and we manage the scope,
+                the schedule and the standard end to end. We stand behind the finished job.
               </p>
             </div>
           </div>

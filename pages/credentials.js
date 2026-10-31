@@ -170,12 +170,10 @@ export default function Credentials() {
           <section className="cr-card cr-note">
             <h2>One thing we do not claim</h2>
             <p>
-              Texas does not require a statewide general contractor license for general
-              construction and remodeling, and we do not advertise or perform licensed
-              plumbing, electrical, or HVAC work directly. Work that requires a licensed
-              trade is referred to or subcontracted through appropriately licensed
-              professionals. We would rather tell you that plainly than let a list of
-              credentials imply something broader.
+              Texas does not license general contractors statewide, and Sanches Group is a
+              general contractor — we run the whole job. Licensed trades are handled by our
+              licensed partners: one call, one name owns the result. We would rather tell
+              you that plainly than let a list of credentials imply something broader.
             </p>
           </section>
 
