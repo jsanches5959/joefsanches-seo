@@ -1034,5 +1034,83 @@
         "title": "Water-damaged drywall: patch, replace or mold?"
       }
     ]
+  },
+  {
+    "slug": "interior-exterior-painting-cedar-park-tx",
+    "icon": "roller",
+    "name": "Interior & Exterior Painting",
+    "shortName": "Painting",
+    "city": "Cedar Park, TX",
+    "title": "Painting Contractor in Cedar Park TX — Interior & Exterior",
+    "description": "Interior and exterior painting in Cedar Park, Leander and Georgetown TX. Typical bedroom $350–$650 walls only, whole-house interior (2,000 sq ft) $4,000–$8,000. Repaints, cabinets, trim. Free written estimates.",
+    "h1": "Interior & Exterior Painting in Cedar Park, TX",
+    "intro": "Painting is mostly preparation. The visible part — rolling color on a wall — is the fast part. What separates a paint job that looks good for a decade from one that peels in two years is what happens before the first coat: patching, caulking, sanding, priming, and masking. That's where we spend the time. In Cedar Park that means sun-beaten south and west elevations in Ranch at Brushy Creek and Twin Creeks, tired 1980s siding and trim in Buttercup Creek and Anderson Mill, and popcorn ceilings and builder-grade flat paint in the older Cypress Creek homes. Sanches Group manages your project start to finish. Licensed trades are handled by our licensed partners — one call, one name owns the result.",
+    "included": [
+      "Interior repaints — whole house, single rooms, ceilings",
+      "Exterior painting — siding, trim, soffits, fascia, doors",
+      "Cabinet painting and refinishing",
+      "Trim, baseboards, crown molding, and door casings",
+      "Drywall patching and caulking as part of prep",
+      "Commercial and multi-family interiors",
+      "Color consultation if you want a second opinion"
+    ],
+    "process": [
+      [
+        "Walk-through",
+        "We look at the surfaces, note repairs needed, and talk through colors and sheen."
+      ],
+      [
+        "Written estimate",
+        "Itemized by area, with prep work spelled out so you can compare bids honestly."
+      ],
+      [
+        "Prep",
+        "Patch, caulk, sand, mask, and prime. This is the majority of the labor on a good paint job."
+      ],
+      [
+        "Paint and inspect",
+        "Two coats unless the job calls for otherwise. We walk it with you before we call it done."
+      ]
+    ],
+    "faq": [
+      [
+        "How much does interior painting cost in Cedar Park TX?",
+        "Typical ranges in Cedar Park: a 12x12 bedroom is $350–$650 for walls only ($550–$1,000 with trim and ceiling), a living room is $500–$1,000 walls only, and a whole-house interior on a 2,000 sq ft home is $4,000–$8,000 walls only or $6,500–$12,000 including trim and ceilings. Cabinet refinishing for an average kitchen runs $3,000–$7,000. The spread is mostly prep — see our interior painting cost guide for the room-by-room breakdown. We give a written estimate itemized by area before starting."
+      ],
+      [
+        "How long does an interior repaint take?",
+        "A single room is often a day. A full interior repaint on an average Cedar Park home typically runs several days depending on prep, trim, and ceilings. We give you a schedule with the estimate."
+      ],
+      [
+        "Do you paint kitchen cabinets?",
+        "Yes. Cabinets need degreasing, sanding, and a bonding primer to hold up to daily use — it's a different process from wall painting, and shortcuts on cabinets show fast."
+      ],
+      [
+        "What time of year is best for exterior painting in Central Texas?",
+        "Spring and fall are ideal. Mid-summer heat can cause paint to dry too fast and affect adhesion, so exterior work in July and August is scheduled for earlier in the day. Cedar Park's south- and west-facing walls take the worst of the sun and usually fail first."
+      ],
+      [
+        "Do you do apartment and rental unit painting?",
+        "Yes. We handle unit turns for property managers across the Austin metro, including paint, drywall repair, and flooring on a turn schedule."
+      ],
+      [
+        "Do you serve my Cedar Park neighborhood?",
+        "We paint across Cedar Park — Buttercup Creek, Anderson Mill, Cypress Creek, Twin Creeks, Ranch at Brushy Creek, Whitestone and Block House Creek — plus Leander and Georgetown. If you're nearby and unsure, ask; we cover most of the northwest Austin metro."
+      ]
+    ],
+    "guides": [
+      {
+        "slug": "interior-painting-cost-leander-tx",
+        "title": "Interior painting cost, room by room"
+      },
+      {
+        "slug": "paint-sheen-guide-eggshell-satin-semigloss",
+        "title": "Eggshell, satin or semi-gloss: picking a sheen"
+      },
+      {
+        "slug": "exterior-paint-texas-heat-how-long-lasts",
+        "title": "Why exterior paint fails fast in Texas"
+      }
+    ]
   }
 ]
