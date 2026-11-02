@@ -52,7 +52,7 @@ export default function Service({ service, others }) {
       url: baseUrl,
       image: `${baseUrl}/og-image.jpg`,
       sameAs: [
-        'https://g.page/r/CS5gIVIj8I-AEBE',
+        'https://g.page/r/Ccptwgcf36ilEBM/review',
         'https://www.facebook.com/joefsanches',
         'https://www.linkedin.com/in/joefsanches',
       ],
