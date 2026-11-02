@@ -435,7 +435,7 @@ const orgSchema = {
      come from, so the connection is worth making explicit rather than leaving
      Google to infer it from a matching phone number. */
   sameAs: [
-    'https://g.page/r/CS5gIVIj8I-AEBE',
+    'https://g.page/r/Ccptwgcf36ilEBM/review',
     'https://www.facebook.com/joefsanches',
     'https://www.linkedin.com/in/joefsanches',
   ],
