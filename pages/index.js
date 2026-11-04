@@ -519,6 +519,7 @@ export default function Home() {
           <ul className="nav-links">
             <li className="nav-text"><a href="#services">Services</a></li>
             <li className="nav-text"><a href="/work">Our Work</a></li>
+            <li className="nav-text"><a href="/pros">Meet the Pros</a></li>
             <li className="nav-text nav-phone"><a href="tel:5126638867">512-663-8867</a></li>
             <li><a href="#contact" className="nav-call">Free Estimate</a></li>
           </ul>
@@ -597,6 +598,11 @@ export default function Home() {
           <p className="cap-foot">
             Sanches Group manages your project start to finish. Licensed trades are handled
             by our licensed partners — one call, one name owns the result.
+          </p>
+          <p className="cap-foot">
+            Need one specific trade? <a href="/pros">Meet the pros</a> — garage doors,
+            electrical, plumbing, HVAC, painting, drywall and cleaning, dispatched
+            through Sanches Group.
           </p>
         </div>
       </section>
@@ -908,6 +914,7 @@ export default function Home() {
         <img src="/logo.png" alt="Sanches Group" className="mark" width="64" height="64" />
         <div className="foot-nav">
           <a href="/work">Recent Work</a>
+          <a href="/pros">Meet the Pros</a>
           <a href="/guides">Guides</a>
           <a href="/tree-removal-leander-tx">Tree Service</a>
           <a href="#services">Services</a>
