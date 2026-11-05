@@ -1566,5 +1566,88 @@
         "title": "Picking a paint sheen you won't regret"
       }
     ]
+  },
+  {
+    "slug": "tree-removal-cedar-park-tx",
+    "icon": "tree",
+    "name": "Tree Removal & Trimming",
+    "shortName": "Tree Service",
+    "city": "Cedar Park, TX",
+    "title": "Tree Removal & Trimming in Cedar Park TX — Oaks, Stumps & Cleanup",
+    "description": "Tree removal, trimming and stump grinding in Cedar Park, Leander and Georgetown TX. Angi puts average Austin-area removal at about $736, most jobs $256–$1,962. Free written estimates.",
+    "h1": "Tree Removal & Trimming in Cedar Park, TX",
+    "intro": "Cedar Park sits on the edge of the Hill Country and its trees show it: mature live oaks over the roofs in Buttercup Creek and Cypress Creek, cedar (Ashe juniper) thick on the west side, hackberries and Arizona ash planted in the 1990s now declining in Anderson Mill. The work is different in each case — an oak needs clearance and oak-wilt timing, a dead ash over a driveway needs to come down in sections, and a fence-line hackberry just needs to go before it takes the fence with it. November through January is the heart of the safe oak-trimming window, so this is the season to get it done. Sanches Group manages your project start to finish. Licensed trades are handled by our licensed partners — one call, one name owns the result.",
+    "included": [
+      "Tree removal — dead, dying, leaning or in the way, taken down in sections over houses, fences and driveways",
+      "Trimming and pruning — crown thinning, raising and shaping, with every oak cut painted",
+      "Oak work scheduled inside the oak-wilt safe window (July through January)",
+      "Clearance and deadwood — limbs off the roof, house, driveway and street before they come down on their own",
+      "Stump grinding below grade so you can plant, sod or mow over it, quoted as its own line",
+      "Storm and limb cleanup — broken limbs, split trunks and debris, structures prioritized",
+      "Cedar (Ashe juniper) clearing for fire safety, allergies and room for oaks",
+      "Lot and brush clearing — fence lines, back acreage and new-build lots"
+    ],
+    "process": [
+      [
+        "Send photos",
+        "Add photos of the tree and what's around it to your estimate request. Size, lean and what's underneath decide most of the price, and most jobs can be roughly priced from photos."
+      ],
+      [
+        "Written estimate",
+        "You get the price in writing before anything starts, with haul-off and stump grinding listed separately so you can choose."
+      ],
+      [
+        "Scheduled work",
+        "We show up on the day we said, protect the lawn, beds and driveway, and take trees down in sections where there's something underneath."
+      ],
+      [
+        "Full cleanup",
+        "Limbs, logs and debris are hauled off and the yard is raked and blown. You shouldn't be able to tell where we stacked anything."
+      ]
+    ],
+    "faq": [
+      [
+        "How much does tree removal cost in Cedar Park TX?",
+        "Angi's Austin-area data puts tree removal at about $736 on average, with most homeowners paying between $256 and $1,962 — by height, roughly $100–$400 for a tree up to 30 feet, $350–$1,100 at 30–60 feet, and $650–$1,350 at 60–80 feet, with tall or hard-to-reach trees running higher. LawnStarter's Cedar Park data puts trimming at roughly $245–$1,029 per tree depending on size, and stump grinding averages about $288 per stump. A large live oak over a roof is a rigging job and prices at the top of the range. Your written estimate is for your tree, not an average."
+      ],
+      [
+        "When is it safe to trim oak trees in Cedar Park?",
+        "July through January. Oak wilt spreads through fresh wounds, and the Texas A&M Forest Service recommends avoiding pruning or wounding oaks from February through June, when the beetles that carry it are most active. Every cut on an oak should be painted immediately, in any season — we follow both rules on every oak we touch, which makes fall and winter the right time to book oak work."
+      ],
+      [
+        "Do I need a permit or HOA approval to remove a tree in Cedar Park?",
+        "For a typical backyard tree on an existing home, usually not from the city — Cedar Park's tree rules mainly apply to development and construction. Many Cedar Park HOAs do require architectural approval first, especially for front-yard trees, and some addresses near Cedar Park are actually inside Austin, which protects trees above a certain trunk size. We'll tell you if a tree looks like it may be covered before we quote the removal, so you can check first."
+      ],
+      [
+        "Do you haul away the wood and grind the stump?",
+        "Yes. Haul-off is included unless you'd like to keep the firewood. Stump grinding is quoted as a separate line so you can decide — grinding goes below grade so you can plant, sod or mow over the spot."
+      ],
+      [
+        "A tree is touching a power line. Can you remove it?",
+        "Call your electric provider first — across most of Cedar Park that's Pedernales Electric. Lines must be made safe by the utility before anyone works near them. Once they've cleared it, we can take care of the tree and the cleanup."
+      ],
+      [
+        "What Cedar Park neighborhoods do you cover for tree work?",
+        "All of Cedar Park — Buttercup Creek, Anderson Mill, Cypress Creek, Twin Creeks, Ranch at Brushy Creek, Whitestone and Block House Creek — plus Leander, Georgetown, Liberty Hill, Round Rock, Pflugerville and the greater Austin area. We also handle common-area trees and storm cleanup for HOAs and property managers."
+      ]
+    ],
+    "guides": [
+      {
+        "slug": "tree-removal-cost-leander-tx",
+        "title": "How much tree removal costs here"
+      },
+      {
+        "slug": "tree-trimming-cost-cedar-park-tx",
+        "title": "Tree trimming cost in Cedar Park and Leander"
+      },
+      {
+        "slug": "stump-grinding-cost-leander-cedar-park",
+        "title": "Stump grinding cost, and when to leave the stump"
+      },
+      {
+        "slug": "when-to-trim-oak-trees-central-texas",
+        "title": "When to trim oaks: the oak wilt rules"
+      }
+    ]
   }
 ]
