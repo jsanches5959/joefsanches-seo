@@ -1649,5 +1649,84 @@
         "title": "When to trim oaks: the oak wilt rules"
       }
     ]
+  },
+  {
+    "slug": "electrical-lighting-round-rock-tx",
+    "icon": "bolt",
+    "name": "Electrical, Lighting & EV Chargers",
+    "shortName": "Electrical & Lighting",
+    "city": "Round Rock, TX",
+    "title": "Electrician Services in Round Rock TX — Lighting & EV Chargers",
+    "description": "Electrical, lighting and EV charger work in Round Rock, Leander and Cedar Park TX. Fixtures, chandeliers, panel work and EV chargers — performed by licensed electrical partners we engage and manage. Free written estimates.",
+    "h1": "Electrical, Lighting & EV Charger Services in Round Rock, TX",
+    "intro": "Round Rock's housing runs from 1970s and 1980s homes in Round Rock West and the older streets around Brushy Creek to the 1990s golf-course homes in Forest Creek and the newer master-planned builds in Teravista, Paloma Lake and Siena — and the electrical questions are different in each. Older homes ask about panel capacity, tired wiring and whether a 100-amp panel can carry modern loads; newer ones ask for EV chargers, recessed lighting and fixtures swapped before move-in. Sanches Group manages your project start to finish. Licensed trades are handled by our licensed partners — one call, one name owns the result. You get one estimate, one point of contact, and the work itself is done by people licensed to do it.",
+    "included": [
+      "EV charger installation — Tesla Wall Connector and other Level 2 chargers, dedicated 240V circuits",
+      "Panel upgrades and breaker work — including older panels that can't carry a charger, hot tub or addition",
+      "Light fixture installation — pendants, sconces, recessed lighting, ceiling fixtures",
+      "Chandelier installation, including high ceilings and two-storey entries (rated boxes, proper rigging)",
+      "Concealed LED strip lighting in built-ins, shelving, media walls and under cabinets",
+      "Ceiling fan installation and replacement",
+      "Meter bank and electrical service rebuilds for apartment buildings and older properties",
+      "Troubleshooting — dead outlets, tripping breakers, flickering lights"
+    ],
+    "process": [
+      [
+        "Tell us what you need",
+        "Send photos of the space and the panel if you can. Panel capacity, run distance and access decide most of an electrical quote, and most of that is visible in a picture before anyone drives out."
+      ],
+      [
+        "Assessment and written estimate",
+        "Our licensed electrical partner assesses the job — panel capacity, circuit route, City of Round Rock permit requirements — and you get one written price for the whole thing before work starts."
+      ],
+      [
+        "Licensed work, managed",
+        "The licensed contractor performs the work and pulls any permit required. For service and meter work we coordinate the utility disconnect and reconnect and the inspection sequence, so the house isn't sitting dark waiting on paperwork."
+      ],
+      [
+        "Test and walk it",
+        "Everything is tested in front of you — every fixture, every circuit, every label on the panel — before the job is called done."
+      ]
+    ],
+    "faq": [
+      [
+        "Are you licensed electricians?",
+        "We're a general contractor, so we run the whole job. For electrical work, our licensed electrical partners do the install and we manage it end to end."
+      ],
+      [
+        "How much does it cost to install an EV charger in a Round Rock home?",
+        "For most Round Rock homes with a modern 200-amp panel and the charger near the panel, the all-in figure typically lands between $900 and $2,500 including the charger. Install-only pricing in the Round Rock market commonly runs $500–$2,000 depending on run distance, and a long run across the house or a panel upgrade moves it up. We break the real numbers down in our EV charger cost guide, and you get a written estimate for your house before anything starts."
+      ],
+      [
+        "My Round Rock home has an older panel. Can it handle a charger or hot tub?",
+        "Sometimes — it depends on the panel's rating, how full it already is, and the load calculation. That's exactly what the assessment is for: our licensed partner runs the numbers and tells you honestly whether the panel carries it, needs a subpanel, or needs replacing. Nobody sells you an upgrade the math doesn't call for."
+      ],
+      [
+        "Who handles permits and inspections in Round Rock?",
+        "The licensed electrical contractor pulls the City of Round Rock permit where one is required — a hard-wired Level 2 EV charger, for example, does require a permit in Round Rock — and we manage the schedule around the inspection. Service and meter work also involves your utility — Oncor delivers power across most of Round Rock — and that coordination is part of the job, not an extra."
+      ],
+      [
+        "Can you hang a chandelier in a two-storey entry?",
+        "Yes. At that height it's a rigging job as much as an electrical one: the box has to be rated for the fixture's weight, the drop measured for the room rather than the ceiling, and the fixture lifted and leveled without marking the walls. Our work page shows a twenty-light chandelier we ran in a two-storey entry."
+      ],
+      [
+        "What areas do you cover for electrical work?",
+        "Round Rock first, then Leander, Cedar Park, Georgetown, Liberty Hill, Pflugerville and the greater Austin area — the same footprint as the rest of our work."
+      ]
+    ],
+    "guides": [
+      {
+        "slug": "ev-charger-installation-cost-leander-cedar-park",
+        "title": "What an EV charger install actually costs here"
+      },
+      {
+        "slug": "panel-upgrade-cost-leander-cedar-park",
+        "title": "What a panel upgrade actually costs here"
+      },
+      {
+        "slug": "meter-bank-replacement-austin-apartments",
+        "title": "Meter bank replacement for older Austin apartments"
+      }
+    ]
   }
 ]
