@@ -1980,5 +1980,91 @@
         "title": "Why exterior paint fails fast in Texas"
       }
     ]
+  },
+  {
+    "slug": "home-remodeling-round-rock-tx",
+    "icon": "hardhat",
+    "name": "Remodeling & General Construction",
+    "shortName": "Remodeling",
+    "city": "Round Rock, TX",
+    "title": "Remodeling Contractor in Round Rock TX — Kitchens & Baths",
+    "description": "Remodeling contractor in Round Rock, Leander and Cedar Park TX. Kitchens, baths, additions, full interiors. Typical mid-range bath $18,000–$35,000, kitchen $30,000–$75,000. Written scope, free estimate.",
+    "h1": "Remodeling & General Construction in Round Rock, TX",
+    "intro": "Remodels go wrong in predictable ways: a scope that was never written down, a crew that changes halfway through, and a contractor you stop being able to reach. We work from a written scope, and you deal with one point of contact for the whole project — not a salesperson at the start and a voicemail box after. In Round Rock that usually means updating 1990s–2000s kitchens in Forest Creek, Cat Hollow and Round Rock West, opening up primary baths in Teravista, Paloma Lake and Siena, and fixing layout and finish problems in the older Brushy Creek homes. Sanches Group manages your project start to finish. Licensed trades are handled by our licensed partners — one call, one name owns the result.",
+    "included": [
+      "Kitchen remodels — cabinets, counters, backsplash, flooring",
+      "Bathroom remodels — tile, vanities, fixtures, surrounds",
+      "Room additions and structural build-outs",
+      "Full interior renovations",
+      "Flooring — tile, LVP, laminate, hardwood",
+      "Trim, millwork, and built-ins",
+      "Commercial tenant build-outs and finish-out"
+    ],
+    "process": [
+      [
+        "Scope meeting",
+        "We walk the space, talk through what you want, and identify anything that changes the price — structural, permitting, or trade work."
+      ],
+      [
+        "Written scope and estimate",
+        "Line by line, so you know what is and isn't included. This is the document that prevents disputes later."
+      ],
+      [
+        "Schedule",
+        "You get a sequence and a timeline before demo starts."
+      ],
+      [
+        "Build",
+        "Owner on site. Licensed trade partners brought in where the work requires them."
+      ],
+      [
+        "Punch and close",
+        "We walk the finished work with you and complete the punch list before final invoice."
+      ]
+    ],
+    "faq": [
+      [
+        "How much does a kitchen or bathroom remodel cost in Round Rock TX?",
+        "Typical mid-range ranges in Round Rock: a bathroom remodel is $18,000–$35,000, a kitchen remodel is $30,000–$75,000, and a full primary-suite or multi-room renovation runs higher depending on layout changes, tile, cabinets and fixtures. That sits inside the current Round Rock market — local full-kitchen work is commonly quoted $25,000–$60,000 and primary-bath overhauls $22,000–$40,000. Cosmetic refreshes — paint, fixtures, hardware, no layout change — cost less. You get a written, line-by-line estimate for your house before anything starts, so the range becomes a real number."
+      ],
+      [
+        "Do you need a license to be a general contractor in Texas?",
+        "Texas does not license general contractors statewide. We carry full commercial liability insurance, and licensed trades are handled by our licensed partners — one call, one name owns the result."
+      ],
+      [
+        "How long does a kitchen or bathroom remodel take?",
+        "A bathroom refresh is typically 2–4 weeks once materials are on site; a full kitchen with layout changes is typically 5–10 weeks. Material lead times move the schedule more than labor does. We give a written schedule with the estimate rather than a generic range."
+      ],
+      [
+        "Do you handle permits in Round Rock?",
+        "Where a permit is required, we coordinate it with the City of Round Rock. Not every remodel needs one — cosmetic work generally doesn't, structural, electrical, plumbing and layout changes generally do. We'll tell you which category your project falls in."
+      ],
+      [
+        "Can I live in the house during a remodel?",
+        "Usually yes for a single-room project, with the work area contained. Full interior renovations are harder to live through. We're straight with you about this before you commit."
+      ],
+      [
+        "Do I need HOA approval for a remodel in Round Rock?",
+        "Interior work usually does not. Exterior changes, additions and anything that alters the footprint or elevation in communities like Teravista, Forest Creek, Cat Hollow and Siena usually need an HOA architectural submittal first. We flag it before work starts, not after a letter arrives."
+      ],
+      [
+        "What Round Rock neighborhoods do you remodel in?",
+        "Forest Creek, Cat Hollow, Round Rock West, Brushy Creek, Teravista, Paloma Lake and Siena — plus Leander, Cedar Park, Georgetown, Liberty Hill and the greater Austin area."
+      ]
+    ],
+    "guides": [
+      {
+        "slug": "drywall-repair-cost-leander-cedar-park",
+        "title": "What drywall repair actually costs here"
+      },
+      {
+        "slug": "interior-painting-cost-leander-tx",
+        "title": "Interior painting cost, room by room"
+      },
+      {
+        "slug": "match-drywall-texture-orange-peel-knockdown",
+        "title": "Matching drywall texture so the patch disappears"
+      }
+    ]
   }
 ]
