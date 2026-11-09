@@ -1894,5 +1894,91 @@
         "title": "Water-damaged drywall: patch, replace or mold?"
       }
     ]
+  },
+  {
+    "slug": "interior-exterior-painting-round-rock-tx",
+    "icon": "roller",
+    "name": "Interior & Exterior Painting",
+    "shortName": "Painting",
+    "city": "Round Rock, TX",
+    "title": "Painting Contractor in Round Rock TX — Interior & Exterior",
+    "description": "Interior and exterior painting in Round Rock, Leander and Cedar Park TX. Typical bedroom $350–$650 walls only, whole-house interior (2,000 sq ft) $4,000–$8,000. Repaints, cabinets, trim. Free written estimates.",
+    "h1": "Interior & Exterior Painting in Round Rock, TX",
+    "intro": "Painting is mostly preparation. The visible part — rolling color on a wall — is the fast part. What separates a paint job that looks good for a decade from one that peels in two years is what happens before the first coat: patching, caulking, sanding, priming, and masking. That's where we spend the time. In Round Rock that means sun-beaten south and west elevations in Forest Creek and Cat Hollow, tired 1970s–1990s siding and trim in Round Rock West and Brushy Creek, and builder-grade flat paint ready for a real color in the newer Teravista, Paloma Lake and Siena builds. Sanches Group manages your project start to finish. Licensed trades are handled by our licensed partners — one call, one name owns the result.",
+    "included": [
+      "Interior repaints — whole house, single rooms, ceilings",
+      "Exterior painting — siding, trim, soffits, fascia, doors",
+      "Cabinet painting and refinishing",
+      "Trim, baseboards, crown molding, and door casings",
+      "Drywall patching and caulking as part of prep",
+      "Commercial and multi-family interiors",
+      "Color consultation if you want a second opinion"
+    ],
+    "process": [
+      [
+        "Walk-through",
+        "We look at the surfaces, note repairs needed, and talk through colors and sheen."
+      ],
+      [
+        "Written estimate",
+        "Itemized by area, with prep work spelled out so you can compare bids honestly."
+      ],
+      [
+        "Prep",
+        "Patch, caulk, sand, mask, and prime. This is the majority of the labor on a good paint job."
+      ],
+      [
+        "Paint and inspect",
+        "Two coats unless the job calls for otherwise. We walk it with you before we call it done."
+      ]
+    ],
+    "faq": [
+      [
+        "How much does interior painting cost in Round Rock TX?",
+        "Typical ranges in Round Rock: a 12x12 bedroom is $350–$650 for walls only ($550–$1,000 with trim and ceiling), a living room is $500–$1,000 walls only, and a whole-house interior on a 2,000 sq ft home is $4,000–$8,000 walls only or $6,500–$12,000 including trim and ceilings. Cabinet refinishing for an average kitchen runs $3,000–$7,000. For market context, a Round Rock 2026 estimator puts a typical 1,500 sq ft interior at $4,260–$5,610 for walls only, and published Austin-area guides put a single room at $450–$900 and a whole-home interior around $4,500–$9,000. The spread is mostly prep — see our interior painting cost guide for the room-by-room breakdown. We give a written estimate itemized by area before starting."
+      ],
+      [
+        "How much does exterior painting cost in Round Rock TX?",
+        "A single-storey exterior on an average Round Rock home typically runs $4,000–$8,000 and a two-storey $6,500–$12,000, depending on siding condition, height and access, and how much caulking and trim repair the prep uncovers. South- and west-facing walls fail first in Central Texas sun and often need the most work. We price exteriors by the elevation and spell out the prep in the written estimate, so you can see what you're paying for."
+      ],
+      [
+        "How long does an interior repaint take?",
+        "A single room is often a day. A full interior repaint on an average Round Rock home typically runs several days depending on prep, trim, and ceilings. We give you a schedule with the estimate."
+      ],
+      [
+        "Do you paint kitchen cabinets?",
+        "Yes. Cabinets need degreasing, sanding, and a bonding primer to hold up to daily use — it's a different process from wall painting, and shortcuts on cabinets show fast."
+      ],
+      [
+        "Do I need HOA approval to change my exterior color in Round Rock?",
+        "In many Round Rock communities — Teravista, Forest Creek, Cat Hollow and Siena among them — yes, an exterior color change needs HOA architectural approval before work starts, even when the new color is close to the old one. A repaint in the same color usually doesn't. We can paint to an approved palette and give you the color names and product details your HOA asks for; get the approval in hand first so the job isn't stopped mid-prep."
+      ],
+      [
+        "What time of year is best for exterior painting in Central Texas?",
+        "Spring and fall are ideal. Mid-summer heat can cause paint to dry too fast and affect adhesion, so exterior work in July and August is scheduled for earlier in the day. Round Rock's south- and west-facing walls take the worst of the sun and usually fail first."
+      ],
+      [
+        "Do you do apartment and rental unit painting?",
+        "Yes. We handle unit turns for property managers across the Austin metro, including paint, drywall repair, and flooring on a turn schedule."
+      ],
+      [
+        "Do you serve my Round Rock neighborhood?",
+        "We paint across Round Rock — Round Rock West, Brushy Creek, Forest Creek, Teravista, Paloma Lake, Siena, Cat Hollow and Meadows at Chandler Creek — plus Leander, Cedar Park and Georgetown. If you're nearby and unsure, ask; we cover most of the northwest Austin metro."
+      ]
+    ],
+    "guides": [
+      {
+        "slug": "interior-painting-cost-leander-tx",
+        "title": "Interior painting cost, room by room"
+      },
+      {
+        "slug": "paint-sheen-guide-eggshell-satin-semigloss",
+        "title": "Eggshell, satin or semi-gloss: picking a sheen"
+      },
+      {
+        "slug": "exterior-paint-texas-heat-how-long-lasts",
+        "title": "Why exterior paint fails fast in Texas"
+      }
+    ]
   }
 ]
