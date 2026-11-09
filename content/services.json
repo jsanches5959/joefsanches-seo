@@ -2066,5 +2066,80 @@
         "title": "Matching drywall texture so the patch disappears"
       }
     ]
+  },
+  {
+    "slug": "pressure-washing-round-rock-tx",
+    "icon": "sprayer",
+    "name": "Pressure Washing",
+    "shortName": "Pressure Washing",
+    "city": "Round Rock, TX",
+    "title": "Pressure Washing in Round Rock TX — Driveways & Siding",
+    "description": "Pressure washing in Round Rock, Leander and Cedar Park TX. Driveways, sidewalks, siding, patios and pool surrounds. Typical driveway $100–$250, house wash $186–$459. Free estimates.",
+    "h1": "Pressure Washing in Round Rock, TX",
+    "intro": "Central Texas is hard on concrete and siding — limestone dust, hard water, oak pollen, and mildew on anything shaded. In Round Rock that shows up as black algae streaks on driveways under the live oaks in Brushy Creek and Round Rock West, green film on north-facing siding in Forest Creek and Cat Hollow, and slippery pool surrounds in Teravista, Paloma Lake and Siena. Pressure washing is the cheapest thing you can do to make a property look maintained, and on a home going up for sale it's usually the highest-return hour of work on the whole punch list. Sanches Group manages your project start to finish. Licensed trades are handled by our licensed partners — one call, one name owns the result.",
+    "included": [
+      "Driveways, sidewalks, and walkways",
+      "House siding, brick, and stucco — soft washed where the surface needs it",
+      "Patios, decks, and pool surrounds",
+      "Fences",
+      "Commercial building exteriors",
+      "Parking lots, garages, and dumpster pads",
+      "Post-construction cleanup washing",
+      "Recurring schedules for commercial and multi-family properties"
+    ],
+    "process": [
+      [
+        "Look at the surface",
+        "Different surfaces take different pressure. Soft washing for siding, higher pressure for concrete."
+      ],
+      [
+        "Written estimate",
+        "Priced by area, with anything unusual called out."
+      ],
+      [
+        "Wash",
+        "Surfaces are cleaned evenly rather than left with wand stripes across the concrete."
+      ],
+      [
+        "Check",
+        "We walk it with you, or send photos if it's a commercial property you're not on site for."
+      ]
+    ],
+    "faq": [
+      [
+        "How much does pressure washing cost in Round Rock TX?",
+        "Typical ranges: a standard two-car driveway runs $100–$250, and a full house wash runs $186–$459, with most homes landing around $300. Per square foot, pressure washing generally runs $0.10–$0.50 depending on the surface — flat concrete is at the low end, two-story siding and stained surfaces take longer. Published Round Rock averages run higher — one Williamson County cost tracker puts a typical Round Rock pressure washing job around $410 — which is why the written estimate matters: we price your job by area rather than handing you a market average or a phone guess."
+      ],
+      [
+        "Will pressure washing damage my siding?",
+        "It can, if the wrong pressure is used. Siding, stucco, and painted surfaces are soft washed at lower pressure with cleaning solution rather than blasted. Concrete takes higher pressure."
+      ],
+      [
+        "How often should a driveway be pressure washed?",
+        "In Central Texas, most homeowners are happy with once a year. Shaded Round Rock lots under mature oaks that grow mildew and algae, and commercial properties with foot traffic, benefit from twice a year."
+      ],
+      [
+        "Can pressure washing clear an HOA cleanliness notice?",
+        "Usually, yes. Driveway algae, mildew on siding and dirty walkways are among the most common exterior-maintenance notices in Round Rock communities like Forest Creek, Cat Hollow, Teravista and Siena, and a wash is normally all it takes to close one out. Send us the notice with your estimate request and we will scope exactly what it names."
+      ],
+      [
+        "Do you do commercial and recurring contracts?",
+        "Yes. We handle parking lots, dumpster pads, sidewalks, and building exteriors on scheduled contracts for commercial and multi-family properties, and for government facilities under NIGP 968-94."
+      ],
+      [
+        "Should I pressure wash before selling my house?",
+        "Almost always. It's inexpensive relative to its effect on listing photos and first impressions, and it's one of the few pre-listing items that pays for itself visibly. In Round Rock's older neighborhoods it also clears the driveway and walkway grime that reads as deferred maintenance in photos."
+      ],
+      [
+        "Do you serve my Round Rock neighborhood?",
+        "We pressure wash across Round Rock — Forest Creek, Cat Hollow, Round Rock West, Brushy Creek, Teravista, Paloma Lake and Siena — plus Leander, Cedar Park and Georgetown. If you're nearby and unsure, ask; we cover most of the northwest Austin metro."
+      ]
+    ],
+    "guides": [
+      {
+        "slug": "exterior-paint-texas-heat-how-long-lasts",
+        "title": "Why exterior paint fails fast in Texas"
+      }
+    ]
   }
 ]
