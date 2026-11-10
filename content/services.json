@@ -2141,5 +2141,84 @@
         "title": "Why exterior paint fails fast in Texas"
       }
     ]
+  },
+  {
+    "slug": "flooring-installation-round-rock-tx",
+    "icon": "planks",
+    "name": "Flooring Installation & Repair",
+    "shortName": "Flooring",
+    "city": "Round Rock, TX",
+    "title": "Flooring Installation in Round Rock TX — LVP, Tile & More",
+    "description": "Flooring installation and repair in Round Rock, Leander and Cedar Park TX. LVP, tile, laminate and hardwood, plus subfloor repair. Typical LVP installed $3–$8/sq ft. Free estimates.",
+    "h1": "Flooring Installation & Repair in Round Rock, TX",
+    "intro": "Most flooring complaints are not about the flooring. They are about what was underneath it and nobody looked: a slab that was never leveled, a transition cut short, a bathroom where the tile was laid over a soft spot. In Round Rock that shows up in the older homes in Round Rock West and Brushy Creek, where original carpet and sheet vinyl are finally wearing out, and in Forest Creek, Teravista, Paloma Lake and Siena, where builder-grade carpet is getting replaced with plank. We check the floor before we quote the floor, and we tell you what we find even when it makes the job bigger than you hoped. Sanches Group manages your project start to finish. Licensed trades are handled by our licensed partners — one call, one name owns the result.",
+    "included": [
+      "Luxury vinyl plank (LVP) and luxury vinyl tile",
+      "Tile — floors, showers, backsplash, and wet areas",
+      "Laminate and engineered wood",
+      "Hardwood installation and board replacement",
+      "Subfloor repair and levelling before new flooring goes down",
+      "Transitions, thresholds, stair nosing and trim",
+      "Tear-out and haul-away of the old floor",
+      "Baseboard removal and reinstallation, or new base to finish the room"
+    ],
+    "process": [
+      [
+        "Measure and look underneath",
+        "We measure the rooms and check what is under the existing floor. A soft subfloor or an uneven slab changes the job, and it is cheaper to know now."
+      ],
+      [
+        "Written estimate",
+        "Material and labour in writing, including the tear-out, the transitions and the trim — the parts that usually turn up as an extra later."
+      ],
+      [
+        "Prep, then install",
+        "Levelling and subfloor repair first. Flooring laid over a bad substrate fails, and it fails as your problem rather than the floor's."
+      ],
+      [
+        "Trim and finish",
+        "Transitions, base and thresholds done properly, and the room cleaned and put back."
+      ]
+    ],
+    "faq": [
+      [
+        "How much does flooring installation cost in Round Rock TX?",
+        "Typical Austin-area installed ranges: luxury vinyl plank runs $3–$8 per square foot installed, laminate $3–$7, and hardwood $8–$15, with tile varying by size and pattern. Angi puts the average Austin flooring project at $1,595–$5,069, and a Round Rock cost estimator puts a typical 500 sq ft LVP job at $1,870–$3,060. What moves your number is the material, the square footage, and what is under the old floor — slab levelling and subfloor repair add cost. You get the number in writing before anything starts."
+      ],
+      [
+        "Can you install flooring over my existing floor?",
+        "Sometimes, and often it is a bad idea. Going over tile or an old floating floor raises the height at every door and transition and hides whatever is failing underneath. We will tell you honestly whether it is reasonable in your case."
+      ],
+      [
+        "Do Round Rock slabs need levelling before plank goes down?",
+        "Often, at least in spots. Round Rock homes sit on concrete slabs, and plank and laminate telegraph every dip and high spot underneath — the floor flexes, the locking joints work loose, and it sounds hollow underfoot. We check the slab with a straightedge during the estimate and price any levelling in writing, before the new floor is ordered."
+      ],
+      [
+        "Do you move the furniture?",
+        "Yes, for normal household furniture. Pianos, safes, and anything that needs disassembly we talk about beforehand so it is in the estimate rather than a surprise on the day."
+      ],
+      [
+        "What about the baseboards?",
+        "We can pull and reinstall existing base, or install new. Old base often does not survive removal intact, so we say up front which way we expect it to go."
+      ],
+      [
+        "How long does a floor take?",
+        "A single room is usually a day. A whole house is several, and tile takes longer than plank because of the set and cure time. The estimate gives you the schedule, not just the price."
+      ],
+      [
+        "Do you serve my Round Rock neighborhood?",
+        "We install flooring across Round Rock — Forest Creek, Cat Hollow, Round Rock West, Brushy Creek, Teravista, Paloma Lake and Siena — plus Leander, Cedar Park and Georgetown. If you're nearby and unsure, ask; we cover most of the northwest Austin metro."
+      ]
+    ],
+    "guides": [
+      {
+        "slug": "nail-pops-new-construction-texas",
+        "title": "Why a new house moves in its second year"
+      },
+      {
+        "slug": "drywall-cracks-when-to-worry-central-texas",
+        "title": "Which cracks mean foundation trouble"
+      }
+    ]
   }
 ]
