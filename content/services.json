@@ -2296,5 +2296,80 @@
         "title": "What lot and brush clearing actually costs here"
       }
     ]
+  },
+  {
+    "slug": "deck-patio-builder-round-rock-tx",
+    "icon": "deck",
+    "name": "Decks & Patios",
+    "shortName": "Decks & Patios",
+    "city": "Round Rock, TX",
+    "title": "Deck & Patio Builder in Round Rock TX — Builds & Repairs",
+    "description": "Deck and patio building and repair in Round Rock, Leander and Cedar Park TX. New decks typically run $30–$50 per square foot in the Austin area. Covers, stairs, railing and rebuilds. Free written estimates.",
+    "h1": "Deck & Patio Builder in Round Rock, TX",
+    "intro": "Round Rock backyards ask a lot of a deck. West-facing yards in Teravista and Paloma Lake bake all afternoon, the black clay under Brushy Creek and Forest Creek swells and shrinks with the weather and works footings loose, and under the mature oaks in Round Rock West, shade and leaf litter rot boards from the top down. A deck that lasts here is decided by the parts you stop being able to see once it is finished — footings, framing, fasteners, drainage. Fall is a good build season: cooler working weather, concrete that cures well, and the deck is ready before spring. Sanches Group manages your project start to finish. Licensed trades are handled by our licensed partners — one call, one name owns the result.",
+    "included": [
+      "New deck builds — pressure-treated, cedar and composite",
+      "Covered patios and shade structures",
+      "Patio slabs, pavers and flagstone",
+      "Stairs, railing and privacy screens",
+      "Board replacement and deck resurfacing over a sound frame",
+      "Rebuilds where the framing or footings have failed",
+      "Sanding, sealing and staining",
+      "Rot and fastener repair before it spreads"
+    ],
+    "process": [
+      [
+        "Walk the space",
+        "We look at the ground, the drainage, sun exposure and the attachment point at the house. Round Rock clay moves — what a deck sits on decides how long it lasts."
+      ],
+      [
+        "Written scope and estimate",
+        "Materials, footings, framing and finish, written down. You will know what you are getting rather than what the photo looked like."
+      ],
+      [
+        "HOA and permits first",
+        "Most Round Rock HOAs — Teravista, Paloma Lake, Siena and Forest Creek among them — want a submittal for anything structural outdoors, and larger or elevated builds can need a City of Round Rock permit. We tell you which applies before work starts, not after a letter arrives."
+      ],
+      [
+        "Build and finish",
+        "Framing, decking, rail and stairs, then the site cleaned. Offcuts and old material hauled away."
+      ]
+    ],
+    "faq": [
+      [
+        "How much does a deck cost to build in Round Rock TX?",
+        "Typical Austin-area ranges from Angi's local data: a new deck runs about $30–$50 per square foot installed, with most projects landing between roughly $3,946 and $10,909 and an average around $7,413. Pressure-treated wood is the budget end; composite costs more up front and needs almost no maintenance. Deck repairs in the Austin area typically run $852–$3,345. Size, height off the ground and material drive most of the price — we quote in writing after seeing the space."
+      ],
+      [
+        "Composite or wood?",
+        "Composite costs more up front and almost nothing to maintain, which suits a west-facing Round Rock deck that bakes all afternoon. Wood is cheaper and looks better to a lot of people, and it needs sealing against Texas sun and humidity. Neither is the right answer for everyone."
+      ],
+      [
+        "Do I need HOA approval for a deck in Round Rock?",
+        "In most Round Rock neighborhoods, yes, for anything structural — and elevated or larger builds can also need a city permit. Approval is usually straightforward, and far easier before the build than after. We will tell you what your HOA typically asks for."
+      ],
+      [
+        "Can you repair a deck instead of replacing it?",
+        "Often, and it is worth asking. If the frame and footings are sound, resurfacing is a fraction of a rebuild. If the structure is going — common where clay movement has racked the frame — replacing boards on top of it is money spent twice. We will say which one you have."
+      ],
+      [
+        "How long does a deck take to build?",
+        "A straightforward build is usually several days once materials are on site. Covers, stairs and anything needing footings to cure take longer. The schedule is in the estimate."
+      ],
+      [
+        "Do you serve my Round Rock neighborhood?",
+        "We build and repair decks and patios across Round Rock — Brushy Creek, Cat Hollow, Forest Creek, Round Rock West, Teravista, Paloma Lake and Siena — plus Leander, Cedar Park and Georgetown. If you're nearby and unsure, ask; we cover most of the northwest Austin metro."
+      ]
+    ],
+    "guides": [
+      {
+        "slug": "exterior-paint-texas-heat-how-long-lasts",
+        "title": "Why Texas sun ruins exterior finishes"
+      },
+      {
+        "slug": "wildfire-defensible-space-trees-hill-country",
+        "title": "Clearing around a Hill Country home"
+      }
+    ]
   }
 ]
