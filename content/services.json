@@ -2450,5 +2450,88 @@
         "title": "Picking a paint sheen you won't regret"
       }
     ]
+  },
+  {
+    "slug": "tree-removal-round-rock-tx",
+    "icon": "tree",
+    "name": "Tree Removal & Trimming",
+    "shortName": "Tree Service",
+    "city": "Round Rock, TX",
+    "title": "Tree Removal & Trimming in Round Rock TX — Oaks, Pecans, Stumps & Cleanup",
+    "description": "Tree removal, trimming and stump grinding in Round Rock, Leander and Cedar Park TX. LawnStarter puts Round Rock removal at $255–$1,493, with stump grinding averaging about $220. Free written estimates.",
+    "h1": "Tree Removal & Trimming in Round Rock, TX",
+    "intro": "Round Rock's trees split along I-35: mature pecans, cedar elms and live oaks over the older homes in Round Rock West and Brushy Creek on the limestone side, and fast-growing builder trees — red oaks, Arizona ash, hackberries — planted across Teravista, Paloma Lake and Siena on the black-clay side, now big enough to hang over roofs. The work is different in each case — an oak needs clearance and oak-wilt timing, a dead pecan over a driveway needs to come down in sections, and a leaning hackberry just needs to go before it takes the fence with it. November through January is the heart of the safe oak-trimming window, so this is the season to get it done. Sanches Group manages your project start to finish. Licensed trades are handled by our licensed partners — one call, one name owns the result.",
+    "included": [
+      "Tree removal — dead, dying, leaning or in the way, taken down in sections over houses, fences and driveways",
+      "Trimming and pruning — crown thinning, raising and shaping, with every oak cut painted",
+      "Oak work scheduled inside the oak-wilt safe window (July through January)",
+      "Clearance and deadwood — limbs off the roof, house, driveway and street before they come down on their own",
+      "Stump grinding below grade so you can plant, sod or mow over it, quoted as its own line",
+      "Storm and limb cleanup — broken limbs, split trunks and debris, structures prioritized",
+      "Cedar (Ashe juniper) clearing for fire safety, allergies and room for oaks",
+      "Lot and brush clearing — fence lines, back acreage and new-build lots"
+    ],
+    "process": [
+      [
+        "Send photos",
+        "Add photos of the tree and what's around it to your estimate request. Size, lean and what's underneath decide most of the price, and most jobs can be roughly priced from photos."
+      ],
+      [
+        "Written estimate",
+        "You get the price in writing before anything starts, with haul-off and stump grinding listed separately so you can choose."
+      ],
+      [
+        "Scheduled work",
+        "We show up on the day we said, protect the lawn, beds and driveway, and take trees down in sections where there's something underneath."
+      ],
+      [
+        "Full cleanup",
+        "Limbs, logs and debris are hauled off and the yard is raked and blown. You shouldn't be able to tell where we stacked anything."
+      ]
+    ],
+    "faq": [
+      [
+        "How much does tree removal cost in Round Rock TX?",
+        "LawnStarter's Round Rock data puts tree removal between $255 and $1,493 depending on the tree and its height — on average about $169 for a small tree under 25 feet, $507 under 50 feet, $1,048 under 75 feet, and $1,590 for very large trees over 75 feet. Stump grinding in Round Rock averages about $220 per stump. A large live oak or pecan over a roof is a rigging job and prices at or above the top of those ranges. Your written estimate is for your tree, not an average."
+      ],
+      [
+        "When is it safe to trim oak trees in Round Rock?",
+        "July through January. Oak wilt spreads through fresh wounds, and the Texas A&M Forest Service recommends avoiding pruning or wounding oaks from February through June, when the beetles that carry it are most active. Round Rock's live oaks grow in connected groves, so one infected tree can move through a whole street. Every cut on an oak should be painted immediately, in any season — we follow both rules on every oak we touch, which makes fall and winter the right time to book oak work."
+      ],
+      [
+        "Do I need a permit to remove a tree in Round Rock?",
+        "For an ordinary backyard tree on an existing home, usually not. Round Rock does protect its largest trees, though — designated \"monarch\" trees (a live oak around 36 inches or more in diameter, a pecan around 34 inches, a cedar elm around 25 inches) can't be removed without city approval, and larger trees on undeveloped land are protected too. HOAs in neighborhoods like Teravista and Forest Creek may also require approval first. If a tree looks big enough to be covered, we'll flag it before quoting so its status can be confirmed with the city first."
+      ],
+      [
+        "Do you haul away the wood and grind the stump?",
+        "Yes. Haul-off is included unless you'd like to keep the firewood — pecan is worth keeping if you smoke or grill. Stump grinding is quoted as a separate line so you can decide — grinding goes below grade so you can plant, sod or mow over the spot."
+      ],
+      [
+        "A tree is touching a power line. Can you remove it?",
+        "Call your electric provider first — across most of Round Rock that's Oncor. Lines must be made safe by the utility before anyone works near them. Once they've cleared it, we can take care of the tree and the cleanup."
+      ],
+      [
+        "What Round Rock neighborhoods do you cover for tree work?",
+        "All of Round Rock — Brushy Creek, Cat Hollow, Forest Creek, Round Rock West, Teravista, Paloma Lake and Siena — plus Leander, Cedar Park, Georgetown and Pflugerville. We also handle common-area trees and storm cleanup for HOAs and property managers."
+      ]
+    ],
+    "guides": [
+      {
+        "slug": "tree-removal-cost-leander-tx",
+        "title": "How much tree removal costs here"
+      },
+      {
+        "slug": "tree-trimming-cost-cedar-park-tx",
+        "title": "Tree trimming cost in Cedar Park and Leander"
+      },
+      {
+        "slug": "stump-grinding-cost-leander-cedar-park",
+        "title": "Stump grinding cost, and when to leave the stump"
+      },
+      {
+        "slug": "when-to-trim-oak-trees-central-texas",
+        "title": "When to trim oaks: the oak wilt rules"
+      }
+    ]
   }
 ]
