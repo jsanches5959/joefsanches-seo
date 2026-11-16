@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { breadcrumbSchema } from '../lib/breadcrumbs';
+import { HomeValueForm } from '../components/LeadForms';
 
 const baseUrl = 'https://joefsanches.com';
 
@@ -382,73 +383,11 @@ export default function WhatsMyHomeWorth() {
             {/* Section 4: Form */}
             <Section id="valuation-form" title="Request My Free Home Valuation">
               <p style={{ color: 'var(--muted)', lineHeight: '1.8', marginBottom: '24px' }}>
-                Fill in the fields below and click the button — it will open a pre-filled email to Joe with your info. He typically responds within a few hours during business days.
+                Fill out the form below and it goes straight to Joe — no email app needed. He typically responds within one business day, with your free valuation underway.
               </p>
 
               <div className="card" style={{ maxWidth: '560px' }}>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', marginBottom: '20px' }}>
-                  <div>
-                    <label style={{ display: 'block', color: 'var(--accent-light)', fontSize: '13px', fontWeight: 600, marginBottom: '6px' }}>
-                      Your Name
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="First and last name"
-                      style={{
-                        width: '100%', background: 'var(--card)',
-                        border: '1px solid rgba(107,120,84,.35)', borderRadius: '8px',
-                        padding: '12px 14px', color: 'var(--ink)', fontSize: '15px',
-                        outline: 'none', boxSizing: 'border-box'
-                      }}
-                    />
-                  </div>
-                  <div>
-                    <label style={{ display: 'block', color: 'var(--accent-light)', fontSize: '13px', fontWeight: 600, marginBottom: '6px' }}>
-                      Property Address
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Street address, Leander TX"
-                      style={{
-                        width: '100%', background: 'var(--card)',
-                        border: '1px solid rgba(107,120,84,.35)', borderRadius: '8px',
-                        padding: '12px 14px', color: 'var(--ink)', fontSize: '15px',
-                        outline: 'none', boxSizing: 'border-box'
-                      }}
-                    />
-                  </div>
-                  <div>
-                    <label style={{ display: 'block', color: 'var(--accent-light)', fontSize: '13px', fontWeight: 600, marginBottom: '6px' }}>
-                      Your Email
-                    </label>
-                    <input
-                      type="email"
-                      placeholder="your@email.com"
-                      style={{
-                        width: '100%', background: 'var(--card)',
-                        border: '1px solid rgba(107,120,84,.35)', borderRadius: '8px',
-                        padding: '12px 14px', color: 'var(--ink)', fontSize: '15px',
-                        outline: 'none', boxSizing: 'border-box'
-                      }}
-                    />
-                  </div>
-                </div>
-
-                <p style={{ color: 'var(--muted)', fontSize: '12px', marginBottom: '16px', lineHeight: '1.6' }}>
-                  Clicking the button below will open your email app with your request pre-addressed to Joe. Copy your info from the fields above into the email before sending.
-                </p>
-
-                <a
-                  href="mailto:hello@joefsanches.com?subject=Home%20Valuation%20Request&body=Name%3A%0AAddress%3A%0AEmail%3A%0APhone%3A%0ABest%20time%20to%20call%3A"
-                  style={{
-                    display: 'block', width: '100%', textAlign: 'center',
-                    background: 'var(--accent)', color: '#fff', padding: '16px',
-                    borderRadius: '8px', textDecoration: 'none', fontWeight: 700,
-                    fontSize: '17px', boxSizing: 'border-box'
-                  }}
-                >
-                  Request My Free CMA
-                </a>
+                <HomeValueForm />
 
                 <p style={{ color: 'var(--muted)', fontSize: '13px', textAlign: 'center', marginTop: '16px', marginBottom: 0 }}>
                   Or call/text Joe directly:{' '}
