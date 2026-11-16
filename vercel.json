@@ -16,6 +16,46 @@
       "permanent": true
     },
     {
+      "source": "/leander-home-buying-guide-2026",
+      "destination": "/leander-home-buyer-guide",
+      "permanent": true
+    },
+    {
+      "source": "/austin-real-estate-market-update-2026",
+      "destination": "/leander-real-estate-market-2026",
+      "permanent": true
+    },
+    {
+      "source": "/top-cedar-park-communities-2026",
+      "destination": "/posts/cedar-park-tx-neighborhood-guide-2026",
+      "permanent": true
+    },
+    {
+      "source": "/cedar-park-parks",
+      "destination": "/posts/a-local-s-guide-to-milburn-park-and-cedar-park-amenities",
+      "permanent": true
+    },
+    {
+      "source": "/new-construction-home-buying-guide",
+      "destination": "/new-construction-leander-tx",
+      "permanent": true
+    },
+    {
+      "source": "/family-neighborhoods-cedar-park-leander",
+      "destination": "/posts/best-neighborhoods-in-leander-tx-for-families-2026",
+      "permanent": true
+    },
+    {
+      "source": "/moving-checklist-austin",
+      "destination": "/posts/moving-to-austin-tx-2026-relocation-guide",
+      "permanent": true
+    },
+    {
+      "source": "/leander-housing-market",
+      "destination": "/leander-real-estate-market-2026",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
