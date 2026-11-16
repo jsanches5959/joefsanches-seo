@@ -1,6 +1,7 @@
 
 import Link from 'next/link';
 import JobberForm from '../components/JobberForm';
+import { ReferralForm } from '../components/LeadForms';
 import Head from 'next/head';
 import fs from 'fs';
 import path from 'path';
@@ -381,6 +382,27 @@ export default function Realtor({ posts }) {
                   back to you personally, usually the same day.
                 </p>
                 <JobberForm />
+              </div>
+            </section>
+
+            <section id="referral-form" style={{ marginTop: '48px' }}>
+              <div
+                className="card"
+                style={{
+                  background: 'rgba(107,120,84,0.05)',
+                  borderColor: 'rgba(200,168,75,0.3)',
+                  padding: '32px',
+                }}
+              >
+                <h3 className="cardTitle" style={{ fontSize: '20px', marginBottom: '8px' }}>Buying or selling — here, or anywhere?</h3>
+                <p style={{ color: 'var(--text)', fontSize: '16px', lineHeight: 1.7, margin: '0 0 18px' }}>
+                  Joe serves Leander and the greater Austin area personally. Headed somewhere
+                  else — across Texas or across the country? Tell Joe where you&apos;re going
+                  and he&apos;ll connect you with a vetted local agent there through his
+                  referral network, then check in to make sure you&apos;re taken care of. No
+                  cost to you — the agent who earns the business covers the referral.
+                </p>
+                <ReferralForm />
               </div>
             </section>
 
