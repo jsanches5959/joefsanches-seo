@@ -484,7 +484,7 @@ export default function Post({ slug, title, seoTitle, canonicalTo, date, content
           <p style={{ marginTop: '6px' }}><a href="/" style={{ textDecoration: 'underline' }}>Construction · Facilities · Government Contracting — Sanches Group</a></p>
           <p style={{ marginTop: '8px' }}>Phone: 512-663-8867 • Email: hello@joefsanches.com</p>
           <div style={{ marginTop: '16px' }}>
-            <a href="https://g.page/r/CS5gIVIj8I-AEBE/review" target="_blank" rel="noopener noreferrer" className="btn" style={{ fontSize: '12px', opacity: 0.8 }}>
+            <a href="https://g.page/r/Ccptwgcf36ilEBM/review" target="_blank" rel="noopener noreferrer" className="btn" style={{ fontSize: '12px', opacity: 0.8 }}>
               ⭐ Review Joe on Google
             </a>
           </div>
