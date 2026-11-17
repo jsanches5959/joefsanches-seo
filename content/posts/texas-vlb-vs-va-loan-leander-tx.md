@@ -90,6 +90,8 @@ If you're a veteran planning to buy in Leander in 2026:
 3. Get pre-approved with a lender who knows both VA and VLB programs — not all lenders originate VLB loans
 4. Work with a buyer's agent who understands how VA offers are structured, how VA appraisals work in Leander's builder market, and how to negotiate with sellers who have outdated VA loan concerns
 
+If new construction is on your list, read what changed for [VA approved builders in Leander](/posts/va-approved-builders-leander-tx) in 2025, when the VA retired the Builder ID for standard loans and lender approval took its place.
+
 ## Browse Homes in Leander Right Now
 
 [Search Available Homes in Leander →](https://a.nhb.app/u/joe)

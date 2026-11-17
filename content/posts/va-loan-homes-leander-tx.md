@@ -49,6 +49,8 @@ What you need to know:
 - New construction timelines can run 4–7 months on-build — your VA loan rate lock strategy matters
 - Some builders quote slightly higher base prices for VA buyers to account for the VA appraisal process — a veteran-experienced Realtor negotiates through this
 
+One rule changed in 2025: builders no longer need a VA Builder ID for a standard VA loan, and your lender approves the builder now. The full breakdown is in our guide to [VA approved builders in Leander](/posts/va-approved-builders-leander-tx).
+
 Builder incentives in 2026 I'm currently seeing:
 - Rate buydowns of 1–2 points on 30-year fixed
 - $10,000–$25,000 in closing cost credits or design center credits
