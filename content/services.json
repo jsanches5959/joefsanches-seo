@@ -3518,5 +3518,85 @@
         "title": "Meter bank replacement for older Austin apartments"
       }
     ]
+  },
+  {
+    "slug": "handyman-services-austin-tx",
+    "icon": "toolbox",
+    "name": "Handyman & Home Repairs",
+    "shortName": "Handyman Repairs",
+    "city": "Austin, TX",
+    "title": "Home Repair in Austin TX — Handyman Services & Punch Lists",
+    "description": "Handyman and home repair in Austin, Leander and Cedar Park TX. Drywall, doors, trim, fixtures, mounting and punch lists. One point of contact.",
+    "h1": "Handyman & Home Repair Services in Austin, TX",
+    "intro": "Austin homes accumulate the same kind of list everywhere — a door that won't latch, a bathroom fan that rattles, baseboard that came loose, three things that need mounting. In the older homes in Hyde Park, Clarksville, Bouldin Creek and Allandale it's aging hardware, sticking doors and tired caulk; in the rental-heavy streets around North Loop and Crestview it's turnover repairs between tenants; in the newer builds in Mueller, Circle C and Cherry Creek it's the punch list that shows up the year the builder warranty ends. Individually none of it is worth a service call. Together it's a half day. We work through the list in one visit instead of you chasing four different people. Sanches Group manages your project start to finish — one call, one name owns the result.",
+    "included": [
+      "Door repair and adjustment — latching, sticking, hinges, hardware",
+      "Trim, baseboard, and crown molding repair or replacement",
+      "Drywall patching and touch-up paint",
+      "TV, shelf, mirror, and cabinet mounting",
+      "Fixture replacement — towel bars, hardware, blinds, screens",
+      "Caulking — tubs, showers, counters, exterior gaps",
+      "Fence and gate repair — leaning panels, sagging gates",
+      "Grab bars, lever handles and aging-in-place fixes",
+      "Punch lists — new build walk-throughs, rental turnovers and pre-listing repairs"
+    ],
+    "process": [
+      [
+        "Send the list",
+        "Text or email everything you need done. Photos help. We'll tell you what's a fit and what needs a specialist."
+      ],
+      [
+        "Written estimate",
+        "One price for the whole list, in writing."
+      ],
+      [
+        "One visit",
+        "We work through the list in a single trip wherever possible."
+      ],
+      [
+        "Walk it together",
+        "You check each item before we leave."
+      ]
+    ],
+    "faq": [
+      [
+        "What kinds of repairs do you handle?",
+        "General carpentry and finish work: drywall, doors, trim, flooring, mounting, caulking, fence and gate repair, and punch lists. If part of a job needs a licensed trade — plumbing, electrical, HVAC — our licensed partners handle that part and we manage it for you."
+      ],
+      [
+        "How much does a handyman cost in Austin?",
+        "It depends on the list, which is why we price by the job instead of by the hour. For market context, handymen in the Austin area typically charge $65–$110 an hour, and published half-day blocks in the area run roughly $300–$600. Send us your list and you get one written price for the whole thing before anyone starts — no hourly meter running while somebody is up on a ladder."
+      ],
+      [
+        "Do you have a minimum charge?",
+        "We price by the job rather than by the hour, and small jobs are more economical when grouped. If you have one small item, it's usually worth waiting until you have a few."
+      ],
+      [
+        "Do you work on rental properties?",
+        "Yes. We do repairs, turns, and maintenance for landlords and property managers throughout the Austin metro, and we work on a vendor-only basis — we never solicit our property management clients' owners."
+      ],
+      [
+        "Can you do a pre-listing repair list for a home sale?",
+        "Yes, and this is common for us. Sellers get an inspection or agent punch list and need it handled before photos. Send the list and we'll price the whole thing."
+      ],
+      [
+        "What areas do you serve?",
+        "Austin first — including Hyde Park, Clarksville, Bouldin Creek, Tarrytown, Allandale, Mueller and Circle C — then Leander, Cedar Park, Round Rock, Georgetown, Liberty Hill and Pflugerville."
+      ]
+    ],
+    "guides": [
+      {
+        "slug": "nail-pops-new-construction-texas",
+        "title": "Nail pops in a new build: what actually fixes them"
+      },
+      {
+        "slug": "drywall-repair-cost-leander-cedar-park",
+        "title": "What drywall repair actually costs here"
+      },
+      {
+        "slug": "paint-sheen-guide-eggshell-satin-semigloss",
+        "title": "Eggshell, satin or semi-gloss: picking a sheen"
+      }
+    ]
   }
 ]
