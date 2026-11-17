@@ -131,5 +131,6 @@ I'm Joe Sanches — a licensed Realtor and military veteran based in Leander. I'
 
 - [Texas VLB vs VA Loan: Which Is Better for Leander TX?](/posts/texas-vlb-vs-va-loan-leander-tx)
 - [VA Loan Homes in Leander TX: What Buyers Need to Know](/posts/va-loan-homes-leander-tx)
+- [VA Approved Builders in Leander TX: What Changed in 2025](/posts/va-approved-builders-leander-tx)
 - [First-Time Home Buyer Programs in Leander TX](/posts/first-time-home-buyer-programs-leander-texas)
 - [New Construction Homes in Leander TX 2026](/posts/new-construction-homes-leander-tx-2026)
