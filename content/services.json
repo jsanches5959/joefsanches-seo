@@ -4108,5 +4108,80 @@
         "title": "What lot and brush clearing actually costs here"
       }
     ]
+  },
+  {
+    "slug": "deck-patio-builder-austin-tx",
+    "icon": "deck",
+    "name": "Decks & Patios",
+    "shortName": "Decks & Patios",
+    "city": "Austin, TX",
+    "title": "Deck & Patio Builder in Austin TX — Builds & Repairs",
+    "description": "Deck and patio building and repair in Austin, Leander and Cedar Park TX. New decks typically run $30–$50 per square foot in the Austin area. Covers, stairs, railing and rebuilds. Free written estimates.",
+    "h1": "Deck & Patio Builder in Austin, TX",
+    "intro": "Austin backyards test an outdoor build in both directions. West-facing yards in Circle C Ranch, Mueller and Cherry Creek bake all afternoon, lots in Hyde Park, Clarksville, Tarrytown and Bouldin Creek sit under mature oaks where shade and leaf litter rot boards from the top down, and across Allandale, Crestview and Steiner Ranch the ground itself is the problem — thin soil over limestone and clay that swells and shrinks means footings have to be set right or the whole structure works loose. A deck that lasts here is decided by the parts you stop being able to see once it is finished — footings, framing, fasteners, drainage. Fall is a good build season: cooler working weather, concrete that cures well, and the deck is ready before spring. Sanches Group manages your project start to finish. Licensed trades are handled by our licensed partners — one call, one name owns the result.",
+    "included": [
+      "New deck builds — pressure-treated, cedar and composite",
+      "Covered patios and shade structures",
+      "Patio slabs, pavers and flagstone",
+      "Stairs, railing and privacy screens",
+      "Board replacement and deck resurfacing over a sound frame",
+      "Rebuilds where the framing or footings have failed",
+      "Sanding, sealing and staining",
+      "Rot and fastener repair before it spreads"
+    ],
+    "process": [
+      [
+        "Walk the space",
+        "We look at the ground, the drainage, sun exposure and the attachment point at the house. Austin lots sit on limestone and clay — what a deck sits on decides how long it lasts."
+      ],
+      [
+        "Written scope and estimate",
+        "Materials, footings, framing and finish, written down. You will know what you are getting rather than what the photo looked like."
+      ],
+      [
+        "HOA and permits first",
+        "Most Austin HOAs — Circle C Ranch, Mueller and Steiner Ranch among them — want a submittal for anything structural outdoors, and larger or elevated builds can need a City of Austin permit. We tell you which applies before work starts, not after a letter arrives."
+      ],
+      [
+        "Build and finish",
+        "Framing, decking, rail and stairs, then the site cleaned. Offcuts and old material hauled away."
+      ]
+    ],
+    "faq": [
+      [
+        "How much does a deck cost to build in Austin TX?",
+        "Typical Austin-area ranges from Angi's local data: a new deck runs about $30–$50 per square foot installed, with most projects landing between roughly $3,946 and $10,909 and an average around $7,413. Pressure-treated wood is the budget end; composite costs more up front and needs almost no maintenance. Deck repairs in the Austin area typically run $852–$3,345. Size, height off the ground and material drive most of the price — we quote in writing after seeing the space."
+      ],
+      [
+        "Composite or wood?",
+        "Composite costs more up front and almost nothing to maintain, which suits a west-facing Austin deck that bakes all afternoon. Wood is cheaper and looks better to a lot of people, and it needs sealing against Texas sun and humidity. Neither is the right answer for everyone."
+      ],
+      [
+        "Do I need HOA approval for a deck in Austin?",
+        "In most Austin neighborhoods, yes, for anything structural — Circle C Ranch, Mueller and Steiner Ranch all review outdoor structures — and elevated or larger builds can also need a City of Austin permit. Approval is usually straightforward, and far easier before the build than after. We will tell you what your HOA typically asks for."
+      ],
+      [
+        "Can you repair a deck instead of replacing it?",
+        "Often, and it is worth asking. If the frame and footings are sound, resurfacing is a fraction of a rebuild. If the structure is going — common where limestone and clay movement has racked the frame, or oak shade has rotted boards in Hyde Park and Tarrytown — replacing boards on top of it is money spent twice. We will say which one you have."
+      ],
+      [
+        "How long does a deck take to build?",
+        "A straightforward build is usually several days once materials are on site. Covers, stairs and anything needing footings to cure take longer. The schedule is in the estimate."
+      ],
+      [
+        "Do you serve my Austin neighborhood?",
+        "We build and repair decks and patios across Austin — Hyde Park, Clarksville, Tarrytown, Bouldin Creek, Allandale, Crestview, Mueller, Circle C Ranch, Cherry Creek and Steiner Ranch — plus Leander, Cedar Park, Round Rock and Georgetown. If you're nearby and unsure, ask; we cover most of the Austin metro."
+      ]
+    ],
+    "guides": [
+      {
+        "slug": "exterior-paint-texas-heat-how-long-lasts",
+        "title": "Why Texas sun ruins exterior finishes"
+      },
+      {
+        "slug": "wildfire-defensible-space-trees-hill-country",
+        "title": "Clearing around a Hill Country home"
+      }
+    ]
   }
 ]
