@@ -37,7 +37,7 @@ For oaks, the answer should be: no pruning or wounding February through June exc
 
 ### 5. Will you top my tree?
 
-The right answer is no. Topping (cutting a tree's crown back to stubs) damages trees and creates weak, dangerous regrowth.
+The right answer is no. Topping (cutting a tree's crown back to stubs) damages trees and creates weak, dangerous regrowth. Our [live oak trimming guide](/posts/live-oak-trimming-central-texas) covers what good trimming looks like instead — raising, thinning and reducing.
 
 ### 6. Do you use climbing spikes on trees you're trimming?
 
