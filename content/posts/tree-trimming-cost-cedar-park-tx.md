@@ -43,7 +43,7 @@ Ask every company the same questions so you're comparing the same job:
 4. **Will you paint cuts on oaks?** The answer should be yes, every time.
 5. **Is the price in writing?**
 
-See also [how to choose a tree service](/posts/how-to-choose-tree-service-leander).
+See also [how to choose a tree service](/posts/how-to-choose-tree-service-leander) and our guide to [live oak trimming](/posts/live-oak-trimming-central-texas) for how the cut itself should be done — raising, thinning and reducing, and what never to do.
 
 ## How to save money
 

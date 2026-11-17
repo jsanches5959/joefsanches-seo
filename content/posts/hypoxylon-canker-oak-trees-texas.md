@@ -46,6 +46,8 @@ The fungus is common in the environment, and healthy, unstressed trees generally
 - **Avoid soil compaction, trenching and grade changes** under the canopy.
 - **Remove deadwood** and keep wounds clean.
 
+For oaks you're keeping, our [live oak trimming guide](/posts/live-oak-trimming-central-texas) covers the cuts that help — deadwood and clearance — and the ones that stress a tree further.
+
 Infected wood should be removed and not stacked as firewood next to other oaks.
 
 ## Frequently asked questions
