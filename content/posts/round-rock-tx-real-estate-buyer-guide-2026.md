@@ -46,7 +46,7 @@ One of Round Rock's premier established neighborhoods. Custom and semi-custom ho
 
 ### Teravista
 
-Master-planned community with golf course, clubhouse, pools, trails. Mix of new and resale homes. One of Round Rock's best amenity packages. $400K–$700K range.
+Master-planned community with golf course, clubhouse, pools, trails. Mix of new and resale homes. One of Round Rock's best amenity packages. $400K–$700K range. Owners there work from a first-cycle repair list - nail pops, warranty-end punch lists, builder paint and carpet - covered in our [Teravista home repair guide](/posts/home-repairs-teravista-round-rock-tx).
 
 ### Forest Creek
 
