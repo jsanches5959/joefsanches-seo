@@ -32,7 +32,7 @@ The community was developed by **Century Communities** and features a mix of sin
 
 **HOA fees.** Rancho Sienna has an active HOA with annual fees. These cover the amenity center, common area maintenance, and community programming. Get the full fee schedule and review the HOA financials and reserve fund before closing.
 
-**New vs. resale.** Century Communities still has active new construction in Rancho Sienna. If you're comparing new construction vs. resale within the community, the math is different — new builds come with builder warranties but often less negotiating flexibility on price. Resale homes may offer more negotiating room, especially in today's market where inventory is elevated.
+**New vs. resale.** Century Communities still has active new construction in Rancho Sienna. If you're comparing new construction vs. resale within the community, the math is different — new builds come with builder warranties but often less negotiating flexibility on price. Resale homes may offer more negotiating room, especially in today's market where inventory is elevated. Already own here? The earliest Rancho Sienna homes are into their first repair cycle - see our [Rancho Sienna home repair guide](/posts/home-repairs-rancho-sienna-leander-tx) for the list and what each item costs.
 
 ## How Rancho Sienna Compares to Other Leander-Area Communities
 
