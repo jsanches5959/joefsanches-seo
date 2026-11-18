@@ -126,6 +126,8 @@ Metro Rail has a station at Lakeline Mall (183/Lakeline Blvd) — meaningful for
 
 **Best for:** Value buyers. Buyers who want established urban-edge character. Empty nesters.
 
+**Already own here?** Brushy Creek homes from 1985 to 2012 carry the longest-span list in Cedar Park - see our [Brushy Creek home repair guide](/posts/home-repairs-brushy-creek-cedar-park-tx) for what wears first and what each item costs.
+
 ---
 
 ## School District Map: Why This Matters in Cedar Park
