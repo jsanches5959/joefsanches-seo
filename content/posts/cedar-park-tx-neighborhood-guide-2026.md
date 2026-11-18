@@ -60,6 +60,8 @@ Metro Rail has a station at Lakeline Mall (183/Lakeline Blvd) — meaningful for
 
 **Best for:** Buyers who hate HOAs. Value-focused buyers. Buyers who want established feel at lower price points.
 
+**Already own here?** Buttercup Creek homes from 1992 to 2008 are into their long-cycle list - see our [Buttercup Creek home repair guide](/posts/home-repairs-buttercup-creek-cedar-park-tx) for what wears first and what each item costs.
+
 ---
 
 ### Lakeline / Riviera Springs
