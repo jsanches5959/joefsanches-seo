@@ -38,6 +38,7 @@ When evaluating the best neighborhoods in Leander TX for families in 2026, it’
   - A staffed community center with events through the year.
 - **Schools:** Zoned to Leander ISD, including Jim Plain Elementary, Danielson Middle and Glenn High School (confirm zoning for the specific address).
 - **Trade-off:** It's a MUD community, so the combined tax rate runs about 2.47%.
+- **Owning one:** The earliest Bryson homes are hitting their first repair cycle - see our [Bryson home repair guide](/posts/home-repairs-bryson-leander-tx) for what comes due first and what it costs.
 
 ### 2. **Brushy Creek**
 
