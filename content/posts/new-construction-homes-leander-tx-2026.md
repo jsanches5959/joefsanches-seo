@@ -43,6 +43,7 @@ Several master-planned communities are shaping the Leander landscape in 2026. Ea
 - Larkspur offers competitively priced homes with family-friendly parks and walking trails.
 - Located near convenient shopping and dining in Leander’s city center.
 - Close proximity to SH 183 and US 183A toll road, making commuting to Austin and Round Rock easier.
+- Already own in Larkspur? Our [Larkspur home repair guide](/posts/home-repairs-larkspur-leander-tx) covers the first-cycle list for the community's 2016-and-newer Weekley homes - porches, alley garage doors, and the 10-year warranty line the earliest homes are reaching now.
 
 ---
 
