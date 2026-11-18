@@ -42,6 +42,8 @@ Metro Rail has a station at Lakeline Mall (183/Lakeline Blvd) — meaningful for
 
 **Best for:** Move-up buyers who want established luxury without paying Travisso premiums. Tech workers who value established community character.
 
+**Already own here?** The oldest Twin Creeks homes are past 20 years and into their second repair cycle - see our [Twin Creeks home repair guide](/posts/home-repairs-twin-creeks-cedar-park-tx) for the list and what each item costs.
+
 ---
 
 ### Forest Oaks / Buttercup Creek
