@@ -85,6 +85,7 @@ If one person in your household commutes downtown, the MetroRail access from Lea
 
 **Georgetown new construction (2026):**
 - **Wolf Ranch** — master-planned, $350K–$600K range, Georgetown ISD, strong amenity package ([Wolf Ranch home repair guide →](/posts/home-repairs-wolf-ranch-georgetown-tx))
+- **Georgetown Village** — newer Georgetown community ([Georgetown Village home repair guide →](/posts/home-repairs-georgetown-village-georgetown-tx))
 - **Parmer Ranch** — newer community, multiple builders, $350K–$500K, Georgetown ISD
 - **Sun City** — age-restricted (55+), popular with retirees, not relevant for families ([Sun City home repair guide →](/posts/home-repairs-sun-city-georgetown-tx))
 - **KB Home, Perry Homes, Ashton Woods** active in Georgetown
