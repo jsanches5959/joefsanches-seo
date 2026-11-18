@@ -65,6 +65,8 @@ Travisso is Leander's "show" community — the one that gets featured in press c
 
 ---
 
+One more Travisso note for owners rather than buyers: the earliest homes there were built in the early 2010s, so the first maintenance cycle (exterior caulk and paint, settling cracks, deck work on the view lots) is landing now. Our [Travisso home repair guide](/posts/home-repairs-travisso-leander-tx) walks through that first-decade list with local costs.
+
 ## The School Question
 
 Both neighborhoods are served by Leander ISD. The specific campus assignments differ — Crystal Falls feeds primarily to Whitestone Elementary, Leander Middle, and Leander High or Vista Ridge depending on your address. Travisso primarily feeds to Cypress Ranch Elementary, Leander Middle, and Vista Ridge.
