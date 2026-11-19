@@ -50,7 +50,7 @@ Master-planned community with golf course, clubhouse, pools, trails. Mix of new 
 
 ### Forest Creek
 
-Established neighborhood with a golf course. Mix of 1990s–2010 builds. $380K–$600K. One of Round Rock's most recognized addresses.
+Established neighborhood with a golf course. Mix of 1990s–2010 builds. $380K–$600K. One of Round Rock's most recognized addresses. Owners there work from a second-cycle repair list - wear on original finishes, ceiling stains, sun-beaten elevations and 1990s kitchen updates - covered in our [Forest Creek home repair guide](/posts/home-repairs-forest-creek-round-rock-tx).
 
 ### Walsh Ranch
 
