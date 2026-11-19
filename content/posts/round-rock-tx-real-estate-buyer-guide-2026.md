@@ -52,6 +52,10 @@ Master-planned community with golf course, clubhouse, pools, trails. Mix of new 
 
 Established neighborhood with a golf course. Mix of 1990s–2010 builds. $380K–$600K. One of Round Rock's most recognized addresses. Owners there work from a second-cycle repair list - wear on original finishes, ceiling stains, sun-beaten elevations and 1990s kitchen updates - covered in our [Forest Creek home repair guide](/posts/home-repairs-forest-creek-round-rock-tx).
 
+### Paloma Lake
+
+Newer master-planned community, grouped with Teravista and Siena in Round Rock's newer housing. Owners there work from a first-cycle repair list - nail pops, warranty-end punch lists, builder paint and carpet, west-facing yards and pool surrounds - covered in our [Paloma Lake home repair guide](/posts/home-repairs-paloma-lake-round-rock-tx).
+
 ### Walsh Ranch
 
 Newer master-planned community with resort amenities. Pulte, Gehan, and other builders. $380K–$560K. Growing infrastructure, better new construction options than older Round Rock neighborhoods.
