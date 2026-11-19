@@ -66,7 +66,7 @@ More affordable, established neighborhoods. 1990s–2005 builds. $320K–$430K. 
 
 ### Kenney Fort Crossing / Siena
 
-Newer communities on Round Rock's north edge near the Cedar Park/Leander border. Some have LISD school assignments despite Round Rock addresses. Verify by address.
+Newer communities on Round Rock's north edge near the Cedar Park/Leander border. Some have LISD school assignments despite Round Rock addresses. Verify by address. Siena owners work from a first-cycle repair list - nail pops, warranty-end punch lists, builder paint and carpet, pool surrounds - covered in our [Siena home repair guide](/posts/home-repairs-siena-round-rock-tx).
 
 ---
 
