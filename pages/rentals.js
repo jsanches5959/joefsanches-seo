@@ -8,7 +8,7 @@ const webPageSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "Homes for Rent in Leander, Cedar Park & Austin TX — Real Listings, Real Prices",
-  "description": "13 real rental homes in Leander, Cedar Park, Liberty Hill and Austin, pulled from live listings today — plus how to spot a rental scam and the questions to ask before you send anyone a deposit.",
+  "description": "14 real rental homes in Leander, Cedar Park, Liberty Hill and Austin, pulled from live listings today — plus how to spot a rental scam and the questions to ask before you send anyone a deposit.",
   "url": `${baseUrl}/rentals`,
   "author": { "@type": "Person", "name": "Joe Sanches", "url": baseUrl },
   "publisher": {
@@ -21,6 +21,12 @@ const webPageSchema = {
 const pStyle = { color: 'var(--muted)', lineHeight: '1.8', marginBottom: '16px' };
 
 const listings = [
+  {
+    url: 'https://www.facebook.com/marketplace/item/29938227172436097',
+    title: '3-bed house with a huge fenced yard — 2105 Cypress Ln, Cedar Park',
+    detail: '$2,150/mo · 3 bed / 2 bath, 1,120 sq ft · Covered front porch and back deck, wood-look tile floors throughout, granite counters, stainless gas range, fridge included. Deposit $2,150.',
+    price: '$2,150/mo',
+  },
   {
     url: 'https://www.facebook.com/marketplace/item/2227017887843244',
     title: 'Tiny home with a huge private yard — 2505 Cypress Ln, Cedar Park',
@@ -106,16 +112,16 @@ export default function RentalsPage() {
     <>
       <Head>
         <title>Homes for Rent in Leander, Cedar Park &amp; Austin TX — Real Listings, Real Prices</title>
-        <meta name="description" content="13 real rental homes in Leander, Cedar Park, Liberty Hill and Austin, pulled from live listings today — plus how to spot a rental scam and the questions to ask before you send anyone a deposit." />
+        <meta name="description" content="14 real rental homes in Leander, Cedar Park, Liberty Hill and Austin, pulled from live listings today — plus how to spot a rental scam and the questions to ask before you send anyone a deposit." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href={`${baseUrl}/rentals`} />
         <meta property="og:image" content="https://joefsanches.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Homes for Rent in Leander, Cedar Park &amp; Austin TX — Real Listings, Real Prices" />
-        <meta name="twitter:description" content="13 real rental homes in Leander, Cedar Park, Liberty Hill and Austin, pulled from live listings today — plus how to spot a rental scam." />
+        <meta name="twitter:description" content="14 real rental homes in Leander, Cedar Park, Liberty Hill and Austin, pulled from live listings today — plus how to spot a rental scam." />
         <meta name="twitter:image" content="https://joefsanches.com/og-image.jpg" />
         <meta property="og:title" content="Homes for Rent in Leander, Cedar Park &amp; Austin TX — Real Listings, Real Prices" />
-        <meta property="og:description" content="13 real rental homes in Leander, Cedar Park, Liberty Hill and Austin, pulled from live listings today — plus how to spot a rental scam and the questions to ask before you send anyone a deposit." />
+        <meta property="og:description" content="14 real rental homes in Leander, Cedar Park, Liberty Hill and Austin, pulled from live listings today — plus how to spot a rental scam and the questions to ask before you send anyone a deposit." />
         <meta property="og:url" content={`${baseUrl}/rentals`} />
         <meta property="og:type" content="website" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
@@ -188,7 +194,7 @@ export default function RentalsPage() {
           ))}
 
           <p style={{ color: 'var(--muted)', fontSize: '.92rem', lineHeight: '1.6' }}>
-            Pulled from my live Facebook Marketplace listings on Nov 23, 2026. Rentals move fast — if a link is gone, the home rented. Apartments instead? My apartment locating is free to you (the complex pays): <a href="https://joefsanches.com/apartments" style={{ color: 'var(--accent-light)' }}>joefsanches.com/apartments</a>.
+            Pulled from my live Facebook Marketplace listings on Nov 24, 2026. Rentals move fast — if a link is gone, the home rented. Apartments instead? My apartment locating is free to you (the complex pays): <a href="https://joefsanches.com/apartments" style={{ color: 'var(--accent-light)' }}>joefsanches.com/apartments</a>.
           </p>
 
           <h2 style={{ fontSize: '1.35rem', margin: '1.6em 0 .4em', color: 'var(--ink)' }}>2. How not to get scammed on a rental (read this even if you never call me)</h2>
