@@ -129,7 +129,7 @@ const css = `
   /* The Thinking Man: the brand in one image. A strategist over a chess
      board with the plans beside it — judgment before labor. */
   .hero-thinker {
-    display: block; width: min(560px, 100%); height: auto;
+    display: block; width: min(400px, 100%); height: auto;
     margin: 0 auto 26px; border-radius: 12px;
     box-shadow: 0 18px 44px rgba(22,24,15,.16);
   }
@@ -543,7 +543,7 @@ export default function Home() {
       <section className="home-hero" id="top">
         <span className="hero-skyline" aria-hidden="true" />
         <div className="hero-inner">
-          <img className="hero-thinker" src="/thinking-man-chess.svg" alt="A strategist thinking over a chess board, blueprints and house plans beside the board" width="1920" height="1280" />
+          <img className="hero-thinker" src="/thinking-man-chess.svg" alt="A strategist thinking over a chess board, blueprints and house plans beside the board" width="1280" height="1920" />
           <span className="hero-eyebrow">Leander · Williamson &amp; Travis County · Central Texas</span>
           <h1>
             <span className="sr">Sanches Group — trees, drywall, paint, remodels, hauling, make-readies. Ready for anything.</span>
