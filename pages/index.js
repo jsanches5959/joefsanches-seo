@@ -126,6 +126,19 @@ const css = `
     padding: 7px 14px; border: 1px solid rgba(107,120,84,.35); border-radius: 999px;
     background: rgba(255,255,255,.6);
   }
+  /* The Thinking Man: the brand in one image. A strategist over a chess
+     board with the plans beside it — judgment before labor. */
+  .hero-thinker {
+    display: block; width: min(560px, 100%); height: auto;
+    margin: 0 auto 26px; border-radius: 12px;
+    box-shadow: 0 18px 44px rgba(22,24,15,.16);
+  }
+  .hero-tag {
+    font-size: clamp(19px, 2.4vw, 25px); font-weight: 900;
+    letter-spacing: -0.02em; color: var(--ink);
+    max-width: 640px; margin: 0 auto 14px; line-height: 1.3;
+  }
+  .hero-tag em { font-style: normal; color: var(--gold-ink); }
   .home-hero h1 {
     font-size: clamp(40px, 9vw, 112px);
     line-height: 0.98;
@@ -530,6 +543,7 @@ export default function Home() {
       <section className="home-hero" id="top">
         <span className="hero-skyline" aria-hidden="true" />
         <div className="hero-inner">
+          <img className="hero-thinker" src="/thinking-man-chess.svg" alt="A strategist thinking over a chess board, blueprints and house plans beside the board" width="2352" height="1008" />
           <span className="hero-eyebrow">Leander · Williamson &amp; Travis County · Central Texas</span>
           <h1>
             <span className="sr">Sanches Group — trees, drywall, paint, remodels, hauling, make-readies. Ready for anything.</span>
@@ -538,6 +552,7 @@ export default function Home() {
               <RotatingWord />
             </span>
           </h1>
+          <p className="hero-tag">I think <em>ten moves ahead</em> on your money.</p>
           <p className="hero-sub">
             <strong>Whatever the property needs, we can put a crew on it.</strong> Trees,
             remodels, drywall, paint, flooring, hauling, turns, grounds &mdash; and the jobs
