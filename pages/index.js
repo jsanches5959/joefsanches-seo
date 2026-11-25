@@ -543,7 +543,7 @@ export default function Home() {
       <section className="home-hero" id="top">
         <span className="hero-skyline" aria-hidden="true" />
         <div className="hero-inner">
-          <img className="hero-thinker" src="/thinking-man-chess.svg" alt="A strategist thinking over a chess board, blueprints and house plans beside the board" width="2352" height="1008" />
+          <img className="hero-thinker" src="/thinking-man-chess.svg" alt="A strategist thinking over a chess board, blueprints and house plans beside the board" width="1920" height="1280" />
           <span className="hero-eyebrow">Leander · Williamson &amp; Travis County · Central Texas</span>
           <h1>
             <span className="sr">Sanches Group — trees, drywall, paint, remodels, hauling, make-readies. Ready for anything.</span>
