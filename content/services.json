@@ -497,20 +497,19 @@
     "name": "Facilities Maintenance & Janitorial",
     "shortName": "Facilities & Janitorial",
     "city": "Austin, TX",
-    "title": "Facilities Maintenance & Janitorial — Austin, TX",
-    "description": "Commercial facilities maintenance and janitorial across the Austin metro. Recurring cleaning, unit turns, repairs, painting and grounds upkeep.",
-    "h1": "Facilities Maintenance & Janitorial Services in Central Texas",
-    "intro": "Property managers and facility directors don't want five vendors and five invoices. Most of what a building needs month to month — cleaning, repairs, paint, turns, exterior upkeep — can come from one contractor with one point of contact. That's how we're set up, and the person you call is the owner.",
+    "title": "Facilities Maintenance in Austin TX - Real Costs, Janitorial & Unit Turns",
+    "description": "Facilities maintenance and janitorial in Austin TX: a 10,000 sq ft office cleaned 5 nights a week runs $1,640-$2,790 a month at market rates; physical unit turns run $1,000-$5,000. One crew, one invoice, written scope. Free site walks.",
+    "h1": "Facilities Maintenance in Austin, TX - One Crew, Real Prices, No Vendor Chase",
+    "intro": "Every property manager in Austin has the same vendor story: the cleaner ghosts, the painter will not return a call, the turn crew misses the move-in date, and you are holding five invoices and three excuses. I am Joe Sanches, and Sanches Group is built the other way - one call, one crew that learns your building, one monthly invoice, and my name on the result. The honest part first: if your building only needs a mop bucket and a trash pull, hire a solo cleaner and save the money - we are worth it when cleaning, turns, paint, repairs and grounds all land on the same desk, which is most buildings in this metro. Pro tip: send me your last three vendor invoices before our site walk - I will show you line by line where the overlap is costing you, whether you hire us or not.",
     "included": [
-      "Recurring janitorial and custodial — offices, retail, institutional",
-      "Unit turns for multi-family and rental portfolios",
-      "Interior and exterior painting",
-      "Drywall, door, and general repairs",
-      "Flooring replacement",
-      "Pressure washing and exterior upkeep",
-      "Window washing",
-      "Grounds maintenance — mowing, edging, debris removal",
-      "Post-construction cleaning"
+      "Recurring janitorial - a 10,000 sq ft Austin office cleaned 5 nights a week runs $1,640-$2,790 a month at published market rates ($0.16-$0.28 per sq ft per month); medical and gym space runs higher, warehouse space lower - your written quote is priced off your building, not a template",
+      "Unit turns for multi-family and rental portfolios - the physical make-ready (cleaning, paint prep, punch repairs, trash-out, inspection) runs $1,000-$5,000 a unit at market rates; a light turn with touch-up paint and a $150-$400 move-out clean sits at the low end",
+      "Interior and exterior painting - full unit repaint $800-$3,500 at market rates, priced by the unit or the building, never open-ended hourly",
+      "Drywall, door and general repairs - paint prep and patching $250-$800 a unit at market rates, doors and hardware on the same visit as the paint crew",
+      "Flooring replacement - scheduled with the turn, not as a separate vendor call",
+      "Pressure washing, window washing and exterior upkeep - storefronts, breezeways, parking areas and building faces on the recurring schedule",
+      "Grounds maintenance - mowing, edging and debris removal on the same contract, so the outside matches the inside",
+      "Post-construction cleaning - final cleans priced by the walkthrough, with photo documentation for the file"
     ],
     "process": [
       [
@@ -532,8 +531,16 @@
     ],
     "faq": [
       [
+        "How much does facilities maintenance and janitorial cost in Austin?",
+        "Published Austin market rates put routine office cleaning at $0.16-$0.28 per square foot per month at 5 nights a week - about $1,640-$2,790 a month for a 10,000 sq ft office, plus Texas sales tax, which applies to janitorial as a real property service. Medical or dental space runs $0.28-$0.48, schools $0.24-$0.41, warehouses $0.087-$0.15. Unit turns are separate: the physical make-ready runs $1,000-$5,000 a unit depending on what the last tenant left behind. Your price is a written scope after a site walk - per service or bundled monthly, one invoice either way."
+      ],
+      [
+        "When should we NOT hire a facilities company like yours?",
+        "When one service is all you need. A small office that only needs once-a-week cleaning is cheaper with a solo cleaner, and a building with a full-time in-house maintenance tech does not need our repair line. Where we earn it is the overlap: cleaning plus turns plus paint plus repairs plus grounds, where five separate vendors means five minimums, five schedules and nobody owning a missed move-in date. I will tell you on the site walk if your building is in the do-it-cheaper column - that honesty is the whole pitch."
+      ],
+      [
         "Do you offer recurring maintenance contracts?",
-        "Yes. Most of our commercial and multi-family work is on a recurring schedule — janitorial, grounds, and scheduled repairs — with a single monthly invoice rather than per-visit billing."
+        "Yes. Most of our commercial and multi-family work is on a recurring schedule - janitorial, grounds, and scheduled repairs - with a single monthly invoice rather than per-visit billing."
       ],
       [
         "Do you work with property management companies?",
@@ -544,12 +551,16 @@
         "Yes. Sanches Group is Texas HUB certified through the VetHUB program, SDVOSB, and SAM.gov registered, with B2G Vendor ID 21829543. We hold NIGP codes for janitorial (910-39), pressure washing (968-94), painting (910-54), flooring (910-25), window washing (910-81), and grounds maintenance (98852)."
       ],
       [
+        "What about electrical, plumbing or HVAC work inside a building?",
+        "Regulated trade work is performed by licensed partners and managed by Sanches Group under the same contract and schedule - one call from you, and the partner's license number goes on the quote for that work. We never imply Sanches Group itself holds a trade license."
+      ],
+      [
         "What is your service area?",
         "The greater Austin metro, based in Leander and Williamson County. Government and large-scope commercial work is available statewide."
       ],
       [
         "How fast can you handle unit turns?",
-        "Turn timelines depend on scope and unit count. We work to the schedule the property needs and price by the turn rather than hourly."
+        "Turn timelines depend on scope and unit count. We work to the schedule the property needs and price by the turn rather than hourly - cleaning $150-$400, paint prep $250-$800 and punch-list repairs $150-$1,500 a unit are the market line items your quote is built from, confirmed in writing after the walk."
       ]
     ],
     "guides": [
